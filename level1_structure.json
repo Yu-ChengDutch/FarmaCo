@@ -1,0 +1,418 @@
+{
+    "Naame": "Medicatie",
+    "Onderverdeling": [
+        {
+            "Naam": "Pijnmedicatie",
+            "Onderverdeling": [
+                {
+                    "Naam": "Paracetamol"
+                },
+                {
+                    "Naam": "Prostaglandinesynthetaseremmers",
+                    "Onderverdeling": [
+                        {
+                            "Naam": "Diclofenac"
+                        },
+                        {
+                            "Naam": "Naproxen"
+                        },
+                        {
+                            "Naam": "Ibuprofen"
+                        },
+                        {
+                            "Naam": "Acetylsalicylzuur"
+                        }
+                    ]
+                },
+                {
+                    "Naam": "Opiaatagonisten",
+                    "Onderverdeling": [
+                        {
+                            "Naam": "Morfine"
+                        },
+                        {
+                            "Naam": "Fentanyl"
+                        },
+                        {
+                            "Naam": "Tramadol"
+                        },
+                        {
+                            "Naam": "Oxycodon"
+                        },
+                        {
+                            "Naam": "Codeïne"
+                        }
+                    ]
+                }                
+            ]
+        },
+        {
+            "Naam": "Antistolling",
+            "Onderverdeling": [
+                {
+                    "Naam": "Trombocytenaggregatieremmers",
+                    "Onderverdeling": [
+                        {
+                            "Naam": "Acetylsalicylzuur"
+                        },
+                        {
+                            "Naam": "Clopidogrel"
+                        },
+                        {
+                            "Naam": "Ticagrelor"
+                        }
+                    ]
+                },
+                {
+                    "Naam": "Coumarinederivaten",
+                    "Onderverdeling": [
+                        {
+                            "Naam": "Acenocoumarol"
+                        },
+                        {
+                            "Naam": "Fenprocoumon"
+                        }
+                    ]
+                },
+                {
+                    "Naam": "Heparinegroep",
+                    "Onderverdeling": [
+                        {
+                            "Naam": "Heparine"
+                        },
+                        {
+                            "Naam": "Nadroparine"
+                        }
+                    ]
+                },
+                {
+                    "Naam": "Heparine antagonist",
+                    "Onderverdeling": [
+                        {
+                            "Naam": "Protamine"
+                        }
+                    ]
+                },
+                {
+                    "Naam": "DOAC's",
+                    "Onderverdeling": [
+                        {
+                            "Naam": "Dabigatran"
+                        },
+                        {
+                            "Naam": "Apixaban"
+                        },
+                        {
+                            "Naam": "Rivaroxaban"
+                        },
+                        {
+                            "Naam": "Edoxaban"
+                        }
+                    ]
+                }                
+            ]
+        },
+        {
+            "Naam": "Cardiovasculaire middelen",
+            "Onderverdeling": [
+                {
+                    "Naam": "Thiazidediuretica",
+                    "Onderverdeling": [
+                        {
+                            "Naam": "Chloortalidon"
+                        },
+                        {
+                            "Naam": "Hydrochloorthiazide"
+                        }
+                    ]
+                },
+                {
+                    "Naam": "Lisdiuretica",
+                    "Onderverdeling": [
+                        {
+                            "Naam": "Furosemide"
+                        }
+                    ]
+                },
+                {
+                    "Naam": "Kaliumsparende diuretica",
+                    "Onderverdeling": [
+                        {
+                            "Naam": "Spironolactone"
+                        },
+                        {
+                            "Naam": "Triamtereen"
+                        }
+                    ]
+                },
+                {
+                    "Naam": "Beta-blokkers",
+                    "Onderverdeling": [
+                        {
+                            "Naam": "Metoprolol"
+                        },
+                        {
+                            "Naam": "Sotalol"
+                        },
+                        {
+                            "Naam": "Propanolol"
+                        },
+                        {
+                            "Naam": "Atenolol"
+                        }
+                    ]
+                },
+                {
+                    "Naam": "Alfa-blokkers",
+                    "Onderverdeling": [
+                        {
+                            "Naam": "Tamsulosine"
+                        }
+                    ]
+                },
+                {
+                    "Naam": "Calciumantagonisten",
+                    "Onderverdeling": [
+                        {
+                            "Naam": "Nifedipine"
+                        },
+                        {
+                            "Naam": "Amlodipine"
+                        },
+                        {
+                            "Naam": "Verapamil"
+                        }
+                    ]
+                },
+                {
+                    "Naam": "ACE-remmers",
+                    "Onderverdeling": [
+                        {
+                            "Naam": "Enalapril"
+                        },
+                        {
+                            "Naam": "Lisinopril"
+                        }
+                    ]
+                },
+                {
+                    "Naam": "ARBs",
+                    "Onderverdeling": [
+                        {
+                            "Naam": "Losartan"
+                        }
+                    ]
+                },
+                {
+                    "Naam": "Hartglycosiden",
+                    "Onderverdeling": [
+                        {
+                            "Naam": "Digoxine"
+                        }
+                    ]
+                },
+                {
+                    "Naam": "Nitraten",
+                    "Onderverdeling": [
+                        {
+                            "Naam": "Isosorbide-dinitraat"
+                        },
+                        {
+                            "Naam": "Isosorbide-mononitraat"
+                        }
+                    ]
+                },
+                {
+                    "Naam": "Natriumpolystyreensulfonaat"
+                },
+                {
+                    "Naam": "Insuline/glucose"
+                },
+                {
+                    "Naam": "Calciumgluconaat"
+                },
+                {
+                    "Naam": "KCI-drank"
+                }                 
+            ]
+        },
+        {
+            "Naam": "Antidiabetica",
+            "Onderverdeling": [
+                {
+                    "Naam": "Metformine"
+                },
+                {
+                    "Naam": "Glucagon"
+                },
+                {
+                    "Naam": "SU-derivaten",
+                    "Onderverdeling": [
+                        {
+                            "Naam": "Tolbutamide"
+                        },
+                        {
+                            "Naam": "Glimepride"
+                        },
+                        {
+                            "Naam": "Gliclazide"
+                        }
+                    ]
+                },
+                {
+                    "Naam": "Insulinen",
+                    "Onderverdeling": [
+                        {
+                            "Naam": "Humuline regular"
+                        },
+                        {
+                            "Naam": "Aspart"
+                        },
+                        {
+                            "Naam": "Glargine"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Naam": "Antidepressiva",
+            "Onderverdeling": [
+                {
+                    "Naam": "Tricyclische antidepressiva",
+                    "Onderverdeling": [
+                        {
+                            "Naam": "Amitriptyline"
+                        },
+                        {
+                            "Naam": "Nortriptyline"
+                        }
+                    ]
+                },
+                {
+                    "Naam": "SSRI's",
+                    "Onderverdeling": [
+                        {
+                            "Naam": "Fluoxetine"
+                        },
+                        {
+                            "Naam": "Paroxetine"
+                        },
+                        {
+                            "Naam": "Citalopram"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Naam": "Benzodiazepines",
+            "Onderverdeling": [
+                {
+                    "Naam": "Diazepam"
+                },
+                {
+                    "Naam": "Oxazepam"
+                },
+                {
+                    "Naam": "Temazepam"
+                }
+            ]
+        },
+        {
+            "Naam": "Antidota",
+            "Onderverdeling": [
+                {
+                    "Naam": "Flumazenil"
+                },
+                {
+                    "Naam": "Vitamine K"
+                },
+                {
+                    "Naam": "Opiaatantagonisten",
+                    "Onderverdeling": [
+                        {
+                            "Naam": "Naloxon"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Naam": "Antibiotica",
+            "Onderverdeling": [
+                {
+                    "Naam": "Beta-lactam antibiotica",
+                    "Onderverdeling": [
+                        {
+                            "Naam": "Penicillines",
+                            "Onderverdeling": [
+                                {
+                                    "Naam": "Penicilline"
+                                },
+                                {
+                                    "Naam": "Amoxicilline"
+                                },
+                                {
+                                    "Naam": "Amoxicilline/clavulaanzuur"
+                                }
+                            ]
+                        },
+                        {
+                            "Naam": "Cefalosporines",
+                            "Onderverdeling": [
+                                {
+                                    "Naam": "Ceftriaxon"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Naam": "Tetracyclines",
+                    "Onderverdeling": [
+                        {
+                            "Naam": "Doxycycline"
+                        }
+                    ]
+                },
+                {
+                    "Naam": "Aminoglycosiden",
+                    "Onderverdeling": [
+                        {
+                            "Naam": "Gentamicine"
+                        }
+                    ]
+                },
+                {
+                    "Naam": "Macroliden",
+                    "Onderverdeling": [
+                        {
+                            "Naam": "Azitromycine"
+                        }
+                    ]
+                },
+                {
+                    "Naam": "Chinolonen",
+                    "Onderverdeling": [
+                        {
+                            "Naam": "Ciprofloxacine"
+                        }
+                    ]
+                },
+                {
+                    "Naam": "Trimethoprim/co-trimoxazol"
+                },
+                {
+                    "Naam": "Nitrofurantoïne"
+                },
+                {
+                    "Naam": "Fosfomycine"
+                },
+                {
+                    "Naam": "Metronidazol"
+                }
+            ]
+        }
+    ]
+}

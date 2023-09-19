@@ -65,8 +65,52 @@ function start() {
 
     setEnter();
 
-    farmacoSetUp();
+    buildLevel1();
 
+}
+
+function buildLevel1() {
+    console.log("Welcome!");
+
+    current_database = "./level1_structure.json";
+
+    console.log("Fetching main DB at: " + current_database);
+
+    fetch(current_database)
+
+    .then(function(response){
+        console.log("- > File found and accessed at " + current_database);
+        return response.json();
+    })
+    .then(function(data){
+
+        explorable_array = shuffle(data.Onderverdeling);
+
+        while (explorable_array.length > 0) {
+
+            explorable_item = explorable_arrive.pop();
+
+            if (Object.keys(explorable_item).includes("Onderverdeling")) {
+
+                class_name = explorable_item.Naam;
+
+                for (var i = 0; i < explorable_item.Onderverdeling.length; i++) {
+
+                    question_string = "Wat is de klasse van " + explorable_item.Onderverdeling[i].Naam;
+                    question_array.push({"Question": question_string, "Answer": class_name });
+
+                }
+
+            }
+
+        };
+
+        console.log(question_array);
+
+    })
+
+    console.log("- > Generated the following questions: ");
+    console.log(question_array);
 }
 
 function setEnter() {
