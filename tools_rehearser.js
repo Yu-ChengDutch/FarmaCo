@@ -58,8 +58,7 @@ function setEnter() {
     input.addEventListener("keypress", function(event) {
     // If the user presses the "Enter" key on the keyboard
     if (event.key === "Enter") {
-        // Cancel the default action, if needed
-        event.preventDefault();
+        console.log("-> Pressed enter")
         // Trigger the button element with a click
         checkMnemonicAnswer();
     }
@@ -152,7 +151,7 @@ function checkMnemonicAnswer() {
         }        
         
         console.log("- - > Checking mnemonic")
-        console.log("Right answer is: " + correct_answer)
+        console.log("- - > Right answer is: " + correct_answer)
 
         if (given_answer == correct_answer.toLowerCase()) {
             console.log("- - > Correct!")
@@ -184,8 +183,8 @@ function checkMnemonicAnswer() {
 
         } else {
 
-            console.log("Given answer: " + given_answer);
-            console.log("Right answer: " + correct_answer);
+            console.log("- - > Given answer: " + given_answer);
+            console.log("- - > Right answer: " + correct_answer);
 
             if (document.getElementById('remark-card').innerText != "Please repeat the mnemonic phrase again") {
                 document.getElementById('remark-card').innerText = "Please repeat the mnemonic phrase again";
