@@ -88,7 +88,7 @@ function buildLevel1() {
 
         while (explorable_array.length > 0) {
 
-            explorable_item = explorable_arrive.pop();
+            explorable_item = explorable_array.pop();
 
             if (Object.keys(explorable_item).includes("Onderverdeling")) {
 
