@@ -90,6 +90,8 @@ function buildLevel1() {
 
             explorable_item = explorable_array.pop();
 
+            console.log("-> Working on " + explorable_item);
+
             if (Object.keys(explorable_item).includes("Onderverdeling")) {
 
                 explorable_array.push(explorable_item);
