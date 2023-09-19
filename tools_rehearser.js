@@ -74,6 +74,48 @@ let databases = {
 
 */ 
 
+let main_page = `
+
+    <script type="text/javascript" src="tools_rehearser.js"></script>
+    
+    <div class="title-card">
+        <h1 id="true-title">Pathology - Farmaco</h1>
+    </div>
+    
+    <div class = "question-card">
+
+        <div class="question-title-card">
+
+            <h1 id="question-title">Question 1</h1>
+            <p id ="question-description">What is the name of this disease?</p>
+        
+        </div>
+
+        <div class="question-input-card" id="question-input-card">
+            <input type="text" id="text-field">
+            <input type="button" class="button" id ="check-button" value="Check" onclick="checkMnemonicAnswer()"> 
+        </div>
+
+        <div id="remark-card">
+            
+            <p id ="question-description"></p>
+        
+        </div>
+
+    </div>
+
+`
+
+/* New start function */
+
+function start() {
+
+    openFullscreen();
+
+    document.getElementsByTagName("BODY")[0].innerHTML = main_page;
+
+}
+
 function setUp(){
 
     openFullscreen();
