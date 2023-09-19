@@ -90,15 +90,15 @@ function buildLevel1() {
 
             explorable_item = explorable_array.pop();
 
-            console.log("-> Working on " + explorable_item);
-
             if (Object.keys(explorable_item).includes("Onderverdeling")) {
-
-                explorable_array.push(explorable_item);
 
                 class_name = explorable_item.Naam;
 
                 for (var i = 0; i < explorable_item.Onderverdeling.length; i++) {
+
+                    if (Object.keys(explorable_item.Onderverdeling[i]).includes("Onderverdeling")) {
+                        explorable_array.push(explorable_item.Onderverdeling[i])
+                    }
 
                     question_string = "Wat is de klasse van " + explorable_item.Onderverdeling[i].Naam;
                     question_array.push({"Question": question_string, "Answer": class_name });
