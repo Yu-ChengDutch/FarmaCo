@@ -103,7 +103,7 @@ function buildLevel1() {
 
                     question_string = "Wat is de klasse van " + explorable_item.Onderverdeling[i].Naam;
                     temp_array.push({"Question": question_string, "Answer": class_name });
-
+                    
                 }
 
             }
@@ -111,6 +111,8 @@ function buildLevel1() {
         };
 
         question_array = shuffle(temp_array);
+
+        console.log(question_array);
 
     })    
 
