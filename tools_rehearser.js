@@ -92,6 +92,8 @@ function buildLevel1() {
 
             if (Object.keys(explorable_item).includes("Onderverdeling")) {
 
+                explorable_array.push(explorable_item);
+
                 class_name = explorable_item.Naam;
 
                 for (var i = 0; i < explorable_item.Onderverdeling.length; i++) {
