@@ -57,13 +57,14 @@ function farmacoSetUp() {
     console.log("Fetching main DB at: " + current_database);
 
     fetch(current_database)
+
     .then(function(response){
         console.log("- > File found and accessed at " + current_database);
         return response.json();
     })
     .then(function(data){
 
-        question_array = shuffle(data.Mnemonic)
+        question_array = shuffle(data.Mnemonics)
 
         setMnemonicQuestion();
 
@@ -92,8 +93,6 @@ function openFullscreen() {
 /* Load the database (for now still hardcoded) */
 
 function setMnemonicQuestion(){
-
-    
 
     console.log("- > Setting mnemonic question")
 
@@ -317,7 +316,7 @@ function nextMnemonicQuestion() {
 }
 
 function shuffle(array) {
-    let currentIndex = array.length,  randomIndex;
+    let currentIndex = array.length, randomIndex;
   
     // While there remain elements to shuffle.
     while (currentIndex > 0) {
