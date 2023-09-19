@@ -112,6 +112,7 @@ function buildLevel1() {
     })
 
     console.log("- > Generated the following questions: ");
+    console.log(question_array);
     question_array = shuffle(question_array);
     console.log(question_array);
 
