@@ -85,6 +85,7 @@ function buildLevel1() {
     .then(function(data){
 
         explorable_array = shuffle(data.Onderverdeling);
+        temp_array = [];
 
         while (explorable_array.length > 0) {
 
@@ -101,7 +102,7 @@ function buildLevel1() {
                     }
 
                     question_string = "Wat is de klasse van " + explorable_item.Onderverdeling[i].Naam;
-                    question_array = question_array.concat([{"Question": question_string, "Answer": class_name }]);
+                    temp_array.push({"Question": question_string, "Answer": class_name });
 
                 }
 
@@ -109,11 +110,13 @@ function buildLevel1() {
 
         };
 
-    })
+        question_array = shuffle(temp_array);
+
+    })    
 
     console.log("- > Generated the following questions: ");
     console.log(question_array);
-    question_array = shuffle(question_array);
+    
     console.log(question_array);
 
     setMnemonicQuestion();
