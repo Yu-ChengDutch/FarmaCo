@@ -114,6 +114,8 @@ function buildLevel1() {
 
         console.log(question_array);
 
+        setMnemonicQuestion();
+
     })    
 
     console.log("- > Generated the following questions: ");
@@ -121,7 +123,7 @@ function buildLevel1() {
     
     console.log(question_array);
 
-    setMnemonicQuestion();
+    
 
 }
 
