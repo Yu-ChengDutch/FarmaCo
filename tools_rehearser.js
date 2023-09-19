@@ -65,9 +65,7 @@ function start() {
 
     setEnter();
 
-    buildLevel1();
-
-    setMnemonicQuestion();
+    buildLevel1();   
 
 }
 
@@ -116,6 +114,9 @@ function buildLevel1() {
     console.log("- > Generated the following questions: ");
     question_array = shuffle(question_array);
     console.log(question_array);
+
+    setMnemonicQuestion();
+
 }
 
 function setEnter() {
