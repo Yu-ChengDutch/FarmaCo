@@ -67,6 +67,8 @@ function start() {
 
     buildLevel1();
 
+    setMnemonicQuestion();
+
 }
 
 function buildLevel1() {
