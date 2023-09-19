@@ -1,0 +1,226 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Segoe UI';
+}
+
+/* Define fonts */
+
+h1 {
+    font-weight: bolder;
+    font-size: 6vw;
+}
+
+h4 {
+    font-weight: bold;
+    font-size: 4vw;
+    color: white
+}
+
+p {
+    font-size: 4vw;
+}
+
+.main-card {
+    /* Same as Duolingo chapter thing */
+    width: 90vw;
+    height: 20vh;
+    text-align: left;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    margin: 0px;
+    background-color: limegreen;
+    color: white
+}
+
+.main-card p {
+    color: white
+}
+
+.title-card {
+    width: 90vw;
+    height: 10vh;
+    text-align: center;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    margin: 0px;
+    background-color: limegreen;
+    color: white
+}
+
+/* The cards */
+
+.card {
+    /* Add shadows */
+    box-shadow: 0px 1.5vh rgb(60, 60, 60);
+    background-color: grey;
+    border-radius: 5vw; /* 5px rounded corners */
+    width: 24vw;
+    height: 9vh;
+    text-align: center;
+    padding-top:1vh;
+    padding-bottom:1vh;
+    margin-left: 37vw;
+    margin-top: 5vh;
+    font-size: 2.5vw;
+    transition: 0.3s;
+}
+
+#active {
+    box-shadow: 0px 1.5vh rgba(0, 128, 0, 1);
+    background-color: limegreen;
+}
+
+#active:hover {
+    box-shadow: 0px 2vh rgba(0, 128, 0, 1);
+    transition: 0.3s;
+}
+
+/* Links */
+a {
+    color: black;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover, a:active {
+    color: gray;
+    transition: 0.3s;
+}
+
+/* Doing the whole question bit */
+
+.question-card {
+    width: 60vw;
+    height: 50vh;
+    text-align: center;
+    padding-top:1vh;
+    padding-bottom:1vh;
+    margin-left: 19vw;
+    margin-top: 5vh;
+    font-size: 2.5vw;
+}
+
+.question-title-card {
+    color: white;
+    height: 18vh;
+    width: 60vw;
+    border-radius: 5vw;
+    padding-top: 8vh;
+    padding-bottom: 5vh;
+    box-shadow: 0px 1.5vh rgba(0, 128, 0, 1);
+    background-color: limegreen;
+}
+
+#text-field {
+    width: 60vw;
+    height: 10vh;
+    font-weight: bold;
+    font-size: 2.5vw;
+    color: black;
+    margin-top: 5vh;
+    padding-left: 5vw;
+    padding-right:5vw;
+    border-radius: 5vw;
+}
+
+.button {
+    box-shadow: 0px 1.5vh rgb(60, 60, 60);
+    background-color: grey;
+    height: 6vh;
+    border-radius: 5vw;
+    font-weight: bold;
+    font-size: 2.5vw;
+    color: white;
+    margin-top: 2.5vh;
+}
+
+.button:active {
+    background-color: lightgray;
+}
+
+#check-button {
+    width: 60vw;
+}
+
+#enter-button {
+    width: 45vw;
+    display: inline-block;
+}
+
+#expand-button {
+    width: 45vw;
+    display: inline-block;
+}
+
+#active-button {
+    box-shadow: 0px 1.5vh rgba(0, 128, 0, 1);
+    background-color: limegreen;
+    width: 50vw;
+    height: 5vh;
+    border-radius: 5vw;
+    font-weight: bold;
+    font-size: 2.5vw;
+    color: white;
+    margin-top: 2.5vh;
+}
+
+#remark-card {
+    color: black;
+    height: 18vh;
+    width: 60vw;
+    border-radius: 5vw;
+    padding-top: 8vh;
+    padding-bottom: 5vh;
+    background-color: white;
+}
+
+
+/* The Ogham bar and related things*/
+
+.ogham-bar {
+    margin: 0px;
+    padding: 0px;
+    width: 100vw;
+    height: 10vh;
+}
+
+.ogham-zero {
+    float: left;
+    background-color: grey;
+    box-shadow: 0px 1.5vh rgb(60, 60, 60);
+    width: 20vw;
+    height: 5vh;
+    padding: 0px;
+}
+
+.ogham-one {
+    float: left;
+    box-shadow: 0px 1.5vh rgba(0, 128, 0, 1);
+    background-color: limegreen;
+    width: 20vw;
+    height: 6vh;
+    padding: 0px;
+}
+
+.ogham-two {
+    
+    height: 7vh;
+}
+
+.ogham-three {
+    height: 8vh;
+}
+
+.ogham-four {
+    height: 9vh;
+}
+
+.ogham-five {
+    height: 10vh;
+}
+
