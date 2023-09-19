@@ -1,80 +1,10 @@
-/* Create an empty dictionary */
+/* Create an empty array for all the questions */
 
-let question_texts = {
-    "Division": ["The body consists of groups of structures. Of what group is <", "> a part?"],
-    "Parts": ["Structures may be divided in parts. Of what structure is <", "> a part?"],
-    "Branches": ["Structures may branch off. Of what structure did <", "> branch off?"],
-    "Continues": ["Structures may take a different name at some point. What is <", "> called further upstream?"],
-    "Branches at": ["Branching occurs at a certain point. At what point does <", "> branch off?"],
-    "Branches to": ["Branching occurs in a certain direction. What direction does <", "> branch to?"],
-    "Nerve": ["Organs receive their innervation from nerves. What nerve does <", "> receive its signals from?"],
-    "Artery": ["Organs receive their oxygen from arteries. What artery does <", "> receive its blood from?"],
-    "Lymph": ["Organs drain their lymph to nodes. What node does <", "> drain to?"],
-    "Origin": ["Muscles originate somewhere. Where does <", "> originate>?"],
-    "Insertion": ["Muscles have to insert somewhere. Where does <", "> insert?"],
-    "From": ["Joints run from proximal to distal. Where does <", "> run from?"],
-    "To": ["Joints run from proximal to distal. Where does <", "> run to?"],
-    "Joint type": ["Joints are always of a certain type. What type does <", "> belong to?"],
-    "Alternative name": ["Many structures are known by multiple names. What is another name for the <", ">?"],
-    "Level": ["Organisms are organised along different levels of taxons. What level of taxon is <", ">?"],
-    "Gram": ["Bacteria may be classified along their gram staining. Is <", "> gram positive or negative?"],
-    "Shape": ["Bacteria all possess a certain shape. What shape does <", "> possess?"],
-    "Gender": ["Certain structures only occur in males or females. Whom does <", "> occur in?"],
-    "Subclass": ["Medication always belongs to a class. To what class does <", "> belong?"],
-    "Brands": ["Medication is produced by different brands. Of what medication is the brand <", "> an instance?"],
-    "Method": ["Medication may be taken in ways such as oral, intramuscular injection, IUD etc. With what method is <", "> taken?"],
-    "Subconditions": ["Diseases have subclasses. What are the subclasses of <", ">?"],
-    "Dutch name": ["Dutch exists. What is the name of <", "> in Dutch?"],
-    "Epidemiology": ["How much percentage of <", "> has <", ">?"],
-    "Signs": ["What disease is hallmarked by the following symptoms <", ">?"],
-    "Pathogen": ["Infectious diseases are caused by pathogens. By what pathogen is <", "> caused?"],
-    "Definition": ["Guess what disease is defined like <", ">?"],
-    "Complications": ["Of what conditions are <", "> known complications?"]
-};
+var question_array = [];
 
-let possible_questions = {};
+/* Defines the main page */
 
-let side_questions = {};
-
-let mnemonics = [];
-
-let repeat = false;
-
-let final_questions = {};
-let current_side_db = {};
-
-let current_database = ""
-let questions = [];
-
-let databases = {
-    "Pathology - Farmaco": {"Database": './data_pathology_farmaco.json'},
-    "Pathology - Heart": {"Database": './data_pathology_heart.json'},
-    "Pathology - Muscles": {"Database": './data_pathology_muskeloskeletal.json'},
-    "Pathology - Geriatrics": {"Database": './data_pathology_geriatrics.json'},
-    "Pathology - ENT": {"Database": './data_pathology_ENT.json', "Iterators": ["Division"], "Questions": ["Definition", "Signs", "Subconditions", "Complications"]},//"Epidemiology", "Alternative name", 
-    "Pathology - Ophthalmology": {"Database": './data_pathology_ophtha.json', "Iterators": ["Individual conditions", "Subtypes"], "Questions": ["Definition", "Signs", "Subconditions"]}, //"Epidemiology", "Alternative name"
-    "Pathology - Dermatology and Venereology": {"Database": './data_pathology_derm.json', "Iterators": ["Individual conditions", "Subtypes"], "Questions": ["Pathogen", "Signs", "Subconditions"]}, //"Epidemiology", "Alternative name", "Dutch name"
-    "Pharmacology - N": {"Database": './data_pharmacology_n.json', "Iterators": [], "Questions": ["Subclass", "Brands"]},
-    "Pharmacology - G": {"Database": './data_pharmacology_g.json', "Iterators": [], "Questions": ["Subclass", "Brands", "Alternative name", "Method"]},
-    "Pharmacology - J": {"Database": './data_pharmacology_j.json', "Iterators": [], "Questions": ["Subclass", "Brands", "Method"]},
-    "Skeletal System - Bones": {"Database": './data_anatomy_skeletal_bones.json', "Iterators": ["Division"], "Questions": ["Parts", "Alternative name"]},
-    "Circulatory System - Arteries": {"Database": './data_anatomy_circulatory_arteries.json', "Iterators": [], "Questions": ["Branches", "Alternative name", "Parts", "Gender", "Continues", "Branches at", "Branches to"]},
-    "Nervous System - Peripheral nerves": {"Database": './data_anatomy_nervous_peripheral_nerves.json', "Iterators": ["Division"], "Questions": ["Branches", "Continues", "Alternative name"]},
-    "Muscular System - Muscles": {"Database": './data_anatomy_muscular_muscles.json', "Iterators": [], "Questions": ["Division", "Origin", "Insertion"]},
-    "Skeletal System - Joints": {"Database": './data_anatomy_skeletal_joints.json', "Iterators": [], "Questions": ["Division", "From", "To", "Joint type"]},
-    "Pathogens - Bacteria": {"Database": './data_metamedica_pathogens_bacteria.json', "Iterators": [], "Questions": ["Division", "Level", "Gram", "Shape"]},
-    "Reproductive System - Female": {"Database": './data_anatomy_reproductive_female.json', "Iterators": [], "Questions": ["Division", "Nerve", "Artery", "Lymph"]}
-};
-
-/* The Set-up function
-
-- Takes and loads the main database
-- Takes and loads the side DBs
-- Calls all of the functions in the script
-
-*/ 
-
-let main_page = `
+var main_page = `
 
     <script type="text/javascript" src="tools_rehearser.js"></script>
     
@@ -114,24 +44,15 @@ function start() {
 
     document.getElementsByTagName("BODY")[0].innerHTML = main_page;
 
+    farmacoSetUp();
+
 }
 
-function setUp(){
-
-    openFullscreen();
-
-    for (var key in question_texts) {
-        possible_questions[key] = {};
-        side_questions[key] = {};
-    }
-
-    let subject_title = document.getElementById('true-title').innerText;
-    let side_db = {};
+function farmacoSetUp() {
 
     console.log("Welcome!");
-    console.log("");
 
-    current_database = databases[subject_title]["Database"];
+    current_database = "./data1.json";
 
     console.log("Fetching main DB at: " + current_database);
 
@@ -142,59 +63,14 @@ function setUp(){
     })
     .then(function(data){
 
-        if (Object.keys(data).includes("Name")) {
-            console.log("- > Accesing file: " + data.Name);
+        question_array = shuffle(data.Mnemonics)
 
-            iterators = databases[subject_title]["Iterators"];
-            questions = databases[subject_title]["Questions"];
+        setMnemonicQuestion();
 
-            createQuestions(data, iterators, questions, possible_questions);
-            chooseQuestions(questions);
-            setQuestion("Question 1");
-        } else if (Object.keys(data).includes("Mnemonics")){
-            console.log("Welcome to the mnemonics rehearser!");
-            setMnemonicQuestion(shuffle(data.Mnemonics));
-        }        
-    })
-    .then(function(){
-        for (let i = 0; i < Object.keys(databases).length; i++) {
-
-            /* console.log("Assessing database: " + Object.keys(databases)[i]); */ 
-    
-            if (Object.keys(databases)[i] === subject_title) {
-    
-                /* console.log("Already assessed: " + Object.keys(databases)[i] + " & " + subject_title); */
-    
-            } else {
-    
-                side_db = databases[Object.keys(databases)[i]]["Database"]
-    
-                console.log("Fetching side DB at: " + side_db);
-    
-                /* console.log(Object.keys(databases)[i] + " is found not to be the same as " + subject_title); */
-    
-                fetch(side_db)
-                .then(function(side_response){
-                    console.log("- > File found and accessed at " + side_db);
-                    return side_response.json();
-                })
-                .then(function(side_data){
-                    console.log("- > Accesing file: " + side_data.Name);
-                    createQuestions(side_data, databases[Object.keys(databases)[i]]["Iterators"], databases[Object.keys(databases)[i]]["Questions"], side_questions);
-                })
-    
-                console.log("- > Generated the following side database: ");
-                console.log(side_questions);
-                console.log("")
-    
-            }
-        }
     })
 
-    console.log("- > Generated the following main questions: ");
-    console.log(final_questions);
-    console.log(Object.keys(final_questions));
-    console.log("")
+    console.log("- > Generated the following questions: ");
+    console.log(question_array);
 
 }
 
@@ -215,21 +91,20 @@ function openFullscreen() {
 
 /* Load the database (for now still hardcoded) */
 
-function setMnemonicQuestion(database){
+function setMnemonicQuestion(){
+
+    
 
     console.log("- > Setting mnemonic question")
-    console.log(database)
 
-    mnemonics = database; 
-
-    nr_q = database.length
+    nr_q = question_array.length
     starting_point = Math.floor(Math.random() * nr_q);
 
     console.log("- > There are a total of " + nr_q + " questions.");
     console.log("- > We're starting at " + starting_point)
 
     document.getElementById('question-title').innerText = starting_point
-    document.getElementById('question-description').innerText = database[starting_point].Question
+    document.getElementById('question-description').innerText = question_array[starting_point].Question
     document.getElementById('remark-card').innerText = "Please enter the mnemonic phrase"
 
 };
