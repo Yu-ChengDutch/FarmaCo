@@ -63,7 +63,7 @@ function farmacoSetUp() {
     })
     .then(function(data){
 
-        question_array = shuffle(data.question_array)
+        question_array = shuffle(data.Mnemonic)
 
         setMnemonicQuestion();
 
