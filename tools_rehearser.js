@@ -4,17 +4,30 @@ var question_array = [];
 
 /* Defines the main page */
 
-var main_page = `
+var landing = `
+    <script type="text/javascript" src="tools_rehearser.js"></script>
+
+    <div class="chapter"><H1>Basics</H1></div>
+
+    <div style="display:block; text-align: center;" onclick="start()">
+        <div class="card" id="active">
+            <img src="./Images/Network.png" style="width:20vw;height:20vw;">
+        </div>
+
+        <H2> Orde </H2>
+
+    </div>
+
+    <div class="chapter" ><H1>Bijwerkingen</H1></div>   
+`
+
+var level1 = `
 
     <script type="text/javascript" src="tools_rehearser.js"></script>
     
-    <div class="title-card">
-        <h1 id="true-title">Pathology - Farmaco</h1>
-    </div>
-    
     <div class = "question-card">
 
-        <div class="question-title-card">
+        <div class="question-title-card" onClick="backToStart()">
 
             <h1 id="question-title">Question 1</h1>
             <p id ="question-description">What is the name of this disease?</p>
@@ -38,11 +51,17 @@ var main_page = `
 
 /* New start function */
 
+function backToStart() {
+    openFullscreen();
+
+    document.getElementsByTagName("BODY")[0].innerHTML = landing;
+}
+
 function start() {
 
     openFullscreen();
 
-    document.getElementsByTagName("BODY")[0].innerHTML = main_page;
+    document.getElementsByTagName("BODY")[0].innerHTML = level1;
 
     setEnter();
 
@@ -361,6 +380,8 @@ function resetButtons() {
     <input type="button" class="button" id ="check-button" value="Check" onclick="checkMnemonicAnswer()">
     
     `;
+
+    setEnter();
 
 }
 
