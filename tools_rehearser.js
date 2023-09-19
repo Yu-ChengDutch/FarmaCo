@@ -101,7 +101,7 @@ function buildLevel1() {
                     }
 
                     question_string = "Wat is de klasse van " + explorable_item.Onderverdeling[i].Naam;
-                    question_array.push({"Question": question_string, "Answer": class_name });
+                    question_array = question_array.push({"Question": question_string, "Answer": class_name });
 
                 }
 
