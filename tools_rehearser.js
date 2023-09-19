@@ -159,6 +159,9 @@ function setUp(){
 /* Set to full screen mode */
 
 function openFullscreen() {
+
+    var elem = document.documentElement;
+
     if (elem.requestFullscreen) {
       elem.requestFullscreen();
     } else if (elem.webkitRequestFullscreen) { /* Safari */
