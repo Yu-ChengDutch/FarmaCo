@@ -150,8 +150,10 @@ function prepareQuestions(data) {
 
                         question_string_inter = "Als we " + med_1 + " en " + med_2 + " tegelijk nemen, op welke interactie verhogen we dan het risico?";
                         
-                        temp_2_array.push({"Question": question_string_inter, "Answer": explorable_item.Interacties[i].Risico})
-                        temp_2_array.push({"Question": question_string_class, "Answer": class_1 });
+                        rand_pos = Math.floor(Math.random() * temp_2_array.length)
+
+                        temp_2_array.splice(rand_pos, 0, {"Question": question_string_inter, "Answer": explorable_item.Interacties[i].Risico})
+                        temp_2_array.splice(rand_pos + 1, 0, {"Question": question_string_class, "Answer": class_1 });
                         
                     } else {
 
