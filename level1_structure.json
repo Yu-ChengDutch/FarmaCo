@@ -8,7 +8,17 @@
                     "Naam": "Paracetamol"
                 },
                 {
-                    "Naam": "Prostaglandinesynthetaseremmers",
+                    "Naam": "NSAID's",
+                    "Interacties": [
+                        {
+                            "Andere medicatie": ["Coumarinederivaten", "Trombocytenaggregatieremmers", "Steroïden", "SSRI's"],
+                            "Risico": "GI-bloedingen"
+                        },
+                        {
+                            "Andere medicatie": ["RAS-remmers", "Diuretica"],
+                            "Risico": "Hart- en nierfalen"
+                        }
+                    ],
                     "Onderverdeling": [
                         {
                             "Naam": "Diclofenac"
@@ -26,6 +36,16 @@
                 },
                 {
                     "Naam": "Opiaatagonisten",
+                    "Interacties": [
+                        {
+                            "Andere medicatie": ["Anticholinergica", "Antidepressiva", "Diuretica", "Calciumantagonisten"],
+                            "Risico": "Obstipatie"
+                        },
+                        {
+                            "Andere medicatie": ["Benzodiazepines"],
+                            "Risico": "Ademdepressie"
+                        }
+                    ],
                     "Onderverdeling": [
                         {
                             "Naam": "Morfine"
@@ -51,6 +71,12 @@
             "Onderverdeling": [
                 {
                     "Naam": "Trombocytenaggregatieremmers",
+                    "Interacties": [
+                        {
+                            "Andere medicatie": ["Corticosteroïden", "NSAID's", "SSRI's"],
+                            "Risico": "Bloeding"
+                        }
+                    ],
                     "Onderverdeling": [
                         {
                             "Naam": "Acetylsalicylzuur"
@@ -65,6 +91,17 @@
                 },
                 {
                     "Naam": "Coumarinederivaten",
+                    "Interacties": [
+                        {
+                            "Andere medicatie": ["NSAID's", "Corticosteroïden"],
+                            "Risico": "GI-bloedingen"
+                        },
+                        {
+                            "Andere medicatie": ["Co-trimoxazol"],
+                            "Risico": "Bloedingen",
+                            "Mechanisme": ["CYP2C9 remming", "Verlenging INR"]
+                        }
+                    ],
                     "Onderverdeling": [
                         {
                             "Naam": "Acenocoumarol"
@@ -75,7 +112,7 @@
                     ]
                 },
                 {
-                    "Naam": "Heparinegroep",
+                    "Naam": "Heparinegroep",                    
                     "Onderverdeling": [
                         {
                             "Naam": "Heparine"
@@ -116,43 +153,82 @@
             "Naam": "Cardiovasculaire middelen",
             "Onderverdeling": [
                 {
-                    "Naam": "Thiazidediuretica",
-                    "Onderverdeling": [
+                    "Naam": "Diuretica",
+                    "Interacties": [
                         {
-                            "Naam": "Chloortalidon"
+                            "Andere medicatie": ["Cardiovasculaire middelen", "Opiaatagonisten", "Benzodiazepines"],
+                            "Risico": "Verhoogde valneiging"
                         },
                         {
-                            "Naam": "Hydrochloorthiazide"
-                        }
-                    ]
-                },
-                {
-                    "Naam": "Lisdiuretica",
-                    "Onderverdeling": [
-                        {
-                            "Naam": "Furosemide"
-                        }
-                    ]
-                },
-                {
-                    "Naam": "Kaliumsparende diuretica",
-                    "Onderverdeling": [
-                        {
-                            "Naam": "Spironolactone"
+                            "Andere medicatie": ["SSRI's"],
+                            "Risico": "Hyponatriëmie"
                         },
                         {
-                            "Naam": "Triamtereen"
+                            "Andere medicatie": ["NSAID's", "RAS-remmers"],
+                            "Risico": "Nierfalen"
+                        },
+                        {
+                            "Andere medicatie": ["NSAID's", "RAS-remmers"],
+                            "Risico": "Hyperkaliëmie"
+                        },
+                        {
+                            "Andere medicatie": ["NSAID's"],
+                            "Risico": "Verminderd diuretisch effect"
+                        }
+                    ],
+                    "Onderverdeling": [
+                        {
+                            "Naam": "Thiazidediuretica",
+                            "Onderverdeling": [
+                                {
+                                    "Naam": "Chloortalidon"
+                                },
+                                {
+                                    "Naam": "Hydrochloorthiazide"
+                                }
+                            ]
+                        },
+                        {
+                            "Naam": "Lisdiuretica",
+                            "Onderverdeling": [
+                                {
+                                    "Naam": "Furosemide"
+                                }
+                            ]
+                        },
+                        {
+                            "Naam": "Kaliumsparende diuretica",
+                            "Onderverdeling": [
+                                {
+                                    "Naam": "Spironolactone"
+                                },
+                                {
+                                    "Naam": "Triamtereen"
+                                }
+                            ]
                         }
                     ]
                 },
                 {
                     "Naam": "Beta-blokkers",
+                    "Interacties": [
+                        {
+                            "Andere medicatie": ["Calciumantagonisten"],
+                            "Risico": "Bradycardie"
+                        }                        
+                    ],
                     "Onderverdeling": [
                         {
                             "Naam": "Metoprolol"
                         },
                         {
-                            "Naam": "Sotalol"
+                            "Naam": "Sotalol",
+                            "Interacties": [
+                                {
+                                    "Andere medicatie": ["Thiazidediuretica", "Lisdiuretica", "NSAID's"],
+                                    "Risico": "Ritmestoornissen"
+                                }
+                            ]
                         },
                         {
                             "Naam": "Propanolol"
@@ -185,26 +261,59 @@
                     ]
                 },
                 {
-                    "Naam": "ACE-remmers",
-                    "Onderverdeling": [
+                    "Naam": "RAS-remmers",
+                    "Interacties": [
                         {
-                            "Naam": "Enalapril"
+                            "Andere medicatie": ["Diuretica", "NSAID's"],
+                            "Risico": "Nierfalen"
                         },
                         {
-                            "Naam": "Lisinopril"
+                            "Andere medicatie": ["Kaliumsparende diuretica"],
+                            "Risico": "Hyperkaliëmie"
+                        },
+                        {
+                            "Andere medicatie": ["Diuretica"],
+                            "Risico": "Hypotensie"
+                        },
+                        {
+                            "Andere medicatie": ["Cardiovasculaire middelen", "Opiaatagonisten", "Benzodiazepines"],
+                            "Risico": "Verhoogde valneiging"
                         }
-                    ]
-                },
-                {
-                    "Naam": "ARBs",
+                    ],
                     "Onderverdeling": [
                         {
-                            "Naam": "Losartan"
+                            "Naam": "ACE-remmers",
+                            "Onderverdeling": [
+                                {
+                                    "Naam": "Enalapril"
+                                },
+                                {
+                                    "Naam": "Lisinopril"
+                                }
+                            ]
+                        },
+                        {
+                            "Naam": "ARBs",
+                            "Onderverdeling": [
+                                {
+                                    "Naam": "Losartan"
+                                }
+                            ]
                         }
                     ]
                 },
                 {
                     "Naam": "Hartglycosiden",
+                    "Interacties": [
+                        {
+                            "Andere medicatie": ["Lisdiuretica", "Thiazidediuretica", "NSAID's"],
+                            "Risico": "Ritmestoornissen"
+                        },
+                        {
+                            "Andere medicatie": ["Verapamil"],
+                            "Risico": "Bradycardie"
+                        }
+                    ],
                     "Onderverdeling": [
                         {
                             "Naam": "Digoxine"
@@ -247,6 +356,12 @@
                 },
                 {
                     "Naam": "SU-derivaten",
+                    "Interacties": [
+                        {
+                            "Andere medicatie": ["Bèta-blokkers"],
+                            "Risico": "Hypoglykemie"
+                        }
+                    ],
                     "Onderverdeling": [
                         {
                             "Naam": "Tolbutamide"
@@ -261,6 +376,12 @@
                 },
                 {
                     "Naam": "Insulinen",
+                    "Interacties": [
+                        {
+                            "Andere medicatie": ["Bèta-blokkers"],
+                            "Risico": "Hypoglykemie"
+                        }
+                    ],
                     "Onderverdeling": [
                         {
                             "Naam": "Humuline regular"
@@ -279,7 +400,13 @@
             "Naam": "Antidepressiva",
             "Onderverdeling": [
                 {
-                    "Naam": "Tricyclische antidepressiva",
+                    "Naam": "TCA's",
+                    "Interacties": [
+                        {
+                            "Andere medicatie": ["Antihypertensiva", "Diuretica"],
+                            "Risico": "Orthostase"
+                        }
+                    ],
                     "Onderverdeling": [
                         {
                             "Naam": "Amitriptyline"
@@ -291,6 +418,20 @@
                 },
                 {
                     "Naam": "SSRI's",
+                    "Interacties": [
+                        {
+                            "Andere medicatie": ["Thiazidediuretica"],
+                            "Risico": "Hyponatriëmie"
+                        },
+                        {
+                            "Andere medicatie": ["NSAID's"],
+                            "Risico": "Bloedingen"
+                        },
+                        {
+                            "Andere medicatie": ["Lithium", "Tramadol", "Triptanen", "Tryptofaan", "Sint-Janskruid"],
+                            "Risico": "Serotonerg syndroom"
+                        }
+                    ],
                     "Onderverdeling": [
                         {
                             "Naam": "Fluoxetine"
@@ -302,11 +443,30 @@
                             "Naam": "Citalopram"
                         }
                     ]
+                },
+                {
+                    "Naam": "Lithium",
+                    "Interacties": [
+                        {
+                            "Andere medicatie": ["Diuretica", "NSAID's", "RAS-remmers"],
+                            "Risico": "Hogere lithiumspiegel"
+                        }
+                    ]
                 }
             ]
         },
         {
             "Naam": "Benzodiazepines",
+            "Interacties": [
+                {
+                    "Andere medicatie": ["Cardiovasculaire middelen", "Alcohol", "Opiaatagonisten"],
+                    "Risico": "Verhoogde valneiging"
+                },
+                {
+                    "Andere medicatie": ["Opiaatagonisten", "Alcohol"],
+                    "Risico": "Ademdepressie"
+                }
+            ],
             "Onderverdeling": [
                 {
                     "Naam": "Diazepam"
@@ -340,6 +500,12 @@
         },
         {
             "Naam": "Antibiotica",
+            "Interacties": [
+                {
+                    "Andere medicatie": ["Coumarinederivaten"],
+                    "Risico": "Verhoogde coumarinespiegel"
+                }
+            ],
             "Onderverdeling": [
                 {
                     "Naam": "Beta-lactam antibiotica",
@@ -369,7 +535,13 @@
                     ]
                 },
                 {
-                    "Naam": "Tetracyclines",
+                    "Naam": "Tetracyclinen",
+                    "Interacties": [
+                        {
+                            "Andere medicatie": ["Aluminium", "Calcium", "IJzer", "Magnesium"],
+                            "Risico": "Verminderde absorptie tetracyclinen"
+                        }
+                    ],
                     "Onderverdeling": [
                         {
                             "Naam": "Doxycycline"
@@ -386,6 +558,12 @@
                 },
                 {
                     "Naam": "Macroliden",
+                    "Interacties": [
+                        {
+                            "Andere medicatie": ["Sotalol", "TCA's", "SSRI's"],
+                            "Risico": "Torsade De POintes"
+                        }
+                    ],
                     "Onderverdeling": [
                         {
                             "Naam": "Azitromycine"
@@ -401,7 +579,22 @@
                     ]
                 },
                 {
-                    "Naam": "Trimethoprim/co-trimoxazol"
+                    "Naam": "Trimethoprim/co-trimoxazol",
+                    "Interacties": [
+                        {
+                            "Andere medicatie": ["Methotrexaat"],
+                            "Risico": "Versterkte werking methotrexaat"
+                        },
+                        {
+                            "Andere medicatie": ["Coumarinederivaten"],
+                            "Risico": "Verhoogde coumarinespiegel"
+                        }
+                    ],
+                    "Onderverdeling": [
+                        {
+                            "Naam": "Co-trimoxazol"
+                        }
+                    ]
                 },
                 {
                     "Naam": "Nitrofurantoïne"
