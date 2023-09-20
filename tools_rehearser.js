@@ -124,10 +124,10 @@ function prepareQuestions(data) {
 
         if (Object.keys(explorable_item).includes("Interacties")) {
 
-            if (Object.keys(explorable_item).includes("Onderverdeling")) {
+            if (Object.keys(explorable_item).includes("Onderverdeling") && explorable_item.Onderverdeling.length > 1) {
 
                 class_1 = explorable_item.Naam;
-                med_1 = shuffle(explorable_item.Onderverdeling)[Math.floor(Math.random() * explorable_item.Onderverdeling.length)].Naam
+                med_1 = shuffle(explorable_item.Onderverdeling)
 
             } else {
 
@@ -147,6 +147,9 @@ function prepareQuestions(data) {
                     temp_2_array.push({"Question": question_string, "Answer": explorable_item.Interacties[i].Risico})
 
                     if (class_1 != "") {
+
+                        med_1 = med_1[Math.floor(Math.random() * med_1.length)];
+
                         question_string = "Wat is de klasse van " + med_1;
                         temp_2_array.push({"Question": question_string, "Answer": class_1 });
                     }
