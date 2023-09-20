@@ -11,11 +11,11 @@
                     "Naam": "NSAID's",
                     "Interacties": [
                         {
-                            "Andere medicatie": ["Coumarinederivaten", "Trombocytenaggregatieremmers", "Steroïden", "SSRI's"],
+                            "Interactant": ["Coumarinederivaten", "Trombocytenaggregatieremmers", "Steroïden", "SSRI's"],
                             "Risico": "GI-bloedingen"
                         },
                         {
-                            "Andere medicatie": ["RAS-remmers", "Diuretica"],
+                            "Interactant": ["RAS-remmers", "Diuretica"],
                             "Risico": "Hart- en nierfalen"
                         }
                     ],
@@ -38,11 +38,11 @@
                     "Naam": "Opiaatagonisten",
                     "Interacties": [
                         {
-                            "Andere medicatie": ["Anticholinergica", "Antidepressiva", "Diuretica", "Calciumantagonisten"],
+                            "Interactant": ["Anticholinergica", "Antidepressiva", "Diuretica", "Calciumantagonisten"],
                             "Risico": "Obstipatie"
                         },
                         {
-                            "Andere medicatie": ["Benzodiazepines"],
+                            "Interactant": ["Benzodiazepines"],
                             "Risico": "Ademdepressie"
                         }
                     ],
@@ -73,7 +73,7 @@
                     "Naam": "Trombocytenaggregatieremmers",
                     "Interacties": [
                         {
-                            "Andere medicatie": ["Corticosteroïden", "NSAID's", "SSRI's"],
+                            "Interactant": ["Corticosteroïden", "NSAID's", "SSRI's"],
                             "Risico": "Bloeding"
                         }
                     ],
@@ -93,11 +93,11 @@
                     "Naam": "Coumarinederivaten",
                     "Interacties": [
                         {
-                            "Andere medicatie": ["NSAID's", "Corticosteroïden"],
+                            "Interactant": ["NSAID's", "Corticosteroïden"],
                             "Risico": "GI-bloedingen"
                         },
                         {
-                            "Andere medicatie": ["Co-trimoxazol"],
+                            "Interactant": ["Co-trimoxazol"],
                             "Risico": "Bloedingen",
                             "Mechanisme": ["CYP2C9 remming", "Verlenging INR"]
                         }
@@ -156,23 +156,23 @@
                     "Naam": "Diuretica",
                     "Interacties": [
                         {
-                            "Andere medicatie": ["Cardiovasculaire middelen", "Opiaatagonisten", "Benzodiazepines"],
+                            "Interactant": ["Cardiovasculaire middelen", "Opiaatagonisten", "Benzodiazepines"],
                             "Risico": "Verhoogde valneiging"
                         },
                         {
-                            "Andere medicatie": ["SSRI's"],
+                            "Interactant": ["SSRI's"],
                             "Risico": "Hyponatriëmie"
                         },
                         {
-                            "Andere medicatie": ["NSAID's", "RAS-remmers"],
+                            "Interactant": ["NSAID's", "RAS-remmers"],
                             "Risico": "Nierfalen"
                         },
                         {
-                            "Andere medicatie": ["NSAID's", "RAS-remmers"],
+                            "Interactant": ["NSAID's", "RAS-remmers"],
                             "Risico": "Hyperkaliëmie"
                         },
                         {
-                            "Andere medicatie": ["NSAID's"],
+                            "Interactant": ["NSAID's"],
                             "Risico": "Verminderd diuretisch effect"
                         }
                     ],
@@ -213,7 +213,7 @@
                     "Naam": "Beta-blokkers",
                     "Interacties": [
                         {
-                            "Andere medicatie": ["Calciumantagonisten"],
+                            "Interactant": ["Calciumantagonisten"],
                             "Risico": "Bradycardie"
                         }                        
                     ],
@@ -225,7 +225,7 @@
                             "Naam": "Sotalol",
                             "Interacties": [
                                 {
-                                    "Andere medicatie": ["Thiazidediuretica", "Lisdiuretica", "NSAID's"],
+                                    "Interactant": ["Thiazidediuretica", "Lisdiuretica", "NSAID's"],
                                     "Risico": "Ritmestoornissen"
                                 }
                             ]
@@ -264,19 +264,19 @@
                     "Naam": "RAS-remmers",
                     "Interacties": [
                         {
-                            "Andere medicatie": ["Diuretica", "NSAID's"],
+                            "Interactant": ["Diuretica", "NSAID's"],
                             "Risico": "Nierfalen"
                         },
                         {
-                            "Andere medicatie": ["Kaliumsparende diuretica"],
+                            "Interactant": ["Kaliumsparende diuretica"],
                             "Risico": "Hyperkaliëmie"
                         },
                         {
-                            "Andere medicatie": ["Diuretica"],
+                            "Interactant": ["Diuretica"],
                             "Risico": "Hypotensie"
                         },
                         {
-                            "Andere medicatie": ["Cardiovasculaire middelen", "Opiaatagonisten", "Benzodiazepines"],
+                            "Interactant": ["Cardiovasculaire middelen", "Opiaatagonisten", "Benzodiazepines"],
                             "Risico": "Verhoogde valneiging"
                         }
                     ],
@@ -306,11 +306,11 @@
                     "Naam": "Hartglycosiden",
                     "Interacties": [
                         {
-                            "Andere medicatie": ["Lisdiuretica", "Thiazidediuretica", "NSAID's"],
+                            "Interactant": ["Lisdiuretica", "Thiazidediuretica", "NSAID's"],
                             "Risico": "Ritmestoornissen"
                         },
                         {
-                            "Andere medicatie": ["Verapamil"],
+                            "Interactant": ["Verapamil"],
                             "Risico": "Bradycardie"
                         }
                     ],
@@ -358,7 +358,7 @@
                     "Naam": "SU-derivaten",
                     "Interacties": [
                         {
-                            "Andere medicatie": ["Bèta-blokkers"],
+                            "Interactant": ["Bèta-blokkers"],
                             "Risico": "Hypoglykemie"
                         }
                     ],
@@ -378,7 +378,7 @@
                     "Naam": "Insulinen",
                     "Interacties": [
                         {
-                            "Andere medicatie": ["Bèta-blokkers"],
+                            "Interactant": ["Bèta-blokkers"],
                             "Risico": "Hypoglykemie"
                         }
                     ],
@@ -403,7 +403,7 @@
                     "Naam": "TCA's",
                     "Interacties": [
                         {
-                            "Andere medicatie": ["Antihypertensiva", "Diuretica"],
+                            "Interactant": ["Antihypertensiva", "Diuretica"],
                             "Risico": "Orthostase"
                         }
                     ],
@@ -420,15 +420,15 @@
                     "Naam": "SSRI's",
                     "Interacties": [
                         {
-                            "Andere medicatie": ["Thiazidediuretica"],
+                            "Interactant": ["Thiazidediuretica"],
                             "Risico": "Hyponatriëmie"
                         },
                         {
-                            "Andere medicatie": ["NSAID's"],
+                            "Interactant": ["NSAID's"],
                             "Risico": "Bloedingen"
                         },
                         {
-                            "Andere medicatie": ["Lithium", "Tramadol", "Triptanen", "Tryptofaan", "Sint-Janskruid"],
+                            "Interactant": ["Lithium", "Tramadol", "Triptanen", "Tryptofaan", "Sint-Janskruid"],
                             "Risico": "Serotonerg syndroom"
                         }
                     ],
@@ -448,7 +448,7 @@
                     "Naam": "Lithium",
                     "Interacties": [
                         {
-                            "Andere medicatie": ["Diuretica", "NSAID's", "RAS-remmers"],
+                            "Interactant": ["Diuretica", "NSAID's", "RAS-remmers"],
                             "Risico": "Hogere lithiumspiegel"
                         }
                     ]
@@ -459,11 +459,11 @@
             "Naam": "Benzodiazepines",
             "Interacties": [
                 {
-                    "Andere medicatie": ["Cardiovasculaire middelen", "Alcohol", "Opiaatagonisten"],
+                    "Interactant": ["Cardiovasculaire middelen", "Alcohol", "Opiaatagonisten"],
                     "Risico": "Verhoogde valneiging"
                 },
                 {
-                    "Andere medicatie": ["Opiaatagonisten", "Alcohol"],
+                    "Interactant": ["Opiaatagonisten", "Alcohol"],
                     "Risico": "Ademdepressie"
                 }
             ],
@@ -502,7 +502,7 @@
             "Naam": "Antibiotica",
             "Interacties": [
                 {
-                    "Andere medicatie": ["Coumarinederivaten"],
+                    "Interactant": ["Coumarinederivaten"],
                     "Risico": "Verhoogde coumarinespiegel"
                 }
             ],
@@ -538,7 +538,7 @@
                     "Naam": "Tetracyclinen",
                     "Interacties": [
                         {
-                            "Andere medicatie": ["Aluminium", "Calcium", "IJzer", "Magnesium"],
+                            "Interactant": ["Aluminium", "Calcium", "IJzer", "Magnesium"],
                             "Risico": "Verminderde absorptie tetracyclinen"
                         }
                     ],
@@ -560,7 +560,7 @@
                     "Naam": "Macroliden",
                     "Interacties": [
                         {
-                            "Andere medicatie": ["Sotalol", "TCA's", "SSRI's"],
+                            "Interactant": ["Sotalol", "TCA's", "SSRI's"],
                             "Risico": "Torsade De POintes"
                         }
                     ],
@@ -582,11 +582,11 @@
                     "Naam": "Trimethoprim/co-trimoxazol",
                     "Interacties": [
                         {
-                            "Andere medicatie": ["Methotrexaat"],
+                            "Interactant": ["Methotrexaat"],
                             "Risico": "Versterkte werking methotrexaat"
                         },
                         {
-                            "Andere medicatie": ["Coumarinederivaten"],
+                            "Interactant": ["Coumarinederivaten"],
                             "Risico": "Verhoogde coumarinespiegel"
                         }
                     ],

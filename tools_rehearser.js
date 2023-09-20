@@ -2,6 +2,9 @@
 
 var question_array = [];
 
+var level1_question_array = [];
+var level2_question_array = [];
+
 /* Defines the main page */
 
 var landing = `
@@ -69,10 +72,11 @@ function start() {
 
 }
 
-function buildLevel1() {
+function prepareQuestions() {
+
     console.log("Welcome!");
 
-    current_database = "./level1_structure.json";
+    current_database = "./med_data.json";
 
     console.log("Fetching main DB at: " + current_database);
 
@@ -84,39 +88,72 @@ function buildLevel1() {
     })
     .then(function(data){
 
-        explorable_array = shuffle(data.Onderverdeling);
-        temp_array = [];
-
-        while (explorable_array.length > 0) {
-
-            explorable_item = explorable_array.pop();
-
-            if (Object.keys(explorable_item).includes("Onderverdeling")) {
-
-                class_name = explorable_item.Naam;
-
-                for (var i = 0; i < explorable_item.Onderverdeling.length; i++) {
-
-                    if (Object.keys(explorable_item.Onderverdeling[i]).includes("Onderverdeling")) {
-                        explorable_array.push(explorable_item.Onderverdeling[i])
-                    }
-
-                    question_string = "Wat is de klasse van " + explorable_item.Onderverdeling[i].Naam;
-                    temp_array.push({"Question": question_string, "Answer": class_name });
-                    
-                }
-
-            }
-
-        };
-
-        question_array = shuffle(temp_array);
-
-        console.log(question_array);
+        prepareQuestions(data);
 
         setMnemonicQuestion();
 
     })        
+
+}
+
+function prepareQuestions(data) {
+
+    console.log("- > Preparing questions");
+
+    explorable_array = shuffle(data.Onderverdeling);
+    temp_1_array = [];
+    temp_2_array = [];
+
+    while (explorable_array.length > 0) {
+
+        explorable_item = explorable_array.pop();
+
+        if (Object.keys(explorable_item).includes("Interacties")) {
+
+            var med_1 = explorable_item.Naam;
+
+            for (var i = 0; i < explorable_item.Interacties.length; i++) {
+
+                for (var j = 0; j < explorable_item.Interacties[i].Interactant.length; j++) {
+
+                    var med_2 = explorable_item.Interacties[i].Interactant[j]
+
+                    question_string = "Als we " + med_1 + " en " + med_2 + " tegelijk nemen, op welke interactie verhogen we dan het risico?";
+
+                    temp_2_array.push({"Question": question_string, "Answer": explorable_item.Interacties[i].Risico[j] })
+
+                };
+
+            };
+
+        };
+
+        if (Object.keys(explorable_item).includes("Onderverdeling")) {
+
+            var class_name = explorable_item.Naam;
+
+            for (var i = 0; i < explorable_item.Onderverdeling.length; i++) {
+
+                if (Object.keys(explorable_item.Onderverdeling[i]).includes("Onderverdeling") || Object.keys(explorable_item.Onderverdeling[i]).includes("Interacties")) {
+                    explorable_array.push(explorable_item.Onderverdeling[i])
+                };
+
+                question_string = "Wat is de klasse van " + explorable_item.Onderverdeling[i].Naam;
+                temp_1_array.push({"Question": question_string, "Answer": class_name });
+                
+            };
+
+        };
+
+    };
+
+    level1_question_array = shuffle(temp_2_array);
+    level2_question_array = shuffle(temp_1_array);
+
+    console.log("- -> Prepared level 1 questions")
+    console.log(level1_question_array);
+    console.log("- -> Prepared level 2 questions")
+    console.log(level2_question_array);
 
 }
 
