@@ -60,7 +60,7 @@ function backToStart() {
     document.getElementsByTagName("BODY")[0].innerHTML = landing;
 }
 
-function start() {
+function startLevel1() {
 
     openFullscreen();
 
@@ -68,7 +68,9 @@ function start() {
 
     setEnter();
 
-    farmacoSetUp();   
+    question_array = level1_question_array;
+
+    setMnemonicQuestion();   
 
 }
 
@@ -89,8 +91,6 @@ function farmacoSetUp() {
     .then(function(data){
 
         prepareQuestions(data)
-
-        setMnemonicQuestion();
 
     })
 
@@ -120,7 +120,7 @@ function prepareQuestions(data) {
 
                     question_string = "Als we " + med_1 + " en " + med_2 + " tegelijk nemen, op welke interactie verhogen we dan het risico?";
 
-                    temp_2_array.push({"Question": question_string, "Answer": explorable_item.Interacties[i].Risico[j] })
+                    temp_2_array.push({"Question": question_string, "Answer": explorable_item.Interacties[i].Risico})
 
                 };
 
@@ -147,8 +147,8 @@ function prepareQuestions(data) {
 
     };
 
-    level1_question_array = shuffle(temp_2_array);
-    level2_question_array = shuffle(temp_1_array);
+    level1_question_array = shuffle(temp_1_array);
+    level2_question_array = shuffle(temp_2_array);
 
     console.log("- -> Prepared level 1 questions")
     console.log(level1_question_array);
