@@ -127,7 +127,7 @@ function prepareQuestions(data) {
             if (Object.keys(explorable_item).includes("Onderverdeling") && explorable_item.Onderverdeling.length > 1) {
 
                 class_1 = explorable_item.Naam;
-                med_1 = shuffle(explorable_item.Onderverdeling)
+                med_1 = explorable_item.Onderverdeling
 
             } else {
 
