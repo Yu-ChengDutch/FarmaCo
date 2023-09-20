@@ -127,7 +127,7 @@ function prepareQuestions(data) {
             if (Object.keys(explorable_item).includes("Onderverdeling") && explorable_item.Onderverdeling.length > 1) {
 
                 class_1 = explorable_item.Naam;
-                med_1 = explorable_item.Onderverdeling
+                original_med_1 = explorable_item.Onderverdeling
 
             } else {
 
@@ -150,7 +150,7 @@ function prepareQuestions(data) {
 
                         console.log(med_1);
 
-                        med_1 = med_1[Math.floor(Math.random() * med_1.length)];
+                        med_1 = original_med_1[Math.floor(Math.random() * original_med_1.length)];
 
                         question_string = "Wat is de klasse van " + med_1;
                         temp_2_array.push({"Question": question_string, "Answer": class_1 });
