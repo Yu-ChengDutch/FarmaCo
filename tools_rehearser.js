@@ -74,6 +74,20 @@ function startLevel1() {
 
 }
 
+function startLevel2() {
+
+    openFullscreen();
+
+    document.getElementsByTagName("BODY")[0].innerHTML = level1;
+
+    setEnter();
+
+    question_array = level2_question_array;
+
+    setMnemonicQuestion();   
+
+}
+
 function farmacoSetUp() {
 
     console.log("Welcome!");
