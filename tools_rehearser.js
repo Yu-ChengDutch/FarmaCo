@@ -68,15 +68,15 @@ function start() {
 
     setEnter();
 
-    buildLevel1();   
+    farmacoSetUp();   
 
 }
 
-function prepareQuestions() {
+function farmacoSetUp() {
 
     console.log("Welcome!");
 
-    current_database = "./med_data.json";
+    current_database = "./data1.json";
 
     console.log("Fetching main DB at: " + current_database);
 
@@ -88,11 +88,14 @@ function prepareQuestions() {
     })
     .then(function(data){
 
-        prepareQuestions(data);
+        prepareQuestions(data)
 
         setMnemonicQuestion();
 
-    })        
+    })
+
+    console.log("- > Generated the following questions: ");
+    console.log(question_array);
 
 }
 
@@ -170,33 +173,6 @@ function setEnter() {
         checkMnemonicAnswer();
     }
     });
-
-}
-
-function farmacoSetUp() {
-
-    console.log("Welcome!");
-
-    current_database = "./data1.json";
-
-    console.log("Fetching main DB at: " + current_database);
-
-    fetch(current_database)
-
-    .then(function(response){
-        console.log("- > File found and accessed at " + current_database);
-        return response.json();
-    })
-    .then(function(data){
-
-        question_array = shuffle(data.Mnemonics)
-
-        setMnemonicQuestion();
-
-    })
-
-    console.log("- > Generated the following questions: ");
-    console.log(question_array);
 
 }
 
