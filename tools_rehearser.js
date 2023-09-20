@@ -148,6 +148,8 @@ function prepareQuestions(data) {
 
                     if (class_1 != "") {
 
+                        console.log(med_1);
+
                         med_1 = med_1[Math.floor(Math.random() * med_1.length)];
 
                         question_string = "Wat is de klasse van " + med_1;
