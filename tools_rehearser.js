@@ -76,7 +76,7 @@ function farmacoSetUp() {
 
     console.log("Welcome!");
 
-    current_database = "./data1.json";
+    current_database = "./med_data.json";
 
     console.log("Fetching main DB at: " + current_database);
 
@@ -93,9 +93,6 @@ function farmacoSetUp() {
         setMnemonicQuestion();
 
     })
-
-    console.log("- > Generated the following questions: ");
-    console.log(question_array);
 
 }
 
