@@ -142,17 +142,28 @@ function prepareQuestions(data) {
 
                     var med_2 = explorable_item.Interacties[i].Interactant[j]
 
-                    question_string = "Als we " + med_1 + " en " + med_2 + " tegelijk nemen, op welke interactie verhogen we dan het risico?";
-
-                    temp_2_array.push({"Question": question_string, "Answer": explorable_item.Interacties[i].Risico})
-
                     if (class_1 != "") {
 
                         med_1 = original_med_1[Math.floor(Math.random() * original_med_1.length)];
 
                         question_string = "Wat is de klasse van " + med_1;
+
+                        question_string = "Als we " + med_1 + " en " + med_2 + " tegelijk nemen, op welke interactie verhogen we dan het risico?";
+                        temp_2_array.push({"Question": question_string, "Answer": explorable_item.Interacties[i].Risico})
                         temp_2_array.push({"Question": question_string, "Answer": class_1 });
+                        
+                    } else {
+
+                        question_string = "Als we " + med_1 + " en " + med_2 + " tegelijk nemen, op welke interactie verhogen we dan het risico?";
+                        temp_2_array.push({"Question": question_string, "Answer": explorable_item.Interacties[i].Risico})
+
                     }
+
+                    
+
+                    
+
+                    
 
                 };
 
