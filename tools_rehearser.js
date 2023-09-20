@@ -124,7 +124,17 @@ function prepareQuestions(data) {
 
         if (Object.keys(explorable_item).includes("Interacties")) {
 
-            var med_1 = explorable_item.Naam;
+            if (Object.keys(explorable_item.includes("Onderverdeling"))) {
+
+                class_1 = explorable_item.Naam;
+                med_1 = shuffle(explorable_item.Onderverdeling)[0].Naam
+
+            } else {
+
+                med_1 = explorable_item.Naam;
+                class_1 = "";
+
+            }
 
             for (var i = 0; i < explorable_item.Interacties.length; i++) {
 
@@ -135,6 +145,11 @@ function prepareQuestions(data) {
                     question_string = "Als we " + med_1 + " en " + med_2 + " tegelijk nemen, op welke interactie verhogen we dan het risico?";
 
                     temp_2_array.push({"Question": question_string, "Answer": explorable_item.Interacties[i].Risico})
+
+                    if (class_1 != "") {
+                        question_string = "Wat is de klasse van " + med_1;
+                        temp_2_array.push({"Question": question_string, "Answer": class_1 });
+                    }
 
                 };
 
@@ -162,7 +177,7 @@ function prepareQuestions(data) {
     };
 
     level1_question_array = shuffle(temp_1_array);
-    level2_question_array = shuffle(temp_2_array);
+    level2_question_array = temp_2_array;
 
     console.log("- -> Prepared level 1 questions")
     console.log(level1_question_array);
