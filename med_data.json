@@ -5,10 +5,34 @@
             "Naam": "Pijnmedicatie",
             "Onderverdeling": [
                 {
-                    "Naam": "Paracetamol"
+                    "Naam": "Paracetamol",
+                    "Bijwerkingen": [
+                        {
+                            "Bijwerking": "Leverbeschadiging",
+                            "Risicofactoren": ["Pre-existente leverbeschadiging", "Alcoholisme", "Slechte voedingstoestand"],
+                            "Dosis": [">", "150", "mg/kg/dag"]
+                        }
+                    ]
                 },
                 {
                     "Naam": "NSAID's",
+                    "Bijwerkingen": [
+                        {
+                            "Bijwerking": "Ulcus pepticum",
+                            "Risicofactoren": ["Ulcus is de voorgeschiedenis", "Reumatoïde artritis", "Hartfalen", "Diabetes Mellitus"]
+                        },
+                        {
+                            "Bijwerking": "Nierfalen",
+                            "Risicofactoren": ["Hartfalen", "Dehydratie", "Sepsis", "Pre-existent nierfalen"]
+                        },
+                        {
+                            "Bijwerking": "Trombocytopathie"
+                        },
+                        {
+                            "Bijwerking": "Verergering van hartfalen",
+                            "Mechanisme": "Water- en zoutretentie"
+                        }
+                    ],
                     "Interacties": [
                         {
                             "Interactant": ["Coumarinederivaten", "Trombocytenaggregatieremmers", "Steroïden", "SSRI's"],
@@ -36,6 +60,19 @@
                 },
                 {
                     "Naam": "Opiaatagonisten",
+                    "Bijwerkingen": [
+                        {
+                            "Bijwerking": "Afhankelijkeheid",
+                            "Risicofactoren": ["Middelenmisbruik in de voorgeschiedenis", "Gebruik van snelwerkende opiaten"]
+                        },
+                        {
+                            "Bijwerking": "Obstipatie"
+                        },
+                        {
+                            "Bijwerking": "Ademdepressie",
+                            "Risicofactoren": ["COPD"]
+                        }
+                    ],
                     "Interacties": [
                         {
                             "Interactant": ["Anticholinergica", "Antidepressiva", "Diuretica", "Calciumantagonisten"],
@@ -54,7 +91,18 @@
                             "Naam": "Fentanyl"
                         },
                         {
-                            "Naam": "Tramadol"
+                            "Naam": "Tramadol",
+                            "Bijwerkingen": [
+                                {
+                                    "Bijwerking": "Duizeligheid"
+                                },
+                                {
+                                    "Bijwerking": "Misselijkheid"
+                                },
+                                {
+                                    "Bijwerking": "Delier"
+                                }
+                            ]
                         },
                         {
                             "Naam": "Oxycodon"
@@ -68,6 +116,13 @@
         },
         {
             "Naam": "Antistolling",
+            "Bijwerkingen": [
+                {
+                    "Bijwerking": "Verhoogd bloedingsrisico",
+                    "Risicofactoren": ["Hoge leeftijd"],
+                    "Dosis": [">", "150", "mg/kg/dag"]
+                }
+            ],
             "Onderverdeling": [
                 {
                     "Naam": "Trombocytenaggregatieremmers",
@@ -91,6 +146,13 @@
                 },
                 {
                     "Naam": "Coumarinederivaten",
+                    "Bijwerkingen": [
+                        {
+                            "Bijwerking": "Verhoogd bloedingsrisico",
+                            "Risicofactoren": ["Therapieontrouw", "Alcohol", "Koorts"],
+                            "Dosis": [">", "150", "mg/kg/dag"]
+                        }
+                    ],
                     "Interacties": [
                         {
                             "Interactant": ["NSAID's", "Corticosteroïden"],
@@ -112,13 +174,41 @@
                     ]
                 },
                 {
-                    "Naam": "Heparinegroep",                    
+                    "Naam": "Heparinegroep", 
+                    "Bijwerkingen": [
+                        {
+                            "Bijwerking": "Verhoogd bloedingsrisico"
+                        }
+                    ],
+                    "Interacties": [
+                        {
+                            "Interactant": ["Corticosteroïden", "NSAID's"],
+                            "Risico": "Verhoogd bloedingsrisico"
+                        }
+                    ],                   
                     "Onderverdeling": [
                         {
                             "Naam": "Heparine"
                         },
                         {
-                            "Naam": "Nadroparine"
+                            "Naam": "LMWH's",
+                            "Bijwerkingen": [
+                                {
+                                    "Bijwerking": "Verhoogde LMWH-spiegel",
+                                    "Risicofactoren": ["Nierinsufficiëntie"]
+                                }
+                            ],
+                            "Onderverdeling": [
+                                {
+                                    "Naam": "Nadroparine"
+                                },
+                                {
+                                    "Naam": "Fraxiparine"
+                                },
+                                {
+                                    "Naam": "Enoxaparine"
+                                }
+                            ]
                         }
                     ]
                 },
@@ -134,17 +224,27 @@
                     "Naam": "DOAC's",
                     "Onderverdeling": [
                         {
-                            "Naam": "Dabigatran"
+                            "Naam": "Factor II-remmers",
+                            "Onderverdeling": [
+                                {
+                                    "Naam": "Dabigatran"
+                                }
+                            ]
                         },
                         {
-                            "Naam": "Apixaban"
-                        },
-                        {
-                            "Naam": "Rivaroxaban"
-                        },
-                        {
-                            "Naam": "Edoxaban"
-                        }
+                            "Naam": "Factor Xa-remmers",
+                            "Onderverdeling": [
+                                {
+                                    "Naam": "Apixaban"
+                                },
+                                {
+                                    "Naam": "Rivaroxaban"
+                                },
+                                {
+                                    "Naam": "Edoxaban"
+                                }
+                            ]
+                        }                        
                     ]
                 }                
             ]
@@ -495,6 +595,12 @@
                             "Naam": "Naloxon"
                         }
                     ]
+                },
+                {
+                    "Naam": "N-acetyl-cysteïne"
+                },
+                {
+                    "Naam": "Vierfactoren concentraat"
                 }
             ]
         },
