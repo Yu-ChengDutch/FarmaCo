@@ -146,7 +146,7 @@ function prepareQuestions(data) {
 
                         med_1 = original_med_1[Math.floor(Math.random() * original_med_1.length)].Naam;
 
-                        question_string_class = "Wat is de klasse van " + med_1;
+                        question_string_class = "Dit geldt niet sec voor " + med_1 + ", maar voor de gehele klassie. Wat is de klasse van " + med_1 + "?";
 
                         question_string_inter = "Als we " + med_1 + " en " + med_2 + " tegelijk nemen, op welke interactie verhogen we dan het risico?";
                         
