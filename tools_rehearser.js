@@ -20,8 +20,17 @@ var landing = `
         <H2> Orde </H2>
 
     </div>
+    
+    <div class="chapter" ><H1>Bijwerkingen</H1></div>  
+    
+    <div style="display:block; text-align: center;" onclick="startLevel2()">
+        <div class="card" id="active">
+            <img src="./Images/Interactions.png" style="width:20vw;height:20vw;">
+        </div>
 
-    <div class="chapter" ><H1>Bijwerkingen</H1></div>   
+        <H2> Interacties </H2>
+
+    </div>
 `
 
 var level1 = `
