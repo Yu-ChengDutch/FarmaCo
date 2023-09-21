@@ -234,7 +234,9 @@ function setMnemonicQuestion(){
     console.log("- > Setting mnemonic question")
 
     nr_q = question_array.length
-    starting_point = Math.floor(Math.random() * nr_q);
+    starting_point = 0
+    
+    /* Math.floor(Math.random() * nr_q); */
 
     console.log("- > There are a total of " + nr_q + " questions.");
     console.log("- > We're starting at " + starting_point)
