@@ -6,6 +6,7 @@
             "Onderverdeling": [
                 {
                     "Naam": "Paracetamol",
+                    "Zwangerschap": ["Meest veilig"],
                     "Bijwerkingen": [
                         {
                             "Bijwerking": "Leverbeschadiging",
@@ -31,6 +32,9 @@
                         {
                             "Bijwerking": "Verergering van hartfalen",
                             "Mechanisme": "Water- en zoutretentie"
+                        },
+                        {
+                            "Bijwerking": "Weeënremming"
                         }
                     ],
                     "Interacties": [
@@ -45,16 +49,19 @@
                     ],
                     "Onderverdeling": [
                         {
-                            "Naam": "Diclofenac"
+                            "Naam": "Diclofenac",
+                            "Zwangerschap": ["Waarschijnlijk veilig"]
                         },
                         {
                             "Naam": "Naproxen"
                         },
                         {
-                            "Naam": "Ibuprofen"
+                            "Naam": "Ibuprofen",
+                            "Zwangerschap": ["Waarschijnlijk veilig", "1e en 2e trimester"]
                         },
                         {
-                            "Naam": "Acetylsalicylzuur"
+                            "Naam": "Acetylsalicylzuur",
+                            "Zwangerschap": ["Meest veilig"]
                         }
                     ]
                 },
@@ -134,18 +141,22 @@
                     ],
                     "Onderverdeling": [
                         {
-                            "Naam": "Acetylsalicylzuur"
+                            "Naam": "Acetylsalicylzuur",
+                            "Indicaties": ["Primaire preventie bij arterieel vaatlijden", "Secundaire preventie bij arterieel vaatlijden", "2e keus na TIA/CVA"]
                         },
                         {
-                            "Naam": "Clopidogrel"
+                            "Naam": "Clopidogrel",
+                            "Indicaties": ["Profylaxe na stentplaatsing", "Acuut coronair syndroom", "Perifeer vaatlijden", "1e keus na TIA/CVA"]
                         },
                         {
-                            "Naam": "Ticagrelor"
+                            "Naam": "Ticagrelor",
+                            "Indicaties": ["I.c.m. acetylsalicylzuur bij acuut coronair syndroom"]
                         }
                     ]
                 },
                 {
                     "Naam": "Coumarinederivaten",
+                    "Indicaties": ["Atriumfibrilleren", "Mechanische klepprothese", "Longembolie", "DVT", "TIA/CVA profylaxe bij CHADVASC >1"],
                     "Bijwerkingen": [
                         {
                             "Bijwerking": "Verhoogd bloedingsrisico",
@@ -162,19 +173,26 @@
                             "Interactant": ["Co-trimoxazol"],
                             "Risico": "Bloedingen",
                             "Mechanisme": ["CYP2C9 remming", "Verlenging INR"]
+                        },
+                        {
+                            "Interactant": ["Anti-epileptica"],
+                            "Risico": "Verminderde antistolling"
                         }
                     ],
                     "Onderverdeling": [
                         {
-                            "Naam": "Acenocoumarol"
+                            "Naam": "Acenocoumarol",
+                            "Zwangerschap": ["Risico"]
                         },
                         {
-                            "Naam": "Fenprocoumon"
+                            "Naam": "Fenprocoumon",
+                            "Zwangerschap": ["Risico"]
                         }
                     ]
                 },
                 {
-                    "Naam": "Heparinegroep", 
+                    "Naam": "Heparinegroep",
+                    "Indicaties": ["Tromboseprofylaxe", "Overbrugging bij start/onderbreking coumarinederivaten en DOAC's"], 
                     "Bijwerkingen": [
                         {
                             "Bijwerking": "Verhoogd bloedingsrisico"
@@ -200,7 +218,8 @@
                             ],
                             "Onderverdeling": [
                                 {
-                                    "Naam": "Nadroparine"
+                                    "Naam": "Nadroparine",
+                                    "Zwangerschap": ["Meest veilig"]
                                 },
                                 {
                                     "Naam": "Fraxiparine"
@@ -222,12 +241,19 @@
                 },
                 {
                     "Naam": "DOAC's",
+                    "Indicaties": ["Non-valvulair atriumfibrilleren", "DVT", "Longembolie"],
                     "Onderverdeling": [
                         {
                             "Naam": "Factor II-remmers",
                             "Onderverdeling": [
                                 {
-                                    "Naam": "Dabigatran"
+                                    "Naam": "Dabigatran",
+                                    "Bijwerkingen": [
+                                        {
+                                        "Bijwerking": "Verhoogd bloedingsrisico",
+                                        "Risicofactoren": ["Nierinsufficiëntie"]
+                                        }
+                                    ]
                                 }
                             ]
                         },
@@ -310,39 +336,46 @@
                     ]
                 },
                 {
-                    "Naam": "Beta-blokkers",
-                    "Interacties": [
-                        {
-                            "Interactant": ["Calciumantagonisten"],
-                            "Risico": "Bradycardie"
-                        }                        
-                    ],
+                    "Naam": "Sympathicolytica",
                     "Onderverdeling": [
                         {
-                            "Naam": "Metoprolol"
-                        },
-                        {
-                            "Naam": "Sotalol",
+                            "Naam": "Beta-blokkers",
+                            "Indicaties": ["Atriumfibrilleren", "Hypertensie", "Hartfalen", "Secundaire preventie na myocardinfarct"],
                             "Interacties": [
                                 {
-                                    "Interactant": ["Thiazidediuretica", "Lisdiuretica", "NSAID's"],
-                                    "Risico": "Ritmestoornissen"
+                                    "Interactant": ["Calciumantagonisten"],
+                                    "Risico": "Bradycardie"
+                                }                        
+                            ],
+                            "Onderverdeling": [
+                                {
+                                    "Naam": "Metoprolol",
+                                    "Zwangerschap": ["Waarschijnlijk veilig"]
+                                },
+                                {
+                                    "Naam": "Sotalol",
+                                    "Interacties": [
+                                        {
+                                            "Interactant": ["Thiazidediuretica", "Lisdiuretica", "NSAID's"],
+                                            "Risico": "Ritmestoornissen"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Naam": "Propanolol"
+                                },
+                                {
+                                    "Naam": "Atenolol"
                                 }
                             ]
                         },
                         {
-                            "Naam": "Propanolol"
-                        },
-                        {
-                            "Naam": "Atenolol"
-                        }
-                    ]
-                },
-                {
-                    "Naam": "Alfa-blokkers",
-                    "Onderverdeling": [
-                        {
-                            "Naam": "Tamsulosine"
+                            "Naam": "Alfa-blokkers",
+                            "Onderverdeling": [
+                                {
+                                    "Naam": "Tamsulosine"
+                                }
+                            ]
                         }
                     ]
                 },
@@ -350,18 +383,35 @@
                     "Naam": "Calciumantagonisten",
                     "Onderverdeling": [
                         {
-                            "Naam": "Nifedipine"
+                            "Naam": "Dihydropyridines",
+                            "Indicaties": ["Hypertensie"],
+                            "Onderverdeling": [
+                                {
+                                    "Naam": "Amlodipines"
+                                },
+                                {
+                                    "Naam": "Nifedipine"
+                                }
+                            ]
                         },
                         {
-                            "Naam": "Amlodipine"
-                        },
-                        {
-                            "Naam": "Verapamil"
+                            "Naam": "Non-dihydropyridines",
+                            "Indicaties": ["Hypertensie", "Atriumfibrilleren"],
+                            "Onderverdeling": [
+                                {
+                                    "Naam": "Verapamil",
+                                    "Enzym": "Inhibitor"
+                                },
+                                {
+                                    "Naam": "Diltiazem"
+                                }
+                            ]
                         }
                     ]
                 },
                 {
                     "Naam": "RAS-remmers",
+                    "Indicaties": ["Hypertensie", "Hartfalen", "Diabetische proteïnurie"],
                     "Interacties": [
                         {
                             "Interactant": ["Diuretica", "NSAID's"],
@@ -385,7 +435,8 @@
                             "Naam": "ACE-remmers",
                             "Onderverdeling": [
                                 {
-                                    "Naam": "Enalapril"
+                                    "Naam": "Enalapril",
+                                    "Zwangerschap": ["Risico", "2e en 3e trimester"]
                                 },
                                 {
                                     "Naam": "Lisinopril"
@@ -422,6 +473,7 @@
                 },
                 {
                     "Naam": "Nitraten",
+                    "Indicaties": ["Angina pectoris", "Astma cardiale"],
                     "Onderverdeling": [
                         {
                             "Naam": "Isosorbide-dinitraat"
@@ -449,13 +501,16 @@
             "Naam": "Antidiabetica",
             "Onderverdeling": [
                 {
-                    "Naam": "Metformine"
+                    "Naam": "Metformine",
+                    "Indicaties": ["Diabetes Mellitus II"],
+                    "Zwangerschap": ["Waarschijnlijk veilig"]
                 },
                 {
                     "Naam": "Glucagon"
                 },
                 {
                     "Naam": "SU-derivaten",
+                    "Indicaties": ["I.c.m. metformine bij therapieresistente DM II"],
                     "Interacties": [
                         {
                             "Interactant": ["Bèta-blokkers"],
@@ -475,7 +530,12 @@
                     ]
                 },
                 {
+                    "Naam": "SGLT2-remmers",
+                    "Indicaties": ["Bij ongeschiktheid metformine bij DM II", "Hartfalen"]
+                },
+                {
                     "Naam": "Insulinen",
+                    "Indicaties": ["DM I", "Therapieresistente DM II"],
                     "Interacties": [
                         {
                             "Interactant": ["Bèta-blokkers"],
@@ -501,6 +561,7 @@
             "Onderverdeling": [
                 {
                     "Naam": "TCA's",
+                    "Indicaties": ["Matig-ernstige depressie", "Neuropatische pijn"],
                     "Interacties": [
                         {
                             "Interactant": ["Antihypertensiva", "Diuretica"],
@@ -518,6 +579,7 @@
                 },
                 {
                     "Naam": "SSRI's",
+                    "Indicaties": ["Matig-ernstige depressie", "Obsessief-compulsieve stoornissen"],
                     "Interacties": [
                         {
                             "Interactant": ["Thiazidediuretica"],
@@ -546,6 +608,8 @@
                 },
                 {
                     "Naam": "Lithium",
+                    "Voorschrijven": "True",
+                    "Indicaties": ["Bipolaire stoornis", "I.c.m. antidepressivum bij therapieresistente depressie"],
                     "Interacties": [
                         {
                             "Interactant": ["Diuretica", "NSAID's", "RAS-remmers"],
@@ -569,13 +633,19 @@
             ],
             "Onderverdeling": [
                 {
-                    "Naam": "Diazepam"
+                    "Naam": "Diazepam",
+                    "Indicaties": ["Afbouwen diazepines", "Koortsconvulsies", "Epileptisch insult"]
                 },
                 {
                     "Naam": "Oxazepam"
                 },
                 {
-                    "Naam": "Temazepam"
+                    "Naam": "Temazepam",
+                    "Indicaties": ["Slaapstoornissen"]
+                },
+                {
+                    "Naam": "Lorazepam",
+                    "Indicaties": ["Gegeneraliseerde angststoornissen"]
                 }
             ]
         },
@@ -583,24 +653,58 @@
             "Naam": "Antidota",
             "Onderverdeling": [
                 {
-                    "Naam": "Flumazenil"
+                    "Naam": "Flumazenil",
+                    "Indicaties": ["Ademhalingsdepressie bij benzodiazepines"]
                 },
                 {
-                    "Naam": "Vitamine K"
+                    "Naam": "Vitamine K",
+                    "Indicaties": ["Bloeding bij coumarinederivaten"]
                 },
                 {
                     "Naam": "Opiaatantagonisten",
                     "Onderverdeling": [
                         {
-                            "Naam": "Naloxon"
+                            "Naam": "Naloxon",
+                            "Indicaties": ["Overdosis opiaten"]
                         }
                     ]
                 },
                 {
-                    "Naam": "N-acetyl-cysteïne"
+                    "Naam": "N-acetyl-cysteïne",
+                    "Indicaties": ["Paracetamolintoxicatie"]
                 },
                 {
-                    "Naam": "Vierfactoren concentraat"
+                    "Naam": "Vierfactoren concentraat",
+                    "Indicaties": ["Ernstige bloeding bij coumarinederivaten"]
+                }
+            ]
+        },
+        {
+            "Naam": "Anti-epileptica",
+            "Onderverdeling": [
+                {
+                    "Naam": "Carbamazepine",
+                    "Zwangerschap": ["Risico"],
+                    "Enzym": "Inducer",
+                    "Voorschrijven": "True"
+                },
+                {
+                    "Naam": "Fenytoïne",
+                    "Enzym": "Inducer",
+                    "Voorschrijven": "True"
+                }
+            ]
+        },
+        {
+            "Naam": "Alternatieve middelen",
+            "Onderverdeling": [
+                {
+                    "Naam": "Grapefruitsap",
+                    "Enzym": "Inhibitor"
+                },
+                {
+                    "Naam": "St. Janskruid",
+                    "Enzym": "Inducer"
                 }
             ]
         },
@@ -618,25 +722,49 @@
                     "Onderverdeling": [
                         {
                             "Naam": "Penicillines",
+                            "Indicaties": ["Gram-positieve bacteriën"],
                             "Onderverdeling": [
                                 {
                                     "Naam": "Penicilline"
                                 },
                                 {
-                                    "Naam": "Amoxicilline"
+                                    "Naam": "Amoxicilline",
+                                    "Zwangerschap": ["Meest veilig"],
+                                    "Indicaties": ["Gram-negatieve en gram-positieve bacteriën"]
                                 },
                                 {
-                                    "Naam": "Amoxicilline/clavulaanzuur"
-                                }
+                                    "Naam": "Piperacilline"
+                                },
+                                {
+                                    "Naam": "Penicilline met beta-lactamaseremmer",
+                                    "Onderverdeling": [
+                                        {
+                                            "Naam": "Piperacilline/tazobactam"
+                                        },
+                                        {
+                                            "Naam": "Amoxicilline/clavulaanzuur"
+                                        }
+                                    ]
+                                }                                
                             ]
                         },
                         {
                             "Naam": "Cefalosporines",
                             "Onderverdeling": [
                                 {
-                                    "Naam": "Ceftriaxon"
+                                    "Naam": "Ceftriaxon",
+                                    "Indicaties": ["Gram-negatieve bacteriën"]
                                 }
                             ]
+                        }
+                    ]
+                },
+                {
+                    "Naam": "Glycopeptiden",
+                    "Onderverdeling": [
+                        {
+                            "Naam": "Vancomycine",
+                            "Indicaties": ["MRSA"]
                         }
                     ]
                 },
@@ -650,7 +778,8 @@
                     ],
                     "Onderverdeling": [
                         {
-                            "Naam": "Doxycycline"
+                            "Naam": "Doxycycline",
+                            "Zwangerschap": ["Risico", "Vanaf week 16"]
                         }
                     ]
                 },
@@ -658,7 +787,8 @@
                     "Naam": "Aminoglycosiden",
                     "Onderverdeling": [
                         {
-                            "Naam": "Gentamicine"
+                            "Naam": "Gentamicine",
+                            "Zwangerschap": ["Risico"]
                         }
                     ]
                 },
@@ -673,6 +803,14 @@
                     "Onderverdeling": [
                         {
                             "Naam": "Azitromycine"
+                        },
+                        {
+                            "Naam": "Claritromycine",
+                            "Enzym": "Inhibitor"
+                        },
+                        {
+                            "Naam": "Erytromycine",
+                            "Enzym": "Inhibitor"
                         }
                     ]
                 },
@@ -680,12 +818,14 @@
                     "Naam": "Chinolonen",
                     "Onderverdeling": [
                         {
-                            "Naam": "Ciprofloxacine"
+                            "Naam": "Ciprofloxacine",
+                            "Zwangerschap": ["Onbekend", "2e en 3e trimester"]
                         }
                     ]
                 },
                 {
-                    "Naam": "Trimethoprim/co-trimoxazol",
+                    "Naam": "Trimethoprim/sulfamethoxazol",
+                    "Voorschrijven": "True",
                     "Interacties": [
                         {
                             "Interactant": ["Methotrexaat"],
@@ -703,13 +843,56 @@
                     ]
                 },
                 {
+                    "Naam": "Rifamycine-groep",
+                    "Mechanisme": "Remming van de RNA-synthese",
+                    "Onderverdeling": [
+                        {
+                            "Naam": "Rifampicine",
+                            "Enzym": "Inducer",
+                            "Voorschrijven": "True"
+                        }
+                    ]
+                },
+                {
                     "Naam": "Nitrofurantoïne"
                 },
                 {
                     "Naam": "Fosfomycine"
                 },
                 {
-                    "Naam": "Metronidazol"
+                    "Naam": "Azolen",
+                    "Onderverdeling": [
+                        {
+                            "Naam": "Imidazolen",
+                            "Enzym": "Inhibitor",                            
+                            "Onderverdeling": [
+                                {
+                                    "Naam": "Ketoconazol",
+                                    "Voorschrijven": "True"
+                                },
+                                {
+                                    "Naam": "Miconazol"
+                                },
+                                {
+                                    "Naam": "Metronidazol",
+                                    "Voorschrijven": "True"
+                                }
+                            ]
+                        },
+                        {
+                            "Naam": "Triazolen",
+                            "Onderverdeling": [
+                                {
+                                    "Naam": "Itraconazol",
+                                    "Enzym": "Inhibitor"
+                                },
+                                {
+                                    "Naam": "Fluconazol",
+                                    "Voorschrijven": "True"
+                                }
+                            ]
+                        }
+                    ]
                 }
             ]
         }

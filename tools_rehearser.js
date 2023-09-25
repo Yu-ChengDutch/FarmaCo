@@ -97,6 +97,20 @@ function startLevel2() {
 
 }
 
+function startLevel3() {
+
+    openFullscreen();
+
+    document.getElementsByTagName("BODY")[0].innerHTML = level1;
+
+    setEnter();
+
+    question_array = level3_question_array;
+
+    setMnemonicQuestion();   
+
+}
+
 function farmacoSetUp() {
 
     console.log("Welcome!");
@@ -126,10 +140,32 @@ function prepareQuestions(data) {
     explorable_array = shuffle(data.Onderverdeling);
     temp_1_array = [];
     temp_2_array = [];
+    temp_2_array = [];
 
     while (explorable_array.length > 0) {
 
         explorable_item = explorable_array.pop();
+
+        if (Object.keys(explorable_item).includes("Indicaties")) {
+        
+            if (Object.keys(explorable_item).includes("Onderverdeling")) {
+                question_string_1 = "Welk (klasse) medicijn is bruikbaar voor de volgende symptomen: " + explorable_item.Indicaties;
+                question_string_2 = "Noem een voorbeeld van " + explorable_item.Name;
+
+                answer_array = [];
+
+                for (var i = 0; i < explorable_item.Onderverdeling.length; i++) {
+                    answer_array.push(explorable_item.Onderverdeling[i].Naam);
+                }
+
+                temp_3_array.push({"Question": question_string_1, "Answer": explorable_item.Naam}, {"Question": question_string_2, "Answer": answer_array})
+
+            } else {
+                question_string = "Welk (klasse) medicijn is bruikbaar voor de volgende symptomen: " + explorable_item.Indicaties;
+                temp_3_array.push({"Question": question_string, "Answer": explorable_item.Naam})
+            }        
+
+        }
 
         if (Object.keys(explorable_item).includes("Interacties")) {
 
@@ -197,11 +233,14 @@ function prepareQuestions(data) {
 
     level1_question_array = shuffle(temp_1_array);
     level2_question_array = shuffle(temp_2_array).flat(1);
+    level3_question_array = shuffle(temp_3_array).flat(1);
 
-    console.log("- -> Prepared level 1 questions")
+    console.log("- -> Prepared level 1 questions: order")
     console.log(level1_question_array);
-    console.log("- -> Prepared level 2 questions")
+    console.log("- -> Prepared level 2 questions: interactions")
     console.log(level2_question_array);
+    console.log("- -> Prepared level 2 questions: indications")
+    console.log(level3_question_array);
 
 }
 
@@ -270,44 +309,23 @@ function checkMnemonicAnswer() {
 
         correct_index = indices[0];
 
-        expandable = false;
-
-        if (Object.keys(question_array[correct_index]).includes("Mnemonic")) {
-            correct_answer = question_array[correct_index].Mnemonic.Title
-            expandable = true;
-        } else {
-            correct_answer = question_array[correct_index].Answer;
-            expandable = false;
-        }        
+        correct_answer = question_array[correct_index].Answer;    
         
         console.log("- - > Checking mnemonic")
         console.log("- - > Right answer is: " + correct_answer)
 
-        if (given_answer == correct_answer.toLowerCase()) {
+        if (given_answer == correct_answer.toLowerCase() || correct_answer.includes(given_answer)) {
+
             console.log("- - > Correct!")
 
-            if (expandable == true) {
-                document.getElementById('question-input-card').innerHTML = 
+            document.getElementById('question-input-card').innerHTML = 
+        
+            `
             
-                `
-                
-                <input type="text" id="text-field">
-                <input type="button" class="button" id ="next_button" value="Next" onclick="nextMnemonicQuestion();"></input>
-                <input type="button" class="button" id ="expand_button" value="More" onclick="expandMnemonic()"></input>
-                
-                `;
-            } else {
-                document.getElementById('question-input-card').innerHTML = 
+            <input type="text" id="text-field">
+            <input type="button" class="button" id ="next_button" value="Next" onclick="nextMnemonicQuestion();"></input>
             
-                `
-                
-                <input type="text" id="text-field">
-                <input type="button" class="button" id ="next_button" value="Next" onclick="nextMnemonicQuestion();"></input>
-                
-                `;
-            }
-
-            
+            `;            
 
             repeat = false; 
 
