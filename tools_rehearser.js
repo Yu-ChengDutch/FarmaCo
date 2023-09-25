@@ -150,7 +150,7 @@ function prepareQuestions(data) {
         
             if (Object.keys(explorable_item).includes("Onderverdeling")) {
                 question_string_1 = "Welk (klasse) medicijn is bruikbaar voor de volgende symptomen: " + explorable_item.Indicaties;
-                question_string_2 = "Noem een voorbeeld van " + explorable_item.Name;
+                question_string_2 = "Noem een voorbeeld van " + explorable_item.Naam;
 
                 answer_array = [];
 
@@ -232,8 +232,8 @@ function prepareQuestions(data) {
     };
 
     level1_question_array = shuffle(temp_1_array);
-    level2_question_array = shuffle(temp_2_array).flat(1);
-    level3_question_array = shuffle(temp_3_array).flat(1);
+    level2_question_array = (shuffle(temp_2_array)).flat(1);
+    level3_question_array = (shuffle(temp_3_array)).flat(1);
 
     console.log("- -> Prepared level 1 questions: order")
     console.log(level1_question_array);
