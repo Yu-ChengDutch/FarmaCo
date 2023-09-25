@@ -158,7 +158,7 @@ function prepareQuestions(data) {
                     answer_array.push(explorable_item.Onderverdeling[i].Naam);
                 }
 
-                temp_3_array.push({"Question": question_string_1, "Answer": explorable_item.Naam}, {"Question": question_string_2, "Answer": answer_array})
+                temp_3_array.push([{"Question": question_string_1, "Answer": explorable_item.Naam}, {"Question": question_string_2, "Answer": answer_array}])
 
             } else {
                 question_string = "Welk (klasse) medicijn is bruikbaar voor de volgende symptomen: " + explorable_item.Indicaties;
