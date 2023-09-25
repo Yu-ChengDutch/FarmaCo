@@ -140,7 +140,7 @@ function prepareQuestions(data) {
     explorable_array = shuffle(data.Onderverdeling);
     temp_1_array = [];
     temp_2_array = [];
-    temp_2_array = [];
+    temp_3_array = [];
 
     while (explorable_array.length > 0) {
 
