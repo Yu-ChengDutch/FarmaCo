@@ -119,23 +119,21 @@ function prepareComponents() {
 
             var parent_name = explorable_item.Naam;
 
-            var temp_main = {};
-
             for (var i = 0; i < explorable_item.Onderverdeling.length; i++) {
 
-                temp_main = explorable_item.Onderverdeling[i];
+                explorable_item.Onderverdeling[i] = explorable_item.Onderverdeling[i];
 
-                child_name = temp_main.Naam;
+                child_name = explorable_item.Onderverdeling[i].Naam;
 
                 grand_children = [];
 
-                if (Object.keys(temp_main).includes("Onderverdeling")) {
+                if (Object.keys(explorable_item.Onderverdeling[i]).includes("Onderverdeling")) {
                     
-                    explorable_array.push(temp_main)
+                    explorable_array.push(explorable_item.Onderverdeling[i])
 
-                    for (var j = 0; j < temp_main.Onderverdeling; j++) {
+                    for (var j = 0; j < explorable_item.Onderverdeling[i].Onderverdeling; j++) {
 
-                        grand_children.push(temp_main.Onderverdeling[j].Naam);
+                        grand_children.push(explorable_item.Onderverdeling[i].Onderverdeling[j].Naam);
 
                     };
 
