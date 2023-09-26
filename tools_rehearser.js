@@ -109,6 +109,11 @@ function startLevel(level) {
         console.log(terminals_array);
 
         prepareQuestions(level);
+    })
+    .then(function(){
+
+        console.log("-> Prepared questions")
+        console.log(questions_array);
 
         setQuestions(); 
     });
@@ -213,20 +218,12 @@ function prepareQuestions(level) {
 
 
 
-function setMnemonicQuestion(){
+function setQuestions(){
 
-    console.log("- > Setting mnemonic question")
+    console.log("- > Setting first question")
 
-    nr_q = question_array.length
-    starting_point = 0
-    
-    /* Math.floor(Math.random() * nr_q); */
-
-    console.log("- > There are a total of " + nr_q + " questions.");
-    console.log("- > We're starting at " + starting_point)
-
-    document.getElementById('question-title').innerText = starting_point
-    document.getElementById('question-description').innerText = question_array[starting_point].Question
+    document.getElementById('question-title').innerText = "0"
+    document.getElementById('question-description').innerText = question_array[0].Question
     document.getElementById('remark-card').innerText = "Please enter the mnemonic phrase"
 
 };
