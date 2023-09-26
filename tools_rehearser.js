@@ -8,8 +8,8 @@
 
 var question_array = [];
 
-var ancestry_array = [];
-var content_array = [];
+var ancestry_dict = {};
+var content_dict = {};
 var terminals_array = [];
 
 var original_dictionary = {};
@@ -102,9 +102,9 @@ function startLevel(level) {
     .then(function(){
 
         console.log("-> Prepared ancestry array");
-        console.log(ancestry_array);
+        console.log(ancestry_dict);
         console.log("-> Prepared content array");
-        console.log(content_array);
+        console.log(content_dict);
         console.log("-> Prepared terminals array");
         console.log(terminals_array);
 
@@ -120,12 +120,9 @@ function prepareComponents() {
     console.log("- > Preparing components");
 
     var explorable_array = [original_dictionary];
-    var temp_ancestry_array = [];
-    var temp_content_array = [];
-    var temp_terminals_array = [];
-
     var temp_ancestry_dict = {};
     var temp_content_dict = {};
+    var temp_terminals_array = [];
 
     while (explorable_array.length > 0) {
 
@@ -135,9 +132,7 @@ function prepareComponents() {
 
         parent_name = explorable_item.Naam;
 
-        temp_content_dict ={};
         temp_content_dict[parent_name] = explorable_item;
-        temp_content_array.push(temp_content_dict);
 
         if (Object.keys(explorable_item).includes("Onderverdeling")) {
 
@@ -160,18 +155,12 @@ function prepareComponents() {
                         grand_children.push(explorable_item.Onderverdeling[i].Onderverdeling[j].Naam);
 
                     };
-
-                    temp_ancestry_dict = {};
+                    
                     temp_ancestry_dict[child_name] = {"Parent": parent_name, "Children": grand_children}
 
                 } else {
-                    temp_ancestry_dict = {};
                     temp_ancestry_dict[child_name] = {"Parent": parent_name}
                 }
-
-                temp_content_dict[child_name]
-
-                temp_ancestry_array.push(temp_ancestry_dict);
                 
                 
             };
@@ -188,119 +177,41 @@ function prepareComponents() {
     
     };
 
-    ancestry_array = temp_ancestry_array;
-    content_array = temp_content_array;
+    ancestry_dict = temp_ancestry_dict;
+    content_dict = temp_content_dict;
     terminals_array= temp_terminals_array;
 
 };
 
-function prepareQuestions(data) {
+function prepareQuestions(level) {
 
-    console.log("- > Preparing questions");
+    var temp_question_array = [];
 
-    explorable_array = shuffle(data.Onderverdeling);
+    if (level == 1) {
 
-    while (explorable_array.length > 0) {
+        var local_ancestry_dict = ancestry_dict;
 
-        explorable_item = explorable_array.pop();
+        for (var i = 0; i < Object.keys(local_ancestry_dict).length; i++) {
 
-        if (Object.keys(explorable_item).includes("Indicaties")) {
-        
-            if (Object.keys(explorable_item).includes("Onderverdeling")) {
-                question_string_1 = "Welk (klasse) medicijn is bruikbaar voor de volgende symptomen: " + explorable_item.Indicaties;
-                question_string_2 = "Noem een voorbeeld van " + explorable_item.Naam;
+            child = Object.keys(local_ancestry_dict)[i];
+            parent = local_ancestry_dict[child].Parent;            
 
-                answer_array = [];
+            question_string = "Wat is de klasse van " + child;
+            temp_question_array.push({"Question": question_string, "Answer": parent });
 
-                for (var i = 0; i < explorable_item.Onderverdeling.length; i++) {
-                    answer_array.push(explorable_item.Onderverdeling[i].Naam);
-                }
-
-                temp_3_array.push([{"Question": question_string_1, "Answer": explorable_item.Naam}, {"Question": question_string_2, "Answer": answer_array}])
-
-            } else {
-                question_string = "Welk (klasse) medicijn is bruikbaar voor de volgende symptomen: " + explorable_item.Indicaties;
-                temp_3_array.push({"Question": question_string, "Answer": explorable_item.Naam})
-            }        
+            if (Object.keys(local_ancestry_dict[child]).includes("Children")) {
+                question_string = "Noem een voorbeeld van klasse " + child;
+                grandchildren = local_ancestry_dict[child].Children;
+                temp_question_array.push({"Question": question_string, "Answer": grandchildren });
+            }
 
         }
 
-        if (Object.keys(explorable_item).includes("Interacties")) {
+    }
 
-            if (Object.keys(explorable_item).includes("Onderverdeling") && explorable_item.Onderverdeling.length > 1) {
+};
 
-                class_1 = explorable_item.Naam;
-                original_med_1 = explorable_item.Onderverdeling
 
-            } else {
-
-                med_1 = explorable_item.Naam;
-                class_1 = "";
-
-            }
-
-            for (var i = 0; i < explorable_item.Interacties.length; i++) {
-
-                for (var j = 0; j < explorable_item.Interacties[i].Interactant.length; j++) {
-
-                    var med_2 = explorable_item.Interacties[i].Interactant[j]
-
-                    if (class_1 != "") {
-
-                        med_1 = original_med_1[Math.floor(Math.random() * original_med_1.length)].Naam;
-
-                        question_string_class = "Dit geldt niet sec voor " + med_1 + ", maar voor de gehele klassie. Wat is de klasse van " + med_1 + "?";
-
-                        question_string_inter = "Als we " + med_1 + " en " + med_2 + " tegelijk nemen, op welke interactie verhogen we dan het risico?";
-                        
-                        rand_pos = Math.floor(Math.random() * temp_2_array.length)
-
-                        temp_2_array.push([{"Question": question_string_inter, "Answer": explorable_item.Interacties[i].Risico}, {"Question": question_string_class, "Answer": class_1 }])
-                        
-                    } else {
-
-                        question_string = "Als we " + med_1 + " en " + med_2 + " tegelijk nemen, op welke interactie verhogen we dan het risico?";
-                        temp_2_array.push({"Question": question_string, "Answer": explorable_item.Interacties[i].Risico})
-
-                    }              
-
-                };
-
-            };
-
-        };
-
-        if (Object.keys(explorable_item).includes("Onderverdeling")) {
-
-            var class_name = explorable_item.Naam;
-
-            for (var i = 0; i < explorable_item.Onderverdeling.length; i++) {
-
-                if (Object.keys(explorable_item.Onderverdeling[i]).includes("Onderverdeling") || Object.keys(explorable_item.Onderverdeling[i]).includes("Interacties")) {
-                    explorable_array.push(explorable_item.Onderverdeling[i])
-                };
-
-                question_string = "Wat is de klasse van " + explorable_item.Onderverdeling[i].Naam;
-                temp_1_array.push({"Question": question_string, "Answer": class_name });
-                
-            };
-
-        };
-
-    };
-
-    level1_question_array = shuffle(temp_1_array);
-    level2_question_array = (shuffle(temp_2_array)).flat(1);
-    level3_question_array = (shuffle(temp_3_array)).flat(1);
-
-    console.log("- -> Prepared level 1 questions: order")
-    console.log(level1_question_array);
-    console.log("- -> Prepared level 2 questions: interactions")
-    console.log(level2_question_array);
-    console.log("- -> Prepared level 2 questions: indications")
-    console.log(level3_question_array);
-
-}
 
 function setMnemonicQuestion(){
 
@@ -589,5 +500,119 @@ function openFullscreen() {
       elem.msRequestFullscreen();
     }
 }
+
+/**
+ * 
+ * Back-up
+ * 
+ **/
+
+function legacy(level) {
+
+    console.log("- > Preparing questions");
+
+    explorable_array = shuffle(data.Onderverdeling);
+
+    while (explorable_array.length > 0) {
+
+        explorable_item = explorable_array.pop();
+
+        if (Object.keys(explorable_item).includes("Indicaties")) {
+        
+            if (Object.keys(explorable_item).includes("Onderverdeling")) {
+                question_string_1 = "Welk (klasse) medicijn is bruikbaar voor de volgende symptomen: " + explorable_item.Indicaties;
+                question_string_2 = "Noem een voorbeeld van " + explorable_item.Naam;
+
+                answer_array = [];
+
+                for (var i = 0; i < explorable_item.Onderverdeling.length; i++) {
+                    answer_array.push(explorable_item.Onderverdeling[i].Naam);
+                }
+
+                temp_3_array.push([{"Question": question_string_1, "Answer": explorable_item.Naam}, {"Question": question_string_2, "Answer": answer_array}])
+
+            } else {
+                question_string = "Welk (klasse) medicijn is bruikbaar voor de volgende symptomen: " + explorable_item.Indicaties;
+                temp_3_array.push({"Question": question_string, "Answer": explorable_item.Naam})
+            }        
+
+        }
+
+        if (Object.keys(explorable_item).includes("Interacties")) {
+
+            if (Object.keys(explorable_item).includes("Onderverdeling") && explorable_item.Onderverdeling.length > 1) {
+
+                class_1 = explorable_item.Naam;
+                original_med_1 = explorable_item.Onderverdeling
+
+            } else {
+
+                med_1 = explorable_item.Naam;
+                class_1 = "";
+
+            }
+
+            for (var i = 0; i < explorable_item.Interacties.length; i++) {
+
+                for (var j = 0; j < explorable_item.Interacties[i].Interactant.length; j++) {
+
+                    var med_2 = explorable_item.Interacties[i].Interactant[j]
+
+                    if (class_1 != "") {
+
+                        med_1 = original_med_1[Math.floor(Math.random() * original_med_1.length)].Naam;
+
+                        question_string_class = "Dit geldt niet sec voor " + med_1 + ", maar voor de gehele klassie. Wat is de klasse van " + med_1 + "?";
+
+                        question_string_inter = "Als we " + med_1 + " en " + med_2 + " tegelijk nemen, op welke interactie verhogen we dan het risico?";
+                        
+                        rand_pos = Math.floor(Math.random() * temp_2_array.length)
+
+                        temp_2_array.push([{"Question": question_string_inter, "Answer": explorable_item.Interacties[i].Risico}, {"Question": question_string_class, "Answer": class_1 }])
+                        
+                    } else {
+
+                        question_string = "Als we " + med_1 + " en " + med_2 + " tegelijk nemen, op welke interactie verhogen we dan het risico?";
+                        temp_2_array.push({"Question": question_string, "Answer": explorable_item.Interacties[i].Risico})
+
+                    }              
+
+                };
+
+            };
+
+        };
+
+        if (Object.keys(explorable_item).includes("Onderverdeling")) {
+
+            var class_name = explorable_item.Naam;
+
+            for (var i = 0; i < explorable_item.Onderverdeling.length; i++) {
+
+                if (Object.keys(explorable_item.Onderverdeling[i]).includes("Onderverdeling") || Object.keys(explorable_item.Onderverdeling[i]).includes("Interacties")) {
+                    explorable_array.push(explorable_item.Onderverdeling[i])
+                };
+
+                question_string = "Wat is de klasse van " + explorable_item.Onderverdeling[i].Naam;
+                temp_1_array.push({"Question": question_string, "Answer": class_name });
+                
+            };
+
+        };
+
+    };
+
+    level1_question_array = shuffle(temp_1_array);
+    level2_question_array = (shuffle(temp_2_array)).flat(1);
+    level3_question_array = (shuffle(temp_3_array)).flat(1);
+
+    console.log("- -> Prepared level 1 questions: order")
+    console.log(level1_question_array);
+    console.log("- -> Prepared level 2 questions: interactions")
+    console.log(level2_question_array);
+    console.log("- -> Prepared level 2 questions: indications")
+    console.log(level3_question_array);
+
+};
 
 
