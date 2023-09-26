@@ -315,7 +315,7 @@ function prepareQuestions(level) {
                     question_string = "Het tegelijk nemen van " + current + " en " + current_interaction.Interactant + " geeft risico op: ";
                     temp_temp_question_array.push({"Question": question_string, "Answer": current_interaction.Risico });
 
-                    temp_temp_question_array.push([ancestryQuestion(current), ancestryQuestion((shuffle(current_interaction.Interactant))[0])]);
+                    temp_temp_question_array.push(ancestryQuestion(current), ancestryQuestion((shuffle(current_interaction.Interactant))[0]));
 
                 };                
 
