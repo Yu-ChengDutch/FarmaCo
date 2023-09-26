@@ -386,7 +386,9 @@ function checkMnemonicAnswer() {
 
             document.getElementById('remark-card').innerText = "The right mnemonic is: " + correct_answer + ". You'll repeat this questions once more afterwards.";
 
-            question_array = question_array.splice(current_index + 2, 0, ("This is a repeat question: " + question_array[current_index].Question));
+            local_question_array = question_array;
+
+            question_array = local_question_array.splice(current_index + 3, 0, {"Question": ("This is a repeat question: " + question_array[current_index].Question), "Answer": question_array[current_index].Answer});
             console.log(question_array);
 
         }
