@@ -252,6 +252,7 @@ function prepareComponents() {
 function prepareQuestions(level) {
 
     var temp_question_array = [];
+    question_array = [];
 
     console.log("-> Preparing questions")
     console.log("- -> Level is: " + level)
@@ -286,7 +287,31 @@ function prepareQuestions(level) {
 
     };
 
-    question_array = shuffle(temp_question_array);
+    if (level == 4) {
+
+        keys = Object.keys(content_array)
+
+        for (var i = 0; i < keys.length; i++) {
+
+            var current = content_array[keys[i]].Naam
+            var temp_temp_question_array = [];
+
+            if (Object.keys(content_array[keys[i]]).includes("Indicaties")) {
+
+                question_string = "Welk (klasse) medicijn is bruikbaar voor de volgende symptomen: " + content_array[keys[i]].Indicaties;
+                temp_temp_question_array.push({"Question": question_string, "Answer": current });
+
+                temp_temp_question_array.push(ancestryQuestion(current));
+
+            };
+
+            temp_question_array.push(temp_temp_question_array);
+
+        };
+
+    };
+
+    question_array = (shuffle(temp_question_array)).flat(1);
 
 };
 
@@ -493,6 +518,22 @@ function nextMnemonicQuestion() {
  ***/
 
 /* Shuffle arrays */
+
+function ancestryQuestion(current) {
+
+    if (terminals_array.includes(current)) {
+
+        question_string = "Van welke klasse is " + current + " een deel?";
+        return {"Question": question_string, "Answer": ancestry_dict[current].Parent }
+
+    } else {
+
+        question_string = "Noem een voorbeeld van " + current;
+        return {"Question": question_string, "Answer": ancestry_dict[current].Children }
+
+    }
+
+};
 
 function shuffle(array) {
     let currentIndex = array.length, randomIndex;
