@@ -371,16 +371,7 @@ function checkMnemonicAnswer() {
 
         console.log("- - > Correct!")
 
-        document.getElementById('question-input-card').innerHTML = 
-    
-        `
-        
-        <input type="text" id="text-field">
-        <input type="button" class="button" id ="next_button" value="Next" onclick="nextMnemonicQuestion();"></input>
-        
-        `;       
-
-        repeat = false; 
+        nextQuestion();
 
     } else {
 
@@ -388,11 +379,15 @@ function checkMnemonicAnswer() {
         console.log("- - > Right answer: " + correct_answer);
 
         if (document.getElementById('remark-card').innerText != "Please repeat the mnemonic phrase again") {
+            
             document.getElementById('remark-card').innerText = "Please repeat the mnemonic phrase again";
+        
         } else {
+
             document.getElementById('remark-card').innerText = "The right mnemonic is: " + correct_answer + ". You'll repeat this questions once more afterwards.";
 
-            repeat = true;
+            question_array = question_array.splice(current_index + 2, 0, ("This is a repeat question: " + question_array[current_index].Question));
+            console.log(question_array);
 
         }
 
@@ -402,7 +397,7 @@ function checkMnemonicAnswer() {
     }
 }
 
-function nextMnemonicQuestion() {
+function nextQuestion() {
 
     resetButtons();
 
@@ -418,15 +413,12 @@ function nextMnemonicQuestion() {
     } else {
         new_index = 0;
     }
-
-    console.log(current_index);
-    console.log(new_index);
     
     /* Setting all new text */
 
     document.getElementById('remark-card').innerText = "Please enter the mnemonic phrase." 
     document.getElementById('question-description').innerText = question_array[new_index].Question
-    document.getElementById('question-title').innerText = new_index + "/" + indices[0]
+    document.getElementById('question-title').innerText = new_index + "/" + question_array.length;
 
 }
 
