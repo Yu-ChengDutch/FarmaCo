@@ -129,7 +129,7 @@ function prepareComponents() {
 
     while (explorable_array.length > 0) {
 
-        explorable_item = explorable_array.pop();
+        explorable_item = explorable_array[0];
 
         parent_name = explorable_item.Naam;
 
@@ -178,6 +178,8 @@ function prepareComponents() {
             temp_terminals_array.push(parent_name);
 
         };
+
+        explorable_array.shift();
     
     };
 
