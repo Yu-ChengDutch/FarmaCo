@@ -279,175 +279,180 @@
             "Naam": "Cardiovasculaire middelen",
             "Onderverdeling": [
                 {
-                    "Naam": "Diuretica",
-                    "Interacties": [
-                        {
-                            "Interactant": ["Cardiovasculaire middelen", "Opiaatagonisten", "Benzodiazepines"],
-                            "Risico": "Verhoogde valneiging"
-                        },
-                        {
-                            "Interactant": ["SSRI's"],
-                            "Risico": "Hyponatriëmie"
-                        },
-                        {
-                            "Interactant": ["NSAID's", "RAS-remmers"],
-                            "Risico": "Nierfalen"
-                        },
-                        {
-                            "Interactant": ["NSAID's", "RAS-remmers"],
-                            "Risico": "Hyperkaliëmie"
-                        },
-                        {
-                            "Interactant": ["NSAID's"],
-                            "Risico": "Verminderd diuretisch effect"
-                        }
-                    ],
+                    "Naam": "Antihypertensiva",
                     "Onderverdeling": [
                         {
-                            "Naam": "Thiazidediuretica",
-                            "Onderverdeling": [
-                                {
-                                    "Naam": "Chloortalidon"
-                                },
-                                {
-                                    "Naam": "Hydrochloorthiazide"
-                                }
-                            ]
-                        },
-                        {
-                            "Naam": "Lisdiuretica",
-                            "Onderverdeling": [
-                                {
-                                    "Naam": "Furosemide"
-                                }
-                            ]
-                        },
-                        {
-                            "Naam": "Kaliumsparende diuretica",
-                            "Onderverdeling": [
-                                {
-                                    "Naam": "Spironolactone"
-                                },
-                                {
-                                    "Naam": "Triamtereen"
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "Naam": "Sympathicolytica",
-                    "Onderverdeling": [
-                        {
-                            "Naam": "Beta-blokkers",
-                            "Indicaties": ["Atriumfibrilleren", "Hypertensie", "Hartfalen", "Secundaire preventie na myocardinfarct"],
+                            "Naam": "Diuretica",
                             "Interacties": [
                                 {
-                                    "Interactant": ["Calciumantagonisten"],
-                                    "Risico": "Bradycardie"
-                                }                        
+                                    "Interactant": ["Cardiovasculaire middelen", "Opiaatagonisten", "Benzodiazepines"],
+                                    "Risico": "Verhoogde valneiging"
+                                },
+                                {
+                                    "Interactant": ["SSRI's"],
+                                    "Risico": "Hyponatriëmie"
+                                },
+                                {
+                                    "Interactant": ["NSAID's", "RAS-remmers"],
+                                    "Risico": "Nierfalen"
+                                },
+                                {
+                                    "Interactant": ["NSAID's", "RAS-remmers"],
+                                    "Risico": "Hyperkaliëmie"
+                                },
+                                {
+                                    "Interactant": ["NSAID's"],
+                                    "Risico": "Verminderd diuretisch effect"
+                                }
                             ],
                             "Onderverdeling": [
                                 {
-                                    "Naam": "Metoprolol",
-                                    "Zwangerschap": ["Waarschijnlijk veilig"]
-                                },
-                                {
-                                    "Naam": "Sotalol",
-                                    "Interacties": [
+                                    "Naam": "Thiazidediuretica",
+                                    "Onderverdeling": [
                                         {
-                                            "Interactant": ["Thiazidediuretica", "Lisdiuretica", "NSAID's"],
-                                            "Risico": "Ritmestoornissen"
+                                            "Naam": "Chloortalidon"
+                                        },
+                                        {
+                                            "Naam": "Hydrochloorthiazide"
                                         }
                                     ]
                                 },
                                 {
-                                    "Naam": "Propanolol"
+                                    "Naam": "Lisdiuretica",
+                                    "Onderverdeling": [
+                                        {
+                                            "Naam": "Furosemide"
+                                        }
+                                    ]
                                 },
                                 {
-                                    "Naam": "Atenolol"
+                                    "Naam": "Kaliumsparende diuretica",
+                                    "Onderverdeling": [
+                                        {
+                                            "Naam": "Spironolactone"
+                                        },
+                                        {
+                                            "Naam": "Triamtereen"
+                                        }
+                                    ]
                                 }
                             ]
                         },
                         {
-                            "Naam": "Alfa-blokkers",
+                            "Naam": "Sympathicolytica",
                             "Onderverdeling": [
                                 {
-                                    "Naam": "Tamsulosine"
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "Naam": "Calciumantagonisten",
-                    "Onderverdeling": [
-                        {
-                            "Naam": "Dihydropyridines",
-                            "Indicaties": ["Hypertensie"],
-                            "Onderverdeling": [
-                                {
-                                    "Naam": "Amlodipine"
+                                    "Naam": "Beta-blokkers",
+                                    "Indicaties": ["Atriumfibrilleren", "Hypertensie", "Hartfalen", "Secundaire preventie na myocardinfarct"],
+                                    "Interacties": [
+                                        {
+                                            "Interactant": ["Calciumantagonisten"],
+                                            "Risico": "Bradycardie"
+                                        }                        
+                                    ],
+                                    "Onderverdeling": [
+                                        {
+                                            "Naam": "Metoprolol",
+                                            "Zwangerschap": ["Waarschijnlijk veilig"]
+                                        },
+                                        {
+                                            "Naam": "Sotalol",
+                                            "Interacties": [
+                                                {
+                                                    "Interactant": ["Thiazidediuretica", "Lisdiuretica", "NSAID's"],
+                                                    "Risico": "Ritmestoornissen"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "Naam": "Propanolol"
+                                        },
+                                        {
+                                            "Naam": "Atenolol"
+                                        }
+                                    ]
                                 },
                                 {
-                                    "Naam": "Nifedipine"
+                                    "Naam": "Alfa-blokkers",
+                                    "Onderverdeling": [
+                                        {
+                                            "Naam": "Tamsulosine"
+                                        }
+                                    ]
                                 }
                             ]
                         },
                         {
-                            "Naam": "Non-dihydropyridines",
-                            "Indicaties": ["Hypertensie", "Atriumfibrilleren"],
+                            "Naam": "Calciumantagonisten",
                             "Onderverdeling": [
                                 {
-                                    "Naam": "Verapamil",
-                                    "Enzym": "Inhibitor"
+                                    "Naam": "Dihydropyridines",
+                                    "Indicaties": ["Hypertensie"],
+                                    "Onderverdeling": [
+                                        {
+                                            "Naam": "Amlodipine"
+                                        },
+                                        {
+                                            "Naam": "Nifedipine"
+                                        }
+                                    ]
                                 },
                                 {
-                                    "Naam": "Diltiazem"
+                                    "Naam": "Non-dihydropyridines",
+                                    "Indicaties": ["Hypertensie", "Atriumfibrilleren"],
+                                    "Onderverdeling": [
+                                        {
+                                            "Naam": "Verapamil",
+                                            "Enzym": "Inhibitor"
+                                        },
+                                        {
+                                            "Naam": "Diltiazem"
+                                        }
+                                    ]
                                 }
                             ]
-                        }
-                    ]
-                },
-                {
-                    "Naam": "RAS-remmers",
-                    "Indicaties": ["Hypertensie", "Hartfalen", "Diabetische proteïnurie"],
-                    "Interacties": [
-                        {
-                            "Interactant": ["Diuretica", "NSAID's"],
-                            "Risico": "Nierfalen"
                         },
                         {
-                            "Interactant": ["Kaliumsparende diuretica"],
-                            "Risico": "Hyperkaliëmie"
-                        },
-                        {
-                            "Interactant": ["Diuretica"],
-                            "Risico": "Hypotensie"
-                        },
-                        {
-                            "Interactant": ["Cardiovasculaire middelen", "Opiaatagonisten", "Benzodiazepines"],
-                            "Risico": "Verhoogde valneiging"
-                        }
-                    ],
-                    "Onderverdeling": [
-                        {
-                            "Naam": "ACE-remmers",
-                            "Onderverdeling": [
+                            "Naam": "RAS-remmers",
+                            "Indicaties": ["Hypertensie", "Hartfalen", "Diabetische proteïnurie"],
+                            "Interacties": [
                                 {
-                                    "Naam": "Enalapril",
-                                    "Zwangerschap": ["Risico", "2e en 3e trimester"]
+                                    "Interactant": ["Diuretica", "NSAID's"],
+                                    "Risico": "Nierfalen"
                                 },
                                 {
-                                    "Naam": "Lisinopril"
+                                    "Interactant": ["Kaliumsparende diuretica"],
+                                    "Risico": "Hyperkaliëmie"
+                                },
+                                {
+                                    "Interactant": ["Diuretica"],
+                                    "Risico": "Hypotensie"
+                                },
+                                {
+                                    "Interactant": ["Cardiovasculaire middelen", "Opiaatagonisten", "Benzodiazepines"],
+                                    "Risico": "Verhoogde valneiging"
                                 }
-                            ]
-                        },
-                        {
-                            "Naam": "ARBs",
+                            ],
                             "Onderverdeling": [
                                 {
-                                    "Naam": "Losartan"
+                                    "Naam": "ACE-remmers",
+                                    "Onderverdeling": [
+                                        {
+                                            "Naam": "Enalapril",
+                                            "Zwangerschap": ["Risico", "2e en 3e trimester"]
+                                        },
+                                        {
+                                            "Naam": "Lisinopril"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Naam": "ARBs",
+                                    "Onderverdeling": [
+                                        {
+                                            "Naam": "Losartan"
+                                        }
+                                    ]
                                 }
                             ]
                         }
