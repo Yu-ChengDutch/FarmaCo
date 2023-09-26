@@ -135,6 +135,7 @@ function prepareComponents() {
 
         parent_name = explorable_item.Naam;
 
+        temp_content_dict ={};
         temp_content_dict[parent_name] = explorable_item;
         temp_content_array.push(temp_content_dict);
 
@@ -160,9 +161,11 @@ function prepareComponents() {
 
                     };
 
+                    temp_ancestry_dict = {};
                     temp_ancestry_dict[child_name] = {"Parent": parent_name, "Children": grand_children}
 
                 } else {
+                    temp_ancestry_dict = {};
                     temp_ancestry_dict[child_name] = {"Parent": parent_name}
                 }
 
