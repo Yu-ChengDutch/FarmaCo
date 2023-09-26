@@ -81,15 +81,18 @@ function startLevel(level) {
     document.getElementsByTagName("BODY")[0].innerHTML = level_page;
     setEnter();
 
-    setUp();
-
-    console.log(original_dictionary);
+    setUp()
+    .then(function() {
+        console.log(original_dictionary);
     console.log("-> Starting level " + level.toString());    
 
     prepareComponents();
     prepareQuestions(level);
 
     setQuestions(); 
+    });
+
+    
 
 };
 
