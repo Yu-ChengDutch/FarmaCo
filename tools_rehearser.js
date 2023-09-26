@@ -121,8 +121,6 @@ function prepareComponents() {
 
             for (var i = 0; i < explorable_item.Onderverdeling.length; i++) {
 
-                explorable_item.Onderverdeling[i] = explorable_item.Onderverdeling[i];
-
                 var temp_dict = {};
 
                 var child_name = explorable_item.Onderverdeling[i].Naam;
@@ -133,7 +131,7 @@ function prepareComponents() {
                     
                     explorable_array.push(explorable_item.Onderverdeling[i])
 
-                    for (var j = 0; j < explorable_item.Onderverdeling[i].Onderverdeling; j++) {
+                    for (var j = 0; j < explorable_item.Onderverdeling[i].Onderverdeling.Length; j++) {
 
                         grand_children.push(explorable_item.Onderverdeling[i].Onderverdeling[j].Naam);
 
