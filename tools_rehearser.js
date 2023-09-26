@@ -14,6 +14,8 @@ var terminals_array = [];
 
 var original_dictionary = {};
 
+var base = "";
+
 /* Define the pages */
 
 var landing_page = `
@@ -91,6 +93,7 @@ function startLevel(level) {
     .then(function(data){
 
         original_dictionary = data;
+        base = data.Naam;
 
     })
     .then(function(){
@@ -204,17 +207,20 @@ function prepareQuestions(level) {
         for (var i = 0; i < Object.keys(local_ancestry_dict).length; i++) {
 
             child = Object.keys(local_ancestry_dict)[i];
-            parent = local_ancestry_dict[child].Parent;            
+            parent = local_ancestry_dict[child].Parent;   
 
-            question_string = "Wat is de klasse van " + child;
-            temp_question_array.push({"Question": question_string, "Answer": parent });
+            if (child != parent) {
 
-            if (Object.keys(local_ancestry_dict[child]).includes("Children")) {
-                question_string = "Noem een voorbeeld van klasse " + child;
-                grandchildren = local_ancestry_dict[child].Children;
-                temp_question_array.push({"Question": question_string, "Answer": grandchildren });
+                question_string = "Wat is de klasse van " + child;
+                temp_question_array.push({"Question": question_string, "Answer": parent });
+
+                if (Object.keys(local_ancestry_dict[child]).includes("Children")) {
+                    question_string = "Noem een voorbeeld van klasse " + child;
+                    grandchildren = local_ancestry_dict[child].Children;
+                    temp_question_array.push({"Question": question_string, "Answer": grandchildren });
+                }
+
             }
-
         }
 
     };
