@@ -314,7 +314,7 @@ function checkMnemonicAnswer() {
         console.log("- - > Checking mnemonic")
         console.log("- - > Right answer is: " + correct_answer)
 
-        if (given_answer == correct_answer.toLowerCase() || correct_answer.includes(given_answer)) {
+        if (correct_answer.includes(given_answer) || given_answer == correct_answer.toString().toLowerCase()) {
 
             console.log("- - > Correct!")
 
