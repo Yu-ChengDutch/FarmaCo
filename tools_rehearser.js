@@ -125,13 +125,13 @@ function prepareComponents() {
 
                 var child_name = explorable_item.Onderverdeling[i].Naam;
 
-                var grand_children = [];
-
                 if (Object.keys(explorable_item.Onderverdeling[i]).includes("Onderverdeling")) {
                     
-                    explorable_array.push(explorable_item.Onderverdeling[i])
+                    explorable_array.push(explorable_item.Onderverdeling[i]);
 
-                    for (var j = 0; j < explorable_item.Onderverdeling[i].Onderverdeling.Length; j++) {
+                    grand_children = [];
+
+                    for (var j = 0; j < explorable_item.Onderverdeling[i].Onderverdeling.length; j++) {
 
                         grand_children.push(explorable_item.Onderverdeling[i].Onderverdeling[j].Naam);
 
