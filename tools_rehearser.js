@@ -46,29 +46,85 @@ var landing_page = `
 
 var level_page= `
 
-    <script type="text/javascript" src="tools_rehearser.js"></script>
-    
-    <div class = "question-card">
+<script type="text/javascript" src="tools_rehearser.js"></script>
 
-        <div class="question-title-card" onClick="backToStart()">
+<div class="chapter"><H1>Basics</H1></div>
 
-            <h1 id="question-title">Question 1</h1>
-            <p id ="question-description">What is the name of this disease?</p>
-        
-        </div>
-
-        <div class="question-input-card" id="question-input-card">
-            <input type="text" id="text-field">
-            <input type="button" class="button" id ="check-button" value="Check" onclick="checkMnemonicAnswer()"> 
-        </div>
-
-        <div id="remark-card">
-            
-            <p id ="question-description"></p>
-        
-        </div>
-
+<div style="display:block; text-align: center;" onclick="startLevel(1)">
+    <div class="card" id="active">
+        <img src="./Images/Network.png" style="width:20vw;height:20vw;">
     </div>
+
+    <H2> Organisatie </H2>
+
+</div>
+
+<div style="display:block; text-align: center;" onclick="startLevel(2)">
+    <div class="card" id="active">
+        <img src="./Images/Network.png" style="width:20vw;height:20vw;">
+    </div>
+
+    <H2> Indiv. medicatie </H2>
+
+</div>
+
+<div class="chapter" ><H1>Bijwerkingen en indicaties</H1></div>  
+
+<div style="display:block; text-align: center;" onclick="startLevel2()">
+    <div class="card" id="active">
+        <img src="./Images/Interactions.png" style="width:20vw;height:20vw;">
+    </div>
+
+    <H2> Interacties </H2>
+
+</div>
+
+<div style="display:block; text-align: center;" onclick="startLevel3()">
+    <div class="card" id="active">
+        <img src="./Images/Interactions.png" style="width:20vw;height:20vw;">
+    </div>
+
+    <H2> Indicaties </H2>
+
+</div>
+
+<div class="chapter" ><H1>Rijveiligheid, zwangerschap en voorschrijven</H1></div>  
+
+<div style="display:block; text-align: center;" onclick="startLevel3()">
+    <div class="card" id="active">
+        <img src="./Images/SteeringWheel.png" style="width:20vw;height:20vw;">
+    </div>
+
+    <H2> Rijveiligheid </H2>
+
+</div>
+
+<div style="display:block; text-align: center;" onclick="startLevel4()">
+    <div class="card" id="active">
+        <img src="./Images/Pregnancy.png" style="width:20vw;height:20vw;">
+    </div>
+
+    <H2> Zwangerschap </H2>
+
+</div>
+
+<div style="display:block; text-align: center;" onclick="startLevel5()">
+    <div class="card" id="active">
+        <img src="./Images/Pad.png" style="width:20vw;height:20vw;">
+    </div>
+
+    <H2> Voorschrijven </H2>
+
+</div>
+
+<div style="display:block; text-align: center;" onclick="startLevel6()">
+    <div class="card" id="active">
+        <img src="./Images/Enzym.png" style="width:20vw;height:20vw;">
+    </div>
+
+    <H2> Enzymen </H2>
+
+</div>
 
 `
 
