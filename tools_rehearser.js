@@ -321,7 +321,7 @@ function prepareQuestions(level) {
 
                         question_string = "Het tegelijk nemen van bijv. " + current_child + " en " + current_interaction.Interactant + " geeft risico op: ";
                         temp_temp_question_array.push({"Question": question_string, "Answer": current_interaction.Risico });
-                        temp_temp_question_array.push(ancestryQuestion(current));
+                        temp_temp_question_array.push(ancestryQuestion(current_child));
                     }
                     
 
