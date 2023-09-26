@@ -414,7 +414,7 @@ function nextMnemonicQuestion() {
     current_index = indices[0];
 
     if (current_index < (question_array.length - 1)) {
-        new_index = current_index + 1;
+        new_index = parseInt(current_index) + 1;
     } else {
         new_index = 0;
     }
