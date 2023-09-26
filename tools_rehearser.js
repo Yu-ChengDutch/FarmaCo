@@ -131,6 +131,8 @@ function prepareComponents() {
 
         explorable_item = explorable_array[0];
 
+        console.log("Exploring " + explorable_item);
+
         parent_name = explorable_item.Naam;
 
         temp_content_dict[parent_name] = explorable_item;
