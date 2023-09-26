@@ -345,7 +345,7 @@ function setQuestions(){
 
     console.log("- > Setting first question")
 
-    document.getElementById('question-title').innerText = "0"
+    document.getElementById('question-title').innerText = "0/" + question_array.length;
     document.getElementById('question-description').innerText = question_array[0].Question
     document.getElementById('remark-card').innerText = "Please enter the mnemonic phrase"
 
@@ -359,81 +359,45 @@ function checkMnemonicAnswer() {
     const textfield = document.getElementById('text-field');    
     const given_answer = textfield.value;
 
-    const indices = (document.getElementById('question-title').innerText).split('.')
+    indices = (document.getElementById('question-title').innerText).split("/")
+    current_index = indices[0];
 
-    if (indices.length == 1) {
+    correct_answer = question_array[current_index].Answer;    
+    
+    console.log("- - > Checking mnemonic")
+    console.log("- - > Right answer is: " + correct_answer)
 
-        correct_index = indices[0];
+    if (given_answer.length > 2 && (correct_answer.includes(given_answer) || given_answer.toLowerCase() == correct_answer.toString().toLowerCase())) {
 
-        correct_answer = question_array[correct_index].Answer;    
+        console.log("- - > Correct!")
+
+        document.getElementById('question-input-card').innerHTML = 
+    
+        `
         
-        console.log("- - > Checking mnemonic")
-        console.log("- - > Right answer is: " + correct_answer)
-
-        if (given_answer.length > 2 && (correct_answer.includes(given_answer) || given_answer.toLowerCase() == correct_answer.toString().toLowerCase())) {
-
-            console.log("- - > Correct!")
-
-            document.getElementById('question-input-card').innerHTML = 
+        <input type="text" id="text-field">
+        <input type="button" class="button" id ="next_button" value="Next" onclick="nextMnemonicQuestion();"></input>
         
-            `
-            
-            <input type="text" id="text-field">
-            <input type="button" class="button" id ="next_button" value="Next" onclick="nextMnemonicQuestion();"></input>
-            
-            `;       
+        `;       
 
-            repeat = false; 
-
-        } else {
-
-            console.log("- - > Given answer: " + given_answer);
-            console.log("- - > Right answer: " + correct_answer);
-
-            if (document.getElementById('remark-card').innerText != "Please repeat the mnemonic phrase again") {
-                document.getElementById('remark-card').innerText = "Please repeat the mnemonic phrase again";
-            } else {
-                document.getElementById('remark-card').innerText = "The right mnemonic is: " + correct_answer + ". You'll repeat this questions once more afterwards.";
-
-                repeat = true;
-
-            }
-
-            
-            textfield.value = "";            
-
-        }
+        repeat = false; 
 
     } else {
-        
-        key = (document.getElementById('question-description').innerText).split(': ').pop()
 
-        if (Object.keys(question_array[parseInt(indices[0])]).includes("Mnemonic")) {
-            correct_answer = question_array[parseInt(indices[0])].Mnemonic[key];
+        console.log("- - > Given answer: " + given_answer);
+        console.log("- - > Right answer: " + correct_answer);
+
+        if (document.getElementById('remark-card').innerText != "Please repeat the mnemonic phrase again") {
+            document.getElementById('remark-card').innerText = "Please repeat the mnemonic phrase again";
         } else {
-            correct_answer = question_array[parseInt(indices[0])].Answer;
-        }
-        
+            document.getElementById('remark-card').innerText = "The right mnemonic is: " + correct_answer + ". You'll repeat this questions once more afterwards.";
 
-        console.log(indices);
-        console.log(question_array[parseInt(indices[0])]);
-        console.log(correct_answer);
-
-        if (given_answer == correct_answer.toLowerCase()) {
-
-            nextMnemonicQuestion();
-
-        } else {
-
-            if (document.getElementById('remark-card').innerText == "Please enter the answer") {
-                document.getElementById('remark-card').innerText = "Please try again"
-            } else {
-                document.getElementById('remark-card').innerText = "The correct answer is: " + correct_answer
-            }            
-
-            textfield.value = "";
+            repeat = true;
 
         }
+
+        
+        textfield.value = "";            
 
     }
 }
@@ -445,78 +409,21 @@ function nextMnemonicQuestion() {
     const textfield = document.getElementById('text-field');
     textfield.value = "";
 
-    indices = (document.getElementById('question-title').innerText).split('.')
+    indices = (document.getElementById('question-title').innerText).split("/")
 
-    if (Object.keys(question_array[parseInt(indices[0])]).includes("Answer")) {
+    current_index = indices[0];
 
-        correct_index = parseInt(indices[0])
-
-        if (repeat == false) {            
-
-            if (correct_index < (question_array.length - 1)) {
-                new_index = correct_index + 1;
-            } else {
-                new_index = 0;
-            }
-
-            document.getElementById('remark-card').innerText = "Please enter the mnemonic phrase."
-
-        } else {
-
-            new_index = correct_index;
-
-            document.getElementById('remark-card').innerText = "Please enter the mnemonic phrase. This is a repeated question."
-
-        }        
-
-        console.log(new_index);
-
-        document.getElementById('question-description').innerText = question_array[new_index].Question
-
+    if (current_index < (question_array.length - 1)) {
+        new_index = current_index + 1;
     } else {
-
-        keys = Object.keys(question_array[parseInt(indices[0])].Mnemonic)
-
-        console.log(keys)
-        
-        if (indices.length == 1 || parseInt(indices[1]) >= (keys.length - 1)) {
-
-            correct_index = parseInt(indices[0])
-
-            if (repeat == false) {            
-
-                if (correct_index < (question_array.length - 1)) {
-                    new_index = correct_index + 1;
-                } else {
-                    new_index = 0;
-                }
-
-                document.getElementById('remark-card').innerText = "Please enter the mnemonic phrase."
-
-            } else {
-
-                new_index = correct_index;
-
-                document.getElementById('remark-card').innerText = "Please enter the mnemonic phrase. This is a repeated question."
-
-            }        
-
-            console.log(new_index);
-
-            document.getElementById('question-description').innerText = question_array[new_index].Question
-
-        } else {
-
-            console.log("- - > Giving you a new subquestion")
-
-            new_index = indices[0] + "." + (parseInt(indices[1]) + 1)
-            document.getElementById('question-description').innerText = "What is the meaning of: " + keys[parseInt(indices[1]) + 1]
-            document.getElementById('remark-card').innerText = "Please enter the answer"
-
-        }
+        new_index = 0;
     }
     
-    document.getElementById('question-title').innerText = new_index
+    /* Setting all new text */
+    
+    document.getElementById('remark-card').innerText = "Please enter the mnemonic phrase." 
+    document.getElementById('question-description').innerText = question_array[new_index].Question
+    document.getElementById('question-title').innerText = new_index + "/" + indices[0]
 
 }
 
@@ -624,12 +531,12 @@ function openFullscreen() {
 
 function expandMnemonic() {
 
-    const correct_index = parseInt(document.getElementById('question-title').innerText);
+    const current_index = parseInt(document.getElementById('question-title').innerText);
     const textfield = document.getElementById('text-field');
 
-    const keys = Object.keys(question_array[correct_index].Mnemonic)
+    const keys = Object.keys(question_array[current_index].Mnemonic)
 
-    document.getElementById('question-title').innerText = correct_index.toString() + ".1"
+    document.getElementById('question-title').innerText = current_index.toString() + ".1"
     document.getElementById('question-description').innerText = "What is the meaning of: " + keys[1]
     document.getElementById('remark-card').innerText = "Please enter the answer"
 
