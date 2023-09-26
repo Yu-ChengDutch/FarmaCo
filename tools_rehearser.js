@@ -113,7 +113,7 @@ function startLevel(level) {
     .then(function(){
 
         console.log("-> Prepared questions")
-        console.log(questions_array);
+        console.log(question_array);
 
         setQuestions(); 
     });
