@@ -81,24 +81,6 @@ function startLevel(level) {
     document.getElementsByTagName("BODY")[0].innerHTML = level_page;
     setEnter();
 
-    const promise = new Promise(setUp());
-
-    promise.then(function() {
-        console.log(original_dictionary);
-        console.log("-> Starting level " + level.toString());    
-
-        prepareComponents();
-        prepareQuestions(level);
-
-        setQuestions(); 
-    });
-
-};
-
-function setUp() {
-
-    console.log("Welcome!");
-
     fetch("./med_data.json")
 
     .then(function(response){
@@ -110,8 +92,17 @@ function setUp() {
         original_dictionary = data;
 
     })
+    .then(function(){
+        console.log(original_dictionary);
+        console.log("-> Starting level " + level.toString());    
 
-}
+        prepareComponents();
+        prepareQuestions(level);
+
+        setQuestions(); 
+    });
+
+};
 
 function prepareComponents() {
 
