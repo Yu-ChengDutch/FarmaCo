@@ -286,7 +286,7 @@
                             "Interacties": [
                                 {
                                     "Interactant": ["Cardiovasculaire middelen", "Opiaatagonisten", "Benzodiazepines"],
-                                    "Risico": "Verhoogde valneiging"
+                                    "Risico": "Verhoogd valrisico"
                                 },
                                 {
                                     "Interactant": ["SSRI's"],
@@ -430,7 +430,7 @@
                                 },
                                 {
                                     "Interactant": ["Cardiovasculaire middelen", "Opiaatagonisten", "Benzodiazepines"],
-                                    "Risico": "Verhoogde valneiging"
+                                    "Risico": "Verhoogd valrisico"
                                 }
                             ],
                             "Onderverdeling": [
@@ -659,7 +659,7 @@
             "Interacties": [
                 {
                     "Interactant": ["Cardiovasculaire middelen", "Alcohol", "Opiaatagonisten"],
-                    "Risico": "Verhoogde valneiging"
+                    "Risico": "Verhoogd valrisico"
                 },
                 {
                     "Interactant": ["Opiaatagonisten", "Alcohol"],

@@ -312,10 +312,20 @@ function prepareQuestions(level) {
                     console.log(current_interaction);
                     console.log(shuffle(current_interaction.Interactant));
 
-                    question_string = "Het tegelijk nemen van " + current + " en " + current_interaction.Interactant + " geeft risico op: ";
-                    temp_temp_question_array.push({"Question": question_string, "Answer": current_interaction.Risico });
+                    if (terminals_array.includes(current)) {
+                        question_string = "Het tegelijk nemen van " + current + " en " + current_interaction.Interactant + " geeft risico op: ";
+                        temp_temp_question_array.push({"Question": question_string, "Answer": current_interaction.Risico });
+                    } else {
 
-                    temp_temp_question_array.push(ancestryQuestion(current), ancestryQuestion((shuffle(current_interaction.Interactant))[0]));
+                        current_child = shuffle(ancestry_dict[current].Children)[0]
+
+                        question_string = "Het tegelijk nemen van bijv. " + current_child + " en " + current_interaction.Interactant + " geeft risico op: ";
+                        temp_temp_question_array.push({"Question": question_string, "Answer": current_interaction.Risico });
+                        temp_temp_question_array.push(ancestryQuestion(current));
+                    }
+                    
+
+                    
 
                 };                
 
