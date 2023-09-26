@@ -19,33 +19,6 @@ var base = "";
 /* Define the pages */
 
 var landing_page = `
-    <script type="text/javascript" src="tools_rehearser.js"></script>
-
-    <div class="chapter"><H1>Basics</H1></div>
-
-    <div style="display:block; text-align: center;" onclick="start()">
-        <div class="card" id="active">
-            <img src="./Images/Network.png" style="width:20vw;height:20vw;">
-        </div>
-
-        <H2> Orde </H2>
-
-    </div>
-    
-    <div class="chapter" ><H1>Bijwerkingen</H1></div>  
-    
-    <div style="display:block; text-align: center;" onclick="startLevel2()">
-        <div class="card" id="active">
-            <img src="./Images/Interactions.png" style="width:20vw;height:20vw;">
-        </div>
-
-        <H2> Interacties </H2>
-
-    </div>
-`
-
-var level_page= `
-
 <script type="text/javascript" src="tools_rehearser.js"></script>
 
 <div class="chapter"><H1>Basics</H1></div>
@@ -125,6 +98,33 @@ var level_page= `
     <H2> Enzymen </H2>
 
 </div>
+`
+
+var level_page= `
+
+    <script type="text/javascript" src="tools_rehearser.js"></script>
+    
+    <div class = "question-card">
+
+        <div class="question-title-card" onClick="backToStart()">
+
+            <h1 id="question-title">Question 1</h1>
+            <p id ="question-description">What is the name of this disease?</p>
+        
+        </div>
+
+        <div class="question-input-card" id="question-input-card">
+            <input type="text" id="text-field">
+            <input type="button" class="button" id ="check-button" value="Check" onclick="checkMnemonicAnswer()"> 
+        </div>
+
+        <div id="remark-card">
+            
+            <p id ="question-description"></p>
+        
+        </div>
+
+    </div>
 
 `
 
@@ -265,7 +265,7 @@ function prepareQuestions(level) {
             child = Object.keys(local_ancestry_dict)[i];
             parent = local_ancestry_dict[child].Parent;   
 
-            if (parent != base && (level == 1 || (level == 2 && terminals_array.includes(child)))) {
+            if (parent != base && ((level == 1 && !terminals_array.includes(child)) || (level == 2 && terminals_array.includes(child)))) {
 
                 question_string = "Wat is de klasse van " + child;
                 temp_question_array.push({"Question": question_string, "Answer": parent });
@@ -285,8 +285,6 @@ function prepareQuestions(level) {
     question_array = shuffle(temp_question_array);
 
 };
-
-
 
 function setQuestions(){
 
