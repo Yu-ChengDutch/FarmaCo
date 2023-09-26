@@ -10,6 +10,7 @@ var question_array = [];
 
 var ancestry_array = [];
 var content_array = [];
+var terminals_array = [];
 
 var original_dictionary = {};
 
@@ -97,6 +98,16 @@ function startLevel(level) {
         console.log("-> Starting level " + level.toString());    
 
         prepareComponents();
+    })
+    .then(function(){
+
+        console.log("-> Prepared ancestry array");
+        console.log(ancestry_array);
+        console.log("-> Prepared content array");
+        console.log(content_array);
+        console.log("-> Prepared terminals array");
+        console.log(terminals_array);
+
         prepareQuestions(level);
 
         setQuestions(); 
@@ -111,25 +122,33 @@ function prepareComponents() {
     var explorable_array = original_dictionary;
     var temp_ancestry_array = [];
     var temp_content_array = [];
+    var temp_terminals_array = [];
+
+    var temp_ancestry_dict = {};
+    var temp_content_dict = {};
 
     while (explorable_array.length > 0) {
 
         explorable_item = explorable_array.pop();
 
+        parent_name = explorable_item.Naam;
+
+        temp_content_dict[parent_name] = explorable_item;
+        temp_content_array.push(temp_content_dict);
+
         if (Object.keys(explorable_item).includes("Onderverdeling")) {
 
-            var parent_name = explorable_item.Naam;
+            /* I.e. explorable_item is non-terminal */
 
             for (var i = 0; i < explorable_item.Onderverdeling.length; i++) {
 
-                var temp_ancestry_dict = {};
-                var temp_content_dict = {};
+                /* Push each child to explorable */
+
+                explorable_array.push(explorable_item.Onderverdeling[i]);
 
                 var child_name = explorable_item.Onderverdeling[i].Naam;
 
                 if (Object.keys(explorable_item.Onderverdeling[i]).includes("Onderverdeling")) {
-                    
-                    explorable_array.push(explorable_item.Onderverdeling[i]);
 
                     grand_children = [];
 
@@ -148,9 +167,15 @@ function prepareComponents() {
                 temp_content_dict[child_name]
 
                 temp_ancestry_array.push(temp_ancestry_dict);
-                temp_content_array.push(temp_content_dict);
+                
                 
             };
+
+        } else {
+
+            /* I.e. explorable_item is terminal*/
+
+            temp_terminals_array.push(parent_name);
 
         };
     
@@ -158,9 +183,7 @@ function prepareComponents() {
 
     ancestry_array = temp_ancestry_array;
     content_array = temp_content_array;
-
-    console.log("-> Created ancestry array");
-    console.log(ancestry_array);
+    terminals_array= temp_terminals_array;
 
 };
 
