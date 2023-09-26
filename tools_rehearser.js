@@ -200,7 +200,7 @@ function prepareQuestions(level) {
     console.log("-> Preparing questions")
     console.log("- -> Level is: " + level)
 
-    if (level == 1) {
+    if (level == 1 || level == 2) {
 
         var local_ancestry_dict = ancestry_dict;
 
@@ -209,7 +209,7 @@ function prepareQuestions(level) {
             child = Object.keys(local_ancestry_dict)[i];
             parent = local_ancestry_dict[child].Parent;   
 
-            if (parent != base) {
+            if (parent != base && (level == 1 || (level == 2 && terminals_array.includes(child)))) {
 
                 question_string = "Wat is de klasse van " + child;
                 temp_question_array.push({"Question": question_string, "Answer": parent });
@@ -218,10 +218,11 @@ function prepareQuestions(level) {
                     question_string = "Noem een voorbeeld van klasse " + child;
                     grandchildren = local_ancestry_dict[child].Children;
                     temp_question_array.push({"Question": question_string, "Answer": grandchildren });
-                }
+                };
 
-            }
-        }
+            };
+        
+        };
 
     };
 
