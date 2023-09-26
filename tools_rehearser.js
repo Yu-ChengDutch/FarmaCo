@@ -111,36 +111,42 @@ function prepareComponents() {
     explorable_array = shuffle(original_dictionary.Onderverdeling);
     temp_ancestry_array = [];
 
-    if (Object.keys(explorable_item).includes("Onderverdeling")) {
+    while (explorable_array.length > 0) {
 
-        var parent_name = explorable_item.Naam;
+        explorable_item = explorable_array.pop();
 
-        var temp_main = {};
+        if (Object.keys(explorable_item).includes("Onderverdeling")) {
 
-        for (var i = 0; i < explorable_item.Onderverdeling.length; i++) {
+            var parent_name = explorable_item.Naam;
 
-            temp_main = explorable_item.Onderverdeling[i];
+            var temp_main = {};
 
-            var child_name = temp_main.Naam;
+            for (var i = 0; i < explorable_item.Onderverdeling.length; i++) {
 
-            var grand_children = [];
+                temp_main = explorable_item.Onderverdeling[i];
 
-            if (Object.keys(temp_main).includes("Onderverdeling")) {
-                
-                explorable_array.push(temp_main)
+                var child_name = temp_main.Naam;
 
-                for (var j = 0; j < temp_main.Onderverdeling; i++) {
+                var grand_children = [];
 
-                    grand_children.push(temp_main.Onderverdeling[j].Naam);
+                if (Object.keys(temp_main).includes("Onderverdeling")) {
+                    
+                    explorable_array.push(temp_main)
+
+                    for (var j = 0; j < temp_main.Onderverdeling; i++) {
+
+                        grand_children.push(temp_main.Onderverdeling[j].Naam);
+
+                    };
 
                 };
 
+                temp_ancestry_array.push({child_name : {"Parent": parent_name, "Children": ""}});
+                
             };
 
-            temp_ancestry_array.push({child_name : {"Parent": parent_name, "Children": ""}});
-            
         };
-
+    
     };
 
     ancestry_array = temp_ancestry_array;
