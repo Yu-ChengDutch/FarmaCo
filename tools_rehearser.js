@@ -270,11 +270,15 @@ function prepareQuestions(level) {
                 question_string = "Wat is de klasse van " + child;
                 temp_question_array.push({"Question": question_string, "Answer": parent });
 
-                if (Object.keys(local_ancestry_dict[child]).includes("Children")) {
-                    question_string = "Noem een voorbeeld van klasse " + child;
-                    grandchildren = local_ancestry_dict[child].Children;
-                    temp_question_array.push({"Question": question_string, "Answer": grandchildren });
-                };
+                if (level == 2) {
+
+                    if (Object.keys(local_ancestry_dict[child]).includes("Children")) {
+                        question_string = "Noem een voorbeeld van klasse " + child;
+                        grandchildren = local_ancestry_dict[child].Children;
+                        temp_question_array.push({"Question": question_string, "Answer": grandchildren });
+                    };
+
+                };                
 
             };
         
