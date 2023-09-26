@@ -8,7 +8,7 @@
 
 var question_array = [];
 
-var ancestry_dict = {};
+var ancestry_array = [];
 var content_array = [];
 
 var original_dictionary = {};
@@ -109,7 +109,7 @@ function prepareComponents() {
     console.log("- > Preparing components");
 
     explorable_array = shuffle(original_dictionary.Onderverdeling);
-    temp_ancestry_dict = {};
+    temp_ancestry_array = [];
 
     while (explorable_array.length > 0) {
 
@@ -141,7 +141,7 @@ function prepareComponents() {
 
                 };
 
-                temp_ancestry_dict.push({child_name : {"Parent": parent_name, "Children": grand_children}});
+                temp_ancestry_array.push({child_name : {"Parent": parent_name, "Children": grand_children}});
                 
             };
 
@@ -149,10 +149,10 @@ function prepareComponents() {
     
     };
 
-    ancestry_dict = temp_ancestry_dict;
+    ancestry_array = temp_ancestry_array;
 
     console.log("-> Created ancestry array");
-    console.log(ancestry_dict);
+    console.log(ancestry_array);
 
 };
 
