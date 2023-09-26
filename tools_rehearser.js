@@ -194,6 +194,9 @@ function prepareQuestions(level) {
 
     var temp_question_array = [];
 
+    console.log("-> Preparing questions")
+    console.log("- -> Level is: " + level)
+
     if (level == 1) {
 
         var local_ancestry_dict = ancestry_dict;
@@ -214,7 +217,9 @@ function prepareQuestions(level) {
 
         }
 
-    }
+    };
+
+    question_array = shuffle(temp_question_array);
 
 };
 
