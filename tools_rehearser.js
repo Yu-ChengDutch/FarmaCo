@@ -310,6 +310,7 @@ function prepareQuestions(level) {
                     current_interaction = content_dict[keys[i]].Interacties[j];
 
                     console.log(current_interaction);
+                    console.log(shuffle(current_interaction.Interactant));
 
                     question_string = "Het tegelijk nemen van " + current + " en " + current_interaction.Interactant + " geeft risico op: ";
                     temp_temp_question_array.push({"Question": question_string, "Answer": current_interaction.Risico });
