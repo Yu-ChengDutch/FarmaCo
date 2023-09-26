@@ -455,6 +455,7 @@
                 },
                 {
                     "Naam": "Hartglycosiden",
+                    "Indicaties": ["Chronisch hartfalen", "Atriumfibrilleren"],
                     "Interacties": [
                         {
                             "Interactant": ["Lisdiuretica", "Thiazidediuretica", "NSAID's"],
@@ -484,16 +485,20 @@
                     ]
                 },
                 {
-                    "Naam": "Natriumpolystyreensulfonaat"
+                    "Naam": "Natriumpolystyreensulfonaat",
+                    "Indicaties": ["Hyperkaliëmie bij nierinsufficiëntie", "Ondersteuning bij dialyse"]
                 },
                 {
-                    "Naam": "Insuline/glucose"
+                    "Naam": "Insuline/glucose",
+                    "Indicaties": ["Hyperkaliëmie"]
                 },
                 {
-                    "Naam": "Calciumgluconaat"
+                    "Naam": "Calciumgluconaat",
+                    "Indicaties": ["Hyperkaliëmie met ECG afwijkingen"]
                 },
                 {
-                    "Naam": "KCI-drank"
+                    "Naam": "KCI-drank",
+                    "Indicaties": ["Hypokaliëmie"]
                 }                 
             ]
         },
@@ -506,7 +511,8 @@
                     "Zwangerschap": ["Waarschijnlijk veilig"]
                 },
                 {
-                    "Naam": "Glucagon"
+                    "Naam": "Glucagon",
+                    "Indicaties": ["Ernstige hypoglykemie"]
                 },
                 {
                     "Naam": "SU-derivaten",
@@ -684,12 +690,14 @@
             "Onderverdeling": [
                 {
                     "Naam": "Carbamazepine",
+                    "Indicaties": ["Epilepsie", "Neuralgie", "Diabetes insipidus", "BPD"],
                     "Zwangerschap": ["Risico"],
                     "Enzym": "Inducer",
                     "Voorschrijven": "True"
                 },
                 {
                     "Naam": "Fenytoïne",
+                    "Indicaties": ["Epilepsie", "Aritmieën"],
                     "Enzym": "Inducer",
                     "Voorschrijven": "True"
                 }
@@ -742,7 +750,8 @@
                                             "Naam": "Piperacilline/tazobactam"
                                         },
                                         {
-                                            "Naam": "Amoxicilline/clavulaanzuur"
+                                            "Naam": "Amoxicilline/clavulaanzuur",
+                                            "Indicaties": ["Beta-lactamase producerende bacteriën"]
                                         }
                                     ]
                                 }                                
@@ -816,6 +825,7 @@
                 },
                 {
                     "Naam": "Chinolonen",
+                    "Indicaties": ["Gram-negatieve bacteriën"],
                     "Onderverdeling": [
                         {
                             "Naam": "Ciprofloxacine",
@@ -854,10 +864,12 @@
                     ]
                 },
                 {
-                    "Naam": "Nitrofurantoïne"
+                    "Naam": "Nitrofurantoïne",
+                    "Indicaties": ["UWI", "Profylaxe bij transurethrale ingrepen"]
                 },
                 {
-                    "Naam": "Fosfomycine"
+                    "Naam": "Fosfomycine",
+                    "Indicaties": ["UWI, tweede keuze"]
                 },
                 {
                     "Naam": "Azolen",
