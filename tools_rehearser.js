@@ -118,6 +118,8 @@ function startLevel(level) {
         setQuestions(); 
     });
 
+    /* Check */
+
 };
 
 function prepareComponents() {
