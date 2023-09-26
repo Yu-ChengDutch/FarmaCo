@@ -355,9 +355,7 @@ function checkMnemonicAnswer() {
             <input type="text" id="text-field">
             <input type="button" class="button" id ="next_button" value="Next" onclick="nextMnemonicQuestion();"></input>
             
-            `;
-
-            nextMnemonicQuestion();            
+            `;       
 
             repeat = false; 
 
