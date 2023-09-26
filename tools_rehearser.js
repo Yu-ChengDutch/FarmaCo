@@ -289,16 +289,16 @@ function prepareQuestions(level) {
 
     if (level == 4) {
 
-        keys = Object.keys(content_array)
+        keys = Object.keys(content_dict)
 
         for (var i = 0; i < keys.length; i++) {
 
-            var current = content_array[keys[i]].Naam
+            var current = content_dict[keys[i]].Naam
             var temp_temp_question_array = [];
 
-            if (Object.keys(content_array[keys[i]]).includes("Indicaties")) {
+            if (Object.keys(content_dict[keys[i]]).includes("Indicaties")) {
 
-                question_string = "Welk (klasse) medicijn is bruikbaar voor de volgende symptomen: " + content_array[keys[i]].Indicaties;
+                question_string = "Welk (klasse) medicijn is bruikbaar voor de volgende symptomen: " + content_dict[keys[i]].Indicaties;
                 temp_temp_question_array.push({"Question": question_string, "Answer": current });
 
                 temp_temp_question_array.push(ancestryQuestion(current));
