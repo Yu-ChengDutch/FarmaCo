@@ -418,9 +418,12 @@ function nextMnemonicQuestion() {
     } else {
         new_index = 0;
     }
+
+    console.log(current_index);
+    console.log(new_index);
     
     /* Setting all new text */
-    
+
     document.getElementById('remark-card').innerText = "Please enter the mnemonic phrase." 
     document.getElementById('question-description').innerText = question_array[new_index].Question
     document.getElementById('question-title').innerText = new_index + "/" + indices[0]
