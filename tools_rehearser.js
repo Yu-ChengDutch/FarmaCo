@@ -119,7 +119,7 @@ function prepareComponents() {
 
     console.log("- > Preparing components");
 
-    var explorable_array = original_dictionary;
+    var explorable_array = [original_dictionary];
     var temp_ancestry_array = [];
     var temp_content_array = [];
     var temp_terminals_array = [];
