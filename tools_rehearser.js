@@ -69,11 +69,13 @@ function backToStart() {
     document.getElementsByTagName("BODY")[0].innerHTML = landing;
 }
 
-function startLevel1() {
+function startLevel1(check) {
 
     openFullscreen();
 
     document.getElementsByTagName("BODY")[0].innerHTML = level1;
+
+    console.log(check);
 
     setEnter();
 
