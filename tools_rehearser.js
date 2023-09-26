@@ -209,7 +209,7 @@ function prepareQuestions(level) {
             child = Object.keys(local_ancestry_dict)[i];
             parent = local_ancestry_dict[child].Parent;   
 
-            if (child != parent) {
+            if (parent != base) {
 
                 question_string = "Wat is de klasse van " + child;
                 temp_question_array.push({"Question": question_string, "Answer": parent });
