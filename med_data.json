@@ -519,7 +519,7 @@
                     "Indicaties": ["I.c.m. metformine bij therapieresistente DM II"],
                     "Interacties": [
                         {
-                            "Interactant": ["Bèta-blokkers"],
+                            "Interactant": ["Beta-blokkers"],
                             "Risico": "Hypoglykemie"
                         }
                     ],
