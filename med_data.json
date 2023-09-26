@@ -39,7 +39,7 @@
                     ],
                     "Interacties": [
                         {
-                            "Interactant": ["Coumarinederivaten", "Trombocytenaggregatieremmers", "Steroïden", "SSRI's"],
+                            "Interactant": ["Coumarinederivaten", "Trombocytenaggregatieremmers", "SSRI's"],
                             "Risico": "GI-bloedingen"
                         },
                         {
@@ -544,7 +544,7 @@
                     "Indicaties": ["DM I", "Therapieresistente DM II"],
                     "Interacties": [
                         {
-                            "Interactant": ["Bèta-blokkers"],
+                            "Interactant": ["Beta-blokkers"],
                             "Risico": "Hypoglykemie"
                         }
                     ],
@@ -559,6 +559,30 @@
                             "Naam": "Glargine"
                         }
                     ]
+                }
+            ]
+        },
+        {
+            "Naam": "Anticholinergica",
+            "Onderverdeling": [
+                {
+                    "Naam": "Antimuscarinica",
+                    "Onderverdeling": [
+                        {
+                            "Naam": "Antipsychotica",
+                            "Onderverdeling": [
+                                {
+                                    "Naam": "Clozapine"
+                                },
+                                {
+                                    "Naam": "Quetiapine"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Naam": "Antinicotinica"
                 }
             ]
         },
@@ -704,7 +728,7 @@
             ]
         },
         {
-            "Naam": "Alternatieve middelen",
+            "Naam": "Voedingsmiddelen",
             "Onderverdeling": [
                 {
                     "Naam": "Grapefruitsap",
@@ -713,6 +737,39 @@
                 {
                     "Naam": "St. Janskruid",
                     "Enzym": "Inducer"
+                },
+                {
+                    "Naam": "Alcohol"
+                },
+                {
+                    "Naam": "Metalen"
+                },
+                {
+                    "Naam": "Tryptofaan"
+                }
+            ]
+        },
+        {
+            "Naam": "Immunosuppresiva",
+            "Onderverdeling": [
+                {
+                    "Naam": "Corticosteroïden"
+                },
+                {
+                    "Naam": "Methotrexaat"
+                }
+            ]
+        },
+        {
+            "Naam": "Migraine medicatie",
+            "Onderverdeling": [
+                {
+                    "Naam": "Triptanen",
+                    "Onderverdeling": [
+                        {
+                            "Naam": "Sumatriptan"
+                        }
+                    ]
                 }
             ]
         },
@@ -781,7 +838,7 @@
                     "Naam": "Tetracyclinen",
                     "Interacties": [
                         {
-                            "Interactant": ["Aluminium", "Calcium", "IJzer", "Magnesium"],
+                            "Interactant": ["Metalen"],
                             "Risico": "Verminderde absorptie tetracyclinen"
                         }
                     ],
