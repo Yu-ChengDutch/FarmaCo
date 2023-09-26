@@ -1,13 +1,21 @@
-/* Create an empty array for all the questions */
+/***
+ * 
+ * Create prerequisites
+ * 
+ ***/
+
+/* Create arrays */
 
 var question_array = [];
 
-var level1_question_array = [];
-var level2_question_array = [];
+var ancestry_array = [];
+var content_array = [];
 
-/* Defines the main page */
+var original_dictionary = {};
 
-var landing = `
+/* Define the pages */
+
+var landing_page = `
     <script type="text/javascript" src="tools_rehearser.js"></script>
 
     <div class="chapter"><H1>Basics</H1></div>
@@ -33,7 +41,7 @@ var landing = `
     </div>
 `
 
-var level1 = `
+var level_page= `
 
     <script type="text/javascript" src="tools_rehearser.js"></script>
     
@@ -61,88 +69,99 @@ var level1 = `
 
 `
 
-/* New start function */
+/***
+ * 
+ * Create main functions
+ * 
+ ***/
 
-function backToStart() {
-    openFullscreen();
-
-    document.getElementsByTagName("BODY")[0].innerHTML = landing;
-}
-
-function startLevel1(check) {
+function startLevel(level) {
 
     openFullscreen();
-
-    document.getElementsByTagName("BODY")[0].innerHTML = level1;
-
-    console.log(check);
-
+    document.getElementsByTagName("BODY")[0].innerHTML = level_page;
     setEnter();
 
-    question_array = level1_question_array;
+    setUp();
 
-    setMnemonicQuestion();   
+    console.log(original_dictionary);
+    console.log("-> Starting level " + level.toString());    
 
-}
+    prepareComponents();
+    prepareQuestions(level);
 
-function startLevel2() {
+    setQuestions(); 
 
-    openFullscreen();
+};
 
-    document.getElementsByTagName("BODY")[0].innerHTML = level1;
-
-    setEnter();
-
-    question_array = level2_question_array;
-
-    setMnemonicQuestion();   
-
-}
-
-function startLevel3() {
-
-    openFullscreen();
-
-    document.getElementsByTagName("BODY")[0].innerHTML = level1;
-
-    setEnter();
-
-    question_array = level3_question_array;
-
-    setMnemonicQuestion();   
-
-}
-
-function farmacoSetUp() {
+function setUp() {
 
     console.log("Welcome!");
 
-    current_database = "./med_data.json";
-
-    console.log("Fetching main DB at: " + current_database);
-
-    fetch(current_database)
+    fetch("./med_data.json")
 
     .then(function(response){
-        console.log("- > File found and accessed at " + current_database);
+        console.log("- > File found and accessed");
         return response.json();
     })
     .then(function(data){
 
-        prepareQuestions(data)
+        original_dictionary = data;
 
     })
 
 }
+
+function prepareComponents() {
+
+    console.log("- > Preparing components");
+
+    explorable_array = shuffle(original_dictionary.Onderverdeling);
+    temp_ancestry_array = [];
+
+    if (Object.keys(explorable_item).includes("Onderverdeling")) {
+
+        var parent_name = explorable_item.Naam;
+
+        var temp_main = {};
+
+        for (var i = 0; i < explorable_item.Onderverdeling.length; i++) {
+
+            temp_main = explorable_item.Onderverdeling[i];
+
+            var child_name = temp_main.Naam;
+
+            var grand_children = [];
+
+            if (Object.keys(temp_main).includes("Onderverdeling")) {
+                
+                explorable_array.push(temp_main)
+
+                for (var j = 0; j < temp_main.Onderverdeling; i++) {
+
+                    grand_children.push(temp_main.Onderverdeling[j].Naam);
+
+                };
+
+            };
+
+            temp_ancestry_array.push({child_name : {"Parent": parent_name, "Children": ""}});
+            
+        };
+
+    };
+
+    ancestry_array = temp_ancestry_array;
+
+    console.log("-> Created ancestry array");
+    console.log(ancestry_array);
+
+};
 
 function prepareQuestions(data) {
 
     console.log("- > Preparing questions");
 
     explorable_array = shuffle(data.Onderverdeling);
-    temp_1_array = [];
-    temp_2_array = [];
-    temp_3_array = [];
 
     while (explorable_array.length > 0) {
 
@@ -245,39 +264,6 @@ function prepareQuestions(data) {
     console.log(level3_question_array);
 
 }
-
-function setEnter() {
-
-    var input = document.getElementById("text-field");
-
-    // Execute a function when the user presses a key on the keyboard
-    input.addEventListener("keypress", function(event) {
-    // If the user presses the "Enter" key on the keyboard
-    if (event.key === "Enter") {
-        console.log("-> Pressed enter")
-        // Trigger the button element with a click
-        checkMnemonicAnswer();
-    }
-    });
-
-}
-
-/* Set to full screen mode */
-
-function openFullscreen() {
-
-    var elem = document.documentElement;
-
-    if (elem.requestFullscreen) {
-      elem.requestFullscreen();
-    } else if (elem.webkitRequestFullscreen) { /* Safari */
-      elem.webkitRequestFullscreen();
-    } else if (elem.msRequestFullscreen) { /* IE11 */
-      elem.msRequestFullscreen();
-    }
-}
-
-/* Load the database (for now still hardcoded) */
 
 function setMnemonicQuestion(){
 
@@ -483,6 +469,14 @@ function nextMnemonicQuestion() {
 
 }
 
+/***
+ * 
+ * Utilities: All utility functions are pushed to the bottom for saving space
+ * 
+ ***/
+
+/* Shuffle arrays */
+
 function shuffle(array) {
     let currentIndex = array.length, randomIndex;
   
@@ -501,6 +495,8 @@ function shuffle(array) {
     return array;
 }
 
+/* Resets buttons to original */
+
 function resetButtons() {
     
     document.getElementById('question-input-card').innerHTML = 
@@ -514,6 +510,47 @@ function resetButtons() {
 
     setEnter();
 
+}
+
+/* Resets the screen back to the start screen */
+
+function backToStart() {
+    openFullscreen();
+
+    document.getElementsByTagName("BODY")[0].innerHTML = landing_page;
+}
+
+/* Set a listener function for enter */
+
+function setEnter() {
+
+    var input = document.getElementById("text-field");
+
+    // Execute a function when the user presses a key on the keyboard
+    input.addEventListener("keypress", function(event) {
+    // If the user presses the "Enter" key on the keyboard
+    if (event.key === "Enter") {
+        console.log("-> Pressed enter")
+        // Trigger the button element with a click
+        checkMnemonicAnswer();
+    }
+    });
+
+}
+
+/* Set to full screen mode */
+
+function openFullscreen() {
+
+    var elem = document.documentElement;
+
+    if (elem.requestFullscreen) {
+      elem.requestFullscreen();
+    } else if (elem.webkitRequestFullscreen) { /* Safari */
+      elem.webkitRequestFullscreen();
+    } else if (elem.msRequestFullscreen) { /* IE11 */
+      elem.msRequestFullscreen();
+    }
 }
 
 
