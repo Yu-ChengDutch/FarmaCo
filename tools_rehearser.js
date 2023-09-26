@@ -287,7 +287,7 @@ function prepareQuestions(level) {
 
     };
 
-    if (level == 4) {
+    if (level == 4 || level == 3) {
 
         keys = Object.keys(content_dict)
 
@@ -296,12 +296,25 @@ function prepareQuestions(level) {
             var current = content_dict[keys[i]].Naam
             var temp_temp_question_array = [];
 
-            if (Object.keys(content_dict[keys[i]]).includes("Indicaties")) {
+            if (level == 4 && Object.keys(content_dict[keys[i]]).includes("Indicaties")) {
 
                 question_string = "Welk (klasse) medicijn is bruikbaar voor de volgende symptomen: " + content_dict[keys[i]].Indicaties;
                 temp_temp_question_array.push({"Question": question_string, "Answer": current });
 
                 temp_temp_question_array.push(ancestryQuestion(current));
+
+            } else if (level == 3 && Object.keys(content_dict[keys[i]]).includes("Interacties")) {
+
+                for (var j = 0; j < content_dict[keys[i]].Interacties.length; j++) {
+
+                    current_interaction = content_dict[keys[i]].Interacties[j];
+
+                    question_string = "Het tegelijk nemen van " + current + " en " + current_interaction.Interactant + " geeft risico op: ";
+                    temp_temp_question_array.push({"Question": question_string, "Answer": current_interaction.Risico });
+
+                    temp_temp_question_array.push([ancestryQuestion(current), ancestryQuestion(shuffle(current_interaction.Interactant)[0])]);
+
+                };                
 
             };
 
@@ -410,23 +423,6 @@ function checkMnemonicAnswer() {
         }
 
     }
-}
-
-function expandMnemonic() {
-
-    const correct_index = parseInt(document.getElementById('question-title').innerText);
-    const textfield = document.getElementById('text-field');
-
-    const keys = Object.keys(question_array[correct_index].Mnemonic)
-
-    document.getElementById('question-title').innerText = correct_index.toString() + ".1"
-    document.getElementById('question-description').innerText = "What is the meaning of: " + keys[1]
-    document.getElementById('remark-card').innerText = "Please enter the answer"
-
-    resetButtons();
-
-    textfield.value = "";
-
 }
 
 function nextMnemonicQuestion() {
@@ -609,6 +605,25 @@ function openFullscreen() {
     } else if (elem.msRequestFullscreen) { /* IE11 */
       elem.msRequestFullscreen();
     }
+}
+
+/* From the old function in order to expand mnemonic */
+
+function expandMnemonic() {
+
+    const correct_index = parseInt(document.getElementById('question-title').innerText);
+    const textfield = document.getElementById('text-field');
+
+    const keys = Object.keys(question_array[correct_index].Mnemonic)
+
+    document.getElementById('question-title').innerText = correct_index.toString() + ".1"
+    document.getElementById('question-description').innerText = "What is the meaning of: " + keys[1]
+    document.getElementById('remark-card').innerText = "Please enter the answer"
+
+    resetButtons();
+
+    textfield.value = "";
+
 }
 
 /**

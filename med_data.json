@@ -387,7 +387,7 @@
                             "Indicaties": ["Hypertensie"],
                             "Onderverdeling": [
                                 {
-                                    "Naam": "Amlodipines"
+                                    "Naam": "Amlodipine"
                                 },
                                 {
                                     "Naam": "Nifedipine"
@@ -497,7 +497,7 @@
                     "Indicaties": ["Hyperkaliëmie met ECG afwijkingen"]
                 },
                 {
-                    "Naam": "KCI-drank",
+                    "Naam": "KCl-drank",
                     "Indicaties": ["Hypokaliëmie"]
                 }                 
             ]
