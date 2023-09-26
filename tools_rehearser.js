@@ -108,8 +108,8 @@ function prepareComponents() {
 
     console.log("- > Preparing components");
 
-    explorable_array = shuffle(original_dictionary.Onderverdeling);
-    temp_ancestry_array = [];
+    var explorable_array = shuffle(original_dictionary.Onderverdeling);
+    var temp_ancestry_array = [];
 
     while (explorable_array.length > 0) {
 
@@ -123,9 +123,11 @@ function prepareComponents() {
 
                 explorable_item.Onderverdeling[i] = explorable_item.Onderverdeling[i];
 
-                child_name = explorable_item.Onderverdeling[i].Naam;
+                var temp_dict = {};
 
-                grand_children = [];
+                var child_name = explorable_item.Onderverdeling[i].Naam;
+
+                var grand_children = [];
 
                 if (Object.keys(explorable_item.Onderverdeling[i]).includes("Onderverdeling")) {
                     
@@ -137,9 +139,13 @@ function prepareComponents() {
 
                     };
 
-                };
+                    temp_dict[child_name] = {"Parent": parent_name, "Children": grand_children}
 
-                temp_ancestry_array.push({child_name : {"Parent": parent_name, "Children": grand_children}});
+                } else {
+                    temp_dict[child_name] = {"Parent": parent_name}
+                }
+
+                temp_ancestry_array.push(temp_dict);
                 
             };
 
