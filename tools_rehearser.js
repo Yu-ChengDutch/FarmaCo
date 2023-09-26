@@ -301,7 +301,7 @@ function checkMnemonicAnswer() {
     // or the individual elements
 
     const textfield = document.getElementById('text-field');    
-    const given_answer = (textfield.value).toLowerCase();
+    const given_answer = textfield.value;
 
     const indices = (document.getElementById('question-title').innerText).split('.')
 
@@ -314,7 +314,7 @@ function checkMnemonicAnswer() {
         console.log("- - > Checking mnemonic")
         console.log("- - > Right answer is: " + correct_answer)
 
-        if (correct_answer.includes(given_answer) || given_answer == correct_answer.toString().toLowerCase()) {
+        if (correct_answer.includes(given_answer) || given_answer.toLowerCase() == correct_answer.toString().toLowerCase()) {
 
             console.log("- - > Correct!")
 
