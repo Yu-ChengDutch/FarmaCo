@@ -386,8 +386,9 @@ function checkMnemonicAnswer() {
 
             document.getElementById('remark-card').innerText = "The right mnemonic is: " + correct_answer + ". You'll repeat this questions once more afterwards.";
 
-            local_question_array = question_array;
-            local_question_array.splice(parseInt(current_index) + 3, 0, {"Question": ("This is a repeat question: " + question_array[current_index].Question), "Answer": question_array[current_index].Answer});
+            let local_question_array = question_array;
+            local_question_array.splice(intervalIndex(current_index, 4, local_question_array), 0, {"Question": ("This is a repeat question: " + question_array[current_index].Question), "Answer": question_array[current_index].Answer});
+            local_question_array.splice(intervalIndex(current_index, 12, local_question_array), 0, {"Question": ("This is a repeat question: " + question_array[current_index].Question), "Answer": question_array[current_index].Answer});
 
             question_array = local_question_array;
             console.log(question_array);
@@ -431,6 +432,22 @@ function nextQuestion() {
  * 
  ***/
 
+/* Finds the possible next index */
+
+function intervalIndex(current_index, desired_interval, array) {
+
+    let length = array.length;
+    let current_index = parseInt(current_index);
+    let desired_interval = parseInt(desired_interval);
+
+    if (current_index + desired_interval < length) {
+        return (current_index + desired_interval)
+    } else {
+        return ((current_index + desired_interval) - length)
+    }
+
+}
+
 /* Shuffle arrays */
 
 function ancestryQuestion(current) {
@@ -448,6 +465,8 @@ function ancestryQuestion(current) {
     }
 
 };
+
+/* Shuffles arrays */
 
 function shuffle(array) {
     let currentIndex = array.length, randomIndex;
