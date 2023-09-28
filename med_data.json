@@ -10,8 +10,16 @@
                     "Bijwerkingen": [
                         {
                             "Bijwerking": "Leverbeschadiging",
-                            "Risicofactoren": ["Pre-existente leverbeschadiging", "Alcoholisme", "Slechte voedingstoestand"],
-                            "Dosis": [">", "150", "mg/kg/dag"]
+                            "Risicofactoren": ["Slechte voedingstoestand"],
+                            "Dosis": [">", "150", "mg/kg/dag"],
+                            "Mechanisme": ["Verlaagde glutathion-spiegel", "Stapeling NAPQI"]
+                        }
+                    ],
+                    "Interacties": [
+                        {
+                            "Interactant": ["Alcohol"],
+                            "Risico": "Leverbeschadiging",
+                            "Mechanisme": ["CYP2E1-inductie", "Verhoogde omzetting naar NAPQI", "Stapeling NAPQI"]
                         }
                     ]
                 },
@@ -20,31 +28,63 @@
                     "Bijwerkingen": [
                         {
                             "Bijwerking": "Ulcus pepticum",
-                            "Risicofactoren": ["Ulcus is de voorgeschiedenis", "Reumatoïde artritis", "Hartfalen", "Diabetes Mellitus"]
+                            "Risicofactoren": ["Ulcus is de voorgeschiedenis", "Reumatoïde artritis", "Hartfalen", "Diabetes Mellitus"],
+                            "Mechanisme": [["Verhoogde maagzuur excretie", "Verlaagde bicarbonaat excretie", "Verlaagde slijmproductie", "Verlaagde groei maagzuur epitheel"]]
                         },
                         {
                             "Bijwerking": "Nierfalen",
-                            "Risicofactoren": ["Hartfalen", "Dehydratie", "Sepsis", "Pre-existent nierfalen"]
+                            "Risicofactoren": ["Hartfalen", "Dehydratie", "Sepsis", "Pre-existent nierfalen"],
+                            "Mechanisme": ["Vasoconstrictie van de afferente nierarteriole", "Verlaagde nierperfusie"]
                         },
                         {
-                            "Bijwerking": "Trombocytopathie"
+                            "Bijwerking": "Trombocytopathie",
+                            "Mechanisme": ["Verlaagde tromboxaan A2-vorming in de trombocyt", ["Verlaagde reactieve vasoconstrictie", "Verlaagde trombocytenaggregatie"]]
                         },
                         {
                             "Bijwerking": "Verergering van hartfalen",
-                            "Mechanisme": "Water- en zoutretentie"
+                            "Mechanisme": ["Vasoconstrictie van de afferente nierarteriole", ["Hyperkaliëmie", "Vochtretentie"]]
+                        },
+                        {
+                            "Bijwerking": "Hypertensie",
+                            "Mechanisme": ["Vasoconstrictie van de afferente nierarteriole", ["Hyperkaliëmie", "Vochtretentie"]]
                         },
                         {
                             "Bijwerking": "Weeënremming"
+                        },
+                        {
+                            "Bijwerking": "Sluiting ductus arteriosus"
                         }
                     ],
                     "Interacties": [
                         {
-                            "Interactant": ["Coumarinederivaten", "Trombocytenaggregatieremmers", "SSRI's"],
-                            "Risico": "GI-bloedingen"
+                            "Interactant": ["Plaatjesremmers", "SSRI's"],
+                            "Risico": "Bloedingen",
+                            "Mechanisme": ["Verlaagde werking trombocyten"]
                         },
                         {
-                            "Interactant": ["RAS-remmers", "Diuretica"],
-                            "Risico": "Hart- en nierfalen"
+                            "Interactant": ["Coumarinederivaten"],
+                            "Risico": "Bloedingen",
+                            "Mechanisme": ["Verminderde vitamine K-afhankelijke stolling"]
+                        },
+                        {
+                            "Interactant": ["Corticosteroïden"],
+                            "Risico": "GI-bloedingen",
+                            "Mechanisme": "Cummulatieve ulcerogene werking"
+                        },
+                        {
+                            "Interactant": ["RAS-remmers"],
+                            "Risico": "Hart- en nierfalen",
+                            "Mechanisme": "Hyperkaliëmie bij verminderde nierfunctie"
+                        },
+                        {
+                            "Interactant": ["Diuretica"],
+                            "Risico": "Hart- en nierfalen",
+                            "Mechanisme": "Verlaagde nierdoorbloeding bij een lager circulerend volume"
+                        },
+                        {
+                            "Interactant": ["Antihypertensiva"],
+                            "Risico": "Hypertensie",
+                            "Mechanisme": "Hyperkaliëmie bij NSAID-gebruik"
                         }
                     ],
                     "Onderverdeling": [
@@ -70,20 +110,47 @@
                     "Bijwerkingen": [
                         {
                             "Bijwerking": "Afhankelijkeheid",
-                            "Risicofactoren": ["Middelenmisbruik in de voorgeschiedenis", "Gebruik van snelwerkende opiaten"]
+                            "Risicofactoren": ["Middelenmisbruik in de voorgeschiedenis", "Gebruik van snelwerkende opiaten"],
+                            "Mechanisme": ["Mu-receptor bezetting"]
                         },
                         {
                             "Bijwerking": "Obstipatie"
                         },
                         {
                             "Bijwerking": "Ademdepressie",
-                            "Risicofactoren": ["COPD"]
+                            "Risicofactoren": ["COPD"],
+                            "Mechanisme": ["Mu-receptor bezetting"]
+                        },
+                        {
+                            "Bijwerking": "Euforie",
+                            "Mechanisme": ["Mu-receptor bezetting"]
+                        },
+                        {
+                            "Bijwerking": "Sedatie",
+                            "Mechanisme": ["Kappa-receptor bezetting"]
+                        },
+                        {
+                            "Bijwerking": "Miosis",
+                            "Mechanisme": ["Kappa-receptor bezetting"]
+                        },
+                        {
+                            "Bijwerking": "Dysforie",
+                            "Mechanisme": ["Kappa-receptor bezetting"]
+                        },
+                        {
+                            "Bijwerking": "Obstipatie",
+                            "Risicofactoren": ["Immobiliteit", "Slechte intake van water en voedsel"],
+                            "Mechanisme": ["Mu-receptor bezetting", ["Toename tonus gladde spieren", "Verlaagde motiliteit"]]
+                        },
+                        {
+                            "Bijwerking": "Jeuk"
                         }
                     ],
                     "Interacties": [
                         {
-                            "Interactant": ["Anticholinergica", "Antidepressiva", "Diuretica", "Calciumantagonisten"],
-                            "Risico": "Obstipatie"
+                            "Interactant": ["Anticholinergica", "TCA's"],
+                            "Risico": "Obstipatie",
+                            "Mechanisme": ["Parasympathicolytisch effect", "Cummulatief effect"]
                         },
                         {
                             "Interactant": ["Benzodiazepines"],
@@ -105,9 +172,6 @@
                                 },
                                 {
                                     "Bijwerking": "Misselijkheid"
-                                },
-                                {
-                                    "Bijwerking": "Delier"
                                 }
                             ]
                         },
@@ -122,6 +186,33 @@
             ]
         },
         {
+            "Naam": "Laxantia",
+            "Onderverdeling": [
+                {
+                    "Naam": "Osmotische laxantia",
+                    "Onderverdeling": [
+                        {
+                            "Naam": "Lactulose"
+                        },
+                        {
+                            "Naam": "Macrogol"
+                        },
+                        {
+                            "Naam": "Magnesiumhydroxide"
+                        }
+                    ]
+                },
+                {
+                    "Naam": "Contactlaxantia",
+                    "Onderverdeling": [
+                        {
+                            "Naam": "Bisodacyl"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
             "Naam": "Antistolling",
             "Bijwerkingen": [
                 {
@@ -132,147 +223,193 @@
             ],
             "Onderverdeling": [
                 {
-                    "Naam": "Trombocytenaggregatieremmers",
-                    "Interacties": [
-                        {
-                            "Interactant": ["Corticosteroïden", "NSAID's", "SSRI's"],
-                            "Risico": "Bloeding"
-                        }
-                    ],
+                    "Naam": "Arteriële antistolling",
                     "Onderverdeling": [
                         {
-                            "Naam": "Acetylsalicylzuur",
-                            "Indicaties": ["Primaire preventie bij arterieel vaatlijden", "Secundaire preventie bij arterieel vaatlijden", "2e keus na TIA/CVA"]
-                        },
-                        {
-                            "Naam": "Clopidogrel",
-                            "Indicaties": ["Profylaxe na stentplaatsing", "Acuut coronair syndroom", "Perifeer vaatlijden", "1e keus na TIA/CVA"]
-                        },
-                        {
-                            "Naam": "Ticagrelor",
-                            "Indicaties": ["I.c.m. acetylsalicylzuur bij acuut coronair syndroom"]
-                        }
-                    ]
-                },
-                {
-                    "Naam": "Coumarinederivaten",
-                    "Indicaties": ["Atriumfibrilleren", "Mechanische klepprothese", "Longembolie", "DVT", "TIA/CVA profylaxe bij CHADVASC >1"],
-                    "Bijwerkingen": [
-                        {
-                            "Bijwerking": "Verhoogd bloedingsrisico",
-                            "Risicofactoren": ["Therapieontrouw", "Alcohol", "Koorts"],
-                            "Dosis": [">", "150", "mg/kg/dag"]
-                        }
-                    ],
-                    "Interacties": [
-                        {
-                            "Interactant": ["NSAID's", "Corticosteroïden"],
-                            "Risico": "GI-bloedingen"
-                        },
-                        {
-                            "Interactant": ["Co-trimoxazol"],
-                            "Risico": "Bloedingen",
-                            "Mechanisme": ["CYP2C9 remming", "Verlenging INR"]
-                        },
-                        {
-                            "Interactant": ["Anti-epileptica"],
-                            "Risico": "Verminderde antistolling"
-                        }
-                    ],
-                    "Onderverdeling": [
-                        {
-                            "Naam": "Acenocoumarol",
-                            "Zwangerschap": ["Risico"]
-                        },
-                        {
-                            "Naam": "Fenprocoumon",
-                            "Zwangerschap": ["Risico"]
-                        }
-                    ]
-                },
-                {
-                    "Naam": "Heparinegroep",
-                    "Indicaties": ["Tromboseprofylaxe", "Overbrugging bij start/onderbreking coumarinederivaten en DOAC's"], 
-                    "Bijwerkingen": [
-                        {
-                            "Bijwerking": "Verhoogd bloedingsrisico"
-                        }
-                    ],
-                    "Interacties": [
-                        {
-                            "Interactant": ["Corticosteroïden", "NSAID's"],
-                            "Risico": "Verhoogd bloedingsrisico"
-                        }
-                    ],                   
-                    "Onderverdeling": [
-                        {
-                            "Naam": "Heparine"
-                        },
-                        {
-                            "Naam": "LMWH's",
-                            "Bijwerkingen": [
+                            "Naam": "Plaatjesremmers",
+                            "Interacties": [
                                 {
-                                    "Bijwerking": "Verhoogde LMWH-spiegel",
-                                    "Risicofactoren": ["Nierinsufficiëntie"]
+                                    "Interactant": ["Corticosteroïden", "NSAID's", "SSRI's"],
+                                    "Risico": "Bloeding"
                                 }
                             ],
                             "Onderverdeling": [
                                 {
-                                    "Naam": "Nadroparine",
-                                    "Zwangerschap": ["Meest veilig"]
+                                    "Naam": "Irreversibele plaatjesremmers",
+                                    "Onderverdeling": [
+                                        {
+                                            "Naam": "Acetylsalicylzuur",
+                                            "Indicaties": ["Primaire preventie bij arterieel vaatlijden", "Secundaire preventie bij arterieel vaatlijden", "2e keus na TIA/CVA"]
+                                        },
+                                        {
+                                            "Naam": "Clopidogrel",
+                                            "Indicaties": ["Profylaxe na stentplaatsing", "Acuut coronair syndroom", "Perifeer vaatlijden", "1e keus na TIA/CVA"]
+                                        }
+                                    ]
                                 },
                                 {
-                                    "Naam": "Fraxiparine"
-                                },
-                                {
-                                    "Naam": "Enoxaparine"
-                                }
+                                    "Naam": "Reversibele plaatjesremmers",
+                                    "Onderverdeling": [
+                                        {
+                                            "Naam": "Ticagrelor",
+                                            "Indicaties": ["I.c.m. ascal bij acuut coronair syndroom"]
+                                        },
+                                        {
+                                            "Naam": "Dipyridiamol",
+                                            "Indicaties": ["I.c.m. ascal na TIA/CVA"]                                            
+                                        }
+                                    ]
+                                }                                
                             ]
                         }
                     ]
                 },
                 {
-                    "Naam": "Heparine antagonist",
+                    "Naam": "Veneuze antistolling",
                     "Onderverdeling": [
                         {
-                            "Naam": "Protamine"
-                        }
-                    ]
-                },
-                {
-                    "Naam": "DOAC's",
-                    "Indicaties": ["Non-valvulair atriumfibrilleren", "DVT", "Longembolie"],
-                    "Onderverdeling": [
-                        {
-                            "Naam": "Factor II-remmers",
+                            "Naam": "Coumarinederivaten",
+                            "Indicaties": ["Atriumfibrilleren", "Mechanische klepprothese", "Longembolie", "DVT", "TIA/CVA profylaxe bij CHADVASC >1"],
+                            "Bijwerkingen": [
+                                {
+                                    "Bijwerking": "Verhoogd bloedingsrisico",
+                                    "Risicofactoren": ["Therapieontrouw", "Alcohol", "Koorts"],
+                                    "Dosis": [">", "150", "mg/kg/dag"]
+                                }
+                            ],
+                            "Interacties": [
+                                {
+                                    "Interactant": ["NSAID's", "Corticosteroïden"],
+                                    "Risico": "GI-bloedingen"
+                                },
+                                {
+                                    "Interactant": ["Cotrimoxazol", "Alcohol"],
+                                    "Risico": "Bloedingen",
+                                    "Mechanisme": ["CYP2C9 inhibitie", "Verhoogde coumarine-spiegel"]
+                                },
+                                {
+                                    "Interactant": ["Anti-epileptica", "Rifampicine"],
+                                    "Risico": "Trombose",
+                                    "Mechanisme": ["CYP2C9 inductie", "Verlaagde coumarine-spiegel"]
+                                }
+                            ],
                             "Onderverdeling": [
                                 {
-                                    "Naam": "Dabigatran",
+                                    "Naam": "Acenocoumarol",
+                                    "Zwangerschap": ["Risico"]
+                                },
+                                {
+                                    "Naam": "Fenprocoumon",
+                                    "Zwangerschap": ["Risico"]
+                                }
+                            ]
+                        },
+                        {
+                            "Naam": "Heparinegroep", 
+                            "Bijwerkingen": [
+                                {
+                                    "Bijwerking": "Verhoogd bloedingsrisico"
+                                }
+                            ],
+                            "Interacties": [
+                                {
+                                    "Interactant": ["Corticosteroïden", "NSAID's"],
+                                    "Risico": "Verhoogd bloedingsrisico"
+                                }
+                            ],                   
+                            "Onderverdeling": [
+                                {
+                                    "Naam": "Ongefractioneerde heparine",
                                     "Bijwerkingen": [
                                         {
-                                        "Bijwerking": "Verhoogd bloedingsrisico",
-                                        "Risicofactoren": ["Nierinsufficiëntie"]
+                                            "Bijwerking": "Heparin-induced thrombocytopenia"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Naam": "LMWH's",
+                                    "Indicaties": ["Bridging bij CHADVASC >= 8/mechanische klep/kunstklep <3 mnd/recidiverend DVT", "Tromboseprofylaxe"],
+                                    "Interacties": [
+                                        {
+                                            "Interactant": ["NSAID's", "Corticosteroïden"],
+                                            "Risico": "GI-bloedingen"
+                                        },
+                                        {
+                                            "Interactant": ["Plaatjesremmers", "Coumarinederivaten"],
+                                            "Risico": "Bloedingen",
+                                            "Mechanisme": "Cummulatief effect"
+                                        },
+                                        {
+                                            "Interactant": ["NSAID's", "Diuretica"],
+                                            "Risico": "Bloedingen",
+                                            "Mechanisme": ["Verlaagde nierperfusie", "Verlaagde nierfunctie", "Verlaagde klaring", "Verhoogde LMWH-spiegel"]
+                                        }
+                                    ],
+                                    "Onderverdeling": [
+                                        {
+                                            "Naam": "Nadroparine",
+                                            "Zwangerschap": ["Meest veilig"]
+                                        },
+                                        {
+                                            "Naam": "Fraxiparine"
+                                        },
+                                        {
+                                            "Naam": "Enoxaparine"
                                         }
                                     ]
                                 }
                             ]
                         },
                         {
-                            "Naam": "Factor Xa-remmers",
+                            "Naam": "DOAC's",
+                            "Indicaties": ["Non-valvulair atriumfibrilleren met CHADVASC >1", "DVT", "Longembolie"],
                             "Onderverdeling": [
                                 {
-                                    "Naam": "Apixaban"
+                                    "Naam": "Factor IIa-remmers",
+                                    "Onderverdeling": [
+                                        {
+                                            "Naam": "Dabigatran",
+                                            "Bijwerkingen": [
+                                                {
+                                                "Bijwerking": "Verhoogd bloedingsrisico",
+                                                "Risicofactoren": ["Nierinsufficiëntie"]
+                                                }
+                                            ],
+                                            "Interacties": [
+                                                {
+                                                    "Interactant": ["NSAID's", "RAS-remmers", "Diuretica"],
+                                                    "Risico": "Bloedingen",
+                                                    "Mechanisme": ["Verlaagde nierfunctie", "Verlaagde klaring", "Verhoogde spiegel"]
+                                                }                                        
+                                            ]
+                                        }
+                                    ]
                                 },
                                 {
-                                    "Naam": "Rivaroxaban"
-                                },
-                                {
-                                    "Naam": "Edoxaban"
-                                }
+                                    "Naam": "Factor Xa-remmers",
+                                    "Interacties":[
+                                        {
+                                            "Interactant": ["Verapamil", "Itraconazol", "Erytromycine", "Ketoconazol"],
+                                            "Risico": "Bloedingen",
+                                            "Mechanisme": ["CYP3A4 inhibitie", "Verhoogde spiegel"]
+                                        }
+                                    ],
+                                    "Onderverdeling": [
+                                        {
+                                            "Naam": "Apixaban"
+                                        },
+                                        {
+                                            "Naam": "Rivaroxaban"
+                                        },
+                                        {
+                                            "Naam": "Edoxaban"
+                                        }
+                                    ]
+                                }                        
                             ]
-                        }                        
+                        }
                     ]
-                }                
+                }                                
             ]
         },
         {
@@ -286,23 +423,27 @@
                             "Interacties": [
                                 {
                                     "Interactant": ["Cardiovasculaire middelen", "Opiaatagonisten", "Benzodiazepines"],
-                                    "Risico": "Verhoogd valrisico"
+                                    "Risico": "Vallen"
                                 },
                                 {
                                     "Interactant": ["SSRI's"],
-                                    "Risico": "Hyponatriëmie"
+                                    "Risico": "Hyponatriëmie",
+                                    "Mechanisme": "Verhoogde ADH-productie"
                                 },
                                 {
                                     "Interactant": ["NSAID's", "RAS-remmers"],
-                                    "Risico": "Nierfalen"
+                                    "Risico": "Nierfalen",
+                                    "Mechanisme": "Verlaagde nierfunctie"
                                 },
                                 {
                                     "Interactant": ["NSAID's", "RAS-remmers"],
-                                    "Risico": "Hyperkaliëmie"
+                                    "Risico": "Hyperkaliëmie",
+                                    "Mechansime": "Verlaagde nierfunctie"
                                 },
                                 {
                                     "Interactant": ["NSAID's"],
-                                    "Risico": "Verminderd diuretisch effect"
+                                    "Risico": "Hypertensie",
+                                    "Mechanisme": "Verlaagde nierfunctie"
                                 }
                             ],
                             "Onderverdeling": [
@@ -346,8 +487,14 @@
                                     "Indicaties": ["Atriumfibrilleren", "Hypertensie", "Hartfalen", "Secundaire preventie na myocardinfarct"],
                                     "Interacties": [
                                         {
-                                            "Interactant": ["Calciumantagonisten"],
-                                            "Risico": "Bradycardie"
+                                            "Interactant": ["Non-dihydropyridines"],
+                                            "Risico": "Bradycardie",
+                                            "Mechanisme": ["Cummulatief effect"]
+                                        },
+                                        {
+                                            "Interactant": ["NSAID's"],
+                                            "Risico": "Hypertensie",
+                                            "Mechanisme": ["Verlaagde nierfunctie", "Hyperkaliëmie"]
                                         }                        
                                     ],
                                     "Onderverdeling": [
@@ -359,8 +506,19 @@
                                             "Naam": "Sotalol",
                                             "Interacties": [
                                                 {
-                                                    "Interactant": ["Thiazidediuretica", "Lisdiuretica", "NSAID's"],
-                                                    "Risico": "Ritmestoornissen"
+                                                    "Interactant": ["Thiazidediuretica", "Lisdiuretica"],
+                                                    "Risico": "Ritmestoornissen",
+                                                    "Mechanisme": "Hypokaliëmie"
+                                                },
+                                                {
+                                                    "Interactant": ["NSAID's"],
+                                                    "Risico": "Ritmestoornissen",
+                                                    "Mechanisme": ["Verlaagde nierfunctie", "Verhoogde sotalol-spiegel"]
+                                                },
+                                                {
+                                                    "Interactant": ["Antipsychotica"],
+                                                    "Risico": "Ritmestoornissen",
+                                                    "Mechanisme": "Cummulatief effect"
                                                 }
                                             ]
                                         },
@@ -418,19 +576,33 @@
                             "Interacties": [
                                 {
                                     "Interactant": ["Diuretica", "NSAID's"],
-                                    "Risico": "Nierfalen"
+                                    "Risico": "Nierfalen",
+                                    "Mechanisme": "Cummulatief effect"
                                 },
                                 {
                                     "Interactant": ["Kaliumsparende diuretica"],
-                                    "Risico": "Hyperkaliëmie"
+                                    "Risico": "Hyperkaliëmie",
+                                    "Mechanisme": "Cummulatief effect"
                                 },
                                 {
                                     "Interactant": ["Diuretica"],
-                                    "Risico": "Hypotensie"
+                                    "Risico": "Hypotensie",
+                                    "Mechanisme": "Cummulatief effect"
                                 },
                                 {
-                                    "Interactant": ["Cardiovasculaire middelen", "Opiaatagonisten", "Benzodiazepines"],
-                                    "Risico": "Verhoogd valrisico"
+                                    "Interactant": ["Antihypertensiva"],
+                                    "Risico": "Vallen",
+                                    "Mechanisme": "Cummulatief effect"
+                                },
+                                {
+                                    "Interactant": ["Opiaatagonisten", "Benzodiazepines"],
+                                    "Risico": "Vallen",
+                                    "Mechanisme": "Verlaagd bewustzijn"
+                                },
+                                {
+                                    "Interactant": ["NSAID's"],
+                                    "Risico": "Hypertensie",
+                                    "Mechanisme": ["Verminderde nierfunctie", "Hyperkaliëmie"]
                                 }
                             ],
                             "Onderverdeling": [
@@ -463,12 +635,19 @@
                     "Indicaties": ["Chronisch hartfalen", "Atriumfibrilleren"],
                     "Interacties": [
                         {
-                            "Interactant": ["Lisdiuretica", "Thiazidediuretica", "NSAID's"],
-                            "Risico": "Ritmestoornissen"
+                            "Interactant": ["Lisdiuretica", "Thiazidediuretica"],
+                            "Risico": "Ritmestoornissen",
+                            "Mechanisme": ["Verhoogde kaliumexcretie", "Hypokaliëmie"]
+                        },
+                        {
+                            "Interactant": ["NSAID's"],
+                            "Risico": "Ritmestoornissen",
+                            "Mechanisme": ["Verlaagde nierfunctie", "Verlaagde klaring"]
                         },
                         {
                             "Interactant": ["Verapamil"],
-                            "Risico": "Bradycardie"
+                            "Risico": "Bradycardie",
+                            "Mechanisme": "Cummulatief effect"
                         }
                     ],
                     "Onderverdeling": [
@@ -525,7 +704,8 @@
                     "Interacties": [
                         {
                             "Interactant": ["Beta-blokkers"],
-                            "Risico": "Hypoglykemie"
+                            "Risico": "Verlate herkenning hypoglykemie",
+                            "Mechanisme": ["Maskeren adrenerge symptomen"]
                         }
                     ],
                     "Onderverdeling": [
@@ -550,7 +730,8 @@
                     "Interacties": [
                         {
                             "Interactant": ["Beta-blokkers"],
-                            "Risico": "Hypoglykemie"
+                            "Risico": "Verlate herkenning hypoglykemie",
+                            "Mechanisme": ["Maskeren adrenerge symptomen"]
                         }
                     ],
                     "Onderverdeling": [
@@ -600,7 +781,8 @@
                     "Interacties": [
                         {
                             "Interactant": ["Antihypertensiva", "Diuretica"],
-                            "Risico": "Orthostase"
+                            "Risico": "Vallen",
+                            "Mechanisme": ["Cummulatief effect", "(Orthostatisch) hypotensie"]
                         }
                     ],
                     "Onderverdeling": [
@@ -618,15 +800,18 @@
                     "Interacties": [
                         {
                             "Interactant": ["Thiazidediuretica"],
-                            "Risico": "Hyponatriëmie"
+                            "Risico": "Hyponatriëmie",
+                            "Mechanisme": "Cummulatief effect"
                         },
                         {
-                            "Interactant": ["NSAID's"],
-                            "Risico": "Bloedingen"
+                            "Interactant": ["NSAID's", "Antistolling"],
+                            "Risico": "Bloedingen",
+                            "Mechanisme": "Cummulatief effect"
                         },
                         {
                             "Interactant": ["Lithium", "Tramadol", "Triptanen", "Tryptofaan", "Sint-Janskruid"],
-                            "Risico": "Serotonerg syndroom"
+                            "Risico": "Serotonerg syndroom",
+                            "Mechanisme": "Verhoogde serotonine-spiegel"
                         }
                     ],
                     "Onderverdeling": [
@@ -648,7 +833,8 @@
                     "Interacties": [
                         {
                             "Interactant": ["Diuretica", "NSAID's", "RAS-remmers"],
-                            "Risico": "Hogere lithiumspiegel"
+                            "Risico": "Hogere lithiumspiegel",
+                            "Mechanisme": ["Verlaagde nierfunctie", "Verlaagde klaring"]
                         }
                     ]
                 }
@@ -659,11 +845,13 @@
             "Interacties": [
                 {
                     "Interactant": ["Cardiovasculaire middelen", "Alcohol", "Opiaatagonisten"],
-                    "Risico": "Verhoogd valrisico"
+                    "Risico": "Verhoogd valrisico",
+                    "Mechanisme": "Cummulatief effect"
                 },
                 {
                     "Interactant": ["Opiaatagonisten", "Alcohol"],
-                    "Risico": "Ademdepressie"
+                    "Risico": "Ademdepressie",
+                    "Mechanisme": "Cummulatief effect"
                 }
             ],
             "Onderverdeling": [
@@ -711,6 +899,31 @@
                 {
                     "Naam": "Vierfactoren concentraat",
                     "Indicaties": ["Ernstige bloeding bij coumarinederivaten"]
+                },
+                {
+                    "Naam": "Heparine antagonist",
+                    "Onderverdeling": [
+                        {
+                            "Naam": "Protamine",
+                            "Indicaties": ["Levensbedreigende bloeding on (ongefractioneerde) heparine"]
+                        }
+                    ]
+                },
+                {
+                    "Naam": "Desmopressine",
+                    "Indicaties": ["Acute OK onder plaatjesremmers"]
+                },
+                {
+                    "Naam": "Trombocytentransfusie",
+                    "Indicaties": ["Acute OK onder plaatjesremmers met hoog bloedingsrisico"]
+                },
+                {
+                    "Naam": "Idarucizumab",
+                    "Indicaties": ["Bloeding onder dabigatran"]
+                },
+                {
+                    "Naam": "Andexanet Alfa",
+                    "Indicaties": ["Bloeding onder factor Xa-remmers"]
                 }
             ]
         },
@@ -783,7 +996,8 @@
             "Interacties": [
                 {
                     "Interactant": ["Coumarinederivaten"],
-                    "Risico": "Verhoogde coumarinespiegel"
+                    "Risico": "Bloedingen",
+                    "Mechanisme": ["Verhoogde afbraak stollingsfactoren", "Verlaagde spiegel stollingsfactoren"]
                 }
             ],
             "Onderverdeling": [
@@ -843,8 +1057,9 @@
                     "Naam": "Tetracyclinen",
                     "Interacties": [
                         {
-                            "Interactant": ["Metalen"],
-                            "Risico": "Verminderde absorptie tetracyclinen"
+                            "Interactant": ["Aluminium", "Calcium", "IJzer", "Magnesium"],
+                            "Risico": "Verlaagde antibiotische werking",
+                            "Mechanisme": ["Vorming onoplosbare complexen", "Verlaagde absorptie"]
                         }
                     ],
                     "Onderverdeling": [
@@ -868,7 +1083,8 @@
                     "Interacties": [
                         {
                             "Interactant": ["Sotalol", "TCA's", "SSRI's"],
-                            "Risico": "Torsade De POintes"
+                            "Risico": "Torsade De Pointes",
+                            "Mechanisme": "Cummulatief effect"
                         }
                     ],
                     "Onderverdeling": [
@@ -901,16 +1117,18 @@
                     "Interacties": [
                         {
                             "Interactant": ["Methotrexaat"],
-                            "Risico": "Versterkte werking methotrexaat"
+                            "Risico": "Megaloblastaire anemie",
+                            "Mechanisme": ["Verstoorde foliumzuurhuishouding", "Beenmergsuppressie"]
                         },
                         {
                             "Interactant": ["Coumarinederivaten"],
-                            "Risico": "Verhoogde coumarinespiegel"
+                            "Risico": "Bloedingen",
+                            "Mechanisme": ["CYP2C9 inhibitie", "Verminderde afbraak", "Verhoogde spiegel"]
                         }
                     ],
                     "Onderverdeling": [
                         {
-                            "Naam": "Co-trimoxazol"
+                            "Naam": "Cotrimoxazol"
                         }
                     ]
                 },
