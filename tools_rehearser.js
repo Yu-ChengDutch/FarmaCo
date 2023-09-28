@@ -437,13 +437,13 @@ function nextQuestion() {
 function intervalIndex(current_index, desired_interval, array) {
 
     let length = array.length;
-    let current_index = parseInt(current_index);
-    let desired_interval = parseInt(desired_interval);
+    let temp_current_index = parseInt(current_index);
+    let temp_desired_interval = parseInt(desired_interval);
 
-    if (current_index + desired_interval < length) {
-        return (current_index + desired_interval)
+    if (temp_current_index + temp_desired_interval < length) {
+        return (temp_current_index + temp_desired_interval)
     } else {
-        return ((current_index + desired_interval) - length)
+        return ((temp_current_index + temp_desired_interval) - length)
     }
 
 }
