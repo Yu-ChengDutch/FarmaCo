@@ -287,7 +287,7 @@ function prepareQuestions(level) {
 
     };
 
-    if (level == 4 || level == 3) {
+    if (level == 4 || level == 3 || level == 5 || level == 7 || level == 9) {
 
         keys = Object.keys(content_dict)
 
@@ -302,6 +302,8 @@ function prepareQuestions(level) {
                 temp_temp_question_array.push({"Question": question_string, "Answer": current });
 
                 temp_temp_question_array.push(ancestryQuestion(current));
+
+                temp_question_array.push(temp_temp_question_array);
 
             } else if (level == 3 && Object.keys(content_dict[keys[i]]).includes("Interacties")) {
 
