@@ -324,14 +324,26 @@ function prepareQuestions(level) {
                         temp_temp_question_array.push(ancestryQuestion(current_child));
                     }
                     
-
-                    
+                    temp_question_array.push(temp_temp_question_array);                    
 
                 };                
 
-            };
+            } else if (level == 5 && Object.keys(content_dict[keys[i]]).includes("Mechanisme")) {
+            
+                question_string = "Welk (klasse) medicijn werk op de volgende manier: " + content_dict[keys[i]].Mechanisme;
+                temp_question_array.push({"Question": question_string, "Answer": current });
 
-            temp_question_array.push(temp_temp_question_array);
+            } else if (level == 7 && Object.keys(content_dict[keys[i]]).includes("Zwangerschap")) {
+            
+                question_string = "Welk categorie valt " + current + " in wat betreft teratologie?";
+                temp_question_array.push({"Question": question_string, "Answer": content_dict[keys[i]].Zwangerschap[0]});
+
+            } else if (level == 9 && Object.keys(content_dict[keys[i]]).includes("Enzym")) {
+            
+                question_string = "Is " + current + " een enzyminducer, of inhibitor?";
+                temp_question_array.push({"Question": question_string, "Answer": content_dict[keys[i]].Enzym});
+
+            }            
 
         };
 
