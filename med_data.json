@@ -26,6 +26,7 @@
                 },
                 {
                     "Naam": "NSAID's",
+                    "Mechanisme": [["COX-1 remming", "Inhibitie van trombocytenaggergatie, gastroprotectie en renale perfusie"], ["COX-2 inhibitie", "Inhibitie van renale perfusie, inflammatie, ovulatie, sluiting ductus Botalli en pyrexie"]],
                     "Bijwerkingen": [
                         {
                             "Bijwerking": "Ulcus pepticum",
@@ -58,7 +59,7 @@
                     ],
                     "Interacties": [
                         {
-                            "Interactant": ["Plaatjesremmers", "SSRI's"],
+                            "Interactant": ["TAR's", "SSRI's"],
                             "Risico": "Bloedingen",
                             "Mechanisme": ["Verlaagde werking trombocyten"]
                         },
@@ -160,13 +161,16 @@
                     ],
                     "Onderverdeling": [
                         {
-                            "Naam": "Morfine"
+                            "Naam": "Morfine",
+                            "Mechanisme": ["Semiselectieve Mu-opioïdreceptor agonist (tevens kappa en delta)"]
                         },
                         {
-                            "Naam": "Fentanyl"
+                            "Naam": "Fentanyl",
+                            "Mechanisme": ["Selectieve Mu-opioïdreceptor agonist"]
                         },
                         {
                             "Naam": "Tramadol",
+                            "Mechanisme": ["Aselectieve Mu-, Kappa- en Delta-opioïdreceptor agonist; tevens reuptakeremmer van NE en serotonine"],
                             "Bijwerkingen": [
                                 {
                                     "Bijwerking": "Duizeligheid"
@@ -177,11 +181,13 @@
                             ]
                         },
                         {
-                            "Naam": "Oxycodon"
+                            "Naam": "Oxycodon",
+                            "Mechanisme": ["Aselectieve Mu-, Kappa- en Delta-opioïdreceptor agonist"]
                         },
                         {
                             "Naam": "Codeïne",
-                            "Enzym": ["CYP2D6", "Substraat"]
+                            "Enzym": ["CYP2D6", "Substraat"],
+                            "Mechanisme": ["Weak selective mu-opioïdreceptor antagonist; en pro-drug van morfine"]
                         }
                     ]
                 }                
@@ -192,6 +198,7 @@
             "Onderverdeling": [
                 {
                     "Naam": "Osmotische laxantia",
+                    "Mechanisme": ["Resorberen slecht", "Houden veel water in de darm", "Verzacht de feces", ["Vergroot het volume", "Versterkt de darmperisaltiek", "Stimuleert de stoelgang"]],
                     "Onderverdeling": [
                         {
                             "Naam": "Lactulose"
@@ -206,9 +213,10 @@
                 },
                 {
                     "Naam": "Contactlaxantia",
+                    "Mechanisme": ["Chemische prikkeling van de darmwand", "Verminderde intestinale water- en zoutresorptie", "Verzacht de feces", ["Vergroot het volume", "Versterkt de darmperisaltiek", "Stimuleert de stoelgang"]],
                     "Onderverdeling": [
                         {
-                            "Naam": "Bisodacyl"
+                            "Naam": "Bisacodyl"
                         }
                     ]
                 }
@@ -228,7 +236,7 @@
                     "Naam": "Arteriële antistolling",
                     "Onderverdeling": [
                         {
-                            "Naam": "Plaatjesremmers",
+                            "Naam": "TAR's",
                             "Interacties": [
                                 {
                                     "Interactant": ["Corticosteroïden", "NSAID's", "SSRI's"],
@@ -237,23 +245,26 @@
                             ],
                             "Onderverdeling": [
                                 {
-                                    "Naam": "Irreversibele plaatjesremmers",
+                                    "Naam": "Irreversibele TAR's",
                                     "Onderverdeling": [
                                         {
                                             "Naam": "Acetylsalicylzuur",
+                                            "Mechanisme": ["Inhibeert irreversibel de vorming van tromboxaan A2", "Inhibeert vasoconstrictie en trombocytenaggregatie"],
                                             "Indicaties": ["Primaire preventie bij arterieel vaatlijden", "Secundaire preventie bij arterieel vaatlijden", "2e keus na TIA/CVA"]
                                         },
                                         {
                                             "Naam": "Clopidogrel",
+                                            "Mechanisme": ["Blokkeert irreversibel de ADP-receptor van de trombocyt", "Inhibeert de activeering van een stollingscomplex"],
                                             "Indicaties": ["Profylaxe na stentplaatsing", "Acuut coronair syndroom", "Perifeer vaatlijden", "1e keus na TIA/CVA"]
                                         }
                                     ]
                                 },
                                 {
-                                    "Naam": "Reversibele plaatjesremmers",
+                                    "Naam": "Reversibele TAR's",
                                     "Onderverdeling": [
                                         {
                                             "Naam": "Ticagrelor",
+                                            "Mechanisme": ["Blokkeert reversibel de P2Y12 receptor", "Inhibitie van plaatjesactivatie en aggregatie"],
                                             "Indicaties": ["I.c.m. ascal bij acuut coronair syndroom"]
                                         },
                                         {
@@ -271,6 +282,7 @@
                     "Onderverdeling": [
                         {
                             "Naam": "Coumarinederivaten",
+                            "Mechanisme": ["Antagoneren vitamine K", "Afname concentratie vitamine K-afhankelijke stollingsfactoren (i.e. II, VII, IX, X en proteïne C)", "Afname van fibrinevorming"],
                             "Enzym": ["CYP2C9", "Substraat"],
                             "Indicaties": ["Atriumfibrilleren", "Mechanische klepprothese", "Longembolie", "DVT", "TIA/CVA profylaxe bij CHADVASC >1"],
                             "Bijwerkingen": [
@@ -308,7 +320,7 @@
                             ]
                         },
                         {
-                            "Naam": "Heparinegroep", 
+                            "Naam": "Heparinegroep",
                             "Bijwerkingen": [
                                 {
                                     "Bijwerking": "Verhoogd bloedingsrisico"
@@ -323,6 +335,7 @@
                             "Onderverdeling": [
                                 {
                                     "Naam": "Ongefractioneerde heparine",
+                                    "Mechanisme": ["Activeert anti-trombine III", "Neutraliseert factor IIa en Xa", "Remming omzetting fibrinogeen -> fibrine"],
                                     "Bijwerkingen": [
                                         {
                                             "Bijwerking": "Heparin-induced thrombocytopenia"
@@ -331,6 +344,7 @@
                                 },
                                 {
                                     "Naam": "LMWH's",
+                                    "Mechanisme": ["Activiteert selectief anti-factor Xa", "Neutraliseert pseudoselectief Xa", "Remming omzetting fibrinogeen -> fibrine"],
                                     "Indicaties": ["Bridging bij CHADVASC >= 8/mechanische klep/kunstklep <3 mnd/recidiverend DVT", "Tromboseprofylaxe"],
                                     "Interacties": [
                                         {
@@ -338,7 +352,7 @@
                                             "Risico": "GI-bloedingen"
                                         },
                                         {
-                                            "Interactant": ["Plaatjesremmers", "Coumarinederivaten"],
+                                            "Interactant": ["TAR's", "Coumarinederivaten"],
                                             "Risico": "Bloedingen",
                                             "Mechanisme": "Cummulatief effect"
                                         },
@@ -372,6 +386,7 @@
                                     "Onderverdeling": [
                                         {
                                             "Naam": "Dabigatran",
+                                            "Mechanisme": ["Bindt direct en reversibel aan stollingsfactor IIa"],
                                             "Bijwerkingen": [
                                                 {
                                                 "Bijwerking": "Verhoogd bloedingsrisico",
@@ -390,6 +405,7 @@
                                 },
                                 {
                                     "Naam": "Factor Xa-remmers",
+                                    "Mechanisme": ["Graat een directe, reversibele binding aan met factor Xa", "Remming fibrinogeen -> fibrine"],
                                     "Enzym": ["CYP3A4", "Substraat"],
                                     "Interacties":[
                                         {
@@ -425,7 +441,7 @@
                     "Onderverdeling": [
                         {
                             "Naam": "Diuretica",
-                            "Mechanisme": "Verlaging van het circulerend volume",
+                            "Mechanisme": ["Verlaging van het circulerend volume"],
                             "Interacties": [
                                 {
                                     "Interactant": ["Cardiovasculaire middelen", "Opiaatagonisten", "Benzodiazepines"],
@@ -800,7 +816,7 @@
                 {
                     "Naam": "Hartglycosiden",
                     "Indicaties": ["Chronisch hartfalen", "Atriumfibrilleren"],
-                    "Mechanisme": ["Positieve inotropie", "Negatieve chronotropie"],
+                    "Mechanisme": [["Remming van ATP in het hart", "Remming van NA/Ka-uitwisseling", "Verhoging cellulaire influx Ca", "Positieve inotropie"], ["Stimulering nervus vagus naar het hart", "Negatief chronotroop en dromotroop"]],
                     "Interacties": [
                         {
                             "Interactant": ["Lisdiuretica", "Thiazidediuretica"],
@@ -851,6 +867,7 @@
                 },
                 {
                     "Naam": "Natriumpolystyreensulfonaat",
+                    "Mechanisme": ["Natrium in medicatie stimuleert Na/Ka-wisseling in de dikke darm", "Daling kaliumgehalte"],
                     "Indicaties": ["Hyperkaliëmie bij nierinsufficiëntie", "Ondersteuning bij dialyse"]
                 },
                 {
@@ -1171,11 +1188,11 @@
                 },
                 {
                     "Naam": "Desmopressine",
-                    "Indicaties": ["Acute OK onder plaatjesremmers"]
+                    "Indicaties": ["Acute OK onder TAR's"]
                 },
                 {
                     "Naam": "Trombocytentransfusie",
-                    "Indicaties": ["Acute OK onder plaatjesremmers met hoog bloedingsrisico"]
+                    "Indicaties": ["Acute OK onder TAR's met hoog bloedingsrisico"]
                 },
                 {
                     "Naam": "Idarucizumab",
@@ -1286,62 +1303,68 @@
             "Onderverdeling": [
                 {
                     "Naam": "Bacteriocidica",
-                    "Mechanisme": ["Binding aan peptidoglycanen", "Inhibitie van celwand synthese"],
                     "Onderverdeling": [
                         {
-                            "Naam": "Beta-lactam antibiotica",
+                            "Naam": "Celwandremmers",
                             "Onderverdeling": [
                                 {
-                                    "Naam": "Penicillines",
-                                    "Indicaties": ["Gram-positieve bacteriën"],
+                                    "Naam": "Beta-lactam antibiotica",
+                                    "Mechanisme": ["Binding aan PBP's in celwand", "Inhibitie synthese peptidoglycanen", "Inhibitie van celwand synthese"],
                                     "Onderverdeling": [
                                         {
-                                            "Naam": "Penicilline"
-                                        },
-                                        {
-                                            "Naam": "Amoxicilline",
-                                            "Zwangerschap": ["Meest veilig"],
-                                            "Indicaties": ["Gram-negatieve en gram-positieve bacteriën"]
-                                        },
-                                        {
-                                            "Naam": "Piperacilline"
-                                        },
-                                        {
-                                            "Naam": "Penicilline met beta-lactamaseremmer",
+                                            "Naam": "Penicillines",
+                                            "Indicaties": ["Gram-positieve bacteriën"],
                                             "Onderverdeling": [
                                                 {
-                                                    "Naam": "Piperacilline/tazobactam"
+                                                    "Naam": "Penicilline"
                                                 },
                                                 {
-                                                    "Naam": "Amoxicilline/clavulaanzuur",
-                                                    "Indicaties": ["Beta-lactamase producerende bacteriën"]
+                                                    "Naam": "Amoxicilline",
+                                                    "Zwangerschap": ["Meest veilig"],
+                                                    "Indicaties": ["Gram-negatieve en gram-positieve bacteriën"]
+                                                },
+                                                {
+                                                    "Naam": "Piperacilline"
+                                                },
+                                                {
+                                                    "Naam": "Penicilline met beta-lactamaseremmer",
+                                                    "Onderverdeling": [
+                                                        {
+                                                            "Naam": "Piperacilline/tazobactam"
+                                                        },
+                                                        {
+                                                            "Naam": "Amoxicilline/clavulaanzuur",
+                                                            "Indicaties": ["Beta-lactamase producerende bacteriën"]
+                                                        }
+                                                    ]
+                                                }                                
+                                            ]
+                                        },
+                                        {
+                                            "Naam": "Cefalosporines",
+                                            "Onderverdeling": [
+                                                {
+                                                    "Naam": "Ceftriaxon",
+                                                    "Indicaties": ["Gram-negatieve bacteriën"]
                                                 }
                                             ]
-                                        }                                
+                                        }
                                     ]
                                 },
                                 {
-                                    "Naam": "Cefalosporines",
+                                    "Naam": "Fosfomycine",
+                                    "Mechanisme": ["Inhibitie van fosfo-enol-pyruvyltransferase", "Inhibitie van peptidoglycaansynthese", "Inhibitie van de celwand"],
+                                    "Indicaties": ["UWI, tweede keuze"]
+                                },
+                                {
+                                    "Naam": "Glycopeptiden",
+                                    "Mechanisme": ["Binding aan d-alanyl-d-alanine uiteinde van peptidoglycanen", "Inhibitie van celwand synthese"],
                                     "Onderverdeling": [
                                         {
-                                            "Naam": "Ceftriaxon",
-                                            "Indicaties": ["Gram-negatieve bacteriën"]
+                                            "Naam": "Vancomycine",
+                                            "Indicaties": ["MRSA"]
                                         }
                                     ]
-                                }
-                            ]
-                        },
-                        {
-                            "Naam": "Fosfomycine",
-                            "Mechanisme": ["Inhibitie van fosfo-enol-pyruvyltransferase", "Inhibitie van peptidoglycaansynthese", "Inhibitie van de celwand"],
-                            "Indicaties": ["UWI, tweede keuze"]
-                        },
-                        {
-                            "Naam": "Glycopeptiden",
-                            "Onderverdeling": [
-                                {
-                                    "Naam": "Vancomycine",
-                                    "Indicaties": ["MRSA"]
                                 }
                             ]
                         },
@@ -1389,7 +1412,6 @@
                         },                        
                         {
                             "Naam": "Rifamycine-groep",
-                            "Mechanisme": "Remming van de RNA-synthese",
                             "Enzym": ["CYP2C9", "Inducer"],
                             "Onderverdeling": [
                                 {
@@ -1408,10 +1430,10 @@
                 },
                 {
                     "Naam": "Bacteriostatica",
-                    "Mechanisme": ["Inhibitie van de bacteriële eiwitsynthese", "Bacteriostase"],
                     "Onderverdeling": [
                         {
                             "Naam": "Tetracyclinen",
+                            "Mechanisme": ["Bindt de 30S en 50S subunits ribisoom", "Inhibitie van de bacteriële eiwitsynthese", "Bacteriostase"],
                             "Interacties": [
                                 {
                                     "Interactant": ["Aluminium", "Calcium", "IJzer", "Magnesium"],
@@ -1428,6 +1450,7 @@
                         },
                         {
                             "Naam": "Aminoglycosiden",
+                            "Mechanisme": ["Bindt de 30S subunits ribisoom", "Inhibitie van de bacteriële eiwitsynthese", "Bacteriostase"],
                             "Bijwerkingen": [
                                 {
                                     "Bijwerking": "Reversibele nefrotoxiciteit"
@@ -1446,6 +1469,7 @@
                         },
                         {
                             "Naam": "Macroliden",
+                            "Mechanisme": ["Bindt de 50S subunits ribisoom", "Inhibitie van de bacteriële eiwitsynthese", "Bacteriostase"],
                             "Indicaties": ["Gram-positieve bacteriën", "Pneumokokken", "Intracellulaire organismen"],
                             "Interacties": [
                                 {
@@ -1490,6 +1514,7 @@
                                         },
                                         {
                                             "Naam": "Metronidazol",
+                                            "Indicaties": ["Anaerobe infecties e.g. clostridium"],
                                             "Voorschrijven": "True"
                                         }
                                     ]
