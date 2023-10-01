@@ -364,15 +364,15 @@ function prepareQuestions(level) {
 
                 temp_temp_question_array.push(ancestryQuestion(current));
 
-            };            
-
-            console.log(temp_temp_question_array);
+            };   
+            
             temp_question_array.push(temp_temp_question_array);
 
         };
 
     };
 
+    console.log(temp_question_array);
     question_array = (shuffle(temp_question_array)).flat(1);
 
 };
