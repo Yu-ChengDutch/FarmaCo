@@ -358,7 +358,7 @@ function prepareQuestions(level) {
                 question_string = "Het medicijn " + current + " werk in op " + enzym[0] + ". Is het een enzyminducer, inhibitor of substraat?";
                 temp_temp_question_array.push({"Question": question_string, "Answer": content_dict[keys[i]].Enzym[0]});
 
-            }
+            };
             
             if (Math.random() > 0.8) {
 
@@ -366,6 +366,7 @@ function prepareQuestions(level) {
 
             };            
 
+            console.log(temp_temp_question_array);
             temp_question_array.push(temp_temp_question_array);
 
         };
