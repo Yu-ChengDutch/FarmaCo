@@ -502,16 +502,21 @@ function intervalIndex(current_index, desired_interval, array) {
 
 function ancestryQuestion(current) {
 
-    if (terminals_array.includes(current)) {
+    try {
+        if (terminals_array.includes(current)) {
 
-        question_string = "Van welke klasse is " + current + " een deel?";
-        return {"Question": question_string, "Answer": ancestry_dict[current].Parent }
+            question_string = "Van welke klasse is " + current + " een deel?";
+            return {"Question": question_string, "Answer": ancestry_dict[current].Parent }
 
-    } else {
+        } else {
 
-        question_string = "Noem een voorbeeld van " + current;
-        return {"Question": question_string, "Answer": ancestry_dict[current].Children }
+            question_string = "Noem een voorbeeld van " + current;
+            return {"Question": question_string, "Answer": ancestry_dict[current].Children }
 
+        }
+
+    } catch {
+        console.log("Issues with: " + current)
     }
 
 };
