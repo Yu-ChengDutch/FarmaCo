@@ -287,7 +287,7 @@ function prepareQuestions(level) {
 
     };
 
-    if (level == 4 || level == 3 || level == 5 || level == 7 || level == 9) {
+    if (level == 3) {
 
         keys = Object.keys(content_dict)
 
@@ -296,16 +296,7 @@ function prepareQuestions(level) {
             var current = content_dict[keys[i]].Naam
             var temp_temp_question_array = [];
 
-            if (level == 4 && Object.keys(content_dict[keys[i]]).includes("Indicaties")) {
-
-                question_string = "Welk (klasse) medicijn is bruikbaar voor de volgende symptomen: " + content_dict[keys[i]].Indicaties;
-                temp_temp_question_array.push({"Question": question_string, "Answer": current });
-
-                temp_temp_question_array.push(ancestryQuestion(current));
-
-                temp_question_array.push(temp_temp_question_array);
-
-            } else if (level == 3 && Object.keys(content_dict[keys[i]]).includes("Interacties")) {
+            if (level == 3 && Object.keys(content_dict[keys[i]]).includes("Interacties")) {
 
                 for (var j = 0; j < content_dict[keys[i]].Interacties.length; j++) {
 
@@ -330,24 +321,52 @@ function prepareQuestions(level) {
 
                 };                
 
+            };
+
+        }
+
+    };
+
+    if (level == 4 || level == 3 || level == 5 || level == 7 || level == 9) {
+
+        keys = Object.keys(content_dict)
+
+        for (var i = 0; i < keys.length; i++) {
+
+            var current = content_dict[keys[i]].Naam
+            var temp_temp_question_array = [];
+
+            if (level == 4 && Object.keys(content_dict[keys[i]]).includes("Indicaties")) {
+
+                question_string = "Welk (klasse) medicijn is bruikbaar voor de volgende symptomen: " + content_dict[keys[i]].Indicaties;
+                temp_temp_question_array.push({"Question": question_string, "Answer": current });
+
             } else if (level == 5 && Object.keys(content_dict[keys[i]]).includes("Mechanisme")) {
             
                 question_string = "Welk (klasse) medicijn werk op de volgende manier: " + content_dict[keys[i]].Mechanisme;
-                temp_question_array.push({"Question": question_string, "Answer": current });
+                temp_temp_question_array.push({"Question": question_string, "Answer": current });
 
             } else if (level == 7 && Object.keys(content_dict[keys[i]]).includes("Zwangerschap")) {
             
                 question_string = "Welk categorie valt " + current + " in wat betreft teratologie?";
-                temp_question_array.push({"Question": question_string, "Answer": content_dict[keys[i]].Zwangerschap[0]});
+                temp_temp_question_array.push({"Question": question_string, "Answer": content_dict[keys[i]].Zwangerschap[0]});
 
             } else if (level == 9 && Object.keys(content_dict[keys[i]]).includes("Enzym")) {
             
                 enzym = content_dict[keys[i]].Enzym;
 
                 question_string = "Het medicijn " + current + " werk in op " + enzym[0] + ". Is het een enzyminducer, inhibitor of substraat?";
-                temp_question_array.push({"Question": question_string, "Answer": content_dict[keys[i]].Enzym[0]});
+                temp_temp_question_array.push({"Question": question_string, "Answer": content_dict[keys[i]].Enzym[0]});
 
-            }            
+            }
+            
+            if (Math.random() > 0.8) {
+
+                temp_temp_question_array.push(ancestryQuestion(current));
+
+            };            
+
+            temp_question_array.push(temp_temp_question_array);
 
         };
 
@@ -387,6 +406,20 @@ function checkMnemonicAnswer() {
 
         console.log("- - > Correct!")
 
+        if (document.getElementById('question-description').innerText.includes("Noem een voorbeeld van") && !terminals_array.includes(given_answer)) {
+
+            let local_question_array = question_array;
+
+            try {
+                local_question_array.splice(intervalIndex(current_index, 1, local_question_array), 0, ancestryQuestion(given_answer));
+            } catch {
+                console.log("--> Doesn't exist: " + given_answer);
+            };            
+
+        };
+
+        question_array = local_question_array;
+
         nextQuestion();
 
     } else {
@@ -403,8 +436,8 @@ function checkMnemonicAnswer() {
             document.getElementById('remark-card').innerText = "The right mnemonic is: " + correct_answer + ". You'll repeat this questions once more afterwards.";
 
             let local_question_array = question_array;
-            local_question_array.splice(intervalIndex(current_index, 4, local_question_array), 0, {"Question": ("This is a repeat question: " + question_array[current_index].Question), "Answer": question_array[current_index].Answer});
-            local_question_array.splice(intervalIndex(current_index, 12, local_question_array), 0, {"Question": ("This is a repeat question: " + question_array[current_index].Question), "Answer": question_array[current_index].Answer});
+            local_question_array.splice(intervalIndex(current_index, 4, local_question_array), 0, {"Question": ("Dit is een herhaling: " + question_array[current_index].Question), "Answer": question_array[current_index].Answer});
+            local_question_array.splice(intervalIndex(current_index, 12, local_question_array), 0, {"Question": ("Dit is een herhaling: " + question_array[current_index].Question), "Answer": question_array[current_index].Answer});
 
             question_array = local_question_array;
             console.log(question_array);
