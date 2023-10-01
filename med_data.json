@@ -7,6 +7,7 @@
                 {
                     "Naam": "Paracetamol",
                     "Zwangerschap": ["Meest veilig"],
+                    "Enzym": ["CYP2E1", "Substraat"],
                     "Bijwerkingen": [
                         {
                             "Bijwerking": "Leverbeschadiging",
@@ -179,7 +180,8 @@
                             "Naam": "Oxycodon"
                         },
                         {
-                            "Naam": "Codeïne"
+                            "Naam": "Codeïne",
+                            "Enzym": ["CYP2D6", "Substraat"]
                         }
                     ]
                 }                
@@ -269,6 +271,7 @@
                     "Onderverdeling": [
                         {
                             "Naam": "Coumarinederivaten",
+                            "Enzym": ["CYP2C9", "Substraat"],
                             "Indicaties": ["Atriumfibrilleren", "Mechanische klepprothese", "Longembolie", "DVT", "TIA/CVA profylaxe bij CHADVASC >1"],
                             "Bijwerkingen": [
                                 {
@@ -387,11 +390,13 @@
                                 },
                                 {
                                     "Naam": "Factor Xa-remmers",
+                                    "Enzym": ["CYP3A4", "Substraat"],
                                     "Interacties":[
                                         {
                                             "Interactant": ["Verapamil", "Itraconazol", "Erytromycine", "Ketoconazol"],
                                             "Risico": "Bloedingen",
-                                            "Mechanisme": ["CYP3A4 inhibitie", "Verhoogde spiegel"]
+                                            "Mechanisme": ["CYP3A4 inhibitie", "Verhoogde spiegel"],
+                                            "Enzym": ["CYP3A4", "Inhibitor"]
                                         }
                                     ],
                                     "Onderverdeling": [
@@ -648,6 +653,7 @@
                                     "Naam": "Dihydropyridines",
                                     "Mechanisme": ["Blokkade van de instroom van calcium in de vaatwand", "Inhibitie van de vaatwandcontractie", "Vasodilatatie"],
                                     "Indicaties": ["Hypertensie"],
+                                    "Enzym": ["CYP3A4", "Substraat"],
                                     "Bijwerkingen": [
                                         {
                                             "Bijwerking": "Hoofdpijn"
@@ -691,10 +697,11 @@
                                     "Onderverdeling": [
                                         {
                                             "Naam": "Verapamil",
-                                            "Enzym": "Inhibitor"
+                                            "Enzym": ["CYP3A4", "Inhibitor"]
                                         },
                                         {
-                                            "Naam": "Diltiazem"
+                                            "Naam": "Diltiazem",
+                                            "Enzym": ["CYP3A4", "Inhibitor"]
                                         }
                                     ]
                                 }
@@ -1187,13 +1194,13 @@
                     "Naam": "Carbamazepine",
                     "Indicaties": ["Epilepsie", "Neuralgie", "Diabetes insipidus", "BPD"],
                     "Zwangerschap": ["Risico"],
-                    "Enzym": "Inducer",
+                    "Enzym": [["CYP2C9", "CYP3A4"], "Inducer"],
                     "Voorschrijven": "True"
                 },
                 {
                     "Naam": "Fenytoïne",
                     "Indicaties": ["Epilepsie", "Aritmieën"],
-                    "Enzym": "Inducer",
+                    "Enzym": [["CYP2C9", "CYP3A4"], "Inducer"],
                     "Voorschrijven": "True"
                 }
             ]
@@ -1202,15 +1209,24 @@
             "Naam": "Voedingsmiddelen",
             "Onderverdeling": [
                 {
+                    "Naam": "Sterfruit",
+                    "Enzym": ["CYP3A4", "Inhibitor"]
+                },
+                {
+                    "Naam": "Zwarte peper",
+                    "Enzym": ["CYP3A4", "Inhibitor"]
+                },
+                {
                     "Naam": "Grapefruitsap",
-                    "Enzym": "Inhibitor"
+                    "Enzym": ["CYP3A4", "Inhibitor"]
                 },
                 {
                     "Naam": "Sint-Janskruid",
                     "Enzym": "Inducer"
                 },
                 {
-                    "Naam": "Alcohol"
+                    "Naam": "Alcohol",
+                    "Enzym": ["CYP2E1", "Inducer"]
                 },
                 {
                     "Naam": "Metalen",
@@ -1269,208 +1285,229 @@
             ],
             "Onderverdeling": [
                 {
-                    "Naam": "Beta-lactam antibiotica",
-                    "Mechanisme": ["Inhibitie van celwand synthese", "Bacteriocide"],
+                    "Naam": "Bacteriocidica",
+                    "Mechanisme": ["Binding aan peptidoglycanen", "Inhibitie van celwand synthese"],
                     "Onderverdeling": [
                         {
-                            "Naam": "Penicillines",
-                            "Indicaties": ["Gram-positieve bacteriën"],
+                            "Naam": "Beta-lactam antibiotica",
                             "Onderverdeling": [
                                 {
-                                    "Naam": "Penicilline"
-                                },
-                                {
-                                    "Naam": "Amoxicilline",
-                                    "Zwangerschap": ["Meest veilig"],
-                                    "Indicaties": ["Gram-negatieve en gram-positieve bacteriën"]
-                                },
-                                {
-                                    "Naam": "Piperacilline"
-                                },
-                                {
-                                    "Naam": "Penicilline met beta-lactamaseremmer",
+                                    "Naam": "Penicillines",
+                                    "Indicaties": ["Gram-positieve bacteriën"],
                                     "Onderverdeling": [
                                         {
-                                            "Naam": "Piperacilline/tazobactam"
+                                            "Naam": "Penicilline"
                                         },
                                         {
-                                            "Naam": "Amoxicilline/clavulaanzuur",
-                                            "Indicaties": ["Beta-lactamase producerende bacteriën"]
+                                            "Naam": "Amoxicilline",
+                                            "Zwangerschap": ["Meest veilig"],
+                                            "Indicaties": ["Gram-negatieve en gram-positieve bacteriën"]
+                                        },
+                                        {
+                                            "Naam": "Piperacilline"
+                                        },
+                                        {
+                                            "Naam": "Penicilline met beta-lactamaseremmer",
+                                            "Onderverdeling": [
+                                                {
+                                                    "Naam": "Piperacilline/tazobactam"
+                                                },
+                                                {
+                                                    "Naam": "Amoxicilline/clavulaanzuur",
+                                                    "Indicaties": ["Beta-lactamase producerende bacteriën"]
+                                                }
+                                            ]
+                                        }                                
+                                    ]
+                                },
+                                {
+                                    "Naam": "Cefalosporines",
+                                    "Onderverdeling": [
+                                        {
+                                            "Naam": "Ceftriaxon",
+                                            "Indicaties": ["Gram-negatieve bacteriën"]
                                         }
                                     ]
-                                }                                
+                                }
                             ]
                         },
                         {
-                            "Naam": "Cefalosporines",
+                            "Naam": "Fosfomycine",
+                            "Mechanisme": ["Inhibitie van fosfo-enol-pyruvyltransferase", "Inhibitie van peptidoglycaansynthese", "Inhibitie van de celwand"],
+                            "Indicaties": ["UWI, tweede keuze"]
+                        },
+                        {
+                            "Naam": "Glycopeptiden",
                             "Onderverdeling": [
                                 {
-                                    "Naam": "Ceftriaxon",
-                                    "Indicaties": ["Gram-negatieve bacteriën"]
+                                    "Naam": "Vancomycine",
+                                    "Indicaties": ["MRSA"]
+                                }
+                            ]
+                        },
+                        {
+                            "Naam": "Chinolonen",
+                            "Indicaties": ["Gram-negatieve bacteriën"],
+                            "Mechanisme": ["Inhibitie DNA-gyrase", "Inhibitie DNA synthese", "Bacteriocide"],
+                            "Onderverdeling": [
+                                {
+                                    "Naam": "Ciprofloxacine",
+                                    "Enzym": ["CYP3A4", "Inhibitor"],
+                                    "Zwangerschap": ["Onbekend", "2e en 3e trimester"]
+                                }
+                            ],
+                            "Interacties": [
+                                {
+                                    "Interactant": ["Aluminium", "Calcium", "IJzer", "Magnesium"],
+                                    "Risico": "Verlaagde antibiotische werking",
+                                    "Mechanisme": ["Vorming onoplosbare complexen", "Verlaagde absorptie"]
+                                }
+                            ]
+                        },
+                        {
+                            "Naam": "Trimethoprim/sulfamethoxazol",
+                            "Mechanisme": ["Inhibitie synthese dihydrofoliumzuur", "Inhibitie DNA formation", "Bacteriocide"],
+                            "Voorschrijven": "True",
+                            "Interacties": [
+                                {
+                                    "Interactant": ["Methotrexaat"],
+                                    "Risico": "Megaloblastaire anemie",
+                                    "Mechanisme": ["Verstoorde foliumzuurhuishouding", "Beenmergsuppressie"]
+                                },
+                                {
+                                    "Interactant": ["Coumarinederivaten"],
+                                    "Risico": "Bloedingen",
+                                    "Mechanisme": ["CYP2C9 inhibitie", "Verminderde afbraak", "Verhoogde spiegel"]
+                                }
+                            ],
+                            "Onderverdeling": [
+                                {
+                                    "Naam": "Cotrimoxazol",
+                                    "Enzym": ["CYP2C9", "Inhibitor"]
+                                }
+                            ]
+                        },                        
+                        {
+                            "Naam": "Rifamycine-groep",
+                            "Mechanisme": "Remming van de RNA-synthese",
+                            "Enzym": ["CYP2C9", "Inducer"],
+                            "Onderverdeling": [
+                                {
+                                    "Naam": "Rifampicine",
+                                    "Enzym": [["CYP2D6", "CYP3A4"], "Inducer"],
+                                    "Voorschrijven": "True"
+                                }
+                            ]
+                        },
+                        {
+                            "Naam": "Nitrofurantoïne",
+                            "Mechanisme": ["Remming van de Krebs-cyclus", "Onvoldoende energie voor de instandhouding van de bacterie"],
+                            "Indicaties": ["UWI", "Profylaxe bij transurethrale ingrepen"]
+                        }
+                    ]
+                },
+                {
+                    "Naam": "Bacteriostatica",
+                    "Mechanisme": ["Inhibitie van de bacteriële eiwitsynthese", "Bacteriostase"],
+                    "Onderverdeling": [
+                        {
+                            "Naam": "Tetracyclinen",
+                            "Interacties": [
+                                {
+                                    "Interactant": ["Aluminium", "Calcium", "IJzer", "Magnesium"],
+                                    "Risico": "Verlaagde antibiotische werking",
+                                    "Mechanisme": ["Vorming onoplosbare complexen", "Verlaagde absorptie"]
+                                }
+                            ],
+                            "Onderverdeling": [
+                                {
+                                    "Naam": "Doxycycline",
+                                    "Zwangerschap": ["Risico", "Vanaf week 16"]
+                                }
+                            ]
+                        },
+                        {
+                            "Naam": "Aminoglycosiden",
+                            "Bijwerkingen": [
+                                {
+                                    "Bijwerking": "Reversibele nefrotoxiciteit"
+                                },
+                                {
+                                    "Bijwerking": "Irreversibele ototoxiciteit"
+                                }
+                            ],
+                            "Indicaties": ["Gram-negatieve staven"],
+                            "Onderverdeling": [
+                                {
+                                    "Naam": "Gentamicine",
+                                    "Zwangerschap": ["Risico"]
+                                }
+                            ]
+                        },
+                        {
+                            "Naam": "Macroliden",
+                            "Indicaties": ["Gram-positieve bacteriën", "Pneumokokken", "Intracellulaire organismen"],
+                            "Interacties": [
+                                {
+                                    "Interactant": ["Sotalol", "TCA's", "SSRI's"],
+                                    "Risico": "Torsade De Pointes",
+                                    "Mechanisme": "Cummulatief effect"
+                                }
+                            ],
+                            "Onderverdeling": [
+                                {
+                                    "Naam": "Azitromycine"
+                                },
+                                {
+                                    "Naam": "Claritromycine",
+                                    "Enzym": ["CYP3A4", "Inhibitor"]
+                                },
+                                {
+                                    "Naam": "Erytromycine",
+                                    "Enzym": ["CYP3A4", "Inhibitor"]
                                 }
                             ]
                         }
                     ]
                 },
                 {
-                    "Naam": "Glycopeptiden",
+                    "Naam": "Fungicidica",
                     "Onderverdeling": [
                         {
-                            "Naam": "Vancomycine",
-                            "Indicaties": ["MRSA"]
-                        }
-                    ]
-                },
-                {
-                    "Naam": "Tetracyclinen",
-                    "Mechanisme": ["Inhibitie van de bacteriële eiwitsynthese", "Bacteriostase"],
-                    "Interacties": [
-                        {
-                            "Interactant": ["Aluminium", "Calcium", "IJzer", "Magnesium"],
-                            "Risico": "Verlaagde antibiotische werking",
-                            "Mechanisme": ["Vorming onoplosbare complexen", "Verlaagde absorptie"]
-                        }
-                    ],
-                    "Onderverdeling": [
-                        {
-                            "Naam": "Doxycycline",
-                            "Zwangerschap": ["Risico", "Vanaf week 16"]
-                        }
-                    ]
-                },
-                {
-                    "Naam": "Aminoglycosiden",
-                    "Mechanisme": ["Inhibitie van de bacteriële eiwitsynthese", "Bacteriostase"],
-                    "Bijwerkingen": [
-                        {
-                            "Bijwerking": "Reversibele nefrotoxiciteit"
-                        },
-                        {
-                            "Bijwerking": "Irreversibele ototoxiciteit"
-                        }
-                    ],
-                    "Indicaties": ["Gram-negatieve staven"],
-                    "Onderverdeling": [
-                        {
-                            "Naam": "Gentamicine",
-                            "Zwangerschap": ["Risico"]
-                        }
-                    ]
-                },
-                {
-                    "Naam": "Macroliden",
-                    "Indicaties": ["Gram-positieve bacteriën", "Pneumokokken", "Intracellulaire organismen"],
-                    "Mechanisme": ["Inhibitie van de bacteriële eiwitsynthese", "Bacteriostase"],
-                    "Interacties": [
-                        {
-                            "Interactant": ["Sotalol", "TCA's", "SSRI's"],
-                            "Risico": "Torsade De Pointes",
-                            "Mechanisme": "Cummulatief effect"
-                        }
-                    ],
-                    "Onderverdeling": [
-                        {
-                            "Naam": "Azitromycine"
-                        },
-                        {
-                            "Naam": "Claritromycine",
-                            "Enzym": "Inhibitor"
-                        },
-                        {
-                            "Naam": "Erytromycine",
-                            "Enzym": "Inhibitor"
-                        }
-                    ]
-                },
-                {
-                    "Naam": "Chinolonen",
-                    "Indicaties": ["Gram-negatieve bacteriën"],
-                    "Mechanisme": ["Inhibitie DNA-gyrase", "Inhibitie DNA synthese", "Bacteriocide"],
-                    "Onderverdeling": [
-                        {
-                            "Naam": "Ciprofloxacine",
-                            "Zwangerschap": ["Onbekend", "2e en 3e trimester"]
-                        }
-                    ],
-                    "Interacties": [
-                        {
-                            "Interactant": ["Aluminium", "Calcium", "IJzer", "Magnesium"],
-                            "Risico": "Verlaagde antibiotische werking",
-                            "Mechanisme": ["Vorming onoplosbare complexen", "Verlaagde absorptie"]
-                        }
-                    ]
-                },
-                {
-                    "Naam": "Trimethoprim/sulfamethoxazol",
-                    "Mechanisme": ["Inhibitie synthese dihydrofoliumzuur", "Inhibitie DNA formation", "Bacteriocide"],
-                    "Voorschrijven": "True",
-                    "Interacties": [
-                        {
-                            "Interactant": ["Methotrexaat"],
-                            "Risico": "Megaloblastaire anemie",
-                            "Mechanisme": ["Verstoorde foliumzuurhuishouding", "Beenmergsuppressie"]
-                        },
-                        {
-                            "Interactant": ["Coumarinederivaten"],
-                            "Risico": "Bloedingen",
-                            "Mechanisme": ["CYP2C9 inhibitie", "Verminderde afbraak", "Verhoogde spiegel"]
-                        }
-                    ],
-                    "Onderverdeling": [
-                        {
-                            "Naam": "Cotrimoxazol"
-                        }
-                    ]
-                },
-                {
-                    "Naam": "Rifamycine-groep",
-                    "Mechanisme": "Remming van de RNA-synthese",
-                    "Onderverdeling": [
-                        {
-                            "Naam": "Rifampicine",
-                            "Enzym": "Inducer",
-                            "Voorschrijven": "True"
-                        }
-                    ]
-                },
-                {
-                    "Naam": "Nitrofurantoïne",
-                    "Indicaties": ["UWI", "Profylaxe bij transurethrale ingrepen"]
-                },
-                {
-                    "Naam": "Fosfomycine",
-                    "Indicaties": ["UWI, tweede keuze"]
-                },
-                {
-                    "Naam": "Azolen",
-                    "Onderverdeling": [
-                        {
-                            "Naam": "Imidazolen",
-                            "Enzym": "Inhibitor",                            
+                            "Naam": "Azolen",
                             "Onderverdeling": [
                                 {
-                                    "Naam": "Ketoconazol",
-                                    "Voorschrijven": "True"
+                                    "Naam": "Imidazolen",
+                                    "Mechanisme": ["Aselectieve inhibitie van ergosterol synthese via CYP51", "Inhibitie van de opbouw van het celmembraan"],                            
+                                    "Onderverdeling": [
+                                        {
+                                            "Naam": "Ketoconazol",
+                                            "Enzym": ["CYP3A4", "Inhibitor"]
+                                        },
+                                        {
+                                            "Naam": "Miconazol",
+                                            "Enzym": ["CYP2C9", "Inhibitor"]
+                                        },
+                                        {
+                                            "Naam": "Metronidazol",
+                                            "Voorschrijven": "True"
+                                        }
+                                    ]
                                 },
                                 {
-                                    "Naam": "Miconazol"
-                                },
-                                {
-                                    "Naam": "Metronidazol",
-                                    "Voorschrijven": "True"
-                                }
-                            ]
-                        },
-                        {
-                            "Naam": "Triazolen",
-                            "Onderverdeling": [
-                                {
-                                    "Naam": "Itraconazol",
-                                    "Enzym": "Inhibitor"
-                                },
-                                {
-                                    "Naam": "Fluconazol",
-                                    "Voorschrijven": "True"
+                                    "Naam": "Triazolen",
+                                    "Mechanisme": ["Selectieve inhibitie van ergosterol synthese via CYP51", "Inhibitie van de opbouw van het celmembraan"],
+                                    "Onderverdeling": [
+                                        {
+                                            "Naam": "Itraconazol",
+                                            "Enzym": ["CYP3A4", "Inhibitor"]
+                                        },
+                                        {
+                                            "Naam": "Fluconazol",
+                                            "Voorschrijven": "True",
+                                            "Enzym": ["CYP3A4", "Inhibitor"]
+                                        }
+                                    ]
                                 }
                             ]
                         }

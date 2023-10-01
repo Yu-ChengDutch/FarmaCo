@@ -342,8 +342,10 @@ function prepareQuestions(level) {
 
             } else if (level == 9 && Object.keys(content_dict[keys[i]]).includes("Enzym")) {
             
-                question_string = "Is " + current + " een enzyminducer, of inhibitor?";
-                temp_question_array.push({"Question": question_string, "Answer": content_dict[keys[i]].Enzym});
+                enzym = content_dict[keys[i]].Enzym;
+
+                question_string = "Het medicijn " + current + " werk in op " + enzym[0] + ". Is het een enzyminducer, inhibitor of substraat?";
+                temp_question_array.push({"Question": question_string, "Answer": content_dict[keys[i]].Enzym[0]});
 
             }            
 
