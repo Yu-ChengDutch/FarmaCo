@@ -360,7 +360,7 @@ function prepareQuestions(level) {
 
             };
             
-            if (Math.random() > 0.8) {
+            if (Math.random() > 0.8 && temp_temp_question_array.length > 0) {
 
                 temp_temp_question_array.push(ancestryQuestion(current));
 
