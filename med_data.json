@@ -1301,7 +1301,7 @@
                 },
                 {
                     "Naam": "Sint-Janskruid",
-                    "Enzym": "Inducer"
+                    "Enzym": ["CYP3A4", "Inducer"]
                 },
                 {
                     "Naam": "Alcohol",

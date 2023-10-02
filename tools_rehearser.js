@@ -349,7 +349,7 @@ function prepareQuestions(level) {
                 question_string = "Van welk medicijn is dit het bijwerkingenprofiel: " + current_side_effects;
                 temp_temp_question_array.push({"Question": question_string, "Answer": current});
 
-                if (Math.random() > 0.6 && temp_temp_question_array.length > 0) {
+                if (Math.random() > 0.9 && temp_temp_question_array.length > 0) {
 
                     temp_temp_question_array.push(ancestryQuestion(current));
     
@@ -392,7 +392,7 @@ function prepareQuestions(level) {
                 enzym = content_dict[keys[i]].Enzym;
 
                 question_string = "Het medicijn " + current + " werkt in op " + enzym[0] + ". Is het een enzyminducer, inhibitor of substraat?";
-                temp_temp_question_array.push({"Question": question_string, "Answer": content_dict[keys[i]].Enzym[1]});
+                temp_temp_question_array.push({"Question": question_string, "Answer": enzym[1]});
 
             } else if (level == 8) {
 
@@ -415,7 +415,7 @@ function prepareQuestions(level) {
                     question_string = "Moet bij " + current + " de dosis worden aangepast bij nierfunctiestoornissen? Ja of nee";
                     temp_temp_question_array.push({"Question": question_string, "Answer": "Ja"})
 
-                } else if (Math.random() > 0.85) {
+                } else if (Math.random() > 0.8) {
 
                     question_string = "Moet bij " + current + " de dosis worden aangepast bij nierfunctiestoornissen? Ja of nee";
                     temp_temp_question_array.push({"Question": question_string, "Answer": "Nee"})
@@ -424,7 +424,7 @@ function prepareQuestions(level) {
 
             };
             
-            if (Math.random() > 0.6 && temp_temp_question_array.length > 0) {
+            if (Math.random() > 0.9 && temp_temp_question_array.length > 0) {
 
                 temp_temp_question_array.push(ancestryQuestion(current));
 
