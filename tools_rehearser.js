@@ -327,7 +327,43 @@ function prepareQuestions(level) {
 
     };
 
-    if (level == 4 || level == 8 || level == 5 || level == 7 || level == 9) {
+    if (level == 11) {
+
+        keys = Object.keys(content_dict)
+
+        for (var i = 0; i < keys.length; i++) {
+
+            var current = content_dict[keys[i]].Naam
+            var temp_temp_question_array = [];
+
+            if (level == 11 && Object.keys(content_dict[keys[i]]).includes("Bijwerkingen")) {
+
+                var current_side_effects = [];
+
+                for (var j = 0; j < content_dict[keys[i]].Bijwerkingen.length; j++) {
+
+                    current_side_effects.push(content_dict[keys[i]].Bijwerkingen[j].Bijwerking)   
+
+                };
+                
+                question_string = "Van welk medicijn is dit het bijwerkingenprofiel: " + current_side_effects;
+                temp_temp_question_array.push({"Question": question_string, "Answer": current});
+
+                if (Math.random() > 0.6 && temp_temp_question_array.length > 0) {
+
+                    temp_temp_question_array.push(ancestryQuestion(current));
+    
+                };
+
+                temp_question_array.push(temp_temp_question_array);
+
+            };
+
+        }
+
+    };
+
+    if (level == 4 || level == 8 || level == 5 || level == 7 || level == 9 || level == 10) {
 
         keys = Object.keys(content_dict)
 
@@ -372,7 +408,21 @@ function prepareQuestions(level) {
 
                 }
 
-            }
+            } else if (level == 10) {
+
+                if (Object.keys(content_dict[keys[i]]).includes("Klaring")) {
+                    
+                    question_string = "Moet bij " + current + " de dosis worden aangepast bij nierfunctiestoornissen? Ja of nee";
+                    temp_temp_question_array.push({"Question": question_string, "Answer": "Ja"})
+
+                } else if (Math.random() > 0.8) {
+
+                    question_string = "Moet bij " + current + " de dosis worden aangepast bij nierfunctiestoornissen? Ja of nee";
+                    temp_temp_question_array.push({"Question": question_string, "Answer": "Nee"})
+
+                }
+
+            };
             
             if (Math.random() > 0.6 && temp_temp_question_array.length > 0) {
 
@@ -433,7 +483,20 @@ function checkMnemonicAnswer() {
             
             question_array = local_question_array;
 
-        };        
+        } else if (document.getElementById('question-description').innerText.includes("Van welke categorie is") && ancestry_dict[given_answer].Parent != base) {
+
+            let local_question_array = question_array;
+
+            try {
+                question_string = "Van welke categorie is " + given_answer + " een deel?";
+                local_question_array.splice(intervalIndex(current_index, 1, local_question_array), 0, {"Question": question_string, "Answer": ancestry_dict[current].Parent});
+            } catch {
+                console.log("--> Doesn't exist: " + given_answer);
+            };
+            
+            question_array = local_question_array;
+
+        };         
 
         nextQuestion();
 
@@ -519,7 +582,7 @@ function ancestryQuestion(current) {
     try {
         if (terminals_array.includes(current)) {
 
-            question_string = "Van welke klasse is " + current + " een deel?";
+            question_string = "Van welke categorie is " + current + " een deel?";
             return {"Question": question_string, "Answer": ancestry_dict[current].Parent }
 
         } else {

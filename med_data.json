@@ -6,8 +6,9 @@
             "Onderverdeling": [
                 {
                     "Naam": "Paracetamol",
+                    "Indicaties": ["Eerste stap bij nociceptieve pijn"],
                     "Zwangerschap": ["Meest veilig"],
-                    "Enzym": ["CYP2E1", "Substraat"],
+                    "Enzym": ["CYP2E1", "Substraat", "Toxisch"],
                     "Bijwerkingen": [
                         {
                             "Bijwerking": "Leverbeschadiging",
@@ -26,6 +27,7 @@
                 },
                 {
                     "Naam": "NSAID's",
+                    "Indicaties": ["Tweede stap (additie) bij nociceptieve pijn"],
                     "Mechanisme": [["COX-1 remming", "Inhibitie van trombocytenaggergatie, gastroprotectie en renale perfusie"], ["COX-2 inhibitie", "Inhibitie van renale perfusie, inflammatie, ovulatie, sluiting ductus Botalli en pyrexie"]],
                     "Bijwerkingen": [
                         {
@@ -161,33 +163,48 @@
                     ],
                     "Onderverdeling": [
                         {
-                            "Naam": "Morfine",
-                            "Mechanisme": ["Semiselectieve Mu-opioïdreceptor agonist (tevens kappa en delta)"]
-                        },
-                        {
-                            "Naam": "Fentanyl",
-                            "Mechanisme": ["Selectieve Mu-opioïdreceptor agonist"]
-                        },
-                        {
-                            "Naam": "Tramadol",
-                            "Mechanisme": ["Aselectieve Mu-, Kappa- en Delta-opioïdreceptor agonist; tevens reuptakeremmer van NE en serotonine"],
-                            "Bijwerkingen": [
+                            "Naam": "Sterkwerkend opioïd",
+                            "Indicaties": ["Vierde stap (additie) bij nociceptieve pijn"],
+                            "Onderverdeling": [
                                 {
-                                    "Bijwerking": "Duizeligheid"
+                                    "Naam": "Morfine",
+                                    "Klaring": "Renaal",
+                                    "Mechanisme": ["Semiselectieve Mu-opioïdreceptor agonist (tevens kappa en delta)"]
                                 },
                                 {
-                                    "Bijwerking": "Misselijkheid"
+                                    "Naam": "Fentanyl",
+                                    "Mechanisme": ["Selectieve Mu-opioïdreceptor agonist"]
+                                },
+                                {
+                                    "Naam": "Oxycodon",
+                                    "Mechanisme": ["Aselectieve Mu-, Kappa- en Delta-opioïdreceptor agonist"]
                                 }
                             ]
                         },
                         {
-                            "Naam": "Oxycodon",
-                            "Mechanisme": ["Aselectieve Mu-, Kappa- en Delta-opioïdreceptor agonist"]
-                        },
-                        {
-                            "Naam": "Codeïne",
-                            "Enzym": ["CYP2D6", "Substraat"],
-                            "Mechanisme": ["Weak selective mu-opioïdreceptor antagonist; en pro-drug van morfine"]
+                            "Naam": "Zwakwerkend opioïd",
+                            "Onderverdeling": [
+                                {
+                                    "Naam": "Tramadol",
+                                    "Indicaties": ["Derde stap (additie) bij nociceptieve pijn"],
+                                    "Klaring": "Renaal",
+                                    "Mechanisme": ["Aselectieve Mu-, Kappa- en Delta-opioïdreceptor agonist; tevens reuptakeremmer van NE en serotonine"],
+                                    "Bijwerkingen": [
+                                        {
+                                            "Bijwerking": "Duizeligheid"
+                                        },
+                                        {
+                                            "Bijwerking": "Misselijkheid"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Naam": "Codeïne",
+                                    "Klaring": "Renaal",
+                                    "Enzym": ["CYP2D6", "Substraat"],
+                                    "Mechanisme": ["Weak selective mu-opioïdreceptor antagonist; en pro-drug van morfine"]
+                                }
+                            ]
                         }
                     ]
                 }                
@@ -265,11 +282,11 @@
                                         {
                                             "Naam": "Ticagrelor",
                                             "Mechanisme": ["Blokkeert reversibel de P2Y12 receptor", "Inhibitie van plaatjesactivatie en aggregatie"],
-                                            "Indicaties": ["I.c.m. ascal bij acuut coronair syndroom"]
+                                            "Indicaties": ["Additie bij acuut coronair syndroom"]
                                         },
                                         {
                                             "Naam": "Dipyridiamol",
-                                            "Indicaties": ["I.c.m. ascal na TIA/CVA"]                                            
+                                            "Indicaties": ["Additie TIA/CVA"]                                            
                                         }
                                     ]
                                 }                                
@@ -420,7 +437,8 @@
                                             "Naam": "Apixaban"
                                         },
                                         {
-                                            "Naam": "Rivaroxaban"
+                                            "Naam": "Rivaroxaban",
+                                            "Klaring": "Renaal"
                                         },
                                         {
                                             "Naam": "Edoxaban"
@@ -472,6 +490,7 @@
                                 {
                                     "Naam": "Thiazidediuretica",
                                     "Effect": "Matig maar lang aanhoudend diuretisch effect",
+                                    "Indicaties": ["Eerste keuze antihypertensivum >50 jaar"],
                                     "Mechanisme": ["Remming van Na+/Cl- cotransport in de distale tubulus", "Verhoogd aanbod van Na+", "Activatie Na+/K+ counter-transport", "Verhoogde K+ uitscheiding"],
                                     "Bijwerkingen": [
                                         {
@@ -593,7 +612,8 @@
                                                     "Zwangerschap": ["Waarschijnlijk veilig"]
                                                 },
                                                 {
-                                                    "Naam": "Atenolol"                                                    
+                                                    "Naam": "Atenolol",
+                                                    "Klaring": "Renaal"                                                    
                                                 }
                                             ]
                                         },
@@ -608,6 +628,7 @@
                                             "Onderverdeling": [
                                                 {
                                                     "Naam": "Sotalol",
+                                                    "Klaring": "Renaal",
                                                     "Bijwerkingen": [
                                                         {
                                                             "Bijwerking": "Ritmestoornissen",
@@ -664,6 +685,7 @@
                         },
                         {
                             "Naam": "Calciumantagonisten",
+                            "Indicaties": ["Tweede keuze antihypertensivum >50 jaar"],
                             "Onderverdeling": [
                                 {
                                     "Naam": "Dihydropyridines",
@@ -760,7 +782,7 @@
                             "Onderverdeling": [
                                 {
                                     "Naam": "ACE-remmers",                                    
-                                    "Indicaties": ["Hypertensie", "Hartfalen", "Diabetische proteïnurie"],
+                                    "Indicaties": ["Eerste keuze antihypertensivum <50 jaar", "Hartfalen", "Diabetische proteïnurie"],
                                     "Bijwerkingen": [
                                         {
                                             "Bijwerking": "Hypotensie",
@@ -885,10 +907,48 @@
             ]
         },
         {
+            "Naam": "Protonpompremmers",
+            "Mechanisme": ["Remt H+/K+-ATP-ase in de pariëtale cellen van de maag", "Remmen basale en gestimuleerde maagzuursecretie"],
+            "Indicaties": ["Behandeling ulcus duodeni", "Behandeling reflux", "Profylactisch bij NSAID's"],
+            "Onderverdeling": [
+                {
+                    "Naam": "Omeprazol"                    
+                },
+                {
+                    "Naam": "Pantoprazol"
+                }
+            ]
+        },
+        {
+            "Naam": "Statinen",
+            "Indicaties": ["Hypercholesterolemie", "Profylaxe bij atherosclerotisch cardiovasculair lijden"],
+            "Bijwerkingen": [
+                {
+                    "Bijwerking": "Myopathie"
+                },
+                {
+                    "Bijwerking": "Stijging leverwaarden"
+                }
+            ],
+            "Mechanisme": ["Remment HMG-CoA-reductase", "Aantal LDL-receptoren neemt toe", "Verhoogt LDL opname uit bloed", "Verlaagt LDL, verhoogt HDL"],
+            "Onderverdeling": [
+                {
+                    "Naam": "Atorvastatine",
+                    "Enzym": ["CY3A4", "Substraat", "Actief"]
+                },
+                {
+                    "Naam": "Simvastatine",
+                    "Enzym": ["CY3A4", "Substraat", "Actief"],
+                    "Klaring": "Renaal"
+                }
+            ]
+        },
+        {
             "Naam": "Antidiabetica",
             "Onderverdeling": [
                 {
                     "Naam": "Metformine",
+                    "Klaring": "Renaal",
                     "Mechanisme": ["Remt glucose productie in de lever", "Verlaagt perifere gevoeligheid voor insuline"],
                     "Indicaties": ["Diabetes Mellitus II"],
                     "Zwangerschap": ["Waarschijnlijk veilig"],
@@ -1075,7 +1135,8 @@
                             "Interactant": ["Lithium", "Tramadol", "Triptanen", "Tryptofaan", "Sint-Janskruid"],
                             "Risico": "Serotonerg syndroom",
                             "Mechanisme": "Verhoogde serotonine-spiegel",
-                            "Symptomen": ["Agitatie", "Koorts", "Hyperreflexie"]
+                            "Symptomen": ["Agitatie", "Koorts", "Hyperreflexie"],
+                            "Klaring": "Renaal"
                         }
                     ],
                     "Onderverdeling": [
@@ -1182,6 +1243,7 @@
                     "Onderverdeling": [
                         {
                             "Naam": "Protamine",
+                            "Mechanisme": ["Neutraliseert volledig anti-factor IIa, en partieel anti-factor Xa"],
                             "Indicaties": ["Levensbedreigende bloeding on (ongefractioneerde) heparine"]
                         }
                     ]
@@ -1320,6 +1382,7 @@
                                                 },
                                                 {
                                                     "Naam": "Amoxicilline",
+                                                    "Klaring": "Renaal",
                                                     "Zwangerschap": ["Meest veilig"],
                                                     "Indicaties": ["Gram-negatieve en gram-positieve bacteriën"]
                                                 },
@@ -1330,7 +1393,8 @@
                                                     "Naam": "Penicilline met beta-lactamaseremmer",
                                                     "Onderverdeling": [
                                                         {
-                                                            "Naam": "Piperacilline/tazobactam"
+                                                            "Naam": "Piperacilline/tazobactam",
+                                                            "Klaring": "Renaal"
                                                         },
                                                         {
                                                             "Naam": "Amoxicilline/clavulaanzuur",
@@ -1375,6 +1439,7 @@
                             "Onderverdeling": [
                                 {
                                     "Naam": "Ciprofloxacine",
+                                    "Klaring": "Renaal",
                                     "Enzym": ["CYP3A4", "Inhibitor"],
                                     "Zwangerschap": ["Onbekend", "2e en 3e trimester"]
                                 }
@@ -1406,6 +1471,7 @@
                             "Onderverdeling": [
                                 {
                                     "Naam": "Cotrimoxazol",
+                                    "Klaring": "Renaal",
                                     "Enzym": ["CYP2C9", "Inhibitor"]
                                 }
                             ]
@@ -1423,6 +1489,7 @@
                         },
                         {
                             "Naam": "Nitrofurantoïne",
+                            "Klaring": "Renaal",
                             "Mechanisme": ["Remming van de Krebs-cyclus", "Onvoldoende energie voor de instandhouding van de bacterie"],
                             "Indicaties": ["UWI", "Profylaxe bij transurethrale ingrepen"]
                         }
@@ -1433,6 +1500,7 @@
                     "Onderverdeling": [
                         {
                             "Naam": "Tetracyclinen",
+                            "Klaring": "Renaal",
                             "Mechanisme": ["Bindt de 30S en 50S subunits ribisoom", "Inhibitie van de bacteriële eiwitsynthese", "Bacteriostase"],
                             "Interacties": [
                                 {
@@ -1484,6 +1552,7 @@
                                 },
                                 {
                                     "Naam": "Claritromycine",
+                                    "Klaring": "Renaal",
                                     "Enzym": ["CYP3A4", "Inhibitor"]
                                 },
                                 {
