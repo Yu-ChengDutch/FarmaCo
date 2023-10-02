@@ -327,7 +327,7 @@ function prepareQuestions(level) {
 
     };
 
-    if (level == 4 || level == 3 || level == 5 || level == 7 || level == 9) {
+    if (level == 4 || level == 8 || level == 5 || level == 7 || level == 9) {
 
         keys = Object.keys(content_dict)
 
@@ -355,12 +355,26 @@ function prepareQuestions(level) {
             
                 enzym = content_dict[keys[i]].Enzym;
 
-                question_string = "Het medicijn " + current + " werk in op " + enzym[0] + ". Is het een enzyminducer, inhibitor of substraat?";
-                temp_temp_question_array.push({"Question": question_string, "Answer": content_dict[keys[i]].Enzym[0]});
+                question_string = "Het medicijn " + current + " werkt in op " + enzym[0] + ". Is het een enzyminducer, inhibitor of substraat?";
+                temp_temp_question_array.push({"Question": question_string, "Answer": content_dict[keys[i]].Enzym[1]});
 
-            };
+            } else if (level == 8) {
+
+                if (Object.keys(content_dict[keys[i]]).includes("Voorschrijven")) {
+                    
+                    question_string = "Moet bij " + current + " de reden van voorschrijven worden vermeld? Ja of nee";
+                    temp_temp_question_array.push({"Question": question_string, "Answer": "Ja"})
+
+                } else if (Math.random() > 0.8) {
+
+                    question_string = "Moet bij " + current + " de reden van voorschrijven worden vermeld? Ja of nee";
+                    temp_temp_question_array.push({"Question": question_string, "Answer": "Nee"})
+
+                }
+
+            }
             
-            if (Math.random() > 0.8 && temp_temp_question_array.length > 0) {
+            if (Math.random() > 0.6 && temp_temp_question_array.length > 0) {
 
                 temp_temp_question_array.push(ancestryQuestion(current));
 
