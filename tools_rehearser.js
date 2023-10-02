@@ -489,7 +489,7 @@ function checkMnemonicAnswer() {
 
             try {
                 question_string = "Van welke categorie is " + given_answer + " een deel?";
-                local_question_array.splice(intervalIndex(current_index, 1, local_question_array), 0, {"Question": question_string, "Answer": ancestry_dict[current].Parent});
+                local_question_array.splice(intervalIndex(current_index, 1, local_question_array), 0, {"Question": question_string, "Answer": ancestry_dict[given_answer].Parent});
             } catch {
                 console.log("--> Doesn't exist: " + given_answer);
             };
