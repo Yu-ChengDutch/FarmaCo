@@ -1135,8 +1135,7 @@
                             "Interactant": ["Lithium", "Tramadol", "Triptanen", "Tryptofaan", "Sint-Janskruid"],
                             "Risico": "Serotonerg syndroom",
                             "Mechanisme": "Verhoogde serotonine-spiegel",
-                            "Symptomen": ["Agitatie", "Koorts", "Hyperreflexie"],
-                            "Klaring": "Renaal"
+                            "Symptomen": ["Agitatie", "Koorts", "Hyperreflexie"]                            
                         }
                     ],
                     "Onderverdeling": [
@@ -1153,6 +1152,7 @@
                 },
                 {
                     "Naam": "Lithium",
+                    "Klaring": "Renaal",
                     "Voorschrijven": "True",
                     "Indicaties": ["Bipolaire stoornis", "I.c.m. antidepressivum bij therapieresistente depressie"],
                     "Interacties": [

@@ -415,7 +415,7 @@ function prepareQuestions(level) {
                     question_string = "Moet bij " + current + " de dosis worden aangepast bij nierfunctiestoornissen? Ja of nee";
                     temp_temp_question_array.push({"Question": question_string, "Answer": "Ja"})
 
-                } else if (Math.random() > 0.8) {
+                } else if (Math.random() > 0.85) {
 
                     question_string = "Moet bij " + current + " de dosis worden aangepast bij nierfunctiestoornissen? Ja of nee";
                     temp_temp_question_array.push({"Question": question_string, "Answer": "Nee"})
