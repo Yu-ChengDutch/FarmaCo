@@ -140,7 +140,7 @@ function startLevel(level) {
     document.getElementsByTagName("BODY")[0].innerHTML = level_page;
     setEnter();
 
-    fetch("./med_data.json")
+    fetch("./data_pharmacology.json")
 
     .then(function(response){
         console.log("- > File found and accessed");

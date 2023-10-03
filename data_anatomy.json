@@ -1,0 +1,274 @@
+{
+    "Name": "Corpus humanum",
+    "Subdivision": [
+        {
+            "Name": "Systema skeletale",
+            "Subdivision": [
+                {
+                    "Name": "Skeleton axiale",
+                    "Subdivision": [
+                        {
+                            "Name": "Ossa cranii"
+                        },
+                        {
+                            "Name": "Columna vertebralis",
+                            "Subdivision": [
+                                {
+                                    "Name": "Vertebrae cervicales",
+                                    "Subdivision": [
+                                        {
+                                            "Name": "Atlas"
+                                        },
+                                        {
+                                            "Name": ""
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Name": "Vertebrae thoracales"
+                                },
+                                {
+                                    "Name": "Vertebrae lumbales"
+                                }
+                            ]
+                        },
+                        {
+                            "Name": "Skeleton thoracis",
+                            "Subdivision": [
+                                {
+                                    "Name": "Costae",
+                                    "Subdivision": [
+                                        {
+                                            "Name": "Costae verae"
+                                        },
+                                        {
+                                            "Name": "Costae spuriae"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Name": "Sternum",
+                                    "Parts": [
+                                        {
+                                            "Name": "Manubrium sterni",
+                                            "Parts": [
+                                                {
+                                                    "Name": "Incisura clavicularis"
+                                                },
+                                                {
+                                                    "Name": "Incisura jugularis"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "Name": "Angulus sterni",
+                                            "Eponym": "Ludovici",
+                                            "Parts": [
+                                                {
+                                                    "Name": "Incisura costalis II"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "Name": "Corpus sterni",
+                                            "Parts": [
+                                                {
+                                                    "Name": "Incisurae costales III - VI"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "Name": "Processus xiphoideus",
+                                            "Parts": [
+                                                {
+                                                    "Name": "Incisura costalis VII"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Skeleton appendiculare",
+                    "Subdivision": [
+                        {
+                            "Name": "Ossa membri superioris",
+                            "Subdivision": [
+                                {
+                                    "Name": "Ossa cinguli pectoralis",
+                                    "Subdivision": [
+                                        {
+                                            "Name": "Scapula",
+                                            "Parts": [
+                                                {
+                                                    "Name": "Facies anterior"
+                                                },
+                                                {
+                                                    "Name": "Facies posterior"
+                                                },
+                                                {
+                                                    "Name": "Acromion"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "Name": "Clavicula",
+                                            "Parts": [
+                                                {
+                                                    "Name": "Extremitas acromialis"
+                                                },
+                                                {
+                                                    "Name": "Corpus claviculae"
+                                                },
+                                                {
+                                                    "Name": "Extremitas sternalis"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Name": "Ossa partis liberae membri superioris",
+                                    "Subdivision": [
+                                        {
+                                            "Name": "Humerus"
+                                        },
+                                        {
+                                            "Name": "Radius"
+                                        },
+                                        {
+                                            "Name": "Ulna"
+                                        },
+                                        {
+                                            "Name": "Ossa manus",
+                                            "Subdivision": [
+                                                {
+                                                    "Name": "Ossa carpi"
+                                                },
+                                                {
+                                                    "Name": "Ossa metacarpi"
+                                                },
+                                                {
+                                                    "Name": "Ossa digitorum manus"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "Name": "Ossa membri inferioris",
+                            "Subdivision": [
+                                {
+                                    "Name": "Ossa cinguli pelvici",
+                                    "Subdivision": [
+                                        {
+                                            "Name": "Os sacrum"
+                                        },
+                                        {
+                                            "Name": "Os coxae",
+                                            "Subdivision": [
+                                                {
+                                                    "Name": "Os ilium"
+                                                },
+                                                {
+                                                    "Name": "Os ischii"
+                                                },
+                                                {
+                                                    "Name": "Os pubis"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Name": "Ossa partis liberae membri inferioris",
+                                    "Subdivision": [
+                                        {
+                                            "Name": "Femur"
+                                        },
+                                        {
+                                            "Name": "Patella"
+                                        },
+                                        {
+                                            "Name": "Tibia"
+                                        },
+                                        {
+                                            "Name": "Fibula"
+                                        },
+                                        {
+                                            "Name": "Ossa pedis",
+                                            "Subdivision": [
+                                                {
+                                                    "Name": "Ossa tarsi",
+                                                    "Subdivision": [
+                                                        {
+                                                            "Name": "Talus"
+                                                        },
+                                                        {
+                                                            "Name": "Calcaneus"
+                                                        },
+                                                        {
+                                                            "Name": "Os naviculare"
+                                                        },
+                                                        {
+                                                            "Name": "Os cuneiforme mediale"
+                                                        },
+                                                        {
+                                                            "Name": "Os cuneiforme intermedium"
+                                                        },
+                                                        {
+                                                            "Name": "Os cuneiforme laterale"
+                                                        },
+                                                        {
+                                                            "Name": "Os cuboideum"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "Name": "Ossa metatarsi"
+                                                },
+                                                {
+                                                    "Name": "Ossa digitorum pedis"
+                                                }
+                                            ]
+                                        }  
+                                    ]
+                                }                                
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "Systema articulare",
+            "Subdivision": [
+                {
+                    "Name": "Articulationes cinguli pectoralis",
+                    "Subdivision": [
+                        {
+                            "Name": "Articulato glenohumeralis"
+                        },
+                        {
+                            "Name": "Articulatio acromioclavicularis"
+                        },
+                        {
+                            "Name": "Articulatio sternoclavicularis"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "Systema cardiovasculare"
+        },
+        {
+            "Name": "Systema nervosum"
+        }
+    ]
+}
