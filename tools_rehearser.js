@@ -128,6 +128,174 @@ var level_page= `
 
 `
 
+var page_order=`
+<div class="card" onclick="startLevel(1)">
+
+            <div class="bubble">
+                <img src="./Images/Network.png">
+            </div>
+
+            <div class="text-right">
+
+                <H1> Categories </H1>
+                <p> & where to find them </p>
+
+            </div>
+
+        </div>
+        
+        <div class="card" onclick="startLevel(2)">
+
+            <div class="bubble">
+                <img src="./Images/Network.png">
+            </div>
+
+            <div class="text-right">
+
+                <H1> Drugs </H1>
+                <p> & what they are</p>
+
+            </div>
+
+        </div>
+`
+
+var page_recognise =`
+
+        <div class="inset"> <p> Major topics </p> </div>
+
+        <div class="card" onclick="startLevel(3)">
+
+            <div class="bubble">
+                <img src="./Images/Interactions.png">
+            </div>
+
+            <div class="text-right">
+
+                <H1> Interactions </H1>
+                <p> & how they communicate </p>
+
+            </div>
+
+        </div>
+        
+        <div class="card" onclick="startLevel(11)">
+
+            <div class="bubble">
+                <img src="./Images/Interactions.png">
+            </div>
+
+            <div class="text-right">
+
+                <H1> Side-effects </H1>
+                <p> & what else they do </p>
+
+            </div>
+
+        </div>
+
+        <div class="card" onclick="startLevel(4)">
+
+            <div class="bubble">
+                <img src="./Images/Interactions.png">
+            </div>
+
+            <div class="text-right">
+
+                <H1> Indications </H1>
+                <p> & why to use them </p>
+
+            </div>
+
+        </div>
+
+        <div class="card" onclick="startLevel(5)">
+
+            <div class="bubble">
+                <img src="./Images/Interactions.png">
+            </div>
+
+            <div class="text-right">
+
+                <H1> Mechanisms </H1>
+                <p> & how they work </p>
+
+            </div>
+
+        </div>
+
+        <div class="inset"> <p> Minor topics </p> </div>
+
+        <div class="card" onclick="startLevel(7)">
+
+            <div class="bubble">
+                <img src="./Images/Interactions.png">
+            </div>
+
+            <div class="text-right">
+
+                <H1> Pregnancy </H1>
+                <p> & when not to use them </p>
+
+            </div>
+
+        </div>
+
+        <div class="card" onclick="startLevel(8)">
+
+            <div class="bubble">
+                <img src="./Images/Interactions.png">
+            </div>
+
+            <div class="text-right">
+
+                <H1> Prescriptions </H1>
+                <p> & when to mark them </p>
+
+            </div>
+
+        </div>
+
+        <div class="card" onclick="startLevel(9)">
+
+            <div class="bubble">
+                <img src="./Images/Interactions.png">
+            </div>
+
+            <div class="text-right">
+
+                <H1> Enzym </H1>
+                <p> & how they're processed </p>
+
+            </div>
+
+        </div>
+
+        <div class="card" onclick="startLevel(10)">
+
+            <div class="bubble">
+                <img src="./Images/Interactions.png">
+            </div>
+
+            <div class="text-right">
+
+                <H1> Clearance </H1>
+                <p> & how to get rid of them </p>
+
+            </div>
+
+        </div>
+`
+
+var pages = {
+    "Order": page_order,
+    "Recognise": page_recognise
+};
+
+function toPage(page) {
+    document.getElementById("main-container").innerHTML = pages[page];
+}
+
 /***
  * 
  * Create main functions
