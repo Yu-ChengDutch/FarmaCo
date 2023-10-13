@@ -436,7 +436,7 @@ function prepareQuestions(level) {
 
             if (parent != base && ((level == 1 && !terminals_array.includes(child)) || (level == 2 && terminals_array.includes(child)))) {
 
-                if (Math.random() > 0.9) {
+                if (Math.random() > 0.8) {
 
                     temp_question_array.push(ancestryQuestion(child));
     
