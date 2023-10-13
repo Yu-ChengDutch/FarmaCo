@@ -461,8 +461,6 @@ function prepareQuestions(level) {
         
         };
 
-        print(temp_question_array);
-
     };
 
     if (level == 3) {
