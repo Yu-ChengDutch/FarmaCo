@@ -436,7 +436,7 @@ function prepareQuestions(level) {
 
             if (parent != base && ((level == 1 && !terminals_array.includes(child)) || (level == 2 && terminals_array.includes(child)))) {
 
-                if (Math.random() > 0.9 && temp_temp_question_array.length > 0) {
+                if (Math.random() > 0.9) {
 
                     temp_question_array.push(ancestryQuestion(child));
     
@@ -460,6 +460,8 @@ function prepareQuestions(level) {
             };
         
         };
+
+        print(temp_question_array);
 
     };
 
