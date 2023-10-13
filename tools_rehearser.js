@@ -432,12 +432,20 @@ function prepareQuestions(level) {
         for (var i = 0; i < Object.keys(local_ancestry_dict).length; i++) {
 
             child = Object.keys(local_ancestry_dict)[i];
-            parent = local_ancestry_dict[child].Parent;   
+            parent = local_ancestry_dict[child].Parent; 
 
             if (parent != base && ((level == 1 && !terminals_array.includes(child)) || (level == 2 && terminals_array.includes(child)))) {
 
-                question_string = "Wat is de klasse van " + child;
-                temp_question_array.push({"Question": question_string, "Answer": parent });
+                if (Math.random() > 0.9 && temp_temp_question_array.length > 0) {
+
+                    temp_question_array.push(ancestryQuestion(child));
+    
+                } else {
+
+                    question_string = "Wat is de klasse van " + child;
+                    temp_question_array.push({"Question": question_string, "Answer": parent });
+                
+                };                
 
                 if (level == 2) {
 
@@ -447,7 +455,7 @@ function prepareQuestions(level) {
                         temp_question_array.push({"Question": question_string, "Answer": grandchildren });
                     };
 
-                };                
+                };
 
             };
         
