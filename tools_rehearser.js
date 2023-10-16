@@ -548,9 +548,9 @@ function prepareQuestions(level) {
             var current = content_dict[keys[i]].Naam
             var temp_temp_question_array = [];
 
-            if (level == 4 && Object.keys(content_dict[keys[i]]).includes("Indicaties")) {
+            if (level == 4 && Object.keys(content_dict[keys[i]]).includes("Indicaties-list")) {
 
-                question_string = "Welk (klasse) medicijn is bruikbaar voor de volgende symptomen: " + content_dict[keys[i]].Indicaties;
+                question_string = "Welk (klasse) medicijn is bruikbaar voor de volgende symptomen: " + content_dict[keys[i]]["Indicaties-list"];
                 temp_temp_question_array.push({"Question": question_string, "Answer": current });
 
             } else if (level == 5 && Object.keys(content_dict[keys[i]]).includes("Mechanisme")) {
@@ -887,10 +887,10 @@ function legacy(level) {
 
         explorable_item = explorable_array.pop();
 
-        if (Object.keys(explorable_item).includes("Indicaties")) {
+        if (Object.keys(explorable_item).includes("Indicaties-list")) {
         
             if (Object.keys(explorable_item).includes("Onderverdeling")) {
-                question_string_1 = "Welk (klasse) medicijn is bruikbaar voor de volgende symptomen: " + explorable_item.Indicaties;
+                question_string_1 = "Welk (klasse) medicijn is bruikbaar voor de volgende symptomen: " + explorable_item["Indicaties-list"];
                 question_string_2 = "Noem een voorbeeld van " + explorable_item.Naam;
 
                 answer_array = [];
@@ -902,7 +902,7 @@ function legacy(level) {
                 temp_3_array.push([{"Question": question_string_1, "Answer": explorable_item.Naam}, {"Question": question_string_2, "Answer": answer_array}])
 
             } else {
-                question_string = "Welk (klasse) medicijn is bruikbaar voor de volgende symptomen: " + explorable_item.Indicaties;
+                question_string = "Welk (klasse) medicijn is bruikbaar voor de volgende symptomen: " + explorable_item["Indicaties-list"];
                 temp_3_array.push({"Question": question_string, "Answer": explorable_item.Naam})
             }        
 

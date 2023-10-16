@@ -6,7 +6,7 @@
             "Onderverdeling": [
                 {
                     "Naam": "Paracetamol",
-                    "Indicaties": ["Eerste stap bij nociceptieve pijn"],
+                    "Indicaties-list": ["Eerste stap bij nociceptieve pijn"],
                     "Zwangerschap": ["Meest veilig"],
                     "Enzym": ["CYP2E1", "Substraat", "Toxisch"],
                     "Bijwerkingen": [
@@ -27,7 +27,7 @@
                 },
                 {
                     "Naam": "NSAID's",
-                    "Indicaties": ["Tweede stap (additie) bij nociceptieve pijn"],
+                    "Indicaties-list": ["Tweede stap (additie) bij nociceptieve pijn"],
                     "Mechanisme": [["COX-1 remming", "Inhibitie van trombocytenaggergatie, gastroprotectie en renale perfusie"], ["COX-2 inhibitie", "Inhibitie van renale perfusie, inflammatie, ovulatie, sluiting ductus Botalli en pyrexie"]],
                     "Bijwerkingen": [
                         {
@@ -164,7 +164,7 @@
                     "Onderverdeling": [
                         {
                             "Naam": "Sterkwerkend opioïd",
-                            "Indicaties": ["Vierde stap (additie) bij nociceptieve pijn"],
+                            "Indicaties-list": ["Vierde stap (additie) bij nociceptieve pijn"],
                             "Onderverdeling": [
                                 {
                                     "Naam": "Morfine",
@@ -186,7 +186,7 @@
                             "Onderverdeling": [
                                 {
                                     "Naam": "Tramadol",
-                                    "Indicaties": ["Derde stap (additie) bij nociceptieve pijn"],
+                                    "Indicaties-list": ["Derde stap (additie) bij nociceptieve pijn"],
                                     "Klaring": "Renaal",
                                     "Mechanisme": ["Aselectieve Mu-, Kappa- en Delta-opioïdreceptor agonist; tevens reuptakeremmer van NE en serotonine"],
                                     "Bijwerkingen": [
@@ -216,12 +216,25 @@
                 {
                     "Naam": "Osmotische laxantia",
                     "Mechanisme": ["Resorberen slecht", "Houden veel water in de darm", "Verzacht de feces", ["Vergroot het volume", "Versterkt de darmperisaltiek", "Stimuleert de stoelgang"]],
+                    "Indicaties": [
+                        {
+                            "Indicatie": "Obstipatie bij opioïdgebruik",
+                            "Keuze": 1
+                        }
+                    ],                    
                     "Onderverdeling": [
                         {
                             "Naam": "Lactulose"
                         },
                         {
-                            "Naam": "Macrogol"
+                            "Naam": "Macrogol",
+                            "Indicaties": [
+                                {
+                                    "Indicatie": "Obstipatie bij opioïdgebruik",
+                                    "Keuze": 1,
+                                    "Condities": ["Volwassenen, kinderen >= 1"]
+                                }
+                            ]
                         },
                         {
                             "Naam": "Magnesiumhydroxide"
@@ -231,9 +244,43 @@
                 {
                     "Naam": "Contactlaxantia",
                     "Mechanisme": ["Chemische prikkeling van de darmwand", "Verminderde intestinale water- en zoutresorptie", "Verzacht de feces", ["Vergroot het volume", "Versterkt de darmperisaltiek", "Stimuleert de stoelgang"]],
+                    "Indicaties": [
+                        {
+                            "Indicatie": "Obstipatie bij opioïdgebruik",
+                            "Keuze": 2
+                        }
+                    ],
                     "Onderverdeling": [
                         {
                             "Naam": "Bisacodyl"
+                        }
+                    ]
+                },
+                {
+                    "Naam": "Klysmata",
+                    "Indicaties": [
+                        {
+                            "Indicatie": "Obstipatie bij opioïdgebruik",
+                            "Keuze": 3
+                        },
+                        {
+                            "Indicatie": "Obstipatie met fecale impactie",
+                            "Keuze": 1
+                        }
+                    ],
+                    "Onderverdeling": [
+                        {
+                            "Naam": "Natriumlaurylsulfoacetaat",
+                            "Alternatieve naam": "Microklysma"
+                        },
+                        {
+                            "Naam": "Natriumfosfaat"
+                        },
+                        {
+                            "Naam": "Natriumducosaat/glycerol"
+                        },
+                        {
+                            "Naam": "Natriumducosaat/sorbitol"
                         }
                     ]
                 }
@@ -267,12 +314,12 @@
                                         {
                                             "Naam": "Acetylsalicylzuur",
                                             "Mechanisme": ["Inhibeert irreversibel de vorming van tromboxaan A2", "Inhibeert vasoconstrictie en trombocytenaggregatie"],
-                                            "Indicaties": ["Primaire preventie bij arterieel vaatlijden", "Secundaire preventie bij arterieel vaatlijden", "2e keus na TIA/CVA"]
+                                            "Indicaties-list": ["Primaire preventie bij arterieel vaatlijden", "Secundaire preventie bij arterieel vaatlijden", "2e keus na TIA/CVA"]
                                         },
                                         {
                                             "Naam": "Clopidogrel",
                                             "Mechanisme": ["Blokkeert irreversibel de ADP-receptor van de trombocyt", "Inhibeert de activeering van een stollingscomplex"],
-                                            "Indicaties": ["Profylaxe na stentplaatsing", "Acuut coronair syndroom", "Perifeer vaatlijden", "1e keus na TIA/CVA"]
+                                            "Indicaties-list": ["Profylaxe na stentplaatsing", "Acuut coronair syndroom", "Perifeer vaatlijden", "1e keus na TIA/CVA"]
                                         }
                                     ]
                                 },
@@ -282,11 +329,11 @@
                                         {
                                             "Naam": "Ticagrelor",
                                             "Mechanisme": ["Blokkeert reversibel de P2Y12 receptor", "Inhibitie van plaatjesactivatie en aggregatie"],
-                                            "Indicaties": ["Additie bij acuut coronair syndroom"]
+                                            "Indicaties-list": ["Additie bij acuut coronair syndroom"]
                                         },
                                         {
                                             "Naam": "Dipyridiamol",
-                                            "Indicaties": ["Additie TIA/CVA"]                                            
+                                            "Indicaties-list": ["Additie TIA/CVA"]                                            
                                         }
                                     ]
                                 }                                
@@ -301,7 +348,7 @@
                             "Naam": "Coumarinederivaten",
                             "Mechanisme": ["Antagoneren vitamine K", "Afname concentratie vitamine K-afhankelijke stollingsfactoren (i.e. II, VII, IX, X en proteïne C)", "Afname van fibrinevorming"],
                             "Enzym": ["CYP2C9", "Substraat"],
-                            "Indicaties": ["Atriumfibrilleren", "Mechanische klepprothese", "Longembolie", "DVT", "TIA/CVA profylaxe bij CHADVASC >1"],
+                            "Indicaties-list": ["Atriumfibrilleren", "Mechanische klepprothese", "Longembolie", "DVT", "TIA/CVA profylaxe bij CHADVASC >1"],
                             "Bijwerkingen": [
                                 {
                                     "Bijwerking": "Verhoogd bloedingsrisico",
@@ -362,7 +409,7 @@
                                 {
                                     "Naam": "LMWH's",
                                     "Mechanisme": ["Activiteert selectief anti-factor Xa", "Neutraliseert pseudoselectief Xa", "Remming omzetting fibrinogeen -> fibrine"],
-                                    "Indicaties": ["Bridging bij CHADVASC >= 8/mechanische klep/kunstklep <3 mnd/recidiverend DVT", "Tromboseprofylaxe"],
+                                    "Indicaties-list": ["Bridging bij CHADVASC >= 8/mechanische klep/kunstklep <3 mnd/recidiverend DVT", "Tromboseprofylaxe"],
                                     "Interacties": [
                                         {
                                             "Interactant": ["NSAID's", "Corticosteroïden"],
@@ -396,7 +443,7 @@
                         },
                         {
                             "Naam": "DOAC's",
-                            "Indicaties": ["Non-valvulair atriumfibrilleren met CHADVASC >1", "DVT", "Longembolie"],
+                            "Indicaties-list": ["Non-valvulair atriumfibrilleren met CHADVASC >1", "DVT", "Longembolie"],
                             "Onderverdeling": [
                                 {
                                     "Naam": "Factor IIa-remmers",
@@ -490,7 +537,7 @@
                                 {
                                     "Naam": "Thiazidediuretica",
                                     "Effect": "Matig maar lang aanhoudend diuretisch effect",
-                                    "Indicaties": ["Eerste keuze antihypertensivum >50 jaar"],
+                                    "Indicaties-list": ["Eerste keuze antihypertensivum >50 jaar"],
                                     "Mechanisme": ["Remming van Na+/Cl- cotransport in de distale tubulus", "Verhoogd aanbod van Na+", "Activatie Na+/K+ counter-transport", "Verhoogde K+ uitscheiding"],
                                     "Bijwerkingen": [
                                         {
@@ -521,7 +568,7 @@
                                 {
                                     "Naam": "Lisdiuretica",
                                     "Effect": "Sterk en snel diuretisch effect",
-                                    "Indicaties": ["Dyspneu en oedeem bij hartfalen/ascites"],
+                                    "Indicaties-list": ["Dyspneu en oedeem bij hartfalen/ascites"],
                                     "Werkingsduur": [6, "uur"],
                                     "Bijwerkingen": [
                                         {
@@ -560,11 +607,11 @@
                                             "Symptomen": ["Ritmestoornissen", "Misselijkheid"]
                                         }
                                     ],
-                                    "Indicaties": ["I.c.m. lis- en/of thiazidediuretica en risico op hypokaliëmie"],
+                                    "Indicaties-list": ["I.c.m. lis- en/of thiazidediuretica en risico op hypokaliëmie"],
                                     "Onderverdeling": [
                                         {
                                             "Naam": "Spironolactone",
-                                            "Indicaties": ["I.c.m. lis- en/of thiazidediuretica bij ernstig hartfalen"],
+                                            "Indicaties-list": ["I.c.m. lis- en/of thiazidediuretica bij ernstig hartfalen"],
                                             "Mechanisme": ["Competitieve antagonist van aldosteron", "Remming van de Na+/K+ countertransporter in de corticale verzamelbuis", "Verlaagde K+ excretie"]
                                         },
                                         {
@@ -580,7 +627,7 @@
                             "Onderverdeling": [
                                 {
                                     "Naam": "Beta-blokkers",
-                                    "Indicaties": ["Atriumfibrilleren", "Hypertensie", "Hartfalen", "Secundaire preventie na myocardinfarct"],
+                                    "Indicaties-list": ["Atriumfibrilleren", "Hypertensie", "Hartfalen", "Secundaire preventie na myocardinfarct"],
                                     "Interacties": [
                                         {
                                             "Interactant": ["Non-dihydropyridines"],
@@ -665,7 +712,7 @@
                                 },
                                 {
                                     "Naam": "Alfa-blokkers",
-                                    "Indicaties": ["Hypertensie", "Mictieklachten"],
+                                    "Indicaties-list": ["Hypertensie", "Mictieklachten"],
                                     "Mechanisme": [["Vasodilatatie"], ["Relaxatie van de gladde spieren in prostaat en urinewegen", "Bevordering van mictie"]],
                                     "Bijwerkingen": [
                                         {
@@ -677,7 +724,7 @@
                                     "Onderverdeling": [
                                         {
                                             "Naam": "Tamsulosine",
-                                            "Indicaties": ["LUTS bij benigne prostaathyperplasie"]
+                                            "Indicaties-list": ["LUTS bij benigne prostaathyperplasie"]
                                         }
                                     ]
                                 }
@@ -685,12 +732,12 @@
                         },
                         {
                             "Naam": "Calciumantagonisten",
-                            "Indicaties": ["Tweede keuze antihypertensivum >50 jaar"],
+                            "Indicaties-list": ["Tweede keuze antihypertensivum >50 jaar"],
                             "Onderverdeling": [
                                 {
                                     "Naam": "Dihydropyridines",
                                     "Mechanisme": ["Blokkade van de instroom van calcium in de vaatwand", "Inhibitie van de vaatwandcontractie", "Vasodilatatie"],
-                                    "Indicaties": ["Hypertensie"],
+                                    "Indicaties-list": ["Hypertensie"],
                                     "Enzym": ["CYP3A4", "Substraat"],
                                     "Bijwerkingen": [
                                         {
@@ -713,7 +760,7 @@
                                 {
                                     "Naam": "Non-dihydropyridines",
                                     "Mechanisme": ["Blokkade van de instroom van calcium in de hartwand", "Inhibitie van de SA/AV geleiding", "Negatief chronotrope en negatief inotrope werking"],
-                                    "Indicaties": ["Hypertensie", "Atriumfibrilleren"],
+                                    "Indicaties-list": ["Hypertensie", "Atriumfibrilleren"],
                                     "Bijwerkingen": [
                                         {
                                             "Bijwerking": "Hoofdpijn"
@@ -782,7 +829,7 @@
                             "Onderverdeling": [
                                 {
                                     "Naam": "ACE-remmers",                                    
-                                    "Indicaties": ["Eerste keuze antihypertensivum <50 jaar", "Hartfalen", "Diabetische proteïnurie"],
+                                    "Indicaties-list": ["Eerste keuze antihypertensivum <50 jaar", "Hartfalen", "Diabetische proteïnurie"],
                                     "Bijwerkingen": [
                                         {
                                             "Bijwerking": "Hypotensie",
@@ -821,7 +868,7 @@
                                 {
                                     "Naam": "ARBs",
                                     "Mechanisme": ["Blokkade van de AT1-receptor", ["Vasodilatatie", "Bloeddrukdaling", "Preventie van remodeling van de hartspier / verlaging van de glomerulaire perfusie"], ["Preventie aldosteron secretie", "Toename water- en natriumexcretie", "Afname kaliumexcretie"]],
-                                    "Indicaties": ["Alternatief voor ACE-remmers, bij problematische prikkelhoest/angio-oedeem"],
+                                    "Indicaties-list": ["Alternatief voor ACE-remmers, bij problematische prikkelhoest/angio-oedeem"],
                                     "Onderverdeling": [
                                         {
                                             "Naam": "Losartan"
@@ -837,7 +884,7 @@
                 },
                 {
                     "Naam": "Hartglycosiden",
-                    "Indicaties": ["Chronisch hartfalen", "Atriumfibrilleren"],
+                    "Indicaties-list": ["Chronisch hartfalen", "Atriumfibrilleren"],
                     "Mechanisme": [["Remming van ATP in het hart", "Remming van NA/Ka-uitwisseling", "Verhoging cellulaire influx Ca", "Positieve inotropie"], ["Stimulering nervus vagus naar het hart", "Negatief chronotroop en dromotroop"]],
                     "Interacties": [
                         {
@@ -874,11 +921,11 @@
                                     "Risicofactoren": ["Dehydratie"]
                                 }
                             ],
-                            "Indicaties": ["Oromucosaal bij acute angina pectoris"]
+                            "Indicaties-list": ["Oromucosaal bij acute angina pectoris"]
                         },
                         {
                             "Naam": "Isosorbide-mononitraat",
-                            "Indicaties": ["Oraal als onderhoudsbehandeling bij angina pectoris of astma cardiale"]
+                            "Indicaties-list": ["Oraal als onderhoudsbehandeling bij angina pectoris of astma cardiale"]
                         }
                     ],
                     "Bijwerkingen": [
@@ -890,38 +937,60 @@
                 {
                     "Naam": "Natriumpolystyreensulfonaat",
                     "Mechanisme": ["Natrium in medicatie stimuleert Na/Ka-wisseling in de dikke darm", "Daling kaliumgehalte"],
-                    "Indicaties": ["Hyperkaliëmie bij nierinsufficiëntie", "Ondersteuning bij dialyse"]
+                    "Indicaties-list": ["Hyperkaliëmie bij nierinsufficiëntie", "Ondersteuning bij dialyse"]
                 },
                 {
                     "Naam": "Insuline/glucose",
-                    "Indicaties": ["Hyperkaliëmie"]
+                    "Indicaties-list": ["Hyperkaliëmie"]
                 },
                 {
                     "Naam": "Calciumgluconaat",
-                    "Indicaties": ["Hyperkaliëmie met ECG afwijkingen"]
+                    "Indicaties-list": ["Hyperkaliëmie met ECG afwijkingen"]
                 },
                 {
                     "Naam": "KCl-drank",
-                    "Indicaties": ["Hypokaliëmie"]
+                    "Indicaties-list": ["Hypokaliëmie"]
                 }                 
             ]
         },
         {
             "Naam": "Protonpompremmers",
             "Mechanisme": ["Remt H+/K+-ATP-ase in de pariëtale cellen van de maag", "Remmen basale en gestimuleerde maagzuursecretie"],
-            "Indicaties": ["Behandeling ulcus duodeni", "Behandeling reflux", "Profylactisch bij NSAID's"],
+            "Indicaties-list": ["Behandeling ulcus duodeni", "Behandeling reflux", "Profylactisch bij NSAID's"],
             "Onderverdeling": [
                 {
-                    "Naam": "Omeprazol"                    
+                    "Naam": "Omeprazol",
+                    "Indicaties": [
+                        {
+                            "Indicatie": "Maagbescherming",
+                            "Keuze": 1                            
+                        },
+                        {
+                            "Indicatie": "Maagbescherming",
+                            "Keuze": 1,
+                            "Condities": ["Lactatie", "Zwangerschap"]                            
+                        }
+                    ]                    
                 },
                 {
-                    "Naam": "Pantoprazol"
+                    "Naam": "Pantoprazol",
+                    "Indicaties": [
+                        {
+                            "Indicatie": "Maagbescherming",
+                            "Keuze": 1                            
+                        },
+                        {
+                            "Indicatie": "Maagbescherming",
+                            "Keuze": 1,
+                            "Condities": ["Lactatie", "Ouderen"]                            
+                        }
+                    ]  
                 }
             ]
         },
         {
             "Naam": "Statinen",
-            "Indicaties": ["Hypercholesterolemie", "Profylaxe bij atherosclerotisch cardiovasculair lijden"],
+            "Indicaties-list": ["Hypercholesterolemie", "Profylaxe bij atherosclerotisch cardiovasculair lijden"],
             "Bijwerkingen": [
                 {
                     "Bijwerking": "Myopathie"
@@ -934,12 +1003,51 @@
             "Onderverdeling": [
                 {
                     "Naam": "Atorvastatine",
-                    "Enzym": ["CY3A4", "Substraat", "Actief"]
+                    "Enzym": ["CY3A4", "Substraat", "Actief"],
+                    "Indicaties": [
+                        {
+                            "Indicatie": "Milde hypercholesterolemie (LDL-daling <40%)",
+                            "Keuze": 1                            
+                        },
+                        {
+                            "Indicatie": "Ernstige hypercholesterolemie (LDL-daling >40%)",
+                            "Keuze": 1                            
+                        }
+                    ]
                 },
                 {
                     "Naam": "Simvastatine",
                     "Enzym": ["CY3A4", "Substraat", "Actief"],
-                    "Klaring": "Renaal"
+                    "Klaring": "Renaal",
+                    "Indicaties": [
+                        {
+                            "Indicatie": "Milde hypercholesterolemie (LDL-daling <40%)",
+                            "Keuze": 1                            
+                        }
+                    ]
+                },
+                {
+                    "Naam": "Pravastatine",
+                    "Indicaties": [
+                        {
+                            "Indicatie": "Hypercholesterolemie",
+                            "Keuze": 1,
+                            "Conditions": ["Chronisch gebruik van CYP3A4-remmers of inducers"]                            
+                        }
+                    ]
+                },
+                {
+                    "Naam": "Rosuvastatine",
+                    "Indicaties": [
+                        {
+                            "Indicatie": "Milde hypercholesterolemie (LDL-daling <40%)",
+                            "Keuze": 1                            
+                        },
+                        {
+                            "Indicatie": "Ernstige hypercholesterolemie (LDL-daling >40%)",
+                            "Keuze": 1                            
+                        }
+                    ]
                 }
             ]
         },
@@ -950,7 +1058,7 @@
                     "Naam": "Metformine",
                     "Klaring": "Renaal",
                     "Mechanisme": ["Remt glucose productie in de lever", "Verlaagt perifere gevoeligheid voor insuline"],
-                    "Indicaties": ["Diabetes Mellitus II"],
+                    "Indicaties-list": ["Diabetes Mellitus II"],
                     "Zwangerschap": ["Waarschijnlijk veilig"],
                     "Bijwerkingen": [
                         {
@@ -962,16 +1070,16 @@
                 },
                 {
                     "Naam": "Glucagon",
-                    "Indicaties": ["Ernstige hypoglykemie"]
+                    "Indicaties-list": ["Ernstige hypoglykemie"]
                 },
                 {
                     "Naam": "Glucose",
-                    "Indicaties": ["Milde hypoglykemie"]
+                    "Indicaties-list": ["Milde hypoglykemie"]
                 },
                 {
                     "Naam": "SU-derivaten",
                     "Mechanisme": ["Stimuleren insuline productie in bèta-cellen"],
-                    "Indicaties": ["I.c.m. metformine bij therapieresistente DM II"],
+                    "Indicaties-list": ["I.c.m. metformine bij therapieresistente DM II"],
                     "Interacties": [
                         {
                             "Interactant": ["Beta-blokkers"],
@@ -988,7 +1096,7 @@
                                 },
                                 {
                                     "Naam": "Gliclazide",
-                                    "Indicaties": ["1e keuze SU-derivaat"]
+                                    "Indicaties-list": ["1e keuze SU-derivaat"]
                                 }
                             ]
                         },
@@ -1016,7 +1124,7 @@
                 {
                     "Naam": "SGLT2-remmers",
                     "Mechanisme": ["Inhibitie van de sodium-glucose co-transporter in de nieren", "Inhibitie van de renale glucose en natrium reabsorptie", "Daling glucose en natrium"],
-                    "Indicaties": ["Bij ongeschiktheid metformine bij DM II", "Hartfalen"],
+                    "Indicaties-list": ["Bij ongeschiktheid metformine bij DM II", "Hartfalen"],
                     "Bijwerkingen": [
                         {
                             "Bijwerking": "Euglycemische diabetische ketoacidose",
@@ -1026,7 +1134,7 @@
                 },
                 {
                     "Naam": "Insulinen",
-                    "Indicaties": ["DM I", "Therapieresistente DM II"],
+                    "Indicaties-list": ["DM I", "Therapieresistente DM II"],
                     "Interacties": [
                         {
                             "Interactant": ["Beta-blokkers"],
@@ -1097,7 +1205,7 @@
             "Onderverdeling": [
                 {
                     "Naam": "TCA's",
-                    "Indicaties": ["Matig-ernstige depressie", "Neuropatische pijn"],
+                    "Indicaties-list": ["Matig-ernstige depressie", "Neuropatische pijn"],
                     "Interacties": [
                         {
                             "Interactant": ["Antihypertensiva", "Diuretica"],
@@ -1119,7 +1227,7 @@
                 {
                     "Naam": "SSRI's",
                     "Mechanisme": ["Remt heropname van serotonine", "Toegenomen beschikbaarheid serotonine"],
-                    "Indicaties": ["Matig-ernstige depressie", "Obsessief-compulsieve stoornissen"],
+                    "Indicaties-list": ["Matig-ernstige depressie", "Obsessief-compulsieve stoornissen"],
                     "Interacties": [
                         {
                             "Interactant": ["Thiazidediuretica"],
@@ -1154,7 +1262,7 @@
                     "Naam": "Lithium",
                     "Klaring": "Renaal",
                     "Voorschrijven": "True",
-                    "Indicaties": ["Bipolaire stoornis", "I.c.m. antidepressivum bij therapieresistente depressie"],
+                    "Indicaties-list": ["Bipolaire stoornis", "I.c.m. antidepressivum bij therapieresistente depressie"],
                     "Interacties": [
                         {
                             "Interactant": ["Diuretica", "NSAID's", "RAS-remmers"],
@@ -1195,18 +1303,18 @@
             "Onderverdeling": [
                 {
                     "Naam": "Diazepam",
-                    "Indicaties": ["Afbouwen diazepines", "Serotonerg syndroom", "Koortsconvulsies", "Epileptisch insult"]
+                    "Indicaties-list": ["Afbouwen diazepines", "Serotonerg syndroom", "Koortsconvulsies", "Epileptisch insult"]
                 },
                 {
                     "Naam": "Oxazepam"
                 },
                 {
                     "Naam": "Temazepam",
-                    "Indicaties": ["Slaapstoornissen"]
+                    "Indicaties-list": ["Slaapstoornissen"]
                 },
                 {
                     "Naam": "Lorazepam",
-                    "Indicaties": ["Gegeneraliseerde angststoornissen"]
+                    "Indicaties-list": ["Gegeneraliseerde angststoornissen"]
                 }
             ]
         },
@@ -1215,28 +1323,28 @@
             "Onderverdeling": [
                 {
                     "Naam": "Flumazenil",
-                    "Indicaties": ["Ademhalingsdepressie bij benzodiazepines"]
+                    "Indicaties-list": ["Ademhalingsdepressie bij benzodiazepines"]
                 },
                 {
                     "Naam": "Vitamine K",
-                    "Indicaties": ["Bloeding bij coumarinederivaten"]
+                    "Indicaties-list": ["Bloeding bij coumarinederivaten"]
                 },
                 {
                     "Naam": "Opiaatantagonisten",
                     "Onderverdeling": [
                         {
                             "Naam": "Naloxon",
-                            "Indicaties": ["Overdosis opiaten"]
+                            "Indicaties-list": ["Overdosis opiaten"]
                         }
                     ]
                 },
                 {
                     "Naam": "N-acetyl-cysteïne",
-                    "Indicaties": ["Paracetamolintoxicatie"]
+                    "Indicaties-list": ["Paracetamolintoxicatie"]
                 },
                 {
                     "Naam": "Vierfactoren concentraat",
-                    "Indicaties": ["Ernstige bloeding bij coumarinederivaten"]
+                    "Indicaties-list": ["Ernstige bloeding bij coumarinederivaten"]
                 },
                 {
                     "Naam": "Heparine antagonist",
@@ -1244,25 +1352,25 @@
                         {
                             "Naam": "Protamine",
                             "Mechanisme": ["Neutraliseert volledig anti-factor IIa, en partieel anti-factor Xa"],
-                            "Indicaties": ["Levensbedreigende bloeding on (ongefractioneerde) heparine"]
+                            "Indicaties-list": ["Levensbedreigende bloeding on (ongefractioneerde) heparine"]
                         }
                     ]
                 },
                 {
                     "Naam": "Desmopressine",
-                    "Indicaties": ["Acute OK onder TAR's"]
+                    "Indicaties-list": ["Acute OK onder TAR's"]
                 },
                 {
                     "Naam": "Trombocytentransfusie",
-                    "Indicaties": ["Acute OK onder TAR's met hoog bloedingsrisico"]
+                    "Indicaties-list": ["Acute OK onder TAR's met hoog bloedingsrisico"]
                 },
                 {
                     "Naam": "Idarucizumab",
-                    "Indicaties": ["Bloeding onder dabigatran"]
+                    "Indicaties-list": ["Bloeding onder dabigatran"]
                 },
                 {
                     "Naam": "Andexanet Alfa",
-                    "Indicaties": ["Bloeding onder factor Xa-remmers"]
+                    "Indicaties-list": ["Bloeding onder factor Xa-remmers"]
                 }
             ]
         },
@@ -1271,14 +1379,14 @@
             "Onderverdeling": [
                 {
                     "Naam": "Carbamazepine",
-                    "Indicaties": ["Epilepsie", "Neuralgie", "Diabetes insipidus", "BPD"],
+                    "Indicaties-list": ["Epilepsie", "Neuralgie", "Diabetes insipidus", "BPD"],
                     "Zwangerschap": ["Risico"],
                     "Enzym": [["CYP2C9", "CYP3A4"], "Inducer"],
                     "Voorschrijven": "True"
                 },
                 {
                     "Naam": "Fenytoïne",
-                    "Indicaties": ["Epilepsie", "Aritmieën"],
+                    "Indicaties-list": ["Epilepsie", "Aritmieën"],
                     "Enzym": [["CYP2C9", "CYP3A4"], "Inducer"],
                     "Voorschrijven": "True"
                 }
@@ -1375,7 +1483,7 @@
                                     "Onderverdeling": [
                                         {
                                             "Naam": "Penicillines",
-                                            "Indicaties": ["Gram-positieve bacteriën"],
+                                            "Indicaties-list": ["Gram-positieve bacteriën"],
                                             "Onderverdeling": [
                                                 {
                                                     "Naam": "Penicilline"
@@ -1384,13 +1492,19 @@
                                                     "Naam": "Amoxicilline",
                                                     "Klaring": "Renaal",
                                                     "Zwangerschap": ["Meest veilig"],
-                                                    "Indicaties": ["Gram-negatieve en gram-positieve bacteriën"]
+                                                    "Indicaties": [
+                                                        {
+                                                            "Indicatie": "Milde pneumonie met onbekende verwekker",
+                                                            "Keuze": 1
+                                                        }
+                                                    ]
                                                 },
                                                 {
                                                     "Naam": "Piperacilline"
                                                 },
                                                 {
                                                     "Naam": "Penicilline met beta-lactamaseremmer",
+                                                    "Indicaties-list": ["Beta-lactamase producerende bacteriën"],
                                                     "Onderverdeling": [
                                                         {
                                                             "Naam": "Piperacilline/tazobactam",
@@ -1398,7 +1512,12 @@
                                                         },
                                                         {
                                                             "Naam": "Amoxicilline/clavulaanzuur",
-                                                            "Indicaties": ["Beta-lactamase producerende bacteriën"]
+                                                            "Indicaties": [
+                                                                {
+                                                                    "Indicatie": "Milde aspiratiepneumonie",
+                                                                    "Keuze": 1
+                                                                }
+                                                            ]
                                                         }
                                                     ]
                                                 }                                
@@ -1409,7 +1528,7 @@
                                             "Onderverdeling": [
                                                 {
                                                     "Naam": "Ceftriaxon",
-                                                    "Indicaties": ["Gram-negatieve bacteriën"]
+                                                    "Indicaties-list": ["Gram-negatieve bacteriën"]
                                                 }
                                             ]
                                         }
@@ -1418,7 +1537,7 @@
                                 {
                                     "Naam": "Fosfomycine",
                                     "Mechanisme": ["Inhibitie van fosfo-enol-pyruvyltransferase", "Inhibitie van peptidoglycaansynthese", "Inhibitie van de celwand"],
-                                    "Indicaties": ["UWI, tweede keuze"]
+                                    "Indicaties-list": ["UWI, tweede keuze"]
                                 },
                                 {
                                     "Naam": "Glycopeptiden",
@@ -1426,15 +1545,15 @@
                                     "Onderverdeling": [
                                         {
                                             "Naam": "Vancomycine",
-                                            "Indicaties": ["MRSA"]
+                                            "Indicaties-list": ["MRSA"]
                                         }
                                     ]
                                 }
                             ]
                         },
                         {
-                            "Naam": "Chinolonen",
-                            "Indicaties": ["Gram-negatieve bacteriën"],
+                            "Naam": "Fluorchinolonen",
+                            "Indicaties-list": ["Gram-negatieve bacteriën"],
                             "Mechanisme": ["Inhibitie DNA-gyrase", "Inhibitie DNA synthese", "Bacteriocide"],
                             "Onderverdeling": [
                                 {
@@ -1442,6 +1561,24 @@
                                     "Klaring": "Renaal",
                                     "Enzym": ["CYP3A4", "Inhibitor"],
                                     "Zwangerschap": ["Onbekend", "2e en 3e trimester"]
+                                },
+                                {
+                                    "Naam": "Levofloxacine",
+                                    "Indicaties": [
+                                        {
+                                            "Indicatie": "Milde pneumonie met vermoeden Legionalla",
+                                            "Keuze": 1
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Naam": "Moxifloxacine",
+                                    "Indicaties": [
+                                        {
+                                            "Indicatie": "Milde pneumonie met vermoeden Legionalla",
+                                            "Keuze": 1
+                                        }
+                                    ]
                                 }
                             ],
                             "Interacties": [
@@ -1491,7 +1628,7 @@
                             "Naam": "Nitrofurantoïne",
                             "Klaring": "Renaal",
                             "Mechanisme": ["Remming van de Krebs-cyclus", "Onvoldoende energie voor de instandhouding van de bacterie"],
-                            "Indicaties": ["UWI", "Profylaxe bij transurethrale ingrepen"]
+                            "Indicaties-list": ["UWI", "Profylaxe bij transurethrale ingrepen"]
                         }
                     ]
                 },
@@ -1512,7 +1649,18 @@
                             "Onderverdeling": [
                                 {
                                     "Naam": "Doxycycline",
-                                    "Zwangerschap": ["Risico", "Vanaf week 16"]
+                                    "Zwangerschap": ["Risico", "Vanaf week 16"],
+                                    "Indicaties": [
+                                        {
+                                            "Indicatie": "Milde pneumonie met onbekende verwekker",
+                                            "Keuze": 2,
+                                            "Condities": ["Volwassenen, kinderen > 10 jaar"]
+                                        },
+                                        {
+                                            "Indicatie": "Milde pneumonie met vermoeden Legionalla",
+                                            "Keuze": 3
+                                        }
+                                    ]
                                 }
                             ]
                         },
@@ -1527,7 +1675,7 @@
                                     "Bijwerking": "Irreversibele ototoxiciteit"
                                 }
                             ],
-                            "Indicaties": ["Gram-negatieve staven"],
+                            "Indicaties-list": ["Gram-negatieve staven"],
                             "Onderverdeling": [
                                 {
                                     "Naam": "Gentamicine",
@@ -1538,7 +1686,7 @@
                         {
                             "Naam": "Macroliden",
                             "Mechanisme": ["Bindt de 50S subunits ribisoom", "Inhibitie van de bacteriële eiwitsynthese", "Bacteriostase"],
-                            "Indicaties": ["Gram-positieve bacteriën", "Pneumokokken", "Intracellulaire organismen"],
+                            "Indicaties-list": ["Gram-positieve bacteriën", "Pneumokokken", "Intracellulaire organismen"],
                             "Interacties": [
                                 {
                                     "Interactant": ["Sotalol", "TCA's", "SSRI's"],
@@ -1548,12 +1696,37 @@
                             ],
                             "Onderverdeling": [
                                 {
-                                    "Naam": "Azitromycine"
+                                    "Naam": "Azitromycine",
+                                    "Indicaties": [
+                                        {
+                                            "Indicatie": "Milde pneumonie met onbekende verwekker",
+                                            "Keuze": 2,
+                                            "Condities": ["Zwangeren, lactatie of kinderen < 10"]
+                                        },
+                                        {
+                                            "Indicatie": "Milde pneumonie met vermoeden Legionalla",
+                                            "Keuze": 2
+                                        },
+                                        {
+                                            "Indicatie": "Acute diarree met "
+                                        }
+                                    ]
                                 },
                                 {
                                     "Naam": "Claritromycine",
                                     "Klaring": "Renaal",
-                                    "Enzym": ["CYP3A4", "Inhibitor"]
+                                    "Enzym": ["CYP3A4", "Inhibitor"],
+                                    "Indicaties": [
+                                        {
+                                            "Indicatie": "Milde pneumonie met onbekende verwekker",
+                                            "Keuze": 2,
+                                            "Condities": ["Zwangeren, lactatie of kinderen < 10"]
+                                        },
+                                        {
+                                            "Indicatie": "Milde pneumonie met vermoeden Legionalla",
+                                            "Keuze": 2
+                                        }
+                                    ]
                                 },
                                 {
                                     "Naam": "Erytromycine",
@@ -1583,7 +1756,7 @@
                                         },
                                         {
                                             "Naam": "Metronidazol",
-                                            "Indicaties": ["Anaerobe infecties e.g. clostridium"],
+                                            "Indicaties-list": ["Anaerobe infecties e.g. clostridium"],
                                             "Voorschrijven": "True"
                                         }
                                     ]
