@@ -526,6 +526,8 @@ function prepareQuestions(level) {
 
     if (level == 11 || level == 12) {
 
+        console.log("Preparing question 11 or 12");
+
         keys = Object.keys(content_dict)
 
         for (var i = 0; i < keys.length; i++) {
@@ -533,7 +535,7 @@ function prepareQuestions(level) {
             var current = content_dict[keys[i]].Naam
             var temp_temp_question_array = [];
 
-            if (level == 11 && Object.keys(content_dict[keys[i]]).includes("Bijwerkingen")) {
+            if (Object.keys(content_dict[keys[i]]).includes("Bijwerkingen")) {
 
                 var current_side_effects = [];
 
@@ -561,9 +563,7 @@ function prepareQuestions(level) {
                     } else {
                         question_string = current + " heeft tenminste " + (current_side_effects.length).toString() + " potentiële bijwerkingen. Noem ze.";
                         temp_temp_question_array.push({"Question": question_string, "Answer": current_side_effects, "Nr_ans": current_side_effects.length});
-                    };
-
-                    
+                    };                    
 
                 };           
 
