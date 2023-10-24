@@ -591,9 +591,9 @@ function prepareQuestions(level) {
             var temp_temp_question_array = [];
 
             if (terminals_array.includes(current)) {
-                question_string_middle = "";
+                question_string_middle = " ";
             } else {
-                question_string_middle = " klasse ";
+                question_string_middle = "klasse ";
             };
 
             if (level == 4 && Object.keys(content_dict[keys[i]]).includes("Indicaties-list")) {
