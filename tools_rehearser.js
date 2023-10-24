@@ -287,7 +287,7 @@ var page_recognise =`
         </div>
 `
 
-var page_recognise =`
+var page_do =`
 
         <div class="inset"> <p> Individual topics </p> </div>
 
