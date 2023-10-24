@@ -706,17 +706,20 @@ function checkMnemonicAnswer() {
 
                 nextQuestion();
 
-            };
-
-            if (inner_text.includes("1")) {
-
-                document.getElementById('remark-card').innerText = document.getElementById('remark-card').innerText + " || 2. " + given_answer;
-
             } else {
 
-                document.getElementById('remark-card').innerText = "1. " + given_answer;
+                if (inner_text.includes("1")) {
+
+                    document.getElementById('remark-card').innerText = document.getElementById('remark-card').innerText + " || 2. " + given_answer;
+    
+                } else {
+    
+                    document.getElementById('remark-card').innerText = "1. " + given_answer;
+    
+                };
 
             };
+            
 
         } else {
 
