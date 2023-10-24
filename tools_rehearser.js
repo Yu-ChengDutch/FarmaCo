@@ -700,6 +700,9 @@ function checkMnemonicAnswer() {
 
             console.log("Correct!");
 
+            const textfield = document.getElementById('text-field');
+            textfield.value = "";
+
             inner_text = document.getElementById('remark-card').innerText;
 
             if (nr_ans == 1 || (inner_text.includes("1") && nr_ans == 2) || (inner_text.includes("2") && nr_ans == 3)) {
