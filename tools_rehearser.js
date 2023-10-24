@@ -615,7 +615,7 @@ function prepareQuestions(level) {
             
                 enzym = content_dict[keys[i]].Enzym;
 
-                question_string = "Het" + question_string_middle + "medicijn werkt in op " + enzym[0] + ". Is het een enzyminducer, inhibitor of substraat?";
+                question_string = "Het" + question_string_middle + "medicijn" + current + " werkt in op " + enzym[0] + ". Is het een enzyminducer, inhibitor of substraat?";
                 temp_temp_question_array.push({"Question": question_string, "Answer": enzym[1]});
 
             } else if (level == 8) {
