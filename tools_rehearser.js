@@ -700,6 +700,12 @@ function checkMnemonicAnswer() {
 
             console.log("Correct!")
 
+            if (nr_ans == 1) {
+
+                nextQuestion();
+
+            };
+
             if (document.getElementById('remark-card').innerText.includes(nr_ans.toString())) {
 
                 nextQuestion();
