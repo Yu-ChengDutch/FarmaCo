@@ -597,7 +597,7 @@
                                     "Effect": "Zwak diuretisch effect",
                                     "Bijwerkingen": [
                                         {
-                                            "Bijwerking": "Dehydratie",
+                                            "Bijwerking": "Hypotensie",
                                             "Risicofactoren": ["Koorts", "Diarree", "Braken", "Anorexie"],
                                             "Symptomen": [["Hypotensie", "Vallen"], "Nierfalen"]
                                         },
