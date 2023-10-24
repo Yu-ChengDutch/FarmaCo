@@ -287,9 +287,30 @@ var page_recognise =`
         </div>
 `
 
+var page_recognise =`
+
+        <div class="inset"> <p> Individual topics </p> </div>
+
+        <div class="card" onclick="startLevel(12)">
+
+            <div class="bubble">
+                <img src="./Images/Interactions.png">
+            </div>
+
+            <div class="text-right">
+
+                <H1> Side-effects </H1>
+                <p> At least the most important ones </p>
+
+            </div>
+
+        </div>
+`
+
 var pages = {
     "Order": page_order,
-    "Recognise": page_recognise
+    "Recognise": page_recognise,
+    "Do": page_do
 };
 
 function toPage(page) {
@@ -503,7 +524,7 @@ function prepareQuestions(level) {
 
     };
 
-    if (level == 11) {
+    if (level == 11 || level == 12) {
 
         keys = Object.keys(content_dict)
 
@@ -521,9 +542,30 @@ function prepareQuestions(level) {
                     current_side_effects.push(content_dict[keys[i]].Bijwerkingen[j].Bijwerking)   
 
                 };
-                
-                question_string = "Van welk medicijn is dit het bijwerkingenprofiel: " + current_side_effects;
-                temp_temp_question_array.push({"Question": question_string, "Answer": current});
+
+                if (level == 11) {
+
+                    if (terminals_array.includes(current)) {
+                        question_string = "Van welk medicijn is dit het bijwerkingenprofiel: " + current_side_effects;
+                    } else {
+                        question_string = "Van welk klasse medicijn is dit het bijwerkingenprofiel: " + current_side_effects;
+                    };
+
+                    temp_temp_question_array.push({"Question": question_string, "Answer": current});
+
+                } else {
+
+                    if (current_side_effects.length > 3) {
+                        question_string = current + " heeft tenminste " + (current_side_effects.length).toString() + " potentiële bijwerkingen. Noem er 3.";
+                        temp_temp_question_array.push({"Question": question_string, "Answer": current_side_effects, "Nr_ans": 3});                    
+                    } else {
+                        question_string = current + " heeft tenminste " + (current_side_effects.length).toString() + " potentiële bijwerkingen. Noem ze.";
+                        temp_temp_question_array.push({"Question": question_string, "Answer": current_side_effects, "Nr_ans": current_side_effects.length});
+                    };
+
+                    
+
+                };           
 
                 if (Math.random() > 0.9 && temp_temp_question_array.length > 0) {
 
@@ -548,14 +590,20 @@ function prepareQuestions(level) {
             var current = content_dict[keys[i]].Naam
             var temp_temp_question_array = [];
 
+            if (terminals_array.includes(current)) {
+                question_string_middle = "";
+            } else {
+                question_string_middle = " klasse ";
+            };
+
             if (level == 4 && Object.keys(content_dict[keys[i]]).includes("Indicaties-list")) {
 
-                question_string = "Welk (klasse) medicijn is bruikbaar voor de volgende symptomen: " + content_dict[keys[i]]["Indicaties-list"];
+                question_string = "Welk" + question_string_middle + "medicijn is bruikbaar voor de volgende symptomen: " + content_dict[keys[i]]["Indicaties-list"];
                 temp_temp_question_array.push({"Question": question_string, "Answer": current });
 
             } else if (level == 5 && Object.keys(content_dict[keys[i]]).includes("Mechanisme")) {
             
-                question_string = "Welk (klasse) medicijn werk op de volgende manier: " + content_dict[keys[i]].Mechanisme;
+                question_string = "Welk" + question_string_middle + "medicijn werk op de volgende manier: " + content_dict[keys[i]].Mechanisme;
                 temp_temp_question_array.push({"Question": question_string, "Answer": current });
 
             } else if (level == 7 && Object.keys(content_dict[keys[i]]).includes("Zwangerschap")) {
@@ -567,7 +615,7 @@ function prepareQuestions(level) {
             
                 enzym = content_dict[keys[i]].Enzym;
 
-                question_string = "Het medicijn " + current + " werkt in op " + enzym[0] + ". Is het een enzyminducer, inhibitor of substraat?";
+                question_string = "Het" + question_string_middle + "medicijn werkt in op " + enzym[0] + ". Is het een enzyminducer, inhibitor of substraat?";
                 temp_temp_question_array.push({"Question": question_string, "Answer": enzym[1]});
 
             } else if (level == 8) {
@@ -577,7 +625,7 @@ function prepareQuestions(level) {
                     question_string = "Moet bij " + current + " de reden van voorschrijven worden vermeld? Ja of nee";
                     temp_temp_question_array.push({"Question": question_string, "Answer": "Ja"})
 
-                } else if (Math.random() > 0.8) {
+                } else if (terminals_array.includes(current) && Math.random() > 0.7) {
 
                     question_string = "Moet bij " + current + " de reden van voorschrijven worden vermeld? Ja of nee";
                     temp_temp_question_array.push({"Question": question_string, "Answer": "Nee"})
@@ -591,7 +639,7 @@ function prepareQuestions(level) {
                     question_string = "Moet bij " + current + " de dosis worden aangepast bij nierfunctiestoornissen? Ja of nee";
                     temp_temp_question_array.push({"Question": question_string, "Answer": "Ja"})
 
-                } else if (Math.random() > 0.8) {
+                } else if (terminals_array.includes(current) && Math.random() > 0.7) {
 
                     question_string = "Moet bij " + current + " de dosis worden aangepast bij nierfunctiestoornissen? Ja of nee";
                     temp_temp_question_array.push({"Question": question_string, "Answer": "Nee"})
@@ -638,12 +686,50 @@ function checkMnemonicAnswer() {
     indices = (document.getElementById('question-title').innerText).split("/")
     current_index = indices[0];
 
-    correct_answer = question_array[current_index].Answer;    
+    correct_answer = question_array[current_index].Answer; 
+    nr_ans = question_array[current_index].Nr_ans;
     
     console.log("- - > Checking mnemonic")
     console.log("- - > Right answer is: " + correct_answer)
 
-    if (given_answer.length > 0 && (correct_answer.includes(given_answer) || given_answer.toLowerCase() == correct_answer.toString().toLowerCase())) {
+    if (Array.isArray(correct_answer)) {
+
+        console.log("Is array!")
+
+        if (correct_answer.includes(given_answer)) {
+
+            console.log("Correct!")
+
+            if (document.getElementById('remark-card').innerText.includes(nr_ans.toString())) {
+
+                nextQuestion();
+
+            } else if (document.getElementById('remark-card').innerText.includes((nr_ans - 1).toString())) {
+
+                document.getElementById('remark-card').innerText = document.getElementById('remark-card').innerText + " || 2. " + given_answer;
+
+            } else if (document.getElementById('remark-card').innerText.includes((nr_ans - 2).toString())) {
+
+                document.getElementById('remark-card').innerText = "1. " + given_answer
+
+            }
+
+        } else {
+
+            console.log("False!")
+
+            document.getElementById('remark-card').innerText = "False! The correct answers are: " + correct_answer + ". We'll repeat this question."
+
+            let local_question_array = question_array;
+            local_question_array.splice(intervalIndex(current_index, 4, local_question_array), 0, {"Question": ("Dit is een herhaling: " + question_array[current_index].Question), "Answer": question_array[current_index].Answer, "Nr_ans": question_array[current_index].Nr_ans});
+            local_question_array.splice(intervalIndex(current_index, 12, local_question_array), 0, {"Question": ("Dit is een herhaling: " + question_array[current_index].Question), "Answer": question_array[current_index].Answer, "Nr_ans": question_array[current_index].Nr_ans});
+
+            question_array = local_question_array;
+            console.log(question_array);
+
+        }
+
+    } else if (given_answer.toLowerCase() == correct_answer.toString().toLowerCase()) {
 
         console.log("- - > Correct!")
 
