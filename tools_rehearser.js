@@ -698,27 +698,25 @@ function checkMnemonicAnswer() {
 
         if (correct_answer.includes(given_answer)) {
 
-            console.log("Correct!")
+            console.log("Correct!");
 
-            if (nr_ans == 1) {
+            inner_text = document.getElementById('remark-card').innerText;
+
+            if (nr_ans == 1 || (inner_text.includes("1") && nr_ans == 2) || (inner_text.includes("2") && nr_ans == 3)) {
 
                 nextQuestion();
 
             };
 
-            if (document.getElementById('remark-card').innerText.includes(nr_ans.toString())) {
-
-                nextQuestion();
-
-            } else if (document.getElementById('remark-card').innerText.includes((nr_ans - 1).toString())) {
+            if (inner_text.includes("1")) {
 
                 document.getElementById('remark-card').innerText = document.getElementById('remark-card').innerText + " || 2. " + given_answer;
 
-            } else if (document.getElementById('remark-card').innerText.includes((nr_ans - 2).toString())) {
+            } else {
 
-                document.getElementById('remark-card').innerText = "1. " + given_answer
+                document.getElementById('remark-card').innerText = "1. " + given_answer;
 
-            }
+            };
 
         } else {
 
