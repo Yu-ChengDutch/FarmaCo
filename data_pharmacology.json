@@ -1483,6 +1483,29 @@
                                     "Onderverdeling": [
                                         {
                                             "Naam": "Penicillines",
+                                            "Bijwerkingen": [
+                                                {
+                                                    "Bijwerking": "Overgevoeligheidsreacties"
+                                                },
+                                                {
+                                                    "Bijwerking": "Gastro-intestinale bijwerkingen"
+                                                },
+                                                {
+                                                    "Bijwerking": "Verstoring darmflora"
+                                                },
+                                                {
+                                                    "Bijwerking": "Nefrotoxiciteit"
+                                                },
+                                                {
+                                                    "Bijwerking": "Neurotoxiciteit"
+                                                },
+                                                {
+                                                    "Bijwerking": "Stollingsstoornissen"
+                                                },
+                                                {
+                                                    "Bijwerking": "Bloedbeeldafwijkingen"
+                                                }
+                                            ],
                                             "Indicaties-list": ["Gram-positieve bacteriën"],
                                             "Onderverdeling": [
                                                 {
@@ -1555,6 +1578,26 @@
                             "Naam": "Fluorchinolonen",
                             "Indicaties-list": ["Gram-negatieve bacteriën"],
                             "Mechanisme": ["Inhibitie DNA-gyrase", "Inhibitie DNA synthese", "Bacteriocide"],
+                            "Bijwerkingen": [
+                                {
+                                    "Bijwerking": "Gastro-intestinale bijwerkingen"
+                                },
+                                {
+                                    "Bijwerking": "Neurotoxiciteit"
+                                },
+                                {
+                                    "Bijwerking": "Slaapstoornissen"
+                                },
+                                {
+                                    "Bijwerking": "QT-verlenging"
+                                },
+                                {
+                                    "Bijwerking": "Tendinitis"
+                                },
+                                {
+                                    "Bijwerking": "Arthritis"
+                                }
+                            ],
                             "Onderverdeling": [
                                 {
                                     "Naam": "Ciprofloxacine",
@@ -1620,7 +1663,8 @@
                                 {
                                     "Naam": "Rifampicine",
                                     "Enzym": [["CYP2D6", "CYP3A4"], "Inducer"],
-                                    "Voorschrijven": "True"
+                                    "Voorschrijven": "True",
+                                    "Indicaties-list": ["Tuberculose", "Lepra"]
                                 }
                             ]
                         },
@@ -1649,6 +1693,7 @@
                             "Onderverdeling": [
                                 {
                                     "Naam": "Doxycycline",
+                                    "Indicatie-list": ["Pneumonie", "Gonorroe", "Syfilis", "Acne vulgaris", "Lyme", "Malaria"],
                                     "Zwangerschap": ["Risico", "Vanaf week 16"],
                                     "Indicaties": [
                                         {
@@ -1669,17 +1714,23 @@
                             "Mechanisme": ["Bindt de 30S subunits ribisoom", "Inhibitie van de bacteriële eiwitsynthese", "Bacteriostase"],
                             "Bijwerkingen": [
                                 {
-                                    "Bijwerking": "Reversibele nefrotoxiciteit"
+                                    "Bijwerking": "Nefrotoxiciteit"
                                 },
                                 {
-                                    "Bijwerking": "Irreversibele ototoxiciteit"
+                                    "Bijwerking": "Ototoxiciteit"
+                                },
+                                {
+                                    "Bijwerking": "Hypomagnesiëmie"
+                                },
+                                {
+                                    "Bijwerking": "Neuromusculaire blokkade"
                                 }
                             ],
-                            "Indicaties-list": ["Gram-negatieve staven"],
                             "Onderverdeling": [
                                 {
                                     "Naam": "Gentamicine",
-                                    "Zwangerschap": ["Risico"]
+                                    "Zwangerschap": ["Risico"],
+                                    "Indicaties-list": ["Sepsis"]
                                 }
                             ]
                         },
@@ -1687,6 +1738,23 @@
                             "Naam": "Macroliden",
                             "Mechanisme": ["Bindt de 50S subunits ribisoom", "Inhibitie van de bacteriële eiwitsynthese", "Bacteriostase"],
                             "Indicaties-list": ["Gram-positieve bacteriën", "Pneumokokken", "Intracellulaire organismen"],
+                            "Bijwerkingen": [
+                                {
+                                    "Bijwerking": "Gastro-intestinale bijwerkingen"
+                                },
+                                {
+                                    "Bijwerking": "QT-verlenging"
+                                },
+                                {
+                                    "Bijwerking": "Cholestatische hepatitis"
+                                },
+                                {
+                                    "Bijwerking": "Overgevoeligheidsreacties"
+                                },
+                                {
+                                    "Bijwerking": "Ototoxiciteit"
+                                }
+                            ],
                             "Interacties": [
                                 {
                                     "Interactant": ["Sotalol", "TCA's", "SSRI's"],
@@ -1716,6 +1784,7 @@
                                     "Naam": "Claritromycine",
                                     "Klaring": "Renaal",
                                     "Enzym": ["CYP3A4", "Inhibitor"],
+                                    "Indicatie-list": ["Pneumonie"],
                                     "Indicaties": [
                                         {
                                             "Indicatie": "Milde pneumonie met onbekende verwekker",
@@ -1744,6 +1813,11 @@
                             "Onderverdeling": [
                                 {
                                     "Naam": "Imidazolen",
+                                    "Bijwerkingen": [
+                                        {
+                                            "Bijwerking": "Gastro-intestinale bijwerkingen"
+                                        }
+                                    ],
                                     "Mechanisme": ["Aselectieve inhibitie van ergosterol synthese via CYP51", "Inhibitie van de opbouw van het celmembraan"],                            
                                     "Onderverdeling": [
                                         {
@@ -1752,7 +1826,17 @@
                                         },
                                         {
                                             "Naam": "Miconazol",
-                                            "Enzym": ["CYP2C9", "Inhibitor"]
+                                            "Enzym": ["CYP2C9", "Inhibitor"],
+                                            "Indicaties": [
+                                                {
+                                                    "Indicatie": "Orofaryngeale candidiasis",
+                                                    "Keuze": 1
+                                                },
+                                                {
+                                                    "Indicatie": "Spruw, tepel",
+                                                    "Keuze": 1
+                                                }
+                                            ]
                                         },
                                         {
                                             "Naam": "Metronidazol",
@@ -1764,15 +1848,58 @@
                                 {
                                     "Naam": "Triazolen",
                                     "Mechanisme": ["Selectieve inhibitie van ergosterol synthese via CYP51", "Inhibitie van de opbouw van het celmembraan"],
+                                    "Bijwerkingen": [
+                                        {
+                                            "Bijwerking": "Huidreactie"
+                                        },
+                                        {
+                                            "Bijwerking": "Stijging leverwaarden"
+                                        },
+                                        {
+                                            "Bijwerking": "Hypokaliëmie"
+                                        },
+                                        {
+                                            "Bijwerking": "Hypertriglyceridemie"
+                                        },
+                                        {
+                                            "Bijwerking": "Leverbeschadiging"
+                                        },
+                                        {
+                                            "Bijwerking": "QT-verlenging"
+                                        }
+                                    ],
                                     "Onderverdeling": [
                                         {
                                             "Naam": "Itraconazol",
-                                            "Enzym": ["CYP3A4", "Inhibitor"]
+                                            "Enzym": ["CYP3A4", "Inhibitor"],
+                                            "Bijwerkingen": [
+                                                {
+                                                    "Bijwerking": "Hartfalen"
+                                                }
+                                            ],
+                                            "Indicaties": [
+                                                {
+                                                    "Indicatie": "Orofaryngeale candidiasis",
+                                                    "Keuze": 2,
+                                                    "Condities": ["Immunnosuppresie"]
+                                                },
+                                                {
+                                                    "Indicatie": "Recidiverende rofaryngeale candidiasis",
+                                                    "Keuze": 1
+                                                }
+                                            ]
                                         },
                                         {
                                             "Naam": "Fluconazol",
                                             "Voorschrijven": "True",
-                                            "Enzym": ["CYP3A4", "Inhibitor"]
+                                            "Enzym": ["CYP3A4", "Inhibitor"],
+                                            "Indicaties": [
+                                                {
+                                                    "Indicatie": "Orofaryngeale candidiasis",
+                                                    "Keuze": 1,
+                                                    "Condities": ["Immunnosuppresie"]
+                                                }
+                                            ]
                                         }
                                     ]
                                 }
