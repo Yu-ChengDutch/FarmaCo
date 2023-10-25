@@ -11,7 +11,7 @@
                     "Enzym": ["CYP2E1", "Substraat", "Toxisch"],
                     "Bijwerkingen": [
                         {
-                            "Bijwerking": "Leverbeschadiging",
+                            "Bijwerking": "Hepatotoxiciteit",
                             "Risicofactoren": ["Slechte voedingstoestand"],
                             "Dosis": [">", "150", "mg/kg/dag"],
                             "Mechanisme": ["Verlaagde glutathion-spiegel", "Stapeling NAPQI"]
@@ -36,16 +36,16 @@
                             "Mechanisme": [["Verhoogde maagzuur excretie", "Verlaagde bicarbonaat excretie", "Verlaagde slijmproductie", "Verlaagde groei maagzuur epitheel"]]
                         },
                         {
-                            "Bijwerking": "Nierfalen",
+                            "Bijwerking": "Nefrotoxiciteit",
                             "Risicofactoren": ["Hartfalen", "Dehydratie", "Sepsis", "Pre-existent nierfalen"],
                             "Mechanisme": ["Vasoconstrictie van de afferente nierarteriole", "Verlaagde nierperfusie"]
                         },
                         {
-                            "Bijwerking": "Trombocytopathie",
+                            "Bijwerking": "Hemorragie",
                             "Mechanisme": ["Verlaagde tromboxaan A2-vorming in de trombocyt", ["Verlaagde reactieve vasoconstrictie", "Verlaagde trombocytenaggregatie"]]
                         },
                         {
-                            "Bijwerking": "Verergering van hartfalen",
+                            "Bijwerking": "Hartfalen",
                             "Mechanisme": ["Vasoconstrictie van de afferente nierarteriole", ["Hyperkaliëmie", "Vochtretentie"]]
                         },
                         {
@@ -57,17 +57,29 @@
                         },
                         {
                             "Bijwerking": "Sluiting ductus arteriosus"
+                        },
+                        {
+                            "Bijwerking": "Gastro-intestinale bijwerkingen"
+                        },
+                        {
+                            "Bijwerking": "Vochtretentie"
+                        },
+                        {
+                            "Bijwerking": "Zoutretentie"
+                        },
+                        {
+                            "Bijwerking": "Hyperkaliëmie"
                         }
                     ],
                     "Interacties": [
                         {
                             "Interactant": ["TAR's", "SSRI's"],
-                            "Risico": "Bloedingen",
+                            "Risico": "Hemorragie",
                             "Mechanisme": ["Verlaagde werking trombocyten"]
                         },
                         {
                             "Interactant": ["Coumarinederivaten"],
-                            "Risico": "Bloedingen",
+                            "Risico": "Hemorragie",
                             "Mechanisme": ["Verminderde vitamine K-afhankelijke stolling"]
                         },
                         {
@@ -105,7 +117,12 @@
                         },
                         {
                             "Naam": "Acetylsalicylzuur",
-                            "Zwangerschap": ["Meest veilig"]
+                            "Zwangerschap": ["Meest veilig"],
+                            "Bijwerkingen": [
+                                {
+                                    "Bijwerking": "Hyperurikemie"
+                                }
+                            ]
                         }
                     ]
                 },
@@ -148,6 +165,9 @@
                         },
                         {
                             "Bijwerking": "Jeuk"
+                        },
+                        {
+                            "Bijwerking": "Droge mond"
                         }
                     ],
                     "Interacties": [
@@ -215,6 +235,17 @@
             "Onderverdeling": [
                 {
                     "Naam": "Osmotische laxantia",
+                    "Bijwerkingen": [
+                        {
+                            "Bijwerking": "Buikkramp"
+                        },
+                        {
+                            "Bijwerking": "Misselijkheid"
+                        },
+                        {
+                            "Bijwerking": "Flatulentie"
+                        }
+                    ],
                     "Mechanisme": ["Resorberen slecht", "Houden veel water in de darm", "Verzacht de feces", ["Vergroot het volume", "Versterkt de darmperisaltiek", "Stimuleert de stoelgang"]],
                     "Indicaties": [
                         {
@@ -243,6 +274,20 @@
                 },
                 {
                     "Naam": "Contactlaxantia",
+                    "Bijwerkingen": [
+                        {
+                            "Bijwerking": "Buikkramp"
+                        },
+                        {
+                            "Bijwerking": "Misselijkheid"
+                        },
+                        {
+                            "Bijwerking": "Flatulentie"
+                        },
+                        {
+                            "Bijwerking": "Diarree"
+                        }
+                    ],
                     "Mechanisme": ["Chemische prikkeling van de darmwand", "Verminderde intestinale water- en zoutresorptie", "Verzacht de feces", ["Vergroot het volume", "Versterkt de darmperisaltiek", "Stimuleert de stoelgang"]],
                     "Indicaties": [
                         {
@@ -318,6 +363,23 @@
                                         },
                                         {
                                             "Naam": "Clopidogrel",
+                                            "Bijwerkingen": [
+                                                {
+                                                    "Bijwerking": "Hemorragie"
+                                                },
+                                                {
+                                                    "Bijwerking": "Gastro-intestinale bijwerkingen"
+                                                },
+                                                {
+                                                    "Bijwerking": "Ulcus pepticum"
+                                                },
+                                                {
+                                                    "Bijwerking": "Gynaecomastie"
+                                                },
+                                                {
+                                                    "Bijwerking": "Bloedbeeldafwijkingen"
+                                                }
+                                            ],
                                             "Mechanisme": ["Blokkeert irreversibel de ADP-receptor van de trombocyt", "Inhibeert de activeering van een stollingscomplex"],
                                             "Indicaties-list": ["Profylaxe na stentplaatsing", "Acuut coronair syndroom", "Perifeer vaatlijden", "1e keus na TIA/CVA"]
                                         }
@@ -329,11 +391,39 @@
                                         {
                                             "Naam": "Ticagrelor",
                                             "Mechanisme": ["Blokkeert reversibel de P2Y12 receptor", "Inhibitie van plaatjesactivatie en aggregatie"],
-                                            "Indicaties-list": ["Additie bij acuut coronair syndroom"]
+                                            "Indicaties-list": ["Additie bij acuut coronair syndroom"],
+                                            "Bijwerkingen": [
+                                                {
+                                                    "Bijwerking": "Hemorragie"
+                                                },
+                                                {
+                                                    "Bijwerking": "Hyperurikemie"
+                                                },
+                                                {
+                                                    "Bijwerking": "Dyspneu"
+                                                },
+                                                {
+                                                    "Bijwerking": "Gastro-intestinale bijwerkingen"
+                                                }
+                                            ]
                                         },
                                         {
                                             "Naam": "Dipyridiamol",
-                                            "Indicaties-list": ["Additie TIA/CVA"]                                            
+                                            "Indicaties-list": ["Additie TIA/CVA"],
+                                            "Bijwerkingen": [
+                                                {
+                                                    "Bijwerking": "Hoofdpijn"
+                                                },
+                                                {
+                                                    "Bijwerking": "Duizeligheid"
+                                                },
+                                                {
+                                                    "Bijwerking": "Gastro-intestinale bijwerkingen"
+                                                },
+                                                {
+                                                    "Bijwerking": "Spierpijn"
+                                                }
+                                            ]                                            
                                         }
                                     ]
                                 }                                
@@ -351,9 +441,15 @@
                             "Indicaties-list": ["Atriumfibrilleren", "Mechanische klepprothese", "Longembolie", "DVT", "TIA/CVA profylaxe bij CHADVASC >1"],
                             "Bijwerkingen": [
                                 {
-                                    "Bijwerking": "Verhoogd bloedingsrisico",
+                                    "Bijwerking": "Hemorragie",
                                     "Risicofactoren": ["Therapieontrouw", "Alcohol", "Koorts"],
                                     "Dosis": [">", "150", "mg/kg/dag"]
+                                },
+                                {
+                                    "Bijwerking": "Hemorragische huidnecrose"
+                                },
+                                {
+                                    "Bijwerking": "Calciphylaxis"
                                 }
                             ],
                             "Interacties": [
@@ -363,7 +459,7 @@
                                 },
                                 {
                                     "Interactant": ["Cotrimoxazol", "Alcohol"],
-                                    "Risico": "Bloedingen",
+                                    "Risico": "Hemorragie",
                                     "Mechanisme": ["CYP2C9 inhibitie", "Verhoogde coumarine-spiegel"]
                                 },
                                 {
@@ -387,7 +483,22 @@
                             "Naam": "Heparinegroep",
                             "Bijwerkingen": [
                                 {
-                                    "Bijwerking": "Verhoogd bloedingsrisico"
+                                    "Bijwerking": "Heparin-induced thrombocytopenia"
+                                },
+                                {
+                                    "Bijwerking": "Hemorragie"
+                                },
+                                {
+                                    "Bijwerking": "Verhoogde leverwaarden"
+                                },
+                                {
+                                    "Bijwerking": "Hyperkaliëmie"
+                                },
+                                {
+                                    "Bijwerking": "Priapisme"
+                                },
+                                {
+                                    "Bijwerking": "Huidnecrose"
                                 }
                             ],
                             "Interacties": [
@@ -399,12 +510,7 @@
                             "Onderverdeling": [
                                 {
                                     "Naam": "Ongefractioneerde heparine",
-                                    "Mechanisme": ["Activeert anti-trombine III", "Neutraliseert factor IIa en Xa", "Remming omzetting fibrinogeen -> fibrine"],
-                                    "Bijwerkingen": [
-                                        {
-                                            "Bijwerking": "Heparin-induced thrombocytopenia"
-                                        }
-                                    ]
+                                    "Mechanisme": ["Activeert anti-trombine III", "Neutraliseert factor IIa en Xa", "Remming omzetting fibrinogeen -> fibrine"]
                                 },
                                 {
                                     "Naam": "LMWH's",
@@ -417,12 +523,12 @@
                                         },
                                         {
                                             "Interactant": ["TAR's", "Coumarinederivaten"],
-                                            "Risico": "Bloedingen",
+                                            "Risico": "Hemorragie",
                                             "Mechanisme": "Cummulatief effect"
                                         },
                                         {
                                             "Interactant": ["NSAID's", "Diuretica"],
-                                            "Risico": "Bloedingen",
+                                            "Risico": "Hemorragie",
                                             "Mechanisme": ["Verlaagde nierperfusie", "Verlaagde nierfunctie", "Verlaagde klaring", "Verhoogde LMWH-spiegel"]
                                         }
                                     ],
@@ -443,6 +549,17 @@
                         },
                         {
                             "Naam": "DOAC's",
+                            "Bijwerkingen": [
+                                {
+                                    "Bijwerking": "Hemorragie"
+                                },
+                                {
+                                    "Bijwerking": "Anemie"
+                                },
+                                {
+                                    "Bijwerking": "Gastro-intestinale bijwerkingen"
+                                }
+                            ],
                             "Indicaties-list": ["Non-valvulair atriumfibrilleren met CHADVASC >1", "DVT", "Longembolie"],
                             "Onderverdeling": [
                                 {
@@ -451,16 +568,10 @@
                                         {
                                             "Naam": "Dabigatran",
                                             "Mechanisme": ["Bindt direct en reversibel aan stollingsfactor IIa"],
-                                            "Bijwerkingen": [
-                                                {
-                                                "Bijwerking": "Verhoogd bloedingsrisico",
-                                                "Risicofactoren": ["Nierinsufficiëntie"]
-                                                }
-                                            ],
                                             "Interacties": [
                                                 {
                                                     "Interactant": ["NSAID's", "RAS-remmers", "Diuretica"],
-                                                    "Risico": "Bloedingen",
+                                                    "Risico": "Hemorragie",
                                                     "Mechanisme": ["Verlaagde nierfunctie", "Verlaagde klaring", "Verhoogde spiegel"]
                                                 }                                        
                                             ]
@@ -474,7 +585,7 @@
                                     "Interacties":[
                                         {
                                             "Interactant": ["Verapamil", "Itraconazol", "Erytromycine", "Ketoconazol"],
-                                            "Risico": "Bloedingen",
+                                            "Risico": "Hemorragie",
                                             "Mechanisme": ["CYP3A4 inhibitie", "Verhoogde spiegel"],
                                             "Enzym": ["CYP3A4", "Inhibitor"]
                                         }
@@ -551,9 +662,19 @@
                                             "Risicofactoren": ["Verminderde intake", "Diarree", "Ouderen"]
                                         },
                                         {
-                                            "Bijwerking": "Hyponatriëmie",
-                                            "Symptomen": ["Misselijkheid", "Verwardheid"],
-                                            "Risicofactoren": ["Verminderde intake eiwit en zout", "Ouderen"]
+                                            "Bijwerking": "Hyperurikemie"
+                                        },
+                                        {
+                                            "Bijwerking": "Hypovolemie"
+                                        },
+                                        {
+                                            "Bijwerking": "Hyponatriëmie"
+                                        },
+                                        {
+                                            "Bijwerking": "Verhoogd LDL"
+                                        },
+                                        {
+                                            "Bijwerking": "Fotosensibilisatie"
                                         }
                                     ],
                                     "Onderverdeling": [
@@ -580,6 +701,21 @@
                                             "Bijwerking": "Hypokaliëmie",
                                             "Symptomen": ["Spierzwakte"],
                                             "Risicofactoren": ["Verminderde intake", "Diarree", "Ouderen"]
+                                        },
+                                        {
+                                            "Bijwerking": "Hyponatriëmie"
+                                        },
+                                        {
+                                            "Bijwerking": "Hypovolemie"
+                                        },
+                                        {
+                                            "Bijwerking": "Hyperkaliëmie"
+                                        },
+                                        {
+                                            "Bijwerking": "Verhoogd LDL"
+                                        },
+                                        {
+                                            "Bijwerking": "Ototoxiciteit"
                                         }
                                     ],
                                     "Mechanisme": ["Na+/K+/2Cl- cotransport inhibitie in de lis van Henle", "Verhoogd Na+ aanbod in de distale tubulus en corticale verzamelbuis", "Na+/K+-countertransport activatie", "Verhoogde K+ uitscheiding"],
@@ -610,9 +746,23 @@
                                     "Indicaties-list": ["I.c.m. lis- en/of thiazidediuretica en risico op hypokaliëmie"],
                                     "Onderverdeling": [
                                         {
-                                            "Naam": "Spironolactone",
+                                            "Naam": "Spironolacton",
                                             "Indicaties-list": ["I.c.m. lis- en/of thiazidediuretica bij ernstig hartfalen"],
-                                            "Mechanisme": ["Competitieve antagonist van aldosteron", "Remming van de Na+/K+ countertransporter in de corticale verzamelbuis", "Verlaagde K+ excretie"]
+                                            "Mechanisme": ["Competitieve antagonist van aldosteron", "Remming van de Na+/K+ countertransporter in de corticale verzamelbuis", "Verlaagde K+ excretie"],
+                                            "Bijwerkingen": [
+                                                {
+                                                    "Bijwerking": "Gastro-intestinale bijwerkingen"
+                                                },
+                                                {
+                                                    "Bijwerking": "Verlaagd libido"
+                                                },
+                                                {
+                                                    "Bijwerking": "Gynaecomastie"
+                                                },
+                                                {
+                                                    "Bijwerking": "Dysmenorroe"
+                                                }
+                                            ]
                                         },
                                         {
                                             "Naam": "Triamtereen",
@@ -647,6 +797,15 @@
                                         },
                                         {
                                             "Bijwerking": "Bradycardie"
+                                        },
+                                        {
+                                            "Bijwerking": "Koude extremiteiten"
+                                        },
+                                        {
+                                            "Bijwerking": "Hartfalen"
+                                        },
+                                        {
+                                            "Bijwerking": "AV-vertraging"
                                         }
                                     ],
                                     "Mechanisme": [["Stimulering van B1-receptoren in het myocard", "Chronotropie, Inotropie en Dromotropie"], ["Stimulering van B2-receptoren in luchtwegen en bloedvaten", "Bronchiolo- en beperkte vasodilatatie"]],
@@ -668,8 +827,20 @@
                                             "Naam": "Aselectieve beta-blokkers",
                                             "Bijwerkingen": [
                                                 {
-                                                    "Bijwerking": "Bronchospasmen",
+                                                    "Bijwerking": "Bronchoconstrictie",
                                                     "Risicofactoren": ["Astma"]
+                                                },
+                                                {
+                                                    "Bijwerking": "Dyspneu"
+                                                },
+                                                {
+                                                    "Bijwerking": "Hypoglykemie"
+                                                },
+                                                {
+                                                    "Bijwerking": "Droge ogen"
+                                                },
+                                                {
+                                                    "Bijwerking": "Erectiele dysfunctie"
                                                 }
                                             ],
                                             "Onderverdeling": [
@@ -716,9 +887,18 @@
                                     "Mechanisme": [["Vasodilatatie"], ["Relaxatie van de gladde spieren in prostaat en urinewegen", "Bevordering van mictie"]],
                                     "Bijwerkingen": [
                                         {
-                                            "Bijwerking": "Orthostase",
+                                            "Bijwerking": "Hypotensie",
                                             "Symptomen": "Vallen",
                                             "Mechanisme": ["Vasodilatatie"]
+                                        },
+                                        {
+                                            "Bijwerking": "Vermoeidheid"
+                                        },
+                                        {
+                                            "Bijwerking": "Ejaculatiestoornis"
+                                        },
+                                        {
+                                            "Bijwerking": "Floppy iris-syndroom"
                                         }
                                     ],
                                     "Onderverdeling": [
@@ -733,6 +913,26 @@
                         {
                             "Naam": "Calciumantagonisten",
                             "Indicaties-list": ["Tweede keuze antihypertensivum >50 jaar"],
+                            "Bijwerkingen": [
+                                {
+                                    "Bijwerking": "Duizeligheid"
+                                },
+                                {
+                                    "Bijwerking": "Blozen"
+                                },
+                                {
+                                    "Bijwerking": "Hoofdpijn"
+                                },
+                                {
+                                    "Bijwerking": "Hypotensie"
+                                },
+                                {
+                                    "Bijwerking": "Perifeer oedeem"
+                                },
+                                {
+                                    "Bijwerking": "GERD"
+                                }
+                            ],
                             "Onderverdeling": [
                                 {
                                     "Naam": "Dihydropyridines",
@@ -763,14 +963,10 @@
                                     "Indicaties-list": ["Hypertensie", "Atriumfibrilleren"],
                                     "Bijwerkingen": [
                                         {
-                                            "Bijwerking": "Hoofdpijn"
-                                        },
-                                        {
-                                            "Bijwerking": "Hypotensie",
-                                            "Symptomen": ["Duizeligheid", "Vallen"]
-                                        },
-                                        {
                                             "Bijwerking": "Bradycardie"
+                                        },
+                                        {
+                                            "Bijwerking": "AV-vertraging"
                                         }
                                     ],
                                     "Interacties": [
@@ -782,7 +978,12 @@
                                     "Onderverdeling": [
                                         {
                                             "Naam": "Verapamil",
-                                            "Enzym": ["CYP3A4", "Inhibitor"]
+                                            "Enzym": ["CYP3A4", "Inhibitor"],
+                                            "Bijwerkingen": [
+                                                {
+                                                    "Bijwerking": "Obstipatie"
+                                                }
+                                            ]
                                         },
                                         {
                                             "Naam": "Diltiazem",
@@ -845,10 +1046,13 @@
                                             "Symptoom": ["Afgenomen aldosteronsecretie", "Afname van kaliumsecretie"]
                                         },
                                         {
-                                            "Bijwerking": "Angio-oedeem van het farynxgebied"
+                                            "Bijwerking": "Angio-oedeem"
                                         },
                                         {
-                                            "Bijwerking": "Kriebelhoest"
+                                            "Bijwerking": "Prikkelhoest"
+                                        },
+                                        {
+                                            "Bijwerking": "Overgevoeligheidsreacties"
                                         }
                                     ],
                                     "Mechanisme": ["Remming van de productie van ATII", ["Vasodilatatie", "Bloeddrukdaling", "Preventie van remodeling van de hartspier / verlaging van de glomerulaire perfusie"], ["Preventie aldosteron secretie", "Toename water- en natriumexcretie", "Afname kaliumexcretie"]],
@@ -869,6 +1073,20 @@
                                     "Naam": "ARBs",
                                     "Mechanisme": ["Blokkade van de AT1-receptor", ["Vasodilatatie", "Bloeddrukdaling", "Preventie van remodeling van de hartspier / verlaging van de glomerulaire perfusie"], ["Preventie aldosteron secretie", "Toename water- en natriumexcretie", "Afname kaliumexcretie"]],
                                     "Indicaties-list": ["Alternatief voor ACE-remmers, bij problematische prikkelhoest/angio-oedeem"],
+                                    "Bijwerkingen": [
+                                        {
+                                            "Bijwerking": "Hypotensie"
+                                        },
+                                        {
+                                            "Bijwerking": "Nierfalen"
+                                        },
+                                        {
+                                            "Bijwerking": "Hyperkaliëmie"
+                                        },
+                                        {
+                                            "Bijwerking": "Smaakstoornis"
+                                        }
+                                    ],
                                     "Onderverdeling": [
                                         {
                                             "Naam": "Losartan"
@@ -905,7 +1123,27 @@
                     ],
                     "Onderverdeling": [
                         {
-                            "Naam": "Digoxine"
+                            "Naam": "Digoxine",
+                            "Bijwerkingen": [
+                                {
+                                    "Bijwerking": "Duizeligheid"
+                                },
+                                {
+                                    "Bijwerking": "Neurotoxiciteit"
+                                },
+                                {
+                                    "Bijwerking": "AV-vertraging"
+                                },
+                                {
+                                    "Bijwerking": "Aritmie"
+                                },
+                                {
+                                    "Bijwerking": "Bradycardie"
+                                },
+                                {
+                                    "Bijwerking": "Verminderd zicht"
+                                }
+                            ]
                         }
                     ]
                 },
@@ -915,12 +1153,6 @@
                     "Onderverdeling": [
                         {
                             "Naam": "Isosorbide-dinitraat",
-                            "Bijwerkingen": [
-                                {
-                                    "Bijwerking": "Nitraatcollaps",
-                                    "Risicofactoren": ["Dehydratie"]
-                                }
-                            ],
                             "Indicaties-list": ["Oromucosaal bij acute angina pectoris"]
                         },
                         {
@@ -931,6 +1163,15 @@
                     "Bijwerkingen": [
                         {
                             "Bijwerking": "Tolerantie"
+                        },
+                        {
+                            "Bijwerking": "Nitraatcollaps"
+                        },
+                        {
+                            "Bijwerking": "Palpitaties"
+                        },
+                        {
+                            "Bijwerking": "Tachycardie"
                         }                        
                     ]
                 },
@@ -957,6 +1198,35 @@
             "Naam": "Protonpompremmers",
             "Mechanisme": ["Remt H+/K+-ATP-ase in de pariëtale cellen van de maag", "Remmen basale en gestimuleerde maagzuursecretie"],
             "Indicaties-list": ["Behandeling ulcus duodeni", "Behandeling reflux", "Profylactisch bij NSAID's"],
+            "Bijwerkingen": [
+                {
+                    "Bijwerking": "Hoofdpijn"
+                },
+                {
+                    "Bijwerking": "Gastro-intestinale bijwerkingen"
+                },
+                {
+                    "Bijwerking": "Obstipatie"
+                },
+                {
+                    "Bijwerking": "Flatulentie"
+                },
+                {
+                    "Bijwerking": "Myopathie"
+                },
+                {
+                    "Bijwerking": "Artralgie"
+                },
+                {
+                    "Bijwerking": "Hypomagnesiëmie"
+                },
+                {
+                    "Bijwerking": "Hypocalciëmie"
+                },
+                {
+                    "Bijwerking": "Vitamine B12-tekort"
+                }
+            ],            
             "Onderverdeling": [
                 {
                     "Naam": "Omeprazol",
@@ -996,7 +1266,7 @@
                     "Bijwerking": "Myopathie"
                 },
                 {
-                    "Bijwerking": "Stijging leverwaarden"
+                    "Bijwerking": "Verhoogde leverwaarden"
                 }
             ],
             "Mechanisme": ["Remment HMG-CoA-reductase", "Aantal LDL-receptoren neemt toe", "Verhoogt LDL opname uit bloed", "Verlaagt LDL, verhoogt HDL"],
@@ -1062,9 +1332,18 @@
                     "Zwangerschap": ["Waarschijnlijk veilig"],
                     "Bijwerkingen": [
                         {
-                            "Bijwerking": ["Lactaatacidose"],
+                            "Bijwerking": "Lactaatacidose",
                             "Risicofactoren": ["Nierfunctieverlies"],
                             "Mechanisme": ["Onvoldoende werking nieren -> stapeling metformine", "Totale insulineongevoeligheid"]
+                        },
+                        {
+                            "Bijwerking": "Gastro-intestinale bijwerkingen"
+                        },
+                        {
+                            "Bijwerking": "Smaakstoornissen"
+                        },
+                        {
+                            "Bijwerking": "Vitamine B12-tekort"
                         }
                     ]
                 },
@@ -1087,6 +1366,17 @@
                             "Mechanisme": ["Maskeren adrenerge symptomen"]
                         }
                     ],
+                    "Bijwerkingen": [
+                        {
+                            "Bijwerking": "Hypoglykemie"
+                        },
+                        {
+                            "Bijwerking": "Gewichtstoename"
+                        },
+                        {
+                            "Bijwerking": "Gastro-intestinale bijwerkingen"
+                        }
+                    ],
                     "Onderverdeling": [
                         {
                             "Naam": "Kortwerkende SU-derivaten",
@@ -1102,13 +1392,6 @@
                         },
                         {
                             "Naam": "Langwerkende SU-derivaten",
-                            "Bijwerkingen": [
-                                {
-                                    "Bijwerking": "Hypoglykemie",
-                                    "Risicofactoren": ["Ouderen", "Nierfunctieverlies", "Ongewone lichamelijke belasting", "Onregelmatige / inadequate voeding"],
-                                    "Symptomen": ["Adrenerge symptomen: tachycardie, zweten, onrust, tremoren", "Neuroglycopene symptomen: dysartrie, dubbelzien, hoofdpijn, verwardheid"]
-                                }
-                            ],
                             "Onderverdeling": [
                                 {
                                     "Naam": "Glimepride"
@@ -1129,6 +1412,15 @@
                         {
                             "Bijwerking": "Euglycemische diabetische ketoacidose",
                             "Risicofactoren": ["Koolhydraatarmdieet"]
+                        },
+                        {
+                            "Bijwerking": "UWI's"
+                        },
+                        {
+                            "Bijwerking": "Hypotensie"
+                        },
+                        {
+                            "Bijwerking": "Verhoogde mictie"
                         }
                     ]
                 },
@@ -1145,6 +1437,12 @@
                     "Bijwerkingen": [
                         {
                             "Bijwerking": "Hypoglykemie"
+                        },
+                        {
+                            "Bijwerking": "Gewichtstoename"
+                        },
+                        {
+                            "Bijwerking": "Overgevoeligheidsreacties"
                         }
                     ],
                     "Onderverdeling": [
@@ -1213,6 +1511,29 @@
                             "Mechanisme": ["Cummulatief effect", "(Orthostatisch) hypotensie"]
                         }
                     ],
+                    "Bijwerkingen": [
+                        {
+                            "Bijwerking": "Anticholinerge bijwerkingen"
+                        },
+                        {
+                            "Bijwerking": "Sedatie"
+                        },
+                        {
+                            "Bijwerking": "Hypotensie"
+                        },
+                        {
+                            "Bijwerking": "Seksuele dysfunctie"
+                        },
+                        {
+                            "Bijwerking": "Reboundfenomeen bij staken"
+                        },
+                        {
+                            "Bijwerking": "QT-verlenging"
+                        },
+                        {
+                            "Bijwerking": "AV-vertraging"
+                        }
+                    ],
                     "Onderverdeling": [
                         {
                             "Naam": "Amitriptyline",
@@ -1236,7 +1557,7 @@
                         },
                         {
                             "Interactant": ["NSAID's", "Antistolling"],
-                            "Risico": "Bloedingen",
+                            "Risico": "Hemorragie",
                             "Mechanisme": "Cummulatief effect"
                         },
                         {
@@ -1244,6 +1565,23 @@
                             "Risico": "Serotonerg syndroom",
                             "Mechanisme": "Verhoogde serotonine-spiegel",
                             "Symptomen": ["Agitatie", "Koorts", "Hyperreflexie"]                            
+                        }
+                    ],
+                    "Bijwerkingen": [
+                        {
+                            "Bijwerking": "Gastro-intestinale bijwerkingen"
+                        },
+                        {
+                            "Bijwerking": "Seksuele dysfunctie"
+                        },
+                        {
+                            "Bijwerking": "Anticholinerge bijwerkingen"
+                        },
+                        {
+                            "Bijwerking": "Bewegingsstoornissen"
+                        },
+                        {
+                            "Bijwerking": "Hyponatriëmie"
                         }
                     ],
                     "Onderverdeling": [
@@ -1269,6 +1607,17 @@
                             "Risico": "Hogere lithiumspiegel",
                             "Mechanisme": ["Verlaagde nierfunctie", "Verlaagde klaring"]
                         }
+                    ],
+                    "Bijwerkingen": [
+                        {
+                            "Bijwerking": "Verhoogde mictie"
+                        },
+                        {
+                            "Bijwerking": "Tremor"
+                        },
+                        {
+                            "Bijwerking": "Gewichtstoename"
+                        }
                     ]
                 }
             ]
@@ -1282,10 +1631,22 @@
                     "Symptomen": ["Vallen"]
                 },
                 {
+                    "Bijwerking": "Vermoeidheid"
+                },
+                {
+                    "Bijwerking": "Anterograde amnesie"
+                },
+                {
                     "Bijwerking": "Tolerantie"
                 },
                 {
-                    "Bijwerking": "Reboundfenomeen bij abstinentie"
+                    "Bijwerking": "Paradoxale reacties"
+                },
+                {
+                    "Bijwerking": "Verlaagde REM-slaap"
+                },
+                {
+                    "Bijwerking": "Reboundfenomeen bij staken"
                 }
             ],
             "Interacties": [
@@ -1466,7 +1827,7 @@
             "Interacties": [
                 {
                     "Interactant": ["Coumarinederivaten"],
-                    "Risico": "Bloedingen",
+                    "Risico": "Hemorragie",
                     "Mechanisme": ["Verhoogde afbraak stollingsfactoren", "Verlaagde spiegel stollingsfactoren"]
                 }
             ],
@@ -1644,7 +2005,7 @@
                                 },
                                 {
                                     "Interactant": ["Coumarinederivaten"],
-                                    "Risico": "Bloedingen",
+                                    "Risico": "Hemorragie",
                                     "Mechanisme": ["CYP2C9 inhibitie", "Verminderde afbraak", "Verhoogde spiegel"]
                                 }
                             ],

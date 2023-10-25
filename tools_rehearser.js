@@ -557,6 +557,16 @@ function prepareQuestions(level) {
 
                 } else {
 
+                    if (Object.keys(content_dict[ancestry_dict[current].Parent]).includes("Bijwerkingen")) {
+
+                        for (var j = 0; j < (content_dict[ancestry_dict[current].Parent]).Bijwerkingen.length; j++) {
+
+                            current_side_effects.push((content_dict[ancestry_dict[current].Parent]).Bijwerkingen[j].Bijwerking)   
+        
+                        };
+
+                    };
+
                     if (current_side_effects.length > 3) {
                         question_string = current + " heeft tenminste " + (current_side_effects.length).toString() + " potentiële bijwerkingen. Noem er 3.";
                         temp_temp_question_array.push({"Question": question_string, "Answer": current_side_effects, "Nr_ans": 3});                    
@@ -692,7 +702,7 @@ function checkMnemonicAnswer() {
     console.log("- - > Checking mnemonic")
     console.log("- - > Right answer is: " + correct_answer)
 
-    if (Array.isArray(correct_answer)) {
+    if (Array.isArray(correct_answer) && !(question_array[current_index].Question).includes("voorbeeld")) {
 
         console.log("Is array!")
 
@@ -739,7 +749,7 @@ function checkMnemonicAnswer() {
 
         }
 
-    } else if (given_answer.toLowerCase() == correct_answer.toString().toLowerCase()) {
+    } else if (given_answer.toLowerCase() == correct_answer.toString().toLowerCase() || correct_answer.includes(given_answer)) {
 
         console.log("- - > Correct!")
 
