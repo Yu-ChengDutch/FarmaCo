@@ -130,7 +130,7 @@
                     "Naam": "Opiaatagonisten",
                     "Bijwerkingen": [
                         {
-                            "Bijwerking": "Afhankelijkeheid",
+                            "Bijwerking": "Afhankelijkheid",
                             "Risicofactoren": ["Middelenmisbruik in de voorgeschiedenis", "Gebruik van snelwerkende opiaten"],
                             "Mechanisme": ["Mu-receptor bezetting"]
                         },
