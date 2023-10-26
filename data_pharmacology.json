@@ -333,13 +333,6 @@
         },
         {
             "Naam": "Antistolling",
-            "Bijwerkingen": [
-                {
-                    "Bijwerking": "Verhoogd bloedingsrisico",
-                    "Risicofactoren": ["Hoge leeftijd"],
-                    "Dosis": [">", "150", "mg/kg/dag"]
-                }
-            ],
             "Onderverdeling": [
                 {
                     "Naam": "Arteriële antistolling",
