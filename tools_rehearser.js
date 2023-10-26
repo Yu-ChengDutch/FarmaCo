@@ -845,7 +845,7 @@ function inBetween(display_text) {
     /* Setting all new text */
 
     document.getElementById('remark-card').innerText = "Good job!" 
-    document.getElementById('question-description').innerText = "Het volledige antwoord was: " + display_text
+    document.getElementById('question-description').innerText = "Het volledige antwoord was: " + display_text.join(", ")
     
     document.getElementById('question-input-card').innerHTML = 
             
