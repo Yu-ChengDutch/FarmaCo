@@ -567,14 +567,17 @@ function prepareQuestions(level) {
         
                         };
 
-                        if (Object.keys(content_dict[ancestry_dict[par_obj.Name].Parent]).includes("Bijwerkingen")) {
+                        if (Object.keys[ancestry_dict[par_obj.Name]].includes("Parent")) {
 
-                            for (var j = 0; j < (content_dict[ancestry_dict[par_obj.Name].Parent]).Bijwerkingen.length; j++) {
-    
-                                current_side_effects.push((content_dict[ancestry_dict[par_obj.Name].Parent]).Bijwerkingen[j].Bijwerking)   
-            
+                            if (Object.keys(content_dict[ancestry_dict[par_obj.Name].Parent]).includes("Bijwerkingen")) {
+
+                                for (var j = 0; j < (content_dict[ancestry_dict[par_obj.Name].Parent]).Bijwerkingen.length; j++) {
+        
+                                    current_side_effects.push((content_dict[ancestry_dict[par_obj.Name].Parent]).Bijwerkingen[j].Bijwerking)   
+                
+                                };
+        
                             };
-    
                         };
 
                     };
