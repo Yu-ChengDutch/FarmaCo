@@ -567,7 +567,7 @@ function prepareQuestions(level) {
         
                         };
 
-                        if (Object.keys[ancestry_dict[par_obj.Name]].includes("Parent")) {
+                        if (Object.keys(ancestry_dict[par_obj.Name]).includes("Parent")) {
 
                             if (Object.keys(content_dict[ancestry_dict[par_obj.Name].Parent]).includes("Bijwerkingen")) {
 
