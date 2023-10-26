@@ -36,7 +36,7 @@
                             "Mechanisme": [["Verhoogde maagzuur excretie", "Verlaagde bicarbonaat excretie", "Verlaagde slijmproductie", "Verlaagde groei maagzuur epitheel"]]
                         },
                         {
-                            "Bijwerking": "Nefrotoxiciteit",
+                            "Bijwerking": "Nierfalen",
                             "Risicofactoren": ["Hartfalen", "Dehydratie", "Sepsis", "Pre-existent nierfalen"],
                             "Mechanisme": ["Vasoconstrictie van de afferente nierarteriole", "Verlaagde nierperfusie"]
                         },
@@ -1855,7 +1855,7 @@
                                                     "Bijwerking": "Verstoring darmflora"
                                                 },
                                                 {
-                                                    "Bijwerking": "Nefrotoxiciteit"
+                                                    "Bijwerking": "Nierfalen"
                                                 },
                                                 {
                                                     "Bijwerking": "Neurotoxiciteit"
@@ -2075,7 +2075,7 @@
                             "Mechanisme": ["Bindt de 30S subunits ribisoom", "Inhibitie van de bacteriële eiwitsynthese", "Bacteriostase"],
                             "Bijwerkingen": [
                                 {
-                                    "Bijwerking": "Nefrotoxiciteit"
+                                    "Bijwerking": "Nierfalen"
                                 },
                                 {
                                     "Bijwerking": "Ototoxiciteit"
