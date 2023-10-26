@@ -11,7 +11,7 @@
                     "Enzym": ["CYP2E1", "Substraat", "Toxisch"],
                     "Bijwerkingen": [
                         {
-                            "Bijwerking": "Hepatotoxiciteit",
+                            "Bijwerking": "Leverbeschadiging",
                             "Risicofactoren": ["Slechte voedingstoestand"],
                             "Dosis": [">", "150", "mg/kg/dag"],
                             "Mechanisme": ["Verlaagde glutathion-spiegel", "Stapeling NAPQI"]
@@ -1077,7 +1077,7 @@
                                             "Bijwerking": "Hyperkaliëmie"
                                         },
                                         {
-                                            "Bijwerking": "Smaakstoornis"
+                                            "Bijwerking": "Smaakstoornissen"
                                         }
                                     ],
                                     "Onderverdeling": [
@@ -2204,7 +2204,7 @@
                                     "Mechanisme": ["Selectieve inhibitie van ergosterol synthese via CYP51", "Inhibitie van de opbouw van het celmembraan"],
                                     "Bijwerkingen": [
                                         {
-                                            "Bijwerking": "Huidreactie"
+                                            "Bijwerking": "Huidreacties"
                                         },
                                         {
                                             "Bijwerking": "Verhoogde leverwaarden"
