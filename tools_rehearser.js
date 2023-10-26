@@ -846,7 +846,17 @@ function inBetween(display_text) {
 
     document.getElementById('remark-card').innerText = "Good job!" 
     document.getElementById('question-description').innerText = "Het volledige antwoord was: " + display_text
-    document.getElementById('button').innerText = "Next";
+    
+    document.getElementById('question-input-card').innerHTML = 
+            
+    `
+    
+    <input type="text" id="text-field">
+    <input type="button" class="button" id ="check-button" value="Next" onclick="nextQuestion()">
+    
+    `;
+
+    setEnter();
 
 };
 
