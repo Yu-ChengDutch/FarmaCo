@@ -717,7 +717,7 @@ function checkMnemonicAnswer() {
 
             if (nr_ans == 1 || (inner_text.includes("1") && nr_ans == 2) || (inner_text.includes("2") && nr_ans == 3)) {
 
-                nextQuestion();
+                inBetween(correct_answer);
 
             } else {
 
@@ -833,7 +833,22 @@ function nextQuestion() {
     document.getElementById('question-description').innerText = question_array[new_index].Question
     document.getElementById('question-title').innerText = new_index + "/" + question_array.length;
 
-}
+};
+
+function inBetween(display_text) { 
+
+    resetButtons();
+
+    const textfield = document.getElementById('text-field');
+    textfield.value = "";
+    
+    /* Setting all new text */
+
+    document.getElementById('remark-card').innerText = "Good job!" 
+    document.getElementById('question-description').innerText = "Het volledige antwoord was: " + display_text
+    document.getElementById('button').innerText = "Next";
+
+};
 
 /***
  * 
