@@ -569,13 +569,13 @@ function prepareQuestions(level) {
 
                         console.log(par_obj);
 
-                        if (Object.keys(ancestry_dict[par_obj.Name]).includes("Parent")) {
+                        if (Object.keys(ancestry_dict[par_obj]).includes("Parent")) {
 
-                            if (Object.keys(content_dict[ancestry_dict[par_obj.Name].Parent]).includes("Bijwerkingen")) {
+                            if (Object.keys(content_dict[ancestry_dict[par_obj].Parent]).includes("Bijwerkingen")) {
 
-                                for (var j = 0; j < (content_dict[ancestry_dict[par_obj.Name].Parent]).Bijwerkingen.length; j++) {
+                                for (var j = 0; j < (content_dict[ancestry_dict[par_obj].Parent]).Bijwerkingen.length; j++) {
         
-                                    current_side_effects.push((content_dict[ancestry_dict[par_obj.Name].Parent]).Bijwerkingen[j].Bijwerking)   
+                                    current_side_effects.push((content_dict[ancestry_dict[par_obj].Parent]).Bijwerkingen[j].Bijwerking)   
                 
                                 };
         
