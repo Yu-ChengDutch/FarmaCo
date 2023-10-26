@@ -559,11 +559,11 @@ function prepareQuestions(level) {
 
                     par_obj = ancestry_dict[current].Parent;
 
-                    if (Object.keys(par_obj).includes("Bijwerkingen")) {
+                    if (Object.keys(content_dict[par_obj]).includes("Bijwerkingen")) {
 
-                        for (var j = 0; j < par_obj.Bijwerkingen.length; j++) {
+                        for (var j = 0; j < content_dict[par_obj].Bijwerkingen.length; j++) {
 
-                            current_side_effects.push(par_obj.Bijwerkingen[j].Bijwerking)   
+                            current_side_effects.push(content_dict[par_obj].Bijwerkingen[j].Bijwerking)   
         
                         };
 
