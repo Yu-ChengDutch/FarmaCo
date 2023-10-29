@@ -730,7 +730,7 @@ function prepareQuestions(level) {
                     question_string = "Moet bij " + child + " de reden van voorschrijven worden vermeld? Ja of nee";
                     temp_temp_question_array.push({"Question": question_string, "Answer": "Ja"})
 
-                } else if (terminals_array.includes(child) && Math.random() > 0.9) {
+                } else if (terminals_array.includes(child) && Math.random() > 0.8) {
 
                     question_string = "Moet bij " + child + " de reden van voorschrijven worden vermeld? Ja of nee";
                     temp_temp_question_array.push({"Question": question_string, "Answer": "Nee"})
@@ -742,7 +742,7 @@ function prepareQuestions(level) {
                     question_string = "Moet bij " + child + " de dosis worden aangepast bij nierfunctiestoornissen? Ja of nee";
                     temp_temp_question_array.push({"Question": question_string, "Answer": "Ja"})
 
-                } else if (terminals_array.includes(child) && Math.random() > 0.9) {
+                } else if (terminals_array.includes(child) && Math.random() > 0.8) {
 
                     question_string = "Moet bij " + child + " de dosis worden aangepast bij nierfunctiestoornissen? Ja of nee";
                     temp_temp_question_array.push({"Question": question_string, "Answer": "Nee"})
@@ -754,7 +754,7 @@ function prepareQuestions(level) {
                     question_string = "Welk categorie valt " + child + " in wat betreft teratologie?";
                     temp_temp_question_array.push({"Question": question_string, "Answer": content_dict[child].Zwangerschap[0]});
     
-                } else if (terminals_array.includes(child) && Math.random() > 0.9) {
+                } else if (terminals_array.includes(child) && Math.random() > 0.8) {
 
                     question_string = "Welk categorie valt " + child + " in wat betreft teratologie?";
                     temp_temp_question_array.push({"Question": question_string, "Answer": "Onbekend"})
