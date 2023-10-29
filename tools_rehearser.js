@@ -507,7 +507,7 @@ function prepareQuestions(level) {
                         temp_temp_question_array.push({"Question": question_string, "Answer": current_interaction.Risico });
                     } else {
 
-                        current_child = shuffle(ancestry_dict[current].Children)[0]
+                        current_child = shuffle(ancestry_dict[current].Children)[Math.floor]
 
                         question_string = "Het tegelijk nemen van bijv. " + current_child + " en " + current_interaction.Interactant + " geeft risico op: ";
                         temp_temp_question_array.push({"Question": question_string, "Answer": current_interaction.Risico });
@@ -584,11 +584,17 @@ function prepareQuestions(level) {
 
                     };
 
+                    if (terminals_array.includes(current)) {
+                        current_string = current;
+                    } else {
+                        current_string = current + " zoals bijv. " + shuffle(ancestry_dict[current].Children)[0]
+                    }
+
                     if (current_side_effects.length > 3) {
-                        question_string = current + " heeft tenminste " + (current_side_effects.length).toString() + " potentiële bijwerkingen. Noem er 3.";
+                        question_string = current_string + " heeft tenminste " + (current_side_effects.length).toString() + " potentiële bijwerkingen. Noem er 3.";
                         temp_temp_question_array.push({"Question": question_string, "Answer": current_side_effects, "Nr_ans": 3});                    
                     } else {
-                        question_string = current + " heeft tenminste " + (current_side_effects.length).toString() + " potentiële bijwerkingen. Noem ze.";
+                        question_string = current_string + " heeft tenminste " + (current_side_effects.length).toString() + " potentiële bijwerkingen. Noem ze.";
                         temp_temp_question_array.push({"Question": question_string, "Answer": current_side_effects, "Nr_ans": current_side_effects.length});
                     };                    
 
@@ -719,110 +725,117 @@ function checkMnemonicAnswer() {
     console.log("- - > Checking mnemonic")
     console.log("- - > Right answer is: " + correct_answer)
 
-    if (Array.isArray(correct_answer) && !(question_array[current_index].Question).includes("voorbeeld")) {
+    if (given_answer != "" && given_answer != None) {
 
-        console.log("Is array!")
+        if (Array.isArray(correct_answer) && !(question_array[current_index].Question).includes("voorbeeld")) {
 
-        if (correct_answer.includes(given_answer)) {
+            console.log("Is array!")
 
-            console.log("Correct!");
+            if (correct_answer.includes(given_answer)) {
 
-            const textfield = document.getElementById('text-field');
-            textfield.value = "";
+                console.log("Correct!");
 
-            inner_text = document.getElementById('remark-card').innerText;
+                const textfield = document.getElementById('text-field');
+                textfield.value = "";
 
-            if (nr_ans == 1 || (inner_text.includes("1") && nr_ans == 2) || (inner_text.includes("2") && nr_ans == 3)) {
+                inner_text = document.getElementById('remark-card').innerText;
 
-                inBetween(correct_answer);
+                if (nr_ans == 1 || (inner_text.includes("1") && nr_ans == 2) || (inner_text.includes("2") && nr_ans == 3)) {
+
+                    inBetween(correct_answer);
+
+                } else {
+
+                    if (inner_text.includes("1")) {
+
+                        document.getElementById('remark-card').innerText = document.getElementById('remark-card').innerText + " || 2. " + given_answer;
+        
+                    } else {
+        
+                        document.getElementById('remark-card').innerText = "1. " + given_answer;
+        
+                    };
+
+                };
+                
 
             } else {
 
-                if (inner_text.includes("1")) {
+                console.log("False!")
 
-                    document.getElementById('remark-card').innerText = document.getElementById('remark-card').innerText + " || 2. " + given_answer;
-    
-                } else {
-    
-                    document.getElementById('remark-card').innerText = "1. " + given_answer;
-    
+                document.getElementById('remark-card').innerText = "False! The correct answers are: " + correct_answer + ". We'll repeat this question."
+
+                let local_question_array = question_array;
+                local_question_array.splice(intervalIndex(current_index, 4, local_question_array), 0, {"Question": ("Dit is een herhaling: " + question_array[current_index].Question), "Answer": question_array[current_index].Answer, "Nr_ans": question_array[current_index].Nr_ans});
+                local_question_array.splice(intervalIndex(current_index, 12, local_question_array), 0, {"Question": ("Dit is een herhaling: " + question_array[current_index].Question), "Answer": question_array[current_index].Answer, "Nr_ans": question_array[current_index].Nr_ans});
+
+                question_array = local_question_array;
+                console.log(question_array);
+
+            }
+
+        } else if (given_answer.toLowerCase() == correct_answer.toString().toLowerCase() || correct_answer.includes(given_answer)) {
+
+            console.log("- - > Correct!")
+
+            if (document.getElementById('question-description').innerText.includes("Noem een voorbeeld van") && !terminals_array.includes(given_answer)) {
+
+                let local_question_array = question_array;
+
+                try {
+                    local_question_array.splice(intervalIndex(current_index, 1, local_question_array), 0, ancestryQuestion(given_answer));
+                } catch {
+                    console.log("--> Doesn't exist: " + given_answer);
                 };
+                
+                question_array = local_question_array;
 
-            };
-            
+            } else if (document.getElementById('question-description').innerText.includes("Van welke categorie is") && ancestry_dict[given_answer].Parent != base) {
+
+                let local_question_array = question_array;
+
+                try {
+                    question_string = "Van welke categorie is " + given_answer + " een deel?";
+                    local_question_array.splice(intervalIndex(current_index, 1, local_question_array), 0, {"Question": question_string, "Answer": ancestry_dict[given_answer].Parent});
+                } catch {
+                    console.log("--> Doesn't exist: " + given_answer);
+                };
+                
+                question_array = local_question_array;
+
+            };         
+
+            nextQuestion();
 
         } else {
 
-            console.log("False!")
+            console.log("- - > Given answer: " + given_answer);
+            console.log("- - > Right answer: " + correct_answer);
 
-            document.getElementById('remark-card').innerText = "False! The correct answers are: " + correct_answer + ". We'll repeat this question."
+            if (document.getElementById('remark-card').innerText != "Please repeat the mnemonic phrase again") {
+                
+                document.getElementById('remark-card').innerText = "Please repeat the mnemonic phrase again";
+            
+            } else {
 
-            let local_question_array = question_array;
-            local_question_array.splice(intervalIndex(current_index, 4, local_question_array), 0, {"Question": ("Dit is een herhaling: " + question_array[current_index].Question), "Answer": question_array[current_index].Answer, "Nr_ans": question_array[current_index].Nr_ans});
-            local_question_array.splice(intervalIndex(current_index, 12, local_question_array), 0, {"Question": ("Dit is een herhaling: " + question_array[current_index].Question), "Answer": question_array[current_index].Answer, "Nr_ans": question_array[current_index].Nr_ans});
+                document.getElementById('remark-card').innerText = "The right mnemonic is: " + correct_answer + ". You'll repeat this questions once more afterwards.";
 
-            question_array = local_question_array;
-            console.log(question_array);
+                let local_question_array = question_array;
+                local_question_array.splice(intervalIndex(current_index, 4, local_question_array), 0, {"Question": ("Dit is een herhaling: " + question_array[current_index].Question), "Answer": question_array[current_index].Answer});
+                local_question_array.splice(intervalIndex(current_index, 12, local_question_array), 0, {"Question": ("Dit is een herhaling: " + question_array[current_index].Question), "Answer": question_array[current_index].Answer});
+
+                question_array = local_question_array;
+                console.log(question_array);
+
+            }
+
+            
+            textfield.value = "";            
 
         }
-
-    } else if (given_answer.toLowerCase() == correct_answer.toString().toLowerCase() || correct_answer.includes(given_answer)) {
-
-        console.log("- - > Correct!")
-
-        if (document.getElementById('question-description').innerText.includes("Noem een voorbeeld van") && !terminals_array.includes(given_answer)) {
-
-            let local_question_array = question_array;
-
-            try {
-                local_question_array.splice(intervalIndex(current_index, 1, local_question_array), 0, ancestryQuestion(given_answer));
-            } catch {
-                console.log("--> Doesn't exist: " + given_answer);
-            };
-            
-            question_array = local_question_array;
-
-        } else if (document.getElementById('question-description').innerText.includes("Van welke categorie is") && ancestry_dict[given_answer].Parent != base) {
-
-            let local_question_array = question_array;
-
-            try {
-                question_string = "Van welke categorie is " + given_answer + " een deel?";
-                local_question_array.splice(intervalIndex(current_index, 1, local_question_array), 0, {"Question": question_string, "Answer": ancestry_dict[given_answer].Parent});
-            } catch {
-                console.log("--> Doesn't exist: " + given_answer);
-            };
-            
-            question_array = local_question_array;
-
-        };         
-
-        nextQuestion();
-
     } else {
 
-        console.log("- - > Given answer: " + given_answer);
-        console.log("- - > Right answer: " + correct_answer);
-
-        if (document.getElementById('remark-card').innerText != "Please repeat the mnemonic phrase again") {
-            
-            document.getElementById('remark-card').innerText = "Please repeat the mnemonic phrase again";
-        
-        } else {
-
-            document.getElementById('remark-card').innerText = "The right mnemonic is: " + correct_answer + ". You'll repeat this questions once more afterwards.";
-
-            let local_question_array = question_array;
-            local_question_array.splice(intervalIndex(current_index, 4, local_question_array), 0, {"Question": ("Dit is een herhaling: " + question_array[current_index].Question), "Answer": question_array[current_index].Answer});
-            local_question_array.splice(intervalIndex(current_index, 12, local_question_array), 0, {"Question": ("Dit is een herhaling: " + question_array[current_index].Question), "Answer": question_array[current_index].Answer});
-
-            question_array = local_question_array;
-            console.log(question_array);
-
-        }
-
-        
-        textfield.value = "";            
+        console.log("Answer something!");
 
     }
 }
@@ -867,8 +880,7 @@ function inBetween(display_text) {
     document.getElementById('question-input-card').innerHTML = 
             
     `
-    
-    <input type="text" id="text-field">
+
     <input type="button" class="button" id ="check-button" value="Next" onclick="nextQuestion()">
     
     `;
