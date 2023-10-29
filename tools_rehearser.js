@@ -722,7 +722,7 @@ function prepareQuestions(level) {
             if (parent != base) {
     
                 question_string = "Wat is de klasse van " + child;
-                question_string_middle = "medicijn";
+                question_string_middle = " ";
                 temp_temp_question_array.push({"Question": question_string, "Answer": parent });
 
                 if (Object.keys(content_dict[child]).includes("Voorschrijven")) {
@@ -765,7 +765,7 @@ function prepareQuestions(level) {
                 
                     enzym = content_dict[child].Enzym;
     
-                    question_string = "Het" + question_string_middle + "medicijn " + current + " werkt in op " + enzym[0] + ". Is het een enzyminducer, inhibitor of substraat?";
+                    question_string = "Het" + question_string_middle + "medicijn " + child + " werkt in op " + enzym[0] + ". Is het een enzyminducer, inhibitor of substraat?";
                     temp_temp_question_array.push({"Question": question_string, "Answer": enzym[1]});
                 
                 };
