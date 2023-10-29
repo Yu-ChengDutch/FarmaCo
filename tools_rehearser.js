@@ -725,7 +725,7 @@ function checkMnemonicAnswer() {
     console.log("- - > Checking mnemonic")
     console.log("- - > Right answer is: " + correct_answer)
 
-    if (given_answer != "" && given_answer != None) {
+    if (given_answer != "" && given_answer != none && given_answer != undefined) {
 
         if (Array.isArray(correct_answer) && !(question_array[current_index].Question).includes("voorbeeld")) {
 

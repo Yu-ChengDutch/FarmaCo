@@ -3,6 +3,7 @@
     "Onderverdeling": [
         {
             "Naam": "Pijnmedicatie",
+            "Effect": ["Analgesie", "Antipyrexie"],
             "Onderverdeling": [
                 {
                     "Naam": "Paracetamol",
@@ -27,6 +28,7 @@
                 },
                 {
                     "Naam": "NSAID's",
+                    "Effect": ["Analgesie", "Antipyrexie", "Anti-inflammatie"],
                     "Indicaties-list": ["Tweede stap (additie) bij nociceptieve pijn"],
                     "Mechanisme": [["COX-1 remming", "Inhibitie van trombocytenaggergatie, gastroprotectie en renale perfusie"], ["COX-2 inhibitie", "Inhibitie van renale perfusie, inflammatie, ovulatie, sluiting ductus Botalli en pyrexie"]],
                     "Bijwerkingen": [
@@ -128,6 +130,7 @@
                 },
                 {
                     "Naam": "Opiaatagonisten",
+                    "Effect": ["Analgesie"],
                     "Bijwerkingen": [
                         {
                             "Bijwerking": "Afhankelijkheid",
@@ -188,6 +191,7 @@
                             "Onderverdeling": [
                                 {
                                     "Naam": "Morfine",
+                                    "Effect": ["Analgesie", "Anxiolyse"],
                                     "Klaring": "Renaal",
                                     "Mechanisme": ["Semiselectieve Mu-opioïdreceptor agonist (tevens kappa en delta)"]
                                 },
@@ -235,6 +239,7 @@
             "Onderverdeling": [
                 {
                     "Naam": "Osmotische laxantia",
+                    "Effect": ["Verbetering stoelgang", "Vermindering obstipatie"],
                     "Bijwerkingen": [
                         {
                             "Bijwerking": "Buikkramp"
@@ -274,6 +279,7 @@
                 },
                 {
                     "Naam": "Contactlaxantia",
+                    "Effect": ["Verbetering stoelgang", "Vermindering obstipatie"],
                     "Bijwerkingen": [
                         {
                             "Bijwerking": "Buikkramp"
@@ -303,6 +309,7 @@
                 },
                 {
                     "Naam": "Klysmata",
+                    "Effect": ["Verbetering stoelgang", "Vermindering obstipatie"],
                     "Indicaties": [
                         {
                             "Indicatie": "Obstipatie bij opioïdgebruik",
@@ -339,6 +346,7 @@
                     "Onderverdeling": [
                         {
                             "Naam": "TAR's",
+                            "Effect": ["Trombocytenaggregatieremming"],
                             "Interacties": [
                                 {
                                     "Interactant": ["Corticosteroïden", "NSAID's", "SSRI's"],
@@ -401,7 +409,8 @@
                                             ]
                                         },
                                         {
-                                            "Naam": "Dipyridiamol",
+                                            "Naam": "Dipyridiamol",                                            
+                                            "Effect": ["Trombocytenaggregatieremming", "Vasodilatatie"],
                                             "Indicaties-list": ["Additie TIA/CVA"],
                                             "Bijwerkingen": [
                                                 {
@@ -429,6 +438,7 @@
                     "Onderverdeling": [
                         {
                             "Naam": "Coumarinederivaten",
+                            "Effect": ["Remming aanmaak factor II, VII, IX en X"],
                             "Mechanisme": ["Antagoneren vitamine K", "Afname concentratie vitamine K-afhankelijke stollingsfactoren (i.e. II, VII, IX, X en proteïne C)", "Afname van fibrinevorming"],
                             "Enzym": ["CYP2C9", "Substraat"],
                             "Indicaties-list": ["Atriumfibrilleren", "Mechanische klepprothese", "Longembolie", "DVT", "TIA/CVA profylaxe bij CHADVASC >1"],
@@ -503,10 +513,12 @@
                             "Onderverdeling": [
                                 {
                                     "Naam": "Ongefractioneerde heparine",
+                                    "Effect": ["Indirecte neutralisering factor Xa en factor IIa"],
                                     "Mechanisme": ["Activeert anti-trombine III", "Neutraliseert factor IIa en Xa", "Remming omzetting fibrinogeen -> fibrine"]
                                 },
                                 {
                                     "Naam": "LMWH's",
+                                    "Effect": ["Indirecte neutralisering factor Xa"],
                                     "Mechanisme": ["Activiteert selectief anti-factor Xa", "Neutraliseert pseudoselectief Xa", "Remming omzetting fibrinogeen -> fibrine"],
                                     "Indicaties-list": ["Bridging bij CHADVASC >= 8/mechanische klep/kunstklep <3 mnd/recidiverend DVT", "Tromboseprofylaxe"],
                                     "Interacties": [
@@ -557,6 +569,7 @@
                             "Onderverdeling": [
                                 {
                                     "Naam": "Factor IIa-remmers",
+                                    "Effect": ["Directe remming factor IIa"],
                                     "Onderverdeling": [
                                         {
                                             "Naam": "Dabigatran",
@@ -573,6 +586,7 @@
                                 },
                                 {
                                     "Naam": "Factor Xa-remmers",
+                                    "Effect": ["Directe remming factor Xa"],
                                     "Mechanisme": ["Graat een directe, reversibele binding aan met factor Xa", "Remming fibrinogeen -> fibrine"],
                                     "Enzym": ["CYP3A4", "Substraat"],
                                     "Interacties":[
@@ -640,7 +654,7 @@
                             "Onderverdeling": [
                                 {
                                     "Naam": "Thiazidediuretica",
-                                    "Effect": "Matig maar lang aanhoudend diuretisch effect",
+                                    "Effect": ["Afname hypertensie", "Vasodilatie", "Langzame volumeafname", "Natriumexcretie"],
                                     "Indicaties-list": ["Eerste keuze antihypertensivum >50 jaar"],
                                     "Mechanisme": ["Remming van Na+/Cl- cotransport in de distale tubulus", "Verhoogd aanbod van Na+", "Activatie Na+/K+ counter-transport", "Verhoogde K+ uitscheiding"],
                                     "Bijwerkingen": [
@@ -681,7 +695,7 @@
                                 },
                                 {
                                     "Naam": "Lisdiuretica",
-                                    "Effect": "Sterk en snel diuretisch effect",
+                                    "Effect": ["Afname hypertensie", "Snelle volumeafname"],
                                     "Indicaties-list": ["Dyspneu en oedeem bij hartfalen/ascites"],
                                     "Werkingsduur": [6, "uur"],
                                     "Bijwerkingen": [
@@ -723,7 +737,7 @@
                                 },
                                 {
                                     "Naam": "Kaliumsparende diuretica",
-                                    "Effect": "Zwak diuretisch effect",
+                                    "Effect": ["Afname hypertensie", "Toename kalium"],
                                     "Bijwerkingen": [
                                         {
                                             "Bijwerking": "Hypotensie",
@@ -770,6 +784,7 @@
                             "Onderverdeling": [
                                 {
                                     "Naam": "Beta-blokkers",
+                                    "Effect": ["Anti-adrenerge werking", "Negatieve dromotropie", "Negatieve chronotropie", "Negatieve inotropie"],
                                     "Indicaties-list": ["Atriumfibrilleren", "Hypertensie", "Hartfalen", "Secundaire preventie na myocardinfarct"],
                                     "Interacties": [
                                         {
