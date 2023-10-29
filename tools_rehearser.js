@@ -305,6 +305,21 @@ var page_do =`
             </div>
 
         </div>
+
+        <div class="card" onclick="startLevel(14)">
+
+            <div class="bubble">
+                <img src="./Images/Interactions.png">
+            </div>
+
+            <div class="text-right">
+
+                <H1> Minor topics </H1>
+                <p> All-in-one </p>
+
+            </div>
+
+        </div>
 `
 
 var pages = {
@@ -626,7 +641,7 @@ function prepareQuestions(level) {
             if (terminals_array.includes(current)) {
                 question_string_middle = " ";
             } else {
-                question_string_middle = "klasse ";
+                question_string_middle = " klasse ";
             };
 
             if (level == 4 && Object.keys(content_dict[keys[i]]).includes("Indicaties-list")) {
@@ -648,7 +663,7 @@ function prepareQuestions(level) {
             
                 enzym = content_dict[keys[i]].Enzym;
 
-                question_string = "Het" + question_string_middle + "medicijn" + current + " werkt in op " + enzym[0] + ". Is het een enzyminducer, inhibitor of substraat?";
+                question_string = "Het" + question_string_middle + "medicijn " + current + " werkt in op " + enzym[0] + ". Is het een enzyminducer, inhibitor of substraat?";
                 temp_temp_question_array.push({"Question": question_string, "Answer": enzym[1]});
 
             } else if (level == 8) {
@@ -689,6 +704,76 @@ function prepareQuestions(level) {
             
             temp_question_array.push(temp_temp_question_array);
 
+        };
+
+    };
+
+    if (level == 13) {
+
+        var local_ancestry_dict = ancestry_dict;
+
+        for (var i = 0; i < Object.keys(local_ancestry_dict).length; i++) {
+
+            child = Object.keys(local_ancestry_dict)[i];
+            parent = local_ancestry_dict[child].Parent; 
+
+            temp_temp_question_array = [];
+
+            if (parent != base) {
+    
+                question_string = "Wat is de klasse van " + child;
+                question_string_middle = "medicijn";
+                temp_temp_question_array.push({"Question": question_string, "Answer": parent });
+
+                if (Object.keys(content_dict[child]).includes("Voorschrijven")) {
+                    
+                    question_string = "Moet bij " + child + " de reden van voorschrijven worden vermeld? Ja of nee";
+                    temp_temp_question_array.push({"Question": question_string, "Answer": "Ja"})
+
+                } else if (terminals_array.includes(child) && Math.random() > 0.9) {
+
+                    question_string = "Moet bij " + child + " de reden van voorschrijven worden vermeld? Ja of nee";
+                    temp_temp_question_array.push({"Question": question_string, "Answer": "Nee"})
+
+                };
+
+                if (Object.keys(content_dict[child]).includes("Klaring")) {
+                    
+                    question_string = "Moet bij " + child + " de dosis worden aangepast bij nierfunctiestoornissen? Ja of nee";
+                    temp_temp_question_array.push({"Question": question_string, "Answer": "Ja"})
+
+                } else if (terminals_array.includes(child) && Math.random() > 0.9) {
+
+                    question_string = "Moet bij " + child + " de dosis worden aangepast bij nierfunctiestoornissen? Ja of nee";
+                    temp_temp_question_array.push({"Question": question_string, "Answer": "Nee"})
+
+                };
+
+                if (Object.keys(content_dict[child]).includes("Zwangerschap")) {
+            
+                    question_string = "Welk categorie valt " + child + " in wat betreft teratologie?";
+                    temp_temp_question_array.push({"Question": question_string, "Answer": content_dict[keys[i]].Zwangerschap[0]});
+    
+                } else if (terminals_array.includes(child) && Math.random() > 0.9) {
+
+                    question_string = "Welk categorie valt " + child + " in wat betreft teratologie?";
+                    temp_temp_question_array.push({"Question": question_string, "Answer": "Onbekend"})
+
+                }; 
+                
+                if (Object.keys(content_dict[child]).includes("Enzym")) {
+                
+                    enzym = content_dict[keys[i]].Enzym;
+    
+                    question_string = "Het" + question_string_middle + "medicijn " + current + " werkt in op " + enzym[0] + ". Is het een enzyminducer, inhibitor of substraat?";
+                    temp_temp_question_array.push({"Question": question_string, "Answer": enzym[1]});
+                
+                };
+
+                temp_question_array.push(temp_temp_question_array);
+
+            };
+        
         };
 
     };
