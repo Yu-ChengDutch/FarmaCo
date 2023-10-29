@@ -708,7 +708,7 @@ function prepareQuestions(level) {
 
     };
 
-    if (level == 13) {
+    if (level == 14) {
 
         var local_ancestry_dict = ancestry_dict;
 
