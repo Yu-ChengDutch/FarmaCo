@@ -28,6 +28,7 @@
                 },
                 {
                     "Naam": "NSAID's",
+                    "Klaring": "Renaal",
                     "Effect": ["Analgesie", "Antipyrexie", "Anti-inflammatie"],
                     "Indicaties-list": ["Tweede stap (additie) bij nociceptieve pijn"],
                     "Mechanisme": [["COX-1 remming", "Inhibitie van trombocytenaggergatie, gastroprotectie en renale perfusie"], ["COX-2 inhibitie", "Inhibitie van renale perfusie, inflammatie, ovulatie, sluiting ductus Botalli en pyrexie"]],
@@ -598,6 +599,7 @@
                                         {
                                             "Interactant": ["Verapamil", "Itraconazol", "Erytromycine", "Ketoconazol"],
                                             "Risico": "Hemorragie",
+                                            "Klaring": "Renaal",
                                             "Mechanisme": ["CYP3A4 inhibitie", "Verhoogde spiegel"],
                                             "Enzym": ["CYP3A4", "Inhibitor"]
                                         }
@@ -659,6 +661,7 @@
                             "Onderverdeling": [
                                 {
                                     "Naam": "Thiazidediuretica",
+                                    "Klaring": "Renaal",
                                     "Effect": ["Afname hypertensie", "Vasodilatie", "Langzame volumeafname", "Natriumexcretie"],
                                     "Indicaties-list": ["Eerste keuze antihypertensivum >50 jaar"],
                                     "Mechanisme": ["Remming van Na+/Cl- cotransport in de distale tubulus", "Verhoogd aanbod van Na+", "Activatie Na+/K+ counter-transport", "Verhoogde K+ uitscheiding"],
@@ -759,6 +762,7 @@
                                     "Onderverdeling": [
                                         {
                                             "Naam": "Spironolacton",
+                                            "Klaring": "Renaal",
                                             "Indicaties-list": ["I.c.m. lis- en/of thiazidediuretica bij ernstig hartfalen"],
                                             "Mechanisme": ["Competitieve antagonist van aldosteron", "Remming van de Na+/K+ countertransporter in de corticale verzamelbuis", "Verlaagde K+ excretie"],
                                             "Bijwerkingen": [
@@ -778,6 +782,7 @@
                                         },
                                         {
                                             "Naam": "Triamtereen",
+                                            "Klaring": "Renaal",
                                             "Mechanisme": ["Remming van de corticale Na+ kanalen in de corticale verzamelbuis", "Verlaagd Na+ aanbod", "Verlaagde K+ excretie"]
                                         }
                                     ]
@@ -789,6 +794,7 @@
                             "Onderverdeling": [
                                 {
                                     "Naam": "Beta-blokkers",
+                                    "Klaring": "Renaal",
                                     "Effect": ["Anti-adrenerge werking", "Negatieve dromotropie", "Negatieve chronotropie", "Negatieve inotropie"],
                                     "Indicaties-list": ["Atriumfibrilleren", "Hypertensie", "Hartfalen", "Secundaire preventie na myocardinfarct"],
                                     "Interacties": [
@@ -860,7 +866,7 @@
                                             "Onderverdeling": [
                                                 {
                                                     "Naam": "Sotalol",
-                                                    "Klaring": "Renaal",
+                                                    
                                                     "Bijwerkingen": [
                                                         {
                                                             "Bijwerking": "Ritmestoornissen",
@@ -1043,7 +1049,8 @@
                             ],
                             "Onderverdeling": [
                                 {
-                                    "Naam": "ACE-remmers",                                    
+                                    "Naam": "ACE-remmers",
+                                    "Klaring": "Renaal",                                    
                                     "Indicaties-list": ["Eerste keuze antihypertensivum <50 jaar", "Hartfalen", "Diabetische proteïnurie"],
                                     "Bijwerkingen": [
                                         {
@@ -1312,6 +1319,7 @@
                 },
                 {
                     "Naam": "Pravastatine",
+                    "Klaring": "Renaal",
                     "Indicaties": [
                         {
                             "Indicatie": "Hypercholesterolemie",
@@ -1322,6 +1330,7 @@
                 },
                 {
                     "Naam": "Rosuvastatine",
+                    "Klaring": "Renaal",
                     "Indicaties": [
                         {
                             "Indicatie": "Milde hypercholesterolemie (LDL-daling <40%)",
@@ -1332,6 +1341,15 @@
                             "Keuze": 1                            
                         }
                     ]
+                }
+            ]
+        },
+        {
+            "Naam": "Anti-jicht middelen",
+            "Onderverdeling": [
+                {
+                    "Naam": "Allopurinol",
+                    "Klaring": "Renaal"
                 }
             ]
         },
@@ -1913,7 +1931,8 @@
                                                     ]
                                                 },
                                                 {
-                                                    "Naam": "Piperacilline"
+                                                    "Naam": "Piperacilline",
+                                                    "Klaring": "Renaal"
                                                 },
                                                 {
                                                     "Naam": "Penicilline met beta-lactamaseremmer",
@@ -1942,6 +1961,10 @@
                                                 {
                                                     "Naam": "Ceftriaxon",
                                                     "Indicaties-list": ["Gram-negatieve bacteriën"]
+                                                },
+                                                {
+                                                    "Naam": "Cefuroxim",
+                                                    "Klaring": "Renaal"
                                                 }
                                             ]
                                         }
@@ -1997,6 +2020,7 @@
                                 },
                                 {
                                     "Naam": "Levofloxacine",
+                                    "Klaring": "Renaal",
                                     "Indicaties": [
                                         {
                                             "Indicatie": "Milde pneumonie met vermoeden Legionalla",
@@ -2096,6 +2120,10 @@
                                             "Keuze": 3
                                         }
                                     ]
+                                },
+                                {
+                                    "Naam": "Tetracycline",
+                                    "Klaring": "Renaal"
                                 }
                             ]
                         },
@@ -2281,6 +2309,7 @@
                                         },
                                         {
                                             "Naam": "Fluconazol",
+                                            "Klaring": "Renaal",
                                             "Voorschrijven": "True",
                                             "Enzym": ["CYP3A4", "Inhibitor"],
                                             "Indicaties": [
