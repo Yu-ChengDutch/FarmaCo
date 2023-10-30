@@ -712,7 +712,7 @@ function prepareQuestions(level) {
 
             } else if (level == 10) {
 
-                if (Object.keys(content_dict[keys[i]]).includes("Klaring") || Object.keys(content_dict[ancestry_dict[keys[i]].Parent]).includes("Klaring")) {
+                if (Object.keys(content_dict[keys[i]]).includes("Klaring") || Object.keys(content_dict[ancestry_dict[current].Parent]).includes("Klaring")) {
                     
                     question_string = "Moet bij " + current + " de dosis worden aangepast bij nierfunctiestoornissen? Ja of nee";
                     temp_temp_question_array.push({"Question": question_string, "Answer": "Ja"})

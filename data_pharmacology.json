@@ -852,11 +852,11 @@
                                         {
                                             "Bijwerking": "AV-vertraging"
                                         }
-                                    ],
-                                    "Mechanisme": [["Stimulering van B1-receptoren in het myocard", "Chronotropie, Inotropie en Dromotropie"], ["Stimulering van B2-receptoren in luchtwegen en bloedvaten", "Bronchiolo- en beperkte vasodilatatie"]],
+                                    ],                                    
                                     "Onderverdeling": [
                                         {
                                             "Naam": "Selectieve beta-blokkers",
+                                            "Mechanisme": [["Stimulering van B1-receptoren in het myocard", "Chronotropie, Inotropie en Dromotropie"]],
                                             "Onderverdeling": [
                                                 {
                                                     "Naam": "Metoprolol",
@@ -873,6 +873,7 @@
                                         },
                                         {
                                             "Naam": "Aselectieve beta-blokkers",
+                                            "Mechanisme": [["Stimulering van B1-receptoren in het myocard", "Chronotropie, Inotropie en Dromotropie"], ["Stimulering van B2-receptoren in luchtwegen en bloedvaten", "Bronchiolo- en beperkte vasodilatatie"]],
                                             "Bijwerkingen": [
                                                 {
                                                     "Bijwerking": "Bronchoconstrictie",
