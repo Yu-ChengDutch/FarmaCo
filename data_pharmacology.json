@@ -2173,7 +2173,6 @@
                     "Onderverdeling": [
                         {
                             "Naam": "Tetracyclinen",
-                            "Klaring": "Renaal",
                             "Mechanisme": ["Bindt de 30S en 50S subunits ribisoom", "Inhibitie van de bacteriële eiwitsynthese", "Bacteriostase"],
                             "Interacties": [
                                 {
