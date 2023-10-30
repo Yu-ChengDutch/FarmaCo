@@ -797,7 +797,7 @@ function prepareQuestions(level) {
 
                 }; 
 
-                if (Object.keys(content_dict[child]).includes("Interacties")) {
+                if (Object.keys(content_dict[child]).includes("Bijwerkingen")) {
 
                     var current_side_effects = recursiveSideEffects(child);
                     var current_string = "";
