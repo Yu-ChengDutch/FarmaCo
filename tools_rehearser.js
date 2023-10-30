@@ -735,7 +735,7 @@ function prepareQuestions(level) {
                         temp_temp_question_array.push({"Question": question_string, "Answer": current_interaction.Risico });
                     } else {
 
-                        current_child = shuffle(ancestry_dict[child].Children)[Math.floor]
+                        current_child = shuffle(ancestry_dict[child].Children)[0]
 
                         question_string = "Het tegelijk nemen van bijv. " + current_child + " en " + current_interaction.Interactant + " geeft risico op: ";
                         temp_temp_question_array.push({"Question": question_string, "Answer": current_interaction.Risico });
