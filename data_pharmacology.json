@@ -193,14 +193,17 @@
                                     "Naam": "Morfine",
                                     "Effect": ["Analgesie", "Anxiolyse"],
                                     "Klaring": "Renaal",
+                                    "Rijveiligheid": "Categorie 3",
                                     "Mechanisme": ["Semiselectieve Mu-opioïdreceptor agonist (tevens kappa en delta)"]
                                 },
                                 {
                                     "Naam": "Fentanyl",
+                                    "Rijveiligheid": "Categorie 3",
                                     "Mechanisme": ["Selectieve Mu-opioïdreceptor agonist"]
                                 },
                                 {
                                     "Naam": "Oxycodon",
+                                    "Rijveiligheid": "Categorie 2",
                                     "Mechanisme": ["Aselectieve Mu-, Kappa- en Delta-opioïdreceptor agonist"]
                                 }
                             ]
@@ -210,6 +213,7 @@
                             "Onderverdeling": [
                                 {
                                     "Naam": "Tramadol",
+                                    "Rijveiligheid": "Categorie 3",
                                     "Indicaties-list": ["Derde stap (additie) bij nociceptieve pijn"],
                                     "Klaring": "Renaal",
                                     "Mechanisme": ["Aselectieve Mu-, Kappa- en Delta-opioïdreceptor agonist; tevens reuptakeremmer van NE en serotonine"],
@@ -224,6 +228,7 @@
                                 },
                                 {
                                     "Naam": "Codeïne",
+                                    "Rijveiligheid": "Categorie 2",
                                     "Klaring": "Renaal",
                                     "Enzym": ["CYP2D6", "Substraat"],
                                     "Mechanisme": ["Weak selective mu-opioïdreceptor antagonist; en pro-drug van morfine"]
@@ -823,6 +828,7 @@
                                             "Onderverdeling": [
                                                 {
                                                     "Naam": "Metoprolol",
+                                                    "Rijveiligheid": "Categorie 1",
                                                     "Zwangerschap": ["Waarschijnlijk veilig"]
                                                 },
                                                 {
@@ -1492,10 +1498,12 @@
                             "Naam": "Antipsychotica",
                             "Onderverdeling": [
                                 {
-                                    "Naam": "Clozapine"
+                                    "Naam": "Clozapine",
+                                    "Rijveiligheid": "Categorie 2"
                                 },
                                 {
-                                    "Naam": "Quetiapine"
+                                    "Naam": "Quetiapine",
+                                    "Rijveiligheid": "Categorie 2"
                                 }
                             ]
                         }
@@ -1545,10 +1553,12 @@
                     "Onderverdeling": [
                         {
                             "Naam": "Amitriptyline",
+                            "Rijveiligheid": "Categorie 3",
                             "Mechanisme": ["Remt heropname van serotonine en noradrenaline", "Toegenomen beschikbaarheid serotonine en noradrenaline"]
                         },
                         {
                             "Naam": "Nortriptyline",
+                            "Rijveiligheid": "Categorie 2",
                             "Mechanisme": ["Remt heropname van noradrenaline, en in mindere mate serotonine", "Toegenomen beschikbaarheid noradrenaline"]
                         }
                     ]
@@ -1594,18 +1604,22 @@
                     ],
                     "Onderverdeling": [
                         {
-                            "Naam": "Fluoxetine"
+                            "Naam": "Fluoxetine",
+                            "Rijveiligheid": "Categorie 1"
                         },
                         {
-                            "Naam": "Paroxetine"
+                            "Naam": "Paroxetine",
+                            "Rijveiligheid": "Categorie 1"
                         },
                         {
-                            "Naam": "Citalopram"
+                            "Naam": "Citalopram",
+                            "Rijveiligheid": "Categorie 1"
                         }
                     ]
                 },
                 {
                     "Naam": "Lithium",
+                    "Rijveiligheid": "Categorie 2",
                     "Klaring": "Renaal",
                     "Voorschrijven": "True",
                     "Indicaties-list": ["Bipolaire stoornis", "I.c.m. antidepressivum bij therapieresistente depressie"],
@@ -1672,17 +1686,21 @@
             "Onderverdeling": [
                 {
                     "Naam": "Diazepam",
+                    "Rijveiligheid": "Categorie 3",
                     "Indicaties-list": ["Afbouwen diazepines", "Serotonerg syndroom", "Koortsconvulsies", "Epileptisch insult"]
                 },
                 {
-                    "Naam": "Oxazepam"
+                    "Naam": "Oxazepam",
+                    "Rijveiligheid": "Categorie 3"
                 },
                 {
                     "Naam": "Temazepam",
+                    "Rijveiligheid": "Categorie 3",
                     "Indicaties-list": ["Slaapstoornissen"]
                 },
                 {
                     "Naam": "Lorazepam",
+                    "Rijveiligheid": "Categorie 3",
                     "Indicaties-list": ["Gegeneraliseerde angststoornissen"]
                 }
             ]
@@ -1748,6 +1766,7 @@
             "Onderverdeling": [
                 {
                     "Naam": "Carbamazepine",
+                    "Rijveiligheid": "Categorie 2",
                     "Indicaties-list": ["Epilepsie", "Neuralgie", "Diabetes insipidus", "BPD"],
                     "Zwangerschap": ["Risico"],
                     "Enzym": [["CYP2C9", "CYP3A4"], "Inducer"],
@@ -1755,6 +1774,7 @@
                 },
                 {
                     "Naam": "Fenytoïne",
+                    "Rijveiligheid": "Categorie 3",
                     "Indicaties-list": ["Epilepsie", "Aritmieën"],
                     "Enzym": [["CYP2C9", "CYP3A4"], "Inducer"],
                     "Voorschrijven": "True"
@@ -1824,7 +1844,8 @@
                     "Naam": "Triptanen",
                     "Onderverdeling": [
                         {
-                            "Naam": "Sumatriptan"
+                            "Naam": "Sumatriptan",
+                            "Rijveiligheid": "Categorie 2"
                         }
                     ]
                 }

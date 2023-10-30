@@ -285,6 +285,21 @@ var page_recognise =`
             </div>
 
         </div>
+
+        <div class="card" onclick="startLevel(16)">
+
+            <div class="bubble">
+                <img src="./Images/Interactions.png">
+            </div>
+
+            <div class="text-right">
+
+                <H1> Rijveiligheid </H1>
+                <p> & how not to hit others </p>
+
+            </div>
+
+        </div>
 `
 
 var page_do =`
@@ -615,7 +630,7 @@ function prepareQuestions(level) {
 
     };
 
-    if (level == 4 || level == 8 || level == 5 || level == 7 || level == 9 || level == 10) {
+    if (level == 4 || level == 8 || level == 5 || level == 7 || level == 9 || level == 10 || level == 16) {
 
         keys = Object.keys(content_dict)
 
@@ -665,6 +680,20 @@ function prepareQuestions(level) {
                     temp_temp_question_array.push({"Question": question_string, "Answer": "Nee"})
 
                 }
+
+            } else if (level == 16) {
+
+                if (Object.keys(content_dict[keys[i]]).includes("Rijveiligheid")) {
+                    
+                    question_string = "Binnen welke rijveiligheidscategorie valt " + current + "?";
+                    temp_temp_question_array.push({"Question": question_string, "Answer": content_dict[keys[i]].Rijveiligheid})
+
+                } else if (terminals_array.includes(current) && Math.random() > 0.7) {
+
+                    question_string = "Binnen welke rijveiligheidscategorie valt " + current + "?";
+                    temp_temp_question_array.push({"Question": question_string, "Answer": "Categorie 0"})
+
+                };
 
             } else if (level == 10) {
 
@@ -779,6 +808,18 @@ function prepareQuestions(level) {
                     temp_temp_question_array.push({"Question": question_string, "Answer": "Onbekend"})
 
                 }; 
+
+                if (Object.keys(content_dict[child]).includes("Rijveiligheid")) {
+                    
+                    question_string = "Binnen welke rijveiligheidscategorie valt " + child + "?";
+                    temp_temp_question_array.push({"Question": question_string, "Answer": content_dict[child].Rijveiligheid})
+
+                } else if (terminals_array.includes(child) && Math.random() > 0.7) {
+
+                    question_string = "Binnen welke rijveiligheidscategorie valt " + child + "?";
+                    temp_temp_question_array.push({"Question": question_string, "Answer": "Categorie 0"})
+
+                };
                 
                 if (Object.keys(content_dict[child]).includes("Enzym")) {
                 
