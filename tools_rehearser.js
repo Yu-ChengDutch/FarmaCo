@@ -645,7 +645,7 @@ function prepareQuestions(level) {
 
     };
 
-    if (level == 4 || level == 8 || level == 5 || level == 7 || level == 9 || level == 10 || level == 16) {
+    if (level == 4 || level == 8 || level == 5 || level == 7 || level == 18 || level == 9 || level == 10 || level == 16) {
 
         keys = Object.keys(content_dict)
 
