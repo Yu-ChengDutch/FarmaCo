@@ -726,10 +726,12 @@ function prepareQuestions(level) {
                 question_string_middle = " ";
                 temp_temp_question_array.push({"Question": question_string, "Answer": parent });
 
-                if (level == 15) {
+                if (level == 15 && Object.keys(content_dict[child]).includes("Interacties")) {
 
-                    if (terminals_array.includes(child)) {
-                        question_string = "Het tegelijk nemen van " + child + " en " + current_interaction.Interactant + " geeft risico op: ";
+                    current_interaction = shuffle(content_dict[child].Interacties)[0]
+
+                    if (terminals_array.includes(current)) {
+                        question_string = "Het tegelijk nemen van " + current + " en " + current_interaction.Interactant + " geeft risico op: ";
                         temp_temp_question_array.push({"Question": question_string, "Answer": current_interaction.Risico });
                     } else {
 
@@ -739,6 +741,7 @@ function prepareQuestions(level) {
                         temp_temp_question_array.push({"Question": question_string, "Answer": current_interaction.Risico });
                         temp_temp_question_array.push(ancestryQuestion(current_child));
                     }
+
                 };
                 
                 if (Object.keys(content_dict[child]).includes("Voorschrijven")) {
