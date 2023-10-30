@@ -286,6 +286,21 @@ var page_recognise =`
 
         </div>
 
+        <div class="card" onclick="startLevel(18)">
+
+            <div class="bubble">
+                <img src="./Images/Interactions.png">
+            </div>
+
+            <div class="text-right">
+
+                <H1> Werkingsduur </H1>
+                <p> & how to last longer </p>
+
+            </div>
+
+        </div>
+
         <div class="card" onclick="startLevel(16)">
 
             <div class="bubble">
@@ -709,6 +724,15 @@ function prepareQuestions(level) {
 
                 }
 
+            } else if (level == 18) {
+
+                if (Object.keys(content_dict[keys[i]]).includes("Werkingsduur")) {
+                    
+                    question_string = "Wat is de werkingsduur van " + current + "?";
+                    temp_temp_question_array.push({"Question": question_string, "Answer": content_dict[keys[i]].Werkingsduur})
+
+                };
+
             };
             
             if (Math.random() > 0.9 && temp_temp_question_array.length > 0) {
@@ -835,7 +859,14 @@ function prepareQuestions(level) {
                     question_string = "Zijn enzymen van belang in het voorschrijven van " + child + "?";
                     temp_temp_question_array.push({"Question": question_string, "Answer": "Nee"})
 
-                }; 
+                };
+                
+                if (Object.keys(content_dict[keys[i]]).includes("Werkingsduur")) {
+                    
+                    question_string = "Wat is de werkingsduur van " + current + "?";
+                    temp_temp_question_array.push({"Question": question_string, "Answer": content_dict[keys[i]].Werkingsduur})
+
+                };
 
                 if (Object.keys(content_dict[child]).includes("Bijwerkingen")) {
 

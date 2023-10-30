@@ -9,6 +9,7 @@
                     "Naam": "Paracetamol",
                     "Indicaties-list": ["Eerste stap bij nociceptieve pijn"],
                     "Zwangerschap": ["Meest veilig"],
+                    "Werkingsduur": "Uren",
                     "Enzym": ["CYP2E1", "Substraat", "Toxisch"],
                     "Bijwerkingen": [
                         {
@@ -109,17 +110,21 @@
                     "Onderverdeling": [
                         {
                             "Naam": "Diclofenac",
+                            "Werkingsduur": "Uren",
                             "Zwangerschap": ["Waarschijnlijk veilig"]
                         },
                         {
-                            "Naam": "Naproxen"
+                            "Naam": "Naproxen",
+                            "Werkingsduur": "Etmaal"
                         },
                         {
                             "Naam": "Ibuprofen",
+                            "Werkingsduur": "Uren",
                             "Zwangerschap": ["Waarschijnlijk veilig", "1e en 2e trimester"]
                         },
                         {
                             "Naam": "Acetylsalicylzuur",
+                            "Werkingsduur": "Minuten",
                             "Zwangerschap": ["Meest veilig"],
                             "Bijwerkingen": [
                                 {
@@ -192,6 +197,7 @@
                             "Onderverdeling": [
                                 {
                                     "Naam": "Morfine",
+                                    "Werkingsduur": "Uren",
                                     "Effect": ["Analgesie", "Anxiolyse"],
                                     "Klaring": "Renaal",
                                     "Rijveiligheid": "Categorie 3",
@@ -204,6 +210,7 @@
                                 },
                                 {
                                     "Naam": "Oxycodon",
+                                    "Werkingsduur": "Uren",
                                     "Rijveiligheid": "Categorie 2",
                                     "Mechanisme": ["Aselectieve Mu-, Kappa- en Delta-opioïdreceptor agonist"]
                                 }
@@ -214,6 +221,7 @@
                             "Onderverdeling": [
                                 {
                                     "Naam": "Tramadol",
+                                    "Werkingsduur": "Uren",
                                     "Rijveiligheid": "Categorie 3",
                                     "Indicaties-list": ["Derde stap (additie) bij nociceptieve pijn"],
                                     "Klaring": "Renaal",
@@ -229,6 +237,7 @@
                                 },
                                 {
                                     "Naam": "Codeïne",
+                                    "Werkingsduur": "Uren",
                                     "Rijveiligheid": "Categorie 2",
                                     "Klaring": "Renaal",
                                     "Enzym": ["CYP2D6", "Substraat"],
@@ -365,11 +374,13 @@
                                     "Onderverdeling": [
                                         {
                                             "Naam": "Acetylsalicylzuur",
+                                            "Werkingsduur": "Dagen",
                                             "Mechanisme": ["Inhibeert irreversibel de vorming van tromboxaan A2", "Inhibeert vasoconstrictie en trombocytenaggregatie"],
                                             "Indicaties-list": ["Primaire preventie bij arterieel vaatlijden", "Secundaire preventie bij arterieel vaatlijden", "2e keus na TIA/CVA"]
                                         },
                                         {
                                             "Naam": "Clopidogrel",
+                                            "Werkingsduur": "Uren",
                                             "Bijwerkingen": [
                                                 {
                                                     "Bijwerking": "Hemorragie"
@@ -397,6 +408,7 @@
                                     "Onderverdeling": [
                                         {
                                             "Naam": "Ticagrelor",
+                                            "Werkingsduur": "Uren",
                                             "Mechanisme": ["Blokkeert reversibel de P2Y12 receptor", "Inhibitie van plaatjesactivatie en aggregatie"],
                                             "Indicaties-list": ["Additie bij acuut coronair syndroom"],
                                             "Bijwerkingen": [
@@ -415,7 +427,8 @@
                                             ]
                                         },
                                         {
-                                            "Naam": "Dipyridiamol",                                            
+                                            "Naam": "Dipyridiamol",  
+                                            "Werkingsduur": "Uren",                                          
                                             "Effect": ["Trombocytenaggregatieremming", "Vasodilatatie"],
                                             "Indicaties-list": ["Additie TIA/CVA"],
                                             "Bijwerkingen": [
@@ -480,10 +493,12 @@
                             "Onderverdeling": [
                                 {
                                     "Naam": "Acenocoumarol",
+                                    "Werkingsduur": "Uren",
                                     "Zwangerschap": ["Risico"]
                                 },
                                 {
                                     "Naam": "Fenprocoumon",
+                                    "Werkingsduur": "Dagen",
                                     "Zwangerschap": ["Risico"]
                                 }
                             ]
@@ -546,13 +561,13 @@
                                     "Onderverdeling": [
                                         {
                                             "Naam": "Nadroparine",
+                                            "Werkingsduur": "Uren",
+                                            "Klaring": "Renaal",
                                             "Zwangerschap": ["Meest veilig"]
                                         },
                                         {
-                                            "Naam": "Fraxiparine"
-                                        },
-                                        {
-                                            "Naam": "Enoxaparine"
+                                            "Naam": "Enoxaparine",
+                                            "Werkingsduur": "Uren"
                                         }
                                     ]
                                 }
@@ -579,6 +594,8 @@
                                     "Onderverdeling": [
                                         {
                                             "Naam": "Dabigatran",
+                                            "Werkingsduur": "Etmaal",
+                                            "Klaring": "Renaal",
                                             "Mechanisme": ["Bindt direct en reversibel aan stollingsfactor IIa"],
                                             "Interacties": [
                                                 {
@@ -606,14 +623,17 @@
                                     ],
                                     "Onderverdeling": [
                                         {
-                                            "Naam": "Apixaban"
+                                            "Naam": "Apixaban",
+                                            "Werkingsduur": "Etmaal"
                                         },
                                         {
                                             "Naam": "Rivaroxaban",
+                                            "Werkingsduur": "Uren",
                                             "Klaring": "Renaal"
                                         },
                                         {
-                                            "Naam": "Edoxaban"
+                                            "Naam": "Edoxaban",
+                                            "Werkingsduur": "Etmaal"
                                         }
                                     ]
                                 }                        
@@ -694,10 +714,12 @@
                                     ],
                                     "Onderverdeling": [
                                         {
-                                            "Naam": "Chloortalidon"
+                                            "Naam": "Chloortalidon",
+                                            "Werkingsduur": "Dagen"
                                         },
                                         {
-                                            "Naam": "Hydrochloorthiazide"
+                                            "Naam": "Hydrochloorthiazide",
+                                            "Werkingsduur": "Etmaal"
                                         }
                                     ]
                                 },
@@ -736,10 +758,12 @@
                                     "Mechanisme": ["Na+/K+/2Cl- cotransport inhibitie in de lis van Henle", "Verhoogd Na+ aanbod in de distale tubulus en corticale verzamelbuis", "Na+/K+-countertransport activatie", "Verhoogde K+ uitscheiding"],
                                     "Onderverdeling": [
                                         {
-                                            "Naam": "Furosemide"
+                                            "Naam": "Furosemide",
+                                            "Werkingsduur": "Uren"
                                         },
                                         {
-                                            "Naam": "Bumetanide"
+                                            "Naam": "Bumetanide",
+                                            "Werkingsduur": "Uren"
                                         }
                                     ]
                                 },
@@ -762,6 +786,7 @@
                                     "Onderverdeling": [
                                         {
                                             "Naam": "Spironolacton",
+                                            "Werkingsduur": "Uren",
                                             "Klaring": "Renaal",
                                             "Indicaties-list": ["I.c.m. lis- en/of thiazidediuretica bij ernstig hartfalen"],
                                             "Mechanisme": ["Competitieve antagonist van aldosteron", "Remming van de Na+/K+ countertransporter in de corticale verzamelbuis", "Verlaagde K+ excretie"],
@@ -782,6 +807,7 @@
                                         },
                                         {
                                             "Naam": "Triamtereen",
+                                            "Werkingsduur": "Uren",
                                             "Klaring": "Renaal",
                                             "Mechanisme": ["Remming van de corticale Na+ kanalen in de corticale verzamelbuis", "Verlaagd Na+ aanbod", "Verlaagde K+ excretie"]
                                         }
@@ -834,11 +860,13 @@
                                             "Onderverdeling": [
                                                 {
                                                     "Naam": "Metoprolol",
+                                                    "Werkingsduur": "Uren",
                                                     "Rijveiligheid": "Categorie 1",
                                                     "Zwangerschap": ["Waarschijnlijk veilig"]
                                                 },
                                                 {
                                                     "Naam": "Atenolol",
+                                                    "Werkingsduur": "Uren",
                                                     "Klaring": "Renaal"                                                    
                                                 }
                                             ]
@@ -866,7 +894,8 @@
                                             "Onderverdeling": [
                                                 {
                                                     "Naam": "Sotalol",
-                                                    
+                                                    "Werkingsduur": "Etmaal",
+                                                    "Klaring": "Renaal",
                                                     "Bijwerkingen": [
                                                         {
                                                             "Bijwerking": "Ritmestoornissen",
@@ -892,7 +921,8 @@
                                                     ]
                                                 },
                                                 {
-                                                    "Naam": "Propanolol"
+                                                    "Naam": "Propranolol",
+                                                    "Werkingsduur": "Uren"
                                                 },
                                                 {
                                                     "Naam": "Labetalol"
@@ -924,6 +954,7 @@
                                     "Onderverdeling": [
                                         {
                                             "Naam": "Tamsulosine",
+                                            "Werkingsduur": "Etmaal",
                                             "Indicaties-list": ["LUTS bij benigne prostaathyperplasie"]
                                         }
                                     ]
@@ -970,10 +1001,12 @@
                                     ],
                                     "Onderverdeling": [
                                         {
-                                            "Naam": "Amlodipine"
+                                            "Naam": "Amlodipine",
+                                            "Werkingsduur": "Dagen"
                                         },
                                         {
-                                            "Naam": "Nifedipine"
+                                            "Naam": "Nifedipine",
+                                            "Werkingsduur": "Uren"
                                         }
                                     ]
                                 },
@@ -998,6 +1031,7 @@
                                     "Onderverdeling": [
                                         {
                                             "Naam": "Verapamil",
+                                            "Werkingsduur": "Uren",
                                             "Enzym": ["CYP3A4", "Inhibitor"],
                                             "Bijwerkingen": [
                                                 {
@@ -1007,6 +1041,7 @@
                                         },
                                         {
                                             "Naam": "Diltiazem",
+                                            "Werkingsduur": "Uren",
                                             "Enzym": ["CYP3A4", "Inhibitor"]
                                         }
                                     ]
@@ -1028,7 +1063,7 @@
                                 },
                                 {
                                     "Interactant": ["Diuretica"],
-                                    "Risico": "Hypotensie",
+                                    "Risico": "First-dose hypotension",
                                     "Mechanisme": "Cummulatief effect"
                                 },
                                 {
@@ -1080,13 +1115,16 @@
                                     "Onderverdeling": [
                                         {
                                             "Naam": "Enalapril",
+                                            "Werkingsduur": "Uren",
                                             "Zwangerschap": ["Risico", "2e en 3e trimester"]
                                         },
                                         {
-                                            "Naam": "Lisinopril"
+                                            "Naam": "Lisinopril",
+                                            "Werkingsduur": "Etmaal"
                                         },
                                         {
-                                            "Naam": "Captopril"
+                                            "Naam": "Captopril",
+                                            "Werkingsduur": "Uren"
                                         }
                                     ]
                                 },
@@ -1110,10 +1148,12 @@
                                     ],
                                     "Onderverdeling": [
                                         {
-                                            "Naam": "Losartan"
+                                            "Naam": "Losartan",
+                                            "Werkingsduur": "Uren"
                                         },
                                         {
-                                            "Naam": "Valsartan"
+                                            "Naam": "Valsartan",
+                                            "Werkingsduur": "Uren"
                                         }
                                     ]
                                 }
@@ -1145,6 +1185,7 @@
                     "Onderverdeling": [
                         {
                             "Naam": "Digoxine",
+                            "Werkingsduur": "Dagen",
                             "Bijwerkingen": [
                                 {
                                     "Bijwerking": "Duizeligheid"
@@ -1174,10 +1215,12 @@
                     "Onderverdeling": [
                         {
                             "Naam": "Isosorbide-dinitraat",
+                            "Werkingsduur": "Uren",
                             "Indicaties-list": ["Oromucosaal bij acute angina pectoris"]
                         },
                         {
                             "Naam": "Isosorbide-mononitraat",
+                            "Werkingsduur": "Uren",
                             "Indicaties-list": ["Oraal als onderhoudsbehandeling bij angina pectoris of astma cardiale"]
                         }
                     ],
@@ -1251,6 +1294,7 @@
             "Onderverdeling": [
                 {
                     "Naam": "Omeprazol",
+                    "Werkingsduur": "Dagen",
                     "Indicaties": [
                         {
                             "Indicatie": "Maagbescherming",
@@ -1265,6 +1309,7 @@
                 },
                 {
                     "Naam": "Pantoprazol",
+                    "Werkingsduur": "Dagen",
                     "Indicaties": [
                         {
                             "Indicatie": "Maagbescherming",
@@ -1294,6 +1339,7 @@
             "Onderverdeling": [
                 {
                     "Naam": "Atorvastatine",
+                    "Werkingsduur": "Uren",
                     "Enzym": ["CY3A4", "Substraat", "Actief"],
                     "Indicaties": [
                         {
@@ -1308,6 +1354,7 @@
                 },
                 {
                     "Naam": "Simvastatine",
+                    "Werkingsduur": "Uren",
                     "Enzym": ["CY3A4", "Substraat", "Actief"],
                     "Klaring": "Renaal",
                     "Indicaties": [
@@ -1358,6 +1405,7 @@
             "Onderverdeling": [
                 {
                     "Naam": "Metformine",
+                    "Werkingsduur": "Uren",
                     "Klaring": "Renaal",
                     "Mechanisme": ["Remt glucose productie in de lever", "Verlaagt perifere gevoeligheid voor insuline"],
                     "Indicaties-list": ["Diabetes Mellitus II"],
@@ -1381,6 +1429,7 @@
                 },
                 {
                     "Naam": "Glucagon",
+                    "Werkingsduur": "Minuten",
                     "Indicaties-list": ["Ernstige hypoglykemie"]
                 },
                 {
@@ -1414,7 +1463,8 @@
                             "Naam": "Kortwerkende SU-derivaten",
                             "Onderverdeling": [
                                 {
-                                    "Naam": "Tolbutamide"
+                                    "Naam": "Tolbutamide",
+                                    "Werkingsduur": "Uren"
                                 },
                                 {
                                     "Naam": "Gliclazide",
@@ -1426,10 +1476,12 @@
                             "Naam": "Langwerkende SU-derivaten",
                             "Onderverdeling": [
                                 {
-                                    "Naam": "Glimepride"
+                                    "Naam": "Glimepiride",
+                                    "Werkingsduur": "Uren"
                                 },
                                 {
-                                    "Naam": "Glibenclamide"
+                                    "Naam": "Glibenclamide",
+                                    "Werkingsduur": "Etmaal"
                                 }
                             ]
                         }
@@ -1482,7 +1534,8 @@
                             "Naam": "Kortwerkende insuline",
                             "Onderverdeling": [
                                 {
-                                    "Naam": "Humanline regular"
+                                    "Naam": "Humuline regular",
+                                    "Werkingsduur": "Minuten"
                                 }
                             ]
                         },
@@ -1490,7 +1543,8 @@
                             "Naam": "Snelwerkende insuline",
                             "Onderverdeling": [
                                 {
-                                    "Naam": "Aspart"
+                                    "Naam": "Aspart",
+                                    "Werkingsduur": "Minuten"
                                 }
                             ]
                         },
@@ -1498,7 +1552,8 @@
                             "Naam": "Langwerkende insuline",
                             "Onderverdeling": [
                                 {
-                                    "Naam": "Glargine"
+                                    "Naam": "Glargine",
+                                    "Werkingsduur": "Etmaal"
                                 }
                             ]
                         }
@@ -1550,6 +1605,9 @@
                             "Bijwerking": "Anticholinerge bijwerkingen"
                         },
                         {
+                            "Bijwerking": "Obstipatie"
+                        },
+                        {
                             "Bijwerking": "Sedatie"
                         },
                         {
@@ -1571,11 +1629,13 @@
                     "Onderverdeling": [
                         {
                             "Naam": "Amitriptyline",
+                            "Werkingsduur": "Dagen",
                             "Rijveiligheid": "Categorie 3",
                             "Mechanisme": ["Remt heropname van serotonine en noradrenaline", "Toegenomen beschikbaarheid serotonine en noradrenaline"]
                         },
                         {
                             "Naam": "Nortriptyline",
+                            "Werkingsduur": "Dagen",
                             "Rijveiligheid": "Categorie 2",
                             "Mechanisme": ["Remt heropname van noradrenaline, en in mindere mate serotonine", "Toegenomen beschikbaarheid noradrenaline"]
                         }
@@ -1618,25 +1678,32 @@
                         },
                         {
                             "Bijwerking": "Hyponatriëmie"
+                        },
+                        {
+                            "Bijwerking": "SIADH"
                         }
                     ],
                     "Onderverdeling": [
                         {
                             "Naam": "Fluoxetine",
+                            "Werkingsduur": "Dagen",
                             "Rijveiligheid": "Categorie 1"
                         },
                         {
                             "Naam": "Paroxetine",
+                            "Werkingsduur": "Dagen",
                             "Rijveiligheid": "Categorie 1"
                         },
                         {
                             "Naam": "Citalopram",
+                            "Werkingsduur": "Dagen",
                             "Rijveiligheid": "Categorie 1"
                         }
                     ]
                 },
                 {
                     "Naam": "Lithium",
+                    "Werkingsduur": "Dagen",
                     "Rijveiligheid": "Categorie 2",
                     "Klaring": "Renaal",
                     "Voorschrijven": "True",
@@ -1704,20 +1771,24 @@
             "Onderverdeling": [
                 {
                     "Naam": "Diazepam",
+                    "Werkingsduur": "Dagen",
                     "Rijveiligheid": "Categorie 3",
                     "Indicaties-list": ["Afbouwen diazepines", "Serotonerg syndroom", "Koortsconvulsies", "Epileptisch insult"]
                 },
                 {
                     "Naam": "Oxazepam",
+                    "Werkingsduur": "Etmaal",
                     "Rijveiligheid": "Categorie 3"
                 },
                 {
                     "Naam": "Temazepam",
+                    "Werkingsduur": "Uren",
                     "Rijveiligheid": "Categorie 3",
                     "Indicaties-list": ["Slaapstoornissen"]
                 },
                 {
                     "Naam": "Lorazepam",
+                    "Werkingsduur": "Etmaal",
                     "Rijveiligheid": "Categorie 3",
                     "Indicaties-list": ["Gegeneraliseerde angststoornissen"]
                 }
@@ -1728,6 +1799,7 @@
             "Onderverdeling": [
                 {
                     "Naam": "Flumazenil",
+                    "Werkingsduur": "Uren",
                     "Indicaties-list": ["Ademhalingsdepressie bij benzodiazepines"]
                 },
                 {
@@ -1739,12 +1811,14 @@
                     "Onderverdeling": [
                         {
                             "Naam": "Naloxon",
+                            "Werkingsduur": "Uren",
                             "Indicaties-list": ["Overdosis opiaten"]
                         }
                     ]
                 },
                 {
                     "Naam": "N-acetyl-cysteïne",
+                    "Werkingsduur": "Etmaal",
                     "Indicaties-list": ["Paracetamolintoxicatie"]
                 },
                 {
@@ -1851,7 +1925,8 @@
                     "Naam": "Corticosteroïden"
                 },
                 {
-                    "Naam": "Methotrexaat"
+                    "Naam": "Methotrexaat",
+                    "Voorschrijven": "True"
                 }
             ]
         },
@@ -1894,6 +1969,9 @@
                                             "Bijwerkingen": [
                                                 {
                                                     "Bijwerking": "Overgevoeligheidsreacties"
+                                                },
+                                                {
+                                                    "Bijwerking": "Hemolytische anemie"
                                                 },
                                                 {
                                                     "Bijwerking": "Gastro-intestinale bijwerkingen"
@@ -2240,6 +2318,7 @@
                                     "Onderverdeling": [
                                         {
                                             "Naam": "Ketoconazol",
+                                            "Voorschrijven": "True", 
                                             "Enzym": ["CYP3A4", "Inhibitor"]
                                         },
                                         {
