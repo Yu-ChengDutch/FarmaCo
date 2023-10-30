@@ -541,7 +541,7 @@ function prepareQuestions(level) {
                         temp_temp_question_array.push({"Question": question_string, "Answer": current_interaction.Risico });
                     } else {
 
-                        current_child = shuffle(ancestry_dict[current].Children)[Math.floor]
+                        current_child = shuffle(ancestry_dict[current].Children)[0]
 
                         question_string = "Het tegelijk nemen van bijv. " + current_child + " en " + current_interaction.Interactant + " geeft risico op: ";
                         temp_temp_question_array.push({"Question": question_string, "Answer": current_interaction.Risico });
@@ -801,6 +801,8 @@ function prepareQuestions(level) {
 
                     var current_side_effects = recursiveSideEffects(child);
                     var current_string = "";
+
+                    console.log(current_side_effects);
 
                     if (current_side_effects.length > 0) {
 
