@@ -289,7 +289,7 @@ var page_recognise =`
 
 var page_do =`
 
-        <div class="inset"> <p> Individual topics </p> </div>
+        <div class="inset"> <p> Preparation </p> </div>
 
         <div class="card" onclick="startLevel(12)">
 
@@ -316,6 +316,23 @@ var page_do =`
 
                 <H1> Minor topics </H1>
                 <p> All-in-one </p>
+
+            </div>
+
+        </div>
+
+        <div class="inset"> <p> Final test </p> </div>
+
+        <div class="card" onclick="startLevel(15)">
+
+            <div class="bubble">
+                <img src="./Images/Interactions.png">
+            </div>
+
+            <div class="text-right">
+
+                <H1> Final test </H1>
+                <p> Truly all-in-one </p>
 
             </div>
 
@@ -554,13 +571,7 @@ function prepareQuestions(level) {
 
             if (Object.keys(content_dict[keys[i]]).includes("Bijwerkingen")) {
 
-                var current_side_effects = [];
-
-                for (var j = 0; j < content_dict[keys[i]].Bijwerkingen.length; j++) {
-
-                    current_side_effects.push(content_dict[keys[i]].Bijwerkingen[j].Bijwerking)   
-
-                };
+                var current_side_effects = recursiveSideEffects(keys[i]);
 
                 if (level == 11) {
 
@@ -573,33 +584,6 @@ function prepareQuestions(level) {
                     temp_temp_question_array.push({"Question": question_string, "Answer": current});
 
                 } else {
-
-                    par_obj = ancestry_dict[current].Parent;
-
-                    if (Object.keys(content_dict[par_obj]).includes("Bijwerkingen")) {
-
-                        for (var j = 0; j < content_dict[par_obj].Bijwerkingen.length; j++) {
-
-                            current_side_effects.push(content_dict[par_obj].Bijwerkingen[j].Bijwerking)   
-        
-                        };
-
-                        console.log(par_obj);
-
-                        if (Object.keys(ancestry_dict[par_obj]).includes("Parent")) {
-
-                            if (Object.keys(content_dict[ancestry_dict[par_obj].Parent]).includes("Bijwerkingen")) {
-
-                                for (var j = 0; j < (content_dict[ancestry_dict[par_obj].Parent]).Bijwerkingen.length; j++) {
-        
-                                    current_side_effects.push((content_dict[ancestry_dict[par_obj].Parent]).Bijwerkingen[j].Bijwerking)   
-                
-                                };
-        
-                            };
-                        };
-
-                    };
 
                     if (terminals_array.includes(current)) {
                         current_string = current;
@@ -627,7 +611,7 @@ function prepareQuestions(level) {
 
             };
 
-        }
+        };
 
     };
 
@@ -710,7 +694,7 @@ function prepareQuestions(level) {
 
     };
 
-    if (level == 14) {
+    if (level == 14 || level == 15) {
 
         var local_ancestry_dict = ancestry_dict;
 
@@ -722,11 +706,41 @@ function prepareQuestions(level) {
             temp_temp_question_array = [];
 
             if (parent != base) {
-    
+
+                if (level == 15) {
+
+                    if (Math.random() > 0.5 && Object.keys(content_dict[child]).includes("Indicaties-list")) {
+
+                        question_string = "Welk" + question_string_middle + "medicijn is bruikbaar voor de volgende symptomen: " + (content_dict[child]["Indicaties-list"]).join(", ");
+                        temp_temp_question_array.push({"Question": question_string, "Answer": child });
+        
+                    } else if (Object.keys(content_dict[child]).includes("Mechanisme")) {
+                    
+                        question_string = "Welk" + question_string_middle + "medicijn werk op de volgende manier: " + (content_dict[child].Mechanisme).join(", ");
+                        temp_temp_question_array.push({"Question": question_string, "Answer": child });
+        
+                    };
+                };   
+
                 question_string = "Wat is de klasse van " + child;
                 question_string_middle = " ";
                 temp_temp_question_array.push({"Question": question_string, "Answer": parent });
 
+                if (level == 15) {
+
+                    if (terminals_array.includes(child)) {
+                        question_string = "Het tegelijk nemen van " + child + " en " + current_interaction.Interactant + " geeft risico op: ";
+                        temp_temp_question_array.push({"Question": question_string, "Answer": current_interaction.Risico });
+                    } else {
+
+                        current_child = shuffle(ancestry_dict[current].Children)[Math.floor]
+
+                        question_string = "Het tegelijk nemen van bijv. " + current_child + " en " + current_interaction.Interactant + " geeft risico op: ";
+                        temp_temp_question_array.push({"Question": question_string, "Answer": current_interaction.Risico });
+                        temp_temp_question_array.push(ancestryQuestion(current_child));
+                    }
+                };
+                
                 if (Object.keys(content_dict[child]).includes("Voorschrijven")) {
                     
                     question_string = "Moet bij " + child + " de reden van voorschrijven worden vermeld? Ja of nee";
@@ -780,6 +794,27 @@ function prepareQuestions(level) {
 
                 }; 
 
+                var current_side_effects = recursiveSideEffects(child);
+                var current_string = "";
+
+                if (current_side_effects.length > 0) {
+
+                    if (terminals_array.includes(child)) {
+                        current_string = child;
+                    } else {
+                        current_string = child + " zoals bijv. " + shuffle(ancestry_dict[child].Children)[0]
+                    }
+
+                    if (current_side_effects.length > 3) {
+                        question_string = current_string + " heeft tenminste " + (current_side_effects.length).toString() + " potentiële bijwerkingen. Noem er 3.";
+                        temp_temp_question_array.push({"Question": question_string, "Answer": current_side_effects, "Nr_ans": 3});                    
+                    } else {
+                        question_string = current_string + " heeft tenminste " + (current_side_effects.length).toString() + " potentiële bijwerkingen. Noem ze.";
+                        temp_temp_question_array.push({"Question": question_string, "Answer": current_side_effects, "Nr_ans": current_side_effects.length});
+                    }; 
+
+                };
+
                 temp_question_array.push(temp_temp_question_array);
 
             };
@@ -800,6 +835,51 @@ function setQuestions(){
     document.getElementById('question-title').innerText = "0/" + question_array.length;
     document.getElementById('question-description').innerText = question_array[0].Question
     document.getElementById('remark-card').innerText = "Please enter the mnemonic phrase"
+
+};
+
+function recursiveSideEffects(current) {
+
+    if (Object.keys(content_dict[current]).includes("Bijwerkingen")) {
+
+        var current_side_effects = [];
+
+        for (var j = 0; j < content_dict[current].Bijwerkingen.length; j++) {
+
+            current_side_effects.push(content_dict[current].Bijwerkingen[j].Bijwerking)   
+
+        };
+
+        par_obj = ancestry_dict[current].Parent;
+
+        if (Object.keys(content_dict[par_obj]).includes("Bijwerkingen")) {
+
+            for (var j = 0; j < content_dict[par_obj].Bijwerkingen.length; j++) {
+
+                current_side_effects.push(content_dict[par_obj].Bijwerkingen[j].Bijwerking)   
+
+            };
+
+            console.log(par_obj);
+
+            if (Object.keys(ancestry_dict[par_obj]).includes("Parent")) {
+
+                if (Object.keys(content_dict[ancestry_dict[par_obj].Parent]).includes("Bijwerkingen")) {
+
+                    for (var j = 0; j < (content_dict[ancestry_dict[par_obj].Parent]).Bijwerkingen.length; j++) {
+
+                        current_side_effects.push((content_dict[ancestry_dict[par_obj].Parent]).Bijwerkingen[j].Bijwerking)   
+    
+                    };
+
+                };
+            };
+
+        };                  
+
+    };
+
+    return current_side_effects;
 
 };
 
