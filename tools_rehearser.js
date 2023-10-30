@@ -328,6 +328,8 @@ var pages = {
     "Do": page_do
 };
 
+var trivial_answers = ["Ja", "Nee", "Substraat", "Inhibitor", "Inducer"];
+
 function toPage(page) {
     document.getElementById("main-container").innerHTML = pages[page];
 }
@@ -764,11 +766,19 @@ function prepareQuestions(level) {
                 if (Object.keys(content_dict[child]).includes("Enzym")) {
                 
                     enzym = content_dict[child].Enzym;
+
+                    question_string = "Zijn enzymen van belang in het voorschrijven van " + child + "?";
+                    temp_temp_question_array.push({"Question": question_string, "Answer": "Ja"});
     
                     question_string = "Het" + question_string_middle + "medicijn " + child + " werkt in op " + enzym[0] + ". Is het een enzyminducer, inhibitor of substraat?";
                     temp_temp_question_array.push({"Question": question_string, "Answer": enzym[1]});
                 
-                };
+                } else if (terminals_array.includes(child) && Math.random() > 0.8) {
+
+                    question_string = "Zijn enzymen van belang in het voorschrijven van " + child + "?";
+                    temp_temp_question_array.push({"Question": question_string, "Answer": "Nee"})
+
+                }; 
 
                 temp_question_array.push(temp_temp_question_array);
 
@@ -897,17 +907,17 @@ function checkMnemonicAnswer() {
             console.log("- - > Given answer: " + given_answer);
             console.log("- - > Right answer: " + correct_answer);
 
-            if (document.getElementById('remark-card').innerText != "Please repeat the mnemonic phrase again") {
+            if (document.getElementById('remark-card').innerText != "Please repeat the answer" && !trivial_answers.includes(correct_answer)) {
                 
-                document.getElementById('remark-card').innerText = "Please repeat the mnemonic phrase again";
+                document.getElementById('remark-card').innerText = "Please repeat the answer";
             
             } else {
 
-                document.getElementById('remark-card').innerText = "The right mnemonic is: " + correct_answer + ". You'll repeat this questions once more afterwards.";
+                document.getElementById('remark-card').innerText = "Het goede antwoord is: " + correct_answer + ". We zullen deze vraag later nogmaals herhalen.";
 
                 let local_question_array = question_array;
-                local_question_array.splice(intervalIndex(current_index, 4, local_question_array), 0, {"Question": ("Dit is een herhaling: " + question_array[current_index].Question), "Answer": question_array[current_index].Answer});
-                local_question_array.splice(intervalIndex(current_index, 12, local_question_array), 0, {"Question": ("Dit is een herhaling: " + question_array[current_index].Question), "Answer": question_array[current_index].Answer});
+                local_question_array.splice(intervalIndex(current_index, 4, local_question_array), 0, {"Question": ("Dit is de eerste herhaling: " + question_array[current_index].Question), "Answer": question_array[current_index].Answer});
+                local_question_array.splice(intervalIndex(current_index, 12, local_question_array), 0, {"Question": ("Dit is de tweede herhaling: " + question_array[current_index].Question), "Answer": question_array[current_index].Answer});
 
                 question_array = local_question_array;
                 console.log(question_array);
