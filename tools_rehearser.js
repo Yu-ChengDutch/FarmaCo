@@ -730,12 +730,12 @@ function prepareQuestions(level) {
 
                     current_interaction = shuffle(content_dict[child].Interacties)[0]
 
-                    if (terminals_array.includes(current)) {
-                        question_string = "Het tegelijk nemen van " + current + " en " + current_interaction.Interactant + " geeft risico op: ";
+                    if (terminals_array.includes(child)) {
+                        question_string = "Het tegelijk nemen van " + child + " en " + current_interaction.Interactant + " geeft risico op: ";
                         temp_temp_question_array.push({"Question": question_string, "Answer": current_interaction.Risico });
                     } else {
 
-                        current_child = shuffle(ancestry_dict[current].Children)[Math.floor]
+                        current_child = shuffle(ancestry_dict[child].Children)[Math.floor]
 
                         question_string = "Het tegelijk nemen van bijv. " + current_child + " en " + current_interaction.Interactant + " geeft risico op: ";
                         temp_temp_question_array.push({"Question": question_string, "Answer": current_interaction.Risico });
