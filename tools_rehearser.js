@@ -797,25 +797,28 @@ function prepareQuestions(level) {
 
                 }; 
 
-                var current_side_effects = recursiveSideEffects(child);
-                var current_string = "";
+                if (Object.keys(content_dict[child]).includes("Interacties")) {
 
-                if (current_side_effects.length > 0) {
+                    var current_side_effects = recursiveSideEffects(child);
+                    var current_string = "";
 
-                    if (terminals_array.includes(child)) {
-                        current_string = child;
-                    } else {
-                        current_string = child + " zoals bijv. " + shuffle(ancestry_dict[child].Children)[0]
-                    }
+                    if (current_side_effects.length > 0) {
 
-                    if (current_side_effects.length > 3) {
-                        question_string = current_string + " heeft tenminste " + (current_side_effects.length).toString() + " potentiële bijwerkingen. Noem er 3.";
-                        temp_temp_question_array.push({"Question": question_string, "Answer": current_side_effects, "Nr_ans": 3});                    
-                    } else {
-                        question_string = current_string + " heeft tenminste " + (current_side_effects.length).toString() + " potentiële bijwerkingen. Noem ze.";
-                        temp_temp_question_array.push({"Question": question_string, "Answer": current_side_effects, "Nr_ans": current_side_effects.length});
-                    }; 
+                        if (terminals_array.includes(child)) {
+                            current_string = child;
+                        } else {
+                            current_string = child + " zoals bijv. " + shuffle(ancestry_dict[child].Children)[0]
+                        }
 
+                        if (current_side_effects.length > 3) {
+                            question_string = current_string + " heeft tenminste " + (current_side_effects.length).toString() + " potentiële bijwerkingen. Noem er 3.";
+                            temp_temp_question_array.push({"Question": question_string, "Answer": current_side_effects, "Nr_ans": 3});                    
+                        } else {
+                            question_string = current_string + " heeft tenminste " + (current_side_effects.length).toString() + " potentiële bijwerkingen. Noem ze.";
+                            temp_temp_question_array.push({"Question": question_string, "Answer": current_side_effects, "Nr_ans": current_side_effects.length});
+                        }; 
+
+                    };
                 };
 
                 temp_question_array.push(temp_temp_question_array);
