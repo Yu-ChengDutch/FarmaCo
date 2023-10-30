@@ -702,6 +702,7 @@ function prepareQuestions(level) {
 
             child = Object.keys(local_ancestry_dict)[i];
             parent = local_ancestry_dict[child].Parent; 
+            question_string_middle = " ";
 
             temp_temp_question_array = [];
 
@@ -722,8 +723,7 @@ function prepareQuestions(level) {
                     };
                 };   
 
-                question_string = "Wat is de klasse van " + child;
-                question_string_middle = " ";
+                question_string = "Wat is de klasse van " + child;                
                 temp_temp_question_array.push({"Question": question_string, "Answer": parent });
 
                 if (level == 15 && Object.keys(content_dict[child]).includes("Interacties")) {
