@@ -766,9 +766,8 @@ function prepareQuestions(level) {
 
                         current_child = shuffle(ancestry_dict[child].Children)[0]
 
-                        question_string = "Het tegelijk nemen van bijv. " + current_child + " en " + current_interaction.Interactant + " geeft risico op: ";
+                        question_string = "Het tegelijk nemen van " + child + " zoals bijv. " + current_child + " en " + current_interaction.Interactant + " geeft risico op: ";
                         temp_temp_question_array.push({"Question": question_string, "Answer": current_interaction.Risico });
-                        temp_temp_question_array.push(ancestryQuestion(current_child));
                     }
 
                 };
@@ -814,10 +813,10 @@ function prepareQuestions(level) {
                     question_string = "Binnen welke rijveiligheidscategorie valt " + child + "?";
                     temp_temp_question_array.push({"Question": question_string, "Answer": content_dict[child].Rijveiligheid})
 
-                } else if (terminals_array.includes(child) && Math.random() > 0.7) {
+                } else if (terminals_array.includes(child) && Math.random() > 0.8) {
 
                     question_string = "Binnen welke rijveiligheidscategorie valt " + child + "?";
-                    temp_temp_question_array.push({"Question": question_string, "Answer": "Categorie 0"})
+                    temp_temp_question_array.push({"Question": question_string, "Answer": "0"})
 
                 };
                 
