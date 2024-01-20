@@ -116,7 +116,7 @@ var level_page= `
 
         <div class="question-input-card" id="question-input-card">             
 
-            <input type="button" class="button" id ="hint-button" value="X" onclick="checkMnemonicAnswer()">
+            <input type="button" class="button" id ="hint-button" value="X" onclick="giveHint()">
             <input type="button" class="button" id ="check-button" value="✓" onclick="checkMnemonicAnswer()">
 
         </div>   
@@ -127,7 +127,7 @@ var level_page= `
 
     <div id="remark-card">
             
-        <p id ="question-description"></p>
+        <p id ="question-remark"></p>
         
     </div>
 
@@ -1033,7 +1033,7 @@ function checkMnemonicAnswer() {
 
             }
 
-        } else if (given_answer.toLowerCase() == correct_answer.toString().toLowerCase() || correct_answer.includes(given_answer)) {
+        } else if (given_answer.toLowerCase() == correct_answer.toString().toLowerCase()) {
 
             console.log("- - > Correct!")
 
@@ -1148,6 +1148,88 @@ function inBetween(display_text) {
 
 };
 
+function startSymptoms() {
+
+    openFullscreen();
+    document.getElementsByTagName("BODY")[0].innerHTML = level_page;
+    setEnter();
+
+    fetch("./data_symptoms.json")
+
+    .then(function(response){
+        console.log("- > Symptom file found and accessed");
+        return response.json();
+    })
+    .then(function(data){
+
+        original_dictionary = data;
+        base = data.Naam;
+
+    })
+    .then(function(){
+        
+        console.log("- > Preparing components");
+
+        var explorable_array = [original_dictionary];
+        var temp_question_array = [];
+
+        var name_question = "What is the definition of ";
+        var def_question = "What symptom is defined as follows: ";
+
+        while (explorable_array.length > 0) {
+
+            explorable_item = explorable_array[0];
+
+            if (Object.keys(explorable_item).includes("Definition")) {
+
+                if (Math.random() > 0.5) {
+
+                    temp_question_array.push({"Question": name_question + explorable_item["Name"] + "?", "Answer": explorable_item["Definition"] });
+
+                } else {
+
+                    temp_question_array.push({"Question": def_question + explorable_item["Definition"] + "?", "Answer": explorable_item["Name"]});
+
+                }
+
+            };
+
+            if (Object.keys(explorable_item).includes("Subdivision")) {
+                
+                explorable_array = explorable_array.concat(explorable_item["Subdivision"]);
+
+            };
+
+            explorable_array.shift();
+
+        };
+
+        question_array = (shuffle(temp_question_array)).flat(1);
+
+    })
+    .then(function(){
+
+        console.log("-> Prepared questions")
+        console.log(question_array);
+
+        setQuestions(); 
+    });
+
+    /* Check */
+}
+
+function giveHint() {
+
+    console.log("- > Asked for hint")
+
+    indices = (document.getElementById('question-title').innerText).split("/")
+    current_index = indices[0];
+
+    correct_answer = question_array[current_index].Answer; 
+
+    document.getElementById('remark-card').innerText = correct_answer;
+};
+
 /***
  * 
  * Utilities: All utility functions are pushed to the bottom for saving space
@@ -1218,13 +1300,13 @@ function shuffle(array) {
 function resetButtons() {
     
     document.getElementById('question-input-card').innerHTML = 
-            
+    
     `
-    
-    <input type="text" id="text-field">
-    <input type="button" class="button" id ="check-button" value="Check" onclick="checkMnemonicAnswer()">
-    
-    `;
+    <input type="button" class="button" id ="hint-button" value="X" onclick="giveHint()">
+    <input type="button" class="button" id ="check-button" value="✓" onclick="checkMnemonicAnswer()">  
+    `
+
+    document.getElementById('text-field').value = "";
 
     setEnter();
 

@@ -285,6 +285,10 @@ a:hover, a:active {
         margin-top: 10vh;
     }
 
+    #remark-card {
+        text-align: center;
+    }
+
     .button {        
         background-color: white;
         height: 5vh;
