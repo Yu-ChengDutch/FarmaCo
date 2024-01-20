@@ -104,26 +104,31 @@ var level_page= `
 
     <script type="text/javascript" src="tools_rehearser.js"></script>
     
+    <div class="inset" id="question-inset"> <h1 id="question-title">Question 1</h1> </div>
+
     <div class = "question-card">
 
         <div class="question-title-card" onClick="backToStart()">
 
-            <h1 id="question-title">Question 1</h1>
-            <p id ="question-description">What is the name of this disease?</p>
+            <p id="question-description">What is the name of this disease?</p>
         
         </div>
 
-        <div class="question-input-card" id="question-input-card">
-            <input type="text" id="text-field">
-            <input type="button" class="button" id ="check-button" value="Check" onclick="checkMnemonicAnswer()"> 
-        </div>
+        <div class="question-input-card" id="question-input-card">             
 
-        <div id="remark-card">
+            <input type="button" class="button" id ="hint-button" value="X" onclick="checkMnemonicAnswer()">
+            <input type="button" class="button" id ="check-button" value="✓" onclick="checkMnemonicAnswer()">
+
+        </div>   
+
+        <input type="text" id="text-field">             
+
+    </div>
+
+    <div id="remark-card">
             
-            <p id ="question-description"></p>
+        <p id ="question-description"></p>
         
-        </div>
-
     </div>
 
 `

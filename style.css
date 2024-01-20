@@ -96,7 +96,7 @@ p {
     text-align: center;
 }
 
-.inset > p {
+.inset > p, .inset > h1 {
     text-shadow: 0px 0.4vh 0.4vh #fff, 0px 0px 0px lightgrey, 0px 0.4vh 0.4vh white;
     font-size: 8vw;
     font-weight: 1000;
@@ -215,43 +215,59 @@ a:hover, a:active {
 /* Doing the whole question bit */
 
 .question-card {
+    /* Add shadows */
+    background-color: lightgreen;
+    box-shadow: 0px 2vh 2vh 0.25vh rgba(144, 238, 144, 0.6);
+    display: grid;
     width: 60vw;
     height: 50vh;
-    text-align: center;
-    padding-top:1vh;
-    padding-bottom:1vh;
-    margin-left: 19vw;
-    margin-top: 10vh;
-    font-size: 2.5vw;
+    padding: 5vw;
+    margin-left: 15vw;
+    margin-bottom: 5vw;
+    margin-top: 5vw;
+    border-radius: 5vw;
+}
+
+#remark-card {
+    color: black;
+    height: 18vh;
+    width: 60vw;
+    padding: 5vw;
+    margin-left: 15vw;
+    margin-top: 5vh;
+    background-color: white;
+    overflow-y: scroll;
 }
 
 .question-title-card {
-    color: white;
+    color: gray;
     height: 18vh;
     width: 60vw;
     border-radius: 5vw;
     padding-top: 8vh;
     padding-bottom: 5vh;
-    box-shadow: 0px 1.5vh rgba(0, 128, 0, 1);
-    background-color: limegreen;
+    box-shadow: inset 0px 2vh 2vh 0.25vh rgba(144, 238, 144, 0.6);
+    background-color: white;
+    text-align: center;
+    overflow-y: scroll;
 }
 
 #text-field {
-    width: 60vw;
+    width: 50vw;
     height: 10vh;
     font-weight: bold;
     font-size: 2.5vw;
     color: black;
-    margin-top: 5vh;
+    margin-top: 2vh;
     padding-left: 5vw;
     padding-right:5vw;
     border-radius: 5vw;
 }
 
 .button {
-    box-shadow: 0px 1.5vh rgb(60, 60, 60);
     background-color: grey;
-    height: 6vh;
+    height: 10vh;
+    width: 10vh;
     border-radius: 5vw;
     font-weight: bold;
     font-size: 2.5vw;
@@ -259,12 +275,71 @@ a:hover, a:active {
     margin-top: 2.5vh;
 }
 
-.button:active {
-    background-color: lightgray;
+.question-input-card {
+    display: inline-block;
 }
 
-#check-button {
-    width: 60vw;
+@media only screen and (max-width: 600px) {
+
+    #question-inset {
+        margin-top: 2vh;
+    }
+
+    .button {        
+        background-color: white;
+        height: 5vh;
+        width: 5vh;
+        border-radius: 3vh;
+        font-weight: bold;
+        font-size: 2.5vw;
+        color: black;
+        font-weight: bold;
+        margin-top: 1vh;
+        margin-left: 2vh;
+        margin-right: 2vh;
+        border: none;
+        box-shadow: 0px 1vh 1vh 0.25vh rgba(101, 166, 101, 0.6);
+        transition-duration: 0.5s;
+    }
+
+    .button:hover, .button:active {
+        width: 10vh;
+        transition-duration: 0.5s;
+    }
+
+    #check-button {
+        float: right;
+        background-color: rgb(206, 255, 206);
+    }
+
+    #hint-button {
+        float: left;
+        background-color: rgb(255, 217, 217);
+    }
+
+    .question-title-card {
+        color: gray;
+        height: 15vh;
+        border-radius: 5vw;
+        padding-top: 4vh;
+        padding-bottom: 0vh;
+    }
+
+    #text-field {
+        width: 60vw;
+        border: none;
+        box-shadow: inset 0px 2vh 2vh 0.25vh rgba(144, 238, 144, 0.6);
+    }
+
+    .question-card {
+        width: 60vw;
+        height: 40vh;
+    }
+
+}
+
+.button:active {
+    background-color: lightgray;
 }
 
 #enter-button {
@@ -287,16 +362,6 @@ a:hover, a:active {
     font-size: 2.5vw;
     color: white;
     margin-top: 2.5vh;
-}
-
-#remark-card {
-    color: black;
-    height: 18vh;
-    width: 60vw;
-    border-radius: 5vw;
-    padding-top: 8vh;
-    padding-bottom: 5vh;
-    background-color: white;
 }
 
 

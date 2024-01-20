@@ -1,0 +1,363 @@
+{
+    "Name": "Disorders",
+    "Subtypes": [
+        {
+            "Name": "Electrolyte imbalance",
+            "Subtypes": [
+                {
+                    "Name": "Calcium disorders",
+                    "Location": "Extracellular fluid",
+                    "Regulation": "Parathyroid gland",
+                    "Subtypes": [
+                        {
+                            "Name": "Hypercalcemia",
+                            "Causes": ["Malignancy", "Hyperparathyroidism", "Hyperthyroidism", "Pheochromocytoma", "Hypervitaminosis D", "Sarcoidosis", "Tuberculosis"],
+                            "Subtypes": [
+                                {
+                                    "Name": "Mild hypercalcemia",                                    
+                                    "Cutoff": "10.5 mg/dL",
+                                    "Symptoms": ["Abdominal pain", "Constipation", "Extreme thirst", "Polyuria", "Kidney stones", "Nausea", "Vomiting"],
+                                    "Treatment": ["IV fluids"]
+                                },
+                                {
+                                    "Name": "Severe hypercalcemia",
+                                    "Cutoff": "14 mg/dL",
+                                    "Symptoms": ["Confusion", "Altered mental status", "Coma", "Seizure"],
+                                    "Treatment": ["Hemodialysis"]
+                                }
+                            ]
+                            
+                        },
+                        {
+                            "Name": "Hypocalcemia",
+                            "Cutoff": "8.5 mg/dL",
+                            "Causes": ["Hypoparathyroidism", "Hypovitaminosis D", "Malnutrition", "Blood transfusion", "Pancreatitis"],
+                            "Symptoms": ["Muscle cramps", "Twitching", "Hypesthesia", "Dyspnea", "Hypotension", "Cardiac arrhythmias"]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Chloride disorders",
+                    "Location": "Extracellular fluid",
+                    "Subtypes": [
+                        {
+                            "Name": "Hyperchloremia",
+                            "Causes": ["Excess intake", "Dehydration", "Metabolic acidosis"],
+                            "Symptoms": ["Asymptomatic"],
+                            "Treatment": ["Increasing fluid intake"]
+                        },
+                        {
+                            "Name": "Hypochloremia",
+                            "Causes": ["Gastrointestinal loss", "Renal loss", "Excess fluid intake"],
+                            "Symptoms": ["Asymptomatic"]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Magnesium disorders",
+                    "Location": "Intracellular fluid",
+                    "Subtypes": [
+                        {
+                            "Name": "Hypermagnesemia",
+                            "Cutoff": "2.5 mg/dL",
+                            "Causes": ["Renal failure", "Excess intake"],
+                            "Symptoms": ["Nausea", "Flushing", "Tiredness", "Hyporeflexia", "Paralysis", "Respiratory failure", "Bradycardia", "Third-degree heart block", "Cardiac arrest"]
+                        },
+                        {
+                            "Name": "Hypomagnesemia",
+                            "Cutoff": "1.5 mg/dL",
+                            "Causes": ["Gastrointestinal loss", "Renal loss", "Malnutrition"],
+                            "Symptoms": ["Asthenia", "Muscle cramps", "Cardiac arrhythmias", "Tremors", "Palpitations", "Paresthesias", "Hypokalemia", "Hypoparathyroidism"],
+                            "_comment": "Magnesium acts as a physiological calcium channel blocker"
+
+                        }
+                    ]
+                },
+                {
+                    "Name": "Potassium disorders",
+                    "Location": "Intracellular fluid",
+                    "Subtypes": [
+                        {
+                            "Name": "Hyperkalemia",
+                            "Causes": ["Renal retention", "Extracellular shift", "Increased intake", "Renal disease", "Cell death", "Acidosis"],
+                            "Subtypes": [
+                                {
+                                    "Name": "Mild hyperkalemia",
+                                    "Cutoff": "5 mEq/L",
+                                    "Symptoms": ["Nausea", "Vomiting", "Diarrhea"]
+                                },
+                                {
+                                    "Name": "Severe hyperkalemia",
+                                    "Cutoff": "7 mEq/L",
+                                    "Symptoms": ["Muscle cramps", "Hypesthesia", "Paresthesias", "Areflexia", "Paralysis", "Cardiac arrhythmias"],
+                                    "Treatment": ["Loop diuretics"]
+                                }
+                            ]       
+                        },
+                        {
+                            "Name": "Hypokalemia",
+                            "Causes": ["Renal loss", "Intracellular shift", "Malnutrition", "Acidosis", "Hyperaldosteronism"],
+                            "Subtypes": [
+                                {
+                                    "Name": "Mild hypokalemia",
+                                    "Cutoff": "3.5 mEq/L",
+                                    "Symptoms": ["Asymptomatic"]
+                                },
+                                {
+                                    "Name": "Severe hypokalemia",
+                                    "Cutoff": "2.5 mEq/L",
+                                    "Symptoms": ["Asthenia", "Muscle cramps", "Cardiac arrhythmias"]
+                                }
+                            ]                         
+                        }
+                    ]
+                },
+                {
+                    "Name": "Sodium disorders",
+                    "Location": "Extracellular fluid",
+                    "Subtypes": [
+                        {
+                            "Name": "Hypernatremia",
+                            "Cutoff": "145 mEq/L",
+                            "Causes": ["Dehydration", "Renal failure", "Excess intake"],
+                            "Symptoms": ["Nausea", "Vomiting", "Fatigue", "Asthenia", "Increased thirst", "Polyuria"]                            
+                        },
+                        {
+                            "Name": "Hyponatremia",
+                            "Causes": ["Heart failure", "Renal disease", "Liver disease", "Thiazide diuretics", "Polydipsia", "SIADH"],
+                            "Treatment": "Hypertonic saline IV",
+                            "Subtypes": [
+                                {
+                                    "Name": "Mild hyponatremia",
+                                    "Cutoff": "130 mEq/L",
+                                    "Symptoms": ["Anorexia", "Nausea", "Vomiting", "Confusion", "Agitation", "Asthenia"]
+                                },
+                                {
+                                    "Name": "Severe hyponatremia",
+                                    "Cutoff": "12- mEq/L",
+                                    "Symptoms": ["Seizures", "Coma", "Brain herniation"]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "Acid-base imbalance",
+            "Subtypes": [
+                {
+                    "Name": "Acidosis",
+                    "Subtypes": [
+                        {
+                            "Name": "Metabolic acidosis",                            
+                            "Diagnosis": ["Acidosis", "Hypocapnia"],
+                            "Symptoms": ["Kussmaul respirations", "Palpitations", "Headache", "asea", "Vomiting"],
+                            "Subtypes": [
+                                {
+                                    "Name": "High anion gap metabolic acidosis",
+                                    "Causes": ["Lactic acidosis", "Ketoacidosis", "Metformin", "Rhabdomyolysis", "Verapamil"]
+                                },
+                                {
+                                    "Name": "Normal anion gap metabolic acidosis",
+                                    "Causes": ["Gastrointestinal loss", "Proximal renal tubular acidosis", "Distal renal tubular acidosis", "Spironolactone"]
+                                }
+                            ]
+                        },
+                        {
+                            "Name": "Respiratory acidosis",
+                            "Diagnosis": ["Acidosis", "Hypercapnia"],
+                            "Causes": ["Respiratory depression", "COPD"]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Alkalosis",
+                    "Subtypes": [
+                        {
+                            "Name": "Metabolic alkalosis",
+                            "Diagnosis": ["Alkalosis", "Hypercapnia"],
+                            "Symptoms": ["Paresthesias", "Tremors", "Tetany", "Cardiac arrhythmias", "Coma", "Seizures", "Delirium"],
+                            "Causes": ["Hypomagnesemia", "Hyperaldosteronism", "Intracellular shift", "Vomiting", "Loop diuretics", "Thiazide diuretics"]
+                        },
+                        {
+                            "Name": "Respiratory alkalosis",
+                            "Diagnosis": ["Alkalosis", "Hypocapnia"],
+                            "Symptoms": ["Palpitations", "Tetany", "Seizures", "Sweating"],
+                            "Causes": ["Hyperventilation", "Salicylates", "Liver disease"]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "Hormonal imbalance",
+            "Subtypes": [
+                {
+                    "Name": "Adrenal imbalance",
+                    "Subtypes": [
+                        {
+                            "Name": "Aldosterone imbalance",
+                            "Subtypes": [
+                                {
+                                    "Name": "Hyperaldosteronism",
+                                    "Signs": ["Hypokalemia", "Hypernatremia", "Hypomagnesemia", "Hypertension", "Metabolic alkalosis"],
+                                    "Symptoms": ["Headache", "Polyuria", "Polydipsia"]
+                                },
+                                {
+                                    "Name": "Hypoaldosteronism",
+                                    "Signs": ["Hyperkalemia", "Hyponatremia", "Hypermagnesemia", "Hypotension", "Metabolic acidosis"],
+                                    "Causes": ["NSAIDs", "ACE inhibitors", "Diabetic nephropathy"]
+                                }
+                            ]
+                        },
+                        {
+                            "Name": "Vasopressin imbalance",
+                            "Subtypes": [
+                                {
+                                    "Name": "SIADH",
+                                    "Diagnosis": ["Increased vasopressin"],
+                                    "Symptoms": ["Myoclonus", "Hyporeflexia", "Cheyne-Stokes respiration", "Oligouria", "Concentrated urine", "Edema", "Hyponatremia"],
+                                    "Causes": ["SSRIs", "Carbamazepine", "Morphine", "Amitriptyline", "Sarcoidosis"]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "Neurotransmitter imbalance",
+            "Subtypes": [
+                {
+                    "Name": "Serotonin syndrome",
+                    "Causes": ["TCAs", "SSRIs", "SNRIs", "Tramadol", "Fentanyl", "Oxycodone", "MDMA", "Triptans", "Lithium", "Metoclopramide"],
+                    "Symptoms": {
+                        "Cognitive effects": ["Headache", "Agitation", "Hypomania", "Confusion", "Hallucinations", "Coma"],
+                        "Autonomic effects": ["Shivering", "Sweating", "Hyperthermia", "Vasoconstriction", "Tachycardia", "Nausea", "Diarrhea"],
+                        "Somatic effects": ["Myoclonus", "Hyperreflexia", "Tremor"]
+                    }
+                },
+                {
+                    "Name": "Anticholinergic syndrome",
+                    "Causes": ["Digoxine", "Diltiazem", "Dipyridamol", "Furosemide", "Hydrochloorthiazide", "Nitraten", "Nifedipine", "Triamtereen", "Amitriptyline", "Codeïne", "Clozapine", "Benzodiazepines", "Clindamycine", "Gentamicine", "Piperacilline", "Vancomycine", "Dexamethason", "Prednisolon", "Ciclosporine"],
+                    "Symptoms": ["Xerostomia", "Hypohidrosis", "Mydriasis", "Intraocular hypertension", "Urine retention", "Obstipation", "Palpitations", "Hyperthermia", "Cycloplegia", "Hypoperestaltesis", "Delirium"]
+                },
+                {
+                    "Name": "Rebound phenomenon",
+                    "Subtypes": [
+                        {
+                            "Name": "Benzodiazepine withdrawal syndrome",
+                            "Symptoms": ["Metallic tast", "Anxiety", "Hallucinations", "Insomnia"]
+                        },
+                        {
+                            "Name": "Antidepressant withdrawal syndrome",
+                            "Symptoms": ["Depression", "Panic attacks", "Anxiety", "Insomnia"]
+                        }
+                    ]
+
+                }
+            ]
+        },
+        {
+            "Name": "Hypersensitivity reactions",
+            "Subtypes": [
+                {
+                    "Name": "Type I reaction",
+                    "Mediator": ["Antibody IgE"],
+                    "Subtypes": [
+                        {
+                            "Name": "Anaphylaxis",
+                            "Symptoms": ["Urticaria", "Pruritus", "Angioedema", "Flushing", "Dyspnea", "Wheezing", "Hypotension", "Tachycardia"]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Type II reaction",
+                    "Mediator": ["Antibody IgM", "Antibody IgG", "Complement system", "MAC"]
+                },
+                {
+                    "Name": "Type III reaction",
+                    "Mediator": ["Antibody IgG", "Complement system", "Neutrophils"]
+                },
+                {
+                    "Name": "Type IV reaction",
+                    "Mediator": ["T-cells"],
+                    "Subtypes": [
+                        {
+                            "Name": "Stevens-Johnson syndrome",
+                            "Symptoms": ["Fever", "Asthenia", "Tussis", "Paresthesias", "Orol ulcera", "Conjunctivitis", "Ulcera"],
+                            "Causes": ["Sulfonamides", "Beta-lactam antibiotics", "NSAIDs", "Allopurinol", "Methotrexate", "Corticosteroids", "Anticonvulsants"]
+                        },
+                        {
+                            "Name": "Toxic epidermal necrolysis",
+                            "Symptoms": ["Fever", "Asthenia", "Tussis", "Paresthesias", "Orol ulcera", "Conjunctivitis", "Ulcera", "Bullae", "Dehydration", "Sepsis", "Multiple organ failure"],
+                            "Causes": ["Sulfonamides", "Beta-lactam antibiotics", "NSAIDs", "Allopurinol", "Methotrexate", "Corticosteroids", "Anticonvulsants"]
+
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "Cardiac arrhythmias",
+            "Subtypes": [
+                {
+                    "Name": "Atrial arrhythmias"
+                },
+                {
+                    "Name": "Junctional arrhythmias"
+                },
+                {
+                    "Name": "Ventricular arrhythmias",
+                    "Subtypes": [
+                        {
+                            "Name": "Premature ventricular contractions",
+                            "Abbreviation": "PVCs"
+                        },
+                        {
+                            "Name": "Ventricular fibrillation"
+                        },
+                        {
+                            "Name": "Torsade de pointes",
+                            "Symptoms": ["Palpitations", "Vertigo", "Pre-syncope", "Syncope"],
+                            "Complications": ["Sudden cardiac death"],
+                            "Causes": ["Long QT syndrome"]
+                        },
+                        {
+                            "Name": "Long QT syndrome",
+                            "Abbreviation": "LQTS",
+                            "Causes": ["Hypokalemia", "Hypocalcemia", "Hypomagnesemia", "Myocardial infarction", "Hypothyroidism", "Bradycardia", "Sotalol", "Quetiapine", "SSRIs", "SNRIs", "TCAs", "Macrolides", "Fluorquinolones", "Ketoconazole"],
+                            "Complications": ["Torsade de pointes"]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Heart blocks",
+                    "Subtypes": [
+                        {
+                            "Name": "First-degree heart block",
+                            "Causes": ["Myocarditis", "Myocardial infarction", "Calcium channel blockers", "Beta-blockers", "Cardiac glycosides", "Cholinergica"]
+                        },
+                        {
+                            "Name": "Second-degree heart block",
+                            "Subtypes": [
+                                {
+                                    "Name": "Mobitz 1 heart block",
+                                    "Alternative name": "Wenkebach"
+                                },
+                                {
+                                    "Name": "Mobitz 2 heart block"
+                                }
+                            ]
+                        },
+                        {
+                            "Name": "Third-degree heart block",
+                            "Alternative name": "Complete heart block"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
