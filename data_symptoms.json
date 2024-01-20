@@ -1,0 +1,212 @@
+{
+    "Name": "All problems",
+    "Subdivision": [
+        {
+            "Name": "Signs",
+            "Subdivision": [
+
+            ]
+        },
+        {
+            "Name": "Symptoms",
+            "Subdivision": [
+                {
+                    "Name": "Pain",
+                    "Subdivision": [
+                        {
+                            "Name": "Abdominal pain",
+                            "Definition": "Pain in the abdominal region"
+                        }
+                    ]
+                },
+                {
+                    "Name": "Gastroinstinal symptoms",
+                    "Subdivision": [
+                        {
+                            "Name": "Constipation",
+                            "Definition": "Less than 3 bowel movements per week"
+                        },
+                        {
+                            "Name": "Nausea",
+                            "Definition": "Urge to vomit"
+                        },
+                        {
+                            "Name": "Emesis",
+                            "Definition": "Vomiting"
+                        }
+                    ]
+                },
+                {
+                    "Name": "Urological symptoms",
+                    "Subdivision": [
+                        {
+                            "Name": "Polydipsia",
+                            "Definition": "Excessive thirst"
+                        },
+                        {
+                            "Name": "Polyuria",
+                            "Definition": "Excessive urine production"
+                        },
+                        {
+                            "Name": "Pollakiuria",
+                            "Definition": "Excessive urinary frequency"
+                        }
+                    ]
+                },
+                {
+                    "Name": "Neurological symptoms",
+                    "Subdivision": [
+                        {
+                            "Name": "Neuromuscular symptoms",
+                            "Subdivision": [
+                                {
+                                    "Name": "Cramp",
+                                    "Definition": "Sudden, involuntary and painful muscular contraction"
+                                },
+                                {
+                                    "Name": "Convulsion",
+                                    "Definition": "Repeated, involuntary and rapid muscular contraction"
+                                },
+                                {
+                                    "Name": "Fasciculation",
+                                    "Alternative name": "Twitching",
+                                    "Definition": "Sudden, involuntary contraction of fine muscle fibres"
+                                },
+                                {
+                                    "Name": "Hyporeflexia",
+                                    "Definition": "Decreased deep tendon reflexes"
+                                },
+                                {
+                                    "Name": "Areflexia",
+                                    "Definition": "Absent deep tendon reflexes"
+                                },
+                                {
+                                    "Name": "Hyperreflexia",
+                                    "Definition": "Excessive deep tendon reflexes"
+                                },
+                                {
+                                    "Name": "Myasthenia",
+                                    "Definition": "Absolute lack of muscular strength"
+                                },
+                                {
+                                    "Name": "Paralysis",
+                                    "Alternative name": "Plegia",
+                                    "Definition": "Loss of motor function",
+                                    "Subdivisions": [
+                                        {
+                                            "Name": "Hemiplegia",
+                                            "Alternative name": "Hemiparesis",
+                                            "Definition": "Paralysis of one side of the body"
+                                        },
+                                        {
+                                            "Name": "Quadriplegia",
+                                            "Definition": "Paralysis of all limbs"
+                                        },
+                                        {
+                                            "Name": "Paraplegia",
+                                            "Definition": "Paralysis of the legs"
+                                        },
+                                        {
+                                            "Name": "Monoplegia",
+                                            "Definition": "Paralysis of a single limb"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "Name": "Altered sensation",
+                            "Subdivision": [
+                                {
+                                    "Name": "Hypoesthesia",
+                                    "Alternative name": "Numbness",
+                                    "Definition": "Reduced sense of touch"
+                                },
+                                {
+                                    "Name": "Paresthesia",
+                                    "Alternative name": "Pins and needles",
+                                    "Definition": "Abnormal sensation of the skin"
+                                }
+                            ]
+                        },
+                        {
+                            "Name": "Syncope",
+                            "Alternative name": "Fainting",
+                            "Definition": "Sudden loss of conscious and muscular strength, with spontaneous recovery"
+                        }                        
+                    ]
+                },
+                {
+                    "Name": "Psychiatric symptoms",
+                    "Subdivision": [
+                        {
+                            "Name": "Altered mental status",
+                            "Subdivisions": [
+                                {
+                                    "Name": "Confusion",
+                                    "Definition": "Disorientation and impaired thinking"
+                                },
+                                {
+                                    "Name": "Delirium",
+                                    "Definition": "Disorientation, restlessness and hallucinations"
+                                },
+                                {
+                                    "Name": "Somnolence",
+                                    "Definition": "Excessive drowsiness"
+                                },
+                                {
+                                    "Name": "Coma",
+                                    "Definition": "Non-responsive to external stimuli"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Respiratory symptoms",
+                    "Subdivision": [
+                        {
+                            "Name": "Dyspnoea",
+                            "Definition": "Sensation of breathing discomfort"
+                        }
+                    ]
+                },
+                {
+                    "Name": "Cardiovascular symptoms",
+                    "Subdivision": [
+                        {
+                            "Name": "Hypotension",
+                            "Definition": "Low blood pressure"
+                        },
+                        {
+                            "Name": "Hypertension",
+                            "Definition": "High blood pressure"
+                        },
+                        {
+                            "Name": "Flushing",
+                            "Definition": "Transient redness of the face"
+                        },
+                        {
+                            "Name": "Palpitations",
+                            "Definition": "Perceived awareness of cardiac contractions"
+                        }
+                    ]
+                },
+                {
+                    "Name": "General symptoms",
+                    "Subdivision": [
+                        {
+                            "Name": "Fatigue",                    
+                            "Definition": "Tiredness"
+                        },
+                        {
+                            "Name": "Asthenia",
+                            "Alternative name": "Perceived weakness",
+                            "Definition": "Perceived lack of muscular strength"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -16,13 +16,14 @@
                                 {
                                     "Name": "Mild hypercalcemia",                                    
                                     "Cutoff": "10.5 mg/dL",
-                                    "Symptoms": ["Abdominal pain", "Constipation", "Extreme thirst", "Polyuria", "Kidney stones", "Nausea", "Vomiting"],
+                                    "Symptoms": ["Abdominal pain", "Constipation", "Polydipsia", "Polyuria", "Nausea", "Vomiting"],
+                                    "Complications": ["Kidney stones"],
                                     "Treatment": ["IV fluids"]
                                 },
                                 {
                                     "Name": "Severe hypercalcemia",
                                     "Cutoff": "14 mg/dL",
-                                    "Symptoms": ["Confusion", "Altered mental status", "Coma", "Seizure"],
+                                    "Symptoms": ["Confusion", "Altered mental status", "Coma", "Convulsion"],
                                     "Treatment": ["Hemodialysis"]
                                 }
                             ]
@@ -32,7 +33,8 @@
                             "Name": "Hypocalcemia",
                             "Cutoff": "8.5 mg/dL",
                             "Causes": ["Hypoparathyroidism", "Hypovitaminosis D", "Malnutrition", "Blood transfusion", "Pancreatitis"],
-                            "Symptoms": ["Muscle cramps", "Twitching", "Hypesthesia", "Dyspnea", "Hypotension", "Cardiac arrhythmias"]
+                            "Symptoms": ["Cramp", "Fasciculation", "Hypoesthesia", "Dypsnoea", "Hypotension"],
+                            "Complications": ["Cardiac arrhythmias"]
                         }
                     ]
                 },
@@ -61,13 +63,13 @@
                             "Name": "Hypermagnesemia",
                             "Cutoff": "2.5 mg/dL",
                             "Causes": ["Renal failure", "Excess intake"],
-                            "Symptoms": ["Nausea", "Flushing", "Tiredness", "Hyporeflexia", "Paralysis", "Respiratory failure", "Bradycardia", "Third-degree heart block", "Cardiac arrest"]
+                            "Symptoms": ["Nausea", "Flushing", "Fatigue", "Hyporeflexia", "Paralysis", "Respiratory failure", "Bradycardia", "Third-degree heart block", "Cardiac arrest"]
                         },
                         {
                             "Name": "Hypomagnesemia",
                             "Cutoff": "1.5 mg/dL",
                             "Causes": ["Gastrointestinal loss", "Renal loss", "Malnutrition"],
-                            "Symptoms": ["Asthenia", "Muscle cramps", "Cardiac arrhythmias", "Tremors", "Palpitations", "Paresthesias", "Hypokalemia", "Hypoparathyroidism"],
+                            "Symptoms": ["Asthenia", "Cramp", "Cardiac arrhythmias", "Tremors", "Palpitations", "Paresthesia", "Hypokalemia", "Hypoparathyroidism"],
                             "_comment": "Magnesium acts as a physiological calcium channel blocker"
 
                         }
@@ -89,7 +91,7 @@
                                 {
                                     "Name": "Severe hyperkalemia",
                                     "Cutoff": "7 mEq/L",
-                                    "Symptoms": ["Muscle cramps", "Hypesthesia", "Paresthesias", "Areflexia", "Paralysis", "Cardiac arrhythmias"],
+                                    "Symptoms": ["Cramp", "Hypoesthesia", "Paresthesia", "Areflexia", "Paralysis", "Cardiac arrhythmias"],
                                     "Treatment": ["Loop diuretics"]
                                 }
                             ]       
@@ -106,7 +108,7 @@
                                 {
                                     "Name": "Severe hypokalemia",
                                     "Cutoff": "2.5 mEq/L",
-                                    "Symptoms": ["Asthenia", "Muscle cramps", "Cardiac arrhythmias"]
+                                    "Symptoms": ["Asthenia", "Cramp", "Cardiac arrhythmias"]
                                 }
                             ]                         
                         }
@@ -135,7 +137,7 @@
                                 {
                                     "Name": "Severe hyponatremia",
                                     "Cutoff": "12- mEq/L",
-                                    "Symptoms": ["Seizures", "Coma", "Brain herniation"]
+                                    "Symptoms": ["Convulsion", "Coma", "Brain herniation"]
                                 }
                             ]
                         }
@@ -177,13 +179,13 @@
                         {
                             "Name": "Metabolic alkalosis",
                             "Diagnosis": ["Alkalosis", "Hypercapnia"],
-                            "Symptoms": ["Paresthesias", "Tremors", "Tetany", "Cardiac arrhythmias", "Coma", "Seizures", "Delirium"],
+                            "Symptoms": ["Paresthesia", "Tremors", "Tetany", "Cardiac arrhythmias", "Coma", "Convulsion", "Delirium"],
                             "Causes": ["Hypomagnesemia", "Hyperaldosteronism", "Intracellular shift", "Vomiting", "Loop diuretics", "Thiazide diuretics"]
                         },
                         {
                             "Name": "Respiratory alkalosis",
                             "Diagnosis": ["Alkalosis", "Hypocapnia"],
-                            "Symptoms": ["Palpitations", "Tetany", "Seizures", "Sweating"],
+                            "Symptoms": ["Palpitations", "Tetany", "Convulsion", "Sweating"],
                             "Causes": ["Hyperventilation", "Salicylates", "Liver disease"]
                         }
                     ]
@@ -268,7 +270,7 @@
                     "Subtypes": [
                         {
                             "Name": "Anaphylaxis",
-                            "Symptoms": ["Urticaria", "Pruritus", "Angioedema", "Flushing", "Dyspnea", "Wheezing", "Hypotension", "Tachycardia"]
+                            "Symptoms": ["Urticaria", "Pruritus", "Angioedema", "Flushing", "Dypsnoea", "Wheezing", "Hypotension", "Tachycardia"]
                         }
                     ]
                 },
@@ -286,12 +288,12 @@
                     "Subtypes": [
                         {
                             "Name": "Stevens-Johnson syndrome",
-                            "Symptoms": ["Fever", "Asthenia", "Tussis", "Paresthesias", "Orol ulcera", "Conjunctivitis", "Ulcera"],
+                            "Symptoms": ["Fever", "Asthenia", "Tussis", "Paresthesia", "Orol ulcera", "Conjunctivitis", "Ulcera"],
                             "Causes": ["Sulfonamides", "Beta-lactam antibiotics", "NSAIDs", "Allopurinol", "Methotrexate", "Corticosteroids", "Anticonvulsants"]
                         },
                         {
                             "Name": "Toxic epidermal necrolysis",
-                            "Symptoms": ["Fever", "Asthenia", "Tussis", "Paresthesias", "Orol ulcera", "Conjunctivitis", "Ulcera", "Bullae", "Dehydration", "Sepsis", "Multiple organ failure"],
+                            "Symptoms": ["Fever", "Asthenia", "Tussis", "Paresthesia", "Orol ulcera", "Conjunctivitis", "Ulcera", "Bullae", "Dehydration", "Sepsis", "Multiple organ failure"],
                             "Causes": ["Sulfonamides", "Beta-lactam antibiotics", "NSAIDs", "Allopurinol", "Methotrexate", "Corticosteroids", "Anticonvulsants"]
 
                         }
