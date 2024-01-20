@@ -1031,7 +1031,12 @@ function checkMnemonicAnswer() {
                 question_array = local_question_array;
                 console.log(question_array);
 
-            }
+            };
+
+            setTimeout()
+
+            document.getElementById('question-title').style.animation = "correct 1s linear 0s";
+            setTimeout(function(){document.getElementById('question-title').style.animation = "idle 0s ease-in-out 0s";}, 3000);
 
         } else if (given_answer.toLowerCase() == correct_answer.toString().toLowerCase()) {
 
@@ -1066,6 +1071,9 @@ function checkMnemonicAnswer() {
 
             nextQuestion();
 
+            document.getElementById('question-title').style.animation = "correct 1s linear 0s";
+            setTimeout(function(){document.getElementById('question-title').style.animation = "idle 0s ease-in-out 0s";}, 3000);
+
         } else {
 
             console.log("- - > Given answer: " + given_answer);
@@ -1074,10 +1082,14 @@ function checkMnemonicAnswer() {
             if (document.getElementById('remark-card').innerText != "Please repeat the answer" && !trivial_answers.includes(correct_answer)) {
                 
                 document.getElementById('remark-card').innerText = "Please repeat the answer";
+                document.getElementById('question-title').style.animation = "false 1s linear 0s";
+                setTimeout(function(){document.getElementById('question-title').style.animation = "idle 0s ease-in-out 0s";}, 3000);
             
             } else {
 
                 document.getElementById('remark-card').innerText = "Het goede antwoord is: " + correct_answer + ". We zullen deze vraag later nogmaals herhalen.";
+                document.getElementById('question-title').style.animation = "false 1s linear 0s";
+                setTimeout(function(){document.getElementById('question-title').style.animation = "idle 0s ease-in-out 0s";}, 3000);
 
                 let local_question_array = question_array;
                 local_question_array.splice(intervalIndex(current_index, 4, local_question_array), 0, {"Question": ("Dit is de eerste herhaling: " + question_array[current_index].Question), "Answer": question_array[current_index].Answer});
@@ -1086,10 +1098,9 @@ function checkMnemonicAnswer() {
                 question_array = local_question_array;
                 console.log(question_array);
 
-            }
-
+            };
             
-            textfield.value = "";            
+            textfield.value = "";    
 
         }
     } else {
@@ -1216,7 +1227,86 @@ function startSymptoms() {
     });
 
     /* Check */
-}
+};
+
+function startDisorders() {
+
+    openFullscreen();
+    document.getElementsByTagName("BODY")[0].innerHTML = level_page;
+    setEnter();
+
+    fetch("./data_disorders.json")
+
+    .then(function(response){
+        console.log("- > Disorder file found and accessed");
+        return response.json();
+    })
+    .then(function(data){
+
+        original_dictionary = data;
+        base = data.Naam;
+
+    })
+    .then(function(){
+        
+        console.log("- > Preparing components");
+
+        var explorable_array = [original_dictionary];
+        var temp_question_array = [];
+
+        while (explorable_array.length > 0) {
+
+            explorable_item = explorable_array[0];
+
+            if (Object.keys(explorable_item).includes("Symptoms")) {
+
+                symptoms = explorable_item["Symptoms"].join(", ");
+
+                if (Object.keys(explorable_item).includes("Causes")) {
+
+                    cause = explorable_item["Causes"][Math.floor(Math.random() * explorable_item["Causes"].length)]
+
+                    temp_question_array.push({"Question": "A patient with " + cause + " in their chart presents with the following symptoms: " + symptoms + ". What condition do they have?", "Answer": explorable_item["Name"] });
+
+                } else {                
+
+                    temp_question_array.push({"Question": "A patient presents with the following symptoms: " + symptoms + ". What condition do they have?", "Answer": explorable_item["Name"] });
+
+                };
+
+            };
+
+            if (Object.keys(explorable_item).includes("Causes")) {
+
+                causes = (explorable_item["Causes"]).join(", ");
+
+                temp_question_array.push({"Question": "What disease may have the following causes: " + causes + "?", "Answer": explorable_item["Name"] });
+
+            };
+
+            if (Object.keys(explorable_item).includes("Subtypes")) {
+                
+                explorable_array = explorable_array.concat(explorable_item["Subtypes"]);
+
+            };
+
+            explorable_array.shift();
+
+        };
+
+        question_array = (shuffle(temp_question_array)).flat(1);
+
+    })
+    .then(function(){
+
+        console.log("-> Prepared questions")
+        console.log(question_array);
+
+        setQuestions(); 
+    });
+
+    /* Check */
+};
 
 function giveHint() {
 

@@ -234,11 +234,7 @@
                 {
                     "Name": "Serotonin syndrome",
                     "Causes": ["TCAs", "SSRIs", "SNRIs", "Tramadol", "Fentanyl", "Oxycodone", "MDMA", "Triptans", "Lithium", "Metoclopramide"],
-                    "Symptoms": {
-                        "Cognitive effects": ["Headache", "Agitation", "Hypomania", "Confusion", "Hallucinations", "Coma"],
-                        "Autonomic effects": ["Shivering", "Sweating", "Hyperthermia", "Vasoconstriction", "Tachycardia", "Nausea", "Diarrhea"],
-                        "Somatic effects": ["Myoclonus", "Hyperreflexia", "Tremor"]
-                    }
+                    "Symptoms": ["Headache", "Agitation", "Hypomania", "Confusion", "Hallucinations", "Coma", "Shivering", "Sweating", "Hyperthermia", "Vasoconstriction", "Tachycardia", "Nausea", "Diarrhea", "Myoclonus", "Hyperreflexia", "Tremor"]
                 },
                 {
                     "Name": "Anticholinergic syndrome",
@@ -288,12 +284,12 @@
                     "Subtypes": [
                         {
                             "Name": "Stevens-Johnson syndrome",
-                            "Symptoms": ["Fever", "Asthenia", "Tussis", "Paresthesia", "Orol ulcera", "Conjunctivitis", "Ulcera"],
+                            "Symptoms": ["Fever", "Asthenia", "Tussis", "Paresthesia", "Oral ulcera", "Conjunctivitis", "Ulcera"],
                             "Causes": ["Sulfonamides", "Beta-lactam antibiotics", "NSAIDs", "Allopurinol", "Methotrexate", "Corticosteroids", "Anticonvulsants"]
                         },
                         {
                             "Name": "Toxic epidermal necrolysis",
-                            "Symptoms": ["Fever", "Asthenia", "Tussis", "Paresthesia", "Orol ulcera", "Conjunctivitis", "Ulcera", "Bullae", "Dehydration", "Sepsis", "Multiple organ failure"],
+                            "Symptoms": ["Fever", "Asthenia", "Tussis", "Paresthesia", "Oral ulcera", "Conjunctivitis", "Ulcera", "Bullae", "Dehydration", "Sepsis", "Multiple organ failure"],
                             "Causes": ["Sulfonamides", "Beta-lactam antibiotics", "NSAIDs", "Allopurinol", "Methotrexate", "Corticosteroids", "Anticonvulsants"]
 
                         }
