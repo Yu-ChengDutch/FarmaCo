@@ -1038,7 +1038,7 @@ function checkMnemonicAnswer() {
             document.getElementById('question-title').style.animation = "correct 1s linear 0s";
             setTimeout(function(){document.getElementById('question-title').style.animation = "idle 0s ease-in-out 0s";}, 3000);
 
-        } else if (given_answer.toLowerCase() == correct_answer.toString().toLowerCase()) {
+        } else if ((given_answer.toLowerCase() == correct_answer.toString().toLowerCase()) || (correct_answer.includes(",") && correct_answer.includes(given_answer))) {
 
             console.log("- - > Correct!")
 
@@ -1317,7 +1317,12 @@ function giveHint() {
 
     correct_answer = question_array[current_index].Answer; 
 
-    document.getElementById('remark-card').innerText = correct_answer;
+    document.getElementById('remark-card').innerText = "Hint: " + correct_answer + ". This question will be repeated once!";
+
+    let local_question_array = question_array;
+    local_question_array.splice(intervalIndex(current_index, 4, local_question_array), 0, {"Question": ("Dit is de eerste herhaling: " + question_array[current_index].Question), "Answer": question_array[current_index].Answer});
+
+    question_array = local_question_array;
 };
 
 /***
