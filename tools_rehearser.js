@@ -1038,7 +1038,7 @@ function checkMnemonicAnswer() {
             document.getElementById('question-title').style.animation = "correct 1s linear 0s";
             setTimeout(function(){document.getElementById('question-title').style.animation = "idle 0s ease-in-out 0s";}, 3000);
 
-        } else if ((given_answer.toLowerCase() == correct_answer.toString().toLowerCase()) || (correct_answer.includes(",") && correct_answer.includes(given_answer))) {
+        } else if ((given_answer.toLowerCase() == correct_answer.toString().toLowerCase()) || ((correct_answer.includes(",") || Array.isArray(correct_answer)) && correct_answer.includes(given_answer))) {
 
             console.log("- - > Correct!")
 
