@@ -141,9 +141,9 @@
         {
             "Name": "Extracellular system",
             "Conversion": {
-                "Input": ["Angiotensinogen", "Angiotensin II"],
-                "Mediator": ["Renin", "_degradation"],
-                "Output": ["Angiotensin I", "Angiotensin III"]
+                "Input": ["Angiotensinogen", "Angiotensin II", {"Name": "Angiotensin-converting enzyme", "Abbreviation": "ACE"}],
+                "Mediator": ["Renin", "_degradation", "_degradation"],
+                "Output": ["Angiotensin I", "Angiotensin III", "Bradykinin"]
             }            
         },
         {
@@ -193,10 +193,10 @@
                 "Global effect": ["Hypotension"]
             },
             "Regulation": {
-                "Effector": ["Angiotensin II"],
-                "Effect": ["Vasoconstriction"],
-                "Sign": ["Hypertension"]
-            }
+                "Effector": ["Angiotensin II", "Bradykinin"],
+                "Effect": ["Vasoconstriction", ["Arteriodilation", "Venoconstriciton"]],
+                "Sign": ["Hypertension", "Angio-oedema"]
+            }            
         },
         {
             "Name": "Gastrointestinal system",

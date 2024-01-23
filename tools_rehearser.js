@@ -975,13 +975,28 @@ function checkMnemonicAnswer() {
     const textfield = document.getElementById('text-field');    
     const given_answer = textfield.value;
 
-    indices = (document.getElementById('question-title').innerText).split("/")
-    current_index = indices[0];
+    const indices = (document.getElementById('question-title').innerText).split("/")
+    const current_index = indices[0]; 
 
-    correct_answer = question_array[current_index].Answer; 
-    nr_ans = question_array[current_index].Nr_ans;
+    const correct_answer = question_array[current_index].Answer; 
+    const nr_ans = question_array[current_index].Nr_ans;      
     
     console.log("- - > Checking mnemonic")
+    console.log("- - > Right answer is: " + correct_answer)
+
+    // Going to make the answers easier to parse
+
+    const original_correct_answer = correct_answer;
+
+    if (!Array.isArray(correct_answer)){
+        trimmed_correct_answer = (((correct_answer.toLowerCase()).replace("-", "")).replace(" ", "")).replace("\'", "")
+    }
+
+    trimmed_given_answer = (((given_answer.toLowerCase()).replace("-", "")).replace(" ", "")).replace("\'", "")
+
+    console.log(trimmed_correct_answer);
+    console.log(trimmed_given_answer);    
+
     console.log("- - > Right answer is: " + correct_answer)
 
     if (given_answer != "" && given_answer != null && given_answer != undefined) {
@@ -1038,9 +1053,14 @@ function checkMnemonicAnswer() {
             document.getElementById('question-title').style.animation = "correct 1s linear 0s";
             setTimeout(function(){document.getElementById('question-title').style.animation = "idle 0s ease-in-out 0s";}, 3000);
 
-        } else if ((given_answer.toLowerCase() == correct_answer.toString().toLowerCase()) || ((correct_answer.includes(",") || Array.isArray(correct_answer)) && correct_answer.includes(given_answer))) {
+        } else if (trimmed_correct_answer == trimmed_given_answer || ((correct_answer.includes(",") || Array.isArray(correct_answer)) && correct_answer.includes(given_answer))) {
 
             console.log("- - > Correct!")
+
+            console.log(original_correct_answer)
+            console.log(correct_answer)
+            console.log(given_answer)
+            console.log(trimmed_given_answer)
 
             if (document.getElementById('question-description').innerText.includes("Noem een voorbeeld van") && !terminals_array.includes(given_answer)) {
 
@@ -1054,15 +1074,14 @@ function checkMnemonicAnswer() {
                 
                 question_array = local_question_array;
 
-            } else if (document.getElementById('question-description').innerText.includes("Van welke categorie is") && ancestry_dict[given_answer].Parent != base) {
+            } else if (document.getElementById('question-description').innerText.includes("Van welke categorie is") && ancestry_dict[original_correct_answer].Parent != base) {
 
                 let local_question_array = question_array;
 
-                try {
-                    question_string = "Van welke categorie is " + given_answer + " een deel?";
-                    local_question_array.splice(intervalIndex(current_index, 1, local_question_array), 0, {"Question": question_string, "Answer": ancestry_dict[given_answer].Parent});
-                } catch {
-                    console.log("--> Doesn't exist: " + given_answer);
+                let local_ancestry_question = ancestryQuestion(original_correct_answer, "up");
+
+                if (!local_question_array.includes(local_ancestry_question)) {
+                    local_question_array.splice(intervalIndex(current_index, 1, local_question_array), 0, local_ancestry_question);
                 };
                 
                 question_array = local_question_array;
@@ -1349,10 +1368,10 @@ function intervalIndex(current_index, desired_interval, array) {
 
 /* Shuffle arrays */
 
-function ancestryQuestion(current) {
+function ancestryQuestion(current, direction="random") {
 
     try {
-        if (terminals_array.includes(current)) {
+        if (terminals_array.includes(current) || direction == "up") {
 
             question_string = "Van welke categorie is " + current + " een deel?";
             return {"Question": question_string, "Answer": ancestry_dict[current].Parent }
