@@ -12,95 +12,128 @@ var ancestry_dict = {};
 var content_dict = {};
 var terminals_array = [];
 
+var systems_database = {}
+
 var original_dictionary = {};
 
 var base = "";
+
+var systems_list = ["Input", "Mediator", "Mediator effect", "Output", "Sign"]
 
 /* Define the pages */
 
 var landing_page = `
 <script type="text/javascript" src="tools_rehearser.js"></script>
 
-<div class="chapter"><H1>Basics</H1></div>
+<div class="top-menu">
 
-<div style="display:block; text-align: center;" onclick="startLevel(1)">
-    <div class="card" id="active">
-        <img src="./Images/Network.png" style="width:20vw;height:20vw;">
-    </div>
+<div class="menu-item" id="item-1" onclick="toPage('Order')">
 
-    <H2> Organisatie </H2>
+Hear
 
 </div>
 
-<div style="display:block; text-align: center;" onclick="startLevel(2)">
-    <div class="card" id="active">
-        <img src="./Images/Network.png" style="width:20vw;height:20vw;">
-    </div>
+<div class="menu-item" id="item-2" onclick="toPage('Recognise')">
 
-    <H2> Indiv. medicatie </H2>
+See
 
 </div>
 
-<div class="chapter" ><H1>Bijwerkingen en indicaties</H1></div>  
+<div class="menu-item" id="item-4" onclick="toPage('Do')">
 
-<div style="display:block; text-align: center;" onclick="startLevel2()">
-    <div class="card" id="active">
-        <img src="./Images/Interactions.png" style="width:20vw;height:20vw;">
-    </div>
-
-    <H2> Interacties </H2>
+Do
 
 </div>
 
-<div style="display:block; text-align: center;" onclick="startLevel3()">
-    <div class="card" id="active">
-        <img src="./Images/Interactions.png" style="width:20vw;height:20vw;">
-    </div>
+</div>
 
-    <H2> Indicaties </H2>
+<div class="main-container" id="main-container">
+
+<div class="inset"> <p> Medication </p> </div>
+
+<div class="card" onclick="startLevel(1)">
+
+<div class="bubble">
+<img src="./Images/Network.png">
+</div>
+
+<div class="text-right">
+
+<H1> Categories </H1>
+<p> & where to find them </p>
 
 </div>
 
-<div class="chapter" ><H1>Rijveiligheid, zwangerschap en voorschrijven</H1></div>  
+</div>
 
-<div style="display:block; text-align: center;" onclick="startLevel3()">
-    <div class="card" id="active">
-        <img src="./Images/SteeringWheel.png" style="width:20vw;height:20vw;">
-    </div>
+<div class="card" onclick="startLevel(2)">
 
-    <H2> Rijveiligheid </H2>
+<div class="bubble">
+<img src="./Images/Network.png">
+</div>
+
+<div class="text-right">
+
+<H1> Drugs </H1>
+<p> & what they are</p>
 
 </div>
 
-<div style="display:block; text-align: center;" onclick="startLevel4()">
-    <div class="card" id="active">
-        <img src="./Images/Pregnancy.png" style="width:20vw;height:20vw;">
-    </div>
+</div>
 
-    <H2> Zwangerschap </H2>
+<div class="inset"> <p> Basic medicine </p> </div>
+
+<div class="card" onclick="startSymptoms()">
+
+<div class="bubble">
+<img src="./Images/Pad.png">
+</div>
+
+<div class="text-right">
+
+<H1> Symptoms </H1>
+<p> & what they mean </p>
 
 </div>
 
-<div style="display:block; text-align: center;" onclick="startLevel5()">
-    <div class="card" id="active">
-        <img src="./Images/Pad.png" style="width:20vw;height:20vw;">
-    </div>
+</div>
 
-    <H2> Voorschrijven </H2>
+<div class="card" onclick="startDisorders()">
+
+<div class="bubble">
+<img src="./Images/Pregnancy.png">
+</div>
+
+<div class="text-right">
+
+<H1> Disorders </H1>
+<p> & what causes them </p>
 
 </div>
 
-<div style="display:block; text-align: center;" onclick="startLevel6()">
-    <div class="card" id="active">
-        <img src="./Images/Enzym.png" style="width:20vw;height:20vw;">
-    </div>
+</div>
 
-    <H2> Enzymen </H2>
+<div class="card" onclick="startSystems()">
+
+<div class="bubble">
+<img src="./Images/Network.png">
+</div>
+
+<div class="text-right">
+
+<H1> Systems </H1>
+<p> & what how they work </p>
+
+</div>
+
+</div>
 
 </div>
 `
 
 var level_page= `
+
+    <div id="main-container">
 
     <script type="text/javascript" src="tools_rehearser.js"></script>
     
@@ -129,6 +162,8 @@ var level_page= `
             
         <p id ="question-remark"></p>
         
+    </div>
+
     </div>
 
 `
@@ -375,6 +410,7 @@ var page_do =`
 `
 
 var pages = {
+    "Landing": landing_page,
     "Order": page_order,
     "Recognise": page_recognise,
     "Do": page_do
@@ -680,6 +716,16 @@ function prepareQuestions(level) {
                 question_string = "Welk categorie valt " + current + " in wat betreft teratologie?";
                 temp_temp_question_array.push({"Question": question_string, "Answer": content_dict[keys[i]].Zwangerschap[0]});
 
+                if ((content_dict[keys[i]].Zwangerschap).length > 1){
+
+                    time = content_dict[keys[i]].Zwangerschap[1]
+                    effect = content_dict[keys[i]].Zwangerschap[2]
+
+                    question_string = "Inderdaad, " + current + " geeft " + time + " risico op: ";
+                    temp_temp_question_array.push({"Question": question_string, "Answer": effect});
+
+                };                
+
             } else if (level == 9 && Object.keys(content_dict[keys[i]]).includes("Enzym")) {
             
                 enzym = content_dict[keys[i]].Enzym;
@@ -829,6 +875,16 @@ function prepareQuestions(level) {
             
                     question_string = "Welk categorie valt " + child + " in wat betreft teratologie?";
                     temp_temp_question_array.push({"Question": question_string, "Answer": content_dict[child].Zwangerschap[0]});
+
+                    if ((content_dict[child].Zwangerschap).length > 1){
+                    
+                        time = content_dict[child].Zwangerschap[1]
+                        effect = content_dict[child].Zwangerschap[2]
+    
+                        question_string = "Inderdaad, " + current + " geeft " + time + " risico op: ";
+                        temp_temp_question_array.push({"Question": question_string, "Answer": effect});
+    
+                    }; 
     
                 } else if (terminals_array.includes(child) && Math.random() > 0.8) {
 
@@ -992,10 +1048,7 @@ function checkMnemonicAnswer() {
         trimmed_correct_answer = (((correct_answer.toLowerCase()).replace("-", "")).replace(" ", "")).replace("\'", "")
     }
 
-    trimmed_given_answer = (((given_answer.toLowerCase()).replace("-", "")).replace(" ", "")).replace("\'", "")
-
-    console.log(trimmed_correct_answer);
-    console.log(trimmed_given_answer);    
+    trimmed_given_answer = (((given_answer.toLowerCase()).replace("-", "")).replace(" ", "")).replace("\'", "")   
 
     console.log("- - > Right answer is: " + correct_answer)
 
@@ -1014,9 +1067,15 @@ function checkMnemonicAnswer() {
 
                 inner_text = document.getElementById('remark-card').innerText;
 
+                console.log("String: " + String(correct_answer.length - 1));
+
                 if (nr_ans == 1 || (inner_text.includes("1") && nr_ans == 2) || (inner_text.includes("2") && nr_ans == 3)) {
 
                     inBetween(correct_answer);
+
+                } else if (inner_text.includes(String(correct_answer.length - 1))){
+
+                    nextQuestion();
 
                 } else {
 
@@ -1047,8 +1106,6 @@ function checkMnemonicAnswer() {
                 console.log(question_array);
 
             };
-
-            setTimeout()
 
             document.getElementById('question-title').style.animation = "correct 1s linear 0s";
             setTimeout(function(){document.getElementById('question-title').style.animation = "idle 0s ease-in-out 0s";}, 3000);
@@ -1111,8 +1168,9 @@ function checkMnemonicAnswer() {
                 setTimeout(function(){document.getElementById('question-title').style.animation = "idle 0s ease-in-out 0s";}, 3000);
 
                 let local_question_array = question_array;
-                local_question_array.splice(intervalIndex(current_index, 4, local_question_array), 0, {"Question": ("Dit is de eerste herhaling: " + question_array[current_index].Question), "Answer": question_array[current_index].Answer});
-                local_question_array.splice(intervalIndex(current_index, 12, local_question_array), 0, {"Question": ("Dit is de tweede herhaling: " + question_array[current_index].Question), "Answer": question_array[current_index].Answer});
+                
+                local_question_array.splice(current_index + 4, 0, {"Question": ("Dit is de eerste herhaling: " + question_array[current_index].Question), "Answer": question_array[current_index].Answer});
+                local_question_array.splice(current_index + 12, 0, {"Question": ("Dit is de tweede herhaling: " + question_array[current_index].Question), "Answer": question_array[current_index].Answer});
 
                 question_array = local_question_array;
                 console.log(question_array);
@@ -1142,15 +1200,29 @@ function nextQuestion() {
 
     if (current_index < (question_array.length - 1)) {
         new_index = parseInt(current_index) + 1;
+
+        document.getElementById('remark-card').innerText = "Please enter the mnemonic phrase." 
+        document.getElementById('question-description').innerText = question_array[new_index].Question
+        document.getElementById('question-title').innerText = new_index + "/" + question_array.length;
+
     } else {
-        new_index = 0;
+
+        document.getElementById('remark-card').innerText = "Congratulations!" 
+        document.getElementById('question-description').innerText = "You're all done with the questions! Congratulations on completing them! You've done amazing; good job!"
+        document.getElementById('question-title').innerText = "Done!";
+
+        document.getElementById('question-input-card').innerHTML = 
+    
+        `
+        <input type="button" class="button" id ="hint-button" value="X" onclick="toPage('Landing')">
+        <input type="button" class="button" id ="check-button" value="✓" onclick="toPage('Landing')">  
+        `       
+
     }
     
     /* Setting all new text */
 
-    document.getElementById('remark-card').innerText = "Please enter the mnemonic phrase." 
-    document.getElementById('question-description').innerText = question_array[new_index].Question
-    document.getElementById('question-title').innerText = new_index + "/" + question_array.length;
+    
 
 };
 
@@ -1327,6 +1399,134 @@ function startDisorders() {
     /* Check */
 };
 
+function startSystems() {
+
+    openFullscreen();
+    document.getElementsByTagName("BODY")[0].innerHTML = level_page;
+    setEnter();
+
+    fetch("./data_angiotensin_system.json")
+
+    .then(function(response){
+        console.log("- > System file found and accessed");
+        return response.json();
+    })
+    .then(function(data){
+
+        original_dictionary = data;
+
+    })
+    .then(function(){
+
+        console.log("- > Preparing components");
+
+        var explorable_array = [original_dictionary];
+        
+        function_array = [];
+
+        while (explorable_array.length > 0) {
+
+            explorable_item = explorable_array[0];
+
+            if (Object.keys(explorable_item).includes("Subsystems")) {
+
+                explorable_array = explorable_array.concat(explorable_item["Subsystems"]);
+
+            } else if (Object.keys(explorable_item).includes("Parts")) {
+
+                explorable_array = explorable_array.concat(explorable_item["Parts"]);
+
+            };
+
+            if (Object.keys(explorable_item).includes("Process")) {
+
+                current_organ = explorable_item["Name"]
+                current_process = explorable_item["Process"]         
+                
+                console.log("Exploring " + current_organ)
+
+                for (let i = 0; i < current_process["Input"].length; i++) {
+
+                    temp_array = [current_organ]
+
+                    for (let j = 0; j < systems_list.length; j++) {
+
+                        temp_array.push(current_process[systems_list[j]][i]) 
+    
+                    };
+
+                    function_array.push(temp_array);
+
+                };                
+
+            };
+
+            explorable_array.shift();
+
+        };
+
+        console.table(function_array);
+
+    })
+    .then(function(){
+
+        var starting_point = Math.round(Math.random() * function_array.length);
+
+        explorables = [function_array[starting_point][1]];
+
+        while (explorables.length > 0) {
+
+            current_explorable = explorables[0];
+
+            for (let i = 0; i < function_array.length; i++) {
+
+                console.log(current_explorable);
+
+                if (function_array[i][1] == current_explorable) {
+
+                    full_question = systemQuestion(function_array[i]);
+
+                    console.log(full_question);
+
+                    question_array.push(full_question[0]);
+
+                    console.log("New explorable: " + full_question[1]);
+
+                    explorables.push(full_question[1]);
+                    console.log(explorables);
+
+                    i = function_array.length; 
+
+                } else if (function_array[i][2] == current_explorable) {
+
+                    full_question = systemQuestion(function_array[i]);
+                    question_array.push(full_question[0]);
+
+                    console.log("New explorable: " + full_question[2]);
+
+                    explorables.push(full_question[2]);
+
+                    i = function_array.length;
+
+                };
+
+            };            
+
+            explorables.shift();
+
+        };
+
+        
+
+        console.log("-> Prepared questions")
+        console.log(question_array);
+
+        setQuestions(); 
+
+    })
+
+};
+
 function giveHint() {
 
     console.log("- > Asked for hint")
@@ -1352,6 +1552,36 @@ function giveHint() {
 
 /* Finds the possible next index */
 
+function systemQuestion(system) {
+
+    console.log(system)
+
+    if (system[1] != "" && system[2] != "") {
+
+        question = "The " + system[2] + " causes " + system[3] + " of " + system[1] + " to occur in " + system[0] + ". What is the result?"
+        answer = system[4]
+
+    } else if (system[2] != "") {
+
+        question = "Mediated by " + system[2] + " the " + system[0] + " causes " + system[3] + " of: "
+        answer = system[4]
+
+    } else if (system[1] != "") {
+
+        question = "Through " + system[3] + " taking place in the " + system[0] + ", " + system[1] + " results in the following: "
+        answer = system[4]
+
+    };
+
+    if (!Array.isArray) {
+        return [{"Question": question, "Answer": answer}, answer]
+    } else {
+        return [{"Question": question, "Answer": answer}, answer[Math.round(Math.random() * answer.length)]]
+    }
+
+    
+}
+
 function intervalIndex(current_index, desired_interval, array) {
 
     let length = array.length;
@@ -1361,7 +1591,7 @@ function intervalIndex(current_index, desired_interval, array) {
     if (temp_current_index + temp_desired_interval < length) {
         return (temp_current_index + temp_desired_interval)
     } else {
-        return ((temp_current_index + temp_desired_interval) - length)
+        return (length)
     }
 
 }

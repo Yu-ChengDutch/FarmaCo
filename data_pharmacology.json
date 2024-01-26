@@ -8,7 +8,7 @@
                 {
                     "Naam": "Paracetamol",
                     "Indicaties-list": ["Eerste stap bij nociceptieve pijn"],
-                    "Zwangerschap": ["Meest veilig"],
+                    "Zwangerschap": ["Nooit risico"],
                     "Werkingsduur": "Uren",
                     "Enzym": ["CYP2E1", "Substraat", "Toxisch"],
                     "Bijwerkingen": [
@@ -111,7 +111,7 @@
                         {
                             "Naam": "Diclofenac",
                             "Werkingsduur": "Uren",
-                            "Zwangerschap": ["Waarschijnlijk veilig"]
+                            "Zwangerschap": ["Soms risico", "in het derde trimester", "Sluiting ductus en remming weeën"]
                         },
                         {
                             "Naam": "Naproxen",
@@ -120,12 +120,12 @@
                         {
                             "Naam": "Ibuprofen",
                             "Werkingsduur": "Uren",
-                            "Zwangerschap": ["Waarschijnlijk veilig", "1e en 2e trimester"]
+                            "Zwangerschap": ["Soms risico", "in het derde trimester", "Sluiting ductus en remming weeën"]
                         },
                         {
                             "Naam": "Acetylsalicylzuur",
                             "Werkingsduur": "Minuten",
-                            "Zwangerschap": ["Meest veilig"],
+                            "Zwangerschap": ["Soms risico", "in het derde trimester", "Sluiting ductus en remming weeën"],
                             "Bijwerkingen": [
                                 {
                                     "Bijwerking": "Hyperurikemie"
@@ -494,12 +494,12 @@
                                 {
                                     "Naam": "Acenocoumarol",
                                     "Werkingsduur": "Uren",
-                                    "Zwangerschap": ["Risico"]
+                                    "Zwangerschap": ["Soms risico", "in het eerste trimester", "Teratogeen effect"]
                                 },
                                 {
                                     "Naam": "Fenprocoumon",
                                     "Werkingsduur": "Dagen",
-                                    "Zwangerschap": ["Risico"]
+                                    "Zwangerschap": ["Altijd risico", "altijd", "Teratogeen effect"]
                                 }
                             ]
                         },
@@ -563,11 +563,12 @@
                                             "Naam": "Nadroparine",
                                             "Werkingsduur": "Uren",
                                             "Klaring": "Renaal",
-                                            "Zwangerschap": ["Meest veilig"]
+                                            "Zwangerschap": ["Nooit risico"]
                                         },
                                         {
                                             "Naam": "Enoxaparine",
-                                            "Werkingsduur": "Uren"
+                                            "Werkingsduur": "Uren",
+                                            "Zwangerschap": ["Nooit risico"]                                            
                                         }
                                     ]
                                 }
@@ -862,7 +863,7 @@
                                                     "Naam": "Metoprolol",
                                                     "Werkingsduur": "Uren",
                                                     "Rijveiligheid": "Categorie 1",
-                                                    "Zwangerschap": ["Waarschijnlijk veilig"]
+                                                    "Zwangerschap": ["Soms risico", "rondom de bevalling", "Hypotensie en bradycardie"]
                                                 },
                                                 {
                                                     "Naam": "Atenolol",
@@ -1117,11 +1118,12 @@
                                         {
                                             "Naam": "Enalapril",
                                             "Werkingsduur": "Uren",
-                                            "Zwangerschap": ["Risico", "2e en 3e trimester"]
+                                            "Zwangerschap": ["Soms risico", "in het 2e en 3e trimester", "Longhypoplasie en groeivertraging"]
                                         },
                                         {
                                             "Naam": "Lisinopril",
-                                            "Werkingsduur": "Etmaal"
+                                            "Werkingsduur": "Etmaal",
+                                            "Zwangerschap": ["Soms risico", "in het 2e en 3e trimester", "Longhypoplasie en groeivertraging"]
                                         },
                                         {
                                             "Naam": "Captopril",
@@ -1410,7 +1412,7 @@
                     "Klaring": "Renaal",
                     "Mechanisme": ["Remt glucose productie in de lever", "Verlaagt perifere gevoeligheid voor insuline"],
                     "Indicaties-list": ["Diabetes Mellitus II"],
-                    "Zwangerschap": ["Waarschijnlijk veilig"],
+                    "Zwangerschap": ["Nooit risico"],
                     "Bijwerkingen": [
                         {
                             "Bijwerking": "Lactaatacidose",
@@ -1864,7 +1866,7 @@
                     "Naam": "Carbamazepine",
                     "Rijveiligheid": "Categorie 2",
                     "Indicaties-list": ["Epilepsie", "Neuralgie", "Diabetes insipidus", "BPD"],
-                    "Zwangerschap": ["Risico"],
+                    "Zwangerschap": ["Altijd risico", "altijd", "Teratogeen effect"],
                     "Enzym": [["CYP2C9", "CYP3A4"], "Inducer"],
                     "Voorschrijven": "True"
                 },
@@ -1873,6 +1875,7 @@
                     "Rijveiligheid": "Categorie 3",
                     "Indicaties-list": ["Epilepsie", "Aritmieën"],
                     "Enzym": [["CYP2C9", "CYP3A4"], "Inducer"],
+                    "Zwangerschap": ["Altijd risico", "altijd", "Teratogeen effect"],
                     "Voorschrijven": "True"
                 }
             ]
@@ -2004,7 +2007,7 @@
                                                 {
                                                     "Naam": "Amoxicilline",
                                                     "Klaring": "Renaal",
-                                                    "Zwangerschap": ["Meest veilig"],
+                                                    "Zwangerschap": ["Nooit risico"],
                                                     "Indicaties": [
                                                         {
                                                             "Indicatie": "Milde pneumonie met onbekende verwekker",
@@ -2098,7 +2101,7 @@
                                     "Naam": "Ciprofloxacine",
                                     "Klaring": "Renaal",
                                     "Enzym": ["CYP3A4", "Inhibitor"],
-                                    "Zwangerschap": ["Onbekend", "2e en 3e trimester"]
+                                    "Zwangerschap": ["Onbekend"]
                                 },
                                 {
                                     "Naam": "Levofloxacine",
@@ -2189,7 +2192,7 @@
                                 {
                                     "Naam": "Doxycycline",
                                     "Indicatie-list": ["Pneumonie", "Gonorroe", "Syfilis", "Acne vulgaris", "Lyme", "Malaria"],
-                                    "Zwangerschap": ["Risico", "Vanaf week 16"],
+                                    "Zwangerschap": ["Soms risico", "in het 2e en 3e trimester", "Tandontwikkeling en botontwikkeling"],
                                     "Indicaties": [
                                         {
                                             "Indicatie": "Milde pneumonie met onbekende verwekker",
@@ -2228,7 +2231,7 @@
                             "Onderverdeling": [
                                 {
                                     "Naam": "Gentamicine",
-                                    "Zwangerschap": ["Risico"],
+                                    "Zwangerschap": ["Altijd risico", "altijd", "Oorontwikkeling en nierontwikkeling"],
                                     "Indicaties-list": ["Sepsis"]
                                 }
                             ]

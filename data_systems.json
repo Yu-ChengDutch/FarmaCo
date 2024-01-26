@@ -9,9 +9,11 @@
                     "Parts": [
                         {
                             "Name": "Adrenal cortex",
-                            "Output": {
-                                "Effectors": ["Angiotensin II"],
-                                "Effect": "Aldosterone"
+                            "Process": {
+                                "Input": ["Cholesterol", "Cholesterol"],
+                                "Mediator": ["Angiotensin II", "Potassium"],
+                                "Mediator effect": ["Stimulation", "Stimulation"],
+                                "Output": ["Aldosterone", "Aldosterone"]
                             }
                         }
                     ]
@@ -21,9 +23,11 @@
                     "Parts": [
                         {
                             "Name": "Posterior lobe",
-                            "Output": {
-                                "Effectors": ["Angiotensin II"],
-                                "Effect": [{"Name": "Antidiuretic hormone", "Abbreviation": "ADH"}]
+                            "Process": {
+                                "Input": [""],
+                                "Mediator": ["Angiotensin II"],
+                                "Mediator effect": ["Stimulation"],
+                                "Output": ["Vasopressin"]
                             }
                         },
                         {
@@ -33,6 +37,12 @@
                 },
                 {
                     "Name": "Pancreatic system",
+                    "Process": {
+                        "Input": [""],
+                        "Mediator": ["Angiotensin II"],
+                        "Mediator effect": ["Stimulation"],
+                        "Output": ["Vasopressin"]
+                    },
                     "Receptors": {
                         "Receptor": ["Beta-2 adrenergic receptor"],
                         "Effect": [["Insulin secretion", "Glugagon secretion"]]
@@ -212,6 +222,9 @@
                 "Effect": ["Increased osteoclast number"],
                 "Global effect": [["Increased bone resorption", "Hypercalcemia"]]
             }
+        },
+        {
+            "Name": "Nervous system"
         },
         {
             "Name": "Genital system",

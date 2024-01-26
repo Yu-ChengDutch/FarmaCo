@@ -1,0 +1,254 @@
+{
+    "Name": "General system",
+    "Subsystems": [
+        {
+            "Name": "Endocrine system",
+            "Subsystems": [
+                {
+                    "Name": "Adrenal system",
+                    "Parts": [
+                        {
+                            "Name": "Adrenal cortex",
+                            "Process": {
+                                "Input": ["Cholesterol", "Cholesterol"],
+                                "Mediator": ["Angiotensin II", "Potassium"],
+                                "Mediator effect": ["Stimulation", "Stimulation"],
+                                "Output": ["Aldosterone", "Aldosterone"],
+                                "Sign": ["", ""]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "Name": "Pituitary system",
+                    "Parts": [
+                        {
+                            "Name": "Posterior lobe",
+                            "Process": {
+                                "Input": [""],
+                                "Mediator": ["Angiotensin II"],
+                                "Mediator effect": ["Stimulation"],
+                                "Output": ["Vasopressin"],
+                                "Sign": [""]
+                            }
+                        },
+                        {
+                            "Name": "Anterior lobe"
+                        }
+                    ]
+                },
+                {
+                    "Name": "Parathyroid system",
+                    "Process": {
+                        "Input": [""],
+                        "Mediator": ["Calcium"],
+                        "Mediator effect": ["Decreased production"],
+                        "Output": ["Parathyroid hormone"],
+                        "Sign": [""]
+                    }
+                }
+            ]
+        },
+        {
+            "Name": "Hepatic system",
+            "Process": {
+                "Input": ["Vitamin D"],
+                "Mediator": [""],
+                "Mediator effect": ["Conversion"],
+                "Output": ["Calcifediol"],
+                "Sign": [""]
+            }
+        },
+        {
+            "Name": "Renal system",
+            "Subsystems": [
+                {
+                    "Name": "Renal circulation",
+                    "Parts": [
+                        {
+                            "Name": "Afferent arteriole"
+                        },
+                        {
+                            "Name": "Efferent arteriole",
+                            "Process": {
+                                "Input": ["", ""],
+                                "Mediator": ["Angiotensin II", "Efferent arteriolar vasoconstriction"],
+                                "Mediator effect": ["Stimulation", "Stimulation"],
+                                "Output": ["Efferent arteriolar vasoconstriction", "Glomerular pressure"],
+                                "Sign": ["", "Increased GFR"]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "Name": "Nephron",
+                    "Subsystems": [
+                        {
+                            "Name": "Renal corpuscle",
+                            "Subsystems": [
+                                {
+                                    "Name": "Glomerulus"
+                                },
+                                {
+                                    "Name": "Bowman's capsule"
+                                }
+                            ]
+                        },
+                        {
+                            "Name": "Renal tubule",
+                            "Subsystems": [
+                                {
+                                    "Name": "Proximal convoluted tubule",
+                                    "Process": {
+                                        "Input": ["Calcifediol"],
+                                        "Mediator": ["Parathyroid hormone"],
+                                        "Mediator effect": ["Conversion"],
+                                        "Output": ["Calcitriol"],
+                                        "Sign": ["", ""]
+                                    }
+                                },
+                                {
+                                    "Name": "Loop of Henle"
+                                },
+                                {
+                                    "Name": "Distal convoluted tubule",
+                                    "Process": {
+                                        "Input": ["", ""],
+                                        "Mediator": ["General hypotension", "General hypotension"],
+                                        "Mediator effect": ["Stimulation", "Stimulation"],
+                                        "Output": ["Prostaglandins", "Nitric oxide"],
+                                        "Sign": ["", ""]
+                                    }
+                                },
+                                {
+                                    "Name": "Collecting duct",
+                                    "Process": {
+                                        "Input": ["Urine"],
+                                        "Mediator": ["Vasopressin"],
+                                        "Mediator effect": ["Rebsorption"],
+                                        "Output": ["Water"],
+                                        "Sign": [""]
+                                    }
+                                }
+                            ],
+                            "Process": {
+                                "Input": ["Urine", "Urine", "Urine"],
+                                "Mediator": ["Aldosterone", "Angiotensin II", "Sodium"],
+                                "Mediator effect": ["Rebsorption", "Resorption", ["Excretion", "Reabsorption"]],
+                                "Output": [["Sodium", "Chloride"], ["Sodium", "Chloride"], ["Potassium", "Water"]],
+                                "Sign": ["", ""]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "Extracellular system",
+            "Process": {
+                "Input": ["Prostaglandin H2", "Prostaglandin H2", "Arachidonic acid", "Angiotensinogen", "Angiotensin II", "Angiotensin-converting enzym"],
+                "Mediator": ["", "", "COX-2", "Renin", "", ""],
+                "Mediator effect": ["Conversion", "Conversion", "Conversion", "Conversion", "Degradation", "Degradation"],
+                "Output": ["Prostaglandin E2", "Prostacyclin", "Prostaglandin H2", "Angiotensin I", "Angiotensin III", "Bradykinin"],
+                "Sign": ["", "", "", "", "", ""]
+            }          
+        },
+        {
+            "Name": "Pulmonary system",
+            "Process": {
+                "Input": ["Angiotensin I"],
+                "Mediator": ["Angiotensin-converting enzym"],
+                "Mediator effect": ["Conversion"],
+                "Output": ["Angiotensin II"],
+                "Sign": [""]
+            }
+        },
+        {
+            "Name": "Vascular system",
+            "Process": {
+                "Input": ["Angiotensin II", "Bradykinin"],
+                "Mediator": ["", ""],
+                "Mediator effect": ["Stimulation", "Stimulation"],
+                "Output": ["General vasoconstriction", ["Arteriodilation", "Venoconstriction"]],
+                "Sign": ["Hypertension", "Angio-oedema"]
+            }           
+        },
+        {
+            "Name": "Haematological system",
+            "Subsystems": [
+                {
+                    "Name": "Erythrocyte"
+                },
+                {
+                    "Name": "Thrombocyte",
+                    "Process": {
+                        "Input": ["Prostaglandin H2", "Tromboxane A2"],
+                        "Mediator": ["COX-1", ""],
+                        "Mediator effect": ["Conversion", "Stimulation"],
+                        "Output": ["Tromboxane A2", ["Platelet activation", "Platelet aggregation"]],
+                        "Sign": [""]
+                    }     
+                }
+            ]
+
+        },
+        {
+            "Name": "Gastrointestinal system",
+            "Process": {
+                "Input": ["Food"],
+                "Mediator": ["Vitamin D"],
+                "Mediator effect": ["Increased absorption"],
+                "Output": ["Calcium"],
+                "Sign": []
+            } 
+        },
+        {
+            "Name": "Skeletal system",
+            "Process": {
+                "Input": ["Bone"],
+                "Mediator": ["Vitamin D"],
+                "Mediator effect": ["Increased resorption"],
+                "Output": ["Calcium"],
+                "Sign": [""]
+            }
+        },
+        {
+            "Name": "Nervous system",
+            "Subsystems": [
+                {
+                    "Name": "Central nervous system",
+                    "Parts": [
+                        {
+                            "Name": "Hypothalamus",
+                            "Process": {
+                                "Input": [""],
+                                "Mediator": ["Prostaglandin E2"],
+                                "Mediator effect": ["Stimulation"],
+                                "Output": ["Thermogenisis"],
+                                "Sign": ["Fever"]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "Name": "Peripheral nervous system",
+                    "Parts": [
+                        {
+                            "Name": "Nociceptors",
+                            "Process": {
+                                "Input": [""],
+                                "Mediator": ["Prostaglandin E2"],
+                                "Mediator effect": ["Sensitisation"],
+                                "Output": ["Hyperalgesia"],
+                                "Sign": ["Pain"]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "Genital system"
+        }
+    ]
+}
