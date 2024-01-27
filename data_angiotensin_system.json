@@ -61,6 +61,13 @@
         },
         {
             "Name": "Renal system",
+            "Process": {
+                "Input": ["Prostaglandin H2"],
+                "Mediator": [""],
+                "Mediator effect": ["Conversion"],
+                "Output": ["Prostaglandin E2"],
+                "Sign": ["", ""]
+            },
             "Subsystems": [
                 {
                     "Name": "Renal circulation",
@@ -108,7 +115,14 @@
                                     }
                                 },
                                 {
-                                    "Name": "Loop of Henle"
+                                    "Name": "Loop of Henle",
+                                    "Process": {
+                                        "Input": ["Urine"],
+                                        "Mediator": ["Prostaglandin E2"],
+                                        "Mediator effect": ["Reduction of reabsorption"],
+                                        "Output": ["Natrium"],
+                                        "Sign": ["", ""]
+                                    }
                                 },
                                 {
                                     "Name": "Distal convoluted tubule",
@@ -146,18 +160,18 @@
         {
             "Name": "Extracellular system",
             "Process": {
-                "Input": ["Prostaglandin H2", "Prostaglandin H2", "Arachidonic acid", "Angiotensinogen", "Angiotensin II", "Angiotensin-converting enzym"],
-                "Mediator": ["", "", "COX-2", "Renin", "", ""],
-                "Mediator effect": ["Conversion", "Conversion", "Conversion", "Conversion", "Degradation", "Degradation"],
-                "Output": ["Prostaglandin E2", "Prostacyclin", "Prostaglandin H2", "Angiotensin I", "Angiotensin III", "Bradykinin"],
-                "Sign": ["", "", "", "", "", ""]
+                "Input": ["Prostaglandin H2", "Arachidonic acid", "Angiotensinogen", "Angiotensin II", "Angiotensin-converting enzyme"],
+                "Mediator": ["", "COX-2", "Renin", "", ""],
+                "Mediator effect": ["Conversion", "Conversion", "Conversion", "Degradation", "Degradation"],
+                "Output": ["Prostacyclin", "Prostaglandin H2", "Angiotensin I", "Angiotensin III", "Bradykinin"],
+                "Sign": ["", "", "", "", ""]
             }          
         },
         {
             "Name": "Pulmonary system",
             "Process": {
                 "Input": ["Angiotensin I"],
-                "Mediator": ["Angiotensin-converting enzym"],
+                "Mediator": ["Angiotensin-converting enzyme"],
                 "Mediator effect": ["Conversion"],
                 "Output": ["Angiotensin II"],
                 "Sign": [""]

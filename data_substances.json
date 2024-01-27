@@ -1,0 +1,61 @@
+{
+    "Name": "Substances",
+    "Subdivisions": [
+        {
+            "Name": "Hormones",
+            "Subdivisions": [
+                {
+                    "Name": "Peptide hormones",
+                    "Subdivision": [
+                        {
+                            "Name": "Angiotensin I",
+                            "Alternative name": "Proangiotensin"
+                        }
+                    ]
+                },
+                {
+                    "Name": "Amino acid hormones"
+                },
+                {
+                    "Name": "Steroid hormones"
+                },
+                {
+                    "Name": "Ecosanoid hormones"
+                }
+            ]
+        },
+        {
+            "Name": "Receptors",
+            "Subdivisions": [
+                {
+                    "Name": "Ionotropic receptors"
+                },
+                {
+                    "Name": "Metabotropic receptors"
+                },
+                {
+                    "Name": "Enzyme-linked receptors"
+                },
+                {
+                    "Name": "Nuclear receptors",
+                    "Subdivisions": [
+                        {
+                            "Name": "Vitamin D receptor",
+                            "Alternative name": "Calcitriol receptor",
+                            "Abbreviation": "VDR"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "Enzymes",
+            "Subdivisions": [
+                {
+                    "Name": "Angiotensin-converting enzyme",
+                    "Abbreviation": "ACE"
+                }
+            ]
+        }
+    ]
+}

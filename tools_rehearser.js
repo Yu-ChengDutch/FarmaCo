@@ -420,6 +420,9 @@ var trivial_answers = ["Ja", "Nee", "Substraat", "Inhibitor", "Inducer"];
 
 function toPage(page) {
     document.getElementById("main-container").innerHTML = pages[page];
+
+    question_array = [];
+    systems_database = {};
 }
 
 /***
@@ -1465,6 +1468,8 @@ function startSystems() {
 
         };
 
+        shuffle(function_array)
+
         console.table(function_array);
 
     })
@@ -1563,7 +1568,7 @@ function systemQuestion(system) {
 
     } else if (system[2] != "") {
 
-        question = "Mediated by " + system[2] + " the " + system[0] + " causes " + system[3] + " of: "
+        question = "In " + system[0] + " and mediated by " + system[2] + " the " + system[1] + " causes " + system[3] + " of: "
         answer = system[4]
 
     } else if (system[1] != "") {
@@ -1573,9 +1578,12 @@ function systemQuestion(system) {
 
     };
 
-    if (!Array.isArray) {
+    if (!Array.isArray(answer)) {
         return [{"Question": question, "Answer": answer}, answer]
     } else {
+
+        console.log(Math.round(Math.random() * answer.length));
+
         return [{"Question": question, "Answer": answer}, answer[Math.round(Math.random() * answer.length)]]
     }
 
