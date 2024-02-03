@@ -322,7 +322,9 @@
                                             ]
                                         },
                                         {
-                                            "Name": "Ora serrata"
+                                            "Name": "Ora serrata",
+                                            "Anterior border": "Pars plana",
+                                            "Posterior border": "Retina"
                                         },
                                         {
                                             "Name": "Ciliary body",
@@ -335,6 +337,8 @@
                                                 },
                                                 {
                                                     "Name": "Pars plicata",
+                                                    "Anterior border": "Zonule of Zinn",
+                                                    "Posterior border": "Pars plana",
                                                     "Product": "Aqueous humour",
                                                     "Subdivision": [
                                                         {
@@ -356,7 +360,9 @@
                                                     ]
                                                 },
                                                 {
-                                                    "Name": "Pars plana"
+                                                    "Name": "Pars plana",
+                                                    "Anterior border": "Pars plicata",
+                                                    "Posterior border": "Ora serrata"
                                                 },
                                                 {
                                                     "Name": "Ciliary epithelium",
@@ -549,16 +555,22 @@
                                     "Cells": ["Collagen"],
                                     "Structures": [
                                         {
-                                            "Name": "Anterior hyaloid membrane"
+                                            "Name": "Anterior hyaloid membrane",
+                                            "Anterior border": ["Ciliary body", "Lens"],
+                                            "Posterior border": "Vitreous body"
                                         },
                                         {
-                                            "Name": "Posterior hyaloid membrane"
+                                            "Name": "Posterior hyaloid membrane",
+                                            "Anterior border": "Vitreous body",
+                                            "Posterior border": "Retina"
                                         }
                                     ]
                                 },
                                 {
                                     "Name": "Vitreous body",
-                                    "Alternative name": "Vitreous humour"
+                                    "Alternative name": "Vitreous humour",
+                                    "Anterior border": "Anterior hyaloid membrane",
+                                    "Posterior border": "Posterior hyaloid membrane"
                                 }
                             ]
                         }
