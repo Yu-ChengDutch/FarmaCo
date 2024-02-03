@@ -1596,39 +1596,66 @@ function start_ophtho(level) {
 
             for (var i = 0; i < Object.keys(content_dict).length; i++) {
     
-                current_object = Object.keys(content_dict)[i];
+                current_name = Object.keys(content_dict)[i];
+                current_object = content_dict[current_name];      
+                
+                console.log(Object.keys(current_object));
     
-                if (Object.keys(content_dict[current_object].includes["Product"])) {
+                if (Object.keys(current_object).includes("Product")) {
     
-                    question_string = "What does " + current_object + " produce?";
-                    temp_question_array.push({"Question": question_string, "Answer": content_dict[current_object]["Product"]});
+                    question_string = "What does " + current_name + " produce?";
+                    temp_question_array.push({"Question": question_string, "Answer": current_object["Product"]});
+
+                    if (Math.random() > 0.8) {
+
+                        temp_question_array.push(ancestryQuestion(current_name))
+
+                    };
 
                 };
 
-                if (Object.keys(content_dict[current_object].includes["Anterior border"])) {
+                if (Object.keys(current_object).includes("Anterior border")) {
     
-                    question_string = "What structure borders " + current_object + " anteriorly?";
-                    temp_question_array.push({"Question": question_string, "Answer": content_dict[current_object]["Anterior border"]});
+                    question_string = "What structure borders " + current_name + " anteriorly?";
+                    temp_question_array.push({"Question": question_string, "Answer": current_object["Anterior border"]});
+
+                    if (Math.random() > 0.8) {
+
+                        temp_question_array.push(ancestryQuestion(current_object["Anterior border"]))
+
+                    };
 
                 };
 
-                if (Object.keys(content_dict[current_object].includes["Posterior border"])) {
+                if (Object.keys(current_object).includes("Posterior border")) {
     
-                    question_string = "What structure borders " + current_object + " posteriorly?";
-                    temp_question_array.push({"Question": question_string, "Answer": content_dict[current_object]["Posterior border"]});
+                    question_string = "What structure borders " + current_name + " posteriorly?";
+                    temp_question_array.push({"Question": question_string, "Answer": current_object["Posterior border"]});
+
+                    if (Math.random() > 0.8) {
+
+                        temp_question_array.push(ancestryQuestion(current_object["Posterior border"]))
+
+                    };
 
                 };
 
-                if (Object.keys(content_dict[current_object].includes["Size"])) {
+                if (Object.keys(current_object).includes("Size")) {
     
-                    question_string = "What is the " + content_dict[current_object]["Size"][0] + " of the " + current_object + "?";
-                    temp_question_array.push({"Question": question_string, "Answer": content_dict[current_object]["Size"][1]});
+                    question_string = "What is the " + current_object["Size"][0] + " of the " + current_name + "?";
+                    temp_question_array.push({"Question": question_string, "Answer": current_object["Size"][1]});
+
+                    if (Math.random() > 0.8) {
+
+                        temp_question_array.push(ancestryQuestion(current_name))
+
+                    };
 
                 };
             
             };
 
-        }
+        };
 
         question_array = (shuffle(temp_question_array)).flat(1);
 
