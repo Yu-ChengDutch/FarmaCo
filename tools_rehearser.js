@@ -1577,13 +1577,11 @@ function start_ophtho(level) {
         var temp_question_array = [];
         
         if (level == 1) {
-
-            var local_ancestry_dict = ancestry_dict;
     
-            for (var i = 0; i < Object.keys(local_ancestry_dict).length; i++) {
+            for (var i = 0; i < Object.keys(ancestry_dict).length; i++) {
     
-                child = Object.keys(local_ancestry_dict)[i];
-                parent = local_ancestry_dict[child]["Parent"]; 
+                child = Object.keys(ancestry_dict)[i];
+                parent = ancestry_dict[child]["Parent"]; 
     
                 if (parent != base && level == 1) {
     
@@ -1594,7 +1592,43 @@ function start_ophtho(level) {
             
             };
     
-        };
+        } else if (level == 2) {
+
+            for (var i = 0; i < Object.keys(content_dict).length; i++) {
+    
+                current_object = Object.keys(content_dict)[i];
+    
+                if (Object.keys(content_dict[current_object].includes["Product"])) {
+    
+                    question_string = "What does " + current_object + " produce?";
+                    temp_question_array.push({"Question": question_string, "Answer": content_dict[current_object]["Product"]});
+
+                };
+
+                if (Object.keys(content_dict[current_object].includes["Anterior border"])) {
+    
+                    question_string = "What structure borders " + current_object + " anteriorly?";
+                    temp_question_array.push({"Question": question_string, "Answer": content_dict[current_object]["Anterior border"]});
+
+                };
+
+                if (Object.keys(content_dict[current_object].includes["Posterior border"])) {
+    
+                    question_string = "What structure borders " + current_object + " posteriorly?";
+                    temp_question_array.push({"Question": question_string, "Answer": content_dict[current_object]["Posterior border"]});
+
+                };
+
+                if (Object.keys(content_dict[current_object].includes["Size"])) {
+    
+                    question_string = "What is the " + content_dict[current_object]["Size"][0] + " of the " + current_object + "?";
+                    temp_question_array.push({"Question": question_string, "Answer": content_dict[current_object]["Size"][1]});
+
+                };
+            
+            };
+
+        }
 
         question_array = (shuffle(temp_question_array)).flat(1);
 
