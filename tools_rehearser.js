@@ -1572,6 +1572,7 @@ function start_ophtho(level) {
     .then(function(){
 
         console.log(ancestry_dict);
+        console.log(content_dict);
 
         var temp_question_array = [];
         
