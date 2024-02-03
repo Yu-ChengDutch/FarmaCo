@@ -111,7 +111,7 @@
                         {
                             "Naam": "Diclofenac",
                             "Werkingsduur": "Uren",
-                            "Zwangerschap": ["Soms risico", "in het derde trimester", "Sluiting ductus en remming weeën"]
+                            "Zwangerschap": ["Soms risico", "in het derde trimester", ["Sluiting ductus arteriosis", "Weeënremming"]]
                         },
                         {
                             "Naam": "Naproxen",
@@ -120,12 +120,12 @@
                         {
                             "Naam": "Ibuprofen",
                             "Werkingsduur": "Uren",
-                            "Zwangerschap": ["Soms risico", "in het derde trimester", "Sluiting ductus en remming weeën"]
+                            "Zwangerschap": ["Soms risico", "in het derde trimester", ["Sluiting ductus arteriosis", "Weeënremming"]]
                         },
                         {
                             "Naam": "Acetylsalicylzuur",
                             "Werkingsduur": "Minuten",
-                            "Zwangerschap": ["Soms risico", "in het derde trimester", "Sluiting ductus en remming weeën"],
+                            "Zwangerschap": ["Soms risico", "in het derde trimester", ["Sluiting ductus arteriosis", "Weeënremming"]],
                             "Bijwerkingen": [
                                 {
                                     "Bijwerking": "Hyperurikemie"
@@ -279,6 +279,7 @@
                         },
                         {
                             "Naam": "Macrogol",
+                            "Indicaties-list": ["Eerste keuze voor obstipatie bij opioïdgebruik"],
                             "Indicaties": [
                                 {
                                     "Indicatie": "Obstipatie bij opioïdgebruik",
@@ -295,6 +296,7 @@
                 {
                     "Naam": "Contactlaxantia",
                     "Effect": ["Verbetering stoelgang", "Vermindering obstipatie"],
+                    "Indicaties-list": ["Twee keuze voor obstipatie bij opioïdgebruik"],
                     "Bijwerkingen": [
                         {
                             "Bijwerking": "Buikkramp"
@@ -325,6 +327,7 @@
                 {
                     "Naam": "Klysmata",
                     "Effect": ["Verbetering stoelgang", "Vermindering obstipatie"],
+                    "Indicaties-list": ["Obstipatie met fecale impactie", "Derde keuze voor obstipatie bij opioïdgebruik"],
                     "Indicaties": [
                         {
                             "Indicatie": "Obstipatie bij opioïdgebruik",
@@ -863,7 +866,7 @@
                                                     "Naam": "Metoprolol",
                                                     "Werkingsduur": "Uren",
                                                     "Rijveiligheid": "Categorie 1",
-                                                    "Zwangerschap": ["Soms risico", "rondom de bevalling", "Hypotensie en bradycardie"]
+                                                    "Zwangerschap": ["Soms risico", "rondom de bevalling", ["Hypotensie", "Bradycardie"]]
                                                 },
                                                 {
                                                     "Naam": "Atenolol",
@@ -1118,12 +1121,12 @@
                                         {
                                             "Naam": "Enalapril",
                                             "Werkingsduur": "Uren",
-                                            "Zwangerschap": ["Soms risico", "in het 2e en 3e trimester", "Longhypoplasie en groeivertraging"]
+                                            "Zwangerschap": ["Soms risico", "in het 2e en 3e trimester", ["Longhypoplasie","groeivertraging"]]
                                         },
                                         {
                                             "Naam": "Lisinopril",
                                             "Werkingsduur": "Etmaal",
-                                            "Zwangerschap": ["Soms risico", "in het 2e en 3e trimester", "Longhypoplasie en groeivertraging"]
+                                            "Zwangerschap": ["Soms risico", "in het 2e en 3e trimester", ["Longhypoplasie","groeivertraging"]]
                                         },
                                         {
                                             "Naam": "Captopril",
@@ -1298,6 +1301,7 @@
                 {
                     "Naam": "Omeprazol",
                     "Werkingsduur": "Dagen",
+                    "Indicaties-list": ["Eerste keuze maagbeschermer"],
                     "Indicaties": [
                         {
                             "Indicatie": "Maagbescherming",
@@ -1344,6 +1348,7 @@
                     "Naam": "Atorvastatine",
                     "Werkingsduur": "Uren",
                     "Enzym": ["CY3A4", "Substraat", "Actief"],
+                    "Indicaties-list": ["Eerste keuze bij ernstige hypercholesterolemie"],
                     "Indicaties": [
                         {
                             "Indicatie": "Milde hypercholesterolemie (LDL-daling <40%)",
@@ -1359,6 +1364,7 @@
                     "Naam": "Simvastatine",
                     "Werkingsduur": "Uren",
                     "Enzym": ["CY3A4", "Substraat", "Actief"],
+                    "Indicaties-list": ["Eerste keuze bij milde hypercholesterolemie"],
                     "Klaring": "Renaal",
                     "Indicaties": [
                         {
@@ -1370,6 +1376,7 @@
                 {
                     "Naam": "Pravastatine",
                     "Klaring": "Renaal",
+                    "Indicaties-list": ["Eerste keuze bij hypercholesterolemie en CYP3A4-remmers of -inducers"],
                     "Indicaties": [
                         {
                             "Indicatie": "Hypercholesterolemie",
@@ -2008,6 +2015,7 @@
                                                     "Naam": "Amoxicilline",
                                                     "Klaring": "Renaal",
                                                     "Zwangerschap": ["Nooit risico"],
+                                                    "Indicaties-list": ["Eerste keuze bij milde pneumonie"],
                                                     "Indicaties": [
                                                         {
                                                             "Indicatie": "Milde pneumonie met onbekende verwekker",
@@ -2029,6 +2037,7 @@
                                                         },
                                                         {
                                                             "Naam": "Amoxicilline/clavulaanzuur",
+                                                            "Indicaties-list": ["Eerste keuze bij milde aspiratiepneumonie"],
                                                             "Indicaties": [
                                                                 {
                                                                     "Indicatie": "Milde aspiratiepneumonie",
@@ -2106,6 +2115,7 @@
                                 {
                                     "Naam": "Levofloxacine",
                                     "Klaring": "Renaal",
+                                    "Indicaties-list": ["Eerste keuze bij legionella-pneumonie"],
                                     "Indicaties": [
                                         {
                                             "Indicatie": "Milde pneumonie met vermoeden Legionalla",
@@ -2192,7 +2202,8 @@
                                 {
                                     "Naam": "Doxycycline",
                                     "Indicatie-list": ["Pneumonie", "Gonorroe", "Syfilis", "Acne vulgaris", "Lyme", "Malaria"],
-                                    "Zwangerschap": ["Soms risico", "in het 2e en 3e trimester", "Tandontwikkeling en botontwikkeling"],
+                                    "Zwangerschap": ["Soms risico", "in het 2e en 3e trimester", ["Verstoorde tandontwikkeling", "Verstoorde osteogenese"]],
+                                    "Indicaties-list": ["TWeede keuze bij milde pneumonie voor volwassenen en kinder >10 jaar"],
                                     "Indicaties": [
                                         {
                                             "Indicatie": "Milde pneumonie met onbekende verwekker",
@@ -2231,7 +2242,7 @@
                             "Onderverdeling": [
                                 {
                                     "Naam": "Gentamicine",
-                                    "Zwangerschap": ["Altijd risico", "altijd", "Oorontwikkeling en nierontwikkeling"],
+                                    "Zwangerschap": ["Altijd risico", "altijd", ["Verstoorde oorontwikkeling", "Verstoorde nefrogenese"]],
                                     "Indicaties-list": ["Sepsis"]
                                 }
                             ]
@@ -2239,7 +2250,7 @@
                         {
                             "Naam": "Macroliden",
                             "Mechanisme": ["Bindt de 50S subunits ribisoom", "Inhibitie van de bacteriële eiwitsynthese", "Bacteriostase"],
-                            "Indicaties-list": ["Gram-positieve bacteriën", "Pneumokokken", "Intracellulaire organismen"],
+                            "Indicaties-list": ["Milde pneumonie voor zwangeren en kinderen <10", "Gram-positieve bacteriën", "Pneumokokken", "Intracellulaire organismen"],
                             "Bijwerkingen": [
                                 {
                                     "Bijwerking": "Gastro-intestinale bijwerkingen"
@@ -2266,7 +2277,7 @@
                             ],
                             "Onderverdeling": [
                                 {
-                                    "Naam": "Azitromycine",
+                                    "Naam": "Azitromycine",                                    
                                     "Indicaties": [
                                         {
                                             "Indicatie": "Milde pneumonie met onbekende verwekker",
@@ -2330,6 +2341,7 @@
                                         {
                                             "Naam": "Miconazol",
                                             "Enzym": ["CYP2C9", "Inhibitor"],
+                                            "Indicaties-list": ["Eerste keuze bij spruw", "Eerste keuze bij orofaryngeale candidiasis"],
                                             "Indicaties": [
                                                 {
                                                     "Indicatie": "Orofaryngeale candidiasis",
@@ -2375,6 +2387,7 @@
                                         {
                                             "Naam": "Itraconazol",
                                             "Enzym": ["CYP3A4", "Inhibitor"],
+                                            "Indicaties-list": ["Tweede keuze bij orofaryngeale candidiasis"],
                                             "Bijwerkingen": [
                                                 {
                                                     "Bijwerking": "Hartfalen"

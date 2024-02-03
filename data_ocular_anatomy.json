@@ -1,0 +1,570 @@
+{
+    "Name": "Eye",
+    "Subdivision": [
+        {
+            "Name": "Ocular adnexa",
+            "Subdivision": [
+                {
+                    "Name": "Orbital bones",
+                    "Subdivision": [
+                        {
+                            "Name": "Facial skeleton",
+                            "Subdivision": [
+                                {
+                                    "Name": "Lacrimal bone"
+                                },
+                                {
+                                    "Name": "Maxilla"
+                                },
+                                {
+                                    "Name": "Zygomatic bone"
+                                }
+                            ]
+                        },
+                        {
+                            "Name": "Neurocranium",
+                            "Subdivision": [
+                                {
+                                    "Name": "Palatine bone"
+                                },
+                                {
+                                    "Name": "Ethmoid bone"
+                                },
+                                {
+                                    "Name": "Sphenoid bone"
+                                },
+                                {
+                                    "Name": "Frontal bone"
+                                }
+                            ]
+                        }        
+                    ]
+                },
+                {
+                    "Name": "Orbital muscles",
+                    "Subdivision": [
+                        {
+                            "Name": "M. Rectus superior bulbi",
+                            "Origo": "Annulus tendineus communis",
+                            "Insertio": "Superior to the corneal limbus",
+                            "Innervatio": "N. Oculomotorius pars superior",
+                            "Actiones": ["Elevation", "Adduction", "Intorsion"]
+                        },
+                        {
+                            "Name": "M. Rectus inferior bulbi",
+                            "Origo": "Annulus tendineus communis",
+                            "Insertio": "Inferior to the corneal limbus",
+                            "Innervatio": "N. Oculomotorius pars inferior",
+                            "Actiones": ["Depression", "Adduction" , "Extorsion"]
+                        },
+                        {
+                            "Name": "M. Rectus lateralis bulbi",
+                            "Origo": "Annulus tendineus communis",
+                            "Insertio": "Temporal to the corneal limbus",
+                            "Innervatio": "N. Abducens",
+                            "Actiones": ["Abduction"]
+                        },
+                        {
+                            "Name": "M. Rectus medialis bulbi",
+                            "Origo": "Annulus tendineus communis",
+                            "Insertio": "Medial to the corneal limbus",
+                            "Innervatio": "N. Oculomotorius pars inferior",
+                            "Actiones": ["Adduction"]
+                        },
+                        {
+                            "Name": "M. Obliquus superior bulbi",
+                            "Origo": "Os sphenoidale",
+                            "Insertio": "Temporal to the corneal limbus",
+                            "Innervatio": "N. Trochlearis",
+                            "Actiones": ["Intorsion", "Abduction", "Depression"]
+                        },
+                        {
+                            "Name": "M. Obliquus inferior bulbi",
+                            "Origo": "Os maxilla facies orbitalis",
+                            "Insertio": "Temporal to the corneal limbus",
+                            "Innervatio": "N. Oculomotorius pars inferior",
+                            "Actiones": ["Extorsion", "Elevation", "Abduction"]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Eyelid",
+                    "Subdivision": [
+                        {
+                            "Name": "Canthus",
+                            "Subdivision": [
+                                {
+                                    "Name": "Inner canthus"
+                                },
+                                {
+                                    "Name": "Outer canthus"
+                                }
+                            ]
+                        },
+                        {
+                            "Name": "Epicanthus"
+                        },
+                        {
+                            "Name": "Palpebral fissure"
+                        },
+                        {
+                            "Name": "Tarsus"
+                        },
+                        {
+                            "Name": "Eyelash"
+                        },
+                        {
+                            "Name": "Palpebral glands",
+                            "Subdivision": [
+                                {
+                                    "Name": "Moll's glands",
+                                    "Alternative name": "Ciliary glands",
+                                    "Product": "Sebum"
+                                },
+                                {
+                                    "Name": "Meibomian glands",
+                                    "Alternative name": "Tarsal glands",
+                                    "Product": "Lipid layer of tears"
+                                },
+                                {
+                                    "Name": "Glands of Zeis",
+                                    "Product": "Sebum"
+                                }
+                            ]
+                        },                        
+                        {
+                            "Name": "M. Levator palpebrae superioris"
+                        }
+                    ]
+                },
+                {
+                    "Name": "Lacrimal apparatus",
+                    "Subdivision": [
+                        {
+                            "Name": "Productive lacrimal apparatus",
+                            "Subdivision": [
+                                {
+                                    "Name": "Lacrimal gland",
+                                    "Product": "Aqueous layer of tears"
+                                },
+                                {
+                                    "Name": "Accessory lacrimal glands",
+                                    "Subdivision": [
+                                        {
+                                            "Name": "Ciaccio's glands",
+                                            "Alternative name": "Wolfring's glands",
+                                            "Product": "Aqueous layer of tears"
+                                        },
+                                        {
+                                            "Name": "Krause's glands",
+                                            "Product": "Aqueous layer of tears"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "Name": "Reductive lacrimal apparatus",
+                            "Subdivision": [
+                                {
+                                    "Name": "Lacrimal punctum"
+                                },
+                                {
+                                    "Name": "Lacrimal papilla"
+                                },
+                                {
+                                    "Name": "Lacrimal canaliculi"
+                                },
+                                {
+                                    "Name": "Lacrimal sac"
+                                },
+                                {
+                                    "Name": "Nasolacrimal duct"
+                                }
+                            ]
+                        },
+                        {
+                            "Name": "Lacrimal caruncle"
+                        },
+                        {
+                            "Name": "Lacrimal lake"
+                        }
+                    ]
+                },
+                {
+                    "Name": "Conjunctiva",
+                    "Subdivision": [
+                        {
+                            "Name": "Palpebral conjunctiva"
+                        },
+                        {
+                            "Name": "Bulbar conjunctiva",
+                            "Subdivision": [
+                                {
+                                    "Name": "Plica semilunaris"
+                                }
+                            ]
+                        },
+                        {
+                            "Name": "Fornix conjunctiva"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "Globe",
+            "Subdivision": [
+                {
+                    "Name": "Anterior segment",
+                    "Subdivision": [
+                        {
+                            "Name": "Tunics",
+                            "Subdivision": [
+                                {
+                                    "Name": "Fibrous tunic",
+                                    "Subdivision": [
+                                        {
+                                            "Name": "Sclera",
+                                            "Layers": [
+                                                {
+                                                    "Name": "Episclera"
+                                                },
+                                                {
+                                                    "Name": "Scleral stroma"
+                                                },
+                                                {
+                                                    "Name": "Lamina fusca"
+                                                },
+                                                {
+                                                    "Name": "Sclerar endothelium"
+                                                },
+                                                {
+                                                    "Name": "Scleral spur"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "Name": "Limbus corneae",
+                                            "Cells": ["Stratified squamous epithelium"],
+                                            "Subdivision": [
+                                                {
+                                                    "Name": "Palisades of Vogt",
+                                                    "Cells": ["Limbal stem cells"]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "Name": "Cornea",
+                                            "Layers": [
+                                                {
+                                                    "Name": "Corneal epithelium"
+                                                },
+                                                {
+                                                    "Name": "Bowman's layer"
+                                                },
+                                                {
+                                                    "Name": "Substantia propria corneae"
+                                                },
+                                                {
+                                                    "Name": "Descemet's membrane"
+                                                },
+                                                {
+                                                    "Name": "Schwalbe's line"
+                                                },
+                                                {
+                                                    "Name": "Corneal endothelium"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "Name": "Tenon's capsule"
+                                        },
+                                        {
+                                            "Name": "Trabecular meshwork",
+                                            "Layers": [
+                                                {
+                                                    "Name": "Inner uveal meshwork"
+                                                },
+                                                {
+                                                    "Name": "Corneoscleral meshwork"
+                                                },
+                                                {
+                                                    "Name": "Cribiform meshwork"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "Name": "Schlemm's canal"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Name": "Vascular tunic",
+                                    "Alternative name": "Uvea",
+                                    "Subdivision": [
+                                        {
+                                            "Name": "Choroid",
+                                            "Alternative name": "Choroidea",
+                                            "Layers": [
+                                                {
+                                                    "Name": "Haller's layer"
+                                                },
+                                                {
+                                                    "Name": "Sattler's layer"
+                                                },
+                                                {
+                                                    "Name": "Choriocapillaris"
+                                                },
+                                                {
+                                                    "Name": "Bruch's membrane"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "Name": "Ora serrata"
+                                        },
+                                        {
+                                            "Name": "Ciliary body",
+                                            "Subdivision": [
+                                                {
+                                                    "Name": "Zonule of Zinn",
+                                                    "Alternative name": "Zonular fibres",
+                                                    "Origo": "Lens capsule",
+                                                    "Insertio": "Ciliary epithelium"
+                                                },
+                                                {
+                                                    "Name": "Pars plicata",
+                                                    "Product": "Aqueous humour",
+                                                    "Subdivision": [
+                                                        {
+                                                            "Name": "M. Ciliaris",
+                                                            "Innervatio": "Nn. ciliares breves",
+                                                            "Actiones": ["Accomodation", "Regulation of trabecular meshwork pore sizes"],
+                                                            "Parts": [
+                                                                {
+                                                                    "Name": "Longitudinal fibres",
+                                                                    "Origo": "Scleral spur",
+                                                                    "Insertio": "Ciliary processes"
+                                                                    
+                                                                },
+                                                                {
+                                                                    "Name": "Circular fibres"
+                                                                }
+                                                            ]                                            
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "Name": "Pars plana"
+                                                },
+                                                {
+                                                    "Name": "Ciliary epithelium",
+                                                    "Parts": [
+                                                        {
+                                                            "Name": "Ciliary processes"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "Name": "Iris",
+                                            "Subdivision": [
+                                                {
+                                                    "Name": "Pupillary frill"
+                                                },
+                                                {
+                                                    "Name": "Pupillary zone"
+                                                },
+                                                {
+                                                    "Name": "Pupillary collarette"
+                                                },
+                                                {
+                                                    "Name": "Ciliary zone"
+                                                }
+                                            ],
+                                            "Layers": [
+                                                {
+                                                    "Name": "Anterior limiting layer"
+                                                },
+                                                {
+                                                    "Name": "Stroma of iris"
+                                                },
+                                                {
+                                                    "Name": "M. Dilatator pupillae",
+                                                    "Innervatio": "Nn. ciliares longi",
+                                                    "Actio": ["Dilates pupil"]
+                                                },
+                                                {
+                                                    "Name": "M. Sphincter pupillae",
+                                                    "Innervatio": "Nn. ciliares longi",
+                                                    "Actio": ["Constricts pupil"]
+                                                },
+                                                {
+                                                    "Name": "Anterior pigment epithelium"
+                                                },
+                                                {
+                                                    "Name": "Posterior pigment epithelium"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Name": "Lens",
+                                    "Subdivision": [
+                                        {
+                                            "Name": "Lens capsule",
+                                            "Subdivision": [
+                                                {
+                                                    "Name": "Mittendorf's dot"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "Name": "Lens epithelium"
+                                        },
+                                        {
+                                            "Name": "Lens fibres"
+                                        }                                        
+                                    ]
+                                },
+                                {
+                                    "Name": "Aqueous chambers",
+                                    "Subdivision": [
+                                        {
+                                            "Name": "Anterior chamber"
+                                        },
+                                        {
+                                            "Name": "Posterior chamber"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Posterior segment",
+                    "Subdivision": [
+                        {
+                            "Name": "Retina",
+                            "Layers": [
+                                {
+                                    "Name": "Inner limiting membrane",
+                                    "Cells": ["Müller cells"]
+                                },
+                                {
+                                    "Name": "Nerve fibre layer",
+                                    "Cells": ["Axons of ganglion cell bodies"]
+                                },
+                                {
+                                    "Name": "Ganglion cell layer",
+                                    "Cells": ["Nuclei of ganglion cells"]
+                                },
+                                {
+                                    "Name": "Inner plexiform layer"
+                                },
+                                {
+                                    "Name": "Inner nuclear layer"
+                                },
+                                {
+                                    "Name": "Outer plexiform layer",
+                                    "Alternative name": "Fibre layer of Henle"
+                                },
+                                {
+                                    "Name": "Outer nuclear layer"
+                                },
+                                {
+                                    "Name": "External limiting membrane"
+                                },
+                                {
+                                    "Name": "Layer of rods and cones"
+                                },
+                                {
+                                    "Name": "Retinal pigment epithelium"
+                                }
+                            ],
+                            "Subdivision": [
+                                {
+                                    "Name": "Optic disc",
+                                    "Subdivision": [
+                                        {
+                                            "Name": "Optic cup"
+                                        },
+                                        {
+                                            "Name": "Bergmeister's papilla"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Name": "Macula lutea",
+                                    "Size": ["Diameter", "5.5mm"],
+                                    "Subdivision": [
+                                        {
+                                            "Name": "Perifovea"
+                                        },
+                                        {
+                                            "Name": "Parafovea",
+                                            "Size": ["Diameter", "2.5mm"]
+                                        },
+                                        {
+                                            "Name": "Fovea centralis",
+                                            "Size": ["Diameter", "1.5mm"]
+                                        },
+                                        {
+                                            "Name": "Foveal avascular zone",
+                                            "Size": ["Diameter", "0.5mm"]
+                                        },
+                                        {
+                                            "Name": "Foveola",
+                                            "Size": ["Diameter", "0.35mm"]
+                                        },
+                                        {
+                                            "Name": "Umbo",
+                                            "Size": ["Diameter", "0.15mm"]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "Name": "Vitreous chamber",
+                            "Subdivision": [
+                                {
+                                    "Name": "Patella fossa"
+                                },
+                                {
+                                    "Name": "Wieger's ligament",
+                                    "Alternative name": "Ligamentum hyaloideocapsulare"
+                                },
+                                {
+                                    "Name": "Hyaloid canal",
+                                    "Alternative name": "Cloquet's canal"
+                                },
+                                {
+                                    "Name": "Vitreous membrane",
+                                    "Alternative name": "Hyaloid membrane",
+                                    "Cells": ["Collagen"],
+                                    "Structures": [
+                                        {
+                                            "Name": "Anterior hyaloid membrane"
+                                        },
+                                        {
+                                            "Name": "Posterior hyaloid membrane"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Name": "Vitreous body",
+                                    "Alternative name": "Vitreous humour"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

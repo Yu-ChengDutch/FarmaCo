@@ -256,6 +256,16 @@
                                 "Output": ["Hyperalgesia"],
                                 "Sign": ["Pain"]
                             }
+                        },
+                        {
+                            "Namme": "Peripheral motor nerves",
+                            "Process": {
+                                "Input": ["Calcium"],
+                                "Mediator": ["Sodium channels"],
+                                "Mediator effect": ["Suppression"],
+                                "Output": ["Increased depolarisation threshold"],
+                                "Sign": ["Hyporeflexia"]
+                            }
                         }
                     ]
                 }

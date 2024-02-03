@@ -9,6 +9,7 @@
 var question_array = [];
 
 var ancestry_dict = {};
+var layers_dict = {};
 var content_dict = {};
 var terminals_array = [];
 
@@ -49,86 +50,105 @@ Do
 
 <div class="main-container" id="main-container">
 
-<div class="inset"> <p> Medication </p> </div>
+<script type="text/javascript" src="tools_rehearser.js"></script>
 
-<div class="card" onclick="startLevel(1)">
+    <div class="inset"> <p> Ophthalmology </p> </div>
 
-<div class="bubble">
-<img src="./Images/Network.png">
-</div>
+    <div class="card" onclick="start_ophtho(1)">
 
-<div class="text-right">
+        <div class="bubble">
+            <img src="./Images/Eye.png">
+        </div>
 
-<H1> Categories </H1>
-<p> & where to find them </p>
+        <div class="text-right">
 
-</div>
+            <H1> Ocular anatomy </H1>
+            <p> & seeing what is there </p>
 
-</div>
+        </div>
 
-<div class="card" onclick="startLevel(2)">
+    </div>   
 
-<div class="bubble">
-<img src="./Images/Network.png">
-</div>
+    <div class="inset"> <p> Medication </p> </div>
 
-<div class="text-right">
+    <div class="card" onclick="startLevel(1)">
 
-<H1> Drugs </H1>
-<p> & what they are</p>
+    <div class="bubble">
+    <img src="./Images/Network.png">
+    </div>
 
-</div>
+    <div class="text-right">
 
-</div>
+    <H1> Categories </H1>
+    <p> & where to find them </p>
 
-<div class="inset"> <p> Basic medicine </p> </div>
+    </div>
 
-<div class="card" onclick="startSymptoms()">
+    </div>
 
-<div class="bubble">
-<img src="./Images/Pad.png">
-</div>
+    <div class="card" onclick="startLevel(2)">
 
-<div class="text-right">
+    <div class="bubble">
+    <img src="./Images/Network.png">
+    </div>
 
-<H1> Symptoms </H1>
-<p> & what they mean </p>
+    <div class="text-right">
 
-</div>
+    <H1> Drugs </H1>
+    <p> & what they are</p>
 
-</div>
+    </div>
 
-<div class="card" onclick="startDisorders()">
+    </div>
 
-<div class="bubble">
-<img src="./Images/Pregnancy.png">
-</div>
+    <div class="inset"> <p> Basic medicine </p> </div>
 
-<div class="text-right">
+    <div class="card" onclick="startSymptoms()">
 
-<H1> Disorders </H1>
-<p> & what causes them </p>
+    <div class="bubble">
+    <img src="./Images/Pad.png">
+    </div>
 
-</div>
+    <div class="text-right">
 
-</div>
+    <H1> Symptoms </H1>
+    <p> & what they mean </p>
 
-<div class="card" onclick="startSystems()">
+    </div>
 
-<div class="bubble">
-<img src="./Images/Network.png">
-</div>
+    </div>
 
-<div class="text-right">
+    <div class="card" onclick="startDisorders()">
 
-<H1> Systems </H1>
-<p> & what how they work </p>
+    <div class="bubble">
+    <img src="./Images/Pregnancy.png">
+    </div>
 
-</div>
+    <div class="text-right">
 
-</div>
+    <H1> Disorders </H1>
+    <p> & what causes them </p>
 
-</div>
+    </div>
+
+    </div>
+
+    <div class="card" onclick="startSystems()">
+
+    <div class="bubble">
+    <img src="./Images/Network.png">
+    </div>
+
+    <div class="text-right">
+
+    <H1> Systems </H1>
+    <p> & what how they work </p>
+
+    </div>
+
+    </div>
+
+    </div>
 `
 
 var level_page= `
@@ -453,7 +473,7 @@ function startLevel(level) {
         console.log(original_dictionary);
         console.log("-> Starting level " + level.toString());    
 
-        prepareComponents();
+        prepare_ancestry(original_dictionary, "Naam", "Onderverdeling");
     })
     .then(function(){
 
@@ -478,14 +498,16 @@ function startLevel(level) {
 
 };
 
-function prepareComponents() {
+function prepare_ancestry(input, name_tag, divider_tag, layers_tag = "") {
 
     console.log("- > Preparing components");
 
-    var explorable_array = [original_dictionary];
+    var explorable_array = new Array();
     var temp_ancestry_dict = {};
     var temp_content_dict = {};
     var temp_terminals_array = [];
+
+    explorable_array.push(input);
 
     while (explorable_array.length > 0) {
 
@@ -493,29 +515,29 @@ function prepareComponents() {
 
         console.log("Exploring " + explorable_item);
 
-        parent_name = explorable_item.Naam;
+        parent_name = explorable_item[name_tag];
 
         temp_content_dict[parent_name] = explorable_item;
 
-        if (Object.keys(explorable_item).includes("Onderverdeling")) {
+        if (Object.keys(explorable_item).includes(divider_tag)) {
 
             /* I.e. explorable_item is non-terminal */
 
-            for (var i = 0; i < explorable_item.Onderverdeling.length; i++) {
+            for (var i = 0; i < explorable_item[divider_tag].length; i++) {
 
                 /* Push each child to explorable */
 
-                explorable_array.push(explorable_item.Onderverdeling[i]);
+                explorable_array.push(explorable_item[divider_tag][i]);
 
-                var child_name = explorable_item.Onderverdeling[i].Naam;
+                var child_name = explorable_item[divider_tag][i][name_tag];
 
-                if (Object.keys(explorable_item.Onderverdeling[i]).includes("Onderverdeling")) {
+                if (Object.keys(explorable_item[divider_tag][i]).includes(divider_tag)) {
 
                     grand_children = [];
 
-                    for (var j = 0; j < explorable_item.Onderverdeling[i].Onderverdeling.length; j++) {
+                    for (var j = 0; j < explorable_item[divider_tag][i][divider_tag].length; j++) {
 
-                        grand_children.push(explorable_item.Onderverdeling[i].Onderverdeling[j].Naam);
+                        grand_children.push(explorable_item[divider_tag][i][divider_tag][j][name_tag]);
 
                     };
                     
@@ -650,9 +672,9 @@ function prepareQuestions(level) {
                 if (level == 11) {
 
                     if (terminals_array.includes(current)) {
-                        question_string = "Van welk medicijn is dit het bijwerkingenprofiel: " + current_side_effects;
+                        question_string = "Van welk medicijn is dit het bijwerkingenprofiel: " + parseArray(current_side_effects);
                     } else {
-                        question_string = "Van welk klasse medicijn is dit het bijwerkingenprofiel: " + current_side_effects;
+                        question_string = "Van welk klasse medicijn is dit het bijwerkingenprofiel: " + parseArray(current_side_effects);
                     };
 
                     temp_temp_question_array.push({"Question": question_string, "Answer": current});
@@ -706,12 +728,12 @@ function prepareQuestions(level) {
 
             if (level == 4 && Object.keys(content_dict[keys[i]]).includes("Indicaties-list")) {
 
-                question_string = "Welk" + question_string_middle + "medicijn is bruikbaar voor de volgende symptomen: " + content_dict[keys[i]]["Indicaties-list"];
+                question_string = "Welk" + question_string_middle + "medicijn is bruikbaar voor de volgende symptomen: " + parseArray(content_dict[keys[i]]["Indicaties-list"]);
                 temp_temp_question_array.push({"Question": question_string, "Answer": current });
 
             } else if (level == 5 && Object.keys(content_dict[keys[i]]).includes("Mechanisme")) {
             
-                question_string = "Welk" + question_string_middle + "medicijn werk op de volgende manier: " + content_dict[keys[i]].Mechanisme;
+                question_string = "Welk" + question_string_middle + "medicijn werk op de volgende manier: " + parseArray(content_dict[keys[i]].Mechanisme);
                 temp_temp_question_array.push({"Question": question_string, "Answer": current });
 
             } else if (level == 7 && Object.keys(content_dict[keys[i]]).includes("Zwangerschap")) {
@@ -1399,7 +1421,6 @@ function startDisorders() {
         setQuestions(); 
     });
 
-    /* Check */
 };
 
 function startSystems() {
@@ -1491,8 +1512,6 @@ function startSystems() {
 
                     full_question = systemQuestion(function_array[i]);
 
-                    console.log(full_question);
-
                     question_array.push(full_question[0]);
 
                     console.log("New explorable: " + full_question[1]);
@@ -1505,12 +1524,12 @@ function startSystems() {
                 } else if (function_array[i][2] == current_explorable) {
 
                     full_question = systemQuestion(function_array[i]);
+
                     question_array.push(full_question[0]);
 
                     console.log("New explorable: " + full_question[2]);
 
                     explorables.push(full_question[2]);
-
                     i = function_array.length;
 
                 };
@@ -1529,6 +1548,63 @@ function startSystems() {
         setQuestions(); 
 
     })
+
+};
+
+function start_ophtho(level) {
+
+    openFullscreen();
+    document.getElementsByTagName("BODY")[0].innerHTML = level_page;
+    setEnter();
+
+    fetch("./data_ocular_anatomy.json")
+
+    .then(function(response){
+        console.log("- > Disorder file found and accessed");
+        return response.json();
+    })
+    .then(function(data){
+
+        prepare_ancestry(data, "Name", "Subdivision", "Layers");
+        base = data.Name;       
+
+    })
+    .then(function(){
+
+        console.log(ancestry_dict);
+
+        var temp_question_array = [];
+        
+        if (level == 1) {
+
+            var local_ancestry_dict = ancestry_dict;
+    
+            for (var i = 0; i < Object.keys(local_ancestry_dict).length; i++) {
+    
+                child = Object.keys(local_ancestry_dict)[i];
+                parent = local_ancestry_dict[child]["Parent"]; 
+    
+                if (parent != base && level == 1) {
+    
+                    question_string = "Of what structure is the " + child + " a part?";
+                    temp_question_array.push({"Question": question_string, "Answer": parent });
+
+                };
+            
+            };
+    
+        };
+
+        question_array = (shuffle(temp_question_array)).flat(1);
+
+    })
+    .then(function(){
+
+        console.log("-> Prepared questions")
+        console.log(question_array);
+
+        setQuestions(); 
+    });
 
 };
 
@@ -1556,6 +1632,20 @@ function giveHint() {
  ***/
 
 /* Finds the possible next index */
+
+function parseArray(array) {
+
+    let new_array = "";
+
+    if (Array.isArray(array)) {
+        new_array = array.join(", ")
+    } else {
+        new_array = new_array;
+    };
+
+    return new_array;
+
+}
 
 function systemQuestion(system) {
 
