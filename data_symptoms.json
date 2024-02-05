@@ -89,7 +89,7 @@
                                     "Name": "Paralysis",
                                     "Alternative name": "Plegia",
                                     "Definition": "Loss of motor function",
-                                    "Subdivisions": [
+                                    "Sudivision": [
                                         {
                                             "Name": "Hemiplegia",
                                             "Alternative name": "Hemiparesis",
@@ -138,7 +138,7 @@
                     "Subdivision": [
                         {
                             "Name": "Altered mental status",
-                            "Subdivisions": [
+                            "Sudivision": [
                                 {
                                     "Name": "Confusion",
                                     "Definition": "Disorientation and impaired thinking"
@@ -200,6 +200,189 @@
                             "Name": "Asthenia",
                             "Alternative name": "Perceived weakness",
                             "Definition": "Perceived lack of muscular strength"
+                        }
+                    ]
+                },
+                {
+                    "Name": "Ocular symptoms",
+                    "Subdivision": [
+                        {
+                            "Name": "Nyctalopia",
+                            "Alternative name": "Night blindness",
+                            "Causes": ["Retinitis pigmentosa", "Retinal detachment", "Oguchi disease", "Cortical cataract", "Vitamin A deficiency", "Xerophthalmia", "Glaucoma", "Visual snow", "Myopia"]
+                        },
+                        {
+                            "Name": "Hemeralopia",
+                            "Alternative name": "Day blindness",
+                            "Causes": ["Cone dystrophy", "Achromatopsia", "Albinism", "Aniridia", "Nuclear sclerotic cataract"]
+                        },
+                        {
+                            "Name": "Glare",
+                            "Causes": ["Posterior subscapular cataract"]
+                        },
+                        {
+                            "Name": "Argyl-Robertson pupils",
+                            "Definition": "Bilateral small pupils that accommodate but with an absent pupillary light reflex",
+                            "Causes": ["Neurosyphilis", "Diabetic retinopathy"]
+                        },
+                        {
+                            "Name": "Marcus Gunn pupil",
+                            "Alternative name": "Relative afferent pupillary defect",
+                            "Abbreviation": "RAPD",
+                            "Definition": "Normal pupillary light reflex on contralateral light, decreased reflex on ipsilateral light",
+                            "Causes": ["Optic neuropathy", "Optic neuritis"]
+                        },
+                        {
+                            "Name": "Madarosis",
+                            "Definition": "Loss of eyelashes",
+                            "Causes": ["Blepharitis", "Leprosy"]
+                        },
+                        {
+                            "Name": "Scotoma",
+                            "Definition": "Focal loss of visual acuity surrounded by normal vision",
+                            "Causes": ["Optic neuritis", "Retinopathy", "Stroke", "Macular degeneration"]
+                        },
+                        {
+                            "Name": "Pupillary hippus",
+                            "Alternative name": "Pupillary athetosis",
+                            "Definition": "Spasmodic, rhythmic, but regular dilating and contracting pupillary movements."
+                        },
+                        {
+                            "Name": "Papilloedema",
+                            "Definition": "Optic disc swelling",
+                            "Causes": ["Intracranial hypertension"]
+                        },
+                        {
+                            "Name": "Cotton wool spots",
+                            "Definition": "Opaque, fluffy, white patches on the retina of the eye",
+                            "Causes": ["Diabetic retinopathy", "Hypertensive retinopathy", "Acute leukemia", "Giant cell arteritis"]
+                        },
+                        {
+                            "Name": "Cupped optic disc",
+                            "Definition": "Large optic cup compared to the whole optic disc",
+                            "Causes": ["Glaucoma"]
+                        },
+                        {
+                            "Name": "Muscae volitantes",
+                            "Alternative name": "Floaters",
+                            "Sudivision": [
+                                {
+                                    "Name": "Weiss ring",
+                                    "Definition": "Large, ring shaped floater",
+                                    "Causes": ["Posterior vitreous detachment"]
+                                }
+                            ]
+                        },
+                        {
+                            "Name": "Photopsia",
+                            "Definition": "Perceived flashes of light in the field of vision",
+                            "Causes": ["Posterior vitreous detachment", "Migraine aura", "Retinoschisis", "Retinal detachment", "Occipital lobe infarction", "Macular degeneration", "Optic neuritis"]
+                        },
+                        {
+                            "Name": "Tunnel vision",
+                            "Definition": "Loss of peripheral vision, with retention of central vision",
+                            "Causes": ["Glaucoma", "Retinitis pigmentosa", "Hypovolaemia", "Hypoxia"]
+                        },
+                        {
+                            "Name": "Charcot-Bouchard aneurysms",
+                            "Definition": "Aneurysms of blood vessels less than 300 umeter in diameter; occur in the brain and eye."
+                        },
+                        {
+                            "Name": "Ocular neovascularisation",
+                            "Sudivision": [
+                                {
+                                    "Name": "Intraretinal microvascular abnormalities"
+                                },
+                                {
+                                    "Name": "Retinal neovascularisation"
+                                },
+                                {
+                                    "Name": "Rubeosis iridis",
+                                    "Definition": "Neovascularisation on the surface of the iris"
+                                },
+                                {
+                                    "Name": "Corneal neovascularisation",
+                                    "Causes": ["Aniridia", "Steven Johnsons Syndrome", "Iatrogenic"]
+                                }
+                            ]
+                        },
+                        {
+                            "Name": "Macular oedema",
+                            "Definition": "Swelling of the macula lutea",
+                            "Causes": ["Diabetic retinopathy", "Macular degeneration", "Iatrogenic", "Uveitis", "Retinitis pigmentosa", "Retinoschisis"]
+                        },
+                        {
+                            "Name": "Drusen",
+                            "Definition": "Small yellow accumulations of extracellular material between Bruch's membrane and the retinal pigment epithelium",
+                            "Causes": ["Macular degeneration"]
+                        },
+                        {
+                            "Name": "Anopsia",
+                            "Subdivision": [
+                                {
+                                    "Name": "Hemianopsia",
+                                    "Subdivision": [
+                                        {
+                                            "Name": "Homonymous hemianopsia",
+                                            "Causes": ["Occipital lobe infarction"]
+                                        },
+                                        {
+                                            "Name": "Heteronymous hemianopsia",
+                                            "Subdivision": [
+                                                {
+                                                    "Name": "Binasal hemianopsia",
+                                                    "Causes": ["Internal carotid calcification"]
+                                                },
+                                                {
+                                                    "Name": "Bitemporal hemianospia"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "Name": "Superior hemianopsia",
+                                            "Definition": ["Anopia in the superior visual field due to pressure on top of the optic chiasm"],
+                                            "Causes": ["Pituitary tumor"]
+                                        },
+                                        {
+                                            "Name": "Inferior hemianopsia",
+                                            "Definition": ["Anopia in the inferior visual field due to pressure on the bottom of the optic chiasm"],
+                                            "Causes": ["Craniopharyngioma"]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Name": "Quadrantopsia",
+                                    "Definition": "Anopia of a quarter of the visual field"
+                                },
+                                {
+                                    "Name": "Metamorphopsia",
+                                    "Definition": "Distorted vision where straight lines appear wavy",
+                                    "Causes": ["Macular degeneration", "Posterior vitreous detachment"]
+                                },
+                                {
+                                    "Name": "Polycoria",
+                                    "Definition": "More than one pupillary opening in the iris."
+                                },
+                                {
+                                    "Name": "Corectopia",
+                                    "Definition": "Displacement of the eye's pupil from it's normal, central position",
+                                    "Causes": ["Iridodialysis", "Myopia", "Ectopia lentis"]
+                                },
+                                {
+                                    "Name": "Ectropion",
+                                    "Definition": "Eyelid turning outwards",
+                                    "Causes": ["Ichthyosis"]
+                                },
+                                {
+                                    "Name": "Entropion",
+                                    "Definition": "Eyelid turning inwards",
+                                    "Causes": ["Trachoma"]
+                                },
+                                {
+                                    "Name": "Epiphora",
+                                    "Definition": "Excess tears"
+                                }
+                            ]
                         }
                     ]
                 }

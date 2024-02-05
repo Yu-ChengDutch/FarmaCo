@@ -321,6 +321,13 @@ a:hover, a:active {
         background-color: rgb(255, 217, 217);
     }
 
+    #next-button {
+        margin-left: 0vw;
+        float: left;
+        background-color: rgb(206, 255, 206);
+        width: 60vw;
+    }
+
     .question-title-card {
         color: gray;
         height: 15vh;

@@ -451,7 +451,7 @@ function toPage(page) {
  * 
  ***/
 
-function startLevel(level) {
+function start_level(level) {
 
     openFullscreen();
     document.getElementsByTagName("BODY")[0].innerHTML = level_page;
@@ -484,14 +484,14 @@ function startLevel(level) {
         console.log("-> Prepared terminals array");
         console.log(terminals_array);
 
-        prepareQuestions(level);
+        prepare_questions(level);
     })
     .then(function(){
 
         console.log("-> Prepared questions")
         console.log(question_array);
 
-        setQuestions(); 
+        set_questions(); 
     });
 
     /* Check */
@@ -568,7 +568,7 @@ function prepare_ancestry(input, name_tag, divider_tag, layers_tag = "") {
 
 };
 
-function prepareQuestions(level) {
+function prepare_questions(level) {
 
     var temp_question_array = [];
     question_array = [];
@@ -589,7 +589,7 @@ function prepareQuestions(level) {
 
                 if (Math.random() > 0.8) {
 
-                    temp_question_array.push(ancestryQuestion(child));
+                    temp_question_array.push(ancestry_question(child));
     
                 } else {
 
@@ -667,7 +667,7 @@ function prepareQuestions(level) {
 
             if (Object.keys(content_dict[keys[i]]).includes("Bijwerkingen")) {
 
-                var current_side_effects = recursiveSideEffects(keys[i]);
+                var current_side_effects = recursive_effects(keys[i]);
 
                 if (level == 11) {
 
@@ -699,7 +699,7 @@ function prepareQuestions(level) {
 
                 if (Math.random() > 0.9 && temp_temp_question_array.length > 0) {
 
-                    temp_temp_question_array.push(ancestryQuestion(current));
+                    temp_temp_question_array.push(ancestry_question(current));
     
                 };
 
@@ -813,7 +813,7 @@ function prepareQuestions(level) {
             
             if (Math.random() > 0.9 && temp_temp_question_array.length > 0) {
 
-                temp_temp_question_array.push(ancestryQuestion(current));
+                temp_temp_question_array.push(ancestry_question(current));
 
             };   
             
@@ -956,7 +956,7 @@ function prepareQuestions(level) {
 
                 if (Object.keys(content_dict[child]).includes("Bijwerkingen")) {
 
-                    var current_side_effects = recursiveSideEffects(child);
+                    var current_side_effects = recursive_effects(child);
                     var current_string = "";
 
                     console.log(current_side_effects);
@@ -993,17 +993,17 @@ function prepareQuestions(level) {
 
 };
 
-function setQuestions(){
+function set_questions(){
 
     console.log("- > Setting first question")
 
     document.getElementById('question-title').innerText = "0/" + question_array.length;
     document.getElementById('question-description').innerText = question_array[0].Question
-    document.getElementById('remark-card').innerText = "Please enter the mnemonic phrase"
+    document.getElementById('remark-card').innerText = "Please answer the question"
 
 };
 
-function recursiveSideEffects(current) {
+function recursive_effects(current) {
 
     if (Object.keys(content_dict[current]).includes("Bijwerkingen")) {
 
@@ -1048,7 +1048,7 @@ function recursiveSideEffects(current) {
 
 };
 
-function checkMnemonicAnswer() {
+function grade_answer() {
 
     // There are basically two options: either we're checking the mnemonic, 
     // or the individual elements
@@ -1096,11 +1096,11 @@ function checkMnemonicAnswer() {
 
                 if (nr_ans == 1 || (inner_text.includes("1") && nr_ans == 2) || (inner_text.includes("2") && nr_ans == 3)) {
 
-                    inBetween(correct_answer);
+                    explanatory_remark(correct_answer);
 
                 } else if (inner_text.includes(String(correct_answer.length - 1))){
 
-                    nextQuestion();
+                    next_question();
 
                 } else {
 
@@ -1149,7 +1149,7 @@ function checkMnemonicAnswer() {
                 let local_question_array = question_array;
 
                 try {
-                    local_question_array.splice(intervalIndex(current_index, 1, local_question_array), 0, ancestryQuestion(given_answer));
+                    local_question_array.splice(intervalIndex(current_index, 1, local_question_array), 0, ancestry_question(given_answer));
                 } catch {
                     console.log("--> Doesn't exist: " + given_answer);
                 };
@@ -1160,7 +1160,7 @@ function checkMnemonicAnswer() {
 
                 let local_question_array = question_array;
 
-                let local_ancestry_question = ancestryQuestion(original_correct_answer, "up");
+                let local_ancestry_question = ancestry_question(original_correct_answer, "up");
 
                 if (!local_question_array.includes(local_ancestry_question)) {
                     local_question_array.splice(intervalIndex(current_index, 1, local_question_array), 0, local_ancestry_question);
@@ -1170,7 +1170,7 @@ function checkMnemonicAnswer() {
 
             };         
 
-            nextQuestion();
+            next_question();
 
             document.getElementById('question-title').style.animation = "correct 1s linear 0s";
             setTimeout(function(){document.getElementById('question-title').style.animation = "idle 0s ease-in-out 0s";}, 3000);
@@ -1212,7 +1212,7 @@ function checkMnemonicAnswer() {
     }
 }
 
-function nextQuestion() {
+function next_question() {
 
     resetButtons();
 
@@ -1226,7 +1226,7 @@ function nextQuestion() {
     if (current_index < (question_array.length - 1)) {
         new_index = parseInt(current_index) + 1;
 
-        document.getElementById('remark-card').innerText = "Please enter the mnemonic phrase." 
+        document.getElementById('remark-card').innerText = "Please answer the question." 
         document.getElementById('question-description').innerText = question_array[new_index].Question
         document.getElementById('question-title').innerText = new_index + "/" + question_array.length;
 
@@ -1251,7 +1251,7 @@ function nextQuestion() {
 
 };
 
-function inBetween(display_text) { 
+function explanatory_remark(display_text) { 
 
     resetButtons();
 
@@ -1266,9 +1266,7 @@ function inBetween(display_text) {
     document.getElementById('question-input-card').innerHTML = 
             
     `
-
-    <input type="button" class="button" id ="check-button" value="Next" onclick="nextQuestion()">
-    
+    <input type="button" class="button" id ="next-button" value="Next" onclick="next_question()">  
     `;
 
     setEnter();
@@ -1339,7 +1337,7 @@ function startSymptoms() {
         console.log("-> Prepared questions")
         console.log(question_array);
 
-        setQuestions(); 
+        set_questions(); 
     });
 
     /* Check */
@@ -1418,7 +1416,7 @@ function startDisorders() {
         console.log("-> Prepared questions")
         console.log(question_array);
 
-        setQuestions(); 
+        set_questions(); 
     });
 
 };
@@ -1545,7 +1543,7 @@ function startSystems() {
         console.log("-> Prepared questions")
         console.log(question_array);
 
-        setQuestions(); 
+        set_questions(); 
 
     })
 
@@ -1557,15 +1555,30 @@ function start_ophtho(level) {
     document.getElementsByTagName("BODY")[0].innerHTML = level_page;
     setEnter();
 
-    fetch("./data_ocular_anatomy.json")
+    var fetchable = "";
+
+    if (level < 3) {
+        fetchable = "./data_ocular_anatomy.json"
+    } else if (level == 3) {
+        fetchable = "./data_symptoms.json"
+    } else if (level == 4) {
+        fetchable = "./data_ocular_pathology.json"
+    }
+
+    fetch(fetchable)
 
     .then(function(response){
-        console.log("- > Disorder file found and accessed");
+        console.log("- > File found and accessed");
         return response.json();
     })
     .then(function(data){
 
         prepare_ancestry(data, "Name", "Subdivision", "Layers");
+
+        console.log(content_dict);
+
+        if (level == 3) { prepare_ancestry(content_dict["Ocular symptoms"], "Name", "Subdivision") };
+
         base = data.Name;       
 
     })
@@ -1608,7 +1621,7 @@ function start_ophtho(level) {
 
                     if (Math.random() > 0.8) {
 
-                        temp_question_array.push(ancestryQuestion(current_name))
+                        temp_question_array.push(ancestry_question(current_name))
 
                     };
 
@@ -1621,7 +1634,7 @@ function start_ophtho(level) {
 
                     if (Math.random() > 0.8) {
 
-                        temp_question_array.push(ancestryQuestion(current_object["Anterior border"]))
+                        temp_question_array.push(ancestry_question(current_object["Anterior border"]))
 
                     };
 
@@ -1634,7 +1647,7 @@ function start_ophtho(level) {
 
                     if (Math.random() > 0.8) {
 
-                        temp_question_array.push(ancestryQuestion(current_object["Posterior border"]))
+                        temp_question_array.push(ancestry_question(current_object["Posterior border"]))
 
                     };
 
@@ -1647,7 +1660,7 @@ function start_ophtho(level) {
 
                     if (Math.random() > 0.8) {
 
-                        temp_question_array.push(ancestryQuestion(current_name))
+                        temp_question_array.push(ancestry_question(current_name))
 
                     };
 
@@ -1655,6 +1668,29 @@ function start_ophtho(level) {
             
             };
 
+        } else if (level == 3) {
+
+            for (var i = 0; i < Object.keys(content_dict).length; i++) {
+
+                current_object = content_dict[Object.keys(content_dict)[i]];
+    
+                if (Object.keys(current_object).includes("Definition")) { temp_question_array.push(definition_question(current_object, "disease"))};
+                if (Object.keys(current_object).includes("Causes")) { temp_question_array.push(list_question(current_object, "Causes")) };
+
+            };
+
+
+        } else if (level == 4) {
+
+            for (var i = 0; i < Object.keys(content_dict).length; i++) {
+
+                current_object = content_dict[Object.keys(content_dict)[i]];
+
+                console.log(current_object);
+    
+                if (Object.keys(current_object).includes("Definition")) { temp_question_array.push(definition_question(current_object, "disease"))};
+            
+            };
         };
 
         question_array = (shuffle(temp_question_array)).flat(1);
@@ -1665,7 +1701,7 @@ function start_ophtho(level) {
         console.log("-> Prepared questions")
         console.log(question_array);
 
-        setQuestions(); 
+        set_questions(); 
     });
 
 };
@@ -1694,6 +1730,29 @@ function giveHint() {
  ***/
 
 /* Finds the possible next index */
+
+function definition_question(current_object, category) {
+
+    question_string = "What " + category + " is defined as follows: " + current_object["Definition"] + "?";
+    question = ({"Question": question_string, "Answer": current_object["Name"] });
+
+    return question
+
+};
+
+function list_question(current_object, list_type) {
+
+    if (current_object[list_type].length > 3) {
+        question_string = current_object["Name"] + " has at least " + (current_object[list_type].length).toString() + " " + list_type + "; name three: ";
+        question = {"Question": question_string, "Answer": current_object[list_type], "Nr_ans": 3};                    
+    } else {
+        question_string = current_object["Name"] + " has " + (current_object[list_type].length).toString() + " " + list_type + "; name them: ";
+        question = {"Question": question_string, "Answer": current_object[list_type], "Nr_ans": current_object[list_type].length};  
+    };  
+    
+    return question
+
+}
 
 function parseArray(array) {
 
@@ -1758,7 +1817,7 @@ function intervalIndex(current_index, desired_interval, array) {
 
 /* Shuffle arrays */
 
-function ancestryQuestion(current, direction="random") {
+function ancestry_question(current, direction="random") {
 
     try {
         if (terminals_array.includes(current) || direction == "up") {
@@ -1836,7 +1895,7 @@ function setEnter() {
     if (event.key === "Enter") {
         console.log("-> Pressed enter")
         // Trigger the button element with a click
-        checkMnemonicAnswer();
+        grade_answer();
     }
     });
 

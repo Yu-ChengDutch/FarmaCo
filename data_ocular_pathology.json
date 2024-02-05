@@ -1,0 +1,506 @@
+{
+    "Name": "Ocular pathology",
+    "Subdivision": [
+        {
+            "Name": "Onchocerciasis",
+            "Alternative name": "River blindness",
+            "Definition": "Progressive blindness due to a tropic infection with Onchocerca Volvulus",
+            "Causes": ["Onchocerca volvulus"],
+            "Symptoms": ["Visual impairment", "Corneal clouding", "Photophobia", "Ophthalgia"],
+            "Complications": ["Conjunctivitis", "Glaucoma"]
+        },
+        {
+            "Name": "Ocular ischaemic syndrome",
+            "Definition": "Constellation of symptoms associated with ocular ischaemia",
+            "Subdivision": [
+                {
+                    "Name": "Posterior segment ischaemic syndrome",
+                    "Symptoms": ["Amaurosis fugax", "Ophthalgia", "Retinal hemorrhages", "Beaded retinal veins", "Cotton wool spots"]
+                },
+                {
+                    "Name": "Anterior segment ischaemic syndrome"
+                }
+            ]
+        },
+        {
+            "Name": "Disorders of the adnexa",
+            "Subdivision": [
+                {
+                    "Name": "Disorders of the eyelid",
+                    "Subdivision": [
+                        {
+                            "Name": "Blepharoptosis",
+                            "Definition": "Drooping or falling of the upper eyelid",
+                            "Comoplications": ["Amblyopia", "Astigmatism"]
+                        },
+                        {
+                            "Name": "Blepharochaliasis",
+                            "Definition": "Chronic axacerbations and remissions of eyelid edema"
+                        },
+                        {
+                            "Name": "Blepharitis",
+                            "Definition": "Inflammation of the eyelid",
+                            "Subdivision": [
+                                {
+                                    "Name": "Anterior blepharitis",
+                                    "Subdivision": [
+                                        {
+                                            "Name": "Staphylococcal blepharitis"
+                                        },
+                                        {
+                                            "Name": "Sebhorrheic blepharitis"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Name": "Posterior blepharitis"
+                                }
+                            ]
+                        },
+                        {
+                            "Name": "Hordeolum",
+                            "Subdivision": [
+                                {
+                                    "Name": "External hordeolum",
+                                    "Definition": "Infection of the glands of Zeis",
+                                    "Structure": "Glands of Zeis"
+                                },
+                                {
+                                    "Name": "Internal hordeolum",
+                                    "Definition": "Infection of the Meibomian glands",
+                                    "Structure": "Meibomian glands"
+                                }
+                            ]
+                        },
+                        {
+                            "Name": "Chalazion",
+                            "Structure": "Meibomian glands",
+                            "Definition": "Sterile cyst of a blocked Meibomian gland"
+                        },
+                        {
+                            "Name": "Xanthelasma",
+                            "Definition": "Soft, yellowish plaques on the medial side of the eyes, made up of cholesterol"
+                        },
+                        {
+                            "Name": "Trachoma",
+                            "Causes": ["Chlamydia trachomatis"],
+                            "Definition": "Ocular chlamydia",
+                            "Symptoms": ["Ocular discharge", "Swollen eyelids", "Trichiasis", "Photophobia", "Pre-auricular lymphadenopathy", "Tachycardia"],
+                            "Complications": ["Corneal abrasion", "Corneal ulcer"]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Disorders of the lacrimal apparatus",
+                    "Subdivision": [
+                        {
+                            "Name": "Dacryoadenitis",
+                            "Definition": "Inflammation of the lacrimal glands",
+                            "Subdivision": [
+                                {
+                                    "Name": "Acute dacryoadenitis",
+                                    "Causes": ["Epstein-Barr virus", "Staphylococcus", "Gonococcus"]
+                                },
+                                {
+                                    "Name": "Chronic dacryoadenitis",
+                                    "Causes": ["Sarcoidosis", "Thyroid eye disease", "Orbital pseudotumour"]
+                                }
+                            ]
+                        },
+                        {
+                            "Name": "Nasolacrimal duct obstruction",
+                            "Symptoms": ["Epiphora"],
+                            "Complications": ["Dacryocystitis"],
+                            "Causes": ["Involutional stenosis", "Dacryolith", "Ocular trauma", "Sinusitis", "Sarcoidosis"]
+                        },
+                        {
+                            "Name": "Keratoconjunctivitis sicca"
+                        },
+                        {
+                            "Name": "Xerophthalmia",
+                            "Causes": ["Vitamin A deficiency", "Rheumatoid arthritis", "Sjögren's syndrome"],
+                            "Symptoms": ["Nyctalopia"],
+                            "Signs": [["Slit lamp examination", ["Bitot's spots"]]],
+                            "Complications": ["Dry eye syndrome", "Corneal ulceration"]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Disorders of the orbit",
+                    "Subdivision": [
+                        
+                    ]
+                },
+                {
+                    "Name": "Disorders of the extrinsic ocular muscles",
+                    "Subdivision": [
+                        {
+                            "Name": "Opthalmoparesis"
+                        },
+                        {
+                            "Name": "Progressive external ophthaloplegia"
+                        },
+                        {
+                            "Name": "Strabismus",
+                            "Subdivision": [
+                                {
+                                    "Name": "Esotropia"
+                                },
+                                {
+                                    "Name": "Exotropia"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Disorders of the conjunctiva",
+                    "Subdivision": [
+                        {
+                            "Name": "Conjunctivitis"
+                        },
+                        {
+                            "Name": "Conjunctival concretion"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "Disorders of the globe",
+            "Subdivision": [
+                {
+                    "Name": "Coloboma"
+                },
+                {
+                    "Name": "Disorders of the anterior segment",
+                    "Subdivision": [
+                        {
+                            "Name": "Uveitis"
+                        },
+                        {
+                            "Name": "Disorders of the sclera",
+                            "Subdivision": [
+                                {
+                                    "Name": "Scleritis"
+                                }
+                            ]
+                        },
+                        {
+                            "Name": "Disorders of the cornea",
+                            "Subdivision": [
+                                {
+                                    "Name": "Keratitis"
+                                },
+                                {
+                                    "Name": "Corneal ulcer"
+                                },
+                                {
+                                    "Name": "Corneal abrasion"
+                                },
+                                {
+                                    "Name": "Photokeratitis"
+                                },
+                                {
+                                    "Name": "Fuch's dystrophy"
+                                },
+                                {
+                                    "Name": "Keratoconus"
+                                },
+                                {
+                                    "Name": "Keratomycosis"
+                                }
+                            ]
+                        },
+                        {
+                            "Name": "Disorders of the iris",
+                            "Subdivision": [
+                                {
+                                    "Name": "Iritis"
+                                },
+                                {
+                                    "Name": "Aniridia"
+                                },
+                                {
+                                    "Name": "Iridodialysis",
+                                    "Definition": "Tearing away of the iris from the ciliary body",
+                                    "Symptoms": ["Corectopia", "Polycoria", "Monocular diplopia", "Glare", "Photophobia"],
+                                    "Complications": ["Glaucoma", "Hyphema"],
+                                    "Causes": ["Ocular trauma", "Iatrogenic"]
+                                }
+                            ]
+                        },
+                        {
+                            "Name": "Disorders of the ciliary body",
+                            "Subdivision": [
+                                
+                            ]
+                        },
+                        {
+                            "Name": "Disorders of the lens",
+                            "Subdivision": [
+                                {
+                                    "Name": "Cataract",
+                                    "Subdivision": [
+                                        {
+                                            "Name": "Nuclear sclerotic cataract",
+                                            "Symptoms": ["Second sight", "Visual impairment", "Hemeralopia"]
+                                        },
+                                        {
+                                            "Name": "Brunescent cataract",
+                                            "Symptoms": ["Visual impairment"],
+                                            "Signs": [["Physical examination", ["Brown discoloration of the lens"]]]
+                                        },
+                                        {
+                                            "Name": "Cortical catarect",
+                                            "Symptoms": ["Nyctalopia"],
+                                            "Signs": [["Slit lamp", ["Spoke-like pattern"]]]
+                                        },
+                                        {
+                                            "Name": "Posterior subscapular cataract",
+                                            "Symptoms": ["Glare"]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Name": "Presbyopia"
+                                },
+                                {
+                                    "Name": "Astigmatism"
+                                },
+                                {
+                                    "Name": "Anisometropia"
+                                },
+                                {
+                                    "Name": "Ectopia lentis",
+                                    "Definition": "A displacement or malposition of the eye's crystalline lens",
+                                    "Subdivision": [
+                                        {
+                                            "Name": "Lens subluxation"
+                                        },
+                                        {
+                                            "Name": "Lens luxation"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "Name": "Disorders of the aqueous humour",
+                            "Subdivision": [
+                                {
+                                    "Name": "Glaucoma",
+                                    "Subdivision": [
+                                        {
+                                            "Name": "Open-angle glaucoma",
+                                            "Definition": "Progressive loss of vision due to optic nerve damage; with or without intraocular hypertension",
+                                            "Symptoms": ["Glaukomflecken", "Tunnel vision", "Cupped disc"]
+                                        },
+                                        {
+                                            "Name": "Closed-angle glaucoma",
+                                            "Definition": "Glaucoma caused by contact between the iris and trabecular meshwork",
+                                            "Symptoms": ["Absent pupillary light reflex", "Glaukomflecken", "Ophthalgia", "Glare", "Conjunctival redness", "Intraocular hypertension", "Nausea", "Vomitus", "Visual impairment", "Cupped disc"]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Name": "Hyphema",
+                                    "Definition": "Bleeding in the anterior chamber of the eye",
+                                    "Causes": ["Iatrogenic", "Neovascularisation", "Retinoblastoma", "Uveitis", "Ocular trauma"],
+                                    "Complications": ["Heterochromia"]
+                                },
+                                {
+                                    "Name": "Hypopyon",
+                                    "Definition": "Pus exudate in the anterior chamber of the eye",
+                                    "Causes": ["Iritis", "Corneal ulcer", "Endophthalmitis"]
+                                }
+                            ]
+                        },
+                        {
+                            "Name": "Disorders of the intrinsic ocular muscles",
+                            "Subdivision": [
+                                {
+                                    "Name": "Hypermetropia"
+                                },
+                                {
+                                    "Name": "Myopia"
+                                },
+                                {
+                                    "Name": "Internal ophthalmoplegia"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Disorders of the posterior segment",
+                    "Subdivision": [
+                        {
+                            "Name": "Chorioretinitis"
+                        },
+                        {
+                            "Name": "Disorders of the choroid",
+                            "Subdivision": [
+                                {
+                                    "Name": "Chorioiditis"
+                                }
+                            ]
+                        },
+                        {
+                            "Name": "Disorders of the retina",
+                            "Subdivision": [
+                                {
+                                    "Name": "Retinitis"
+                                },
+                                {
+                                    "Name": "Solar retinopathy"
+                                },
+                                {
+                                    "Name": "Retinal detachment",
+                                    "Definition": "Disease in which the retina peels away from the chorion",
+                                    "Symptoms": ["Visual impairment", "Muscae volitantes", "Photopsia", "Dark curtain phenomenon"],
+                                    "Causes": ["Iatrogenic", "Myopia", "Proliferative diabetic retinopathy", "Ocular trauma"],
+                                    "Subdivisions": [
+                                        {
+                                            "Name": "Rhegmatogenous retinal detachment",
+                                            "Definition": "Retinal detachment due to a hole or tear in the retina, allowing fluid to pass into the subretinal space"
+                                        },
+                                        {
+                                            "Name": "Exudative retinal detachment",
+                                            "Alternative name": "Serous retinal detachment",
+                                            "Definition": "Inflammation or vascular abnormalities causing subretinal fluid"
+                                        },
+                                        {
+                                            "Name": "Tractional retinal detachment",
+                                            "Definition": "Retinal detachment due to pulling on the retinal pigment epithelium"
+                                        },
+                                        {
+                                            "Name": "Combined traction-rhegmatogenous"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Name": "Retinitis pigmentosa",
+                                    "Symptoms": ["Nyctalopia", "Visual impairment", "Monochromia", "Photopsia", "Photophobia", "Tunnel vision"]
+                                },
+                                {
+                                    "Name": "Macular oedema"
+                                },
+                                {
+                                    "Name": "Scotoma"
+                                },
+                                {
+                                    "Name": "Monochromacy"
+                                },
+                                {
+                                    "Name": "Nyctalopia"
+                                },
+                                {
+                                    "Name": "Retinopathy",
+                                    "Subdivisions": [
+                                        {
+                                            "Name": "Hypertensive retinopathy"
+                                        },
+                                        {
+                                            "Name": "Diabetic retinopathy",
+                                            "Complications": ["Macular edema", "Retinal detachment"],
+                                            "Treatment": ["Anti-VEGF injections"],
+                                            "Subdivisions": [
+                                                {
+                                                    "Name": "Nonproliferative diabetic retinopathy",
+                                                    "Abbreviation": "NPDR",
+                                                    "Subdivisions": [
+                                                        {
+                                                            "Name": "Mild NPDR",
+                                                            "Signs": [["Fundoscopy", ["Retinal microaneurysms"]]]
+                                                        },
+                                                        {
+                                                            "Name": "Severe NPDR",
+                                                            "Signs": [["Fundoscopy", ["Retinal microaneurysms", "Retinal hemorrhages", "Retinal venous beading", "Intraretinal microvascular abnormalities"]]]
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "Name": "Proliferative diabetic retinopathy",
+                                                    "Abbreviation": "PDR",
+                                                    "Signs": [["Fundoscopy", ["Retinal microaneurysms", "Retinal hemorrhages", "Retinal venous beading", "Intraretinal microvascular abnormalities", "Retinal neovascularisation", "Vitreous hemorrhage"], ["Slit lamp examination", ["Rubeosis iridis"]]]]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "Name": "Macular degeneration",
+                                            "Complications": ["Anopia"],
+                                            "Subdivisions": [
+                                                {
+                                                    "Name": "Dry macular degeneration",
+                                                    "Definition": "Macular degeneration due to the formation of drusen in the macula",
+                                                    "Symptoms": ["Central scotoma", "Intact visual acuity", "Metamorphopsia", "Positive photostress test", "Loss of contrast sensitivity"]
+                                                },
+                                                {
+                                                    "Name": "Wet macular degeneration",
+                                                    "Definition": "Macular degeneration due to neovascularisation of the macula",
+                                                    "Treatment": ["Anti-VEGF injections"],
+                                                    "Symptoms": ["Central scotoma", "Visual impairment", "Photopsia", "Metamorphopsia", "Loss of contrast sensitivity", "Positive photostress test"]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "Name": "Central serous retinopathy"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "Name": "Disorders of the vitreous body",
+                            "Subdivision": [
+                                {
+                                    "Name": "Vitreous hemorrhage",
+                                    "Symptoms": ["Muscae volitantes", "Visual impairment", "Reddish tint to vision", "Photopsia"],
+                                    "Causes": ["Diabetic retinopathy", "Ocular trauma", "Retinal detachment", "Retinoschisis", "Posterior vitreous detachment"]
+                                },
+                                {
+                                    "Name": "Posterior vitreous detachment",
+                                    "Abbreviation": "PVD",
+                                    "Definition": "Detachment of the posterior hyaloid membrane from the retina",
+                                    "Symptoms": ["Photopsia", "Muscae volitantes", "Weiss ring"],
+                                    "Causes": ["Degeneration", "Myopia"]
+                                },
+                                {
+                                    "Name": "Vitreomacular adhesion",
+                                    "Definition": "Disease where the vitreous body adheres to the retina in an abnormally strong way",
+                                    "Treatment": ["Pars plana vitrectomy"]
+                                }                                
+                            ]
+                        }
+                    ]
+                }                
+            ]
+        },
+        {
+            "Name": "Disorders of the visual nervous system",
+            "Subdivision": [
+                {
+                    "Name": "Disorders of the optic nerve",
+                    "Subdivision": [
+                        {
+                            "Name": "Optic neuritis",
+                            "Causes": ["Multiple sclerosis", "Diabetes mellitus", "Renal failure", "Liver failure", "Papilledema"],
+                            "Symptoms": ["Marcus Gunn pupil"]
+                        },
+                        {
+                            "Name": "Optic disc drusen"
+                        }
+                    ]
+                },
+                {
+                    "Name": "Disorders of the visual pathways",
+                    "Subdivision": [
+                        
+                    ]
+                }
+            ]
+        }
+        
+    ]
+}
