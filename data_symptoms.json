@@ -2,7 +2,43 @@
     "Name": "All problems",
     "Subdivision": [
         {
-            "Name": "Signs"
+            "Name": "Signs",
+            "Subdivision":[
+                {
+                    "Name": "Ocular signs",
+                    "Subdivision":[
+                        {
+                            "Name": "Slit lamp examination signs",
+                            "Subdivision":[
+                                {
+                                    "Name": "Conjunctival slit lamp signs",
+                                    "Subdivision": [
+                                        
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "Name": "Physical examination signs",
+                            "Subdivision": [
+                                {
+                                    "Name": "Conjunctival physical signs",
+                                    "Subdivision": [
+                                        {
+                                            "Name": "Hyposphagma",
+                                            "Definition": "Subconjunctival bleeding"
+                                        },
+                                        {
+                                            "Name": "Subconjunctival hyperaemia",
+                                            "Definition": "Increased subconjunctival blood flow and vasodilation"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
         },
         {
             "Name": "Symptoms",

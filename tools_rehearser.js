@@ -1577,7 +1577,7 @@ function start_ophtho(level) {
 
         console.log(content_dict);
 
-        if (level == 3) { prepare_ancestry(content_dict["Ocular symptoms"], "Name", "Subdivision") };
+        if (level == 3) { prepare_ancestry([content_dict["Ocular symptoms"], content_dict["Ocular signs"]], "Name", "Subdivision") };
 
         base = data.Name;       
 
