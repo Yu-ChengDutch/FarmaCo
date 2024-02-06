@@ -507,7 +507,17 @@ function prepare_ancestry(input, name_tag, divider_tag, layers_tag = "") {
     var temp_content_dict = {};
     var temp_terminals_array = [];
 
-    explorable_array.push(input);
+    console.log(input);
+
+    if (!Array.isArray(input)) {
+        explorable_array.push(input);
+    } else {
+        for (var i = 0; i < input.length; i++) {
+            explorable_array.push(input[i]);
+        }
+    }
+
+    
 
     while (explorable_array.length > 0) {
 
@@ -1674,7 +1684,7 @@ function start_ophtho(level) {
 
                 current_object = content_dict[Object.keys(content_dict)[i]];
     
-                if (Object.keys(current_object).includes("Definition")) { temp_question_array.push(definition_question(current_object, "disease"))};
+                if (Object.keys(current_object).includes("Definition")) { temp_question_array.push(definition_question(current_object, "symptom"))};
                 if (Object.keys(current_object).includes("Causes")) { temp_question_array.push(list_question(current_object, "Causes")) };
 
             };
