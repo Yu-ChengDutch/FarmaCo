@@ -64,6 +64,30 @@
                             ]
                         },
                         {
+                            "Name": "Optical Coherence Tomography signs",
+                            "Subdivision": [
+                                {
+                                    "Name": "Macular cysts",
+                                    "Definition": "Enclosed hyporeflective areas in the inner retinal layers",
+                                    "Causes": ["Cystic Macular Oedema", "Diabetic macular oedema"]
+                                },
+                                {
+                                    "Name": "Subretinal fluid",
+                                    "Definition": "Hyporeflective area above the Retinal Pigment Epithelium and below the inner sensory layers of the retina",
+                                    "Causes": ["Retinal detachment", "Diabetic macular oedema", "Central serous chorioretinopathy"]
+                                },
+                                {
+                                    "Name": "Intraretinal fluid",
+                                    "Definition": "A generalised hyporeflective area above the Retinal Pigment Epithelium and below the inner sensory layers of the retina",
+                                    "Causes": ["Wet macular degeneration"]
+                                },
+                                {
+                                    "Name": "Pigment epithelial detachment",
+                                    "Definition": "Hyporeflective area under the pigment epithelium and above Bruch's membrane"
+                                }
+                            ]
+                        },
+                        {
                             "Name": "Physical examination signs",
                             "Subdivision": [
                                 {
