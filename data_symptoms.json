@@ -11,9 +11,54 @@
                             "Name": "Slit lamp examination signs",
                             "Subdivision":[
                                 {
-                                    "Name": "Conjunctival slit lamp signs",
+                                    "Name": "Conjunctival slit lamp signs"
+                                },
+                                {
+                                    "Name": "Iris slit lamp signs",
+                                    "Subdivision":[
+                                        {
+                                            "Name": "Flocculi",
+                                            "Description": "Tufts of wool overhanging the pupillary frill"
+                                        },
+                                        {
+                                            "Name": "Diaphany",
+                                            "Alternative name": "Transillumination effects",
+                                            "Description": "Light shining back through the iris on retroillumination"
+                                        },
+                                        {
+                                            "Name": "Rubeosis iridis",
+                                            "Definition": "Neovascularisation on the surface of the iris"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Name": "Aqueous humour slit lamp signs",
                                     "Subdivision": [
-                                        
+                                        {
+                                            "Name": "Aqueous cells",
+                                            "Definition": "Lymphocytes floating in the aqueous humour",
+                                            "Causes": ["Anterior uveitis"]
+                                        },
+                                        {
+                                            "Name": "Microhyphema",
+                                            "Definition": "Erythrocytes floating in the aqueous humour; visible on red-free light as black specks",
+                                            "Causes": ["Rubeosis iridis", "Ocular trauma"]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Name": "Vitreous body slit lamp signs",
+                                    "Subdivision": [
+                                        {
+                                            "Name": "Vitreous cells",
+                                            "Definition": "Lymphocytes floating in the vitreous body",
+                                            "Causes": ["Iridocyclitis"]
+                                        },
+                                        {
+                                            "Name": "Tobacco dust",
+                                            "Definition": "Pigmented cells floating in the anterior vitreous body",
+                                            "Causes": ["Retinal tear", "Retinal detachment", "Vitreous hemorrhage"]
+                                        }
                                     ]
                                 }
                             ]
@@ -331,10 +376,6 @@
                                 },
                                 {
                                     "Name": "Retinal neovascularisation"
-                                },
-                                {
-                                    "Name": "Rubeosis iridis",
-                                    "Definition": "Neovascularisation on the surface of the iris"
                                 },
                                 {
                                     "Name": "Corneal neovascularisation",
