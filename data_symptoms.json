@@ -106,6 +106,180 @@
                             ]
                         }
                     ]
+                },
+                {
+                    "Name": "Physical examination signs",
+                    "Subdivision": [
+                        {
+                            "Name": "Dermatological physical examination signs",
+                            "Subdivision": [
+                                {
+                                    "Name": "Nail clubbing",
+                                    "Definition": "Increased nail size and bulbosity",
+                                    "Subdivision": ["Lung cancer", "Interstitial lung disease", "Tuberculosis", "Sarcoidosis", "Hypoxia", "Malabsorption", "Crohn's disease", "Ulcertive colitis", "Cirrhosis", "Graves' disease"]
+                                }
+                            ]
+                        },
+                        {
+                            "Name": "Internal medicine physical examination",
+                            "Subdivision": [
+                                {
+                                    "Name": "Ascites",
+                                    "Definition": "Abnormal build-up of fluid in the abdomen",
+                                    "Subdivision": [
+                                        {
+                                            "Name": "Transudative ascites",
+                                            "Definition": "Ascites with a high serum-ascites albumin gradient",
+                                            "Causes": ["Cirrhosis", "Heart failure", "Budd-Chiari syndrome", "Kwashiorkor"]
+                                        },
+                                        {
+                                            "Name": "Exudative ascites",
+                                            "Definition": "Ascites with a low serum-ascites albumin gradient",
+                                            "Causes": ["Cancer", "Tuberculosis", "Pancreatitis", "Serositis", "Nephrotic syndrome"]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Name": "Pulmonary effusion",
+                                    "Definition": "Accumulation of excessive fluid in the pleural space",
+                                    "Subdivision": [
+                                        {
+                                            "Name": "Transudative pulmonary effusion",
+                                            "Definition": "Pulmonary effusion with a high serum-effusion albumin gradient",
+                                            "Causes": ["Congestive heart failure", "Cirrhosis", "Hypoalbuminemia", "Nephrotic syndrome", "Myxedema", "Peritoneal dialysis", "Meigs' syndrome"]
+                                        },
+                                        {
+                                            "Name": "Esudative pulmonary effusion",
+                                            "Definition": "Pulmonary effusion with a low serum-effusion albumin gradient",
+                                            "Causes": ["Pneumonia", "Cancer", "Trauma", "Pulmonary infarction", "Pulmonary embolism", "Pancreatitis", "Rheumatoid pleurisy"]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Name": "Jaundice",
+                                    "Alternative name": "Icterus",
+                                    "Definition": "Yellowish or greenish discolouration of the skin and sclera",
+                                    "Subdivision": [
+                                        {
+                                            "Name": "Pre-hepatic jaundice",
+                                            "Alternative name": "Hemolytic jaundice",
+                                            "Mechanism": "Due to a pathologically increased rate of erythrocyte hemolysis",
+                                            "Causes": ["Sickle-cell anaemia", "Spherocytosis", "Thalassemia", "Malaria"]
+                                        },
+                                        {
+                                            "Name": "Hepatic jaundice",
+                                            "Mechanism": "Due to abnormal liver metabolism of bilirubin",
+                                            "Causes": ["Hepatitis", "Hepatotoxicity", "Cirrhosis", "Alcoholic liver disease", "Gilbert's syndrome", "Leptospirosis"]
+                                        },
+                                        {
+                                            "Name": "Posthepatic jaundice",
+                                            "Mechanism": "Due to a blockage of the bile ducts preventing the transport of conjugated bilirubin",
+                                            "Alternative name": "Cholestatic jaundice",
+                                            "Causes": ["Choledocholithiasis", "Pancreatic cancer", "Biliary atresia", "Primary biliary cholangitis", "Cholestasis of pregnancy", "Pancreatitis", "Pancreatic pseudocysts", "Liver flukes", "Mirizzi's syndrome"]
+
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "Name": "Orthopaedic physical examination signs",
+                            "Subdivision": [
+                                {
+                                    "Name": "Galeazzi sign",
+                                    "Alternative name": "Allis sign",
+                                    "Definition": "Flexing an infants knees when they are laying down. Positive when the knees are not level",
+                                    "Causes": ["Hip dysplasia"]
+                                },
+                                {
+                                    "Name": "Patellar grind test",
+                                    "Alternative name": "Clarke's test",
+                                    "Definition": "Actively contracting the quadriceps while exerting external force distal-wise on the proximal patella. Positive if painful",
+                                    "Causes": ["Patellofemoral pain syndrome", "Chonromalcia patella", "Patellofemoral arthritis"]
+                                },
+                                {
+                                    "Name": "Drawer tests",
+                                    "Subdivision": [
+                                        {
+                                            "Name": "Anterior drawer test",
+                                            "Definition": "With a knee hanging in flexion, pull the tibia anteriorly. Positive if increased ROM",
+                                            "Causes": ["Anterior cruciate ligament injury"]
+                                        },
+                                        {
+                                            "Name": "Posterior drawer test",
+                                            "Definition": "With a knee hanging in flexion, pull the tibia posteriorly. Positive if increased ROM",
+                                            "Causes": ["Posterior cruciate ligament injury"]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Name": "Lachman test",
+                                    "Definition": "With the knee flexed at 15 degrees, place one hand on the femur and the other on the tibia. Pull the tibia to anterior. Positive if increased ROM",
+                                    "Causes": ["Anterior cruciate ligament injury"]
+                                },
+                                {
+                                    "Name": "Valgus stress test",
+                                    "Definition": "With the knee in extension, push the knee into valgus. Positive if the knee opens up medially",
+                                    "Causes": ["Medial collateral ligament injury", "Capsular injury of the knee", "Cruciate ligament laxity"]
+                                },
+                                {
+                                    "Name": "Apley grind test",
+                                    "Alternative name": "Apley test",
+                                    "Definition": "With the patient face down, passively flex the knee to 90 degrees. Compress the tibia into the knee joint with external rotation. Positive if painful",
+                                    "Causes": ["Meniscus injury"]
+                                },
+                                {
+                                    "Name": "McMurray test",
+                                    "Causes": ["Meniscus injury"]
+                                },
+                                {
+                                    "Name": "Hubscher maneuver",
+                                    "Definition": "With a standing patient with a pes planus, take the hallux and dorsiflex. Positive if arch formation.",
+                                    "Causes": ["Flexible pes planus"]
+                                },
+                                {
+                                    "Name": "Thompson test",
+                                    "Definition": "Have the patient lay prone with the legs hanging of the table. Negative if the feet move slightly in plantarflexion. Positive if foot hangs straight down.",
+                                    "Casues": ["Achilles tendon injury"]
+                                },
+                                {
+                                    "Name": "Bear hug test",
+                                    "Definition": "Place the ipsilateral hand on the contralateral shoulder. Examiner tries to lift off the hand, patient resits. Positive if resitance is futile.",
+                                    "Causes": ["Subscapularis injury"]
+                                },
+                                {
+                                    "Name": "Belly press test",
+                                    "Definition": "Have the patient press their belly with the ipsilateral hand. Examiner tries to remove the hand from belly. Positive if not possible.",
+                                    "Causes": ["Subscapularis injury"]
+                                },
+                                {
+                                    "Name": "Cozen's test",
+                                    "Definition": "Wrist extension against fully extended elbow. Positive if painful",
+                                    "Causes": ["Lateral epicondylitis"]
+                                },
+                                {
+                                    "Name": "Elbow extension test",
+                                    "Definition": "With the shoulder flexed to 90 degrees, extend the elbow in supine position. Positive if not possible",
+                                    "Causes": ["Elbow fracture"]
+                                },
+                                {
+                                    "Name": "Finkelstein's test",
+                                    "Definition": "Examiner grasps the thumb and the sharply ulnar deviates the wrist. Positive if sharp pain along the distal radius.",
+                                    "Causes": ["De Quervain's tenosynovitis"]
+                                },
+                                {
+                                    "Name": "Schober's test",
+                                    "Definition": "Mark 5 cm above L5 and 5 cm below L5. Then ask patient to bend at the hips and touch toes. Positive if distance does not increase >5cm",
+                                    "Causes": ["Ankylosing spondylitis"]
+                                },
+                                {
+                                    "Name": "Larrey's sign",
+                                    "Definition": "Let the patient sit down fast on a hard chair. Positive if this elicits lower backpain.",
+                                    "Causes": ["Sacroiliitis"]
+                                }
+                            ]
+                        }
+                    ]
                 }
             ]
         },
@@ -135,6 +309,15 @@
                         {
                             "Name": "Emesis",
                             "Definition": "Vomiting"
+                        },
+                        {
+                            "Name": "Polyphagia",
+                            "Definition": "Abnormally strong, incessant hunger",
+                            "Causes": ["Diabetes mellitus", "Hyperthyroidism", "Prader-Willi syndrome", "Gulimia", "Frontotemporal dementia"]
+                        },
+                        {
+                            "Name": "Anorexia",
+                            "Definition": "Loss of apetite"
                         }
                     ]
                 },
@@ -143,7 +326,8 @@
                     "Subdivision": [
                         {
                             "Name": "Polydipsia",
-                            "Definition": "Excessive thirst"
+                            "Definition": "Excessive thirst",
+                            "Causes": ["Diabetes mellitus", "Diabetes insipidus", "Anticholinergic syndrome", "Hyperaldosteronism", "Primary polydipsia"]
                         },
                         {
                             "Name": "Polyuria",
@@ -158,6 +342,24 @@
                 {
                     "Name": "Neurological symptoms",
                     "Subdivision": [
+                        {
+                            "Name": "Neurocognitive symptoms",
+                            "Subdivision": [
+                                {
+                                    "Name": "Amnesia",
+                                    "Subdivision": [
+                                        {
+                                            "Name": "Retrograde amnesia",
+                                            "Definition": "Loss of memories from before a certain event"
+                                        },
+                                        {
+                                            "Name": "Anterograde amnesia",
+                                            "Definition": "Inability to create new memories after a certain event"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
                         {
                             "Name": "Neuromuscular symptoms",
                             "Subdivision": [

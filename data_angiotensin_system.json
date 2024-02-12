@@ -23,13 +23,22 @@
                     "Name": "Pituitary system",
                     "Parts": [
                         {
-                            "Name": "Posterior lobe",
+                            "Name": "Anterior pituitary lobe",
                             "Process": {
                                 "Input": [""],
-                                "Mediator": ["Angiotensin II"],
-                                "Mediator effect": ["Stimulation"],
-                                "Output": ["Vasopressin"],
+                                "Mediator": [""],
+                                "Mediator effect": [""],
                                 "Sign": [""]
+                            }
+                        },
+                        {
+                            "Name": "Posterior pituitary lobe",
+                            "Process": {
+                                "Input": ["Vasopressin", "Oxytocin"],
+                                "Mediator": [["Hyperosmolality", "Angiotensin II"], ""],
+                                "Mediator effect": ["Release", "Release"],
+                                "Output": ["Vasopressin", "Oxytocin"],
+                                "Sign": ["", ""]
                             }
                         },
                         {
@@ -235,11 +244,11 @@
                         {
                             "Name": "Hypothalamus",
                             "Process": {
-                                "Input": [""],
-                                "Mediator": ["Prostaglandin E2"],
-                                "Mediator effect": ["Stimulation"],
-                                "Output": ["Thermogenisis"],
-                                "Sign": ["Fever"]
+                                "Input": ["", "", ""],
+                                "Mediator": [["Hyperosmolality", "Hypovolemia"], "", "Prostaglandin E2"],
+                                "Mediator effect": ["Increases production", "", "Stimulation"],
+                                "Output": ["Vasopressin", "Oxytocin", "Thermogenisis"],
+                                "Sign": ["", "", "Fever"]
                             }
                         }
                     ]
