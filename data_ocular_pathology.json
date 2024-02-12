@@ -496,7 +496,11 @@
                 {
                     "Name": "Disorders of the visual pathways",
                     "Subdivision": [
-                        
+                        {
+                            "Name": "Amblyopia",
+                            "Definition": "Condition where the brain fails to fully process input from one eye and over time favours the other",
+                            "Causes": ["Strabismus", "Anisometropia", "Congenital cataract", "Ptosis"]
+                        }
                     ]
                 }
             ]

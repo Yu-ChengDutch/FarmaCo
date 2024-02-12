@@ -8,6 +8,37 @@
                     "Name": "Ocular signs",
                     "Subdivision":[
                         {
+                            "Name": "Penlight signs",
+                            "Subdivision":[
+                                {
+                                    "Name": "Hirschberg test",
+                                    "Definition": "Test where a penlight is shown towards the eyes of a patient. Positive if one of the lights is not centred",
+                                    "Causes": ["Strabismus"]
+                                }
+                            ]
+                        },
+                        {
+                            "Name": "Direct ophthalmoscope signs",
+                            "Subdivision":[
+                                {
+                                    "Name": "Leukocoria",
+                                    "Alternative name": "White pupillary reflex",
+                                    "Definition": "A white reflection in the pupil on transillumination, instead of the usual red",
+                                    "Causes": ["Coats' disease", "Congenital cataract", "Corneal scarring", "Norrie disease", "Retinoblastoma"]
+                                },
+                                {
+                                    "Name": "Downward red reflex",
+                                    "Definition": "A red reflex of the retina which appears shifted downward and does not reach the top of the pupil",
+                                    "Causes": ["Hyperopia"]
+                                },
+                                {
+                                    "Name": "Upward red reflex",
+                                    "Definition": "A red reflex of the retina which appears shifted upward and does not reach the bottom of the pupil",
+                                    "Causes": ["Myopia"]
+                                }
+                            ]
+                        },
+                        {
                             "Name": "Slit lamp examination signs",
                             "Subdivision":[
                                 {
@@ -100,6 +131,63 @@
                                         {
                                             "Name": "Subconjunctival hyperaemia",
                                             "Definition": "Increased subconjunctival blood flow and vasodilation"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Name": "Ortoptistic signs",
+                                    "Subdivision": [
+                                        {
+                                            "Name": "Strabismus",
+                                            "Alternative name": "Heterotropia",
+                                            "Definition": "Misalignment of the eyes when looking at an object",
+                                            "Subdivisions": [
+                                                {
+                                                    "Name": "Esotropia",
+                                                    "Definition": "An inward deviation of one or two of the eyes",
+                                                    "Causes": ""
+                                                },
+                                                {
+                                                    "Name": "Exotropia",
+                                                    "Definition": "An outward deviation of one or two of the eyes",
+                                                    "Causes": ""
+                                                },
+                                                {
+                                                    "Name": "Hypertropia",
+                                                    "Definition": "An upwards deviation of one or two of the eyes",
+                                                    "Causes": ["Fourth nerve palsy", "Brown's syndrome", "Duane's syndrome", "Graves' disease"]
+                                                },
+                                                {
+                                                    "Name": "Hypotropia",
+                                                    "Definition": "A downwards deviation of one or two of the eyes"
+                                                },
+                                                {
+                                                    "Name": "Comitant strabismus",
+                                                    "Definition": "Strabismus with an equal amount of con- or divergence regardless of visual direction"
+                                                },
+                                                {
+                                                    "Name": "Incomitant strabismus",
+                                                    "Definition": "Strabismus with a differing amount of con- or divergence based on visual direction",
+                                                    "Subdivision": [
+                                                        {
+                                                            "Name": "A-pattern strabismus",
+                                                            "Definition": "Incomitant strabismus where there's more convergence when looking up and more divergence when looking down"
+                                                        },
+                                                        {
+                                                            "Name": "V-pattern strabismus",
+                                                            "Definition": "Incomitant strabismus where there's more divergence when looking up and more convergence when looking down"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "Name": "Manifest strabismus",
+                                                    "Definition": "Strabismus which is always present; where the uncovered eye starts to deviate"
+                                                },
+                                                {
+                                                    "Name": "Latent strabismus",
+                                                    "Definition": "Strabismus which is only present in dissociation"
+                                                }
+                                            ]
                                         }
                                     ]
                                 }
@@ -513,6 +601,63 @@
                 {
                     "Name": "Ocular symptoms",
                     "Subdivision": [
+                        {
+                            "Name": "Aniseikonia",
+                            "Definition": "A significant difference in the perceived size of images between the two eyes",
+                            "Causes": ["Anisometropia", "Aphakia"]
+                        },
+                        {
+                            "Name": "Anisometropia",
+                            "Definition": "A significant difference (>1D) in the refractive power between the two eyes"
+                        },
+                        {
+                            "Name": "Antimetropia",
+                            "Definition": "A situation wherein one eye is myopic and the other is hyperopic"
+                        },
+                        {
+                            "Name": "Refractive error",
+                            "Alternative name": "Ametropia",
+                            "Subdivision": [
+                                {
+                                    "Name": "Myopia",
+                                    "Alternative name": "Nearsightedness",
+                                    "Definition": "Difficulty viewing objects far away because of a long eyeball"
+                                },
+                                {
+                                    "Name": "Hyperopia",
+                                    "Alternative name": "Farsightedness",
+                                    "Definition": "Difficulty viewing objects closeby because of a short eyeball"
+                                },
+                                {
+                                    "Name": "Presbyopia",
+                                    "Definition": "Difficulty viewing objects closeby because of a declining flexibility of the lens"
+                                },
+                                {
+                                    "Name": "Astigmatism",
+                                    "Definition": "Unequal refractive power over the surface of the cornea, leading to distortion"
+                                },
+                                {
+                                    "Name": "Emmetropia",
+                                    "Definition": "No refrective error"
+                                }
+                            ]
+                        },
+                        {
+                            "Name": "Diplopia",
+                            "Alternative name": "Double vision",
+                            "Definition": "Simultaneous perception of two images of a single object",
+                            "Subdivision": [
+                                {
+                                    "Name": "Binocular diplopia",
+                                    "Causes": ["Strabismus"],
+                                    "Complications": ["Amblyopia", "Visual suppression"]
+                                },
+                                {
+                                    "Name": "Monocular diplopia",
+                                    "Causes": ["Keratoconus", "Lens subluxation", "Occipital lobe infarction", "Astigmatism"]
+                                }
+                            ]
+                        },
                         {
                             "Name": "Nyctalopia",
                             "Alternative name": "Night blindness",
