@@ -2,8 +2,206 @@
     "Name": "All problems",
     "Subdivision": [
         {
-            "Name": "Signs",
+            "Name": "All signs",
             "Subdivision":[
+                {
+                    "Name": "Neurological signs",
+                    "Subdivision":[
+                        {
+                            "Name": "Neuromuscular signs",
+                            "Subdivision": [
+                                {
+                                    "Name": "Mulder's sign",
+                                    "Definition": "Examiner presses together two metatarsal heads while putting pressure on the interdigital space. Positive if localised pain, and a click",
+                                    "Causes": ["Morton's neuroma"]
+                                },
+                                {
+                                    "Name": "Gower's sign",
+                                    "Definition": "Patient lays down on the floor. Positive if the patient has to 'walk' themselves up their own body using their upper limbs in order to stand up",
+                                    "Causes": ["Duchenne muscular dystrophy", "Centronuclear myopathy", "Myotonic dystrophy", "Becker muscular dystrophy", "Dermatomyositis", "Pompe disease"]
+                                },
+                                {
+                                    "Name": "Beevor's sign",
+                                    "Definition": "Patient lays supine and asked to flex the nex. Positive if the navel moves cranially.",
+                                    "Causes": ["Spinal cord injury", "ALS", "FSHD"]
+                                },
+                                {
+                                    "Name": "Hypertonia",
+                                    "Subdivision": [
+                                        {
+                                            "Name": "Rigidity",
+                                            "Causes": ["Extrapyramidal laesions"],
+                                            "Subdivision": [
+                                                {
+                                                    "Name": "Lead pipe rigidity",
+                                                    "Definition": "Uniformly increased resitance in the entire range of motion"
+                                                },
+                                                {
+                                                    "Name": "Ratchet-like interruption in resistanche when moving a joint"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "Name": "Spasticity",
+                                            "Causes": ["Pyramidal laesions"],
+                                            "Subdivision": [
+                                                {
+                                                    "Name": "Clasp knife phenomenon",
+                                                    "Definition": "Lengthening reaction in a catch-yield fashion",
+                                                    "Mechanism": "Inverse myotatic reflex mediated by GTO via Ib fibres as a response to peak tension"
+                                                },
+                                                {
+                                                    "Name": "Seatbelt phenomenon",
+                                                    "Definition": "Velocity dependence of resistance",
+                                                    "Mechnism": "Myotatic reflex mediated by muscle spindle fibres via Ia fibres as a response to rate of stretch"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "Name": "Central nervous system signs",
+                            "Subdivision": [
+                                {
+                                    "Name": "Cerebral signs",
+                                    "Subdivision": [
+                                        {
+                                            "Name": "Macewen's sign",
+                                            "Definition": "Examiner taps the skull near the triune junction of the infant. Positive if sounds like broken chinaware",
+                                            "Causes": ["Hydrocephalus"]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Name": "Spinal signs",
+                                    "Subdivision": [
+                                        {
+                                            "Name": "Straight leg raise test",
+                                            "Alternative name": "Lasègue's sign",
+                                            "Definition": "Patient lays supine. Examiner raises a single leg in hip flexion. Positive if this elicits sciatic pain",
+                                            "Causes": ["L5 radiculopathy"]
+                                        },
+                                        {
+                                            "Name": "Femoral nerve stretch test",
+                                            "Alternative name": "Mackiewicz sign",
+                                            "Definition": "Patient lies prone. Examiner fully flexes knee, and extends hip. Positive if this elicits anterior thigh pain.",
+                                            "Causes": ["L2 radiculopathy", "L3 radiculopathy", "L4 radiculopathy"]
+                                        },
+                                        {
+                                            "Name": "Kernig's sign",
+                                            "Definition": "Patient lays supine. Examiner flexes the hips to 90 degrees. Positive if painful extension of the knees; with possible opisthotonus",
+                                            "Causes": [ "Subarachnoid hemorrhage", "Meningitis"]
+                                        },
+                                        {
+                                            "Name": "Brudzinski's sign",
+                                            "Definition": "Patient sits. Examiner flexes the neck. Positive if elicits flexion in the hips",
+                                            "Causes": ["Subarachnoid hemorrhage", "Meningitis", "Encephalitis"]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Orthopaedic signs",
+                    "Subdivision": [
+                        {
+                            "Name": "Galeazzi sign",
+                            "Alternative name": "Allis sign",
+                            "Definition": "Flexing an infants knees when they are laying down. Positive when the knees are not level",
+                            "Causes": ["Hip dysplasia"]
+                        },
+                        {
+                            "Name": "Patellar grind test",
+                            "Alternative name": "Clarke's test",
+                            "Definition": "Actively contracting the quadriceps while exerting external force distal-wise on the proximal patella. Positive if painful",
+                            "Causes": ["Patellofemoral pain syndrome", "Chonromalcia patella", "Patellofemoral arthritis"]
+                        },
+                        {
+                            "Name": "Drawer tests",
+                            "Subdivision": [
+                                {
+                                    "Name": "Anterior drawer test",
+                                    "Definition": "With a knee hanging in flexion, pull the tibia anteriorly. Positive if increased ROM",
+                                    "Causes": ["Anterior cruciate ligament injury"]
+                                },
+                                {
+                                    "Name": "Posterior drawer test",
+                                    "Definition": "With a knee hanging in flexion, pull the tibia posteriorly. Positive if increased ROM",
+                                    "Causes": ["Posterior cruciate ligament injury"]
+                                }
+                            ]
+                        },
+                        {
+                            "Name": "Lachman test",
+                            "Definition": "With the knee flexed at 15 degrees, place one hand on the femur and the other on the tibia. Pull the tibia to anterior. Positive if increased ROM",
+                            "Causes": ["Anterior cruciate ligament injury"]
+                        },
+                        {
+                            "Name": "Valgus stress test",
+                            "Definition": "With the knee in extension, push the knee into valgus. Positive if the knee opens up medially",
+                            "Causes": ["Medial collateral ligament injury", "Capsular injury of the knee", "Cruciate ligament laxity"]
+                        },
+                        {
+                            "Name": "Apley grind test",
+                            "Alternative name": "Apley test",
+                            "Definition": "With the patient face down, passively flex the knee to 90 degrees. Compress the tibia into the knee joint with external rotation. Positive if painful",
+                            "Causes": ["Meniscus injury"]
+                        },
+                        {
+                            "Name": "McMurray test",
+                            "Causes": ["Meniscus injury"]
+                        },
+                        {
+                            "Name": "Hubscher maneuver",
+                            "Definition": "With a standing patient with a pes planus, take the hallux and dorsiflex. Positive if arch formation.",
+                            "Causes": ["Flexible pes planus"]
+                        },
+                        {
+                            "Name": "Thompson test",
+                            "Definition": "Have the patient lay prone with the legs hanging of the table. Negative if the feet move slightly in plantarflexion. Positive if foot hangs straight down.",
+                            "Casues": ["Achilles tendon injury"]
+                        },
+                        {
+                            "Name": "Bear hug test",
+                            "Definition": "Place the ipsilateral hand on the contralateral shoulder. Examiner tries to lift off the hand, patient resits. Positive if resitance is futile.",
+                            "Causes": ["Subscapularis injury"]
+                        },
+                        {
+                            "Name": "Belly press test",
+                            "Definition": "Have the patient press their belly with the ipsilateral hand. Examiner tries to remove the hand from belly. Positive if not possible.",
+                            "Causes": ["Subscapularis injury"]
+                        },
+                        {
+                            "Name": "Cozen's test",
+                            "Definition": "Wrist extension against fully extended elbow. Positive if painful",
+                            "Causes": ["Lateral epicondylitis"]
+                        },
+                        {
+                            "Name": "Elbow extension test",
+                            "Definition": "With the shoulder flexed to 90 degrees, extend the elbow in supine position. Positive if not possible",
+                            "Causes": ["Elbow fracture"]
+                        },
+                        {
+                            "Name": "Finkelstein's test",
+                            "Definition": "Examiner grasps the thumb and the sharply ulnar deviates the wrist. Positive if sharp pain along the distal radius.",
+                            "Causes": ["De Quervain's tenosynovitis"]
+                        },
+                        {
+                            "Name": "Schober's test",
+                            "Definition": "Mark 5 cm above L5 and 5 cm below L5. Then ask patient to bend at the hips and touch toes. Positive if distance does not increase >5cm",
+                            "Causes": ["Ankylosing spondylitis"]
+                        },
+                        {
+                            "Name": "Larrey's sign",
+                            "Definition": "Let the patient sit down fast on a hard chair. Positive if this elicits lower backpain.",
+                            "Causes": ["Sacroiliitis"]
+                        }
+                    ]
+                },
                 {
                     "Name": "Ocular signs",
                     "Subdivision":[
@@ -269,110 +467,13 @@
                                     ]
                                 }
                             ]
-                        },
-                        {
-                            "Name": "Orthopaedic physical examination signs",
-                            "Subdivision": [
-                                {
-                                    "Name": "Galeazzi sign",
-                                    "Alternative name": "Allis sign",
-                                    "Definition": "Flexing an infants knees when they are laying down. Positive when the knees are not level",
-                                    "Causes": ["Hip dysplasia"]
-                                },
-                                {
-                                    "Name": "Patellar grind test",
-                                    "Alternative name": "Clarke's test",
-                                    "Definition": "Actively contracting the quadriceps while exerting external force distal-wise on the proximal patella. Positive if painful",
-                                    "Causes": ["Patellofemoral pain syndrome", "Chonromalcia patella", "Patellofemoral arthritis"]
-                                },
-                                {
-                                    "Name": "Drawer tests",
-                                    "Subdivision": [
-                                        {
-                                            "Name": "Anterior drawer test",
-                                            "Definition": "With a knee hanging in flexion, pull the tibia anteriorly. Positive if increased ROM",
-                                            "Causes": ["Anterior cruciate ligament injury"]
-                                        },
-                                        {
-                                            "Name": "Posterior drawer test",
-                                            "Definition": "With a knee hanging in flexion, pull the tibia posteriorly. Positive if increased ROM",
-                                            "Causes": ["Posterior cruciate ligament injury"]
-                                        }
-                                    ]
-                                },
-                                {
-                                    "Name": "Lachman test",
-                                    "Definition": "With the knee flexed at 15 degrees, place one hand on the femur and the other on the tibia. Pull the tibia to anterior. Positive if increased ROM",
-                                    "Causes": ["Anterior cruciate ligament injury"]
-                                },
-                                {
-                                    "Name": "Valgus stress test",
-                                    "Definition": "With the knee in extension, push the knee into valgus. Positive if the knee opens up medially",
-                                    "Causes": ["Medial collateral ligament injury", "Capsular injury of the knee", "Cruciate ligament laxity"]
-                                },
-                                {
-                                    "Name": "Apley grind test",
-                                    "Alternative name": "Apley test",
-                                    "Definition": "With the patient face down, passively flex the knee to 90 degrees. Compress the tibia into the knee joint with external rotation. Positive if painful",
-                                    "Causes": ["Meniscus injury"]
-                                },
-                                {
-                                    "Name": "McMurray test",
-                                    "Causes": ["Meniscus injury"]
-                                },
-                                {
-                                    "Name": "Hubscher maneuver",
-                                    "Definition": "With a standing patient with a pes planus, take the hallux and dorsiflex. Positive if arch formation.",
-                                    "Causes": ["Flexible pes planus"]
-                                },
-                                {
-                                    "Name": "Thompson test",
-                                    "Definition": "Have the patient lay prone with the legs hanging of the table. Negative if the feet move slightly in plantarflexion. Positive if foot hangs straight down.",
-                                    "Casues": ["Achilles tendon injury"]
-                                },
-                                {
-                                    "Name": "Bear hug test",
-                                    "Definition": "Place the ipsilateral hand on the contralateral shoulder. Examiner tries to lift off the hand, patient resits. Positive if resitance is futile.",
-                                    "Causes": ["Subscapularis injury"]
-                                },
-                                {
-                                    "Name": "Belly press test",
-                                    "Definition": "Have the patient press their belly with the ipsilateral hand. Examiner tries to remove the hand from belly. Positive if not possible.",
-                                    "Causes": ["Subscapularis injury"]
-                                },
-                                {
-                                    "Name": "Cozen's test",
-                                    "Definition": "Wrist extension against fully extended elbow. Positive if painful",
-                                    "Causes": ["Lateral epicondylitis"]
-                                },
-                                {
-                                    "Name": "Elbow extension test",
-                                    "Definition": "With the shoulder flexed to 90 degrees, extend the elbow in supine position. Positive if not possible",
-                                    "Causes": ["Elbow fracture"]
-                                },
-                                {
-                                    "Name": "Finkelstein's test",
-                                    "Definition": "Examiner grasps the thumb and the sharply ulnar deviates the wrist. Positive if sharp pain along the distal radius.",
-                                    "Causes": ["De Quervain's tenosynovitis"]
-                                },
-                                {
-                                    "Name": "Schober's test",
-                                    "Definition": "Mark 5 cm above L5 and 5 cm below L5. Then ask patient to bend at the hips and touch toes. Positive if distance does not increase >5cm",
-                                    "Causes": ["Ankylosing spondylitis"]
-                                },
-                                {
-                                    "Name": "Larrey's sign",
-                                    "Definition": "Let the patient sit down fast on a hard chair. Positive if this elicits lower backpain.",
-                                    "Causes": ["Sacroiliitis"]
-                                }
-                            ]
-                        }
+                        }                        
                     ]
                 }
             ]
         },
         {
-            "Name": "Symptoms",
+            "Name": "All symptoms",
             "Subdivision": [
                 {
                     "Name": "Pain",
@@ -431,6 +532,12 @@
                     "Name": "Neurological symptoms",
                     "Subdivision": [
                         {
+                            "Name": "Battle's sign"
+                        },
+                        {
+                            "Name": "Raccoon eyes"
+                        },
+                        {
                             "Name": "Neurocognitive symptoms",
                             "Subdivision": [
                                 {
@@ -445,12 +552,110 @@
                                             "Definition": "Inability to create new memories after a certain event"
                                         }
                                     ]
+                                },
+                                {
+                                    "Name": "Aphasia",
+                                    "Subdivision": [
+                                        {
+                                            "Name": "Focal aphasia",
+                                            "Subdivision": [
+                                                {
+                                                    "Name": "Expressive aphasia",
+                                                    "Alternative name": "Broca's aphasia",
+                                                    "Definition": "Inhibited speech repetition, naming and fluency with unaffected comprehension"
+                                                },
+                                                {
+                                                    "Name": "Receptive aphasia",
+                                                    "Alternative name": "Wernicke's aphasia",
+                                                    "Definition": "Inhibited speech repetition, name and comprehension with unaffected fluency"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "Name": "Mixed aphasia",
+                                            "Subdivision": [
+                                                {
+                                                    "Name": "Conduction aphasia",
+                                                    "Definition": "Inhibited speech repetition and naming, with unaffected comprehension and fluency"
+                                                },
+                                                {
+                                                    "Name": "Global aphasia",
+                                                    "Definition": "Inhibited speech production and comprehension across all domains"
+                                                },
+                                                {
+                                                    "Name": "Anomic aphasia",
+                                                    "Definition": "Isolated inhibition of naming tasks, with preserved repetitive, comprehensive and fluent abilities"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Name": "Ataxia",
+                                    "Definition": "A lack of voluntary coordination of muscle movements",
+                                    "Subdivision": [
+                                        {
+                                            "Name": "Dysdiadochokinesia",
+                                            "Definition": "The impaired ability to perform rapid, alternating movements"
+                                        },
+                                        {
+                                            "Name": "Dysarthria",
+                                            "Definition": "A speech pathology deriving from problems with the muscles or nerves controlling speech",
+                                            "Subdivisions": [
+                                                {
+                                                    "Name": "Scanning speech",
+                                                    "Definition": "A type of dysarthria where words are broken up into separate syllables"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "Name": "Dysphagia",
+                                            "Definition": "Problem with swallowing"
+                                        },
+                                        {
+                                            "Name": "Dysmetria",
+                                            "Definition": "Lack of coordination of movement; typified by overshooting with the hand",
+                                            "Causes": ["MS", "ALS", "CVA", "Friedrich's ataxia"]
+                                        },
+                                        {
+                                            "Name": "Nystagmus"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Name": "Tremor",
+                                    "Definition": "Rhythmic, involuntary muscle contraction and relaxation involving oscillations or twichting",
+                                    "Subdivision": [
+                                        {
+                                            "Name": "Intention tremor",
+                                            "Alternative name": "Cerebellar tremor",
+                                            "Definition": "Slow, broad tremor which occurs at the end of a purposeful movement"
+                                        },
+                                        {
+                                            "Name": "Dystonic tremor",
+                                            "Definition": "Twisting and repetitive tremor when muscle contraction is sustained"
+                                        },
+                                        {
+                                            "Name": "Orthostatic tremor",
+                                            "Definition": "Tremor in the arms and legs after standing up"
+                                        },
+                                        {
+                                            "Name": "Parkinsonian tremor",
+                                            "Alternative name": "Pill-rolling tremor",
+                                            "Definition": "A resting remor affecting the hands, chin and lips; typified by a pill-rolling action"
+                                        }
+                                    ]
                                 }
                             ]
                         },
                         {
                             "Name": "Neuromuscular symptoms",
                             "Subdivision": [
+                                {
+                                    "Name": "Opisthotonos",
+                                    "Definition": "A state of severe hyperextension and spasticity in a patient's head, neck and spinal column, causing 'bridging'",
+                                    "Causes": ["Cerebral palsy", "Traumatic brain injury", "Tetanus", "Lithium", "Heat stroke"]
+                                },
                                 {
                                     "Name": "Cramp",
                                     "Definition": "Sudden, involuntary and painful muscular contraction"
@@ -479,6 +684,20 @@
                                 {
                                     "Name": "Myasthenia",
                                     "Definition": "Absolute lack of muscular strength"
+                                },
+                                {
+                                    "Name": "Myoclonus",
+                                    "Definition": "Brief, involuntary, non-rhythmic contraction or release thereof",
+                                    "Subdivisions": [
+                                        {
+                                            "Name": "Positive myoclonus",
+                                            "Description": "Brief, involuntary, non-rhythmic contraction"
+                                        },
+                                        {
+                                            "Name": "Negative myoclonus",
+                                            "Description": "Brief, involuntary, non-rhythmic release of muscle contraction"
+                                        }
+                                    ]
                                 },
                                 {
                                     "Name": "Paralysis",
@@ -551,6 +770,83 @@
                                     "Definition": "Non-responsive to external stimuli"
                                 }
                             ]
+                        },
+                        {
+                            "Name": "Delusions",
+                            "Subdivisions": [
+                                {
+                                    "Name": "Folie à deux",
+                                    "Alternative name": "Shared delusional disorder"
+                                },
+                                {
+                                    "Name": "Non-bizarre delusions",
+                                    "Subdivisions": [
+                                        {
+                                            "Name": "Delusional jealousy",
+                                            "Alternative name": "Othello syndrome"
+                                        },
+                                        {
+                                            "Name": "Persecutory delusions"
+                                        },
+                                        {
+                                            "Name": "Delusions of reference"
+                                        },
+                                        {
+                                            "Name": "Erotomania",
+                                            "Alternative name": "De Clérambault's syndrome"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Name": "Bizarre delusions",
+                                    "Subdivisions": [
+                                        {
+                                            "Name": "Delusional parasitosis"
+                                        },
+                                        {
+                                            "Name": "Grandiose delusions"
+                                        },
+                                        {
+                                            "Name": "Delusional misidentifications",
+                                            "Subdivisions": [
+                                                {
+                                                    "Name": "Capgras delusion",
+                                                    "Definition": "The belief that a close relative or spouse has been replaced by an identical-looking imposter"
+                                                },
+                                                {
+                                                    "Name": "Fregoli delusion",
+                                                    "Definition": "The belief that various people the believer meets are actually the same person in disguise"
+                                                },
+                                                {
+                                                    "Name": "Intermetamorphosis",
+                                                    "Definition": "The belief that an individual has the ability to the form of another person in both external appearance and internal personality"
+                                                },
+                                                {
+                                                    "Name": "Cotard's syndrome",
+                                                    "Definition": "The belief that the believer is dead, putrefying or have lost their blood/internal organs."
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Name": "Visual anosognosia",
+                                    "Alternative name": "Anton syndrome",
+                                    "Definition": "The denial of blindness in the face of overt blindness"
+                                },
+                                {
+                                    "Name": "Confabulation",
+                                    "Definition": "The production of fabricated, distorted or misinterpreted memories about oneself or the world"
+                                },
+                                {
+                                    "Name": "Hallucination",
+                                    "Definition": "The perception of something in the absence of an external stimulus; but having the qualities of a real perception"
+                                },
+                                {
+                                    "Name": "Psychohallucination",
+                                    "Definition": "The perception of something in the absence of an external stimulus; but with the patient knowing it is not real"
+                                }
+                            ]
                         }
                     ]
                 },
@@ -597,6 +893,9 @@
                             "Definition": "Perceived lack of muscular strength"
                         }
                     ]
+                },
+                {
+                    "Name": "Orthopaedic symptoms"
                 },
                 {
                     "Name": "Ocular symptoms",

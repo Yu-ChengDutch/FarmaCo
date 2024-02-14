@@ -103,6 +103,15 @@ p {
     color: rgba(128, 128, 128, 0.46);
 }
 
+.inset-prayer {
+    text-align: center;
+    text-shadow: 0px 0.4vh 0.4vh #fff, 0px 0px 0px lightgrey, 0px 0.4vh 0.4vh white;
+    font-size: 3vw;
+    font-weight: 1000;
+    margin-top: 5vh;
+    color: rgba(128, 128, 128, 0.46);
+}
+
 /* The cards */
 
 .card {
@@ -112,7 +121,7 @@ p {
     display: grid;
     width: 65vw;
     padding: 5vw;
-    margin-left: 10vw;
+    margin-left: 13vw;
     margin-bottom: 5vw;
     margin-top: 5vw;
     border-radius: 5vw;
@@ -123,19 +132,20 @@ p {
 .card:hover {
     transition-duration: 0.5s;
     box-shadow: 2vw 2vh 2vh 0.25vh rgba(144, 238, 144, 0.6);
-    margin-left: 12vw;
+    margin-left: 15vw;
     width: 70vw;
 }
 
 .card:hover > .bubble > img {
     width: 15vw;
     margin-left: 3vw;
-    transition-duration: 0.5s;
+    transition-duration: 0.25s;
 
 }
 
 .card:hover > .bubble {
     box-shadow: inset 1vw 1.5vh 1.5vh 0.25vh rgba(144, 238, 144, 0.602);
+    transition-duration: 0.25s;
 }
 
 .card:active {
@@ -280,6 +290,20 @@ a:hover, a:active {
 }
 
 @media only screen and (max-width: 600px) {
+
+    .main-title {
+        text-align: center;
+        font-size: 8vw;
+        font-weight: 1000;
+        color: rgba(22, 65, 193, 0.46);
+        padding-top: 2vh;
+    }
+
+    .main-subtitle {
+        text-align: center;
+        color: rgba(19, 53, 157, 0.46);
+        margin-top: 2vh;
+    }
 
     #question-inset {
         margin-top: 6vh;

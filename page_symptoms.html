@@ -1,0 +1,106 @@
+<html>
+
+<head>
+    <meta name="theme-color" content="limegreen">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>FarmaCo: Farmacologie voor co-assistenten</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+</head>
+<body onclick="openFullscreen()">
+
+    <script type="text/javascript" src="tools_rehearser.js"></script>
+
+    <div class="top-menu">
+
+        <div class="menu-item" id="item-1" onclick="toPage('Symptoms-define')">
+
+            Define
+
+        </div>
+
+        <div class="menu-item" id="item-2" onclick="toPage('Symptoms-know')">
+
+            Know
+
+        </div>
+
+        <div class="menu-item" id="item-4" onclick="toPage('Symptoms-apply')">
+
+            Apply
+
+        </div>
+
+    </div>    
+
+    <div class="main-container" id="main-container">
+        
+        <div class="inset"> <p> General & specific symptoms </p> </div>
+
+        <div class="card" onclick="start_symptoms('All', 1)">
+
+            <div class="bubble">
+                <img src="./Images/Whole_body.png">
+            </div>
+
+            <div class="text-right">
+
+                <H1> All symptoms </H1>
+                <p> & what they are </p>
+
+            </div>
+
+        </div>
+
+        <div class="inset"> <p> Specific symptoms </p> </div>
+
+        <div class="card" onclick="start_symptoms('Ocular', 1)">
+
+            <div class="bubble">
+                <img src="./Images/Eye.png">
+            </div>
+
+            <div class="text-right">
+
+                <H1> Ophtho </H1>
+                <p> & what they are </p>
+
+            </div>
+
+        </div>
+
+        <div class="card" onclick="start_symptoms('Orthopaedic', 1)">
+
+            <div class="bubble">
+                <img src="./Images/Bone.png">
+            </div>
+
+            <div class="text-right">
+
+                <H1> Ortho </H1>
+                <p> & what they are </p>
+
+            </div>
+
+        </div>
+
+        <div class="card" onclick="start_symptoms('Neurological', 1)">
+
+            <div class="bubble">
+                <img src="./Images/Brain.png">
+            </div>
+
+            <div class="text-right">
+
+                <H1> Neuro </H1>
+                <p> & what they are </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

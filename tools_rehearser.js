@@ -153,8 +153,6 @@ Do
 
 var level_page= `
 
-    <div id="main-container">
-
     <script type="text/javascript" src="tools_rehearser.js"></script>
     
     <div class="inset" id="question-inset"> <h1 id="question-title">Question 1</h1> </div>
@@ -182,8 +180,6 @@ var level_page= `
             
         <p id ="question-remark"></p>
         
-    </div>
-
     </div>
 
 `
@@ -433,12 +429,13 @@ var pages = {
     "Landing": landing_page,
     "Order": page_order,
     "Recognise": page_recognise,
-    "Do": page_do
+    "Do": page_do,
+    "Level": level_page
 };
 
 var trivial_answers = ["Ja", "Nee", "Substraat", "Inhibitor", "Inducer"];
 
-function toPage(page) {
+function to_page(page) {
     document.getElementById("main-container").innerHTML = pages[page];
 
     question_array = [];
@@ -1732,6 +1729,74 @@ function giveHint() {
 
     question_array = local_question_array;
 };
+
+function start_symptoms(category, level) {
+
+    fetchable = "./data_symptoms.json"
+
+    fetch(fetchable)
+
+    .then(function(response){
+        console.log("- > Symptom found and accessed");
+        return response.json();
+    })
+    .then(function(data){
+
+        prepare_ancestry(data, "Name", "Subdivision", "Layers");
+
+        console.log(content_dict);
+
+        prepare_ancestry([content_dict[category + " symptoms"], content_dict[category + " signs"]], "Name", "Subdivision");
+
+        base = data.Name;       
+
+    })
+    .then(function(){
+
+        console.log(ancestry_dict);
+        console.log(content_dict);
+
+        var temp_question_array = [];
+        var temp_temp_question_array = [];
+        
+        for (var i = 0; i < Object.keys(content_dict).length; i++) {
+
+            temp_temp_question_array = []
+
+            current_object = content_dict[Object.keys(content_dict)[i]];
+
+            if (level > 0) {
+
+                if (Object.keys(current_object).includes("Definition")) { temp_temp_question_array.push(definition_question(current_object, "symptom"))};
+
+            };
+
+            if (level > 1) {
+
+                if (Object.keys(current_object).includes("Causes")) { temp_temp_question_array.push(list_question(current_object, "Causes")) };
+
+            };         
+
+            temp_question_array.push(temp_temp_question_array);
+
+        };
+
+        question_array = (shuffle(temp_question_array)).flat(1);
+
+    })
+    .then(function(){
+
+        console.log("-> Prepared questions")
+        console.log(question_array);
+
+        openFullscreen();
+        document.getElementsByTagName("BODY")[0].innerHTML = level_page;
+        setEnter();
+
+        set_questions(); 
+    });
+
+}
 
 /***
  * 
