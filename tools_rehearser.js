@@ -1768,6 +1768,7 @@ function start_symptoms(category, level) {
             if (level > 0) {
 
                 if (Object.keys(current_object).includes("Definition")) { temp_temp_question_array.push(definition_question(current_object, "symptom"))};
+                if (Object.keys(current_object).includes("Alternative name")) { temp_temp_question_array.push(name_question(current_object, "symptom"))};
 
             };
 
@@ -1809,6 +1810,15 @@ function start_symptoms(category, level) {
 function definition_question(current_object, category) {
 
     question_string = "What " + category + " is defined as follows: " + current_object["Definition"] + "?";
+    question = ({"Question": question_string, "Answer": current_object["Name"] });
+
+    return question
+
+};
+
+function name_question(current_object, category) {
+
+    question_string = "What " + category + " is also known as: " + current_object["Alternative name"] + "?";
     question = ({"Question": question_string, "Answer": current_object["Name"] });
 
     return question

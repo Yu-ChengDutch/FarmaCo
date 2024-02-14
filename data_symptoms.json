@@ -5,8 +5,90 @@
             "Name": "All signs",
             "Subdivision":[
                 {
+                    "Name": "Gastrointestinal signs",
+                    "Subdivision":[
+                        {
+                            "Name": "General GI signs",
+                            "Subdivision":[
+                                {
+                                    "Name": "Charcot's cholangitis triad",
+                                    "Definition": "A combination of jaundice, fever and right upper quadrant abdominal pain",
+                                    "Causes": ["Ascending cholangitis"]
+                                },
+                                {
+                                    "Name": "Murphy's sign",
+                                    "Definition": "A combination of right lower quadrant pain, nausea, vomiting and fever",
+                                    "Causes": ["Appendicitis"]
+                                },
+                                {
+                                    "Name": "Hamburger sign",
+                                    "Definition": "Examiner asks the patient if they would like their favourite food. Positive if declined",
+                                    "Causes": ["Appendicitis"]
+                                }
+                            ]
+                        },
+                        {
+                            "Name": "Abdominal signs",
+                            "Subdivision": [
+                                {
+                                    "Name": "Aaron's sign",
+                                    "Definition": "Pain felt in the epigastrium upon firm pressure over McBurney's point",
+                                    "Causes": ["Appendicitis"]
+                                },
+                                {
+                                    "Name": "Markle's sign",
+                                    "Definition": "Pain in the right lower quadrant when dropping back on the heels from standing on the toes"
+                                },
+                                {
+                                    "Name": "Sherren's triangle",
+                                    "Definition": "Skin hyperaesthesia in the triangle formed by the SIAS, pubis tubercle and umbilicus",
+                                    "Causes": ["Gangrenous appendicitis"]
+                                },
+                                {
+                                    "Name": "Boas' sign",
+                                    "Definition": "Skin hyperaeshtesia below the right hypochondrium",
+                                    "Causes": ["Cholecystitis"]
+                                },
+                                {
+                                    "Name": "Murphy's sign",
+                                    "Alternative name": "Sweeney's sign",
+                                    "Definition": "Patient lays supine and breathes out. Examinar then pushes the hand under the ribs. Positive when patient cannot breathe out due to pain",
+                                    "Causes": ["Cholecystitis"]
+                                },
+                                {
+                                    "Name": "Lépines sign",
+                                    "Definition": "Painful percussion over the gallbladder"
+                                },
+                                {
+                                    "Name": "Cullen's sign",
+                                    "Definition": "A hematoma in the subumbillical fatty tissue; caused by intraabdominal bleeding",
+                                    "Causes": ["Pancreatitis", "Abdominal trauma", "Aortic rupture", "Ectopic pregnancy"]
+                                },
+                                {
+                                    "Name": "Grey Turner's sign",
+                                    "Definition": "Bruising of the flanks caused by intraabdominal bleeding",
+                                    "Causes": ["Pancreatitis", "Abdominal trauma", "Aortic rupture", "Ectopic pregnancy"]
+                                },
+                                {
+                                    "Name": "Sister Mary Joseph nodule",
+                                    "Definition": "Palpable nodule bulging into the umbilicus; painful on palpation",
+                                    "Causes": ["Peritoneal metastases"]
+                                }
+                            ]
+                        },
+                        {
+                            "Name": "Defecational signs"
+                        }
+                    ]
+                },
+                {
                     "Name": "Neurological signs",
                     "Subdivision":[
+                        {
+                            "Name": "Charcot's neurological triad",
+                            "Definition": ["A combination of nystagmus, intention tremor and scanning speech"],
+                            "Causes": ["MS"]
+                        },
                         {
                             "Name": "Neuromuscular signs",
                             "Subdivision": [
@@ -53,11 +135,37 @@
                                                 {
                                                     "Name": "Seatbelt phenomenon",
                                                     "Definition": "Velocity dependence of resistance",
-                                                    "Mechnism": "Myotatic reflex mediated by muscle spindle fibres via Ia fibres as a response to rate of stretch"
+                                                    "Mechanism": "Myotatic reflex mediated by muscle spindle fibres via Ia fibres as a response to rate of stretch"
                                                 }
                                             ]
                                         }
                                     ]
+                                },
+                                {
+                                    "Name": "Babinski sign",
+                                    "Definition": "Examiner strokes the sole of the foot of the patient. Positive if toes dorsiflex",
+                                    "Causes": ["Spinal cord injury", "Upper motor neuron injury"]
+                                },
+                                {
+                                    "Name": "Westphal sign",
+                                    "Definition": "Absence of a patellar reflex",
+                                    "Causes": [ "Femoral nerve palsy", "Pyramidal laesions", "Dorsal column injury"]
+                                },
+                                {
+                                    "Name": "Tinel's sign",
+                                    "Definition": "Examiner percusses the midline of the volar side of the wrist. Positive if it elicits paresthesias in the hand",
+                                    "Causes": ["Carpal tunnel syndrome"]
+                                },
+                                {
+                                    "Name": "Ulnar claw",
+                                    "Alternative name": "Hand of benediction",
+                                    "Definition": "Hyperextension of dig. 1, 2 and 3; with flexion of dig. 4 and 5",
+                                    "Causes": ["Ulnar neuropathy"]
+                                },
+                                {
+                                    "Name": "Froment sign",
+                                    "Definition": "Patient holds a card between the thumb and a fully flexed dig. 1. Positive if the examiner can draw the card out easily",
+                                    "Causes": ["Ulnar neuropathy"]
                                 }
                             ]
                         },
@@ -71,6 +179,11 @@
                                             "Name": "Macewen's sign",
                                             "Definition": "Examiner taps the skull near the triune junction of the infant. Positive if sounds like broken chinaware",
                                             "Causes": ["Hydrocephalus"]
+                                        },
+                                        {
+                                            "Name": "Cushing's triad",
+                                            "Definition": "A combination of irregular hypoventilation, bradycardia and systolic hypertension",
+                                            "Causes": ["Intracranial hypertension"]
                                         }
                                     ]
                                 },
@@ -82,6 +195,16 @@
                                             "Alternative name": "Lasègue's sign",
                                             "Definition": "Patient lays supine. Examiner raises a single leg in hip flexion. Positive if this elicits sciatic pain",
                                             "Causes": ["L5 radiculopathy"]
+                                        },
+                                        {
+                                            "Name": "Bragard's sign",
+                                            "Definition": "Execute the test for Lasègue's sign. Bring the foot down to a non-painful level, then dorsiflex the foot. Positive if the pain reoccurs",
+                                            "Causes": ["L5 radiculopathy"]
+                                        },
+                                        {
+                                            "Name": "Bowstring sign",
+                                            "Definition": "Execute the test for Lasègue's sign. Stop at the painful level, flex the knee about 20 degrees and press the popliteal fossa. Positive if pain reoccurs",
+                                            "Causes": ["Sciatic neuropathy"]
                                         },
                                         {
                                             "Name": "Femoral nerve stretch test",
@@ -98,6 +221,18 @@
                                             "Name": "Brudzinski's sign",
                                             "Definition": "Patient sits. Examiner flexes the neck. Positive if elicits flexion in the hips",
                                             "Causes": ["Subarachnoid hemorrhage", "Meningitis", "Encephalitis"]
+                                        },
+                                        {
+                                            "Name": "Lhermitte's sign",
+                                            "Alternative name": "Barber chair phenomenon",
+                                            "Definition": "An uncomfortable electrical sensation running down the back and spine",
+                                            "Causes": ["MS", "Transverse myelitis", "Behçet's disease", "Osteogenesis imperfecta", "Hypovitaminosis B12", "Cervical spondylosis", "Cervical HNP", "Arnold-Chiari malformation"]
+                                        },
+                                        {
+                                            "Name": "Bakody sign",
+                                            "Alternative name": "Abduction sign",
+                                            "Definition": "Patient sits and puts the palm of their hand on the top of their head. Positive if relief of pain.",
+                                            "Causes": ["C4 radiculopathy", "C5 radiculopathy", "C6 radiculopathy"]
                                         }
                                     ]
                                 }
@@ -485,7 +620,7 @@
                     ]
                 },
                 {
-                    "Name": "Gastroinstinal symptoms",
+                    "Name": "Gastrointestinal symptoms",
                     "Subdivision": [
                         {
                             "Name": "Constipation",
@@ -507,6 +642,25 @@
                         {
                             "Name": "Anorexia",
                             "Definition": "Loss of apetite"
+                        },
+                        {
+                            "Name": "Odynophagia",
+                            "Definition": "Painful swallowing",
+                            "Causes": ["Oromucosal ulcera", "Orofaryngeal abscesses","Upper respiratory tract infections", "Esophagitis", "Pharyngitis", "Tonsilitis", "Epiglottitis", "Oral cancer", "Esophageal cancer"]
+                        },
+                        {
+                            "Name": "Xerostomia",
+                            "Definition": "Dry mouth",
+                            "Causes": ["Hyposalivation", "Dehydration", "Chronic oral ventilation"]
+                        },
+                        {
+                            "Name": "Hypersalivation",
+                            "Definition": "Excessive saliva production",
+                            "Causes": ["Rabies", "Pellagra", "GERD", "Gastroparesis", "Pregnancy", "Pancreatitis", "Anxiety", "Serotonin syndrome", "Liver disease", "Oromucosal ulcera", "Sjögren syndrome"]
+                        },
+                        {
+                            "Name": "Flatulence",
+                            "Causes": ["IBS", "Caeliac disease", "Non-caeliac gluten sensitivity", "Lactose intolerance", "Ibuprofen", "Statins", "Giardiasis"]
                         }
                     ]
                 },
@@ -516,7 +670,7 @@
                         {
                             "Name": "Polydipsia",
                             "Definition": "Excessive thirst",
-                            "Causes": ["Diabetes mellitus", "Diabetes insipidus", "Anticholinergic syndrome", "Hyperaldosteronism", "Primary polydipsia"]
+                            "Causes": ["Diabetes mellitus", "Diabetes insipidus", "Anticholinergic syndrome", "Hyperaldosteronism", "Primary polydipsia", "Xerostomia"]
                         },
                         {
                             "Name": "Polyuria",
