@@ -428,6 +428,19 @@
                             ]
                         },
                         {
+                            "Name": "Fundoscopic signs",
+                            "Subdivision": [
+                                {
+                                    "Name": "Berlin's oedema",
+                                    "Definition": "Focal whitening of the retina following a commotio retinae"
+                                },
+                                {
+                                    "Name": "Lattice degeneration",
+                                    "Definition": "Sharply delineated focal alteration of the retina which may include (de)pigmentation, flecks or whitening of the vessels"
+                                }
+                            ]
+                        },
+                        {
                             "Name": "Optical Coherence Tomography signs",
                             "Subdivision": [
                                 {
