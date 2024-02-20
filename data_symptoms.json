@@ -378,6 +378,28 @@
                                     "Name": "Conjunctival slit lamp signs"
                                 },
                                 {
+                                    "Name": "Corneal slit lamp signs",
+                                    "Subdivision": [
+                                        {
+                                            "Name": "Keratic precipitate",
+                                            "Definition": "An inflammatory cellular deposit on the corneal endothelium"
+                                        },
+                                        {
+                                            "Name": "Punctata",
+                                            "Definition": "Small indentations in the corneal epithelium",
+                                            "Causes": ["Iatrogenic", "Viral infection", "Lagophthalmos", "Trichiasis", "SLK"]
+                                        },
+                                        {
+                                            "Name": "Guttata",
+                                            "Definition": "Small dents in the corneal endothelium; giving the cornea an orange-peel look"
+                                        },
+                                        {
+                                            "Name": "Corneal oedema",
+                                            "Definition": "A thickening of the cornea, visible as a whitening thereof"
+                                        }
+                                    ]
+                                },
+                                {
                                     "Name": "Iris slit lamp signs",
                                     "Subdivision":[
                                         {
@@ -407,6 +429,10 @@
                                             "Name": "Microhyphema",
                                             "Definition": "Erythrocytes floating in the aqueous humour; visible on red-free light as black specks",
                                             "Causes": ["Rubeosis iridis", "Ocular trauma"]
+                                        },
+                                        {
+                                            "Name": "Tyndall effect",
+                                            "Definition": "A haze caused by tiny suspended particles"
                                         }
                                     ]
                                 },
