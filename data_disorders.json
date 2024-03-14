@@ -2,6 +2,145 @@
     "Name": "Disorders",
     "Subtypes": [
         {
+            "Name": "Orthopaedics",
+            "Subtypes": [
+                {
+                    "Name": "Fractures",
+                    "Subtypes": [
+                        {
+                            "Name": "Vertebral fractures",
+                            "Subtypes": [
+                                {
+                                    "Name": "Chance fracture",
+                                    "Alternative name": "Seatbelt fracture",
+                                    "Definition": "Flexion-distraction type spinal fractural involving all three spinal columns"
+                                },
+                                {
+                                    "Name": "Clay-shoveler fracture",
+                                    "Definition": "Fractur of the spinous processes of lower cervical vertebra. Often go unnoticed"
+                                },
+                                {
+                                    "Name": "Hangman fracture",
+                                    "Alternative name": "Traumatic spondylolisthesis of the axis",
+                                    "Definition": "Hyperextension-distraction type spinal fracture involving the pars articularis of C2 on both sides"
+                                },
+                                {
+                                    "Name": "Holdsworth fracture",
+                                    "Definition": "An unstable thoracolumbar junction fracture involving the corpus and processes, as well as posterior ligamentous complex rupture"
+                                },
+                                {
+                                    "Name": "Jefferson fracture",
+                                    "Definition": "Burst fracture of the atlas"
+                                }
+                            ]
+                        },
+                        {
+                            "Name": "Pelvic fractures",
+                            "Subtypes": [
+                                {
+                                    "Name": "Duverney fracture",
+                                    "Definition": "Isolated iliac wing fracture due to a direct blow to the ilium"
+                                },
+                                {
+                                    "Name": "Malgaigne fracture",
+                                    "Definition": "Two ipsilateral pelvic ring fractures"
+                                }
+                            ]
+                        },
+                        {
+                            "Name": "Upper limb fractures",
+                            "Subtypes": [
+                                {
+                                    "Name": "Barton fracture",
+                                    "Definition": "Fracture of the distal radius extending through the dorsal aspect to the articular, but not reaching the volar spect"
+                                },
+                                {
+                                    "Name": "Bennett fracture",
+                                    "Definition": "Intra-articular fracture of the proximal first metacarpal"
+                                },
+                                {
+                                    "Name": "Pseudo-Bennett fracture",
+                                    "Definition": "Extra-articular fracture of the proximal first metacarpal"
+                                },
+                                {
+                                    "Name": "Boxer fracture",
+                                    "Definition": "Minimally comminuted, transverse fracture of the 5th metacarpal fracture"
+                                },
+                                {
+                                    "Name": "Chauffeur fracture",
+                                    "Alternative name": "Hutchinson fracture",
+                                    "Definition": "Intra-articular fracture of the radial styloid process due to a blow to the back of the wrist; or forced dorsiflexions"
+                                },
+                                {
+                                    "Name": "Colles fracture",
+                                    "Definition": "Extra-articular fracture of the distal radius due to a fall on an outstretched hand"
+                                },
+                                {
+                                    "Name": "Smith fracture",
+                                    "Alternative name": "Goyrand fracture",
+                                    "Definition": "Extra-articular fractures of the distal radius with associated volar angulation"
+                                },
+                                {
+                                    "Name": "Monteggia fracture",
+                                    "Definition": "Fracture of the ulnar shaft with concomitant dislocation of the radial head"
+                                },
+                                {
+                                    "Name": "Nightstick fractures",
+                                    "Definition": "Isolated fracture of the ulna resulting from a direct blow"
+                                },
+                                {
+                                    "Name": "Piedmont fracture",
+                                    "Alternative name": "Galeazzi fracture",
+                                    "Definition": "Fracture of the border between the medial and distal third of the radial shaft; with concomitant radioulnar dislocation"
+                                },
+                                {
+                                    "Name": "Rolando fracture",
+                                    "Definition": "A comminuted Bennett fracture"
+                                }
+                            ]
+                        },
+                        {
+                            "Name": "Lower limb fractures",
+                            "Subtypes": [
+                                {
+                                    "Name": "Chopart fracture",
+                                    "Definition": "Midfoot fractures of the talonavicular and calcaneocuboid joints due to a fall from height"
+                                },
+                                {
+                                    "Name": "Jones fracture",
+                                    "Definition": "Fracture of the proximal metadiaphyseal junction of the fifth metatarsal involving the 4th and 5th metatarsal articulation"
+                                },
+                                {
+                                    "Name": "Lisfranc injury",
+                                    "Definition": "Forefoot fracture of the tarsus-metatarsus joint"
+                                },
+                                {
+                                    "Name": "Maisonneuve fracture"
+                                },
+                                {
+                                    "Name": "March fracture",
+                                    "Definition": "Stress fracture due to repeated trauma to the 2nd metatarsal"
+                                },
+                                {
+                                    "Name": "Pilon fracture",
+                                    "Definition": "Distal tibial fracture fracture involving the tibial plafond due to axial loading"
+                                },
+                                {
+                                    "Name": "Segon fracture",
+                                    "Definition": "Avulsion fracture of the lateral tibial plateau due to varus and internal rotation"
+                                },
+                                {
+                                    "Name": "Tillaux fracture",
+                                    "Definition": "A Salter-Harris III fracture through the anterolateral aspect of the distal tibial epiphysis"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+
+        },
+        {
             "Name": "Electrolyte imbalance",
             "Subtypes": [
                 {

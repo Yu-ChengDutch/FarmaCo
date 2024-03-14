@@ -1,0 +1,128 @@
+{
+    "Name": "Hormones",
+    "Subdivision": [
+        {
+            "Name": "Amino acid derivates",
+            "Subdivision": [
+                {
+                    "Name": "Adrenaline",
+                    "Alternative name": "Norepinephrine",
+                    "Tissue": "Adrenal medulla",
+                    "Cell": "Chromafin cell",
+                    "Receptor": "Adrenergic receptor" 
+                },
+                {
+                    "Name": "Noradrenaline",
+                    "Alternative name": "Norepinephrine",
+                    "Tissue": "Adrenal medulla",
+                    "Cell": "Chromafin cell",
+                    "Receptor": "Adrenergic receptor" 
+                },
+                {
+                    "Name": "Melatonin",
+                    "Tissue": "Pineal gland",
+                    "Cell": "Pinealocyte",
+                    "Receptor": "Melatonin receptor" 
+                },
+                {
+                    "Name": "Triidothyronine",
+                    "Alternative name": "T3",
+                    "Tissue": "Thyroid gland",
+                    "Cell": "Thyroid follicular cell",
+                    "Receptor": "Thyroid hormone receptor" 
+                },
+                {
+                    "Name": "Thyroxine",
+                    "Alternative name": "T4",
+                    "Tissue": "Thyroid gland",
+                    "Cell": "Thyroid follicular cell",
+                    "Receptor": "Thyroid hormone receptor" 
+                },
+                {
+                    "Name": "Dopamine",
+                    "Tissue": "Substantia nigra",
+                    "Receptor": "Dopamine receptors" 
+                }
+            ]
+        },
+        {
+            "Name": "Eicosanoids",
+            "Subdivision": [
+                {
+                    "Name": "Prostaglandins",
+                    "Receptor": "Prostaglandin receptor" 
+                },
+                {
+                    "Name": "Leukotrienes",
+                    "Cell": "Leukocyte"
+                },
+                {
+                    "Name": "Prostacyclin",
+                    "Receptor": "Prostacyclin receptor" 
+                },
+                {
+                    "Name": "Thromboxane",
+                    "Cell": "Thrombocyte",
+                    "Receptor": "Thromboxane receptor" 
+                }
+            ]
+        },
+        {
+            "Name": "Steroids",
+            "Subdivision": [
+                {
+                    "Name": "Sex hormones",
+                    "Subdivision": [
+                        
+                    ]
+                },
+                {
+                    "Name": "Corticosteroids",
+                    "Subdivision": [
+                        
+                    ]
+                },
+                {
+                    "Name": "Secosteroids",
+                    "Subdivision": [
+                        
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "Peptides",
+            "Subdivision": [
+                {
+                    "Name": "Anti-Müllerian hormone",
+                    "Tissue": "Testes",
+                    "Cell": "Sertoli cell"
+                },
+                {
+                    "Name": "Adiponectin",
+                    "Tissue": "Adipose tissue",
+                    "Cell": "Adipocytes"
+                },
+                {
+                    "Name": "Adrenocorticotropic hormone",
+                    "Alternative name": "ACTH",
+                    "Tissue": "Anterior pituitary gland",
+                    "Cell": "Corticotrope"
+                },
+                {
+                    "Name": "Angiotensinogen",
+                    "Tissue": "Liver"
+                },
+                {
+                    "Name": "Angiotensin"
+                },
+                {
+                    "Name": "Antidiuretic hormon",
+                    "Alternative name": "Vasopressin",
+                    "Tissue": "Posterior pituitary gland",
+                    "Cell": ""
+                }
+            ]
+        }
+    ]
+}

@@ -144,6 +144,7 @@
                                 {
                                     "Name": "Babinski sign",
                                     "Definition": "Examiner strokes the sole of the foot of the patient. Positive if toes dorsiflex",
+                                    "Structure": ["N. Tibialis"],
                                     "Causes": ["Spinal cord injury", "Upper motor neuron injury"]
                                 },
                                 {
@@ -153,19 +154,27 @@
                                 },
                                 {
                                     "Name": "Tinel's sign",
+                                    "Structure": ["N. Medianus"],
                                     "Definition": "Examiner percusses the midline of the volar side of the wrist. Positive if it elicits paresthesias in the hand",
                                     "Causes": ["Carpal tunnel syndrome"]
                                 },
                                 {
                                     "Name": "Ulnar claw",
                                     "Alternative name": "Hand of benediction",
+                                    "Structure": ["N. Ulnaris"],
                                     "Definition": "Hyperextension of dig. 1, 2 and 3; with flexion of dig. 4 and 5",
                                     "Causes": ["Ulnar neuropathy"]
                                 },
                                 {
                                     "Name": "Froment sign",
+                                    "Structure": ["N. Ulnaris"],
                                     "Definition": "Patient holds a card between the thumb and a fully flexed dig. 1. Positive if the examiner can draw the card out easily",
                                     "Causes": ["Ulnar neuropathy"]
+                                },
+                                {
+                                    "Name": "Anal wink",
+                                    "Structure": ["N. Pudendus"],
+                                    "Definition": "Reflexive contraction of the external anal sphincter upon stroking of the skin around the anus"
                                 }
                             ]
                         },
@@ -193,6 +202,7 @@
                                         {
                                             "Name": "Straight leg raise test",
                                             "Alternative name": "Lasègue's sign",
+                                            "Structure": ["N. Ischiadicus"],
                                             "Definition": "Patient lays supine. Examiner raises a single leg in hip flexion. Positive if this elicits sciatic pain",
                                             "Causes": ["L5 radiculopathy"]
                                         },
@@ -209,6 +219,7 @@
                                         {
                                             "Name": "Femoral nerve stretch test",
                                             "Alternative name": "Mackiewicz sign",
+                                            "Structure": ["N. Femoralis"],
                                             "Definition": "Patient lies prone. Examiner fully flexes knee, and extends hip. Positive if this elicits anterior thigh pain.",
                                             "Causes": ["L2 radiculopathy", "L3 radiculopathy", "L4 radiculopathy"]
                                         },
@@ -231,6 +242,7 @@
                                         {
                                             "Name": "Bakody sign",
                                             "Alternative name": "Abduction sign",
+                                            "Structure": ["N. Axillaris", "N. Radialis", "N. Medianus"],
                                             "Definition": "Patient sits and puts the palm of their hand on the top of their head. Positive if relief of pain.",
                                             "Causes": ["C4 radiculopathy", "C5 radiculopathy", "C6 radiculopathy"]
                                         }
@@ -256,7 +268,7 @@
                             "Causes": ["Patellofemoral pain syndrome", "Chonromalcia patella", "Patellofemoral arthritis"]
                         },
                         {
-                            "Name": "Drawer tests",
+                            "Name": "Drawer Structure",
                             "Subdivision": [
                                 {
                                     "Name": "Anterior drawer test",
@@ -341,6 +353,11 @@
                     "Name": "Ocular signs",
                     "Subdivision":[
                         {
+                            "Name": "Schirmer's test",
+                            "Definition": "Place a paper strip in the lower palpebral fissure. Positive if <5 mm wet after 5 minutes",
+                            "Causes": ["Aging", "Arthritis", "Ulcus cornea", "Diabetes mellitus", "Lymphoma", "Leukemia", "Sjögren's syndrome", "Triple A syndrome", "Vitamin A deficiency", "LASIK"]
+                        },
+                        {
                             "Name": "Penlight signs",
                             "Subdivision":[
                                 {
@@ -360,12 +377,12 @@
                                     "Causes": ["Coats' disease", "Congenital cataract", "Corneal scarring", "Norrie disease", "Retinoblastoma"]
                                 },
                                 {
-                                    "Name": "Downward red reflex",
+                                    "Name": "Downward Brückner",
                                     "Definition": "A red reflex of the retina which appears shifted downward and does not reach the top of the pupil",
                                     "Causes": ["Hyperopia"]
                                 },
                                 {
-                                    "Name": "Upward red reflex",
+                                    "Name": "Upward Brückner",
                                     "Definition": "A red reflex of the retina which appears shifted upward and does not reach the bottom of the pupil",
                                     "Causes": ["Myopia"]
                                 }
@@ -395,7 +412,7 @@
                                         },
                                         {
                                             "Name": "Corneal oedema",
-                                            "Definition": "A thickening of the cornea, visible as a whitening thereof"
+                                            "Definition": "A thickening of the cornea, visible as a whitening"
                                         }
                                     ]
                                 },
@@ -820,22 +837,35 @@
                                     "Definition": "Rhythmic, involuntary muscle contraction and relaxation involving oscillations or twichting",
                                     "Subdivision": [
                                         {
-                                            "Name": "Intention tremor",
-                                            "Alternative name": "Cerebellar tremor",
-                                            "Definition": "Slow, broad tremor which occurs at the end of a purposeful movement"
+                                            "Name": "Resting tremor",
+                                            "Definition": "Tremor which occurs in a body part which is relaxed and supported against gravity",
+                                            "Causes": ["Parkinson's disease", "Essential tremor"]
+                                            
                                         },
                                         {
-                                            "Name": "Dystonic tremor",
-                                            "Definition": "Twisting and repetitive tremor when muscle contraction is sustained"
-                                        },
-                                        {
-                                            "Name": "Orthostatic tremor",
-                                            "Definition": "Tremor in the arms and legs after standing up"
-                                        },
-                                        {
-                                            "Name": "Parkinsonian tremor",
-                                            "Alternative name": "Pill-rolling tremor",
-                                            "Definition": "A resting remor affecting the hands, chin and lips; typified by a pill-rolling action"
+                                            "Name": "Action tremor",
+                                            "Subdivisions": [
+                                                {
+                                                    "Name": "Postural tremor",
+                                                    "Definition": "Tremor which occurs when a body part is voluntarily maintained against gravity",
+                                                    "Causes": ["Drug-induced tremor", "Multiple sclerosis", "Cerebellar stroke", "Wilson's disease", "Alcohol use", "Alcohol withdrawal syndrome"]
+                                                },
+                                                {
+                                                    "Name": "Isometric tremor",
+                                                    "Definition": "Tremor which occurs when a muscle contraction is held against a rigid, stationary object"
+                                                },
+                                                {
+                                                    "Name": "Kinetic tremor",
+                                                    "Definition": "Tremor which occurs with any form of voluntary movement",
+                                                    "Causes": ["Essential tremor"]
+                                                },
+                                                {
+                                                    "Name": "Intention tremor",
+                                                    "Alternative name": "Cerebellar tremor",
+                                                    "Definition": "Tremor which is amplified as a target is reached",
+                                                    "Causes": ["Multiple sclerosis", "Cerebellar stroke", "Alcohol use", "Alcohol withdrawal syndrome"]
+                                                }
+                                            ]
                                         }
                                     ]
                                 }

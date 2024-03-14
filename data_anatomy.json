@@ -2,47 +2,39 @@
     "Name": "Corpus humanum",
     "Subdivision": [
         {
-            "Name": "Systema skeletale",
+            "Name": "Skeletal system",
             "Subdivision": [
                 {
-                    "Name": "Skeleton axiale",
+                    "Name": "Axial skeleton",
                     "Subdivision": [
                         {
-                            "Name": "Ossa cranii"
+                            "Name": "Cranial bones"
                         },
                         {
-                            "Name": "Columna vertebralis",
+                            "Name": "Vertebral column",
                             "Subdivision": [
                                 {
-                                    "Name": "Vertebrae cervicales",
-                                    "Subdivision": [
-                                        {
-                                            "Name": "Atlas"
-                                        },
-                                        {
-                                            "Name": ""
-                                        }
-                                    ]
+                                    "Name": "Cervical vertebrae"
                                 },
                                 {
-                                    "Name": "Vertebrae thoracales"
+                                    "Name": "Thoracic vertebrae"
                                 },
                                 {
-                                    "Name": "Vertebrae lumbales"
+                                    "Name": "Lumbar vertebrae"
                                 }
                             ]
                         },
                         {
-                            "Name": "Skeleton thoracis",
+                            "Name": "Thoracic skeleton",
                             "Subdivision": [
                                 {
-                                    "Name": "Costae",
+                                    "Name": "Ribs",
                                     "Subdivision": [
                                         {
-                                            "Name": "Costae verae"
+                                            "Name": "True ribs"
                                         },
                                         {
-                                            "Name": "Costae spuriae"
+                                            "Name": "False ribs"
                                         }
                                     ]
                                 },
@@ -50,38 +42,38 @@
                                     "Name": "Sternum",
                                     "Parts": [
                                         {
-                                            "Name": "Manubrium sterni",
+                                            "Name": "Sternal manubrium",
                                             "Parts": [
                                                 {
-                                                    "Name": "Incisura clavicularis"
+                                                    "Name": "Clavicular notch"
                                                 },
                                                 {
-                                                    "Name": "Incisura jugularis"
+                                                    "Name": "Jugular notch"
                                                 }
                                             ]
                                         },
                                         {
-                                            "Name": "Angulus sterni",
+                                            "Name": "Sternal angle",
                                             "Eponym": "Ludovici",
                                             "Parts": [
                                                 {
-                                                    "Name": "Incisura costalis II"
+                                                    "Name": "Costal notch II"
                                                 }
                                             ]
                                         },
                                         {
-                                            "Name": "Corpus sterni",
+                                            "Name": "Sternal body",
                                             "Parts": [
                                                 {
-                                                    "Name": "Incisurae costales III - VI"
+                                                    "Name": "Costal notch III - VI"
                                                 }
                                             ]
                                         },
                                         {
-                                            "Name": "Processus xiphoideus",
+                                            "Name": "Xiphoid process",
                                             "Parts": [
                                                 {
-                                                    "Name": "Incisura costalis VII"
+                                                    "Name": "Costal notch VII"
                                                 }
                                             ]
                                         }
@@ -92,22 +84,22 @@
                     ]
                 },
                 {
-                    "Name": "Skeleton appendiculare",
+                    "Name": "Appendicular skeleton",
                     "Subdivision": [
                         {
-                            "Name": "Ossa membri superioris",
+                            "Name": "Bones of the upper extremities",
                             "Subdivision": [
                                 {
-                                    "Name": "Ossa cinguli pectoralis",
+                                    "Name": "Bones of the shoulder girdle",
                                     "Subdivision": [
                                         {
                                             "Name": "Scapula",
                                             "Parts": [
                                                 {
-                                                    "Name": "Facies anterior"
+                                                    "Name": "Frontal face"
                                                 },
                                                 {
-                                                    "Name": "Facies posterior"
+                                                    "Name": "Posterior face"
                                                 },
                                                 {
                                                     "Name": "Acromion"
@@ -118,20 +110,20 @@
                                             "Name": "Clavicula",
                                             "Parts": [
                                                 {
-                                                    "Name": "Extremitas acromialis"
+                                                    "Name": "Acromial end"
                                                 },
                                                 {
-                                                    "Name": "Corpus claviculae"
+                                                    "Name": "Clavicular body"
                                                 },
                                                 {
-                                                    "Name": "Extremitas sternalis"
+                                                    "Name": "Sternal end"
                                                 }
                                             ]
                                         }
                                     ]
                                 },
                                 {
-                                    "Name": "Ossa partis liberae membri superioris",
+                                    "Name": "Bones of the free upper extremities",
                                     "Subdivision": [
                                         {
                                             "Name": "Humerus"
@@ -143,16 +135,52 @@
                                             "Name": "Ulna"
                                         },
                                         {
-                                            "Name": "Ossa manus",
+                                            "Name": "Bones of the hand",
                                             "Subdivision": [
                                                 {
-                                                    "Name": "Ossa carpi"
+                                                    "Name": "Carpal bones",
+                                                    "Subdivision": [
+                                                        {
+                                                            "Name": "Proximal row of carpal bones",
+                                                            "Subdivision": [
+                                                                {
+                                                                    "Name": "Scaphoid"
+                                                                },
+                                                                {
+                                                                    "Name": "Lunate"
+                                                                },
+                                                                {
+                                                                    "Name": "Triquetrum"
+                                                                },
+                                                                {
+                                                                    "Name": "Pisiform"
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "Name": "Distal row of carpal bones",
+                                                            "Subdivision": [
+                                                                {
+                                                                    "Name": "Trapezium"
+                                                                },
+                                                                {
+                                                                    "Name": "Trapezoid"
+                                                                },
+                                                                {
+                                                                    "Name": "Capitate"
+                                                                },
+                                                                {
+                                                                    "Name": "Hamate"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
                                                 },
                                                 {
-                                                    "Name": "Ossa metacarpi"
+                                                    "Name": "Metacarpal bones"
                                                 },
                                                 {
-                                                    "Name": "Ossa digitorum manus"
+                                                    "Name": "Finger bones"
                                                 }
                                             ]
                                         }
@@ -161,32 +189,32 @@
                             ]
                         },
                         {
-                            "Name": "Ossa membri inferioris",
+                            "Name": "Bones of the lower extremities",
                             "Subdivision": [
                                 {
-                                    "Name": "Ossa cinguli pelvici",
+                                    "Name": "Bones of the pelvic girdle",
                                     "Subdivision": [
                                         {
-                                            "Name": "Os sacrum"
+                                            "Name": "Sacrum"
                                         },
                                         {
-                                            "Name": "Os coxae",
+                                            "Name": "Hip bone",
                                             "Subdivision": [
                                                 {
-                                                    "Name": "Os ilium"
+                                                    "Name": "Ilium"
                                                 },
                                                 {
-                                                    "Name": "Os ischii"
+                                                    "Name": "Ischium"
                                                 },
                                                 {
-                                                    "Name": "Os pubis"
+                                                    "Name": "Pubic bone"
                                                 }
                                             ]
                                         }
                                     ]
                                 },
                                 {
-                                    "Name": "Ossa partis liberae membri inferioris",
+                                    "Name": "Bones of the free lower extremities",
                                     "Subdivision": [
                                         {
                                             "Name": "Femur"
@@ -201,10 +229,10 @@
                                             "Name": "Fibula"
                                         },
                                         {
-                                            "Name": "Ossa pedis",
+                                            "Name": "Bones of the foot",
                                             "Subdivision": [
                                                 {
-                                                    "Name": "Ossa tarsi",
+                                                    "Name": "Tarsal bones",
                                                     "Subdivision": [
                                                         {
                                                             "Name": "Talus"
@@ -213,32 +241,918 @@
                                                             "Name": "Calcaneus"
                                                         },
                                                         {
-                                                            "Name": "Os naviculare"
+                                                            "Name": "Navicular bone"
                                                         },
                                                         {
-                                                            "Name": "Os cuneiforme mediale"
+                                                            "Name": "Medial cuneiform bone"
                                                         },
                                                         {
-                                                            "Name": "Os cuneiforme intermedium"
+                                                            "Name": "Intermediate cuneiform bone"
                                                         },
                                                         {
-                                                            "Name": "Os cuneiforme laterale"
+                                                            "Name": "Lateral cuneiform bone"
                                                         },
                                                         {
-                                                            "Name": "Os cuboideum"
+                                                            "Name": "Cuboid bone"
                                                         }
                                                     ]
                                                 },
                                                 {
-                                                    "Name": "Ossa metatarsi"
+                                                    "Name": "Metatarsal bones"
                                                 },
                                                 {
-                                                    "Name": "Ossa digitorum pedis"
+                                                    "Name": "Toe bones"
                                                 }
                                             ]
                                         }  
                                     ]
                                 }                                
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "Muscular system",
+            "Subdivision": [
+                {
+                    "Name": "Muscles of the trunk",
+                    "Subdivision": [
+                        {
+                            "Name": "Anterior muscles of the trunk",
+                            "Alternative name": "Hypaxial muscles",
+                            "Subdivision": [
+                                {
+                                    "Name": "Muscles of the chest",
+                                    "Subdivision": [
+                                        {
+                                            "Name": "Costal muscles",
+                                            "Subdivision": [
+                                                {
+                                                    "Name": "Intercostal muscles",
+                                                    "Subdivision": [
+                                                        {
+                                                            "Name": "External intercostals",
+                                                            "Origin": ["Ribs", "Inferior border"],
+                                                            "Insertion": ["Ribs", "Superior border"],
+                                                            "Innervation": ["Nn. Intercostales"],
+                                                            "Action": ["Inhalation"]
+                                                        },
+                                                        {
+                                                            "Name": "Internal intercostals",
+                                                            "Origin": ["Ribs", "Superior border"],
+                                                            "Insertion": ["Ribs", "Inferior border"],
+                                                            "Innervation": ["Nn. Intercostales"],
+                                                            "Action": ["Stabilisation"]
+                                                        },
+                                                        {
+                                                            "Name": "Innermost intercostals",
+                                                            "Origin": ["Ribs", "Infero-posterior border"],
+                                                            "Insertion": ["Ribs", "Supero-posterior border"],
+                                                            "Innervation": ["Nn. Intercostales"],
+                                                            "Action": ["Exhalation"]
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "Name": "Subcostalis"
+                                                },
+                                                {
+                                                    "Name": "Transversus thoracis"
+                                                },
+                                                {
+                                                    "Name": "Levatores costarum"
+                                                },
+                                                {
+                                                    "Name": "Serratus posterior",
+                                                    "Subdivision": [
+                                                        {
+                                                            "Name": "Inferior serratus posterior"
+                                                        },
+                                                        {
+                                                            "Name": "Superior serratus posterior"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "Name": "Thoracic diaphragm"
+                                                },
+                                                {
+                                                    "Name": "Subclavius"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "Name": "Pectoral group",
+                                            "Subdivision": [
+                                                {
+                                                    "Name": "Pectoralis muscles",
+                                                    "Subdivision": [
+                                                        {
+                                                            "Name": "Pectoralis major"
+                                                        },
+                                                        {
+                                                            "Name": "Pectoralis minor"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "Name": "Serratus anterior"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Name": "Muscles of the abdomen",
+                                    "Subdivision": [
+                                        {
+                                            "Name": "External oblique"
+                                        },
+                                        {
+                                            "Name": "Internal oblique"
+                                        },
+                                        {
+                                            "Name": "Transversus abdominis"
+                                        },
+                                        {
+                                            "Name": "Rectus abdominis"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "Name": "Posterior muscles of the trunk",
+                            "Alternative name": "Epaxial muscles",
+                            "Subdivision": [
+                                {
+                                    "Name": "Spinal muscles",
+                                    "Subdivision": [
+                                        {
+                                            "Name": "Splenius",
+                                            "Subdivision": [
+                                                {
+                                                    "Name": "Capitis"
+                                                },
+                                                {
+                                                    "Name": "Cervicis"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "Name": "Erector spinae",
+                                            "Subdivision": [
+                                                {
+                                                    "Name": "Iliocostalis"
+                                                },
+                                                {
+                                                    "Name": "Longissimus"
+                                                },
+                                                {
+                                                    "Name": "Spinalis"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "Name": "Transversospinales",
+                                            "Subdivision": [
+                                                {
+                                                    "Name": "Semispinalis"
+                                                },
+                                                {
+                                                    "Name": "Multifidus"
+                                                },
+                                                {
+                                                    "Name": "Rotatores"
+                                                },
+                                                {
+                                                    "Name": "Interspinales"
+                                                },
+                                                {
+                                                    "Name": "Intertransversarii"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Name": "Scapular muscles",
+                                    "Subdivision": [
+                                        {
+                                            "Name": "Trapezius",
+                                            "Insertion": [["Clavicle", "Posterior border"], ["Scapula", ["Spine", "Acromion process"]]],
+                                            "Innervation": ["N. Accessorius", "N. Spinalis C3", "N. Spinalis C4"],
+                                            "Action": ["Scapula", ["Rotation", "Retraction", "Elevation", "Depression"]]
+                                        },
+                                        {
+                                            "Name": "Latissimus dorsi",
+                                            "Insertion": ["Humerus", "Intertubercular groove"],
+                                            "Innervation": ["N. Thoracodorsalis"],
+                                            "Action": ["Arm", ["Adduction", "Extension", "Internal rotation"]]
+                                        },
+                                        {
+                                            "Name": "Rhomboid muscles",
+                                            "Subdivision": [
+                                                {
+                                                    "Name": "Rhomboid major",
+                                                    "Origin": [["Vertebrae", "T2", "T3", "T4", "T5"], "Spinous process"],
+                                                    "Insertion": ["Scapula", "Medial border"],
+                                                    "Innervation": ["N. Dorsalis scapularis"],
+                                                    "Action": ["Scapula", ["Retraction", "Rotation", "Fixation"]]
+                                                },
+                                                {
+                                                    "Name": "Rhomboid minor",
+                                                    "Origin": [["Vertebrae", "C7", "T1"], ["Spinous process", "Nuchal ligament"]],
+                                                    "Insertion": ["Scapula", "Medial border"],
+                                                    "Innervation": ["N. Dorsalis scapularis"],
+                                                    "Action": ["Scapula", ["Retraction", "Rotation", "Fixation"]]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "Name": "Levator scapulae",
+                                            "Origin": [["Vertebrae", "C1", "C2", "C3"], "Transverse process"],
+                                            "Insertion": ["Scapula", "Medial border"],
+                                            "Innervation": ["N. Spinalis C3", "N. Spinalis C4", "N. Dorsalis scapularis"],
+                                            "Action": ["Scapula", ["Elevation", "Rotation"]]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Muscles of upper extremities",
+                    "Subdivision": [
+                        {
+                            "Name": "Deltoid",
+                            "Origin": [["Clavicula", "Anterior border"], ["Acromion"], ["Scapula", "Spine"]],
+                            "Insertion": ["Humerus", "Deltoid tuberosity"],
+                            "Innervation": ["N. Axillaris"],
+                            "Action": ["Shoulder", ["Abduction", "Flexion", "Extension"]]
+                        },
+                        {
+                            "Name": "Teres major",
+                            "Origin": ["Scapula", "Inferior angle"],
+                            "Insertion": ["Humerus", "Intertubercular sulcus"],
+                            "Innervation": ["N. Subscapularis inferior"],
+                            "Action": ["Shoulder", ["Adduction", "Internal rotation", "Extension"]]
+                        },
+                        {
+                            "Name": "Muscles of the shoulder",
+                            "Subdivision": [
+                                {
+                                    "Name": "Rotator cuff",
+                                    "Subdivision": [
+                                        {
+                                            "Name": "Supraspinatus",
+                                            "Origin": ["Scapula", "Supraspinous fossa"],
+                                            "Insertion": ["Humerus", "Greater tubercle"],
+                                            "Innervation": ["N. Suprascapularis"],
+                                            "Action": ["Shoulder", ["Abduction", "Stabilisation"]]
+                                        },
+                                        {
+                                            "Name": "Infraspinatus",
+                                            "Origin": ["Scapula", "Infraspinous fossa"],
+                                            "Insertion": ["Humerus", "Greater tubercle"],
+                                            "Innervation": ["N. Suprascapularis"],
+                                            "Action": ["Shoulder", ["External rotation", "Stablisation"]]
+                                        },
+                                        {
+                                            "Name": "Teres minor",
+                                            "Origin": ["Scapula", "Lateral border"],
+                                            "Insertion": ["Humerus", "Greater tubercle"],
+                                            "Innervation": ["N. Axillaris"],
+                                            "Action": ["Shoulder", ["External rotation", "Stabilisation"]]
+                                        },
+                                        {
+                                            "Name": "Subscapularis",
+                                            "Origin": ["Scapula", "Subscapular fossa"],
+                                            "Insertion": ["Humerus", "Lesser tubercle"],
+                                            "Innervation": ["N. Subscapularis inferior", "N. Subscapularis superior"],
+                                            "Action": ["Shoulder", ["Internal rotation", "Adduction", "Stabilisation"]]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "Name": "Muscles of the arm",
+                            "Subdivision": [
+                                {
+                                    "Name": "Anterior compartment of the arm",
+                                    "Subdivision": [
+                                        {
+                                            "Name": "Coracobrachialis",
+                                            "Origin": ["Scapula", "Coracoid process"],
+                                            "Insertion": ["Humerus", "Anteriomedial surface"],
+                                            "Innervation": ["N. Musculocutaneous"],
+                                            "Action": ["Shoulder", ["Adduction", "Flexion"]]
+                                        },
+                                        {
+                                            "Name": "Biceps brachii",
+                                            "Insertion": ["Radius", "Radial tuberosity"],
+                                            "Innervation": ["N. Musculocutaneous"],
+                                            "Action": [["Elbow", ["Flexion"]], ["Shoulder", ["Flexion", "Abduction"]], ["Radioulnar joint", ["Supination"]]],
+                                            "Parts": [
+                                                {
+                                                    "Name": "Short head",
+                                                    "Origin": ["Scapula", "Coracoid process"]
+                                                },
+                                                {
+                                                    "Name": "Long head",
+                                                    "Origin": ["Scapula", "Supraglenoid tubercle"]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "Name": "Brachialis",
+                                            "Origin": ["Humerus", "Anterior surface"],
+                                            "Insertion": ["Ulna", ["Coronoid process", "Ulnar tuberosity"]],
+                                            "Innervation": ["N. Musculocutaneous", "N. Radialis"],
+                                            "Action": ["Elbow", ["Flexion"]]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Name": "Posterior compartment of the arm",
+                                    "Subdivision": [
+                                        {
+                                            "Name": "Triceps brachii",
+                                            "Insertion": ["Ulna", "Olecranon process"],
+                                            "Innervation": ["N. Radialis"],
+                                            "Action": [["Elbow", ["Extension"]], ["Shoulder", ["Extension", "Adduction"]]],
+                                            "Parts": [
+                                                {
+                                                    "Name": "Long head",
+                                                    "Origin": ["Scapula", "Infraglenoid tubercle"]
+                                                },
+                                                {
+                                                    "Name": "Lateral head",
+                                                    "Origin": ["Humerus", "Radial groove"]
+                                                },
+                                                {
+                                                    "Name": "Medial head",
+                                                    "Origin": ["Humerus", "Radial groove"]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "Name": "Anconeus",
+                                            "Origin": ["Humerus", "Lateral epicondyle"],
+                                            "Insertion": ["Ulna", ["Olecranon process", "Posterior surface"]],
+                                            "Innervation": ["N. Radialis"],
+                                            "Action": ["Elbow", ["Extension", "Stabilisation"]]
+                                        },
+                                        {
+                                            "Name": "Articularis cubiti",
+                                            "Alternative name": "Subanconeus",
+                                            "Origin": ["Triceps brachii", "Medial head"],
+                                            "Insertion": ["Elbow joint", "Posterior capsule"],
+                                            "Innervation": ["N. Radialis"],
+                                            "Action": ["Capsule", ["Lifting away from joint"]]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "Name": "Muscles of the forearm",
+                            "Subdivision": [
+                                {
+                                    "Name": "Anterior compartment of the forearm",
+                                    "Subdivision": [
+                                        {
+                                            "Name": "Superficial muscles of the anterior compartment of the forearm",
+                                            "Subdivision": [
+                                                {
+                                                    "Name": "Pronator teres"
+                                                },
+                                                {
+                                                    "Name": "Palmaris longus"
+                                                },
+                                                {
+                                                    "Name": "Flexor carpi radialis"
+                                                },
+                                                {
+                                                    "Name": "Flexor carpi ulnaris"
+                                                },
+                                                {
+                                                    "Name": "Flexor digitorum superficialis"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "Name": "Deep muscles of the anterior compartment of the forearm",
+                                            "Subdivision": [
+                                                {
+                                                    "Name": "Pronator quadratus"
+                                                },
+                                                {
+                                                    "Name": "Flexor digitorum profundus"
+                                                },
+                                                {
+                                                    "Name": "Flexor pollicis longus"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Name": "Posterior compartment of the forearm",
+                                    "Subdivision": [
+                                        {
+                                            "Name": "Superficial muscles of the posterior compartment of the forearm",
+                                            "Subdivision": [
+                                                {
+                                                    "Name": "Extensor digitorum"
+                                                },
+                                                {
+                                                    "Name": "Extensor digiti minimi"
+                                                },
+                                                {
+                                                    "Name": "Extensor carpi ulnaris"
+                                                },
+                                                {
+                                                    "Name": "Mobile wad",
+                                                    "Eponym": "Henry",
+                                                    "Subdivision": [
+                                                        {
+                                                            "Name": "Brachioradialis"
+                                                        },
+                                                        {
+                                                            "Name": "Extensor carpi radialis longus"
+                                                        },
+                                                        {
+                                                            "Name": "Extensor carpi radialis brevis"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "Name": "Deep muscles of the posterior compartment of the forearm",
+                                            "Subdivision": [
+                                                {
+                                                    "Name": "Supinator"
+                                                },
+                                                {
+                                                    "Name": "Extensor indicis"
+                                                },
+                                                {
+                                                    "Name": "Anatomical snuffbox",
+                                                    "Alternative name": "Tabatière",
+                                                    "Subdivision": [
+                                                        {
+                                                            "Name": "Abductor pollicis longus"
+                                                        },
+                                                        {
+                                                            "Name": "Extensor pollicis brevis"
+                                                        },
+                                                        {
+                                                            "Name": "Extensor pollicis longus"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "Name": "Muscles of the hand",
+                            "Subdivision": [
+                                {
+                                    "Name": "Lateral volar muscles of the hand",
+                                    "Subdivision": [
+                                        {
+                                            "Name": "Adductor pollicis"
+                                        },
+                                        {
+                                            "Name": "Thenar muscles",
+                                            "Subdivision": [
+                                                {
+                                                    "Name": "Opponens pollicis"
+                                                },
+                                                {
+                                                    "Name": "Flexor pollicis brevis"
+                                                },
+                                                {
+                                                    "Name": "Abductor pollicis brevis"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Name": "Medial volar muscles of the hand",
+                                    "Subdivision": [
+                                        {
+                                            "Name": "Palmaris brevis"
+                                        },
+                                        {
+                                            "Name": "Hypothenar muscles",
+                                            "Subdivision": [
+                                                {
+                                                    "Name": "Opponens digiti minimi"
+                                                },
+                                                {
+                                                    "Name": "Flexor digiti minimi brevis"
+                                                },
+                                                {
+                                                    "Name": "Abductor digiti minimi"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Name": "Intermediate muscles of the hand",
+                                    "Subdivision": [
+                                        {
+                                            "Name": "Lumbrical muscles"
+                                        },
+                                        {
+                                            "Name": "Interossei muscles of the hand",
+                                            "Subdivision": [
+                                                {
+                                                    "Name": "Dorsal interossei muscles of the hand"
+                                                },
+                                                {
+                                                    "Name": "Palmar interossei muscles of the hand"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Muscles of lower extremities",
+                    "Subdivision": [
+                        {
+                            "Name": "Muscles of the hip",
+                            "Subdivision": [
+                                {
+                                    "Name": "Iliopsoas group",
+                                    "Subdivision": [
+                                        {
+                                            "Name": "Iliacus",
+                                            "Origin": ["Ilium", "Iliac fossa"],
+                                            "Insertion": ["Femur", "Lesser trochanter"],
+                                            "Innervation": ["N. Femoralis"],
+                                            "Action": ["Hip", ["Flexion", "Internal rotation"]]
+                                        },
+                                        {
+                                            "Name": "Psoas major",
+                                            "Origin": [["Vertebrae", "T12", "L1", "L2", "L3", "L4"], "Transverse process"],
+                                            "Insertion": ["Femur", "Lesser trochanter"],
+                                            "Innervation": ["N. Spinalis L1", "N. Spinalis L2", "N. Spinalis L3"],
+                                            "Action": ["Hip", ["Flexion"]]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Name": "Gluteus muscles",
+                                    "Subdivision": [
+                                        {
+                                            "Name": "Gluteus maximus",
+                                            "Origin": [["Ilium", "Gluteal surface"], "Sacrum", "Sacrotuberous ligament"],
+                                            "Insertion": [["Femur", "Gluteal tuberosity"], "Iliotibial tract"],
+                                            "Innervation": ["N. Gluteus inferior"],
+                                            "Action": ["Hip", ["External rotation", "Extension"]]
+                                        },
+                                        {
+                                            "Name": "Gluteus medius",
+                                            "Origin": ["Ilium", "Gluteal surface"],
+                                            "Insertion": ["Femur", "Greater trochanter"],
+                                            "Innervation": ["N. Gluteus superior"],
+                                            "Action": ["Hip", ["Abduction", "Internal rotation", "Flexion"]]
+                                        },
+                                        {
+                                            "Name": "Gluteus minimus",
+                                            "Origin": ["Ilium", "Gluteal surface"],
+                                            "Insertion": ["Femur", "Greater trochanter"],
+                                            "Innervation": ["N. Gluteus superior"],
+                                            "Action": ["Hip", ["Abduction", "Internal rotation"]]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Name": "Lateral rotator group",
+                                    "Subdivision": [
+                                        {
+                                            "Name": "Quadratus femoris",
+                                            "Origin": ["Ischium", "Ischial tuberosity"],
+                                            "Insertion": ["Femur", "Intertrochanteric crest"],
+                                            "Innervation": ["N. Musculi quadrati femoris"],
+                                            "Action": ["Hip", ["External rotation", "Adduction"]]
+                                        },
+                                        {
+                                            "Name": "Gemellus muscles",
+                                            "Subdivision": [
+                                                {
+                                                    "Name": "Inferior gemellus"
+                                                },
+                                                {
+                                                    "Name": "Superior gemellus"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "Name": "Obturator muscles",
+                                            "Subdivision": [
+                                                {
+                                                    "Name": "Internal obturator",
+                                                    "Origin": ["Obturator membrane"],
+                                                    "Insertion": ["Femur", "Greater trochanter"],
+                                                    "Innervation": ["N. Musculi obturator internus"],
+                                                    "Action": ["Hip", ["Abduction", "External rotation", "Stabilisation"]]
+                                                },
+                                                {
+                                                    "Name": "External obturator",
+                                                    "Origin": ["Obturator membrane"],
+                                                    "Insertion": ["Femur", "Trochanteric fossa"],
+                                                    "Inneprvation": ["N. Obturator"],
+                                                    "Action": ["Hip", ["Abduction", "External rotation"]]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "Name": "Piriformis",
+                                            "Origin": ["Sacrum"],
+                                            "Insertion": ["Femur", "Greater trochanter"],
+                                            "Innervation": ["N. Musculi piriformis"],
+                                            "Action": ["Hip", ["External rotation"]]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "Name": "Muscles of the thigh",
+                            "Subdivision": [
+                                {
+                                    "Name": "Anterior compartment of the thigh",
+                                    "Subdivision": [
+                                        {
+                                            "Name": "Sartorius",
+                                            "Origin": ["Ilium", "Anterior superior iliac spine"],
+                                            "Insertion": ["Pes anserinus"],
+                                            "Innervation": ["N. Femoralis"],
+                                            "Action": [["Hip", ["Flexion", "Abduction", "External rotation"]], ["Knee", ["Flexion"]]]
+                                        },
+                                        {
+                                            "Name": "Articularis genus",
+                                            "Origin": ["Femur"],
+                                            "Insertion": ["Suprapatellar bursa"],
+                                            "Innervation": ["N. Femoralis"],
+                                            "Action": ["Suprapatellar bursa", ["Proximal translation"]]
+                                        },
+                                        {
+                                            "Name": "Quadriceps femoris",
+                                            "Subdivision": [
+                                                {
+                                                    "Name": "Rectus femoris"
+                                                },
+                                                {
+                                                    "Name": "Vastus muscles",
+                                                    "Subdivision": [
+                                                        {
+                                                            "Name": "Vastus lateralis"
+                                                        },
+                                                        {
+                                                            "Name": "Vastus intermedius"
+                                                        },
+                                                        {
+                                                            "Name": "Vastus medialis"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Name": "Posterior compartment of the thigh",
+                                    "Subdivision": [
+                                        {
+                                            "Name": "Hamstring",
+                                            "Subdivision": [
+                                                {
+                                                    "Name": "Biceps femoris"
+                                                },
+                                                {
+                                                    "Name": "Semitendinosus"
+                                                },
+                                                {
+                                                    "Name": "Semimembranosus"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Name": "Medial compartment of the thigh",
+                                    "Alternative name": "Adductor group",
+                                    "Subdivision": [
+                                        {
+                                            "Name": "Pectineus"
+                                        },
+                                        {
+                                            "Name": "External obturator"
+                                        },
+                                        {
+                                            "Name": "Gracilis"
+                                        },
+                                        {
+                                            "Name": "Adductor group",
+                                            "Subdivision": [
+                                                {
+                                                    "Name": "Adductor longus"
+                                                },
+                                                {
+                                                    "Name": "Adductor brevis"
+                                                },
+                                                {
+                                                    "Name": "Adductor magnus"
+                                                },
+                                                {
+                                                    "Name": "Adductor minimus"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "Name": "Muscles of the leg",
+                            "Subdivision": [
+                                {
+                                    "Name": "Anterior compartment of the leg",
+                                    "Subdivision": [
+                                        {
+                                            "Name": "Tibialis anterior"
+                                        },
+                                        {
+                                            "Name": "Extensor hallucis longus"
+                                        },
+                                        {
+                                            "Name": "Extensor digitorum longus"
+                                        },
+                                        {
+                                            "Name": "Fibularis tertius"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Name": "Posterior compartment of the leg",
+                                    "Subdivision": [
+                                        {
+                                            "Name": "Superficial compartment of the leg",
+                                            "Subdivision": [
+                                                {
+                                                    "Name": "Triceps surae",
+                                                    "Subdivision": [
+                                                        {
+                                                            "Name": "Gastrocnemius"
+                                                        },
+                                                        {
+                                                            "Name": "Soleus"
+                                                        },
+                                                        {
+                                                            "Name": "Achilles tendon"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "Name": "Plantaris"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "Name": "Deep compartment of the leg",
+                                            "Subdivision": [
+                                                {
+                                                    "Name": "Tarsal tunnel",
+                                                    "Subdivision": [
+                                                        {
+                                                            "Name": "Flexor hallucis longus"
+                                                        },
+                                                        {
+                                                            "Name": "Flexor digitorum longus"
+                                                        },
+                                                        {
+                                                            "Name": "Tibialis posterior"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "Name": "Popliteus"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Name": "Lateral compartment of the leg",
+                                    "Subdivision": [
+                                        {
+                                            "Name": "Fibularis muscles",
+                                            "Subdivision": [
+                                                {
+                                                    "Name": "Fibularis longus"
+                                                },
+                                                {
+                                                    "Name": "Fibularis brevis"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }                                
+                            ]
+                        },
+                        {
+                            "Name": "Muscles of the foot",
+                            "Subdivision": [
+                                {
+                                    "Name": "Dorsal muscles of the foot",
+                                    "Subdivision": [
+                                        {
+                                            "Name": "Extensor hallucis brevis"
+                                        },
+                                        {
+                                            "Name": "Extensor digitorum brevis"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Name": "Plantar muscles of the foot",
+                                    "Subdivision": [
+                                        {
+                                            "Name": "First layer of the plantar muscles of the foot",
+                                            "Subdivision": [
+                                                {
+                                                    "Name": "Abductor hallucis"
+                                                },
+                                                {
+                                                    "Name": "Flexor digitorum brevis of the foot"
+                                                },
+                                                {
+                                                    "Name": "Abductor digiti minimi of the foot"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "Name": "Second layer of the plantar muscles of the foot",
+                                            "Subdivision": [
+                                                {
+                                                    "Name": "Quadratus plantae"
+                                                },
+                                                {
+                                                    "Name": "Lumbrical muscles of the foot"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "Name": "Third layer of the plantar muscles of the foot",
+                                            "Subdivision": [
+                                                {
+                                                    "Name": "Flexor hallucis brevis"
+                                                },
+                                                {
+                                                    "Name": "Adductor hallucis"
+                                                },
+                                                {
+                                                    "Name": "Flexor digiti minimi brevis of the foot"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "Name": "Fourth layer of the plantar muscles of the foot",
+                                            "Subdivision": [
+                                                {
+                                                    "Name": "Interossei muscles of the foot",
+                                                    "Subdivision": [
+                                                        {
+                                                            "Name": "Dorsal interossei muscles of the foot"
+                                                        },
+                                                        {
+                                                            "Name": "Plantar interossei muscles of the foot"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
                             ]
                         }
                     ]
@@ -268,7 +1182,154 @@
             "Name": "Systema cardiovasculare"
         },
         {
-            "Name": "Systema nervosum"
+            "Name": "Nervous system",
+            "Subdivision": [
+                {
+                    "Name": "Central nervous system",
+                    "Subdivision": [
+
+                    ]
+                },
+                {
+                    "Name": "Peripheral nervous system",
+                    "Subdivision": [
+                        {
+                            "Name": "Somatic nervous system",
+                            "Subdivision": [
+                                {
+                                    "Name": "Cranial nervous system",
+                                    "Subdivision": [
+                                        {
+                                            "Name": "Cervical plexus",
+                                            "Roots": ["C1", "C2", "C3", "C4", "C5"]
+                                        },
+                                        {
+                                            "Name": "Brachial plexus",
+                                            "Roots": ["C5", "C6", "C7", "C8", "T1"],
+                                            "Subdivision": [
+                                                {
+                                                    "Name": "N. Axillaris",
+                                                    "Roots": ["C5", "C6"],
+                                                    "Through": ["Quadrangular space"]
+                                                },
+                                                {
+                                                    "Name": "N. Radialis",
+                                                    "Roots": ["C5", "C6", "C7", "C8", "T1"]
+                                                },
+                                                {
+                                                    "Name": "N. Medianus",
+                                                    "Roots": ["C6", "C7", "C8", "T1"],
+                                                    "Through": ["Cubital fossa", "Carpal tunnel"]
+                                                },
+                                                {
+                                                    "Name": "N. Ulnaris",
+                                                    "Roots": ["C8", "T1"],
+                                                    "Through": ["Cubital tunnel", "Guyon's canal"]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "Name": "Lumbar plexus",
+                                            "Roots": ["L1", "L2", "L3", "L4"],
+                                            "Subdivision": [
+                                                {
+                                                    "Name": "N. Iliohypogastricus",
+                                                    "Roots": ["T12", "L1"]
+                                                },
+                                                {
+                                                    "Name": "N. Ilioinguinalis",
+                                                    "Roots": ["L1"],
+                                                    "Through": ["Superficial inguinal ring"]
+                                                },
+                                                {
+                                                    "Name": "N. Genitofemoralis",
+                                                    "Roots": ["L1", "L2"],
+                                                    "Subdivision": [
+                                                        {
+                                                            "Name": "R. Genitalis nervi genitofemoralis",
+                                                            "Roots": ["L1", "L2"],
+                                                            "Through": ["Inguinal canal"]
+                                                        },
+                                                        {
+                                                            "Name": "R. Femoralis nervi genitofemoralis",
+                                                            "Roots": ["L1", "L2"],
+                                                            "Through": ["Femoral sheath"]
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "Name": "N. Femoralis",
+                                                    "Roots": ["L2", "L3", "L4"],
+                                                    "Through": ["Scarpa's triangle"]
+                                                },
+                                                {
+                                                    "Name": "N. Obturatorius",
+                                                    "Roots": ["L2", "L3", "L4"],
+                                                    "Through": ["Obturator canal"]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "Name": "Sacral plexus",
+                                            "Roots": ["L4", "L5", "S1", "S2", "S3", "S4"],
+                                            "Subdivision": [
+                                                {
+                                                    "Name": "N. Gluteus superior",
+                                                    "Roots": ["L4", "L5", "S1"],
+                                                    "Through": ["Greater sciatic foramen"]
+                                                },
+                                                {
+                                                    "Name": "N. Gluteus inferior",
+                                                    "Roots": ["L5", "S1", "S2"],
+                                                    "Through": ["Greater sciatic foramen"]
+                                                },
+                                                {
+                                                    "Name": "N. Ischiadicus",
+                                                    "Roots": ["L4", "L5", "S1", "S2", "S3"],
+                                                    "Through": ["Greater sciatic foramen"],
+                                                    "Until": ["Popliteal fossa"],
+                                                    "Subdivisions": [
+                                                        {
+                                                            "Name": "N. Tibialis",
+                                                            "Roots": ["L4", "L5", "S1", "S2", "S3"]
+                                                        },
+                                                        {
+                                                            "Name": "N. Fibularis communis",
+                                                            "Alternative name": "N. Peroneus communis",
+                                                            "Roots": ["L4", "L5", "S1", "S2", "S3"]
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "Name": "N. Pudendus",
+                                                    "Roots": ["S2", "S3", "S4"],
+                                                    "Through": ["Greater sciatic foramen", "Lesser sciatic foramen", "Alcock's canal"]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "Name": "Coccygeal plexus",
+                                            "Roots": ["S4", "S5", "Co"]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Name": "Spinal nervous system",
+                                    "Subdivision": [
+                                        
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "Name": "Autonomic nervous system",
+                            "Subdivision": [
+                                
+                            ]
+                        }
+                    ]
+                }
+            ]
         }
     ]
 }

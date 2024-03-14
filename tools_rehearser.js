@@ -1797,7 +1797,70 @@ function start_symptoms(category, level) {
         set_questions(); 
     });
 
-}
+};
+
+function start_basics(category, level) {
+
+    fetchable = "./data_anatomy.json"
+
+    fetch(fetchable)
+
+    .then(function(response){
+        console.log("- > Anatomy found and accessed");
+        return response.json();
+    })
+    .then(function(data){
+
+        prepare_ancestry(data, "Name", "Subdivision", "Layers");
+
+        console.log("- > General ancestry dict is:")
+        console.log(content_dict);
+
+        prepare_ancestry(content_dict[category + " system"], "Name", "Subdivision");
+
+        console.log("- > Specialised ancestry dict is:")
+        console.log(content_dict);
+
+        base = data.Name;       
+
+    })
+    .then(function(){
+
+        var temp_question_array = [];
+        var temp_temp_question_array = [];
+        
+        for (var i = 0; i < Object.keys(content_dict).length; i++) {
+
+            temp_temp_question_array = []
+
+            current_object = content_dict[Object.keys(content_dict)[i]];
+
+            if (level == 0) {
+
+                if (Object.keys(current_object).includes("Subdivision")) { temp_temp_question_array.push(content_question(current_object, "anatomical structures"))};
+
+            };
+
+            temp_question_array.push(temp_temp_question_array);
+
+        };
+
+        question_array = (shuffle(temp_question_array)).flat(1);
+
+    })
+    .then(function(){
+
+        console.log("-> Prepared questions")
+        console.log(question_array);
+
+        openFullscreen();
+        document.getElementsByTagName("BODY")[0].innerHTML = level_page;
+        setEnter();
+
+        set_questions(); 
+    });
+
+};
 
 /***
  * 
@@ -1824,6 +1887,23 @@ function name_question(current_object, category) {
     return question
 
 };
+
+function content_question(current_object, category) {
+
+    sub_types = [];
+
+    for (var x = 0; x < current_object["Subdivision"].length; x++) {
+
+        sub_types.push(current_object["Subdivision"][x]["Name"])
+
+    };
+
+    question_string = "What " + category + " are included in the following group: " + current_object["Name"] + "?";
+    question = ({"Question": question_string, "Answer": sub_types });
+
+    return question
+
+}
 
 function list_question(current_object, list_type) {
 
