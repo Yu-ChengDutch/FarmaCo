@@ -1837,7 +1837,15 @@ function start_basics(category, level) {
 
             if (level == 0) {
 
-                if (Object.keys(current_object).includes("Subdivision")) { temp_temp_question_array.push(content_question(current_object, "anatomical structures"))};
+                if (Object.keys(current_object).includes("Subdivision") && !Object.keys(current_object["Subdivision"][0]).includes("Subdivision")) {
+
+                    temp_temp_question_array.push(content_question(current_object, "anatomical structures"))
+                
+                };
+
+                console.log(terminals_array);
+
+                temp_temp_question_array.push(ancestry_question(current_object, "up", "groep"))
 
             };
 
@@ -1982,12 +1990,12 @@ function intervalIndex(current_index, desired_interval, array) {
 
 /* Shuffle arrays */
 
-function ancestry_question(current, direction="random") {
+function ancestry_question(current, direction="random", category="categorie") {
 
     try {
         if (terminals_array.includes(current) || direction == "up") {
 
-            question_string = "Van welke categorie is " + current + " een deel?";
+            question_string = "Van welke" + category + " is " + current + " een deel?";
             return {"Question": question_string, "Answer": ancestry_dict[current].Parent }
 
         } else {
