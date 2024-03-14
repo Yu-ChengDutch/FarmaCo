@@ -1101,25 +1101,19 @@ function grade_answer() {
 
                 console.log("String: " + String(correct_answer.length - 1));
 
-                if (nr_ans == 1 || (inner_text.includes("1") && nr_ans == 2) || (inner_text.includes("2") && nr_ans == 3)) {
+                if (inner_text.includes("||")) {
 
-                    explanatory_remark(correct_answer);
+                    document.getElementById('remark-card').innerText = inner_text + " " + given_answer + " || ";
+    
+                } else {
+    
+                    document.getElementById('remark-card').innerText = given_answer + " || ";
+    
+                };
 
-                } else if (inner_text.includes(String(correct_answer.length - 1))){
+                if (inner_text.split("||").length >= nr_ans || inner_text.split("||").length > (correct_answer.length - 1)) {
 
                     next_question();
-
-                } else {
-
-                    if (inner_text.includes("1")) {
-
-                        document.getElementById('remark-card').innerText = document.getElementById('remark-card').innerText + " || 2. " + given_answer;
-        
-                    } else {
-        
-                        document.getElementById('remark-card').innerText = "1. " + given_answer;
-        
-                    };
 
                 };
                 
@@ -1835,7 +1829,7 @@ function start_basics(category, level) {
 
             current_object = content_dict[Object.keys(content_dict)[i]];
 
-            if (level == 0) {
+            if (level == 0 || level == 1) {
 
                 if (Object.keys(current_object).includes("Subdivision") && !Object.keys(current_object["Subdivision"][0]).includes("Subdivision")) {
 
@@ -1851,6 +1845,17 @@ function start_basics(category, level) {
         };
 
         question_array = (shuffle(temp_question_array)).flat(1);
+
+        if (level == 0) {
+
+            var start_index = Math.round(Math.random() * (question_array.length - 10));
+
+            if (start_index % 2 !== 0) {
+                start_index = start_index - 1;
+            }
+
+            question_array = question_array.slice(start_index, start_index + 10);
+        }
 
     })
     .then(function(){

@@ -394,10 +394,10 @@
                                             "Name": "Splenius",
                                             "Subdivision": [
                                                 {
-                                                    "Name": "Capitis"
+                                                    "Name": "Splenius capitis"
                                                 },
                                                 {
-                                                    "Name": "Cervicis"
+                                                    "Name": "Splenius cervicis"
                                                 }
                                             ]
                                         },
@@ -486,24 +486,24 @@
                 },
                 {
                     "Name": "Muscles of upper extremities",
-                    "Subdivision": [
-                        {
-                            "Name": "Deltoid",
-                            "Origin": [["Clavicula", "Anterior border"], ["Acromion"], ["Scapula", "Spine"]],
-                            "Insertion": ["Humerus", "Deltoid tuberosity"],
-                            "Innervation": ["N. Axillaris"],
-                            "Action": ["Shoulder", ["Abduction", "Flexion", "Extension"]]
-                        },
-                        {
-                            "Name": "Teres major",
-                            "Origin": ["Scapula", "Inferior angle"],
-                            "Insertion": ["Humerus", "Intertubercular sulcus"],
-                            "Innervation": ["N. Subscapularis inferior"],
-                            "Action": ["Shoulder", ["Adduction", "Internal rotation", "Extension"]]
-                        },
+                    "Subdivision": [                        
                         {
                             "Name": "Muscles of the shoulder",
                             "Subdivision": [
+                                {
+                                    "Name": "Deltoid",
+                                    "Origin": [["Clavicula", "Anterior border"], ["Acromion"], ["Scapula", "Spine"]],
+                                    "Insertion": ["Humerus", "Deltoid tuberosity"],
+                                    "Innervation": ["N. Axillaris"],
+                                    "Action": ["Shoulder", ["Abduction", "Flexion", "Extension"]]
+                                },
+                                {
+                                    "Name": "Teres major",
+                                    "Origin": ["Scapula", "Inferior angle"],
+                                    "Insertion": ["Humerus", "Intertubercular sulcus"],
+                                    "Innervation": ["N. Subscapularis inferior"],
+                                    "Action": ["Shoulder", ["Adduction", "Internal rotation", "Extension"]]
+                                },
                                 {
                                     "Name": "Rotator cuff",
                                     "Subdivision": [
