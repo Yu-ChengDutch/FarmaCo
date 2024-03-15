@@ -348,7 +348,7 @@
                                             ]
                                         },
                                         {
-                                            "Name": "Pectoral group",
+                                            "Name": "Pectoral muscles",
                                             "Subdivision": [
                                                 {
                                                     "Name": "Pectoralis muscles",
@@ -442,7 +442,7 @@
                                             ]
                                         },
                                         {
-                                            "Name": "Transversospinales",
+                                            "Name": "Transversospinalis",
                                             "Subdivision": [
                                                 {
                                                     "Name": "Semispinalis"
@@ -451,13 +451,13 @@
                                                     "Name": "Multifidus"
                                                 },
                                                 {
-                                                    "Name": "Rotatores"
+                                                    "Name": "Rotator"
                                                 },
                                                 {
-                                                    "Name": "Interspinales"
+                                                    "Name": "Interspinalis"
                                                 },
                                                 {
-                                                    "Name": "Intertransversarii"
+                                                    "Name": "Intertransversari"
                                                 }
                                             ]
                                         }
@@ -826,7 +826,7 @@
                             "Name": "Muscles of the hip",
                             "Subdivision": [
                                 {
-                                    "Name": "Iliopsoas group",
+                                    "Name": "Iliopsoas muscles",
                                     "Subdivision": [
                                         {
                                             "Name": "Iliacus",
@@ -871,7 +871,7 @@
                                     ]
                                 },
                                 {
-                                    "Name": "Lateral rotator group",
+                                    "Name": "Lateral rotator muscles",
                                     "Subdivision": [
                                         {
                                             "Name": "Quadratus femoris",
@@ -1027,7 +1027,7 @@
                                 },
                                 {
                                     "Name": "Medial compartment of the thigh",
-                                    "Alternative name": "Adductor group",
+                                    "Alternative name": "Adductor muscles",
                                     "Subdivision": [
                                         {
                                             "Name": "Pectineus",
@@ -1037,13 +1037,10 @@
                                             "Action": [["Hip"], ["Flexion", "Adduction", "External rotation"]]
                                         },
                                         {
-                                            "Name": "External obturator"
-                                        },
-                                        {
                                             "Name": "Gracilis"
                                         },
                                         {
-                                            "Name": "Adductor group",
+                                            "Name": "Adductor muscles",
                                             "Subdivision": [
                                                 {
                                                     "Name": "Adductor longus"
