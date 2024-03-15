@@ -293,21 +293,21 @@
                                                     "Name": "Intercostal muscles",
                                                     "Subdivision": [
                                                         {
-                                                            "Name": "External intercostals",
+                                                            "Name": "Intercostales externi",
                                                             "Origin": ["Ribs", "Inferior border"],
                                                             "Insertion": ["Ribs", "Superior border"],
                                                             "Innervation": ["Nn. Intercostales"],
                                                             "Action": ["Inhalation"]
                                                         },
                                                         {
-                                                            "Name": "Internal intercostals",
+                                                            "Name": "Intercostales interni",
                                                             "Origin": ["Ribs", "Superior border"],
                                                             "Insertion": ["Ribs", "Inferior border"],
                                                             "Innervation": ["Nn. Intercostales"],
                                                             "Action": ["Stabilisation"]
                                                         },
                                                         {
-                                                            "Name": "Innermost intercostals",
+                                                            "Name": "Intercostales intimi",
                                                             "Origin": ["Ribs", "Infero-posterior border"],
                                                             "Insertion": ["Ribs", "Supero-posterior border"],
                                                             "Innervation": ["Nn. Intercostales"],
@@ -368,10 +368,10 @@
                                     "Name": "Muscles of the abdomen",
                                     "Subdivision": [
                                         {
-                                            "Name": "External oblique"
+                                            "Name": "Obliquus externus"
                                         },
                                         {
-                                            "Name": "Internal oblique"
+                                            "Name": "Obliquus internus"
                                         },
                                         {
                                             "Name": "Transversus abdominis"
@@ -491,7 +491,7 @@
                             "Name": "Muscles of the shoulder",
                             "Subdivision": [
                                 {
-                                    "Name": "Deltoid",
+                                    "Name": "Deltoideus",
                                     "Origin": [["Clavicula", "Anterior border"], ["Acromion"], ["Scapula", "Spine"]],
                                     "Insertion": ["Humerus", "Deltoid tuberosity"],
                                     "Innervation": ["N. Axillaris"],

@@ -1812,6 +1812,27 @@ function start_basics(category, level) {
 
         prepare_ancestry(content_dict[category + " system"], "Name", "Subdivision");
 
+        if (level == 0) {
+
+            input_array = [ content_dict["Muscles of the trunk"], 
+                            content_dict["Muscles of the shoulder"], 
+                            content_dict["Muscles of the arm"],
+                            content_dict["Muscles of the hip"], 
+                            content_dict["Muscles of the thigh"]]
+
+            prepare_ancestry(input_array, "Name", "Subdivision");
+
+        } else if (level == 1) {
+
+            input_array = [ content_dict["Muscles of the forearm"], 
+                            content_dict["Muscles of the hand"], 
+                            content_dict["Muscles of the leg"],
+                            content_dict["Muscles of the foot"]]
+
+            prepare_ancestry(input_array, "Name", "Subdivision");
+
+        }
+
         console.log("- > Specialised ancestry dict is:")
         console.log(content_dict);
 
@@ -1831,7 +1852,7 @@ function start_basics(category, level) {
 
             if (level == 0 || level == 1) {
 
-                if (Object.keys(current_object).includes("Subdivision") && !Object.keys(current_object["Subdivision"][0]).includes("Subdivision")) {
+                if (Object.keys(current_object).includes("Subdivision")) {
 
                     temp_temp_question_array.push(content_question(current_object, "anatomical structures"))
                     temp_temp_question_array.push(ancestry_question(current_object, "up", "groep"))
@@ -1845,17 +1866,6 @@ function start_basics(category, level) {
         };
 
         question_array = (shuffle(temp_question_array)).flat(1);
-
-        if (level == 0) {
-
-            var start_index = Math.round(Math.random() * (question_array.length - 10));
-
-            if (start_index % 2 !== 0) {
-                start_index = start_index - 1;
-            }
-
-            question_array = question_array.slice(start_index, start_index + 10);
-        }
 
     })
     .then(function(){
@@ -2015,6 +2025,8 @@ function ancestry_question(current, direction="random", category="categorie") {
 
     } catch {
         console.log("Issues with: " + current)
+        
+        return {"Question": "Something went wrong, please type 'OK'", "Answer": "OK"}
     }
 
 };
