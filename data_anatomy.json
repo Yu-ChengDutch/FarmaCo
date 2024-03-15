@@ -316,7 +316,11 @@
                                                     ]
                                                 },
                                                 {
-                                                    "Name": "Subcostalis"
+                                                    "Name": "Subcostalis",
+                                                    "Origin": ["Ribs", "Proximal surface"],
+                                                    "Insertion": ["Ribs", "Proximal surface"],
+                                                    "Innervation": ["Nn. Intercostales"],
+                                                    "Action": ["Depression"]
                                                 },
                                                 {
                                                     "Name": "Transversus thoracis"
@@ -350,15 +354,37 @@
                                                     "Name": "Pectoralis muscles",
                                                     "Subdivision": [
                                                         {
-                                                            "Name": "Pectoralis major"
+                                                            "Name": "Pectoralis major",
+                                                            "Insertion": ["Humerus", "Bicipital groove"],
+                                                            "Innervation": ["N. Pectoralis lateralis", "N. Pectoralis medialis"],
+                                                            "Parts": [
+                                                                {
+                                                                    "Name": "Clavicular head",
+                                                                    "Origin": ["Clavicula", "Anterior surface"],
+                                                                    "Action": ["Shoulder", ["Flexion"]]
+                                                                },
+                                                                {
+                                                                    "Name": "Sternocostal head",
+                                                                    "Origin": [["Sternum", "Anterior surface"], ["Ribs", "Costal cartilage"]],
+                                                                    "Action": [["Shoulder", "Scapula"], [["Adduction", "Extension", "Internal rotation"], ["Depression", "Abduction"]]]
+                                                                }
+                                                            ]
                                                         },
                                                         {
-                                                            "Name": "Pectoralis minor"
+                                                            "Name": "Pectoralis minor",
+                                                            "Origin": ["Ribs", "Costochondral junction"],
+                                                            "Insertion": ["Scapula", "Coracoid process"],
+                                                            "Innervation": ["N. Pectoralis medialis"],
+                                                            "Action": [["Scapula", "Ribs"], [["Stabilisation"], ["Inhalation"]]]
                                                         }
                                                     ]
                                                 },
                                                 {
-                                                    "Name": "Serratus anterior"
+                                                    "Name": "Serratus anterior",
+                                                    "Origin": ["Ribs"],
+                                                    "Insertion": ["Scapula", "Medial margin"],
+                                                    "Innervation": ["N. Thoracicis longus"],
+                                                    "Action": ["Scapula", ["Protraction", "Stabilisation"]]
                                                 }
                                             ]
                                         }
@@ -549,13 +575,13 @@
                                             "Name": "Coracobrachialis",
                                             "Origin": ["Scapula", "Coracoid process"],
                                             "Insertion": ["Humerus", "Anteriomedial surface"],
-                                            "Innervation": ["N. Musculocutaneous"],
+                                            "Innervation": ["N. Musculocutaneus"],
                                             "Action": ["Shoulder", ["Adduction", "Flexion"]]
                                         },
                                         {
                                             "Name": "Biceps brachii",
                                             "Insertion": ["Radius", "Radial tuberosity"],
-                                            "Innervation": ["N. Musculocutaneous"],
+                                            "Innervation": ["N. Musculocutaneus"],
                                             "Action": [["Elbow", ["Flexion"]], ["Shoulder", ["Flexion", "Abduction"]], ["Radioulnar joint", ["Supination"]]],
                                             "Parts": [
                                                 {
@@ -572,7 +598,7 @@
                                             "Name": "Brachialis",
                                             "Origin": ["Humerus", "Anterior surface"],
                                             "Insertion": ["Ulna", ["Coronoid process", "Ulnar tuberosity"]],
-                                            "Innervation": ["N. Musculocutaneous", "N. Radialis"],
+                                            "Innervation": ["N. Musculocutaneus", "N. Radialis"],
                                             "Action": ["Elbow", ["Flexion"]]
                                         }
                                     ]
@@ -919,19 +945,35 @@
                                             "Name": "Quadriceps femoris",
                                             "Subdivision": [
                                                 {
-                                                    "Name": "Rectus femoris"
+                                                    "Name": "Rectus femoris",
+                                                    "Origin": ["Ilium", "Anterior inferior iliac spine"],
+                                                    "Insertion": ["Tendon", "Patellar tendon"],
+                                                    "Innervation": ["N. Femoralis"],
+                                                    "Action": [["Knee", "Hip"], [["Extension"], ["Flexion"]]]
                                                 },
                                                 {
                                                     "Name": "Vastus muscles",
                                                     "Subdivision": [
                                                         {
-                                                            "Name": "Vastus lateralis"
+                                                            "Name": "Vastus lateralis",
+                                                            "Origin": ["Femur", ["Greater trochanter", "Intertrochanteric line", "Linea aspera"]],
+                                                            "Insertion": ["Tendon", "Quadriceps tendon"],
+                                                            "Innervation": ["N. Femoralis"],
+                                                            "Action": [["Knee"], ["Extension", "Stabilisation"]]
                                                         },
                                                         {
-                                                            "Name": "Vastus intermedius"
+                                                            "Name": "Vastus intermedius",
+                                                            "Origin": ["Femur", "Anterolateral surface"],
+                                                            "Insertion": ["Tendon", "Quadriceps tendon"],
+                                                            "Innervation": ["N. Femoralis"],
+                                                            "Action": ["Knee", ["Extension"]]
                                                         },
                                                         {
-                                                            "Name": "Vastus medialis"
+                                                            "Name": "Vastus medialis",
+                                                            "Origin": ["Femur", "Medial surface"],
+                                                            "Insertion": ["Tendon", "Quadriceps tendon"],
+                                                            "Innervation": ["N. Femoralis"],
+                                                            "Action": ["Knee", ["Extension"]]
                                                         }
                                                     ]
                                                 }
@@ -946,13 +988,38 @@
                                             "Name": "Hamstring",
                                             "Subdivision": [
                                                 {
-                                                    "Name": "Biceps femoris"
+                                                    "Name": "Biceps femoris",
+                                                    "Insertion": ["Fibula", "Fibular head"],
+                                                    "Innervation": ["N. "],
+                                                    "Action": [""],
+                                                    "Parts": [
+                                                        {
+                                                            "Name": "Long head",
+                                                            "Origin": ["Ischium", "Ischial tuberosity"],
+                                                            "Innervation": ["N. Fibularis communis"],
+                                                            "Action": ["Knee", ["Flexion", "External rotation"]]
+                                                        },
+                                                        {
+                                                            "Name": "Short head",
+                                                            "Origin": ["Femur", "Linea aspera"],
+                                                            "Innervation": ["N. Tibialis"],
+                                                            "Action": [["Knee", "Hip"], [["Flexion", "External rotation"], "Extension"]]
+                                                        }
+                                                    ]
                                                 },
                                                 {
-                                                    "Name": "Semitendinosus"
+                                                    "Name": "Semitendinosus",
+                                                    "Origin": ["Ischium", "Ischial tuberosity"],
+                                                    "Insertion": ["Tendon", "Pes anserinus"],
+                                                    "Innervation": ["N. Ischiadicus"],
+                                                    "Action": [["Knee", "Extension"], ["Flexion", "Extension"]]
                                                 },
                                                 {
-                                                    "Name": "Semimembranosus"
+                                                    "Name": "Semimembranosus",
+                                                    "Origin": ["Ischium", "Ischial tuberosity"],
+                                                    "Insertion": ["Tibia", "Medial condyle"],
+                                                    "Innervation": ["N. Tibialis"],
+                                                    "Action": [["Hip", "Knee"], ["Extension", "Flexion"]]
                                                 }
                                             ]
                                         }
@@ -963,7 +1030,11 @@
                                     "Alternative name": "Adductor group",
                                     "Subdivision": [
                                         {
-                                            "Name": "Pectineus"
+                                            "Name": "Pectineus",
+                                            "Origin": ["Os pubis", "Pectineal line"],
+                                            "Insertion": ["Femur", "Pectineal line"],
+                                            "Innervation": ["N. Femoralis"],
+                                            "Action": [["Hip"], ["Flexion", "Adduction", "External rotation"]]
                                         },
                                         {
                                             "Name": "External obturator"
@@ -1198,10 +1269,21 @@
                             "Subdivision": [
                                 {
                                     "Name": "Cranial nervous system",
+                                    "Subdivision": []
+                                },
+                                {
+                                    "Name": "Spinal nervous system",
                                     "Subdivision": [
                                         {
                                             "Name": "Cervical plexus",
-                                            "Roots": ["C1", "C2", "C3", "C4", "C5"]
+                                            "Roots": ["C1", "C2", "C3", "C4", "C5"],
+                                            "Subdivision": [
+                                                {
+                                                    "Name": "N. Supraclavicularis",
+                                                    "Roots": ["C3", "C4"],
+                                                    "Sensory innervation": ["Shoulder", "Clavicular region"]
+                                                }
+                                            ]
                                         },
                                         {
                                             "Name": "Brachial plexus",
@@ -1210,21 +1292,112 @@
                                                 {
                                                     "Name": "N. Axillaris",
                                                     "Roots": ["C5", "C6"],
-                                                    "Through": ["Quadrangular space"]
+                                                    "Through": ["Quadrangular space"],
+                                                    "Subdivision": [
+                                                        {
+                                                            "Name": "N. Cutaneus brachii lateralis superior",
+                                                            "Sensory innervation": ["Distal shoulder"]
+                                                        }
+                                                    ]
                                                 },
                                                 {
                                                     "Name": "N. Radialis",
-                                                    "Roots": ["C5", "C6", "C7", "C8", "T1"]
+                                                    "Roots": ["C5", "C6", "C7", "C8", "T1"],
+                                                    "Subdivision": [
+                                                        {
+                                                            "Name": "N. Cutaneus brachii lateralis inferior",
+                                                            "Sensory innervation": ["Posterior arm", "Laterla arm"]
+                                                        },
+                                                        {
+                                                            "Name": "N. Cutaneus brachii posterior",
+                                                            "Sensory innervation": ["Posterior arm"]
+                                                        },
+                                                        {
+                                                            "Name": "N. Cutaneus antebrachii posterior",
+                                                            "Sensory innervation": ["Posterior arm", "Inferior forearm"]
+                                                        },
+                                                        {
+                                                            "Name": "Ramus superficialis",
+                                                            "Sensory innervation": ["Radial thumb"]
+                                                        },
+                                                        {
+                                                            "Name": "Nn. Digitales dorsales",
+                                                            "Sensory innervation": ["Dorsoradial hand"]
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "Name": "N. Musculocutaneus",
+                                                    "Roots": ["C5", "C6", "C7"],
+                                                    "Subdivision": [
+                                                        {
+                                                            "Name": "N. Cutaneus antebrachii lateralis",
+                                                            "Sensory innervation": ["Lateral forearm"]
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "Name": "N. Cutaneus antebrachii medialis",
+                                                    "Sensory innervation": ["Anterior arm", "Anterior forearm", "Medial forearm"]
                                                 },
                                                 {
                                                     "Name": "N. Medianus",
                                                     "Roots": ["C6", "C7", "C8", "T1"],
-                                                    "Through": ["Cubital fossa", "Carpal tunnel"]
+                                                    "Through": ["Cubital fossa", "Carpal tunnel"],
+                                                    "Subdivision": [
+                                                        {
+                                                            "Name": "Nn. Digitales palmares communes",
+                                                            "Sensory innervation": ["Radial volar hand", "Space between dig 2 and 3", "Space between dig 3 and 4"]
+                                                        },
+                                                        {
+                                                            "Name": "Nn. Digitales palmares proprii",
+                                                            "Sensory innervation": ["Sides of dig 1", "Space between dig 1 and 2"]
+                                                        }
+                                                    ]
                                                 },
                                                 {
                                                     "Name": "N. Ulnaris",
                                                     "Roots": ["C8", "T1"],
-                                                    "Through": ["Cubital tunnel", "Guyon's canal"]
+                                                    "Through": ["Cubital tunnel", "Guyon's canal"],
+                                                    "Subdivision": [
+                                                        {
+                                                            "Name": "R. Dorsalis",
+                                                            "Sensory innervation": ["Laterodorsal hand"]
+                                                        },
+                                                        {
+                                                            "Name": "R. Palmaris",
+                                                            "Sensory innervation": ["Lateropalmar hand"]
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "Name": "N. Cutaneus brachii medialis",
+                                                    "Alternative name": "Nerve of Wrisberg",
+                                                    "Roots": ["C8", "T1"],
+                                                    "Sensory innervation": ["Medial arm"]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "Name": "Nn. Intercostales",
+                                            "Subdivision": [
+                                                {
+                                                    "Name": "N. Intercostobrachial",
+                                                    "Roots": ["T2"],
+                                                    "Sensory innervation": ["Axilla"]
+                                                },
+                                                {
+                                                    "Name": "Nn. Thoracales superiores",
+                                                    "Roots": ["T2", "T3", "T4", "T5", "T6"]
+                                                },
+                                                {
+                                                    "Name": "Nn. Thoracoabdominales",
+                                                    "Roots": ["T7", "T8", "T9", "T10", "T11"],
+                                                    "Sensory innervation": ["Anterior abdomen"]
+                                                },
+                                                {
+                                                    "Name": "N. Subcostalis",
+                                                    "Roots": ["T12"]
                                                 }
                                             ]
                                         },
@@ -1233,13 +1406,29 @@
                                             "Roots": ["L1", "L2", "L3", "L4"],
                                             "Subdivision": [
                                                 {
+                                                    "Name": "N. Clunium superior",
+                                                    "Sensory innervation": ["Proximal buttocks"],
+                                                    "Roots": ["L1", "L2", "L3"]
+                                                },
+                                                {
                                                     "Name": "N. Iliohypogastricus",
-                                                    "Roots": ["T12", "L1"]
+                                                    "Roots": ["T12", "L1"],
+                                                    "Subdivision": [
+                                                        {
+                                                            "Name": "R. Iliacus",
+                                                            "Sensory innervation": ["Lateral buttocks"]
+                                                        },
+                                                        {
+                                                            "Name": "R. Hypogastricus",
+                                                            "Sensory innervation": ["Hypogastric region"]
+                                                        }
+                                                    ]
                                                 },
                                                 {
                                                     "Name": "N. Ilioinguinalis",
                                                     "Roots": ["L1"],
-                                                    "Through": ["Superficial inguinal ring"]
+                                                    "Through": ["Superficial inguinal ring"],
+                                                    "Sensory innervation": ["Genital area"]
                                                 },
                                                 {
                                                     "Name": "N. Genitofemoralis",
@@ -1254,18 +1443,44 @@
                                                             "Name": "R. Femoralis nervi genitofemoralis",
                                                             "Roots": ["L1", "L2"],
                                                             "Through": ["Femoral sheath"]
+                                                        },
+                                                        {
+                                                            "Name": "N. Lumboinguinalis",
+                                                            "Sensory innervation": ["Femoral triangle"]
                                                         }
                                                     ]
                                                 },
                                                 {
                                                     "Name": "N. Femoralis",
                                                     "Roots": ["L2", "L3", "L4"],
-                                                    "Through": ["Scarpa's triangle"]
+                                                    "Through": ["Scarpa's triangle"],
+                                                    "Subdivision": [
+                                                        {
+                                                            "Name": "R. Cutaneus anterior",
+                                                            "Sensory innervation": ["Anterior thigh", "Medial thigh", "Anterior knee"]
+                                                        },
+                                                        {
+                                                            "Name": "N. Saphenus",
+                                                            "Alternative name": "N. Saphenus longus",
+                                                            "Sensory innervation": ["Anterior leg", "Medial leg", "Medial arch of the foot"]
+                                                        }
+                                                    ]
                                                 },
                                                 {
                                                     "Name": "N. Obturatorius",
                                                     "Roots": ["L2", "L3", "L4"],
-                                                    "Through": ["Obturator canal"]
+                                                    "Through": ["Obturator canal"],
+                                                    "Subdivision": [
+                                                        {
+                                                            "Name": "R. Cutaneus",
+                                                            "Sensory innervation": ["Medial thigh"]
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "Name": "N. Cutaneus femoris lateralis",
+                                                    "Roots": ["L2", "L3"],
+                                                    "Sensory innervation": ["Lateral thigh"]
                                                 }
                                             ]
                                         },
@@ -1288,15 +1503,47 @@
                                                     "Roots": ["L4", "L5", "S1", "S2", "S3"],
                                                     "Through": ["Greater sciatic foramen"],
                                                     "Until": ["Popliteal fossa"],
-                                                    "Subdivisions": [
+                                                    "Subdivision": [
                                                         {
                                                             "Name": "N. Tibialis",
-                                                            "Roots": ["L4", "L5", "S1", "S2", "S3"]
+                                                            "Roots": ["L4", "L5", "S1", "S2", "S3"],
+                                                            "Subdivision": [
+                                                                {
+                                                                    "Name": "N. Cutaneus surae medialis",
+                                                                    "Sensory innervation": ["Posterior leg", "Medial leg", "Ventral heel"]
+                                                                },
+                                                                {
+                                                                    "Name": "N. Plantaris medialis",
+                                                                    "Sensory innervation": ["Medio-ventral foot"],
+                                                                    "Roots": ["L4", "L5"]
+                                                                },
+                                                                {
+                                                                    "Name": "N. Plantaris lateralis",
+                                                                    "Sensory innervation": ["Latero-ventral foot"],
+                                                                    "Roots": ["S1", "S2"]
+                                                                }
+                                                            ]
                                                         },
                                                         {
                                                             "Name": "N. Fibularis communis",
                                                             "Alternative name": "N. Peroneus communis",
-                                                            "Roots": ["L4", "L5", "S1", "S2", "S3"]
+                                                            "Roots": ["L4", "L5", "S1", "S2", "S3"],
+                                                            "Subdivision": [
+                                                                {
+                                                                    "Name": "N. Cutaneus surae lateralis",
+                                                                    "Sensory innervation": ["Posterior leg", "Lateral leg"],
+                                                                    "Subdivision": [
+                                                                        {
+                                                                            "Name": "N. Suralis",
+                                                                            "Sensory innervation": ["Posterior ankle", "Lateral ankle"]
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "Name": "N. Fibularis superficialis",
+                                                                    "Sensory innervation": ["Anterior leg", "Lateral leg", "Dorsal foot"]
+                                                                }
+                                                            ]
                                                         }
                                                     ]
                                                 },
@@ -1304,6 +1551,25 @@
                                                     "Name": "N. Pudendus",
                                                     "Roots": ["S2", "S3", "S4"],
                                                     "Through": ["Greater sciatic foramen", "Lesser sciatic foramen", "Alcock's canal"]
+                                                },
+                                                {
+                                                    "Name": "N. Clunium medium",
+                                                    "Sensory innervation": ["Medial buttocks"]
+                                                },
+                                                {
+                                                    "Name": "N. Cutaneus femoris posterior",
+                                                    "Sensory innervation": ["Posterior thigh", "Popliteal fossa"],
+                                                    "Alternative name": "Posterior femoral cutaneous nerve",
+                                                    "Subdivision": [
+                                                        {
+                                                            "Name": "N. Clunium inferior",
+                                                            "Sensory innervation": ["Lower buttocks", "Lateral buttocks"]
+                                                        },
+                                                        {
+                                                            "Name": "R. Perinealis",
+                                                            "Sensory innervation": ["Perineum"]
+                                                        }
+                                                    ]
                                                 }
                                             ]
                                         },
@@ -1311,12 +1577,6 @@
                                             "Name": "Coccygeal plexus",
                                             "Roots": ["S4", "S5", "Co"]
                                         }
-                                    ]
-                                },
-                                {
-                                    "Name": "Spinal nervous system",
-                                    "Subdivision": [
-                                        
                                     ]
                                 }
                             ]

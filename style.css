@@ -182,6 +182,7 @@ p {
     padding-top: 4vw;
     margin-left: 2vw;
     text-align: left;
+    min-width: 35vw;
 }
 
 .text-right p {

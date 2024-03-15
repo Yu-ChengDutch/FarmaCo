@@ -168,7 +168,7 @@ var level_page= `
         <div class="question-input-card" id="question-input-card">             
 
             <input type="button" class="button" id ="hint-button" value="X" onclick="giveHint()">
-            <input type="button" class="button" id ="check-button" value="✓" onclick="checkMnemonicAnswer()">
+            <input type="button" class="button" id ="check-button" value="✓" onclick="grade_answer()">
 
         </div>   
 
@@ -679,9 +679,9 @@ function prepare_questions(level) {
                 if (level == 11) {
 
                     if (terminals_array.includes(current)) {
-                        question_string = "Van welk medicijn is dit het bijwerkingenprofiel: " + parseArray(current_side_effects);
+                        question_string = "Van welk medicijn is dit het bijwerkingenprofiel: " + parse_array(current_side_effects);
                     } else {
-                        question_string = "Van welk klasse medicijn is dit het bijwerkingenprofiel: " + parseArray(current_side_effects);
+                        question_string = "Van welk klasse medicijn is dit het bijwerkingenprofiel: " + parse_array(current_side_effects);
                     };
 
                     temp_temp_question_array.push({"Question": question_string, "Answer": current});
@@ -735,12 +735,12 @@ function prepare_questions(level) {
 
             if (level == 4 && Object.keys(content_dict[keys[i]]).includes("Indicaties-list")) {
 
-                question_string = "Welk" + question_string_middle + "medicijn is bruikbaar voor de volgende symptomen: " + parseArray(content_dict[keys[i]]["Indicaties-list"]);
+                question_string = "Welk" + question_string_middle + "medicijn is bruikbaar voor de volgende symptomen: " + parse_array(content_dict[keys[i]]["Indicaties-list"]);
                 temp_temp_question_array.push({"Question": question_string, "Answer": current });
 
             } else if (level == 5 && Object.keys(content_dict[keys[i]]).includes("Mechanisme")) {
             
-                question_string = "Welk" + question_string_middle + "medicijn werk op de volgende manier: " + parseArray(content_dict[keys[i]].Mechanisme);
+                question_string = "Welk" + question_string_middle + "medicijn werk op de volgende manier: " + parse_array(content_dict[keys[i]].Mechanisme);
                 temp_temp_question_array.push({"Question": question_string, "Answer": current });
 
             } else if (level == 7 && Object.keys(content_dict[keys[i]]).includes("Zwangerschap")) {
@@ -1088,9 +1088,10 @@ function grade_answer() {
 
         if (Array.isArray(correct_answer) && !(question_array[current_index].Question).includes("voorbeeld")) {
 
-            console.log("Is array!")
+            if (correct_answer.includes(given_answer)) {                
 
-            if (correct_answer.includes(given_answer)) {
+                document.getElementById('question-title').style.animation = "correct 1s linear 0s";
+                setTimeout(function(){document.getElementById('question-title').style.animation = "idle 0s ease-in-out 0s";}, 3000);
 
                 console.log("Correct!");
 
@@ -1120,21 +1121,39 @@ function grade_answer() {
 
             } else {
 
-                console.log("False!")
-
-                document.getElementById('remark-card').innerText = "False! The correct answers are: " + correct_answer + ". We'll repeat this question."
-
                 let local_question_array = question_array;
-                local_question_array.splice(intervalIndex(current_index, 4, local_question_array), 0, {"Question": ("Dit is een herhaling: " + question_array[current_index].Question), "Answer": question_array[current_index].Answer, "Nr_ans": question_array[current_index].Nr_ans});
-                local_question_array.splice(intervalIndex(current_index, 12, local_question_array), 0, {"Question": ("Dit is een herhaling: " + question_array[current_index].Question), "Answer": question_array[current_index].Answer, "Nr_ans": question_array[current_index].Nr_ans});
+                let should_add = true;
+
+                document.getElementById('question-title').style.animation = "false 1s linear 0s";
+                setTimeout(function(){document.getElementById('question-title').style.animation = "idle 0s ease-in-out 0s";}, 3000);
+                
+                for (var y = 0; y < question_array.length; y++) {
+
+                    if (question_array[y].Question == "Dit is de eerste herhaling: " + question_array[current_index].Question) {
+                        
+                        should_add = false;
+
+                    };
+
+                };
+
+                if (should_add) {
+                    
+                    local_question_array.splice(intervalIndex(current_index, 4, local_question_array), 0, {"Question": ("Dit is de eerste herhaling: " + question_array[current_index].Question), "Answer": question_array[current_index].Answer, "Nr_ans": question_array[current_index].Nr_ans});
+                    local_question_array.splice(intervalIndex(current_index, 12, local_question_array), 0, {"Question": ("Dit is de tweede herhaling: " + question_array[current_index].Question), "Answer": question_array[current_index].Answer, "Nr_ans": question_array[current_index].Nr_ans});
+                
+                    document.getElementById('remark-card').innerText = "Oops, that was wrong! The correct answers are: " + parse_array(correct_answer) + ". We'll repeat this question."
+
+                } else {
+
+                    document.getElementById('remark-card').innerText = "Oops, that was wrong again! The correct answers are: " + parse_array(correct_answer) + ". We've already repeated it."
+
+                };
 
                 question_array = local_question_array;
                 console.log(question_array);
 
             };
-
-            document.getElementById('question-title').style.animation = "correct 1s linear 0s";
-            setTimeout(function(){document.getElementById('question-title').style.animation = "idle 0s ease-in-out 0s";}, 3000);
 
         } else if (trimmed_correct_answer == trimmed_given_answer || ((correct_answer.includes(",") || Array.isArray(correct_answer)) && correct_answer.includes(given_answer))) {
 
@@ -1194,11 +1213,13 @@ function grade_answer() {
                 setTimeout(function(){document.getElementById('question-title').style.animation = "idle 0s ease-in-out 0s";}, 3000);
 
                 let local_question_array = question_array;
+
+                console.log(local_question_array.find({"Question": ("Dit is de eerste herhaling: " + question_array[current_index].Question), "Answer": question_array[current_index].Answer}));
                 
                 local_question_array.splice(current_index + 4, 0, {"Question": ("Dit is de eerste herhaling: " + question_array[current_index].Question), "Answer": question_array[current_index].Answer});
                 local_question_array.splice(current_index + 12, 0, {"Question": ("Dit is de tweede herhaling: " + question_array[current_index].Question), "Answer": question_array[current_index].Answer});
 
-                question_array = local_question_array;
+                question_array = local_question_array.filter(find_unique);
                 console.log(question_array);
 
             };
@@ -1812,7 +1833,7 @@ function start_basics(category, level) {
 
         prepare_ancestry(content_dict[category + " system"], "Name", "Subdivision");
 
-        if (level == 0) {
+        if (category == "Muscular" && level == 0) {
 
             input_array = [ content_dict["Muscles of the trunk"], 
                             content_dict["Muscles of the shoulder"], 
@@ -1822,7 +1843,7 @@ function start_basics(category, level) {
 
             prepare_ancestry(input_array, "Name", "Subdivision");
 
-        } else if (level == 1) {
+        } else if (category == "Muscular" && level == 1) {
 
             input_array = [ content_dict["Muscles of the forearm"], 
                             content_dict["Muscles of the hand"], 
@@ -1830,6 +1851,10 @@ function start_basics(category, level) {
                             content_dict["Muscles of the foot"]]
 
             prepare_ancestry(input_array, "Name", "Subdivision");
+
+        } else if (category == "Nervous" && level == 0) {
+
+            prepare_ancestry(content_dict["Spinal nervous system"], "Name", "Subdivision");
 
         }
 
@@ -1850,7 +1875,7 @@ function start_basics(category, level) {
 
             current_object = content_dict[Object.keys(content_dict)[i]];
 
-            if (level == 0 || level == 1) {
+            if (category == "Muscular" && (level == 0 || level == 1)) {
 
                 if (Object.keys(current_object).includes("Subdivision")) {
 
@@ -1859,6 +1884,14 @@ function start_basics(category, level) {
 
                 };
 
+            } else if (category == "Nervous" && (level == 0)) {
+
+                temp_temp_question_array.push(trace_question(current_object, "nerve"));
+
+            } else if (category == "Nervous" && (level == 1) && Object.keys(current_object).includes("Roots")) {
+
+                temp_temp_question_array.push(root_question(current_object));
+                
             };
 
             temp_question_array.push(temp_temp_question_array);
@@ -1925,6 +1958,10 @@ function content_question(current_object, category) {
 
 }
 
+function find_unique(value, index, array) {
+    return array.indexOf(value) === index;
+  }
+
 function list_question(current_object, list_type) {
 
     if (current_object[list_type].length > 3) {
@@ -1937,9 +1974,39 @@ function list_question(current_object, list_type) {
     
     return question
 
+};
+
+function root_question(current_object) {
+
+    question_string = "In what roots does " + current_object["Name"] + " find its origin?";
+    question = {"Question": question_string, "Answer": current_object["Roots"], "Nr_ans": current_object["Roots"].length}; 
+    
+    return question
+
 }
 
-function parseArray(array) {
+function trace_question(current_object, category) {
+
+    if (typeof current_object != "string") {
+        current_object = current_object["Name"]
+    };
+
+    try {
+        
+        console.log(ancestry_dict[current_object].Parent)
+
+        question_string = "From what " + category + " does " + current_object + " branch off?";
+        return {"Question": question_string, "Answer": ancestry_dict[current_object].Parent }
+
+    } catch {
+        console.log("Issues with: " + current_object)
+        
+        return {"Question": "Something went wrong, please type 'OK'", "Answer": "OK"}
+    }
+
+}
+
+function parse_array(array) {
 
     let new_array = "";
 
@@ -2059,7 +2126,7 @@ function resetButtons() {
     
     `
     <input type="button" class="button" id ="hint-button" value="X" onclick="giveHint()">
-    <input type="button" class="button" id ="check-button" value="✓" onclick="checkMnemonicAnswer()">  
+    <input type="button" class="button" id ="check-button" value="✓" onclick="grade_answer()">  
     `
 
     document.getElementById('text-field').value = "";
@@ -2083,7 +2150,7 @@ function setEnter() {
     var input = document.getElementById("text-field");
 
     // Execute a function when the user presses a key on the keyboard
-    input.addEventListener("keypress", function(event) {
+    input.addEventListener("keyup", function(event) {
     // If the user presses the "Enter" key on the keyboard
     if (event.key === "Enter") {
         console.log("-> Pressed enter")
