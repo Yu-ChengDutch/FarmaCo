@@ -1880,13 +1880,12 @@ function start_basics(category, level) {
                 if (Object.keys(current_object).includes("Subdivision")) {
 
                     temp_temp_question_array.push(content_question(current_object, "anatomical structures"))
-                    temp_temp_question_array.push(ancestry_question(current_object, "up", "groep"))
 
                 };
 
             } else if (category == "Nervous" && (level == 0)) {
 
-                temp_temp_question_array.push(trace_question(current_object, "nerve"));
+                temp_temp_question_array.push(branch_question(current_object, "nerves"));
 
             } else if (category == "Nervous" && (level == 1) && Object.keys(current_object).includes("Roots")) {
 
@@ -1943,16 +1942,16 @@ function name_question(current_object, category) {
 
 function content_question(current_object, category) {
 
-    sub_types = [];
+    branches = [];
 
     for (var x = 0; x < current_object["Subdivision"].length; x++) {
 
-        sub_types.push(current_object["Subdivision"][x]["Name"])
+        branches.push(current_object["Subdivision"][x]["Name"])
 
     };
 
-    question_string = "What " + category + " are included in the following group: " + current_object["Name"] + "?";
-    question = ({"Question": question_string, "Answer": sub_types });
+    question_string = "What " + category + " branch off from " + current_object["Name"] + "?";
+    question = ({"Question": question_string, "Answer": branches });
 
     return question
 
@@ -1985,24 +1984,20 @@ function root_question(current_object) {
 
 }
 
-function trace_question(current_object, category) {
+function branch_question(current_object, category) {
 
-    if (typeof current_object != "string") {
-        current_object = current_object["Name"]
+    sub_types = [];
+
+    for (var x = 0; x < current_object["Subdivision"].length; x++) {
+
+        sub_types.push(current_object["Subdivision"][x]["Name"])
+
     };
 
-    try {
-        
-        console.log(ancestry_dict[current_object].Parent)
+    question_string = "Which " + category + " are included in the following group: " + current_object["Name"] + "?";
+    question = ({"Question": question_string, "Answer": sub_types });
 
-        question_string = "From what " + category + " does " + current_object + " branch off?";
-        return {"Question": question_string, "Answer": ancestry_dict[current_object].Parent }
-
-    } catch {
-        console.log("Issues with: " + current_object)
-        
-        return {"Question": "Something went wrong, please type 'OK'", "Answer": "OK"}
-    }
+    return question
 
 }
 

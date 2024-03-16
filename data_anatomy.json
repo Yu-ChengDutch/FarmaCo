@@ -340,7 +340,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "Name": "Thoracic diaphragm"
+                                                    "Name": "Diaphragma"
                                                 },
                                                 {
                                                     "Name": "Subclavius"
@@ -935,7 +935,7 @@
                                             "Action": [["Hip", ["Flexion", "Abduction", "External rotation"]], ["Knee", ["Flexion"]]]
                                         },
                                         {
-                                            "Name": "Articularis genus",
+                                            "Name": "Articularis genu",
                                             "Origin": ["Femur"],
                                             "Insertion": ["Suprapatellar bursa"],
                                             "Innervation": ["N. Femoralis"],
@@ -985,7 +985,7 @@
                                     "Name": "Posterior compartment of the thigh",
                                     "Subdivision": [
                                         {
-                                            "Name": "Hamstring",
+                                            "Name": "Hamstrings",
                                             "Subdivision": [
                                                 {
                                                     "Name": "Biceps femoris",
@@ -1314,12 +1314,14 @@
                                                             "Sensory innervation": ["Posterior arm", "Inferior forearm"]
                                                         },
                                                         {
-                                                            "Name": "Ramus superficialis",
-                                                            "Sensory innervation": ["Radial thumb"]
-                                                        },
-                                                        {
                                                             "Name": "Nn. Digitales dorsales",
                                                             "Sensory innervation": ["Dorsoradial hand"]
+                                                        }
+                                                    ],
+                                                    "Branches": [                                                        
+                                                        {
+                                                            "Name": "Ramus superficialis",
+                                                            "Sensory innervation": ["Radial thumb"]
                                                         }
                                                     ]
                                                 },
@@ -1356,7 +1358,7 @@
                                                     "Name": "N. Ulnaris",
                                                     "Roots": ["C8", "T1"],
                                                     "Through": ["Cubital tunnel", "Guyon's canal"],
-                                                    "Subdivision": [
+                                                    "Branches": [
                                                         {
                                                             "Name": "R. Dorsalis",
                                                             "Sensory innervation": ["Laterodorsal hand"]
@@ -1410,7 +1412,7 @@
                                                 {
                                                     "Name": "N. Iliohypogastricus",
                                                     "Roots": ["T12", "L1"],
-                                                    "Subdivision": [
+                                                    "Branches": [
                                                         {
                                                             "Name": "R. Iliacus",
                                                             "Sensory innervation": ["Lateral buttocks"]
@@ -1430,7 +1432,7 @@
                                                 {
                                                     "Name": "N. Genitofemoralis",
                                                     "Roots": ["L1", "L2"],
-                                                    "Subdivision": [
+                                                    "Branches": [
                                                         {
                                                             "Name": "R. Genitalis nervi genitofemoralis",
                                                             "Roots": ["L1", "L2"],
@@ -1440,7 +1442,9 @@
                                                             "Name": "R. Femoralis nervi genitofemoralis",
                                                             "Roots": ["L1", "L2"],
                                                             "Through": ["Femoral sheath"]
-                                                        },
+                                                        }                                                        
+                                                    ],
+                                                    "Subdivision": [
                                                         {
                                                             "Name": "N. Lumboinguinalis",
                                                             "Sensory innervation": ["Femoral triangle"]
@@ -1467,7 +1471,7 @@
                                                     "Name": "N. Obturatorius",
                                                     "Roots": ["L2", "L3", "L4"],
                                                     "Through": ["Obturator canal"],
-                                                    "Subdivision": [
+                                                    "Branches": [
                                                         {
                                                             "Name": "R. Cutaneus",
                                                             "Sensory innervation": ["Medial thigh"]
@@ -1561,7 +1565,9 @@
                                                         {
                                                             "Name": "N. Clunium inferior",
                                                             "Sensory innervation": ["Lower buttocks", "Lateral buttocks"]
-                                                        },
+                                                        }                                                        
+                                                    ],
+                                                    "Branches": [
                                                         {
                                                             "Name": "R. Perinealis",
                                                             "Sensory innervation": ["Perineum"]
