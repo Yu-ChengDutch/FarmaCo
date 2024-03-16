@@ -1875,17 +1875,17 @@ function start_basics(category, level) {
 
             current_object = content_dict[Object.keys(content_dict)[i]];
 
-            if (category == "Muscular" && (level == 0 || level == 1)) {
+            if (Object.keys(current_object).includes("Subdivision")) {
 
-                if (Object.keys(current_object).includes("Subdivision")) {
+                if (category == "Muscular" && (level == 0 || level == 1)) {
 
                     temp_temp_question_array.push(content_question(current_object, "anatomical structures"))
 
+                } else if (category == "Nervous" && (level == 0)) {
+
+                    temp_temp_question_array.push(branch_question(current_object, "nerves"));
+
                 };
-
-            } else if (category == "Nervous" && (level == 0)) {
-
-                temp_temp_question_array.push(branch_question(current_object, "nerves"));
 
             } else if (category == "Nervous" && (level == 1) && Object.keys(current_object).includes("Roots")) {
 
