@@ -294,22 +294,22 @@
                                                     "Subdivision": [
                                                         {
                                                             "Name": "Intercostales externi",
-                                                            "Origin": ["Ribs", "Inferior border"],
-                                                            "Insertion": ["Ribs", "Superior border"],
+                                                            "Origin": [["Ribs"], ["Inferior border"]],
+                                                            "Insertion": [["Ribs"], ["Superior border"]],
                                                             "Innervation": ["Nn. Intercostales"],
                                                             "Action": ["Inhalation"]
                                                         },
                                                         {
                                                             "Name": "Intercostales interni",
-                                                            "Origin": ["Ribs", "Superior border"],
-                                                            "Insertion": ["Ribs", "Inferior border"],
+                                                            "Origin": [["Ribs"], ["Superior border"]],
+                                                            "Insertion": [["Ribs"], ["Inferior border"]],
                                                             "Innervation": ["Nn. Intercostales"],
                                                             "Action": ["Stabilisation"]
                                                         },
                                                         {
                                                             "Name": "Intercostales intimi",
-                                                            "Origin": ["Ribs", "Infero-posterior border"],
-                                                            "Insertion": ["Ribs", "Supero-posterior border"],
+                                                            "Origin": [["Ribs"], ["Infero-posterior border"]],
+                                                            "Insertion": [["Ribs"], ["Supero-posterior border"]],
                                                             "Innervation": ["Nn. Intercostales"],
                                                             "Action": ["Exhalation"]
                                                         }
@@ -317,8 +317,8 @@
                                                 },
                                                 {
                                                     "Name": "Subcostalis",
-                                                    "Origin": ["Ribs", "Proximal surface"],
-                                                    "Insertion": ["Ribs", "Proximal surface"],
+                                                    "Origin": [["Ribs"], ["Proximal surface"]],
+                                                    "Insertion": [["Ribs"], ["Proximal surface"]],
                                                     "Innervation": ["Nn. Intercostales"],
                                                     "Action": ["Depression"]
                                                 },
@@ -355,12 +355,12 @@
                                                     "Subdivision": [
                                                         {
                                                             "Name": "Pectoralis major",
-                                                            "Insertion": ["Humerus", "Bicipital groove"],
+                                                            "Insertion": [["Humerus"], ["Bicipital groove"]],
                                                             "Innervation": ["N. Pectoralis lateralis", "N. Pectoralis medialis"],
                                                             "Parts": [
                                                                 {
                                                                     "Name": "Clavicular head",
-                                                                    "Origin": ["Clavicula", "Anterior surface"],
+                                                                    "Origin": [["Clavicula"], ["Anterior surface"]],
                                                                     "Action": ["Shoulder", ["Flexion"]]
                                                                 },
                                                                 {
@@ -372,8 +372,8 @@
                                                         },
                                                         {
                                                             "Name": "Pectoralis minor",
-                                                            "Origin": ["Ribs", "Costochondral junction"],
-                                                            "Insertion": ["Scapula", "Coracoid process"],
+                                                            "Origin": [["Ribs"], ["Costochondral junction"]],
+                                                            "Insertion": [["Scapula"], ["Coracoid process"]],
                                                             "Innervation": ["N. Pectoralis medialis"],
                                                             "Action": [["Scapula", "Ribs"], [["Stabilisation"], ["Inhalation"]]]
                                                         }
@@ -381,8 +381,8 @@
                                                 },
                                                 {
                                                     "Name": "Serratus anterior",
-                                                    "Origin": ["Ribs"],
-                                                    "Insertion": ["Scapula", "Medial margin"],
+                                                    "Origin": [["Ribs"]],
+                                                    "Insertion": [["Scapula"], ["Medial margin"]],
                                                     "Innervation": ["N. Thoracicis longus"],
                                                     "Action": ["Scapula", ["Protraction", "Stabilisation"]]
                                                 }
@@ -474,7 +474,7 @@
                                         },
                                         {
                                             "Name": "Latissimus dorsi",
-                                            "Insertion": ["Humerus", "Intertubercular groove"],
+                                            "Insertion": [["Humerus"], ["Intertubercular groove"]],
                                             "Innervation": ["N. Thoracodorsalis"],
                                             "Action": ["Arm", ["Adduction", "Extension", "Internal rotation"]]
                                         },
@@ -483,15 +483,15 @@
                                             "Subdivision": [
                                                 {
                                                     "Name": "Rhomboid major",
-                                                    "Origin": [["Vertebrae", "T2", "T3", "T4", "T5"], "Spinous process"],
-                                                    "Insertion": ["Scapula", "Medial border"],
+                                                    "Origin": [["Thoracic vertebrae"], ["Spinous process"]],
+                                                    "Insertion": [["Scapula"], ["Medial border"]],
                                                     "Innervation": ["N. Dorsalis scapularis"],
                                                     "Action": ["Scapula", ["Retraction", "Rotation", "Fixation"]]
                                                 },
                                                 {
                                                     "Name": "Rhomboid minor",
-                                                    "Origin": [["Vertebrae", "C7", "T1"], ["Spinous process", "Nuchal ligament"]],
-                                                    "Insertion": ["Scapula", "Medial border"],
+                                                    "Origin": [["Cervical vertebrae"], ["Spinous process", "Nuchal ligament"]],
+                                                    "Insertion": [["Scapula"], ["Medial border"]],
                                                     "Innervation": ["N. Dorsalis scapularis"],
                                                     "Action": ["Scapula", ["Retraction", "Rotation", "Fixation"]]
                                                 }
@@ -499,8 +499,8 @@
                                         },
                                         {
                                             "Name": "Levator scapulae",
-                                            "Origin": [["Vertebrae", "C1", "C2", "C3"], "Transverse process"],
-                                            "Insertion": ["Scapula", "Medial border"],
+                                            "Origin": [["Cervical vertebrae"], ["Transverse process"]],
+                                            "Insertion": [["Scapula"], ["Medial border"]],
                                             "Innervation": ["N. Spinalis C3", "N. Spinalis C4", "N. Dorsalis scapularis"],
                                             "Action": ["Scapula", ["Elevation", "Rotation"]]
                                         }
@@ -518,15 +518,15 @@
                             "Subdivision": [
                                 {
                                     "Name": "Deltoideus",
-                                    "Origin": [["Clavicula", "Anterior border"], ["Acromion"], ["Scapula", "Spine"]],
-                                    "Insertion": ["Humerus", "Deltoid tuberosity"],
+                                    "Origin": [["Clavicula", "Scapula"], [["Acromion"], ["Spine"]]],
+                                    "Insertion": [["Humerus"], ["Deltoid tuberosity"]],
                                     "Innervation": ["N. Axillaris"],
                                     "Action": ["Shoulder", ["Abduction", "Flexion", "Extension"]]
                                 },
                                 {
                                     "Name": "Teres major",
-                                    "Origin": ["Scapula", "Inferior angle"],
-                                    "Insertion": ["Humerus", "Intertubercular sulcus"],
+                                    "Origin": [["Scapula"], ["Inferior angle"]],
+                                    "Insertion": [["Humerus"], ["Intertubercular sulcus"]],
                                     "Innervation": ["N. Subscapularis inferior"],
                                     "Action": ["Shoulder", ["Adduction", "Internal rotation", "Extension"]]
                                 },
@@ -535,29 +535,29 @@
                                     "Subdivision": [
                                         {
                                             "Name": "Supraspinatus",
-                                            "Origin": ["Scapula", "Supraspinous fossa"],
-                                            "Insertion": ["Humerus", "Greater tubercle"],
+                                            "Origin": [["Scapula"], ["Supraspinous fossa"]],
+                                            "Insertion": [["Humerus"], ["Greater tubercle"]],
                                             "Innervation": ["N. Suprascapularis"],
                                             "Action": ["Shoulder", ["Abduction", "Stabilisation"]]
                                         },
                                         {
                                             "Name": "Infraspinatus",
-                                            "Origin": ["Scapula", "Infraspinous fossa"],
-                                            "Insertion": ["Humerus", "Greater tubercle"],
+                                            "Origin": [["Scapula"], ["Infraspinous fossa"]],
+                                            "Insertion": [["Humerus"], ["Greater tubercle"]],
                                             "Innervation": ["N. Suprascapularis"],
                                             "Action": ["Shoulder", ["External rotation", "Stablisation"]]
                                         },
                                         {
                                             "Name": "Teres minor",
-                                            "Origin": ["Scapula", "Lateral border"],
-                                            "Insertion": ["Humerus", "Greater tubercle"],
+                                            "Origin": [["Scapula"], ["Lateral border"]],
+                                            "Insertion": [["Humerus"], ["Greater tubercle"]],
                                             "Innervation": ["N. Axillaris"],
                                             "Action": ["Shoulder", ["External rotation", "Stabilisation"]]
                                         },
                                         {
                                             "Name": "Subscapularis",
-                                            "Origin": ["Scapula", "Subscapular fossa"],
-                                            "Insertion": ["Humerus", "Lesser tubercle"],
+                                            "Origin": [["Scapula"], ["Subscapular fossa"]],
+                                            "Insertion": [["Humerus"], ["Lesser tubercle"]],
                                             "Innervation": ["N. Subscapularis inferior", "N. Subscapularis superior"],
                                             "Action": ["Shoulder", ["Internal rotation", "Adduction", "Stabilisation"]]
                                         }
@@ -573,31 +573,31 @@
                                     "Subdivision": [
                                         {
                                             "Name": "Coracobrachialis",
-                                            "Origin": ["Scapula", "Coracoid process"],
-                                            "Insertion": ["Humerus", "Anteriomedial surface"],
+                                            "Origin": [["Scapula"], ["Coracoid process"]],
+                                            "Insertion": [["Humerus"], ["Anteriomedial surface"]],
                                             "Innervation": ["N. Musculocutaneus"],
                                             "Action": ["Shoulder", ["Adduction", "Flexion"]]
                                         },
                                         {
                                             "Name": "Biceps brachii",
-                                            "Insertion": ["Radius", "Radial tuberosity"],
+                                            "Insertion": [["Radius"], ["Radial tuberosity"]],
                                             "Innervation": ["N. Musculocutaneus"],
                                             "Action": [["Elbow", ["Flexion"]], ["Shoulder", ["Flexion", "Abduction"]], ["Radioulnar joint", ["Supination"]]],
                                             "Parts": [
                                                 {
                                                     "Name": "Short head",
-                                                    "Origin": ["Scapula", "Coracoid process"]
+                                                    "Origin": [["Scapula"], ["Coracoid process"]]
                                                 },
                                                 {
                                                     "Name": "Long head",
-                                                    "Origin": ["Scapula", "Supraglenoid tubercle"]
+                                                    "Origin": [["Scapula"], ["Supraglenoid tubercle"]]
                                                 }
                                             ]
                                         },
                                         {
                                             "Name": "Brachialis",
-                                            "Origin": ["Humerus", "Anterior surface"],
-                                            "Insertion": ["Ulna", ["Coronoid process", "Ulnar tuberosity"]],
+                                            "Origin": [["Humerus"], ["Anterior surface"]],
+                                            "Insertion": [["Ulna"], ["Coronoid process", "Ulnar tuberosity"]],
                                             "Innervation": ["N. Musculocutaneus", "N. Radialis"],
                                             "Action": ["Elbow", ["Flexion"]]
                                         }
@@ -608,36 +608,36 @@
                                     "Subdivision": [
                                         {
                                             "Name": "Triceps brachii",
-                                            "Insertion": ["Ulna", "Olecranon process"],
+                                            "Insertion": [["Ulna"], ["Olecranon process"]],
                                             "Innervation": ["N. Radialis"],
                                             "Action": [["Elbow", ["Extension"]], ["Shoulder", ["Extension", "Adduction"]]],
                                             "Parts": [
                                                 {
                                                     "Name": "Long head",
-                                                    "Origin": ["Scapula", "Infraglenoid tubercle"]
+                                                    "Origin": [["Scapula"], ["Infraglenoid tubercle"]]
                                                 },
                                                 {
                                                     "Name": "Lateral head",
-                                                    "Origin": ["Humerus", "Radial groove"]
+                                                    "Origin": [["Humerus"], ["Radial groove"]]
                                                 },
                                                 {
                                                     "Name": "Medial head",
-                                                    "Origin": ["Humerus", "Radial groove"]
+                                                    "Origin": [["Humerus"], ["Radial groove"]]
                                                 }
                                             ]
                                         },
                                         {
                                             "Name": "Anconeus",
-                                            "Origin": ["Humerus", "Lateral epicondyle"],
-                                            "Insertion": ["Ulna", ["Olecranon process", "Posterior surface"]],
+                                            "Origin": [["Humerus"], ["Lateral epicondyle"]],
+                                            "Insertion": [["Ulna"], ["Olecranon process", "Posterior surface"]],
                                             "Innervation": ["N. Radialis"],
                                             "Action": ["Elbow", ["Extension", "Stabilisation"]]
                                         },
                                         {
                                             "Name": "Articularis cubiti",
                                             "Alternative name": "Subanconeus",
-                                            "Origin": ["Triceps brachii", "Medial head"],
-                                            "Insertion": ["Elbow joint", "Posterior capsule"],
+                                            "Origin": [["Triceps brachii"], ["Medial head"]],
+                                            "Insertion": [["Elbow joint"], ["Posterior capsule"]],
                                             "Innervation": ["N. Radialis"],
                                             "Action": ["Capsule", ["Lifting away from joint"]]
                                         }
@@ -830,15 +830,15 @@
                                     "Subdivision": [
                                         {
                                             "Name": "Iliacus",
-                                            "Origin": ["Ilium", "Iliac fossa"],
-                                            "Insertion": ["Femur", "Lesser trochanter"],
+                                            "Origin": [["Ilium"], ["Iliac fossa"]],
+                                            "Insertion": [["Femur"], ["Lesser trochanter"]],
                                             "Innervation": ["N. Femoralis"],
                                             "Action": ["Hip", ["Flexion", "Internal rotation"]]
                                         },
                                         {
                                             "Name": "Psoas major",
-                                            "Origin": [["Vertebrae", "T12", "L1", "L2", "L3", "L4"], "Transverse process"],
-                                            "Insertion": ["Femur", "Lesser trochanter"],
+                                            "Origin": [["Lumbar vertebrae"], ["Transverse process"]],
+                                            "Insertion": [["Femur"], ["Lesser trochanter"]],
                                             "Innervation": ["N. Spinalis L1", "N. Spinalis L2", "N. Spinalis L3"],
                                             "Action": ["Hip", ["Flexion"]]
                                         }
@@ -849,22 +849,22 @@
                                     "Subdivision": [
                                         {
                                             "Name": "Gluteus maximus",
-                                            "Origin": [["Ilium", "Gluteal surface"], "Sacrum", "Sacrotuberous ligament"],
-                                            "Insertion": [["Femur", "Gluteal tuberosity"], "Iliotibial tract"],
+                                            "Origin": [["Ilium", "Sacrum"], ["Gluteal surface", "Sacrotuberous ligament"]],
+                                            "Insertion": [["Femur"], ["Gluteal tuberosity", "Iliotibial tract"]],
                                             "Innervation": ["N. Gluteus inferior"],
                                             "Action": ["Hip", ["External rotation", "Extension"]]
                                         },
                                         {
                                             "Name": "Gluteus medius",
-                                            "Origin": ["Ilium", "Gluteal surface"],
-                                            "Insertion": ["Femur", "Greater trochanter"],
+                                            "Origin": [["Ilium"], ["Gluteal surface"]],
+                                            "Insertion": [["Femur"], ["Greater trochanter"]],
                                             "Innervation": ["N. Gluteus superior"],
                                             "Action": ["Hip", ["Abduction", "Internal rotation", "Flexion"]]
                                         },
                                         {
                                             "Name": "Gluteus minimus",
-                                            "Origin": ["Ilium", "Gluteal surface"],
-                                            "Insertion": ["Femur", "Greater trochanter"],
+                                            "Origin": [["Ilium"], ["Gluteal surface"]],
+                                            "Insertion": [["Femur"], ["Greater trochanter"]],
                                             "Innervation": ["N. Gluteus superior"],
                                             "Action": ["Hip", ["Abduction", "Internal rotation"]]
                                         }
@@ -875,8 +875,8 @@
                                     "Subdivision": [
                                         {
                                             "Name": "Quadratus femoris",
-                                            "Origin": ["Ischium", "Ischial tuberosity"],
-                                            "Insertion": ["Femur", "Intertrochanteric crest"],
+                                            "Origin": [["Ischium"], ["Ischial tuberosity"]],
+                                            "Insertion": [["Femur"], ["Intertrochanteric crest"]],
                                             "Innervation": ["N. Musculi quadrati femoris"],
                                             "Action": ["Hip", ["External rotation", "Adduction"]]
                                         },
@@ -896,15 +896,15 @@
                                             "Subdivision": [
                                                 {
                                                     "Name": "Internal obturator",
-                                                    "Origin": ["Obturator membrane"],
-                                                    "Insertion": ["Femur", "Greater trochanter"],
+                                                    "Origin": [["Obturator membrane"]],
+                                                    "Insertion": [["Femur"], ["Greater trochanter"]],
                                                     "Innervation": ["N. Musculi obturator internus"],
                                                     "Action": ["Hip", ["Abduction", "External rotation", "Stabilisation"]]
                                                 },
                                                 {
                                                     "Name": "External obturator",
-                                                    "Origin": ["Obturator membrane"],
-                                                    "Insertion": ["Femur", "Trochanteric fossa"],
+                                                    "Origin": [["Obturator membrane"]],
+                                                    "Insertion": [["Femur"], ["Trochanteric fossa"]],
                                                     "Inneprvation": ["N. Obturator"],
                                                     "Action": ["Hip", ["Abduction", "External rotation"]]
                                                 }
@@ -912,8 +912,8 @@
                                         },
                                         {
                                             "Name": "Piriformis",
-                                            "Origin": ["Sacrum"],
-                                            "Insertion": ["Femur", "Greater trochanter"],
+                                            "Origin": [["Sacrum"]],
+                                            "Insertion": [["Femur"], ["Greater trochanter"]],
                                             "Innervation": ["N. Musculi piriformis"],
                                             "Action": ["Hip", ["External rotation"]]
                                         }
@@ -929,15 +929,15 @@
                                     "Subdivision": [
                                         {
                                             "Name": "Sartorius",
-                                            "Origin": ["Ilium", "Anterior superior iliac spine"],
-                                            "Insertion": ["Pes anserinus"],
+                                            "Origin": [["Ilium"], ["Anterior superior iliac spine"]],
+                                            "Insertion": [["Pes anserinus"]],
                                             "Innervation": ["N. Femoralis"],
                                             "Action": [["Hip", ["Flexion", "Abduction", "External rotation"]], ["Knee", ["Flexion"]]]
                                         },
                                         {
                                             "Name": "Articularis genu",
-                                            "Origin": ["Femur"],
-                                            "Insertion": ["Suprapatellar bursa"],
+                                            "Origin": [["Femur"]],
+                                            "Insertion": [["Suprapatellar bursa"]],
                                             "Innervation": ["N. Femoralis"],
                                             "Action": ["Suprapatellar bursa", ["Proximal translation"]]
                                         },
@@ -946,8 +946,8 @@
                                             "Subdivision": [
                                                 {
                                                     "Name": "Rectus femoris",
-                                                    "Origin": ["Ilium", "Anterior inferior iliac spine"],
-                                                    "Insertion": ["Tendon", "Patellar tendon"],
+                                                    "Origin": [["Ilium"], ["Anterior inferior iliac spine"]],
+                                                    "Insertion": [["Tendon"], ["Patellar tendon"]],
                                                     "Innervation": ["N. Femoralis"],
                                                     "Action": [["Knee", "Hip"], [["Extension"], ["Flexion"]]]
                                                 },
@@ -956,22 +956,22 @@
                                                     "Subdivision": [
                                                         {
                                                             "Name": "Vastus lateralis",
-                                                            "Origin": ["Femur", ["Greater trochanter", "Intertrochanteric line", "Linea aspera"]],
-                                                            "Insertion": ["Tendon", "Quadriceps tendon"],
+                                                            "Origin": [["Femur"], ["Greater trochanter", "Intertrochanteric line", "Linea aspera"]],
+                                                            "Insertion": [["Quadriceps tendon"]],
                                                             "Innervation": ["N. Femoralis"],
                                                             "Action": [["Knee"], ["Extension", "Stabilisation"]]
                                                         },
                                                         {
                                                             "Name": "Vastus intermedius",
-                                                            "Origin": ["Femur", "Anterolateral surface"],
-                                                            "Insertion": ["Tendon", "Quadriceps tendon"],
+                                                            "Origin": [["Femur"], ["Anterolateral surface"]],
+                                                            "Insertion": [["Quadriceps tendon"]],
                                                             "Innervation": ["N. Femoralis"],
                                                             "Action": ["Knee", ["Extension"]]
                                                         },
                                                         {
                                                             "Name": "Vastus medialis",
-                                                            "Origin": ["Femur", "Medial surface"],
-                                                            "Insertion": ["Tendon", "Quadriceps tendon"],
+                                                            "Origin": [["Femur"], ["Medial surface"]],
+                                                            "Insertion": [["Tendon"], ["Quadriceps tendon"]],
                                                             "Innervation": ["N. Femoralis"],
                                                             "Action": ["Knee", ["Extension"]]
                                                         }
@@ -989,19 +989,19 @@
                                             "Subdivision": [
                                                 {
                                                     "Name": "Biceps femoris",
-                                                    "Insertion": ["Fibula", "Fibular head"],
+                                                    "Insertion": [["Fibula"], ["Fibular head"]],
                                                     "Innervation": ["N. "],
                                                     "Action": [""],
                                                     "Parts": [
                                                         {
                                                             "Name": "Long head",
-                                                            "Origin": ["Ischium", "Ischial tuberosity"],
+                                                            "Origin": [["Ischium"], ["Ischial tuberosity"]],
                                                             "Innervation": ["N. Fibularis communis"],
                                                             "Action": ["Knee", ["Flexion", "External rotation"]]
                                                         },
                                                         {
                                                             "Name": "Short head",
-                                                            "Origin": ["Femur", "Linea aspera"],
+                                                            "Origin": [["Femur"], ["Linea aspera"]],
                                                             "Innervation": ["N. Tibialis"],
                                                             "Action": [["Knee", "Hip"], [["Flexion", "External rotation"], "Extension"]]
                                                         }
@@ -1009,15 +1009,15 @@
                                                 },
                                                 {
                                                     "Name": "Semitendinosus",
-                                                    "Origin": ["Ischium", "Ischial tuberosity"],
-                                                    "Insertion": ["Tendon", "Pes anserinus"],
+                                                    "Origin": [["Ischium"], ["Ischial tuberosity"]],
+                                                    "Insertion": [["Pes anserinus"]],
                                                     "Innervation": ["N. Ischiadicus"],
                                                     "Action": [["Knee", "Extension"], ["Flexion", "Extension"]]
                                                 },
                                                 {
                                                     "Name": "Semimembranosus",
-                                                    "Origin": ["Ischium", "Ischial tuberosity"],
-                                                    "Insertion": ["Tibia", "Medial condyle"],
+                                                    "Origin": [["Ischium"], ["Ischial tuberosity"]],
+                                                    "Insertion": [["Tibia"], ["Medial condyle"]],
                                                     "Innervation": ["N. Tibialis"],
                                                     "Action": [["Hip", "Knee"], ["Extension", "Flexion"]]
                                                 }
@@ -1031,8 +1031,8 @@
                                     "Subdivision": [
                                         {
                                             "Name": "Pectineus",
-                                            "Origin": ["Os pubis", "Pectineal line"],
-                                            "Insertion": ["Femur", "Pectineal line"],
+                                            "Origin": [["Os pubis"], ["Pectineal line"]],
+                                            "Insertion": [["Femur"], ["Pectineal line"]],
                                             "Innervation": ["N. Femoralis"],
                                             "Action": [["Hip"], ["Flexion", "Adduction", "External rotation"]]
                                         },
@@ -1228,19 +1228,295 @@
             ]
         },
         {
-            "Name": "Systema articulare",
+            "Name": "Articulatory system",
             "Subdivision": [
                 {
-                    "Name": "Articulationes cinguli pectoralis",
+                    "Name": "Joints of the upper extremities",
                     "Subdivision": [
                         {
-                            "Name": "Articulato glenohumeralis"
+                            "Name": "Joints of the shoulder girdle",
+                            "Subdivision": [
+                                {
+                                    "Name": "Sternoclavicular joint",
+                                    "Structural type": "Saddle joint",
+                                    "Proximal end": ["Clavicula", "Sternal end"],
+                                    "Distal end": ["Sternum", "Manubrium"]
+                                },
+                                {
+                                    "Name": "Axillary joint",
+                                    "Subdivision": [
+                                        {
+                                            "Name": "Glenohumeral joint",
+                                            "Alternative name": "Shoulder joint",
+                                            "Structural type": "Ball-and-socket joint",
+                                            "Proximal end": ["Scapula", "Glenoid cavity"],
+                                            "Distal end": ["Humerus", "Head"]
+                                        },
+                                        {
+                                            "Name": "Acromioclavicular joint",
+                                            "Structural type": "Plane joint",
+                                            "Proximal end": ["Scapula", "Acromion"],
+                                            "Distal end": ["Clavicula", "Clavicular end"]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },                        
+                        {
+                            "Name": "Elbow joint",
+                            "Subdivision": [
+                                {
+                                    "Name": "Humeroulnar joint",
+                                    "Structural type": "Hinge joint",
+                                    "Proximal end": ["Ulna", "Trochlear notch"],
+                                    "Distal end": ["Humerus", "Trochlea"]
+                                },
+                                {
+                                    "Name": "Humeroradial joint",
+                                    "Structural type": "Ball-and-socket joint",
+                                    "Proximal end": ["Radius", "Head"],
+                                    "Distal end": ["Humerus", "Capitulum"]
+                                },
+                                {
+                                    "Name": "Proximal radioulnar joint",
+                                    "Structural type": "Pivot joint",
+                                    "Proximal end": ["Radius", "Head"],
+                                    "Distal end": ["Ulna", "Radial notch"]
+                                }
+                            ]
                         },
                         {
-                            "Name": "Articulatio acromioclavicularis"
+                            "Name": "Wrist joint",
+                            "Subdivision": [
+                                {
+                                    "Name": "Distal radioulnar joint",
+                                    "Structural type": "Pivot joint",
+                                    "Proximal end": ["Ulna", "Head"],
+                                    "Distal end": ["Radius", "Ulnar notch"]
+                                },
+                                {
+                                    "Name": "Radiocarpal joint",
+                                    "Structural type": "Ellipsoid joint",
+                                    "Proximal end": ["Radius", "Head"],
+                                    "Distal end": ["Carpal bones"]
+                                }
+                            ]
                         },
                         {
-                            "Name": "Articulatio sternoclavicularis"
+                            "Name": "Joints of the hand",
+                            "Subdivision": [
+                                {
+                                    "Name": "Intercarpal joint",
+                                    "Structural type": "Plane joint"
+                                },
+                                {
+                                    "Name": "Carpometacarpal joint"
+                                },
+                                {
+                                    "Name": "Metacarpophalangeal joint",
+                                    "Structural type": "Condyloid joint"
+                                },
+                                {
+                                    "Name": "Intermetacarpal joint"
+                                },
+                                {
+                                    "Name": "Interphalangeal joint",
+                                    "Subdivision": [
+                                        {
+                                            "Name": "Distal interphalangeal joint",
+                                            "Structural type": "Hinge joint",
+                                            "Proximal end": ["Intermediate phalanx"],
+                                            "Distal end": ["Distal phalanx"]
+                                        },
+                                        {
+                                            "Name": "Proximal interphalangeal joint",
+                                            "Structural type": "Hinge joint",
+                                            "Proximal end": ["Proximal phalanx"],
+                                            "Distal end": ["Intermediate phalanx"]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Joints of the trunk",
+                    "Subdivision": [
+                        {
+                            "Name": "Craniovertebral joint",
+                            "Subdivision": [
+                                {
+                                    "Name": "Atlanto-occipital joint",
+                                    "Structural type": "Condyloid joint",
+                                    "Proximal end": ["Occipital bone", "Condyle"],
+                                    "Distal end": ["Atlas", "Superior articular surface"]
+                                },
+                                {
+                                    "Name": "Atlanto-axial joint",
+                                    "Subdivision": [
+                                        {
+                                            "Name": "Lateral atlanto-axial joint",
+                                            "Structural type": "Plane joint",
+                                            "Proximal end": ["Atlas", "Lateral mass"],
+                                            "Distal end": ["Axis", "Superior articular facet"]
+                                        },
+                                        {
+                                            "Name": "Medial atlanto-axial joint",
+                                            "Structural type": "Pivot joint",
+                                            "Proximal end": ["Atlas", "Anterior arch"],
+                                            "Distal end": ["Axis", "Dens"]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "Name": "Intervertebral joint",
+                            "Structural type": "Symphisis",
+                            "Proximal end": ["Vertebra", "Inferior surface"],
+                            "Distal end": ["Vertebra", "Superior surface"]
+                        },
+                        {
+                            "Name": "Uncovertebral joint",
+                            "Alternative name": "Joint of Luschka",
+                            "Structural type": "Plane joint",
+                            "Proximal end": ["Vertebra", "Inferolateral surface"],
+                            "Distal end": ["Vertebra", "Uncinate process"]
+                        },
+                        {
+                            "Name": "Zygapophyseal joint",
+                            "Structural type": "Facet joint",
+                            "Proximal end": ["Vertebra", "Articular process"],
+                            "Distal end": ["Vertebra", "Articular process"]
+                        },
+                        {
+                            "Name": "Costovertebral joint",
+                            "Subdivision": [
+                                {
+                                    "Name": "Costotransvers joint",
+                                    "Structural type": "Plane joint",
+                                    "Proximal end": ["Vertebra", "Transverse process"],
+                                    "Distal end": ["Rib", "Tubercle"]
+                                },
+                                {
+                                    "Name": "Costocorporeal joint",
+                                    "Structural type": "Plane joint"
+                                }
+                            ]
+                        },
+                        {
+                            "Name": "Sacroiliac joint",
+                            "Structural type": "Plane joint",
+                            "Proximal end": ["Sacrum", "Auricular surface"],
+                            "Distal end": ["Ilium", "Auricular surface"]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Joints of the lower extremities",
+                    "Subdivision":[
+                        {
+                            "Name": "Hip joint",
+                            "Alternative name": "Acetabulofemoral joint",
+                            "Structural type": "Ball-and-socket joint",
+                            "Proximal end": ["Pelvis", "Acetabulum"],
+                            "Distal end": ["Femur", "Head"]
+                        },
+                        {
+                            "Name": "Knee joint",
+                            "Structural type": "Hinge joint",
+                            "Subdivision": [
+                                {
+                                    "Name": "Tibiofemoral joint",
+                                    "Structural type": "",
+                                    "Proximal end": ["Femur", ["Lateral condyle", "Medial condyle"]],
+                                    "Distal end": ["Tibia", ["Lateral condyle", "Medial condyle"]]
+                                },
+                                {
+                                    "Name": "Patellofemoral joint",
+                                    "Proximal end": ["Femur", "Patellar surface"],
+                                    "Distal end": ["Patella", "Posterior surface"]
+                                },
+                                {
+                                    "Name": "Proximal tibiofibular joint",
+                                    "Structural type": "Plane joint",
+                                    "Proximal end": ["Tibia", "Lateral condyle"],
+                                    "Distal end": ["Fibula", "Head"]
+                                }
+                            ]
+                        },
+                        {
+                            "Name": "Joints of the ankle",
+                            "Subdivision": [                                
+                                {
+                                    "Name": "Inferior tibiofibular joint",
+                                    "Structural type": "Syndesmosis",
+                                    "Proximal end": ["Fibula", "Distal end"],
+                                    "Distal end": ["Tibia", "Distal end"]
+                                },
+                                {
+                                    "Name": "Talocrural joint",
+                                    "Alternative name": "Upper ankle joint",
+                                    "Structural type": "Mortise-and-tenon joint",
+                                    "Proximal end": ["Tibia", "Plafond"],
+                                    "Distal end": ["Talus", "Proximal surface"]
+                                }                                
+                            ]
+                        },
+                        {
+                            "Name": "Joints of the foot",
+                            "Subdivision": [
+                                {
+                                    "Name": "Intertarsal joint",
+                                    "Subdivision": [
+                                        {
+                                            "Name": "Subtalar joint",
+                                            "Alternative name": "Lower ankle joint",
+                                            "Structural type": "Plane joint",
+                                            "Proximal end": ["Talus", "Inferior surface"],
+                                            "Distal end": ["Calcaneus", "Sustentaculum tali"]
+                                        },
+                                        {
+                                            "Name": "Transverse tarsal joint",
+                                            "Alternative name": "Chopart's joint",
+                                            "Subdivision": [
+                                                {
+                                                    "Name": "Calcaneocuboid joint",
+                                                    "Structural type": "Saddle joint",
+                                                    "Proximal end": ["Calcaneus"],
+                                                    "Distal end": ["Cuboid"]
+                                                },
+                                                {
+                                                    "Name": "Talocalcaneonavicular joint",
+                                                    "Structural type": "Ball-and-socket joint"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "Name": "Cuneonavicular joint"
+                                        },
+                                        {
+                                            "Name": "Cuboideonavicular joint"
+                                        },
+                                        {
+                                            "Name": "Intercuneiform joint"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Name": "Tarsometatarsal joint",
+                                    "Alternative name": "Lisfranc joint"
+                                },
+                                {
+                                    "Name": "Intermetatarsal joint"
+                                },
+                                {
+                                    "Name": "Metatarsophalangeal joint",
+                                    "Alternative name": "Toe knuckles",
+                                    "Structural type": "Condyloid"
+                                }
+                            ]
                         }
                     ]
                 }

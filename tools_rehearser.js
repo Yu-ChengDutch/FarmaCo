@@ -454,7 +454,7 @@ function start_level(level) {
     document.getElementsByTagName("BODY")[0].innerHTML = level_page;
     setEnter();
 
-    fetch("./data_pharmacology.json")
+    fetch("./Data files/data_pharmacology.json")
 
     .then(function(response){
         console.log("- > File found and accessed");
@@ -1301,7 +1301,7 @@ function startSymptoms() {
     document.getElementsByTagName("BODY")[0].innerHTML = level_page;
     setEnter();
 
-    fetch("./data_symptoms.json")
+    fetch("./Data files/data_symptoms.json")
 
     .then(function(response){
         console.log("- > Symptom file found and accessed");
@@ -1371,7 +1371,7 @@ function startDisorders() {
     document.getElementsByTagName("BODY")[0].innerHTML = level_page;
     setEnter();
 
-    fetch("./data_disorders.json")
+    fetch("./Data files/data_disorders.json")
 
     .then(function(response){
         console.log("- > Disorder file found and accessed");
@@ -1449,7 +1449,7 @@ function startSystems() {
     document.getElementsByTagName("BODY")[0].innerHTML = level_page;
     setEnter();
 
-    fetch("./data_angiotensin_system.json")
+    fetch("./Data files/data_angiotensin_system.json")
 
     .then(function(response){
         console.log("- > System file found and accessed");
@@ -1580,11 +1580,11 @@ function start_ophtho(level) {
     var fetchable = "";
 
     if (level < 3) {
-        fetchable = "./data_ocular_anatomy.json"
+        fetchable = "./Data files/data_ocular_anatomy.json"
     } else if (level == 3) {
-        fetchable = "./data_symptoms.json"
+        fetchable = "./Data files/data_symptoms.json"
     } else if (level == 4) {
-        fetchable = "./data_ocular_pathology.json"
+        fetchable = "./Data files/data_ocular_pathology.json"
     }
 
     fetch(fetchable)
@@ -1747,7 +1747,7 @@ function giveHint() {
 
 function start_symptoms(category, level) {
 
-    fetchable = "./data_symptoms.json"
+    fetchable = "./Data files/data_symptoms.json"
 
     fetch(fetchable)
 
@@ -1816,7 +1816,7 @@ function start_symptoms(category, level) {
 
 function start_basics(category, level) {
 
-    fetchable = "./data_anatomy.json"
+    fetchable = "./Data files/data_anatomy.json"
 
     fetch(fetchable)
 
@@ -1875,22 +1875,49 @@ function start_basics(category, level) {
 
             current_object = content_dict[Object.keys(content_dict)[i]];
 
-            if (Object.keys(current_object).includes("Subdivision")) {
+            if (category == "Muscular") {
 
-                if (category == "Muscular" && (level == 0 || level == 1)) {
+                if ((level == 0 || level == 1) && Object.keys(current_object).includes("Subdivision")) {
 
-                    temp_temp_question_array.push(content_question(current_object, "anatomical structures"))
+                    temp_temp_question_array.push(content_question(current_object, "anatomical structures"));
 
-                } else if (category == "Nervous" && (level == 0)) {
+                };
+
+                if (level == 2 && (Object.keys(current_object).includes("Origin") || Object.keys(current_object).includes("Insertion"))) {
+
+                    if (Object.keys(current_object).includes("Origin")) {
+
+                        temp_temp_question_array = temp_temp_question_array.concat(origin_insertion_question(current_object, "Origin"));
+
+                    };
+
+                    if (Object.keys(current_object).includes("Insertion")) {
+
+                        temp_temp_question_array = temp_temp_question_array.concat(origin_insertion_question(current_object, "Insertion"));
+
+                    };
+                    
+                    temp_temp_question_array = temp_temp_question_array.concat(back_and_forth_question(current_object, "anatomical structures"));
+
+                };
+
+
+            }
+
+            if (category == "Nervous") {
+
+                if (level == 0 && Object.keys(current_object).includes("Subdivision")) {
 
                     temp_temp_question_array.push(branch_question(current_object, "nerves"));
 
                 };
 
-            } else if (category == "Nervous" && (level == 1) && Object.keys(current_object).includes("Roots")) {
+                if ((level == 1) && Object.keys(current_object).includes("Roots")) {
 
-                temp_temp_question_array.push(root_question(current_object));
-                
+                    temp_temp_question_array.push(root_question(current_object));
+
+                };
+
             };
 
             temp_question_array.push(temp_temp_question_array);
@@ -1898,6 +1925,19 @@ function start_basics(category, level) {
         };
 
         question_array = (shuffle(temp_question_array)).flat(1);
+
+        if (question_array.length > 40) {
+
+            start = Math.random() * (question_array.length - 40)
+
+            if (start % 2 !== 0) {
+                start = start - 1;
+            };
+
+            question_array = question_array.slice(start, start + 40);
+            
+
+        };
 
     })
     .then(function(){
@@ -1950,7 +1990,7 @@ function content_question(current_object, category) {
 
     };
 
-    question_string = "What " + category + " branch off from " + current_object["Name"] + "?";
+    question_string = "Which " + category + " are included in the following group: " + current_object["Name"] + "?";
     question = ({"Question": question_string, "Answer": branches });
 
     return question
@@ -1984,6 +2024,60 @@ function root_question(current_object) {
 
 }
 
+function origin_insertion_question(current_object, category) {
+
+    question_bone_string = "In what bone(s) does " + current_object["Name"] + " have it's " + category + "?";
+    question_bone = {"Question": question_bone_string, "Answer": current_object[category][0]}; 
+
+    if (current_object[category].length > 1) {
+
+        part_questions = [];
+
+        for (var q = 0; q < current_object[category][0].length; q++) {
+
+            current_structure = current_object[category][0][q]
+
+            question_part_string = "Indeed, " + current_object["Name"] + " has it's " + category + " in " + current_structure + ". In what part thereof does " + current_object["Name"] + " have it's " + category + "?";
+            question_part = {"Question": question_part_string, "Answer": current_object[category][1][q]}; 
+
+            part_questions.push(question_part);
+
+        };
+
+        return [question_bone, part_questions].flat(1);   
+
+    } else {
+
+        return question_bone
+
+    };
+
+}
+
+function back_and_forth_question(current_object) {
+
+    current = current_object["Name"]
+
+    try {
+        
+        console.log("Parent: " + ancestry_dict[current]["Parent"])
+
+        question_up_string = "Of which group is '" + current + "' a part?";
+        question_up = {"Question": question_up_string, "Answer": ancestry_dict[current]["Parent"]}       
+
+        question_down_string = "Indeed! Which structures are included in the following group: " + ancestry_dict[current]["Parent"] + "?";
+        question_down = ({"Question": question_down_string, "Answer": ancestry_dict[ancestry_dict[current]["Parent"]]["Children"] });
+
+        return [question_up, question_down].flat(1);
+
+    } catch {
+        console.log("Issues with: " + current)
+        
+        return {"Question": "Something went wrong, please type 'OK'", "Answer": "OK"}
+    }
+
+}
+
 function branch_question(current_object, category) {
 
     sub_types = [];
@@ -1994,7 +2088,7 @@ function branch_question(current_object, category) {
 
     };
 
-    question_string = "Which " + category + " are included in the following group: " + current_object["Name"] + "?";
+    question_string = "What " + category + " branch off from " + current_object["Name"] + "?";
     question = ({"Question": question_string, "Answer": sub_types });
 
     return question

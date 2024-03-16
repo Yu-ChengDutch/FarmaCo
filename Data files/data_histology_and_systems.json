@@ -1,0 +1,198 @@
+{
+    "Name": "Tissue",
+    "Subdivision": [
+        {
+            "Name": "Connective tissue",
+            "Subdivision": [
+                {
+                    "Name": "Connective tissue proper",
+                    "Subdivision": [
+                        {
+                            "Name": "Loose connective tissue",
+                            "Alternative name": "Areolar tissue",
+                            "ECM": "Semi-fluid",
+                            "Main component": "Ground substance"
+                        },
+                        {
+                            "Name": "Dense connective tissue",
+                            "ECM": "Fibrous",
+                            "Main component": "Type I collagen",
+                            "Structures": ["Tendons", "Ligaments", "Dermis", "Sclera"]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Special connective tissue",
+                    "Subdivision": [
+                        {
+                            "Name": "Supportive connective tissue",
+                            "Subdivision": [
+                                {
+                                    "Name": "Cartilage",
+                                    "Subdivision": [
+                                        {
+                                            "Name": "Fibrocartilage",
+                                            "Main components": ["Type I collagen", "Type II collagen"],
+                                            "Structures": ["Symphysis", "Meniscus", "Labrum", "Articular disc"]
+                                        },
+                                        {
+                                            "Name": "Elastic cartilage",
+                                            "Main components": ["Elastin", "Type II collagen"]
+                                        },
+                                        {
+                                            "Name": "Hyaline cartilage",
+                                            "Main components": ["Type II collagen", "Chondroitin sulphate"],
+                                            "Structures": ["Articular cartilage", "Larynx", "Trachea", "Bronchi", "Costal cartilage"]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Name": "Bone",
+                                    "Main components": ["Type I collagen", "Calcium phosphate"],
+                                    "Subdivision": [
+                                        {
+                                            "Name": "Cortical bone",
+                                            "Alternative name": "Compact bone"
+                                        },
+                                        {
+                                            "Name": "Cancellous bone",
+                                            "Alternative name": "Spongy bone"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "Name": "Fluid connective tissue",
+                            "Subdivision": [
+                                {
+                                    "Name": "Blood"
+                                },
+                                {
+                                    "Name": "Lymph"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "Muscle tissue",
+            "Subdivision": [
+                {
+                    "Name": "Smooth muscle tissue"
+                },
+                {
+                    "Name": "Cardiac muscle tissue"
+                },
+                {
+                    "Name": "Skeletal muscle tissue",
+                    "Subdivision": [
+                        {
+                            "Name": "Type I muscle tissue",
+                            "Definition": "Slow-twitch, aerobic muscle"
+                        },
+                        {
+                            "Name": "Type II muscle tissue",
+                            "Subdivision": [
+                                {
+                                    "Name": "Type IIa muscle tissue",
+                                    "Definition": "Fast-twitch, aerobic muscle"
+                                },
+                                {
+                                    "Name": "Type IIx muscle tissue",
+                                    "Definition": "Faster-twitch, anaerobic muscle"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "Nervous tissue",
+            "Subdivision": [
+                {
+                    "Name": "Peripheral nervous tissue",
+                    "Subdivision": [
+                        {
+                            "Name": "Motor nervous tissue",
+                            "Subdivision": [
+                                {
+                                    "Name": "Alpha motor neurons",
+                                    "Size": "Large",
+                                    "Myelin": "Yes",
+                                    "Target": "Extrafusal muscle fibers"
+                                },
+                                {
+                                    "Name": "Beta motor neurons",
+                                    "Target": "Intrafusal muscle fibers"
+                                },
+                                {
+                                    "Name": "Gamma motor neurons",
+                                    "Size": "Medium",
+                                    "Myelin": "Yes",
+                                    "Target": "Intrafusal muscle fibers"
+                                }
+                            ]
+                        },
+                        {
+                            "Name": "Sensory nervous tissue",
+                            "Subdivision": [
+                                {
+                                    "Name": "Type Ia fibers",
+                                    "Size": "Large",
+                                    "Myelin": "Yes",
+                                    "Target": ["Proprioceptors"]
+                                },
+                                {
+                                    "Name": "Type Ib fibers",
+                                    "Size": "Large",
+                                    "Myelin": "Yes",
+                                    "Target": ["Proprioceptors"]
+                                },
+                                {
+                                    "Name": "Type II fibers",
+                                    "Size": "Medium",
+                                    "Myelin": "Yes",
+                                    "Target": ["Proprioceptors", "Mechanoreceptors"]
+                                },
+                                {
+                                    "Name": "Type III fibers",
+                                    "Size": "Small",
+                                    "Myelin": "No",
+                                    "Target": ["Mechanoreceptors", "Nociceptors", "Thermoreceptors"]
+                                },
+                                {
+                                    "Name": "Type IV fibers",
+                                    "Size": "Small",
+                                    "Myelin": "No",
+                                    "Target": ["Nociceptors", "Thermoreceptors"]
+                                }                                
+                            ]
+                        },
+                        {
+                            "Name": "Autonomic nervous tissue",
+                            "Subdivision": [
+                                {
+                                    "Name": "Preganglionic fibers",
+                                    "Size": "Small",
+                                    "Myelin": "Yes"
+                                },
+                                {
+                                    "Name": "Postganglionic fibers",
+                                    "Size": "Small",
+                                    "Myelin": "No"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "Epithelial tissue"
+        }
+    ]
+}
