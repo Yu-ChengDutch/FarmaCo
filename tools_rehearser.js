@@ -1829,9 +1829,13 @@ function start_basics(category, level) {
         prepare_ancestry(data, "Name", "Subdivision", "Layers");
 
         console.log("- > General ancestry dict is:")
-        console.log(content_dict);
+        console.log(ancestry_dict);
 
-        prepare_ancestry(content_dict[category + " system"], "Name", "Subdivision");
+        if (!(category == "Muscular" && level == 3)) {
+            prepare_ancestry(content_dict[category + " system"], "Name", "Subdivision");
+        } else {
+            console.log("Going for total ancestry")
+        };        
 
         if (category == "Muscular" && level == 0) {
 
@@ -1901,6 +1905,21 @@ function start_basics(category, level) {
 
                 };
 
+                if (level == 3 && (Object.keys(current_object).includes("Origin"))) {
+
+                    if (Object.keys(current_object).includes("Action")) {
+
+                        temp_temp_question_array = temp_temp_question_array.concat(action_question(current_object, "Insertion"));
+
+                    };
+
+                    if (Object.keys(current_object).includes("Innervation")) {
+
+                        temp_temp_question_array = temp_temp_question_array.concat(innervation_question(current_object, "Origin"));
+
+                    };
+
+                };
 
             }
 
@@ -2094,6 +2113,71 @@ function branch_question(current_object, category) {
     return question
 
 }
+
+function action_question(current_object, category) {
+
+    current = current_object["Name"]
+
+    movement_questions = [];
+
+    question_joint_string = "On what joint(s) does the following muscle work: " + current + "?";
+    question_joint = ({"Question": question_joint_string, "Answer": current_object["Action"][0] });
+
+    for (var x = 0; x < current_object["Action"][0].length; x++) {
+
+        question_movement_string = "Correct! " + current + " works on " + current_object["Action"][0][x] + ". However, what movement(s) does it cause therein?";
+        question_movement = ({"Question": question_movement_string, "Answer": current_object["Action"][1][x] });
+
+        movement_questions.push(question_movement);
+
+    };
+
+    return [question_joint, movement_questions].flat(1)
+
+};
+
+function innervation_question(current_object, category) {
+
+    current = current_object["Name"]
+
+    current_nerve = current_object["Innervation"][0];    
+
+    nerve_trace = [];
+
+    question_string = "By what nerve(s) is " + current + " mediated?";
+    question = ({"Question": question_string, "Answer": current_nerve });
+
+    if (Object.keys(ancestry_dict).includes(current_nerve)) {
+
+        next_nerve = ancestry_dict[current_nerve]["Parent"];
+
+        while (next_nerve !== "Spinal nervous system") {
+
+            next_nerve = ancestry_dict[current_nerve]["Parent"]
+            
+            if (next_nerve === "Spinal nervous system") { break };
+
+            nerve_trace_string = "From what nerve does " + current_nerve + " branch off?";
+            nerve_trace_question = ({"Question": nerve_trace_string, "Answer": next_nerve });
+    
+            nerve_trace.push(nerve_trace_question);
+    
+            current_nerve = next_nerve;
+    
+        }
+    
+        return [question, nerve_trace].flat(1);
+
+    } else {
+
+        console.log("Caught")
+        return [question]
+
+    };
+
+    
+
+};
 
 function parse_array(array) {
 
