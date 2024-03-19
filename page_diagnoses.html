@@ -1,7 +1,7 @@
 <html>
 
 <head>
-    <meta name="theme-color" content="limegreen">
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>FarmaCo: Farmacologie voor co-assistenten</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
@@ -20,16 +20,80 @@
 
     <div class="main-container" id="main-container">
 
-        <div class="card" onclick="location.href='page_basics.html'">
+        <div class="inset"><p>General disorders</p></div>
+
+        <div class="card" onclick="start_disorders('Internal')">
 
             <div class="bubble">
-                <img src="./Images/Muscle.png">
+                <img src="./Images/Diagnoses.png">
             </div>
 
             <div class="text-right">
 
-                <H1> Anatomy </H1>
-                <p> & groups of muscles </p>
+                <H1> Internal dis. </H1>
+                <p> or well, medicine</p>
+
+            </div>
+
+        </div>
+
+        <div class="inset"><p>Specific disorders - Internal disorders</p></div>
+
+        <div class="card" onclick="start_disorders('Electrolyte')">
+
+            <div class="bubble">
+                <img src="./Images/Diagnoses.png">
+            </div>
+
+            <div class="text-right">
+
+                <H1> Electrolyte dis. </H1>
+                <p> or electrifying things</p>
+
+            </div>
+
+        </div>
+
+        <div class="card" onclick="start_disorders('Acid-base')">
+
+            <div class="bubble">
+                <img src="./Images/Diagnoses.png">
+            </div>
+
+            <div class="text-right">
+
+                <H1> Acid-base dis. </H1>
+                <p> & what makes them sour </p>
+
+            </div>
+
+        </div>
+
+        <div class="card" onclick="start_disorders('Cardiac')">
+
+            <div class="bubble">
+                <img src="./Images/Diagnoses.png">
+            </div>
+
+            <div class="text-right">
+
+                <H1> Cardiac dis. </H1>
+                <p> & what makes them tick </p>
+
+            </div>
+
+        </div>
+
+        <div class="card" onclick="start_disorders('Cardiac')">
+
+            <div class="bubble">
+                <img src="./Images/Diagnoses.png">
+            </div>
+
+            <div class="text-right">
+
+                <H1> Neurotrans. dis. </H1>
+                <p> & how they're wired </p>
 
             </div>
 

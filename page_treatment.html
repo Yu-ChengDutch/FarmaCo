@@ -1,7 +1,7 @@
 <html>
 
 <head>
-    <meta name="theme-color" content="limegreen">
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>FarmaCo: Farmacologie voor co-assistenten</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
@@ -13,19 +13,19 @@
 
     <div class="top-menu">
 
-        <div class="menu-item" id="item-1" onclick="toPage('Order')">
+        <div class="menu-item" id="item-1" onclick="to_page('Order')">
 
             Hear
 
         </div>
 
-        <div class="menu-item" id="item-2" onclick="toPage('Recognise')">
+        <div class="menu-item" id="item-2" onclick="to_page('Recognise')">
 
             See
 
         </div>
 
-        <div class="menu-item" id="item-4" onclick="toPage('Do')">
+        <div class="menu-item" id="item-4" onclick="to_page('Do')">
 
             Do
 
@@ -34,74 +34,10 @@
     </div>    
 
     <div class="main-container" id="main-container">
-        
-        <div class="inset"> <p> Ophthalmology </p> </div>
-
-        <div class="card" onclick="start_ophtho(1)">
-
-            <div class="bubble">
-                <img src="./Images/Eye.png">
-            </div>
-
-            <div class="text-right">
-
-                <H1> Ocular anatomy </H1>
-                <p> & seeing what is there </p>
-
-            </div>
-
-        </div>
-
-        <div class="card" onclick="start_ophtho(2)">
-
-            <div class="bubble">
-                <img src="./Images/Eye.png">
-            </div>
-
-            <div class="text-right">
-
-                <H1> Ocular phys. </H1>
-                <p> & seeing more still </p>
-
-            </div>
-
-        </div>
-
-        <div class="card" onclick="start_ophtho(3)">
-
-            <div class="bubble">
-                <img src="./Images/Eye.png">
-            </div>
-
-            <div class="text-right">
-
-                <H1> Ocular symp. </H1>
-                <p> & to see is to be </p>
-
-            </div>
-
-        </div>
-
-        <div class="card" onclick="start_ophtho(4)">
-
-            <div class="bubble">
-                <img src="./Images/Eye.png">
-            </div>
-
-            <div class="text-right">
-
-                <H1> Ocular phys. </H1>
-                <p> & seeing more still </p>
-
-            </div>
-
-        </div>
-
-
 
         <div class="inset"> <p> Pharmacology </p> </div>
 
-        <div class="card" onclick="startLevel(1)">
+        <div class="card" onclick="start_level(1)">
 
             <div class="bubble">
                 <img src="./Images/Network.png">
@@ -116,7 +52,7 @@
 
         </div>
         
-        <div class="card" onclick="startLevel(2)">
+        <div class="card" onclick="start_level(2)">
 
             <div class="bubble">
                 <img src="./Images/Network.png">
@@ -126,38 +62,6 @@
 
                 <H1> Drugs </H1>
                 <p> & what they are</p>
-
-            </div>
-
-        </div>
-
-        <div class="inset"> <p> Basic medicine </p> </div>
-
-        <div class="card" onclick="startSymptoms()">
-
-            <div class="bubble">
-                <img src="./Images/Pad.png">
-            </div>
-
-            <div class="text-right">
-
-                <H1> Symptoms </H1>
-                <p> & what they mean </p>
-
-            </div>
-
-        </div>
-
-        <div class="card" onclick="startDisorders()">
-
-            <div class="bubble">
-                <img src="./Images/Pregnancy.png">
-            </div>
-
-            <div class="text-right">
-
-                <H1> Disorders </H1>
-                <p> & what causes them </p>
 
             </div>
 

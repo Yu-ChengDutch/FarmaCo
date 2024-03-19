@@ -167,7 +167,7 @@ var level_page= `
 
         <div class="question-input-card" id="question-input-card">             
 
-            <input type="button" class="button" id ="hint-button" value="X" onclick="giveHint()">
+            <input type="button" class="button" id ="hint-button" value="X" onclick="give_hint()">
             <input type="button" class="button" id ="check-button" value="✓" onclick="grade_answer()">
 
         </div>   
@@ -436,6 +436,9 @@ var pages = {
 var trivial_answers = ["Ja", "Nee", "Substraat", "Inhibitor", "Inducer"];
 
 function to_page(page) {
+
+    console.log(page);
+
     document.getElementById("main-container").innerHTML = pages[page];
 
     question_array = [];
@@ -1200,13 +1203,35 @@ function grade_answer() {
             console.log("- - > Given answer: " + given_answer);
             console.log("- - > Right answer: " + correct_answer);
 
-            if (document.getElementById('remark-card').innerText != "Please repeat the answer" && !trivial_answers.includes(correct_answer)) {
+            console.log(ancestry_dict)
+
+            almost_correct = false;
+
+            try {
+
+                if (ancestry_dict[correct_answer]["Parent"] == given_answer) {almost_correct = true}            
+
+            } catch {
                 
+                console.log("No parent available")
+
+            };
+
+            if (almost_correct) {
+
+                document.getElementById('remark-card').innerText = "Right, but be a bit more precise";
+                document.getElementById('question-title').style.animation = "false 1s linear 0s";
+                setTimeout(function(){document.getElementById('question-title').style.animation = "idle 0s ease-in-out 0s";}, 3000);
+
+            } else if (document.getElementById('remark-card').innerText != "Please repeat the answer" && !trivial_answers.includes(correct_answer)) {
+            
                 document.getElementById('remark-card').innerText = "Please repeat the answer";
                 document.getElementById('question-title').style.animation = "false 1s linear 0s";
                 setTimeout(function(){document.getElementById('question-title').style.animation = "idle 0s ease-in-out 0s";}, 3000);
             
             } else {
+
+                console.log("Made mistake twice")
 
                 document.getElementById('remark-card').innerText = "Het goede antwoord is: " + correct_answer + ". We zullen deze vraag later nogmaals herhalen.";
                 document.getElementById('question-title').style.animation = "false 1s linear 0s";
@@ -1224,7 +1249,7 @@ function grade_answer() {
 
             };
             
-            textfield.value = "";    
+            textfield.value = "";  
 
         }
     } else {
@@ -1365,7 +1390,7 @@ function startSymptoms() {
     /* Check */
 };
 
-function startDisorders() {
+function start_disorders(category) {
 
     openFullscreen();
     document.getElementsByTagName("BODY")[0].innerHTML = level_page;
@@ -1379,58 +1404,53 @@ function startDisorders() {
     })
     .then(function(data){
 
-        original_dictionary = data;
-        base = data.Naam;
+        prepare_ancestry(data, "Name", "Subtypes");
+        prepare_ancestry(content_dict[category + " disorders"], "Name", "Subtypes")
+
+        base = data["Name"];
 
     })
     .then(function(){
         
         console.log("- > Preparing components");
-
-        var explorable_array = [original_dictionary];
         var temp_question_array = [];
 
-        while (explorable_array.length > 0) {
+        for (var i = 0; i < Object.keys(content_dict).length; i++) {
 
-            explorable_item = explorable_array[0];
+            current_key = Object.keys(content_dict)[i]
 
-            if (Object.keys(explorable_item).includes("Symptoms")) {
+            current_object = content_dict[current_key];
 
-                symptoms = explorable_item["Symptoms"].join(", ");
+            if (Object.keys(current_object).includes("Causes")) {
 
-                if (Object.keys(explorable_item).includes("Causes")) {
+                causes = parse_array(current_object["Causes"]);       
+                cause = current_object["Causes"][Math.floor(Math.random() * current_object["Causes"].length)]
 
-                    cause = explorable_item["Causes"][Math.floor(Math.random() * explorable_item["Causes"].length)]
+                if (Object.keys(current_object).includes("Symptoms")) {
 
-                    temp_question_array.push({"Question": "A patient with " + cause + " in their chart presents with the following symptoms: " + symptoms + ". What condition do they have?", "Answer": explorable_item["Name"] });
+                    symptoms = parse_array(current_object["Symptoms"]);
 
-                } else {                
+                    temp_question_array.push({"Question": "A patient with " + cause + " in their chart presents with the following symptoms: " + symptoms + ". What condition do they have?", "Answer": current_object["Name"] });
+                } else {
+                    temp_question_array.push({"Question": "What disease may have the following causes: " + causes + "?", "Answer": current_object["Name"] });
+                }
 
-                    temp_question_array.push({"Question": "A patient presents with the following symptoms: " + symptoms + ". What condition do they have?", "Answer": explorable_item["Name"] });
+            } else if (Object.keys(current_object).includes("Symptoms")) {
 
-                };
-
-            };
-
-            if (Object.keys(explorable_item).includes("Causes")) {
-
-                causes = (explorable_item["Causes"]).join(", ");
-
-                temp_question_array.push({"Question": "What disease may have the following causes: " + causes + "?", "Answer": explorable_item["Name"] });
-
-            };
-
-            if (Object.keys(explorable_item).includes("Subtypes")) {
+                if (current_object["Symptoms"].length > 3) {
+                    symptoms = parse_array(shuffle(current_object["Symptoms"]).slice(0, 3));
+                } else {
+                    symptoms = parse_array(current_object["Symptoms"]);
+                }
                 
-                explorable_array = explorable_array.concat(explorable_item["Subtypes"]);
-
-            };
-
-            explorable_array.shift();
+                temp_question_array.push({"Question": "A patient presents with the following symptoms: " + symptoms + ". What condition do they have?", "Answer": current_object["Name"] });
+            }
 
         };
 
         question_array = (shuffle(temp_question_array)).flat(1);
+
+        console.log(question_array);
 
     })
     .then(function(){
@@ -1728,7 +1748,7 @@ function start_ophtho(level) {
 
 };
 
-function giveHint() {
+function give_hint() {
 
     console.log("- > Asked for hint")
 
@@ -2298,7 +2318,7 @@ function resetButtons() {
     document.getElementById('question-input-card').innerHTML = 
     
     `
-    <input type="button" class="button" id ="hint-button" value="X" onclick="giveHint()">
+    <input type="button" class="button" id ="hint-button" value="X" onclick="give_hint()">
     <input type="button" class="button" id ="check-button" value="✓" onclick="grade_answer()">  
     `
 
@@ -2338,15 +2358,19 @@ function setEnter() {
 
 function openFullscreen() {
 
+    /** 
+
     var elem = document.documentElement;
 
     if (elem.requestFullscreen) {
       elem.requestFullscreen();
-    } else if (elem.webkitRequestFullscreen) { /* Safari */
+    } else if (elem.webkitRequestFullscreen) {
       elem.webkitRequestFullscreen();
-    } else if (elem.msRequestFullscreen) { /* IE11 */
+    } else if (elem.msRequestFullscreen) {
       elem.msRequestFullscreen();
     }
+
+    */
 }
 
 /* From the old function in order to expand mnemonic */

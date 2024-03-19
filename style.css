@@ -17,10 +17,6 @@ h4 {
     color: white
 }
 
-p {
-    font-size: 4vw;
-}
-
 .main-card p {
     color: white
 }
@@ -36,6 +32,11 @@ p {
     margin: 0px;
     background-color: limegreen;
     color: white
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+::-webkit-scrollbar {
+    display: none;
 }
 
 /* Chapter */
@@ -92,26 +93,6 @@ p {
 
 /* Dividers */
 
-.inset {
-    text-align: center;
-}
-
-.inset > p, .inset > h1 {
-    text-shadow: 0px 0.4vh 0.4vh #fff, 0px 0px 0px lightgrey, 0px 0.4vh 0.4vh white;
-    font-size: 8vw;
-    font-weight: 1000;
-    color: rgba(128, 128, 128, 0.46);
-}
-
-.inset-prayer {
-    text-align: center;
-    text-shadow: 0px 0.4vh 0.4vh #fff, 0px 0px 0px lightgrey, 0px 0.4vh 0.4vh white;
-    font-size: 3vw;
-    font-weight: 1000;
-    margin-top: 5vh;
-    color: rgba(128, 128, 128, 0.46);
-}
-
 /* The cards */
 
 .card {
@@ -119,12 +100,13 @@ p {
     background-color: lightgreen;
     box-shadow: 0px 2vh 2vh 0.25vh rgba(144, 238, 144, 0.6);
     display: grid;
-    width: 65vw;
-    padding: 5vw;
-    margin-left: 13vw;
-    margin-bottom: 5vw;
-    margin-top: 5vw;
-    border-radius: 5vw;
+    width: 35vw;
+    height: 12.5vw;
+    padding: 2.5vw;
+    margin-left: 30vw;
+    margin-bottom: 2.5vw;
+    margin-top: 2.5vw;
+    border-radius: 2.5vw;
     transition-duration: 0.5s;
 
 }
@@ -132,13 +114,13 @@ p {
 .card:hover {
     transition-duration: 0.5s;
     box-shadow: 2vw 2vh 2vh 0.25vh rgba(144, 238, 144, 0.6);
-    margin-left: 15vw;
-    width: 70vw;
+    margin-left: 25vw;
+    width: 35vw;
 }
 
 .card:hover > .bubble > img {
-    width: 15vw;
-    margin-left: 3vw;
+    width: 7.5vw;
+    margin-left: 2.5vw;
     transition-duration: 0.25s;
 
 }
@@ -163,8 +145,9 @@ p {
     grid-column: 1;    
     background-color: white;
 
-    width: 25vw;
-    border-radius: 15vw;
+    width: 12.5vw;
+    height: 12.5vw;
+    border-radius: 12.5vw;
 
     transition-duration: 0.5s;
 
@@ -173,25 +156,26 @@ p {
 
 .bubble > img {
     transition-duration: 0.5s;
-    width: 15vw;
-    margin: 5vw;
+    width: 7.5vw;
+    height: 7.5vw;
+    margin: 2.5vw;
 }
 
 .text-right {
     grid-column: 2;
-    padding-top: 4vw;
+    padding-top: 0vw;
     margin-left: 2vw;
     text-align: left;
-    min-width: 35vw;
+    min-width: 17.5vw;
 }
 
 .text-right p {
-    font-size: 3vw;
+    font-size: 1.5vw;
     font-weight: 300;
 }
 
 .text-right H1 {
-    font-size: 5vw;
+    font-size: 2.5vw;
     color: white;
     font-weight: 5vw;
     text-shadow: inset 0.1vw 0.15vh 0.15vh 0.0025vh rgba(144, 238, 144, 0.602);
@@ -205,10 +189,36 @@ p {
     margin-left: 15vw;
 }
 
+p {
+    font-size: 2vw;
+}
+
 
 #active:hover {
     box-shadow: 0px 2vh rgba(0, 128, 0, 1);
     transition: 0.3s;
+}
+
+/* Inset */
+
+.inset {
+    text-align: center;
+}
+
+.inset > p, .inset > h1 {
+    text-shadow: 0px 0.4vh 0.4vh #fff, 0px 0px 0px lightgrey, 0px 0.4vh 0.4vh white;
+    font-size: 4vw;
+    font-weight: 1000;
+    color: rgba(128, 128, 128, 0.46);
+}
+
+.inset-prayer {
+    text-align: center;
+    text-shadow: 0px 0.4vh 0.4vh #fff, 0px 0px 0px lightgrey, 0px 0.4vh 0.4vh white;
+    font-size: 3vw;
+    font-weight: 1000;
+    margin-top: 5vh;
+    color: rgba(128, 128, 128, 0.46);
 }
 
 /* Links */
@@ -230,13 +240,30 @@ a:hover, a:active {
     background-color: lightgreen;
     box-shadow: 0px 2vh 2vh 0.25vh rgba(144, 238, 144, 0.6);
     display: grid;
-    width: 60vw;
+    width: 30vw;
     height: 50vh;
     padding: 5vw;
-    margin-left: 15vw;
+    margin-left: 30vw;
     margin-bottom: 5vw;
     margin-top: 5vw;
     border-radius: 5vw;
+}
+
+#check-button {
+    float: right;
+    background-color: rgb(206, 255, 206);
+}
+
+#hint-button {
+    float: left;
+    background-color: rgb(255, 217, 217);
+}
+
+#next-button {
+    margin-left: 0vw;
+    float: left;
+    background-color: rgb(206, 255, 206);
+    width: 60vw;
 }
 
 #remark-card {
@@ -248,31 +275,41 @@ a:hover, a:active {
     margin-top: 5vh;
     background-color: white;
     overflow-y: scroll;
+    text-align: center;
+    font-size: 2vw;
 }
 
 .question-title-card {
     color: gray;
     height: 18vh;
-    width: 60vw;
-    border-radius: 5vw;
+    width: 25vw;
     padding-top: 8vh;
     padding-bottom: 5vh;
+    padding-left: 2.5vw;
+    padding-right: 2.5vw;
     box-shadow: inset 0px 2vh 2vh 0.25vh rgba(144, 238, 144, 0.6);
     background-color: white;
     text-align: center;
+    border-radius: 5vw;
     overflow-y: scroll;
 }
 
 #text-field {
-    width: 50vw;
+    width: 30vw;
     height: 10vh;
     font-weight: bold;
-    font-size: 2.5vw;
+    font-size: 1vw;
     color: black;
     margin-top: 2vh;
     padding-left: 5vw;
     padding-right:5vw;
     border-radius: 5vw;
+    border: none;
+    box-shadow: inset 0px 2vh 2vh 0.25vh rgba(144, 238, 144, 0.6);
+}
+
+#question-inset {
+    margin-top: 3vh;
 }
 
 .button {
@@ -284,13 +321,41 @@ a:hover, a:active {
     font-size: 2.5vw;
     color: white;
     margin-top: 2.5vh;
+    border: none;
+    box-shadow: 0px 1vh 1vh 0.25vh rgba(101, 166, 101, 0.6);
+    transition-duration: 0.5s;
+}
+
+.button:hover, .button:active {
+    width: 20vh;
+    transition-duration: 0.5s;
 }
 
 .question-input-card {
     display: inline-block;
 }
 
+.main-title {
+    text-align: center;
+    font-size: 3vw;
+    font-weight: 1000;
+    color: rgba(22, 65, 193, 0.46);
+    padding-top: 1vh;
+}
+
+.main-subtitle {
+    text-align: center;
+    color: rgba(19, 53, 157, 0.46);
+    margin-top: 1vh;
+}   
+
 @media only screen and (max-width: 600px) {
+
+    p {
+        font-size: 4vw;
+    }
+
+    /* Specific */
 
     .main-title {
         text-align: center;
@@ -308,10 +373,6 @@ a:hover, a:active {
 
     #question-inset {
         margin-top: 6vh;
-    }
-
-    #remark-card {
-        text-align: center;
     }
 
     .button {        
@@ -336,33 +397,20 @@ a:hover, a:active {
         transition-duration: 0.5s;
     }
 
-    #check-button {
-        float: right;
-        background-color: rgb(206, 255, 206);
-    }
-
-    #hint-button {
-        float: left;
-        background-color: rgb(255, 217, 217);
-    }
-
-    #next-button {
-        margin-left: 0vw;
-        float: left;
-        background-color: rgb(206, 255, 206);
-        width: 60vw;
-    }
-
     .question-title-card {
         color: gray;
         height: 15vh;
+        padding-left: 5vw;
+        padding-right: 5vw;
         border-radius: 5vw;
         padding-top: 4vh;
         padding-bottom: 0vh;
+        width: 50vw;
     }
 
     #text-field {
         width: 60vw;
+        font-size: 2.5vw;
         border: none;
         box-shadow: inset 0px 2vh 2vh 0.25vh rgba(144, 238, 144, 0.6);
     }
@@ -370,23 +418,153 @@ a:hover, a:active {
     .question-card {
         width: 60vw;
         height: 40vh;
+        margin-left: 15vw;
     }
 
-    @keyframes correct { 
-        0%      { color: rgba(128, 128, 128, 0.46); text-shadow: 0px 0.4vh 0.4vh #fff, 0px 0px 0px lightgrey, 0px 0.4vh 0.4vh white; } 
-        50%     { color: rgb(101, 177, 101); text-shadow: 0px 0px 4vh rgb(101, 177, 101)} 
-        100%    { color: rgba(128, 128, 128, 0.46); text-shadow: 0px 0.4vh 0.4vh #fff, 0px 0px 0px lightgrey, 0px 0.4vh 0.4vh white; }
+    /* The cards */
+
+    .card {
+        /* Add shadows */
+        background-color: lightgreen;
+        box-shadow: 0px 2vh 2vh 0.25vh rgba(144, 238, 144, 0.6);
+        display: grid;
+        width: 65vw;
+        height: 25vw;
+        padding: 5vw;
+        margin-left: 13vw;
+        margin-bottom: 5vw;
+        margin-top: 5vw;
+        border-radius: 5vw;
+        transition-duration: 0.5s;
+
     }
 
-    @keyframes false { 
-        0%      { color: rgba(128, 128, 128, 0.46); text-shadow: 0px 0.4vh 0.4vh #fff, 0px 0px 0px lightgrey, 0px 0.4vh 0.4vh white;} 
-        50%     { color: rgb(182, 100, 100); text-shadow: 0px 0px 4vh rgb(182, 100, 100)} 
-        100%    { color: rgba(128, 128, 128, 0.46); text-shadow: 0px 0.4vh 0.4vh #fff, 0px 0px 0px lightgrey, 0px 0.4vh 0.4vh white;}
+    #remark-card {
+        font-size: 4vw;
     }
 
-    @keyframes idle {
-        100% {}
+    .card:hover {
+        transition-duration: 0.5s;
+        box-shadow: 2vw 2vh 2vh 0.25vh rgba(144, 238, 144, 0.6);
+        margin-left: 15vw;
+        width: 70vw;
     }
+
+    .card:hover > .bubble > img {
+        width: 15vw;
+        margin-left: 3vw;
+        transition-duration: 0.25s;
+
+    }
+
+    .card:hover > .bubble {
+        box-shadow: inset 1vw 1.5vh 1.5vh 0.25vh rgba(144, 238, 144, 0.602);
+        transition-duration: 0.25s;
+    }
+
+    .card:active {
+        background-color: lightcoral;
+        transition-duration: 0.25s;
+        box-shadow: 2vw 2vh 2vh 0.25vh rgba(240, 128, 128, 0.596);
+    }
+
+    .card:active > .bubble {
+        box-shadow: inset 1vw 1.5vh 1.5vh 0.25vh rgba(240, 128, 128, 0.599);
+        transition-duration: 0.25s;
+    }
+
+    .bubble {
+        grid-column: 1;    
+        background-color: white;
+
+        width: 25vw;
+        height: 25vw;
+        border-radius: 15vw;
+
+        transition-duration: 0.5s;
+
+        box-shadow: inset 0px 1.5vh 1.5vh 0.25vh rgba(144, 238, 144, 0.602);
+    }
+
+    .bubble > img {
+        transition-duration: 0.5s;
+        width: 15vw;
+        height: 15vw;
+        margin: 5vw;
+    }
+
+    .text-right {
+        grid-column: 2;
+        padding-top: 4vw;
+        margin-left: 2vw;
+        text-align: left;
+        min-width: 35vw;
+    }
+
+    .text-right p {
+        font-size: 3vw;
+        font-weight: 300;
+    }
+
+    .text-right H1 {
+        font-size: 5vw;
+        color: white;
+        font-weight: 5vw;
+        text-shadow: inset 0.1vw 0.15vh 0.15vh 0.0025vh rgba(144, 238, 144, 0.602);
+    }
+
+    #right {
+        margin-left: 10vw;
+    }
+
+    #left {
+        margin-left: 15vw;
+    }
+
+
+    #active:hover {
+        box-shadow: 0px 2vh rgba(0, 128, 0, 1);
+        transition: 0.3s;
+    }
+
+    /* Inset */
+
+    .inset {
+        text-align: center;
+    }
+
+    .inset > p, .inset > h1 {
+        text-shadow: 0px 0.4vh 0.4vh #fff, 0px 0px 0px lightgrey, 0px 0.4vh 0.4vh white;
+        font-size: 8vw;
+        font-weight: 1000;
+        color: rgba(128, 128, 128, 0.46);
+    }
+
+    .inset-prayer {
+        text-align: center;
+        text-shadow: 0px 0.4vh 0.4vh #fff, 0px 0px 0px lightgrey, 0px 0.4vh 0.4vh white;
+        font-size: 3vw;
+        font-weight: 1000;
+        margin-top: 5vh;
+        color: rgba(128, 128, 128, 0.46);
+    }
+
+}
+
+@keyframes correct { 
+    0%      { color: rgba(128, 128, 128, 0.46); text-shadow: 0px 0.4vh 0.4vh #fff, 0px 0px 0px lightgrey, 0px 0.4vh 0.4vh white; } 
+    50%     { color: rgb(101, 177, 101); text-shadow: 0px 0px 4vh rgb(101, 177, 101)} 
+    100%    { color: rgba(128, 128, 128, 0.46); text-shadow: 0px 0.4vh 0.4vh #fff, 0px 0px 0px lightgrey, 0px 0.4vh 0.4vh white; }
+}
+
+@keyframes false { 
+    0%      { color: rgba(128, 128, 128, 0.46); text-shadow: 0px 0.4vh 0.4vh #fff, 0px 0px 0px lightgrey, 0px 0.4vh 0.4vh white;} 
+    50%     { color: rgb(182, 100, 100); text-shadow: 0px 0px 4vh rgb(182, 100, 100)} 
+    100%    { color: rgba(128, 128, 128, 0.46); text-shadow: 0px 0.4vh 0.4vh #fff, 0px 0px 0px lightgrey, 0px 0.4vh 0.4vh white;}
+}
+
+@keyframes idle {
+    100% {}
 }
 
 .button:active {
