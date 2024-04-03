@@ -1661,7 +1661,8 @@
                                                 },
                                                 {
                                                     "Name": "Nn. Thoracales superiores",
-                                                    "Roots": ["T2", "T3", "T4", "T5", "T6"]
+                                                    "Roots": ["T2", "T3", "T4", "T5", "T6"],
+                                                    "Sensory innervation": ["Anterior thorax"]
                                                 },
                                                 {
                                                     "Name": "Nn. Thoracoabdominales",
@@ -1782,22 +1783,8 @@
                                                         {
                                                             "Name": "N. Tibialis",
                                                             "Roots": ["L4", "L5", "S1", "S2", "S3"],
-                                                            "Subdivision": [
-                                                                {
-                                                                    "Name": "N. Cutaneus surae medialis",
-                                                                    "Sensory innervation": ["Posterior leg", "Medial leg", "Ventral heel"]
-                                                                },
-                                                                {
-                                                                    "Name": "N. Plantaris medialis",
-                                                                    "Sensory innervation": ["Medio-ventral foot"],
-                                                                    "Roots": ["L4", "L5"]
-                                                                },
-                                                                {
-                                                                    "Name": "N. Plantaris lateralis",
-                                                                    "Sensory innervation": ["Latero-ventral foot"],
-                                                                    "Roots": ["S1", "S2"]
-                                                                }
-                                                            ]
+                                                            "Main root": "L5",
+                                                            "Sensory innervation": ["Lateral ventral foot"]
                                                         },
                                                         {
                                                             "Name": "N. Fibularis communis",

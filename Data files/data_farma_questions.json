@@ -1,0 +1,2030 @@
+{
+    "Name": "Questions",
+    "Subdivision": [
+        {
+            "Name": "Module A: Pijnmedicatie",
+            "Questions": [
+                {
+                    "Question": "Via welk mechanisme coupeert N-actyl-cysteïne een paracetamolintoxicatie?",
+                    "Answer": ["Gluthation"]
+                },
+                {
+                    "Question": "Welke klasse medicatie geeft een verhoogd risico op nierfalen onder een NSAID?",
+                    "Answer": ["RAS-remmers"]
+                },
+                {
+                    "Question": "Welke risicofactor geeft een verhoogd risico op nierfaen onder een NSAID?",
+                    "Answer": ["Laag effectief circulerend volume"]
+                },
+                {
+                    "Question": "Wat is de eerste keuze voor een laxantium bij opiaten?",
+                    "Answer": ["Movicolon"]
+                },
+                {
+                    "Question": "Voor hoeveel procent wordt codeïne omgezet in morfine?",
+                    "Answer": ["10%"]
+                },
+                {
+                    "Question": "Hoeveel procent van de bevolking zet codeïne niet om in morfine?",
+                    "Answer": ["10%"]
+                },
+                {
+                    "Question": "Met welk middel coupeer je ademdepressies bij opiaten?",
+                    "Answer": ["Naloxon"]
+                },
+                {
+                    "Question": "Hoe snel zie je effect van Naloxon?",
+                    "Answer": ["Enkele minuten"]
+                },
+                {
+                    "Question": "Via welk mechanisme zorgt slechte voeding voor hepatotoxiciteit van Paracetamol?",
+                    "Answer": ["Gluthation"]
+                },
+                {
+                    "Question": "De indicaties voor het starten van een PPI naast een NSAID zijn onderverdeeld in absolute en relatieve criteria. Wat zijn de 3 absolute?",
+                    "Answer": ["Ulcus pepticum in de VG", "Leeftijd >70 jaar", "H. Pylori infectie"]
+                },
+                {
+                    "Question": "De indicaties voor het starten van een PPI naast een NSAID zijn onderverdeeld in absolute en relatieve criteria. Wat zijn de 3 relatieve?",
+                    "Answer": ["Leeftijd 60-70 jaar", "Anticoagulantia", "Ernstige reumatoïde arthritis", "HF", "DM", "Hoge dosis NSAID's", "Corticosteroïden", "Spironolacton", "SSRI's"]
+                },
+                {
+                    "Question": "Wat zijn de 7 belangrijkste renaal geklaarde medicamenten?",
+                    "Answer": ["Dabigatran", "Sotalol", "Morfine", "Digoxine", "Lithium", "Nitrofurantoïne", "Metformine"]
+                },
+                {
+                    "Question": "Geeft ASA in niet-analgetische doseringen ook al nierfunctieverlies?",
+                    "Answer": ["Nee"]
+                },
+                {
+                    "Question": "Voor welke 3 bijwerkingen zorgen de mu-receptoren?",
+                    "Answer": ["Ademhalingsdepressie", "Euforie", "Afhankelijkheid"]
+                },
+                {
+                    "Question": "Voor welke 3 bijwerkingen zorgen de k-receptoren?",
+                    "Answer": ["Miosis", "Sedatie", "Dysforie"]
+                },
+                {
+                    "Question": "Wat is de F van oromucosale Fentanyl?",
+                    "Answer": ["25%"]
+                },
+                {
+                    "Question": "Wat is de Tmax van nasale Fentanyl?",
+                    "Answer": ["12-20 minuten"]
+                },
+                {
+                    "Question": "Wat is de halfwaardetijd van nasale Fentanyl?",
+                    "Answer": ["3-4 uur"]
+                },
+                {
+                    "Question": "Hoelang blijft transdermale Fentanyl MGA actief?",
+                    "Answer": ["72 uur"]
+                },
+                {
+                    "Question": "Wat is de halfwaardetijd van transdermale Fentanyl MGA?",
+                    "Answer": ["17 uur"]
+                },
+                {
+                    "Question": "Hoe heet de kortwerkende variant van Oxycodon?",
+                    "Answer": ["Oxynorm"]
+                },
+                {
+                    "Question": "Hoe heet de langwerkende variant van Oxycodon?",
+                    "Answer": ["Oxycodon"]
+                },
+                {
+                    "Question": "Wat doe je als een opioïd te veel bijweringen of te weinig effect geeft?",
+                    "Answer": ["Opioïdrotatie"]
+                },
+                {
+                    "Question": "Welke laxans kan krampen geven?",
+                    "Answer": ["Lactulose"]
+                },
+                {
+                    "Question": "Wat is de belangrijkste bijwering van magnesiumhydroxide?",
+                    "Answer": ["Hypermagnesiëmie"]
+                },
+                {
+                    "Question": "Wat zijn de symptomen van hypermagnesiëmie?",
+                    "Answer": ["Ritmestoornissen", "Hyporeflexie", "Ademhalingsdepressie"]
+                }
+            ]
+        },
+        {
+            "Name": "Module B: Antistolling",
+            "Questions": [
+                {
+                    "Question": "Binnen hoe veel tijd vind de primaire hemostase plaats?",
+                    "Answer": ["8 minuten"]
+                },
+                {
+                    "Question": "Wat is een andere naam voor trombine?",
+                    "Answer": ["Factor IIa"]
+                },
+                {
+                    "Question": "Welke 5 stoffen stimuleren de trombocytenaggregatie het sterkst?",
+                    "Answer": ["Serotonine", "Tromboxaan", "Trombine", "Noradrenaline", "ADP"]
+                },
+                {
+                    "Question": "Cyclo-oxygenase faciliteert de omzetting van arachidonzuur naar welke stof?",
+                    "Answer": ["Tromboxaan"]
+                },
+                {
+                    "Question": "Hoe lang leeft een trombocyt?",
+                    "Answer": ["10 dagen"]
+                },
+                {
+                    "Question": "Als een TAR gestopt moet worden, hoe lang voor de operatie doe je dit dan?",
+                    "Answer": ["5 dagen"]
+                },
+                {
+                    "Question": "Wat is het mechanisme achter clopidogrel?",
+                    "Answer": ["ADP-receptor"]
+                },
+                {
+                    "Question": "Welke twee TAR's zijn irreversibel?",
+                    "Answer": ["Acetylsalicylzuur", "Clopidogrel"]
+                },
+                {
+                    "Question": "WAt is de halfwaardetijd van dipyridiamol?",
+                    "Answer": ["12 uur"]
+                },
+                {
+                    "Question": "Als dipyridiamol gestopt moet worden, hoe lang vantevoren doen je dat dan?",
+                    "Answer": ["1 dag"]
+                },
+                {
+                    "Question": "Bij welke drie aandoeningen (afkortingen) wordt ASA gegeven?",
+                    "Answer": ["MI", "CABG", "AP"]
+                },
+                {
+                    "Question": "Voor welke twee aandoeningen is de combinatie clopidogrel en dipyridiamol geïndiceerd?",
+                    "Answer": ["CVA", "TIA"]
+                },
+                {
+                    "Question": "Welk middel is geïndiceerd bij perifeer arteriëel vaatijden?",
+                    "Answer": ["Clopidogrel"]
+                },
+                {
+                    "Question": "Bij welke drie typen OK stop je TAR's?",
+                    "Answer": ["Neurochirurgie", "KNO-chirurgie", "Biopten"]
+                },
+                {
+                    "Question": "Welk proces, naast inflammatie, wordt verhinderd door corticosteroïden?",
+                    "Answer": ["Wondgenezing"]
+                },
+                {
+                    "Question": "Wat is het mechanisme achter Desmopressine?",
+                    "Answer": ["Von Willebrandfactor"]
+                },
+                {
+                    "Question": "Hoe lang na de start van ASA kun je thrombocyten geven?",
+                    "Answer": ["40 minuten"]
+                },
+                {
+                    "Question": "Hoe lang na start van clopidogrel kun je thrombocyten geven?",
+                    "Answer": ["6-12 uur"]
+                },
+                {
+                    "Question": "Bij welke TAR heeft het geen zin om thrombocyten te geven?",
+                    "Answer": ["Dipydridiamol"]
+                },
+                {
+                    "Question": "Welk klasse medicament moet op INR gedoseerd worden?",
+                    "Answer": ["Coumarinederivaten"]
+                },
+                {
+                    "Question": "Bij welke klasse bloedverdunner, wordt het bloed in eerste instantie wat dikker?",
+                    "Answer": ["Coumarinederivaten"]
+                },
+                {
+                    "Question": "In welk proces is proteïne S geïmpliceerd?",
+                    "Answer": ["Fibrinolyse"]
+                },
+                {
+                    "Question": "Wat is de halfwaardetijd van Acenocoumarol?",
+                    "Answer": ["8 uur"]
+                },
+                {
+                    "Question": "Wat is de halfwaardetijd van Fenprocoumon?",
+                    "Answer": ["160 uur"]
+                },
+                {
+                    "Question": "Hoe lang werkt Acenocoumarol ongeveer?",
+                    "Answer": ["Enkele dagen"]
+                },
+                {
+                    "Question": "Hoe lang werkt Fenprocoumon ongeveer?",
+                    "Answer": ["Enkele weken"]
+                },
+                {
+                    "Question": "Hoe lang duurt het voor coumarinederivaten goed- en wel werkzaam zijn?",
+                    "Answer": ["2-3 dagen"]
+                },
+                {
+                    "Question": "Hoe lang moet je bridge met heparine bij de start van coumarinederivaten?",
+                    "Answer": ["1 week"]
+                },
+                {
+                    "Question": "Bij welke 4 aandoeningen zijn coumarinederivaten geïndiceerd?",
+                    "Answer": ["AF", "Kunstklep", "DVT", "LE"]
+                },
+                {
+                    "Question": "Vanaf welke CHADVASc geef je bij AF coumarinederivaten?",
+                    "Answer": ["1"]
+                },
+                {
+                    "Question": "Hoe lang geef je bij een mechanische kunstklep coumarinederivaten?",
+                    "Answer": ["Levenslang"]
+                },
+                {
+                    "Question": "Hoe lang geef je bij een biologische kunstklep coumarinederivaten?",
+                    "Answer": ["3 maanden"]
+                },
+                {
+                    "Question": "hoe lang geef je bij een enkele episode DVT/LE coumarinederivaten?",
+                    "Answer": ["6 maanden"]
+                },
+                {
+                    "Question": "Ter coupering van welk middel moet herhaaldelijk, op geleide van INR, vitamine K worden toegediend?",
+                    "Answer": ["Fenprocoumon"]
+                },
+                {
+                    "Question": "Wat zijn de 3 belangrijkste risicofactoren voor het doorschieten van de INR onder coumarinederivaten?",
+                    "Answer": ["Koorts", "Slechte intake", "Onregematig alcoholgebruik"]
+                },
+                {
+                    "Question": "Onder welke medicatie kan de INR onder coumarinederivaten doorschieten?",
+                    "Answer": ["Co-trimoxazol"]
+                },
+                {
+                    "Question": "Onder welke 3 medicamenten wordt de spiegel van coumarinederivaten verlaagd?",
+                    "Answer": ["Carbamazepine", "Fenytoïne", "Rifampicine"]
+                },
+                {
+                    "Question": "Hoe snel heeft cofact effect bij VKA?",
+                    "Answer": ["Direct"]
+                },
+                {
+                    "Question": "Hoe snel heeft orale vit. K suppletie effect bij een VKA?",
+                    "Answer": ["8 uur"]
+                },
+                {
+                    "Question": "Bij welke CHADVASc score moet een coumarinederivaat met een LMWH gebridget worden?",
+                    "Answer": ["8"]
+                },
+                {
+                    "Question": "Wat doet koorts met het bloedingsrisico onder coumarinederivaten?",
+                    "Answer": ["Toename"]
+                },
+                {
+                    "Question": "Welke medicatie moet je onder coumarinederivaten vermijden?",
+                    "Answer": ["NSAID's"]
+                },
+                {
+                    "Question": "Voor hoeveel procent valt een LMWH maximaal te antagoneren met protamine?",
+                    "Answer": ["60%"]
+                },
+                {
+                    "Question": "Wat is een belangrijke mogelijke bijwering van protamine?",
+                    "Answer": ["Anafylaxie"]
+                },
+                {
+                    "Question": "Onder welke middelen kan de DOAC spiegel stijgen?",
+                    "Answer": ["Verapamil", "Itraconazol"]
+                },
+                {
+                    "Question": "Stel je wil een DOAC stoppen bij een hoog-risico ingreep, hoe lang vantevoren doe je dit dan?",
+                    "Answer": ["12-24 uur"]
+                },
+                {
+                    "Question": "Bij welke 3 aandoeningen zijn DOAC's geïndiceerd?",
+                    "Answer": ["Non-valvulair AF", "DVT", "LE"]
+                },
+                {
+                    "Question": "Welke DOAC wordt renaal geklaard?",
+                    "Answer": ["Dabigatran"]
+                },
+                {
+                    "Question": "Wat is het antidotum voor Dabigatran?",
+                    "Answer": ["Idarucizumab"]
+                },
+                {
+                    "Question": "Bij welke twee DOAC's moet je de eerste week na de start ook heparine geven?",
+                    "Answer": ["Edoxaban", "Dabigatran"]
+                },
+                {
+                    "Question": "Welke 4 stollingsfactoren zijn vitamine K afhankelijk?",
+                    "Answer": ["II", "VII", "XI", "V"]
+                },
+                {
+                    "Question": "Waar helpt Von Willebrandfactor de trombocyt aan binden?",
+                    "Answer": ["Vaatwand"]
+                },
+                {
+                    "Question": "Welke twee stollingsfactoren zijn nodig om X om te zetten naar Xa",
+                    "Answer": ["IX", "VII"]
+                },
+                {
+                    "Question": "Stollingsfactor X is geïmpliceerd in de omzetting van welke stollingsfactor?",
+                    "Answer": ["II"]
+                },
+                {
+                    "Question": "Voor de omzetting van welke stof is factor IIa nodig?",
+                    "Answer": ["Fibrinogeen"]
+                },
+                {
+                    "Question": "Wat is de halfwaardetijd van Ticagrelor?",
+                    "Answer": ["7 uur"]
+                },
+                {
+                    "Question": "Voor hoeveel maanden na een MI geef je zowel Ticagrelor als ASA?",
+                    "Answer": ["12 maanden"]
+                },
+                {
+                    "Question": "Via welke mechanisme werkt Heparine?",
+                    "Answer": ["Anti-trombine III"]
+                },
+                {
+                    "Question": "Wat is de halfwaardetijd van Ongefractioneerde heparine?",
+                    "Answer": ["1,5-2 uur"]
+                },
+                {
+                    "Question": "Van welke antistolling is de spiegel dusdanig onregelmatig dat deze onder geleide van de aPTT gegeven moet worden?",
+                    "Answer": ["Ongefractioneerde heparine"]
+                },
+                {
+                    "Question": "Via welk mechniasme werken alle LMWH's behalve Dabigatran?",
+                    "Answer": ["Anti-Xa"]
+                },
+                {
+                    "Question": "Wat is de halfwaardetijd van Dabigatran",
+                    "Answer": ["12 uur"]
+                },
+                {
+                    "Question": "Met welke maat wordt de effectiviteit van LMWH's gemeten?",
+                    "Answer": ["Anti-Xa activiteit"]
+                },
+                {
+                    "Question": "Welke LMWH wordt profylactisch gegeven?",
+                    "Answer": ["Nadroparine"]
+                },
+                {
+                    "Question": "Bij welke omstandigheden wordt er stollingsprofylaxe toegediend?",
+                    "Answer": ["Verloskundige gynaecologie", ">4 dagen immbilisatie", "Risico op VTE Paduscore >1", "Operatie >30 minuten"]
+                },
+                {
+                    "Question": "Hoe lang na de ingreep moet worden gestart met stollingsprofylaxe?",
+                    "Answer": ["6-8 uur"]
+                },
+                {
+                    "Question": "Welke twee opties zijn er voor de stopdatum van stollingsprofylaxe rondom heelkunde of mobilisatie?",
+                    "Answer": ["Minimaal 5 dagen", "Tot remobilisatie"]
+                },
+                {
+                    "Question": "Welk antidotum moet zeer langzaam op worden laten gelopen?",
+                    "Answer": ["Protamine"]
+                },
+                {
+                    "Question": "Welke anti-factor wordt maar deels door Protamine gecoupeert?",
+                    "Answer": ["Anti-Xa"]
+                },
+                {
+                    "Question": "Als iemand veneuze antistolling benodigt, en ook een CYP3A4 probleem heeft. Welke antistolling kan dan het best gegeven worden?",
+                    "Answer": ["Coumarinederivaten"]
+                },
+                {
+                    "Question": "Welk middel is effectief bij het couperen van Edoxaban etc.?",
+                    "Answer": ["Andexanet Alfa"]
+                }
+            ]
+        },
+        {
+            "Name": "Module C: Cardiovasculaire middelen",
+            "Questions": [
+                {
+                    "Question": "Noem de 8 onderdelen van de CHA2DS2-VASc score.",
+                    "Answer": ["Hartfalen", "Hypertensie", "Leeftijd >75 jaar", "Diabetes Mellitus", "CVA of embolie in de VG", "Atherosclerose", "Leeftijd 65-74 jaar", "Vrouw"]
+                },
+                {
+                    "Question": "Welke 2 onderdelen van de CHA2DS2-VASc score leveren respectievelijk 2 punten op?",
+                    "Answer": ["Leeftijd >75 jaar", "CVA of embolie in de VG"]
+                },
+                {
+                    "Question": "Bij welke 2 aandoeningen zijn thiazidediuretica geïndiceerd?",
+                    "Answer": ["Hypertensie", "Hartfalen"]
+                },
+                {
+                    "Question": "Bij welke 2 aandoeningen zijn lisdiuretica geïndiceerd?",
+                    "Answer": ["Hartfalen", "Levercirrose"]
+                },
+                {
+                    "Question": "Bij welke aandoening is spironolacton als monotherapie geïndiceerd?",
+                    "Answer": ["Hartfalen NYH3"]
+                },
+                {
+                    "Question": "Hoe lang blijft Furosemide actief?",
+                    "Answer": ["6 uur"]
+                },
+                {
+                    "Question": "Wat zijn de twee belangrijkste bijwerkingen van thiazidediuretica?",
+                    "Answer": ["Hyponatriëmie", "Hypokaliëmie"]
+                },
+                {
+                    "Question": "Wat zijn de twee belangrijkste bijwerkingen van lisdiuretica?",
+                    "Answer": ["Dehydratie", "Hypokaliëmie"]
+                },
+                {
+                    "Question": "Welke twee klasse medicatie zijn de belangrijkste oorzaken van hyperkaliëmie?",
+                    "Answer": ["Kaliumsparende diuretica", "ACE-remmers"]
+                },
+                {
+                    "Question": "Wat is de belangrijkste dietaire risicofactor voor een hyperkaliëmie?",
+                    "Answer": ["Zoutarm dieet"]
+                },
+                {
+                    "Question": "Welk klasse medicatie dat an sich geen hyponatriëmie oplevert, geeft met thiazidediuretica toch een verhoogd risico?",
+                    "Answer": ["Lisdiuretica"]
+                },
+                {
+                    "Question": "Wat zijn de drie belangrijkste klasse medicatie die hyponatriëmie veroorzaken?",
+                    "Answer": ["Thiazidediuretica", "SSRI's", "Carbamazepine"]
+                }, 
+                {
+                    "Question": "Wat is de belangrijkste leefstijl-gerelateerde risicofactor voor hyponatriëmie?",
+                    "Answer": ["Tea and toast"]
+                },
+                {
+                    "Question": "Hoe lang na de start van een thiazidediureticum zou je hyponatriëmie moeten zien?",
+                    "Answer": ["2 weken"]
+                },
+                {
+                    "Question": "Wat zijn de 4 symptomen van hyponatriëmie?",
+                    "Answer": ["Misselijkheid", "Vermoeidheid", "Asthenie", "Verwardheid"]
+                },
+                {
+                    "Question": "Vanaf welke leeftijd moet je het natrium controleren vóór start thiazidediureticum?",
+                    "Answer": ["70 jaar"]
+                },
+                {
+                    "Question": "Wat zijn de twee mogelijke complicaties bij correctie van een hyponatriëmie?",
+                    "Answer": ["Cerebraal oedeem", "Centrale pontine myelinose"]
+                },
+                {
+                    "Question": "Wat zijn de drie belangrijkste risicofactoren voor een hypokaliëmie?",
+                    "Answer": ["Hoge leeftijd", "Slechte intake", "Diarree"]
+                },
+                {
+                    "Question": "Wat zijn de twee belangrijkste symptomen van hypokaliëmie?",
+                    "Answer": ["QT-verlenging", "Hyporeflexie"]
+                },
+                {
+                    "Question": "Wat zijn de drie belangrijskte symptomen van hyperkaliëmie?",
+                    "Answer": ["Asthenie", "Palpitaties", "QT-verkorting"]
+                },
+                {
+                    "Question": "Via welk mechanisme verhogen Spironolacton en ACE-remmers het kalium?",
+                    "Answer": ["Aldosteron"]
+                },
+                {
+                    "Question": "Waarop geeft de combinatie digoxine en hypokaliëmie meer risico?",
+                    "Answer": ["Hartritmestoornissen"]
+                },
+                {
+                    "Question": "Waarop geeft de combinatie alfablokkers en lisdiuretica een groter risico?",
+                    "Answer": ["Hypotensie"]
+                },
+                {
+                    "Question": "Bij welke comorbiditeit is een RAS-remmer de eerste keuze voor hypertensie?",
+                    "Answer": ["Albuminurie"]
+                },
+                {
+                    "Question": "Wat zijn de 4 belangrijkste bijweringen van RAS-rememers?",
+                    "Answer": ["Hypercalciëmie", "Nierfalen", "Hypotensie", "Angio-oedeem"]
+                },
+                {
+                    "Question": "Wanneer treedt hypotensie bij een RAS-remmer op?",
+                    "Answer": ["Eerste dosis"]
+                },
+                {
+                    "Question": "Welk effect heeft een NSAID op het afferente vat?",
+                    "Answer": ["Vasoconstrictie"]
+                },
+                {
+                    "Question": "In welk vat geeft een ACE remmer vasodilatie?",
+                    "Answer": ["Efferent"]
+                },
+                {
+                    "Question": "Welke bèta-blokker is zowe een anti-arithmicum als een negatief chronotroop middel?",
+                    "Answer": ["Sotalol"]
+                },
+                {
+                    "Question": "Welke 3 cardiovasculaire middelen worden renaal geklaard?",
+                    "Answer": ["Sotalol", "Atenolol", "Digoxine"]
+                },
+                {
+                    "Question": "Bij welke betablokker is het risico op stapeling bij een lage eGFR het hoogst?",
+                    "Answer": ["Atenolol"]
+                },
+                {
+                    "Question": "Welke twee cardiovasculaire klasses aan middelen geven, afzonderlijk én samen, kans op een bradycardie?",
+                    "Answer": ["Bèta-blokkers", "Non-dihydropyridines"]
+                },
+                {
+                    "Question": "Wat zijn de drie effecten van digoxine?",
+                    "Answer": ["Negatieve chronotropie", "Positieve inotropie", "Negatieve dromotropie"]
+                },
+                {
+                    "Question": "Wat is de halfwaardetijd van digoxine?",
+                    "Answer": ["40-70 uur"]
+                },
+                {
+                    "Question": "Welk middel moet altijd 'opgeladen' worden?",
+                    "Answer": ["Digoxine"]
+                },
+                {
+                    "Question": "Aan welk teken moet een patiënt voldoen, wil hij Digoxine krijgen voor AF?",
+                    "Answer": ["Tachycardie"]
+                },
+                {
+                    "Question": "Bij welk middel voor hartfalen moet erg uitgekeken bij nierfalen, omdat een hoge spiegel gevaarlijk is voor de frequentie?",
+                    "Answer": ["Digoxine"]
+                },
+                {
+                    "Question": "Waarom moet een patiënt gedigitaliseerd worden?",
+                    "Answer": ["Verzadiging hartcellen"]
+                },
+                {
+                    "Question": "Op welke transporter grijpen Lisdiuretica aan?",
+                    "Answer": ["Na+/K+/Cl- cotransporter"]
+                },
+                {
+                    "Question": "Op welke transport grijpen thiazidediuretica aan?",
+                    "Answer": ["Na+/Cl- cotransporter"]
+                },
+                {
+                    "Question": "Waar zijn thiazidediuretica anatomisch gezien werkzaam?",
+                    "Answer": ["Distale tubulus"]
+                },
+                {
+                    "Question": "Welke klasse diureticum moet opgehoogd worden bij een slechte nierfunctie?",
+                    "Answer": ["Lisdiuretica"]
+                },
+                {
+                    "Question": "Welke klasse diureticum heeft de voorkeur bij slechte nierfunctie?",
+                    "Answer": ["Lisdiuretica"]
+                },
+                {
+                    "Question": "Vanaf welke klasse heeft het zin om Spironolacton te geven bij hartfalen?",
+                    "Answer": ["NYHA3"]
+                },
+                {
+                    "Question": "Wat voorkomt Spironolacton bij hartfalen?",
+                    "Answer": ["Remodeling"]
+                },
+                {
+                    "Question": "Waardoor kun je een Lis- of Thiazidediureticum vervangen wanneer het leidt tot te veel hypokaliëmie?",
+                    "Answer": ["RAS-remmer"]
+                },
+                {
+                    "Question": "Welk middel geef je bij een hyperkaliëmie met ECG verlenging?",
+                    "Answer": ["Calciumgluconaat"]
+                },
+                {
+                    "Question": "Welk middel geef je bij een hyperkaliëmie zonder ECG veranderingen?",
+                    "Answer": ["Natriumpolystyreensulfonaat"]
+                },
+                {
+                    "Question": "Welke 3 effecten heeft stimulatie van de Beta1-receptoren op het myocard?",
+                    "Answer": ["Positieve chronotropie", "Positieve inotropie", "Positieve dromotropie"]
+                },
+                {
+                    "Question": "Welk sympathicolyticum is zowel een alfa- als een non-selectieve bèta-blokker?",
+                    "Answer": ["Labetalol"]
+                },
+                {
+                    "Question": "Welke beta-blokker geeft risico op QT-verlenging?",
+                    "Answer": ["Sotalol"]
+                },
+                {
+                    "Question": "Met welke beta-blokker moet je oppassen bij een slechte nierfunctie?",
+                    "Answer": ["Sotaol"]
+                },
+                {
+                    "Question": "Welke non-dihydropyridine heeft de eerste keuze bij AF of HF?",
+                    "Answer": ["Diltiazem"]
+                },
+                {
+                    "Question": "Wat maakt dat Diltiazem de voorkeur heeft boven andere calciumantagonisten?",
+                    "Answer": ["Minder negatief inotroop"]
+                },
+                {
+                    "Question": "Welke drie bijwerkingen zijn typische voor de dihydropyridinen?",
+                    "Answer": ["Flush", "Hoofdpijn", "Oedeem"]
+                },
+                {
+                    "Question": "Op welk mechanisme berusten de bijwerkingen van de dihydropyridinen?",
+                    "Answer": ["Vasodilatie"]
+                },
+                {
+                    "Question": "Wat is, naast de vasodilatoire bijwerkingen, de belangrijkste bijwerking van de non-dihydropyridinen?",
+                    "Answer": ["Bradycardie"]
+                },
+                {
+                    "Question": "Welke stof wordt afgebroken door ACE?",
+                    "Answer": ["Bradykinine"]
+                },
+                {
+                    "Question": "Waar zorgt ATII direct, dus zonder tussenkomst van Aldosteron, voor?",
+                    "Answer": ["Vasoconstrictie"]
+                },
+                {
+                    "Question": "Wat zijn de 4 effecten van Aldosteron?",
+                    "Answer": ["Bloeddrukstijging", "Natriumretentie", "Vochtretentie", "Kaliumexcretie"]
+                },
+                {
+                    "Question": "In welke twee scenario's is het RAS-systeem hard aan het werk, en moet je dus oppassen met ACE-remmers?",
+                    "Answer": ["Nierfalen", "Nierarteriestenose"]
+                },
+                {
+                    "Question": "Welke klasse medicatie is geïndiceerd voor CHF op grond van het verminderen van harthypertrofie?",
+                    "Answer": ["RAS-remmers"]
+                },
+                {
+                    "Question": "Welke klasse medicatie voorkomt remodeling van het hart na MI",
+                    "Answer": ["RAS-remmers"]
+                },
+                {
+                    "Question": "Welke klasse medicatie is geïndiceerd bij nefropathie met proteïnurie, berustend op het verlagen van de glomerulaire capillaire druk?",
+                    "Answer": ["RAS-remmers"]
+                },
+                {
+                    "Question": "Wat is het doseringsadagium bij RAS-remmers?",
+                    "Answer": ["Start low, go slow"]
+                },
+                {
+                    "Question": "Waarin worden nitraten omgezet naar NO?",
+                    "Answer": ["Vaatwand"]
+                },
+                {
+                    "Question": "Wat zijn de twee effecten van NO in de vaatwand?",
+                    "Answer": ["Vasodilatie", "Remming primaire hemostase"]
+                },
+                {
+                    "Question": "Wat is de F van oromucosale isosorbide-dinitraat?",
+                    "Answer": ["20-30%"]
+                },
+                {
+                    "Question": "Wat is de T1/2 van oromucosale isosorbide-dinitraat?",
+                    "Answer": ["30-60 minuten"]
+                },
+                {
+                    "Question": "Hoe snel treedt er tolerantie van effect op bij het gebruik van nitraten?",
+                    "Answer": ["6-8 uur"]
+                },
+                {
+                    "Question": "Welke maatregel zou moeten helpen tegen nitraattollerantie?",
+                    "Answer": ["Intermitterend gebruik"]
+                },
+                {
+                    "Question": "Wat is de meest bekende bijwerking van nitraten?",
+                    "Answer": ["Nitraatcollaps"]
+                },
+                {
+                    "Question": "Hoe dien je nitraten in te nemen?",
+                    "Answer": ["Zittend"]
+                }
+            ]
+        },
+        {
+            "Name": "Module D: Antidiabetica",
+            "Questions": [
+                {
+                    "Question": "Wat is de belangrijkste SGLT2-remmer?",
+                    "Answer": ["Dapagliflozine"]
+                },
+                {
+                    "Question": "Wat is het mechanisme achter SU-derivaten?",
+                    "Answer": ["Stimulatie insulinesecretie"]
+                },
+                {
+                    "Question": "Wat zijn de twee mechanismes achter Metformine?",
+                    "Answer": ["Onderdrukken gluconeogenese", "Verminderen insulineresistentie"]
+                },
+                {
+                    "Question": "Wat is het mechanisme achter SGLT2-remmers?",
+                    "Answer": ["Verminderen glucose reuptake"]
+                },
+                {
+                    "Question": "Waar in het lichaam grijpen de SGLT2-remmers aan?",
+                    "Answer": ["Distale tubulus"]
+                },
+                {
+                    "Question": "Welk SU-derivaat geeft de meeste kans op een hypoglykemie?",
+                    "Answer": ["Glibenclamide"]
+                },
+                {
+                    "Question": "Wat verhoogd de kans op een hypoglykaemie onder Glibenclamide?",
+                    "Answer": ["Nierfalen"]
+                },
+                {
+                    "Question": "Welke klasse medicatie geeft vermindere hypo-awareness?",
+                    "Answer": ["Bèta-blokkers"]
+                },
+                {
+                    "Question": "Wat is de belangrijkste bijwerking van Metformine?",
+                    "Answer": ["Lactaatacidose"]
+                },
+                {
+                    "Question": "Welk antidiabeticum is sterk renaal geklaard?",
+                    "Answer": ["Metformine"]
+                },
+                {
+                    "Question": "Onder welke nierfunctie is Metformine vanwege het risico op een lactaatacidose gecontraïndiceerd?",
+                    "Answer": ["eGFR <15"]
+                },
+                {
+                    "Question": "Welk antidiabeticum kan geen hypoglykemieën veroorzaken?",
+                    "Answer": ["Metformine"]
+                },
+                {
+                    "Question": "Welke 3 bijwerkingen kunnen, zeker in het begin, optreden bij Metformine gebruik?",
+                    "Answer": ["Misselijkheid", "Braken", "Diarree"]
+                },
+                {
+                    "Question": "Welke 5 specifieke aandoeningen geven meer kans op lactaatacidose bij Metformine?",
+                    "Answer": ["Nierfalen", "Leverfalen", "Hartfalen", "Hypoxemie", "Sepsis"]
+                },
+                {
+                    "Question": "Voor welk onderzoek moet Metformine gestopt worden?",
+                    "Answer": ["Jodiumhoudend contrastonderzoek"]
+                },
+                {
+                    "Question": "Na hoeveel tijd mag je Metformine na onderzoek met jodiumhoudend contrast weer continueren?",
+                    "Answer": ["48 uur"]
+                },
+                {
+                    "Question": "Wat is de eerste keuze SU-derivaat?",
+                    "Answer": ["Gliclazide"]
+                },
+                {
+                    "Question": "Waarop geeft Gliclazide minder kans dan andere SU-derivaten?",
+                    "Answer": ["Hypoglykaemie"]
+                },
+                {
+                    "Question": "Welke klasse voeg je toe als Metformine onvoldoende werkt?",
+                    "Answer": ["SU-derivaten"]
+                },
+                {
+                    "Question": "Welke twee fasen bestaan er in een hypoglykaemie?",
+                    "Answer": ["Adrenerge fase", "Neuroglycopene fase"]
+                },
+                {
+                    "Question": "Welke fase van een hypoglykaemie wordt gemaskeerd door een bètablokker?",
+                    "Answer": ["Adrenerge fase"]
+                },
+                {
+                    "Question": "Wat zijn de 4 symptomen van de adrenerge fase van een hypoglykaemie?",
+                    "Answer": ["Zweten", "Tachycardie", "Agitatie", "Tremor"]
+                },
+                {
+                    "Question": "Wat zijn de 4 symptomen van de neuroglycopene fase van een hypoglykaemie?",
+                    "Answer": ["Dysartrie", "Diplopie", "Concentratiestoornissen", "Verwardheid"]
+                },
+                {
+                    "Question": "Bij welke niet-diabetische aandoeing heeft SGLT2-remmers een plaats in de behandeling?",
+                    "Answer": ["Hartfalen"]
+                },
+                {
+                    "Question": "Wat is de belangrijkste bijwerking van SGLT2-remmers?",
+                    "Answer": ["Euglykaemische Diabetische Ketoacidose"]
+                },
+                {
+                    "Question": "Wat is de belangrijkste leefstijl-gerelateerde risicofactor op een EDKA?",
+                    "Answer": ["Koolhydraatarm dieet"]
+                },
+                {
+                    "Question": "Welke twee middelen moeten samen gegeven worden bij een EDKA?",
+                    "Answer": ["Insuline", "Glucose"]
+                },
+                {
+                    "Question": "Welke kortwerkende insuline moeten we kennen?",
+                    "Answer": ["Humnaline regular"]
+                },
+                {
+                    "Question": "Hoe gaat humanline regular subcutaan zitten?",
+                    "Answer": ["Hexameer"]
+                },
+                {
+                    "Question": "Wanneer wordt Humanine regular ingenomen?",
+                    "Answer": ["30 minuten voor de maaltijd"]
+                },
+                {
+                    "Question": "Wat is de Tmax van humanline regular?",
+                    "Answer": ["2 uur"]
+                },
+                {
+                    "Question": "Wat is de werkingsduur van humanline regular?",
+                    "Answer": ["6-8 uur"]
+                },
+                {
+                    "Question": "Welk snelwerkende insuline moeten we kennen?",
+                    "Answer": ["Aspart"]
+                },
+                {
+                    "Question": "Hoe gaat Aspart subcutaan zitten?",
+                    "Answer": ["Monomeer"]
+                },
+                {
+                    "Question": "Wanneer moet Aspart worden genomen, in één zin?",
+                    "Answer": ["Direct voor, tijdens of na de maaltijd"]
+                },
+                {
+                    "Question": "Hoe lang werkt Aspart?",
+                    "Answer": ["4-5 uur"]
+                },
+                {
+                    "Question": "Welke langwerende insuline moeten we kennen?",
+                    "Answer": ["Glargine"]
+                },
+                {
+                    "Question": "Hoe gaat Glargine subcutaan zitten?",
+                    "Answer": ["Microneerslagen"]
+                },
+                {
+                    "Question": "Wanneer moet Glargine worden ingenomen?",
+                    "Answer": ["Tussen avondeten en slapengaan"]
+                },
+                {
+                    "Question": "Hoe lang werkt Glargine?",
+                    "Answer": ["24 uur"]
+                },
+                {
+                    "Question": "Welke insulinevariant heeft de voorkeur bij een verhoogde kans op nachtelijke hypoglykemiën?",
+                    "Answer": ["Glargine"]
+                },
+                {
+                    "Question": "Wat zijn 4 onspecifieke klachten van een acidose?",
+                    "Answer": ["Hoofdpijn", "Misselijkheid", "Buikpijn", "Palpitaties"]
+                },
+                {
+                    "Question": "Welk symptoom is tekenend voor een diabetisch ketoacidose?",
+                    "Answer": ["Kussmaul ademhaling"]
+                }
+            ]
+        },
+        {
+            "Name": "Module E: Antidepressiva",
+            "Questions": [
+                {
+                    "Question": "Welke 2 soorten antidepressiva zijn er?",
+                    "Answer": ["SSRI's", "TCA's"]
+                },
+                {
+                    "Question": "Hoe lang duurt het voordat SSRI's effect geven?",
+                    "Answer": ["4-6 weken"]
+                },
+                {
+                    "Question": "Hoe vlug kunnen SSRI's bijweringen geven?",
+                    "Answer": ["Direct"]
+                },
+                {
+                    "Question": "Wanneer doseer je SSRI's?",
+                    "Answer": ["Avond"]
+                },
+                {
+                    "Question": "Hoe doseer je SSRI's bij ouderen?",
+                    "Answer": ["Halve dosis"]
+                },
+                {
+                    "Question": "Na hoe veel tijd evalueer je de werkzaamheid van een SSRI?",
+                    "Answer": ["6 maanden"]
+                },
+                {
+                    "Question": "Hoe lang moet je antidepressiva continueren na het opklaren van de klachten?",
+                    "Answer": ["6 maanden"]
+                },
+                {
+                    "Question": "Via welk medicament kun je SSRI's afbouwen",
+                    "Answer": ["Fluoxetine"]
+                },
+                {
+                    "Question": "Via welke stappen bouw je een SSRI af?",
+                    "Answer": ["Elke 2 weken halveren"]
+                },
+                {
+                    "Question": "Wat zijn de 6 belangrijkste bijwerkingen van SSRI's?",
+                    "Answer": ["Hyponatriëmie", "Thrombocytopenie", "Seksuele dysfunctie", "Hoofdpijn", "Serotoninesyndroom", "Insomnie"]
+                },
+                {
+                    "Question": "Welke 2 bijweringen zijn, binnen de SSRI's, uniek voor Mirtazipine?",
+                    "Answer": ["Gewichtstoename", "Slaperigheid"]
+                },
+                {
+                    "Question": "Een patiënt slikt thiazidediuretica en een SSRI; waarop heeft hij meer kans?",
+                    "Answer": ["Hyponatriëmie"]
+                },
+                {
+                    "Question": "Een patiënt slikt carbamazepine en een SSRI; waarop heeft hij meer kans?",
+                    "Answer": ["SIADH"]
+                },
+                {
+                    "Question": "Wat is het mechanisme achter hyponatriëmie bij SSRI-gebruik?",
+                    "Answer": ["Toegenomen ADH productie"]
+                },
+                {
+                    "Question": "Hoe lang na de start zou je een hyponatriëmie bij SSRI-gebruik kunnen zien?",
+                    "Answer": ["1 week"]
+                },
+                {
+                    "Question": "Bij risicogroepen voor hyponatriëmie, zoals ouderen of pre-existent laag natrium, doet men een controle. Na hoe lang doet men dit?",
+                    "Answer": ["1 week"]
+                },
+                {
+                    "Question": "Hoe heet de situatie waarin ouderen veel water, weinig eiwit en weinig zout binnenkrijgen? Dit is namelijk een risicofactor voor hyponatriëmie",
+                    "Answer": ["Tea and toast"]
+                },
+                {
+                    "Question": "Wat doen SSRI's met het cellulaire serotonine?",
+                    "Answer": ["Verminderen met 80%"]
+                },
+                {
+                    "Question": "Wat is de functie van serotinine op een boedplaatje?",
+                    "Answer": ["Activatie"]
+                },
+                {
+                    "Question": "Een patiënt krijgt een SSRI en een NSAID. Wat moet hij nog meer krijgen?",
+                    "Answer": ["PPI"]
+                },
+                {
+                    "Question": "Welke klasse heeft meer bijweringen: SSRI's of TCA's?",
+                    "Answer": ["TCA's"]
+                },
+                {
+                    "Question": "Wat zijn de 5 meest belangrijke bijwerkingen van TCA's?",
+                    "Answer": ["Slaperigheid", "Droge mond", "Obstipatie", "Orthostase", "Ritmestoornissen"]
+                },
+                {
+                    "Question": "Wat is, in één woord, het mechanisme achter de slaperigheid bij TCA's?",
+                    "Answer": ["Histamine"]
+                },
+                {
+                    "Question": "Wat is een absolute contra-indicatie voor een TCA?",
+                    "Answer": ["Recent MI"]
+                },
+                {
+                    "Question": "Wanneer doseer je Amitryptilline?",
+                    "Answer": ["Avond"]
+                },
+                {
+                    "Question": "Welke TCA heeft de voorkeur bij ouderen?",
+                    "Answer": ["Nortryptiline"]
+                },
+                {
+                    "Question": "Welke klasse bijwerkingen treedt bij Nortryptilline minder op dan bij Amitryptiline?",
+                    "Answer": ["Anticholinerg"]
+                },
+                {
+                    "Question": "Noem de 5 belangrijkste anticholinerge bijwerkingen?",
+                    "Answer": ["Xerostomie", "Oligurie", "Obstipatie", "Verwardheid", "Visusdaling"]
+                },
+                {
+                    "Question": "Veroorzaken reuptake inhibitors een toe- of afname van intracellulaire neurotransmitters?",
+                    "Answer": ["Afname"]
+                },
+                {
+                    "Question": "De meest bekende TCA's zijn ami- en nortryptiline. Welke is het metaboliet?",
+                    "Answer": ["Nortryptiline"]
+                },
+                {
+                    "Question": "Van welke neurotransmitters remt Amitryptiline voornamelijk de heropname?",
+                    "Answer": ["Serotonine", "Noradrenaline"]
+                },
+                {
+                    "Question": "Van welke neurotransmitter remt Nortryptilline voornamelijk de heropname?",
+                    "Answer": ["Noradrenaline"]
+                },
+                {
+                    "Question": "Welke twee effecten heeft lithium? Een ... effect en een ... effect.",
+                    "Answer": ["Antidepressief", "Antimanisch"]
+                },
+                {
+                    "Question": "Hoe wordt Lithium geklaard?",
+                    "Answer": ["Renaal"]
+                },
+                {
+                    "Question": "Leidt een hoger niveau aan natrium in het plasma tot hogere of lagere Lithium spiegels?",
+                    "Answer": ["Lagere spiegels"]
+                },
+                {
+                    "Question": "Welk medicament kan hoge spiegels krijgen wanneer men veel zweet of weinig zout eet?",
+                    "Answer": ["Lithium"]
+                },
+                {
+                    "Question": "Welk medicament wordt ook ingezet als additietherapie bij therapieresistente depressie?",
+                    "Answer": ["Lithium"]
+                },
+                {
+                    "Question": "Wat zijn de drie belangrijkste bijwerkingen van Lithium?",
+                    "Answer": ["Hypothyreoïdie", "Misselijkheid", "Myoclonieën"]
+                },
+                {
+                    "Question": "Welke twee bijwerkingen kunnen het gevolg zijn van langdurig gebruik van Lithium?",
+                    "Answer": ["Diabetes Insipidus", "Nierfalen"]
+                },
+                {
+                    "Question": "Waar moet men veel van innemen bij Lithium?",
+                    "Answer": ["Water"]
+                },
+                {
+                    "Question": "Bij lithium wordt 2-4x per jaar wat gecontroleerd?",
+                    "Answer": ["Spiegel", "eGFR"]
+                },
+                {
+                    "Question": "Wat is de belangrijkste kinidineachtige bijwerking van TCA's?",
+                    "Answer": ["Ritmestoornissen"]
+                },
+                {
+                    "Question": "Wat is de belangrijkste anti-noradrenerge bijwerking?",
+                    "Answer": ["Orthostatische hypotensie"]
+                },
+                {
+                    "Question": "Wat zijn de 7 belangrijkste symptomen van serotonine syndroom?",
+                    "Answer": ["Koorts", "Zweten", "Mydriasis", "Hyperreflexie", "Tremor", "Agitatie", "Diarree"]
+                },
+                {
+                    "Question": "De belangrijkste interactie van TCA's is met diuretica en antihypertensiva. Waar geeft deze combinatie risico op?",
+                    "Answer": ["Orthostatische hypotensie"]
+                },
+                {
+                    "Question": "Welk middel is geïndiceerd bij een serotonine syndroom?",
+                    "Answer": ["Diazepam"]
+                },
+                {
+                    "Question": "Welke 5 middelen vergroten de kans op serotonine syndroom bij SSRI's?",
+                    "Answer": ["Lithium", "Tramadol", "Triptanen", "Tryptofaan", "St. Janskruid"]
+                }
+            ]
+        },
+        {
+            "Name": "Module F: Benzodiazepines",
+            "Questions": [
+                {
+                    "Question": "Hoeveel weken werken benzodiazepines max. als slaapmiddel?",
+                    "Answer": ["2 weken"]
+                },
+                {
+                    "Question": "Welk medicament is geïndiceerd bij epileptische convulsies?",
+                    "Answer": ["Diazepam"]
+                },
+                {
+                    "Question": "Wat is de halfwaardetijd van Diazepam?",
+                    "Answer": ["40-100 uur"]
+                },
+                {
+                    "Question": "Wat is de halfwaardetijd van Oxazepam?",
+                    "Answer": ["5-15 uur"]
+                },
+                {
+                    "Question": "Wat is de halfwaardetijd van Temazepam?",
+                    "Answer": ["7-11 uur"]
+                },
+                {
+                    "Question": "Welke benzodiazepine kan worden gegeven als anxiolyticum?",
+                    "Answer": ["Oxazepam"]
+                },
+                {
+                    "Question": "Welke twee benzodiazepines zijn het meest geschikt als slaapmiddel?",
+                    "Answer": ["Temazepam", "Zolpidem"]
+                },
+                {
+                    "Question": "Welke vorm van amnesie kan voorkomen bij benzodiazepines?",
+                    "Answer": ["Anterograde amnesie"]
+                },
+                {
+                    "Question": "Na hoe lang kan de amnesie bij benzodiazepinen ontstaan?",
+                    "Answer": ["Enkele uren"]
+                },
+                {
+                    "Question": "Welke drie maatregelen zouden afhankelijkheid moeten voorkomen?",
+                    "Answer": ["Maximaal 5-10 tabletten", "Intermitterend gebruik", "Geen herhaalrecept"]
+                },
+                {
+                    "Question": "Via welk medicament kan met het best benzodiazepines afbouwen?",
+                    "Answer": ["Diazepam"]
+                },
+                {
+                    "Question": "Wat is het mechanisme van benzodiazepinen?",
+                    "Answer": ["GABA"]
+                },
+                {
+                    "Question": "Bij welke groep patiënten veroorzaken benzodiazepinen een 'hangover effect' vanwege een verlaagde clearance bij een grotere F?",
+                    "Answer": ["Ouderen"]
+                },
+                {
+                    "Question": "Wat is naast een benzodiazpine nog meer geïndiceerd bij een alcoholonttrekking?",
+                    "Answer": ["Thiaminesupplement"]
+                },
+                {
+                    "Question": "Welke benzo is het meest geschikt als anxiolyticum?",
+                    "Answer": ["Lorazepam"]
+                },
+                {
+                    "Question": "Samen met welke medicatie geven benzodiazepinen verhoogde kans op ademdepressie?",
+                    "Answer": ["Opiaten"]
+                },
+                {
+                    "Question": "Bij welke aandoening is het kans op ademdepressies onder benzodiazepinen verhoogd?",
+                    "Answer": ["COPD"]
+                },
+                {
+                    "Question": "In het geval van ademhalingsdepressies, waar kun je dan benzodiazepines mee couperen?",
+                    "Answer": ["Flumazenil"]
+                },
+                {
+                    "Question": "Wat is de halfwaardetijd van Flumazenil?",
+                    "Answer": ["1 uur"]
+                },
+                {
+                    "Question": "Wat geldt als een hoge dosis Oxazepam en dus een indicatie voor afbouwen onder Diazepam?",
+                    "Answer": [">30 mg/dag"]
+                }
+            ]
+        },
+        {
+            "Name": "Module G: Antibiotica",
+            "Questions": [
+                {
+                    "Question": "Hoeveel lagen heeft de celwand van een grampositieve bacterie? Lege ruimtes niet meegerekend",
+                    "Answer": ["2"]
+                },
+                {
+                    "Question": "Hoeveel lagen heeft de celwand van een gramnegatieve bacterie? Lege ruimtes niet meegerekend",
+                    "Answer": ["3"]
+                },
+                {
+                    "Question": "Welke twee vormen bestaan er van bacteriën?",
+                    "Answer": ["Coccen", "Staven"]
+                },
+                {
+                    "Question": "Noem de 2 belangrijkste groepen gram-positieve coccen",
+                    "Answer": ["Streptococcen", "Staphylococcen"]
+                },
+                {
+                    "Question": "Noem de 2 belangrijkste groepen gram-negatieve coccen",
+                    "Answer": ["Meningococcen", "Gonococcen"]
+                },
+                {
+                    "Question": "Noem de belangrijkste gram-positieve staaf",
+                    "Answer": ["Clostridium difficile"]
+                },
+                {
+                    "Question": "Noem de 4 belangrijkste gram-negatieve staven",
+                    "Answer": ["E. Coli", "H. Influenzae", "P. Mirabilis", "P. Aeruginosa"]
+                },
+                {
+                    "Question": "Welke twee categoriën bacteriën zijn de meestvoorkomende ziekteverwekkers?",
+                    "Answer": ["Gram-positieve coccen", "Gram-negatieve staven"]
+                },
+                {
+                    "Question": "Wat is de penicilline met het breedste spectrum?",
+                    "Answer": ["Piperacilline"]
+                },
+                {
+                    "Question": "Tegen welke categorie bacteriën is penicillien geïndiceerd?",
+                    "Answer": ["Gram-positieve coccen"]
+                },
+                {
+                    "Question": "Welk twee medicamenten zijn geïndiceerd bij een ESBL infectie?",
+                    "Answer": ["Meropenem", "Carbapenem"]
+                },
+                {
+                    "Question": "Van welke bacterie is 90% resistent tegen beta-lactam?",
+                    "Answer": ["S. Aureus"]
+                },
+                {
+                    "Question": "Welke medicamenten zijn geïndiceerd tegen S. Aureus?",
+                    "Answer": ["Flucloxacilline", "Augmentin"]
+                },
+                {
+                    "Question": "Welk medicament is geïndiceerd tegen MRSA?",
+                    "Answer": ["Vancomycine"]
+                },
+                {
+                    "Question": "In welke patiëntenpopulatie is S. Epidermidis pathogeen?",
+                    "Answer": ["Immuungecomprimeerde patiënten"]
+                },
+                {
+                    "Question": "Noem de belangrijkste 1e generatie cefalosporine",
+                    "Answer": ["Cefazoline"]
+                },
+                {
+                    "Question": "Noem de belangrijkste 2e generatie cefalosporine",
+                    "Answer": ["Cefuroxim"]
+                },
+                {
+                    "Question": "Noem de belangrijkste 3e generatie cefalosporine",
+                    "Answer": ["Ceftizidim"]
+                },
+                {
+                    "Question": "Welk medicament is geïndiceerd als AB profylaxe bij een kunstheup?",
+                    "Answer": ["Cefazoline"]
+                },
+                {
+                    "Question": "Tegen welke categorie bacteriën is de 3e generatie cefalosporines voornamelijk geïndiceerd?",
+                    "Answer": ["Gram-negatieve bacteriën"]
+                },
+                {
+                    "Question": "Welke cefalosporine werkt ook tegen p. aeruginosa?",
+                    "Answer": ["Ceftazidim"]
+                },
+                {
+                    "Question": "Tegen welke categorie bacteriën is de 1e generatie cefalospornises voornamelijk geïndiceerd?",
+                    "Answer": ["Gram-positieve bacteriën"]
+                },
+                {
+                    "Question": "Op welk mechanisme berusten de GI bijwerkingen van AB?",
+                    "Answer": ["Verstoring van de darmflora"]
+                },
+                {
+                    "Question": "Waar moet men aan denken bij bloederige diarree onder AB?",
+                    "Answer": ["C. Difficile"]
+                },
+                {
+                    "Question": "Wat is de belangrijkste complicatie van C. Difficile?",
+                    "Answer": ["Pseudomembraneuze colitis"]
+                },
+                {
+                    "Question": "Hoeveel procent van de bevolking is overgevoelig voor beta-lactamantibiotica?",
+                    "Answer": ["1%"]
+                },
+                {
+                    "Question": "Wat zijn de afkortingen voor de drie belangrijkste risicofactoren voor toxicodermie onder Amoxicilline?",
+                    "Answer": ["EBV", "CMV", "ALL"]
+                },
+                {
+                    "Question": "Wat is de kans om toxicodermie te ontwikkeen onder Amoxicilline als men niet tot de risicogroepen behoort?",
+                    "Answer": ["7-8%"]
+                },
+                {
+                    "Question": "Wat is de kans om toxicodermie te ontwikkelen onder Amoxicilline als men wél tot de risicogroepen behoort?",
+                    "Answer": ["70-80%"]
+                },
+                {
+                    "Question": "Is kruisovergevoeligheid tussen penicillines en cefalosporines zeldzaam of veel voorkomend?",
+                    "Answer": ["Zeldzaam"]
+                },
+                {
+                    "Question": "Wat zijn de drie belangrijkste bijwerkingen van Doxycycline?",
+                    "Answer": ["Fotosensibilisatie", "Irreversibele tandverkleuring", "Hypoplasie tanden en botten"]
+                },
+                {
+                    "Question": "Onder welke leeftijd mag je geen Doxycycline geven?",
+                    "Answer": ["8"]
+                },
+                {
+                    "Question": "Welke twee klassen medicamenten vormen onoplosbare complexen emt cacium, magnesium of aluminium?",
+                    "Answer": ["Tetracyclinen", "Fluorchinolonen"]
+                },
+                {
+                    "Question": "Wat is het gevolg van co-trimoxazol met methotrexaat?",
+                    "Answer": ["Ernstige leukopenie"]
+                },
+                {
+                    "Question": "Waarop berust de interactie tussen co-trimoxazol en methotrexaat? Zij verstoren beiden de ...",
+                    "Answer": ["Foliumzuurhuishouding"]
+                },
+                {
+                    "Question": "Welke bijwerking ontstaat uit de interactie tussen methotrexaat en co-trimoxazol?",
+                    "Answer": ["Megaloblastaire anaemie"]
+                },
+                {
+                    "Question": "Veroorzaakt sulfamethoxazol, een onderdeel van co-trimoxzol, een spiegelstijging of daling van coumarinederivaten?",
+                    "Answer": ["Spiegelstijging"]
+                },
+                {
+                    "Question": "Door welke twee AB kan de spiegel van sim- en atorvastatine stijgen?",
+                    "Answer": ["Clarytromycine", "Erytroycine"]
+                },
+                {
+                    "Question": "Welke bijwerking kan voorkomen bij een te hoge statinespiegel?",
+                    "Answer": ["Rhabdomyolyse"]
+                },
+                {
+                    "Question": "Welke belangrijke bijwerking geven clarytromycine en erytromycine, de interacties buiten beschouwing gelaten?",
+                    "Answer": ["QT-verlenging"]
+                },
+                {
+                    "Question": "In combinatie met welke klasse medicatie kan co-trimoxazol zorgen voor het doorschieten van de INR?",
+                    "Answer": ["Coumarinederivaten"]
+                },
+                {
+                    "Question": "Na ongeveer hoeveel tijd switch je naar orale AB bij het aanslaan van IV?",
+                    "Answer": ["48-72 uur"]
+                },
+                {
+                    "Question": "Wat zijn de 5 oorzaken van koorts ondanks AB?",
+                    "Answer": ["Resistente verwekker", "Atypische verwekker", "Slecht bereikbare infectiehaard", "Niet-bacteriële etiologie", "Niet-infectieuze etiologie"]
+                },
+                {
+                    "Question": "Welke twee medicamenten kunnen koorts veroorzaen?",
+                    "Answer": ["Penicilline", "Nitrofurantoïne"]
+                },
+                {
+                    "Question": "Noem de 2 smal-spectrum penicillinen die wij dienen te kennen?",
+                    "Answer": ["Flucloxacilline", "Benzylpenicilline"]
+                },
+                {
+                    "Question": "Noem de 3 klassen aan bèta-lactamantibiotica",
+                    "Answer": ["Penicillinen", "Cefalosporinen", "Carbapenems"]
+                },
+                {
+                    "Question": "Tot welke klasse behoort Gentamicine?",
+                    "Answer": ["Aminoglycosiden"]
+                },
+                {
+                    "Question": "Tot welke klasse behoort Azitromycine?",
+                    "Answer": ["Macroliden"]
+                },
+                {
+                    "Question": "Welk middel is geïndiceerd tegen anaerobe infecties?",
+                    "Answer": ["Metronidazol"]
+                },
+                {
+                    "Question": "Welke AB werkt via inhibitie van vorming van metabolieten?",
+                    "Answer": ["Co-trimoxazol"]
+                },
+                {
+                    "Question": "Welke 3 klasse AB werken de eiwitsynthese in bacteriën tegen?",
+                    "Answer": ["Macroliden", "Tetracyclinen", "Aminoglycosiden"]
+                },
+                {
+                    "Question": "Welke twee klassen medicatie werken de celwandsynthese tegen?",
+                    "Answer": ["Bèta-lactamantibiotica", "Vancomycine"]
+                },
+                {
+                    "Question": "Zijn celwandremmers vooral nuttig bij snel of langzaamgroeiend bacteriën?",
+                    "Answer": ["Snelgroeiende bacteriën"]
+                },
+                {
+                    "Question": "Via welk mechanisme verstoort koorts de stollingstijd?",
+                    "Answer": ["Afbraak stollingsfactoren"]
+                },
+                {
+                    "Question": "Bij gebruik van welke medicatie naast antibiotica moet altijd contact worden gezocht met de trombosedienst?",
+                    "Answer": ["Coumarinederivaten"]
+                },
+                {
+                    "Question": "Welke penicilline is primair geïndiceerd tegen gram-negatieve bacteriën?",
+                    "Answer": ["Amoxicilline"]
+                },
+                {
+                    "Question": "Welke penicilline is primair geïndiceerd tegen p. aeruginosa?",
+                    "Answer": ["Piperacilline"]
+                },
+                {
+                    "Question": "Vanaf welke generatie zijn de cefalosporinen bèta-lactamaseongevoelig?",
+                    "Answer": ["2e generatie"]
+                },
+                {
+                    "Question": "Wat is de enige bacterie waarbij Carbapenems ingezet mogen worden?",
+                    "Answer": ["ESBL"]
+                },
+                {
+                    "Question": "Noem alle 4 de klassen aan bacteriocidica?",
+                    "Answer": ["Bèta-lactamantibiotica", "Aminoglycosiden", "Macroliden", "Co-trimoxazol", "Fluorchinolonen"]
+                },
+                {
+                    "Question": "Noem alle 2 de klassen aan bacteriostatica",
+                    "Answer": ["Macroliden", "Tetracyclinen"]
+                },
+                {
+                    "Question": "Hoe lang vóór de maaltijd moet je tetracyclinen tenminste innemen?",
+                    "Answer": ["3 uur"]
+                },
+                {
+                    "Question": "Hoe lang moet je tenminste wachten na de maaltijd vóór inname van tetracyclinen?",
+                    "Answer": ["2 uur"]
+                },
+                {
+                    "Question": "Welk supplement moet bij tetracyclinen tijdelijk helemaal gestopt worden?",
+                    "Answer": ["Ferrofumaraat"]
+                },
+                {
+                    "Question": "Welke macrolide veroorzaakt geen CYP3A4 remming?",
+                    "Answer": ["Azitromycine"]
+                },
+                {
+                    "Question": "Wat is de enige klasse bacteriën waartegen aminoglycosiden zijn geïndiceerd?",
+                    "Answer": ["Gram-negatieve staven"]
+                },
+                {
+                    "Question": "Welk van de bijweringen van de aminoglycosiden, oto- en nefrotoxiciteit, is irreversibel?",
+                    "Answer": ["Ototoxiciteit"]
+                },
+                {
+                    "Question": "Bij weke klasse aan bacteriën zij macroliden geïndiceerd?",
+                    "Answer": ["Intracellulaire bacteriën"]
+                },
+                {
+                    "Question": "Geef 2 bekende voorbeelden van intracellulaire bacteriën?",
+                    "Answer": ["Legionella", "Chlamydia"]
+                },
+                {
+                    "Question": "Stel je geeft sim- of atorvastatine en erytromycine. Waar heb je dan kans op?",
+                    "Answer": ["Rhabdomyolyse"]
+                },
+                {
+                    "Question": "Wat is de belangrijkste niet-enzymgerelateerde bijwerking van Macroliden?",
+                    "Answer": ["QT-verlenging"]
+                },
+                {
+                    "Question": "Hoeveel keer effectiever is co-trimoxazol dan alleen trimethoprim?",
+                    "Answer": ["5-10 keer"]
+                },
+                {
+                    "Question": "Tegen welke klasse bacteriën zijn de Fluorchinolonen geïndiceerd?",
+                    "Answer": ["Gram-negatieve bacteriën"]
+                },
+                {
+                    "Question": "Wat is de belangrijkste bijwerking van Fluorchinolonen?",
+                    "Answer": ["QT-verlenging"]
+                },
+                {
+                    "Question": "Welke twee klassen AB kunnen QT-verlenging geven?",
+                    "Answer": ["Fluorchinolonen", "Macroliden"]
+                },
+                {
+                    "Question": "Is Nitrofurantoïne meer of minder sterk werkzaam bij een lage eGFR?",
+                    "Answer": ["Minder werkzaam"]
+                },
+                {
+                    "Question": "Welk middel is geïndiceerd bij een c. difficile infectie?",
+                    "Answer": ["Metronidazol"]
+                },
+                {
+                    "Question": "Zal de combinatie metronidazol en coumarinederivaten de INR verhogen of verlagen?",
+                    "Answer": ["Verhogen"]
+                },
+                {
+                    "Question": "Tot hoe lang na de stop van Metronidazol mag men geen alcohol drinken?",
+                    "Answer": ["48 uur"]
+                },
+                {
+                    "Question": "Welk middel is geïndiceerd tegen VRE?",
+                    "Answer": ["Meropenem"]
+                }
+            ]
+        },
+        {
+            "Name": "Module H: Farmacokinetiek",
+            "Questions": [
+                {
+                    "Question": "Wat zijn de 4 onderdelen van de farmacokinetiek?",
+                    "Answer": ["Absorptie", "Distributie", "Metabolisme", "Eliminatie"]
+                },
+                {
+                    "Question": "Waar staat F voor?",
+                    "Answer": ["Biologische beschikbaarheid"]
+                },
+                {
+                    "Question": "Waar zijn stoffen met een F = 0 werkzaam?",
+                    "Answer": ["Spijsverteringsstelsel"]
+                },
+                {
+                    "Question": "Hoe relateert de halfwaardetijd zich aan de klaring?",
+                    "Answer": ["Omgekeerd evenredig"]
+                },
+                {
+                    "Question": "Hoe relateert de halfwaardetijd zich aan het verdelingsvolume?",
+                    "Answer": ["Evenredig"]
+                },
+                {
+                    "Question": "Na hoeveel halfwaardetijden wordt de Css bereikt?",
+                    "Answer": ["3-5"]
+                },
+                {
+                    "Question": "Hoeveel halfwaardetijden na staken is het medicament verdwenen uit het systeem?",
+                    "Answer": ["3-5"]
+                },
+                {
+                    "Question": "Welke 3 onderdelen spelen een evenredige rol in de nierfunctie?",
+                    "Answer": ["Glomerulaire filtratie", "Tubulaire secretie", "Rubulaire resorptie"]
+                },
+                {
+                    "Question": "Bij hoeveel procent renale klaring moet de dosis van een medicament om nefrogene redenen worden aangepast?",
+                    "Answer": [">50%"]
+                },
+                {
+                    "Question": "Noem de 7 belangrijkste enzyminhibitoren",
+                    "Answer": ["Ketoconazol", "Itraconazol", "Miconazol", "Claritromycine", "Erytromycine", "Verapamil", "Grapefruitsap", "Itraconazol"]
+                },
+                {
+                    "Question": "Noem de 4 belangrijskte enzyminductoren?",
+                    "Answer": ["Rifampicine", "Carbamazepine", "Fenytoïne", "St. Janskruid"]
+                },
+                {
+                    "Question": "Wat is het maximale effect van een enzyminhibitor op de spiegel?",
+                    "Answer": ["50% AUC stijging"]
+                },
+                {
+                    "Question": "Wat is het maximale effect van een enzyminducer op de spiegel?",
+                    "Answer": ["20% AUC daling"]
+                },
+                {
+                    "Question": "Welke twee middelen staan bekend om hun smalle therapeutische breedte?",
+                    "Answer": ["Sotalol", "Digoxine"]
+                },
+                {
+                    "Question": "Welk medicament staat beend om zijn breedte therapeutische window",
+                    "Answer": ["Amoxicilline"]
+                },
+                {
+                    "Question": "Wat wordt gebruikt als maat voor de totale blootstelling?",
+                    "Answer": ["AUC"]
+                },
+                {
+                    "Question": "Welke 2 factoren maken dat de F niet altijd 100% is",
+                    "Answer": ["Afbraak in de darm", "First-pass effect"]
+                },
+                {
+                    "Question": "Wat is de definitie van de biologische beschikbaarheid?",
+                    "Answer": ["De fractie van de toegediende dosis die de circulatie bereikt"]
+                },
+                {
+                    "Question": "Als er veel medicament in het plasma zit, is het Vd dan groot of klein?",
+                    "Answer": ["Klein"]
+                },
+                {
+                    "Question": "Bij een lipofiel middel, als er veel medicament buiten het plasma zit, is het Vd dan groot of klein?",
+                    "Answer": ["Groot"]
+                },
+                {
+                    "Question": "Welke 3 processen vallen onder type I metabolisme?",
+                    "Answer": ["Hydrolyse", "Oxidatie", "Reductie"]
+                },
+                {
+                    "Question": "Onder welke term vallen de processen van de type II metabolisme ook wel samen te vatten?",
+                    "Answer": ["Conjugatie"]
+                },
+                {
+                    "Question": "Welke drie processen vallen onder type II metabolisme?",
+                    "Answer": ["Acetylering", "Gluconidering", "Sulfatering"]
+                },
+                {
+                    "Question": "Hoe vlug hebben enzyminhibitors impact om de medicijnspiegel?",
+                    "Answer": ["Direct"]
+                },
+                {
+                    "Question": "Na hoe lang hebben enzyminducers effect op de medicijnspiegel?",
+                    "Answer": ["Dagen tot weken"]
+                },
+                {
+                    "Question": "Welke factor is bepalend voor de onderhoudsdosis in een steady state?",
+                    "Answer": ["Eliminatie"]
+                }
+            ]
+        },
+        {
+            "Name": "Module I: Geneesmiddelenallergie",
+            "Questions": [
+                {
+                    "Question": "Welke 3 symptomen kun je verwachten bij graad 1 anafylaxie?",
+                    "Answer": ["Jeuk", "Erytheem", "Urticaria"]
+                },
+                {
+                    "Question": "Welke 3 nieuwe (!) symptomen kun je verwachten bij graad 2 anafylaxie?",
+                    "Answer": ["Oedeem", "PODB", "Misselijkheid"]
+                },
+                {
+                    "Question": "Welke 3 nieuwe (!) symptomen kun je verwachten bij graad 3 anafylaxie?",
+                    "Answer": ["Stridor", "Dysfagie", "Dysfonie"]
+                },
+                {
+                    "Question": "Welke 3 nieuwe (!) symptomen kun je verwachten bij graad 4 anafylaxie?",
+                    "Answer": ["Cyanose", "Collaps", "Aritmie"]
+                },
+                {
+                    "Question": "Welke 3 klasse medicamenten kunnen een niet-immunologische anafylaxie veroorzaken?",
+                    "Answer": ["Opiaten", "NSAID's", "Acetylsalicylzuur"]
+                },
+                {
+                    "Question": "Wat is het mechanisme achter niet-immunologische anafylaxie?",
+                    "Answer": ["Direct mestcelstimulatie"]
+                },
+                {
+                    "Question": "Wat is het mechanisme achter een immunologische anafylaxie?",
+                    "Answer": ["IgE-gemedieerde mestceldegeneratie"]
+                },
+                {
+                    "Question": "Welk medicament veroorzaakt hoofdzakelijk HIT?",
+                    "Answer": ["Ongefractioneerde heparine"]
+                },
+                {
+                    "Question": "Wat is het tijdsbeloop van HIT type I?",
+                    "Answer": ["Ontstaat snel en zakt snel"]
+                },
+                {
+                    "Question": "Wat is de cutoff in tijd na start, tussen HIT type I en type II?",
+                    "Answer": ["5 dagen"]
+                },
+                {
+                    "Question": "Welk type HIT is ernstiger, type I of type II?",
+                    "Answer": ["Type II"]
+                },
+                {
+                    "Question": "HIT is een ernstige aandoening. Bij welk medicament moet je dus WEKELIJKS de trombocyten controleren?",
+                    "Answer": ["Heparine"]
+                },
+                {
+                    "Question": "Welke 4 medicamenten veroorzaken hoofdzakelijk maculopapuleuze huidreacties?",
+                    "Answer": ["Carbamazepine", "Co-trimoxazol", "Allopurinol", "Penicillines"]
+                },
+                {
+                    "Question": "Wat is de belangrijkste risicofactor voor geneesmiddelenexantheem?",
+                    "Answer": ["Epstein-Barr-virus"]
+                },
+                {
+                    "Question": "Welk medicament lokt hoofdzakelijk een geneesmiddelenexantheem uit?",
+                    "Answer": ["Amoxicilline"]
+                },
+                {
+                    "Question": "Welke twee typen Severe Cutaneous Adverse Reactions (SCAR) zijn er? Noem de afkortingen",
+                    "Answer": ["SJS", "TEN"]
+                },
+                {
+                    "Question": "Op basis van welk gegeven wordt het onderscheid tussen SJS en TEN gemaakt?",
+                    "Answer": ["Aangedaan lichaamsoppervlak"]
+                },
+                {
+                    "Question": "Hoeveel procent van het lichaamsoppervlak is aangedaan bij SJS?",
+                    "Answer": ["<10%"]
+                },
+                {
+                    "Question": "Hoeveel procent van het lichaamsoppervlak is aangedaan bij TEN?",
+                    "Answer": ["30%"]
+                },
+                {
+                    "Question": "Wat zijn de twee stappen van het aangewezen beleid bij TEN?",
+                    "Answer": ["Stop medicatie", "Verwijs naar brandwondencentrum"]
+                },
+                {
+                    "Question": "Wat zijn de twee belangrijkste risicofactoren voor een immuungemedieerde anafylaxie?",
+                    "Answer": ["Frequente blootstelling", "Chronische virusinfectie"]
+                },
+                {
+                    "Question": "Wat is de belangrijkste risicofactor voor een ernstiger beloop van een anafylaxie?",
+                    "Answer": ["Asthma"]
+                },
+                {
+                    "Question": "Wat zijn de 3 onderdelen van de behandeling van anafylaxie?",
+                    "Answer": ["Adrenaline", "Clemastine", "Corticosteroïden"]
+                },
+                {
+                    "Question": "Hoeveel procent van de patiënten met EBV en ALL ontwikkeld een anafylaxie onder bèta-lactamantibiotica?",
+                    "Answer": ["90%"]
+                },
+                {
+                    "Question": "Welk middel geef je bij een anafylactische aanval met bronchospasmen?",
+                    "Answer": ["Salbutamol"]
+                },
+                {
+                    "Question": "Wanneer iemand voor de eerste keer wordt blootgesteld aan bepaalde medicatie, hoe veel dagen moet deze dan medicatie ontvangen alvorens er een immuungemediëerde anafylactische reactie kan optreden?",
+                    "Answer": ["7-12 dagen"]
+                },
+                {
+                    "Question": "Bij herhaaldelijke exposure treed binnen enkele minuten een anafylactische reactie op. Welk type allergische reactie is dit, en wat is de mediator?",
+                    "Answer": ["IgE", "Type I"]
+                },
+                {
+                    "Question": "Bij herhaaldelijke exposure treedt binnen enkele dagen een anafylactische reactie op. Welk type allergische reactie is dit, en wat is de mediator?",
+                    "Answer": ["Type IV", "T-cel"]
+                },
+                {
+                    "Question": "Hoe lang na start treedt haemolytische anemie op bij bèta-lactam AB?",
+                    "Answer": ["1 week"]
+                },
+                {
+                    "Question": "Hoe lang na staken van bèta-lactam AB houdt de haemolytische anaemie ook weer op?",
+                    "Answer": ["Enekele dagen"]
+                },
+                {
+                    "Question": "Wat is het onderscheidende symptoom van TEN?",
+                    "Answer": ["Dermolyse"]
+                }
+            ]
+        },
+        {
+            "Name": "Module J: Wet- en regelgeving",
+            "Questions": [
+                {
+                    "Question": "Welke klasse medicatie staat op lijst 2 van de opiumwet?",
+                    "Answer": ["Benzodiazepines"]
+                },
+                {
+                    "Question": "Welke klasse medicatie staat op lijst 1 van de opiumwet?",
+                    "Answer": ["Opiaten"]
+                },
+                {
+                    "Question": "Welke opiaten vallen niet onder de opiumwet?",
+                    "Answer": ["Tramadol", "Codeïne"]
+                },
+                {
+                    "Question": "Wat staat er op regel 1 van een recept?",
+                    "Answer": ["Sterkte"]
+                },
+                {
+                    "Question": "Wat staat er op regel 2 van een recept?",
+                    "Answer": ["Aantal"]
+                },
+                {
+                    "Question": "Wat staat er op regel 3 van een recept?",
+                    "Answer": ["Gebruiksinstructies"]
+                },
+                {
+                    "Question": "Wat staat er op regel 4 van een recept?",
+                    "Answer": ["Paraaf"]
+                },
+                {
+                    "Question": "Welke onderdelen moeten volledig worden uitgeschreven bij opiaten?",
+                    "Answer": ["Sterkte", "Aantal", "Aantal herhalingen"]
+                },
+                {
+                    "Question": "Welke extra regel moet toegevoegd worden bij opiaten?",
+                    "Answer": ["Maximale dosis per dag"]
+                },
+                {
+                    "Question": "Met hoeveel promille alcohol in het bloed is categorie 1 van de rijveiligheid vergelijkbaar?",
+                    "Answer": ["<0,5"]
+                },
+                {
+                    "Question": "Met hoeveel promille alcohol in het boed is categorie 2 van de rijveiligheid vergelijkbaar?",
+                    "Answer": ["0,5-0,8"]
+                },
+                {
+                    "Question": "Met hoeveel promille alcohol in het bloed is categorie 3 van de rijveiligheid vergelijkbaar?",
+                    "Answer": [">0,8"]
+                },
+                {
+                    "Question": "Bij welke categoriën van de rijveiligheid wordt er een gele sticker op het doosje geplakt?",
+                    "Answer": ["Categorie 2", "Categorie 3"]
+                },
+                {
+                    "Question": "Wanneer mag je bij categorie 2 voor de rijveiligheid niet rijden?",
+                    "Answer": ["De eerste tijd na start medicatie"]
+                },
+                {
+                    "Question": "Welke verplichting heeft de arts t.a.v. de rijveiligheid?",
+                    "Answer": ["Voorlichten"]
+                },
+                {
+                    "Question": "Indien de patiënt is voorgelicht over de rijveiligheid, wie is dan verantwoordelijk voor een ongeluk?",
+                    "Answer": ["Patiënt"]
+                },
+                {
+                    "Question": "Wie is er verantwoordelijk voor de voorlichting w.b. de rijveiligheid?",
+                    "Answer": ["Arts"]
+                },
+                {
+                    "Question": "Vanaf welke waarde moet de eGFR vermeld worden op het recept?",
+                    "Answer": ["eGFR <50"]
+                },
+                {
+                    "Question": "Moet de geboortedatum van de patiënt altijd worden vermeld op het recept?",
+                    "Answer": ["Ja"]
+                },
+                {
+                    "Question": "Bij welke 4 middelen moet men de reden van voorschrijven vermelden?",
+                    "Answer": ["Carbamazepine", "Fluconazol", "Methotrexaat", "Rifampicine"]
+                },
+                {
+                    "Question": "Sinds welk jaartal is elektronisch voorschrijven verplicht?",
+                    "Answer": ["2014"]
+                },
+                {
+                    "Question": "In welk soort inkt moet het recept voor opiaten geschreven zijn?",
+                    "Answer": ["Onuitwisbare inkt"]
+                },
+                {
+                    "Question": "Welke extra gegevens van de arts moeten vermeld worden op een opiatenrecept?",
+                    "Answer": ["Adres", "Telefoonnummer"]
+                },
+                {
+                    "Question": "Welke 2 medicamenten vallen, met dosisbeperkingen, onder de categorie 1 van de rijveiligheid?",
+                    "Answer": ["Oxazepam", "Temazepam"]
+                },
+                {
+                    "Question": "Hoe lang na inname, en met welke dosis, valt Oxazepam onder categorie 1 van de rijveiligheid?",
+                    "Answer": ["<50 mg", "16 uur"]
+                },
+                {
+                    "Question": "Hoe lang na inname, en met welke dosis, valt Temazepam onder categorie 1 van de rijveiligheid?",
+                    "Answer": ["<20 mg", "8 uur"]
+                },
+                {
+                    "Question": "Welke 4 middelen, met of zonder dosisbeperking, vallene onder categorie 3 van de rijveiligheid?",
+                    "Answer": ["Morfine", "Temazepam", "Oxazepam", "Clemastine"]
+                },
+                {
+                    "Question": "Bij welk middel mag je nooit rijden (cat. 3)?",
+                    "Answer": ["Clemastine"]
+                },
+                {
+                    "Question": "Vanaf welke dosis mag je met Temazepam niet meer rijden?",
+                    "Answer": [">20 mg"]
+                },
+                {
+                    "Question": "Vanaf welke dosis mag je met Oxazepam niet meer rijden?",
+                    "Answer": [">50 mg"]
+                },
+                {
+                    "Question": "Hoe lang moet je bijwerkingenvrij zijn om onder een lage dosis morfine te mogen rijden?",
+                    "Answer": ["2 weken"]
+                },
+                {
+                    "Question": "Hoeveel microgram morfine per liter mag je maximaal in je bloed hebben tijdens het autorijden?",
+                    "Answer": ["20 microgram"]
+                },
+                {
+                    "Question": "Wanneer men tevens alcohol of drugs in het systeem heeft, wat is dan de maximale toegestane hoeveeheid morfine per liter bloed in microgram?",
+                    "Answer": ["10 microgram"]
+                }
+            ]
+        },
+        {
+            "Name": "Module K: Goed geneesmiddelengebruik",
+            "Questions": [
+                {
+                    "Question": "Wat is stap 1 in de WHO six-step methode in een enkel woord?",
+                    "Answer": ["Probleemstelling"]
+                },
+                {
+                    "Question": "Wat is stap 2 in de WHO six-step methode in een enkel woord?",
+                    "Answer": ["Behandeldoel"]
+                },
+                {
+                    "Question": "Wat is stap 3 in de WHO six-step methode in een enkel woord?",
+                    "Answer": ["Behandelmogelijkheden"]
+                },
+                {
+                    "Question": "Wat is stap 4 in de WHO six-step methode in twee woorden woord?",
+                    "Answer": ["Patiëntspecifieke keuze"]
+                },
+                {
+                    "Question": "Wat is stap 5 in de WHO six-step methode in een enkel woord?",
+                    "Answer": ["Uitvoering"]
+                },
+                {
+                    "Question": "Wat is stap 6 in de WHO six-step methode in een enkel woord?",
+                    "Answer": ["Follow-up"]
+                },
+                {
+                    "Question": "Voor welke 3 handelingen is een voorschrijver veplicht een actief medicatie overzicht te hebben? Om medicatie te...",
+                    "Answer": ["Voorschrijven", "Wijzigen", "Stoppen"]
+                },
+                {
+                    "Question": "Wanneer moet er een actief medicatie overzicht binnen zijn na een overdracht of spoedopname?",
+                    "Answer": ["Binnen 24 uur"]
+                },
+                {
+                    "Question": "Hoeveel procent van de patiënten is therapieontrouwe?",
+                    "Answer": ["50%"]
+                },
+                {
+                    "Question": "Welke 3 criteria gelden voor een bioequivalent middel (generieke substitutie)?",
+                    "Answer": ["Gelijke stof", "Gelijke sterkte", "Gelijke vorm"]
+                },
+                {
+                    "Question": "Waar staat NCE voor?",
+                    "Answer": ["New chemical entity"]
+                },
+                {
+                    "Question": "Welke 4 behandeldoelen zijn er?",
+                    "Answer": ["Curatief", "Preventief", "Symptomatisch", "Palliatief"]
+                },
+                {
+                    "Question": "Welke klasse aan innovatieve middelen geeft soms onverwachte bijwerkingen?",
+                    "Answer": ["MeToo's"]
+                },
+                {
+                    "Question": "Van welke klasse aan innovatieve middelen ben je verplicht de bijwerkingen te melden bij het LAREB?",
+                    "Answer": ["NCE's"]
+                },
+                {
+                    "Question": "Welke twee wetten bepalen dat de toestemming van een patiënt nodig is voor het opvragen, inzien, gebruiken en bewerken van medicatiegegevens?",
+                    "Answer": ["AVG", "WGBO"]
+                },
+                {
+                    "Question": "Welke drie personen moeten door de specialist op de hoogte gesteld worden van medicatiewijzigingen?",
+                    "Answer": ["Huisarts", "Apotheker", "Toediener"]
+                },
+                {
+                    "Question": "Wie dient een apotheker als aanspreekpunt over een bepaalde patiënt aan te geven?",
+                    "Answer": ["Patiënt"]
+                },
+                {
+                    "Question": "Voor welke groep professionals is het KNMP bedoeld?",
+                    "Answer": ["Apothekers"]
+                },
+                {
+                    "Question": "Over welke groep patiënten geeft het Ephor informatie?",
+                    "Answer": ["Ouderen"]
+                }
+            
+            ]
+        },
+        {
+            "Name": "Module L: Zwangerschap en lactatie",
+            "Questions": [
+                {
+                    "Question": "Hoevel procent van de zwangeren gebruikt medicatie?",
+                    "Answer": "80&"
+                },
+                {
+                    "Question": "Welke 4 soorten bijwerkingen tijdens de zwangerschap zijn er?",
+                    "Answer": ["Negatieve zwangerschapsuitkomst", "Nadelige farmacologische effecten", "Structurele afwijkingen", "Functionele afwijkingen"]
+                },
+                {
+                    "Question": "Wat zijn de 2 mogelijke bijwerkingen in het 1e trimester?",
+                    "Answer": ["Abortus", "Aanlegstoornis"]
+                },
+                {
+                    "Question": "Wat is de mogelijke bijwerking in het 2e trimester?",
+                    "Answer": ["Groeivertraging"]
+                },
+                {
+                    "Question": "Wat zijn de 2 mogeijke bijwerkingen in het 3e trimester?",
+                    "Answer": ["Farmacologische effecten", "Risico voor de partus"]
+                },
+                {
+                    "Question": "Welke twee bijwerkingen hebben NSAID's in de peripartus?",
+                    "Answer": ["Weeënreming", "Sluiting van de ductus Botali"]
+                },
+                {
+                    "Question": "Welke bijwerking heeft antistolling in de peripartus?",
+                    "Answer": ["Bloederige partus"]
+                },
+                {
+                    "Question": "Van welke twee medicamenten moeten wij weten dat zij de placenta niet passeren?",
+                    "Answer": ["Nadroparine", "Ongefractioneerde heparine"]
+                },
+                {
+                    "Question": "In letters, in welk trimester ontstaat spina bifida?",
+                    "Answer": ["Eerste"]
+                },
+                {
+                    "Question": "Welke twee klasse medicatie zijn berucht om hun farmacologische effecten in het 2e trimester?",
+                    "Answer": ["Insuline", "Schildkliermedicatie"]
+                },
+                {
+                    "Question": "Welke twee klassen medicatie kunnen weeënremming geven?",
+                    "Answer": ["Opiaten", "NSAID's"]
+                },
+                {
+                    "Question": "Welke 5 medicijnen zijn zonder dosisbeperking geclassificeerd als 'het meest veilig'?",
+                    "Answer": ["Paracetamol", "Nadroparine", "Amoxicilline", "Claritromycine", "Ongefractioneerde heparine"]
+                },
+                {
+                    "Question": "Wat is de maximale dosering waarin ASA geclassificeerd is als 'het meest veilig'?",
+                    "Answer": ["160 mg/dag"]
+                },
+                {
+                    "Question": "Welke 3 medicamenten zijn altijd geclassificeerd als 'waarschijnlijk veilig'?",
+                    "Answer": ["Metoprolol", "Metformine", "Diclofenac"]
+                },
+                {
+                    "Question": "Welk medicament is alleen in het 1e en 2e semester geclassificeerd als 'waarschijnlijk veilig'?",
+                    "Answer": ["Ibuprofen"]
+                },
+                {
+                    "Question": "Welke 6 middelen zijn geclassificeerd als 'risicovol'?",
+                    "Answer": ["Carbamazepine", "Doxycycline", "Gentamicine", "Enalapril"]
+                },
+                {
+                    "Question": "Van welk middel zijn de zwangerschapsbijwerkingen onbekend?",
+                    "Answer": ["Ciprofloxacine"]
+                },
+                {
+                    "Question": "Welke 4 middelen zijn het meest veilig bij lactatie?",
+                    "Answer": ["Paracetamol", "Ibuprofen", "Acenocoumarol", "Nadroparine"]
+                },
+                {
+                    "Question": "Welke 5 middelen zijn waarschijnlijk veilig bij lactatie?",
+                    "Answer": ["Diclofenac", "Acetylsalicylzuur", "Metoprolol", "Fenprocoumon", "Enalapril", "Metformine"]
+                },
+                {
+                    "Question": "Van welke middelen is het lactatierisico onbeend?",
+                    "Answer": ["Ciprofloxacine"]
+                },
+                {
+                    "Question": "Welke 2 middelen leveren mogelijk risico op bij lactatie?",
+                    "Answer": ["Codeïne", "Morfine"]
+                },
+                {
+                    "Question": "Welke twee middelen moeten sowieso gestopt worden bij lactatie?",
+                    "Answer": ["Oxazepam", "Diazepam"]
+                }
+            ]
+        }
+    ]
+}

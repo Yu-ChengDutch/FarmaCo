@@ -1876,7 +1876,7 @@ function start_basics(category, level) {
 
             prepare_ancestry(input_array, "Name", "Subdivision");
 
-        } else if (category == "Nervous" && level == 0) {
+        } else if (category == "Nervous" && level >= 0) {
 
             prepare_ancestry(content_dict["Spinal nervous system"], "Name", "Subdivision");
 
@@ -1957,13 +1957,20 @@ function start_basics(category, level) {
 
                 };
 
+                if ((level == 2) && Object.keys(current_object).includes("Sensory innervation")) {
+
+                    temp_temp_question_array.push({"Question": `By what nerve is the area of "${parse_array(current_object["Sensory innervation"])}" innervated?`, "Answer": current_object["Name"]});
+                    temp_temp_question_array.push(root_finder(current_object));
+
+                };
+
             };
 
             temp_question_array.push(temp_temp_question_array);
 
         };
 
-        question_array = (shuffle(temp_question_array)).flat(1);
+        question_array = (shuffle(temp_question_array)).flat(2);
 
         if (question_array.length > 40) {
 
@@ -2134,6 +2141,33 @@ function branch_question(current_object, category) {
 
 }
 
+function root_finder(current_object) {
+
+    var current_parent = "";
+    var next_parent = "";
+    var line_of_question = [];
+    var current_name = current_object["Name"];
+
+    while (next_parent != "Spinal nervous system") {
+
+        current_parent = ancestry_dict[current_name]["Parent"]
+
+        console.log(current_parent);
+
+        current_question = ({"Question": `From what nerve does ${current_name} spring?`, "Answer": current_parent})
+        line_of_question.push(current_question);
+
+        current_name = current_parent;
+        next_parent = ancestry_dict[current_name]["Parent"]
+
+    };
+
+    console.log(line_of_question);
+
+    return line_of_question;
+
+};
+
 function action_question(current_object, category) {
 
     current = current_object["Name"]
@@ -2186,7 +2220,7 @@ function innervation_question(current_object, category) {
     
         }
     
-        return [question, nerve_trace].flat(1);
+        return [question, nerve_trace];
 
     } else {
 
