@@ -947,7 +947,7 @@
                                                 {
                                                     "Name": "Rectus femoris",
                                                     "Origin": [["Ilium"], ["Anterior inferior iliac spine"]],
-                                                    "Insertion": [["Tendon"], ["Patellar tendon"]],
+                                                    "Insertion": [["Patellar tendon"]],
                                                     "Innervation": ["N. Femoralis"],
                                                     "Action": [["Knee", "Hip"], [["Extension"], ["Flexion"]]]
                                                 },
