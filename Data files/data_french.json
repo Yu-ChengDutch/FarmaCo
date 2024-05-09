@@ -1,0 +1,67 @@
+{
+    "French": "French words",
+    "Subdivision": [
+        {
+            "French": "Verbs",
+            "Subdivision": [
+                {
+                    "French": "Rassasier",
+                    "English": ["To satisfy", "To satiate"]
+                },
+                {
+                    "French": "Emmener",
+                    "English": ["To take off", "To take away", "To take along"]
+                },
+                {
+                    "French": "Atteindre",
+                    "English": ["To attain", "To affect"]
+                },
+                {
+                    "French": "Renifler",
+                    "English": ["To sniff", "To smell"]
+                },
+                {
+                    "French": "Grogner",
+                    "English": ["To grunt"]
+                },
+                {
+                    "French": "Porter",
+                    "English": ["to carry", "To wear"]
+                },
+                {
+                    "French": "Jeûner",
+                    "English": ["To fast"]
+                },
+                {
+                    "French": "Suivre",
+                    "English": ["To follow"]
+                },
+                {
+                    "French": "Demeurer",
+                    "English": ["To live", "To stay"]
+                },
+                {
+                    "French": "Engendrer",
+                    "English": ["To spawn", "To regenerate"]
+                },
+                {
+                    "French": "Détruire",
+                    "English": ["To destroy"]
+                },
+                {
+                    "French": "Bouleverser",
+                    "English": ["To overturn", "To shake up", "To radically change"]
+                }
+            ]
+        },
+        {
+            "French": "Nouns"
+        },
+        {
+            "French": "Other"
+        },
+        {
+            "French": "Phrases"
+        }
+    ]
+}

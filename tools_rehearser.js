@@ -1070,7 +1070,14 @@ function grade_answer() {
     const current_index = indices[0]; 
 
     const correct_answer = question_array[current_index].Answer; 
-    const nr_ans = question_array[current_index].Nr_ans;      
+    const nr_ans = question_array[current_index].Nr_ans;  
+    
+    is_french = false;
+    console.log(document.getElementById('question-description').innerText)
+
+    if ((document.getElementById("question-description").innerText).includes("translation(s)")) {
+        is_french = true;
+    };
     
     console.log("- - > Checking mnemonic")
     console.log("- - > Right answer is: " + correct_answer)
@@ -1091,7 +1098,14 @@ function grade_answer() {
 
         if (Array.isArray(correct_answer) && !(question_array[current_index].Question).includes("voorbeeld")) {
 
-            if (correct_answer.includes(given_answer)) {                
+            if ((correct_answer.includes(given_answer)) && (is_french == true)) {
+
+                document.getElementById('question-title').style.animation = "correct 1s linear 0s";
+                setTimeout(function(){document.getElementById('question-title').style.animation = "idle 0s ease-in-out 0s";}, 3000);
+
+                next_question();
+
+            } else if (correct_answer.includes(given_answer)) {                
 
                 document.getElementById('question-title').style.animation = "correct 1s linear 0s";
                 setTimeout(function(){document.getElementById('question-title').style.animation = "idle 0s ease-in-out 0s";}, 3000);
@@ -1972,18 +1986,74 @@ function start_basics(category, level) {
 
         question_array = (shuffle(temp_question_array)).flat(2);
 
-        if (question_array.length > 40) {
+        // if (question_array.length > 40) {
 
-            start = Math.random() * (question_array.length - 40)
+        //     start = Math.random() * (question_array.length - 40)
 
-            if (start % 2 !== 0) {
-                start = start - 1;
-            };
+        //     if (start % 2 !== 0) {
+        //         start = start - 1;
+        //     };
 
-            question_array = question_array.slice(start, start + 40);
+        //     question_array = question_array.slice(start, start + 40);
             
 
+        // };
+
+    })
+    .then(function(){
+
+        console.log("-> Prepared questions")
+        console.log(question_array);
+
+        openFullscreen();
+        document.getElementsByTagName("BODY")[0].innerHTML = level_page;
+        setEnter();
+
+        set_questions(); 
+    });
+
+};
+
+function start_french(category, level) {
+
+    fetchable = "./Data files/data_french.json"
+
+    fetch(fetchable)
+
+    .then(function(response){
+        console.log("- > french found and accessed");
+        return response.json();
+    })
+    .then(function(data){
+
+        prepare_ancestry(data, "French", "Subdivision");
+        prepare_ancestry(content_dict[level], "French", "Subdivision");
+
+        console.log(content_dict);
+
+    })
+    .then(function(){
+
+        var temp_question_array = [];
+        
+        for (var i = 0; i < Object.keys(content_dict).length; i++) {
+
+            current_object = content_dict[Object.keys(content_dict)[i]];
+
+            console.log(current_object);
+
+            if (category == "Words" && Object.keys(current_object).includes("English")) {
+
+                question_string = "What is (one of) the English translation(s) of the " + level.toLowerCase() + " '" + current_object["French"] + "'?"
+                answer_string = current_object["English"]
+
+                temp_question_array.push({"Question": question_string, "Answer": answer_string})
+
+            }
+
         };
+
+        question_array = (shuffle(temp_question_array)).flat(1);
 
     })
     .then(function(){

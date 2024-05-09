@@ -468,7 +468,7 @@
                                     "Subdivision": [
                                         {
                                             "Name": "Trapezius",
-                                            "Insertion": [["Clavicle", "Posterior border"], ["Scapula", ["Spine", "Acromion process"]]],
+                                            "Insertion": [["Clavicle", "Posterior border"], ["Scapula", ["Clavicular spine", "Acromion process"]]],
                                             "Innervation": ["N. Accessorius", "N. Spinalis C3", "N. Spinalis C4"],
                                             "Action": [["Scapula"], ["Rotation", "Retraction", "Elevation", "Depression"]]
                                         },
@@ -929,8 +929,9 @@
                                     "Subdivision": [
                                         {
                                             "Name": "Sartorius",
-                                            "Origin": [["Ilium"], ["Anterior superior iliac spine"]],
-                                            "Insertion": [["Pes anserinus"]],
+                                            "Origin": [["Ilium"], ["Iliac crest"]],
+                                            "Tendon": [["Pes anserinus"]],
+                                            "Insertion": [["Tibia"], ["Anteromedial surface"]],
                                             "Innervation": ["N. Femoralis"],
                                             "Action": [["Hip", "Knee"], [["Flexion", "Abduction", "External rotation"], ["Flexion"]]]
                                         },
@@ -946,8 +947,8 @@
                                             "Subdivision": [
                                                 {
                                                     "Name": "Rectus femoris",
-                                                    "Origin": [["Ilium"], ["Anterior inferior iliac spine"]],
-                                                    "Insertion": [["Tendon"], ["Patellar tendon"]],
+                                                    "Origin": [["Ilium"], ["Iliac crest"]],
+                                                    "Insertion": [["Patella"]],
                                                     "Innervation": ["N. Femoralis"],
                                                     "Action": [["Knee", "Hip"], [["Extension"], ["Flexion"]]]
                                                 },
@@ -957,21 +958,21 @@
                                                         {
                                                             "Name": "Vastus lateralis",
                                                             "Origin": [["Femur"], ["Greater trochanter", "Intertrochanteric line", "Linea aspera"]],
-                                                            "Insertion": [["Quadriceps tendon"]],
+                                                            "Insertion": [["Patella"]],
                                                             "Innervation": ["N. Femoralis"],
                                                             "Action": [["Knee"], ["Extension", "Stabilisation"]]
                                                         },
                                                         {
                                                             "Name": "Vastus intermedius",
                                                             "Origin": [["Femur"], ["Anterolateral surface"]],
-                                                            "Insertion": [["Quadriceps tendon"]],
+                                                            "Insertion": [["Patella"]],
                                                             "Innervation": ["N. Femoralis"],
                                                             "Action": [["Knee"], ["Extension"]]
                                                         },
                                                         {
                                                             "Name": "Vastus medialis",
                                                             "Origin": [["Femur"], ["Medial surface"]],
-                                                            "Insertion": [["Tendon"], ["Quadriceps tendon"]],
+                                                            "Insertion": [["Patella"]],
                                                             "Innervation": ["N. Femoralis"],
                                                             "Action": [["Knee"], ["Extension"]]
                                                         }
@@ -1008,7 +1009,8 @@
                                                 {
                                                     "Name": "Semitendinosus",
                                                     "Origin": [["Ischium"], ["Ischial tuberosity"]],
-                                                    "Insertion": [["Pes anserinus"]],
+                                                    "Tendon": [["Pes anserinus"]],
+                                                    "Insertion": [["Tibia"], ["Anteromedial surface"]],
                                                     "Innervation": ["N. Ischiadicus"],
                                                     "Action": [["Knee", "Hip"], ["Flexion", "Extension"]]
                                                 },
@@ -1035,7 +1037,10 @@
                                             "Action": [["Hip"], ["Flexion", "Adduction", "External rotation"]]
                                         },
                                         {
-                                            "Name": "Gracilis"
+                                            "Name": "Gracilis",
+                                            "Origin": ["Ischiopubic ramus"],
+                                            "Tendon": [["Pes anserinus"]],
+                                            "Insertion": [["Tibia"], ["Anteromedial surface"]]
                                         },
                                         {
                                             "Name": "Adductor muscles",
@@ -1055,6 +1060,12 @@
                                             ]
                                         }
                                     ]
+                                },
+                                {
+                                    "Name": "Tensor fasciae latae",
+                                    "Origin": [["Ilium"], ["Iliac crest"]],
+                                    "Tendon": [["Tractus iliotibialis"]],
+                                    "Insertion": [["Tibia"], ["Lateral condyle"]]
                                 }
                             ]
                         },
@@ -1092,9 +1103,6 @@
                                                         },
                                                         {
                                                             "Name": "Soleus"
-                                                        },
-                                                        {
-                                                            "Name": "Achilles tendon"
                                                         }
                                                     ]
                                                 },
