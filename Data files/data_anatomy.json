@@ -947,8 +947,13 @@
                                             "Subdivision": [
                                                 {
                                                     "Name": "Rectus femoris",
+<<<<<<< HEAD
                                                     "Origin": [["Ilium"], ["Iliac crest"]],
                                                     "Insertion": [["Patella"]],
+=======
+                                                    "Origin": [["Ilium"], ["Anterior inferior iliac spine"]],
+                                                    "Insertion": [["Patellar tendon"]],
+>>>>>>> 9eb6ce91b85a55876d8f8bbd26789a664d09e28a
                                                     "Innervation": ["N. Femoralis"],
                                                     "Action": [["Knee", "Hip"], [["Extension"], ["Flexion"]]]
                                                 },
