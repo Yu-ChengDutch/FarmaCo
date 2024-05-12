@@ -1769,7 +1769,7 @@ function give_hint() {
     indices = (document.getElementById('question-title').innerText).split("/")
     current_index = indices[0];
 
-    correct_answer = question_array[current_index].Answer; 
+    correct_answer = parse_array(question_array[current_index].Answer); 
 
     document.getElementById('remark-card').innerText = "Hint: " + correct_answer + ". This question will be repeated once!";
 
@@ -2018,6 +2018,58 @@ function start_french(category, level) {
 
     fetchable = "./Data files/data_french.json"
 
+    names_non_finite = ["Infinitive", "Present participle", "Verbal adjective", "Past participle"]
+
+    forms_non_finite = {
+
+        "re" : ["er", "ant", "ant", "é"],
+        "ir" : ["ir", "issant", "issant", "i"],
+        "re" : ["re", "ant", "ant", "u"]
+
+    }
+
+    names_persons = ["First person singular", "Second person singular", "Third person singular", "First person plural", "Second person plural", "Third person plural"]
+
+    names_tenses = ["Present", "Simple past", "Imperfect", "Future simple"]
+
+    names_moods = ["Indicative", "Subjunctive", "Conditional", "Imperative"]
+
+    
+
+    forms_indicative_present = {
+
+        "er" : ["e", "es", "e", "ons", "ez", "ent"],
+        "ir" : ["is", "is", "it", "issons", "issez", "issent"],
+        "re" : ["s", "s", "", "ons", "ez", "ent"]
+
+    }
+
+    forms_indicative_past = {
+
+        "er" : ["ai", "as", "a", "âmes", "âtes", "èrent"],
+        "ir" : ["is", "is", "it", "îmes", "îtes", "irent"],
+        "re" : ["is", "is", "it", "îmes", "îtes", "irent"]
+
+    }
+
+    forms_indicative_imperfect = {
+
+        "er" : ["ais", "ais", "ait", "ions", "iez", "aient"],
+        "ir" : ["issais", "issais", "issait", "issions", "issiez", "issaient"],
+        "re" : ["ais", "ais", "ait", "ions", "iez", "aient"]
+
+    }
+
+    forms_indicative_future = {
+
+        "er" : ["erai", "eras", "era", "erons", "erez", "eront"],
+        "ir" : ["irai", "iras", "ira", "irons", "irez", "iront"],
+        "re" : ["rai", "ras", "ra", "rons", "rez", "ront"]
+
+    }
+
+    fomrs_finite =
+
     fetch(fetchable)
 
     .then(function(response){
@@ -2035,6 +2087,8 @@ function start_french(category, level) {
     .then(function(){
 
         var temp_question_array = [];
+
+        var temp_temp_question_array = [];
         
         for (var i = 0; i < Object.keys(content_dict).length; i++) {
 
@@ -2042,18 +2096,49 @@ function start_french(category, level) {
 
             console.log(current_object);
 
-            if (category == "Words" && Object.keys(current_object).includes("English")) {
+            temp_temp_question_array = [];
+
+            if (Object.keys(current_object).includes("English")) {
 
                 question_string = "What is (one of) the English translation(s) of the " + level.toLowerCase() + " '" + current_object["French"] + "'?"
                 answer_string = current_object["English"]
 
-                temp_question_array.push({"Question": question_string, "Answer": answer_string})
+                if (category == "Words" || Math.random() > 0.8) {
+
+                    temp_temp_question_array.push({"Question": question_string, "Answer": answer_string})
+                
+                };                
+
+            };
+
+            if (category == "Conjugation" && Object.keys(current_object).includes("English")) {
+
+                current_verb = current_object["French"]
+                verb_class = current_verb.slice(-2)
+
+                console.log(verb_class)
+
+                stem = current_verb.substring(0, current_verb.length - 2)
+
+                rand_index = Math.floor(Math.random() * names_persons.length)
+
+                console.log(forms_indicative_present)
+                console.log(forms_indicative_present[verb_class])
+
+                form = stem + forms_indicative_present[verb_class][rand_index];
+
+                question_string = "What is " + names_persons[rand_index] + " of " + current_verb + "?"
+                answer_string = form
+                
+                temp_temp_question_array.push({"Question": question_string, "Answer": answer_string})
 
             }
 
+            temp_question_array.push(temp_temp_question_array);
+
         };
 
-        question_array = (shuffle(temp_question_array)).flat(1);
+        question_array = (shuffle(temp_question_array)).flat(2);
 
     })
     .then(function(){

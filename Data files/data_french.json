@@ -51,6 +51,42 @@
                 {
                     "French": "Bouleverser",
                     "English": ["To overturn", "To shake up", "To radically change"]
+                },
+                {
+                    "French": "Donner",
+                    "English": ["To give", "To produce"]
+                },
+                {
+                    "French": "Demander",
+                    "English": ["To ask", "To produce"]
+                },
+                {
+                    "French": "Trouver",
+                    "English": ["To find", "To discover"]
+                },
+                {
+                    "French": "Tirer",
+                    "English": ["To pull", "To draw", "To fire", "To print"]
+                },
+                {
+                    "French": "Relever",
+                    "English": ["To raise", "To stand up", "To pick up"]
+                },
+                {
+                    "French": "Préparer",
+                    "English": ["To prepare", "To make"]
+                },
+                {
+                    "French": "Ajouter",
+                    "English": ["To add"]
+                },
+                {
+                    "French": "Tenter",
+                    "English": ["To tempt"]
+                },
+                {
+                    "French": "Utiliser",
+                    "English": ["To use", "To employ"]
                 }
             ]
         },
@@ -58,7 +94,105 @@
             "French": "Nouns"
         },
         {
-            "French": "Other"
+            "French": "Other",
+            "Subdivision": [
+                {
+                    "French": "Celui",
+                    "English": ["The one"]
+                },
+                {
+                    "French": "Selon",
+                    "English": ["According to"]
+                },
+                {
+                    "French": "Lendemain",
+                    "English": ["Tomorrow"]
+                },
+                {
+                    "French": "Surlendemain",
+                    "English": ["Overmorrow"]
+                },
+                {
+                    "French": "Demain",
+                    "English": ["Tomorrow"]
+                },
+                {
+                    "French": "Hier",
+                    "English": ["Yesterday"]
+                },
+                {
+                    "French": "Cloche",
+                    "English": ["Stupid", "Clumsy"]
+                },
+                {
+                    "French": "Suite à",
+                    "English": ["After", "In the wake of"]
+                },
+                {
+                    "French": "Désormais",
+                    "English": ["Henceforth"]
+                },
+                {
+                    "French": "Sinon",
+                    "English": ["Except", "If not"]
+                },
+                {
+                    "French": "Bien en chair",
+                    "English": ["Plump", "Pudgy"]
+                },
+                {
+                    "French": "Lorsque",
+                    "English": ["When"]
+                },
+                {
+                    "French": "Chez",
+                    "English": ["In"]
+                },
+                {
+                    "French": "Parmi",
+                    "English": ["Amongst", "Amidst"]
+                },
+                {
+                    "French": "Car",
+                    "English": ["As", "Since", "Because"]
+                },
+                {
+                    "French": "Donc",
+                    "English": ["Therefore", "Thus"]
+                },
+                {
+                    "French": "Ainsi",
+                    "English": ["In this way", "Thus"]
+                },
+                {
+                    "French": "Aucun",
+                    "English": ["No", "None", "Not any"]
+                },
+                {
+                    "French": "Vers",
+                    "English": ["Towards", "To", "Around", "Circa"]
+                },
+                {
+                    "French": "Sous",
+                    "English": ["Below", "Under"]
+                },
+                {
+                    "French": "Presque",
+                    "English": ["Almost"]
+                },
+                {
+                    "French": "Puisque",
+                    "English": ["Since", "Because"]
+                },
+                {
+                    "French": "Auprès de",
+                    "English": ["Near"]
+                },
+                {
+                    "French": "Malgré",
+                    "English": ["Despite"]
+                }
+            ]
         },
         {
             "French": "Phrases"
