@@ -196,6 +196,179 @@
         },
         {
             "French": "Phrases"
+        },
+        {
+            "French": "Body parts",
+            "Subdivision": [
+                {
+                    "French": "La tête",
+                    "English": ["The head"]
+                },
+                {
+                    "French": "Le cerveau",
+                    "English": ["The brain"]
+                },
+                {
+                    "French": "Le crâne",
+                    "English": ["The skull"]
+                },
+                {
+                    "French": "La tempe",
+                    "English": ["The temple"]
+                },
+                {
+                    "French": "Le oeil",
+                    "English": ["The eye"]
+                },
+                {
+                    "French": "Les yeux",
+                    "English": ["The eyes"]
+                },
+                {
+                    "French": "Le nez",
+                    "English": ["The nose"]
+                },
+                {
+                    "French": "La bouche",
+                    "English": ["The mouth"]
+                },
+                {
+                    "French": "La mâchoire",
+                    "English": ["The jaw"]
+                },
+                {
+                    "French": "Le menton",
+                    "English": ["The chin"]
+                },
+                {
+                    "French": "Le cou",
+                    "English": ["The neck"]
+                },
+                {
+                    "French": "Le visage",
+                    "English": ["The face"]
+                },
+                {
+                    "French": "La epaule",
+                    "English": ["The shoulder"]
+                },
+                {
+                    "French": "Le corps",
+                    "English": ["The body"]
+                },
+                {
+                    "French": "La poitrine",
+                    "English": ["The chest", "The bosom"]
+                },
+                {
+                    "French": "Le nombril",
+                    "English": ["The belly button"]
+                },
+                {
+                    "French": "Le ventre",
+                    "English": ["The belly"]
+                },
+                {
+                    "French": "La aine",
+                    "English": ["The groin"]
+                },
+                {
+                    "French": "La cuisse",
+                    "English": ["The thigh"]
+                },
+                {
+                    "French": "La jambe",
+                    "English": ["The leg"]
+                },
+                {
+                    "French": "Le genou",
+                    "English": ["The knee"]
+                },
+                {
+                    "French": "Le mollet",
+                    "English": ["The calf"]
+                },
+                {
+                    "French": "La cheville",
+                    "English": ["The ankle"]
+                },
+                {
+                    "French": "Le pied",
+                    "English": ["The foot"]
+                },
+                {
+                    "French": "Le bras",
+                    "English": ["The arm"]
+                },
+                {
+                    "French": "Le coude",
+                    "English": ["The elbow"]
+                },
+                {
+                    "French": "Le avant-bras",
+                    "English": ["The forearm"]
+                },
+                {
+                    "French": "Le poignet",
+                    "English": ["The wrist"]
+                },
+                {
+                    "French": "Le main",
+                    "English": ["The hand"]
+                },
+                {
+                    "French": "La paume",
+                    "English": ["The handpalm"]
+                },
+                {
+                    "French": "Le pouce",
+                    "English": ["The thumb"]
+                },
+                {
+                    "French": "Le index",
+                    "English": ["The index finger"]
+                },
+                {
+                    "French": "Le majeur",
+                    "English": ["The middle finger"]
+                },
+                {
+                    "French": "La annulaire",
+                    "English": ["The ring finger"]
+                },
+                {
+                    "French": "Le auriculaire",
+                    "English": ["The little finger", "The pinky finger"]
+                },
+                {
+                    "French": "Le petit doigt",
+                    "English": ["The little finger", "The pinky finger"]
+                },
+                {
+                    "French": "Le doigt de pied",
+                    "English": ["The toe"]
+                },
+                {
+                    "French": "Le doigt",
+                    "English": ["The finger"]
+                },
+                {
+                    "French": "La plante",
+                    "English": ["The footsole"]
+                },
+                {
+                    "French": "La hanche",
+                    "English": ["The hip"]
+                },
+                {
+                    "French": "La fesse",
+                    "English": ["The buttock"]
+                },
+                {
+                    "French": "Le dos",
+                    "English": ["The back"]
+                }
+            ]
         }
     ]
 }
