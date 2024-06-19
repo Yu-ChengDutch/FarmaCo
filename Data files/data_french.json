@@ -87,6 +87,255 @@
                 {
                     "French": "Utiliser",
                     "English": ["To use", "To employ"]
+                },
+                {
+                    "French": "Renifler",
+                    "English": ["To sniff", "To smell"]
+                },
+                {
+                    "French": "Grogner",
+                    "English": ["To grunt"]
+                },
+                {
+                    "French": "Porter",
+                    "English": ["To carry", "To wear"]
+                },
+                {
+                    "French": "Se porter",
+                    "English": ["To carry oneself", "To be", "To feel"]
+                },
+                {
+                    "French": "Jeûner",
+                    "English": ["To fast"]
+                },
+                {
+                    "French": "Baver",
+                    "English": ["To drool", "To slobber"]
+                },
+                {
+                    "French": "Refouler",
+                    "English": ["To repress", "To suppress"]
+                },
+                {
+                    "French": "Frapper",
+                    "English": ["To hit", "To strike"]
+                },
+                {
+                    "French": "Parcourir",
+                    "English": ["To pass through"]
+                },
+                {
+                    "French": "Fusiller",
+                    "English": ["To shoot down"]
+                },
+                {
+                    "French": "Soumettre",
+                    "English": ["To submit"]
+                },
+                {
+                    "French": "Prévoir",
+                    "English": ["To plan", "To anticipate"]
+                },
+                {
+                    "French": "Raconter",
+                    "English": ["To tell", "To recount"]
+                },
+                {
+                    "French": "Interpeller",
+                    "English": ["To call out", "To question"]
+                },
+                {
+                    "French": "Frémir",
+                    "English": ["To quiver", "To shake", "To simmer"]
+                },
+                {
+                    "French": "Agir",
+                    "English": ["To act", "To sue", "To have an effect on"]
+                },
+                {
+                    "French": "Craindre",
+                    "English": ["To fear"]
+                },
+                {
+                    "French": "Abonder",
+                    "English": ["To about with", "To team with"]
+                },
+                {
+                    "French": "Tenir",
+                    "English": ["To hold", "To stay"]
+                },
+                {
+                    "French": "Piller",
+                    "English": ["To pillage", "To plunder"]
+                },
+                {
+                    "French": "Ligoter",
+                    "English": ["To bind", "To tie up"]
+                },
+                {
+                    "French": "Gravir",
+                    "English": ["To climb up"]
+                },
+                {
+                    "French": "Moquer",
+                    "English": ["To mock"]
+                },
+                {
+                    "French": "Amocher",
+                    "English": ["To fuck up"]
+                },
+                {
+                    "French": "Piétiner",
+                    "English": ["To stomp", "To shuffle", "To trample"]
+                },
+                {
+                    "French": "Amener",
+                    "English": ["To bring", "To reel in", "To lead"]
+                },
+                {
+                    "French": "Abreuver",
+                    "English": ["To drink", "To water"]
+                },
+                {
+                    "French": "Disparaître",
+                    "English": ["To dissapear"]
+                },
+                {
+                    "French": "Détramper",
+                    "English": ["To soak", "To water down"]
+                },
+                {
+                    "French": "Avertir",
+                    "English": ["To warn", "To notify"]
+                },
+                {
+                    "French": "Immoler",
+                    "English": ["To sacrifice", "To kill"]
+                },
+                {
+                    "French": "Chauffer",
+                    "English": ["To warm up", "To arouse"]
+                },
+                {
+                    "French": "Coincer",
+                    "English": ["To wedge", "To jam", "To turn a corner"]
+                },
+                {
+                    "French": "Se coincer",
+                    "English": ["To get stuck"]
+                },
+                {
+                    "French": "Glisser",
+                    "English": ["To slip", "To slide"]
+                },
+                {
+                    "French": "Bonder",
+                    "English": ["To fill up"]
+                },
+                {
+                    "French": "Jardiner",
+                    "English": ["To garden"]
+                }
+            ]
+        },
+        {
+            "French": "Verb phrases",
+            "Subdivision": [
+                {
+                    "French": "Prêter serment",
+                    "English": ["To take an oath"]
+                },
+                {
+                    "French": "Prêter ... à ...",
+                    "English": ["To lend ... to ..."]
+                },
+                {
+                    "French": "Se prêter à ...",
+                    "English": ["To go along with ..."]
+                },
+                {
+                    "French": "Prêter à confusion",
+                    "English": ["To cause confusion"]
+                },
+                {
+                    "French": "Mettre bas",
+                    "English": ["To give birth"]
+                },                
+                {
+                    "French": "Tenir contre ...",
+                    "English": ["To hold out against ..."]
+                },
+                {
+                    "French": "Avoir soin de",
+                    "English": ["To take care of", "To ensure"]
+                },
+                {
+                    "French": "Parvenir à",
+                    "English": ["To reach to", "To succeed at"]
+                },
+                {
+                    "French": "Passer outre",
+                    "English": ["To disregard"]
+                },
+                {
+                    "French": "Courir après",
+                    "English": ["To run after"]
+                },
+                {
+                    "French": "Aller vers",
+                    "English": ["To go towards"]
+                },
+                {
+                    "French": "Arriver par",
+                    "English": ["To succeed by"]
+                },
+                {
+                    "French": "Avoir besoin de",
+                    "English": ["To need to", "To have need of"]
+                },
+                {
+                    "French": "Avoir peur de",
+                    "English": ["To be afraid of"]
+                },
+                {
+                    "French": "Avoir faim",
+                    "English": ["To be hungry"]
+                },
+                {
+                    "French": "Avoir soif",
+                    "English": ["To be thirsty"]
+                },
+                {
+                    "French": "Donner sur",
+                    "English": ["To look out on", "To look out over"]
+                },
+                {
+                    "French": "Entrer dans",
+                    "English": ["To join", "To enter into"]
+                },
+                {
+                    "French": "Finir par",
+                    "English": ["To end up", "To resolve to"]
+                },
+                {
+                    "French": "Fouiller dans les poches",
+                    "English": ["To go through one's pockets"]
+                },
+                {
+                    "French": "Jurer par",
+                    "English": ["To swear by"]
+                },
+                {
+                    "French": "Rendre visit à",
+                    "English": ["To pay a visit to", "To visit"]
+                },
+                {
+                    "French": "Mettre à l'index",
+                    "English": ["To condemn", "To blacklist"]
+                },
+                {
+                    "French": "Faire le bilan",
+                    "English": ["To assess the situation"]
                 }
             ]
         },
@@ -94,44 +343,8 @@
             "French": "Nouns"
         },
         {
-            "French": "Other",
-            "Subdivision": [
-                {
-                    "French": "Celui",
-                    "English": ["The one"]
-                },
-                {
-                    "French": "Selon",
-                    "English": ["According to"]
-                },
-                {
-                    "French": "Lendemain",
-                    "English": ["Tomorrow"]
-                },
-                {
-                    "French": "Surlendemain",
-                    "English": ["Overmorrow"]
-                },
-                {
-                    "French": "Demain",
-                    "English": ["Tomorrow"]
-                },
-                {
-                    "French": "Hier",
-                    "English": ["Yesterday"]
-                },
-                {
-                    "French": "Cloche",
-                    "English": ["Stupid", "Clumsy"]
-                },
-                {
-                    "French": "Suite à",
-                    "English": ["After", "In the wake of"]
-                },
-                {
-                    "French": "Désormais",
-                    "English": ["Henceforth"]
-                },
+            "French": "Connecting words",
+            "Subdivision": [                 
                 {
                     "French": "Sinon",
                     "English": ["Except", "If not"]
@@ -139,18 +352,6 @@
                 {
                     "French": "Bien en chair",
                     "English": ["Plump", "Pudgy"]
-                },
-                {
-                    "French": "Lorsque",
-                    "English": ["When"]
-                },
-                {
-                    "French": "Chez",
-                    "English": ["In"]
-                },
-                {
-                    "French": "Parmi",
-                    "English": ["Amongst", "Amidst"]
                 },
                 {
                     "French": "Car",
@@ -169,14 +370,6 @@
                     "English": ["No", "None", "Not any"]
                 },
                 {
-                    "French": "Vers",
-                    "English": ["Towards", "To", "Around", "Circa"]
-                },
-                {
-                    "French": "Sous",
-                    "English": ["Below", "Under"]
-                },
-                {
                     "French": "Presque",
                     "English": ["Almost"]
                 },
@@ -185,17 +378,111 @@
                     "English": ["Since", "Because"]
                 },
                 {
-                    "French": "Auprès de",
-                    "English": ["Near"]
-                },
-                {
                     "French": "Malgré",
                     "English": ["Despite"]
+                },
+                {
+                    "French": "En effet",
+                    "English": ["Indeed"]
+                },                
+                {
+                    "French": "Presque",
+                    "English": ["Almost", "Nearly"]
+                },
+                {
+                    "French": "Pratiquement",
+                    "English": ["Practically"]
+                },
+                {
+                    "French": "Puisque",
+                    "English": ["Since", "Because"]
+                },
+                {
+                    "French": "Par",
+                    "English": ["Through", "By"]
+                },
+                {
+                    "French": "Tellement",
+                    "English": ["So", "Very", "So much"]
+                },
+                {
+                    "French": "Agir de ...",
+                    "English": ["To be about ..."]
+                },
+                {
+                    "French": "Lequel",
+                    "English": ["That which"]
+                },
+                {
+                    "French": "Pourtant",
+                    "English": ["However", "Yet"]
+                },
+                {
+                    "French": "Concertant ...",
+                    "English": ["Concerning ..."]
+                },
+                {
+                    "French": "En raison de",
+                    "English": ["Because of"]
+                },
+                {
+                    "French": "Pour autant",
+                    "English": ["Even so"]
+                },
+                {
+                    "French": "Pour autant que",
+                    "English": ["Provided that"]
+                },
+                {
+                    "French": "À supposer que",
+                    "English": ["Assuming that"]
+                },
+                {
+                    "French": "Pour autant que je sache",
+                    "English": ["As far as I know"]
+                },
+                {
+                    "French": "À ma connaissance",
+                    "English": ["To my knowledge"]
+                },
+                {
+                    "French": "Ni",
+                    "English": ["Neither", "Nor"]
+                },
+                {
+                    "French": "Puis",
+                    "English": ["Then", "After", "Next"]
+                },
+                {
+                    "French": "En tant que ...",
+                    "English": ["Being a ...", "As a ..."]
                 }
             ]
         },
         {
-            "French": "Phrases"
+            "French": "Phrases",
+            "Subdivision": [
+                {
+                    "French": "Dans le feu de l'action",
+                    "English": ["In the heat of the moment"]
+                },
+                {
+                    "French": "La nuit porte conseil",
+                    "English": ["Sleep on it"]
+                },
+                {
+                    "French": "La chair à canon",
+                    "English": ["Cannonfodder"]
+                },
+                {
+                    "French": "Sous le coup de",
+                    "English": ["Under the influence of"]
+                },
+                {
+                    "French": "Avoir bon dos",
+                    "English": ["To be an easy scapegoat", "T obe easy to blame"]
+                }
+            ]
         },
         {
             "French": "Body parts",
@@ -367,6 +654,299 @@
                 {
                     "French": "Le dos",
                     "English": ["The back"]
+                }
+            ]
+        },
+        {
+            "French": "Clothing",
+            "Subdivision": [
+                {
+                    "French": "Le sac-à-dos",
+                    "English": ["The backpack", "The rucksack"]
+                },
+                {
+                    "French": "Le sac-à-main",
+                    "English": ["The purse", "The handbag"]
+                },
+                {
+                    "French": "Le sac-à-bras",
+                    "English": ["The totebag"]
+                },
+                {
+                    "French": "Les lunettes",
+                    "English": ["The glasses", "The spectecles"]
+                },
+                {
+                    "French": "La fringue",
+                    "English": ["The piece of clothing"]
+                },
+                {
+                    "French": "La lessive",
+                    "English": ["The laundry", "The laundry detergent", "The detergent"]
+                },
+                {
+                    "French": "La casquette",
+                    "English": ["The cap"]
+                }
+            ]
+        },
+        {
+            "French": "Informal expressions",
+            "Subdivision": [
+                {
+                    "French": "Bosser",
+                    "English": ["To work", "To train"]
+                },
+                {
+                    "French": "Le mec",
+                    "English": ["The guy", "The friend", "The bloke"]
+                },
+                {
+                    "French": "Le gars",
+                    "English": ["The lad", "The guy"]
+                },
+                {
+                    "French": "La chiotte",
+                    "English": ["The toilet", "The shitter"]
+                },
+                {
+                    "French": "Chier",
+                    "English": ["To shit", "To defecate", "To poop"]
+                },
+                {
+                    "French": "Coincé du cul",
+                    "English": ["Stuck up", "Uptight", "Close-minded"]
+                },
+                {
+                    "French": "Le flic",
+                    "English": ["The cop", "The policeman"]
+                },
+                {
+                    "French": "Le keuf",
+                    "English": ["The cop", "The policeman"]
+                },
+                {
+                    "French": "Le sac-à-merde",
+                    "English": ["The scumbag", "The piece of shit"]
+                },
+                {
+                    "French": "Le con",
+                    "English": ["The cunt", "The pussy", "The arsehole", "The asshole"]
+                },
+                {
+                    "French": "Le zizi",
+                    "English": ["The willy", "The pee-pee"]
+                },
+                {
+                    "French": "Moche",
+                    "English": ["Ugly", "Bad"]
+                },
+                {
+                    "French": "Cogner dans le secteur",
+                    "English": ["To have a bumpy ride"]
+                }
+            ]
+        },
+        {
+            "French": "House and building",
+            "Subdivision": [
+                {
+                    "French": "Le lavabo",
+                    "English": ["The washbasin", "The sink"]
+                },
+                {
+                    "French": "La toilette",
+                    "English": ["The toilet"]
+                },
+                {
+                    "French": "La lunette",
+                    "English": ["The toilet seat"]
+                }
+            ]
+        },
+        {
+            "French": "Time and place",
+            "Subdivision": [
+                {
+                    "French": "Celui",
+                    "English": ["The one"]
+                },
+                {
+                    "French": "Devant",
+                    "English": ["In front of", "Faced with"]
+                },
+                {
+                    "French": "Selon",
+                    "English": ["According to"]
+                },
+                {
+                    "French": "Lendemain",
+                    "English": ["Tomorrow"]
+                },
+                {
+                    "French": "Surlendemain",
+                    "English": ["Overmorrow"]
+                },
+                {
+                    "French": "Demain",
+                    "English": ["Tomorrow"]
+                },
+                {
+                    "French": "Hier",
+                    "English": ["Yesterday"]
+                },                
+                {
+                    "French": "Vers",
+                    "English": ["Towards", "To", "Around", "Circa"]
+                },
+                {
+                    "French": "Sous",
+                    "English": ["Below", "Under"]
+                },
+                {
+                    "French": "Auprès de",
+                    "English": ["Near"]
+                },
+                {
+                    "French": "Parmi",
+                    "English": ["Amongst", "Amidst"]
+                },
+                {
+                    "French": "Chez",
+                    "English": ["In"]
+                },
+                {
+                    "French": "Lorsque",
+                    "English": ["When"]
+                },
+                {
+                    "French": "Suite à",
+                    "English": ["After", "In the wake of"]
+                },
+                {
+                    "French": "Désormais",
+                    "English": ["Henceforth"]
+                },
+                {
+                    "French": "Souvent",
+                    "English": ["Often"]
+                },
+                {
+                    "French": "Avec le recul",
+                    "English": ["In hindsight"]
+                },
+                {
+                    "French": "Loin",
+                    "English": ["Far", "Distant"]
+                },
+                {
+                    "French": "Devant",
+                    "English": ["In front of", "Outside", "Faced with"]
+                },
+                {
+                    "French": "Au-devant de",
+                    "English": ["In front of"]
+                },
+                {
+                    "French": "En plein air",
+                    "English": ["Outdoor", "Open-air"]
+                }
+            ]
+        },
+        {
+            "French": "Adjectives",
+            "Subdivision": [
+                {
+                    "French": "Cloche",
+                    "English": ["Stupid", "Clumsy"]
+                },
+                {
+                    "French": "Bien en chair",
+                    "English": ["Plump", "Pudgy"]
+                },
+                {
+                    "French": "Fecond",
+                    "English": ["Fertile", "Fruitful"]
+                },
+                {
+                    "French": "Bidon",
+                    "English": ["Phoney", "Fake", "Rigged"]
+                },
+                {
+                    "French": "Haineux",
+                    "English": ["Hateful"]
+                },
+                {
+                    "French": "Fou",
+                    "English": ["Mad", "Crazy", "Foolish"]
+                },
+                {
+                    "French": "Acharné",
+                    "English": ["Fierce", "Relentless"]
+                },
+                {
+                    "French": "Affreux",
+                    "English": ["Fearful", "Terrible", "Repulsive"]
+                },
+                {
+                    "French": "Inouï",
+                    "English": ["Incredible", "Unheard-of", "Unprecedented"]
+                },
+                {
+                    "French": "Mûr",
+                    "English": ["Mature", "Ripe"]
+                },
+                {
+                    "French": "Lourd",
+                    "English": ["Heavy"]
+                },
+                {
+                    "French": "Insondable",
+                    "English": ["Unfathomable"]
+                },
+                {
+                    "French": "Enraciné",
+                    "English": ["Engrained"]
+                },
+                {
+                    "French": "Comblé",
+                    "English": ["Fulfilled", "Satisfied"]
+                },
+                {
+                    "French": "... de secours",
+                    "English": ["backup ...", "emergency ..."]
+                },
+                {
+                    "French": "Inébranlable",
+                    "English": ["Unshakeable"]
+                },
+                {
+                    "French": "Marrant",
+                    "English": ["Funny", "Amusing"]
+                },
+                {
+                    "French": "Méchant",
+                    "English": ["Bad", "Unkind", "Mediocre"]
+                },
+                {
+                    "French": "Insensé",
+                    "English": ["Crazy", "Insane", "Meaningless"]
+                },
+                {
+                    "French": "Malfaisant",
+                    "English": ["Evil", "Harmful"]
+                },
+                {
+                    "French": "Mince",
+                    "English": ["Thin", "Slender"]
+                },
+                {
+                    "French": "Sale",
+                    "English": ["Dirty", "Bad", "Unpleasent", "Vile"]
+                },
+                {
+                    "French": "Bondé",
+                    "English": ["Crowded", "Packed"]
                 }
             ]
         }
