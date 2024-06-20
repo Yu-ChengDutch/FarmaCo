@@ -738,6 +738,10 @@
                     "English": ["The backpack", "The rucksack"]
                 },
                 {
+                    "French": "La usine",
+                    "English": ["The factory", "The mill"]
+                },
+                {
                     "French": "Le sac-à-main",
                     "English": ["The purse", "The handbag"]
                 },
@@ -772,6 +776,38 @@
                 {
                     "French": "La lunette",
                     "English": ["The toilet seat"]
+                },
+                {
+                    "French": "La cloche",
+                    "English": ["The bell"]
+                },
+                {
+                    "French": "Le appareillage",
+                    "English": ["The device", "The machine", "The equipment"]
+                },
+                {
+                    "French": "Le char",
+                    "English": ["The chariot"]
+                },
+                {
+                    "French": "Le chemin",
+                    "English": ["The way", "The road", "The path"]
+                },
+                {
+                    "French": "Le virage",
+                    "English": ["The bend", "The turn"]
+                },
+                {
+                    "French": "Le obus",
+                    "English": ["The artillery shell", "The shell", "The shell projectile"]
+                },
+                {
+                    "French": "La nef",
+                    "English": ["The nave"]
+                },
+                {
+                    "French": "La voute",
+                    "English": ["The vault", "The arch"]
                 }
             ]
         },
