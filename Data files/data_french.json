@@ -806,8 +806,16 @@
                     "English": ["The nave"]
                 },
                 {
+                    "French": "Le tort",
+                    "English": ["The error", "The fault"]
+                },
+                {
                     "French": "La voute",
                     "English": ["The vault", "The arch"]
+                },
+                {
+                    "French": "Le ongle",
+                    "English": ["The nail"]
                 }
             ]
         },
