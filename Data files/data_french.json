@@ -5,6 +5,22 @@
             "French": "Verbs",
             "Subdivision": [
                 {
+                    "French": "Rabâcher",
+                    "English": ["To go on about", "To yap"]
+                },
+                {
+                    "French": "Haïr",
+                    "English": ["To hate"]
+                },
+                {
+                    "French": "Affoler",
+                    "English": ["To madden", "To drive crazy", "To terrify"]
+                },
+                {
+                    "French": "Entourer",
+                    "English": ["To surround", "To encircle"]
+                },
+                {
                     "French": "Rassasier",
                     "English": ["To satisfy", "To satiate"]
                 },
@@ -233,6 +249,38 @@
                     "English": ["To fill up"]
                 },
                 {
+                    "French": "Ramener",
+                    "English": ["To take back", "To restore"]
+                },
+                {
+                    "French": "Se tapir",
+                    "English": ["To hide", "To hide oneself"]
+                },
+                {
+                    "French": "Farfouiller",
+                    "English": ["To rummage around"]
+                },
+                {
+                    "French": "Enlever",
+                    "English": ["To remove", "To take off"]
+                },
+                {
+                    "French": "Promener",
+                    "English": ["To stroll", "To walk leisurely"]
+                },
+                {
+                    "French": "Nettoyer",
+                    "English": ["To clean"]
+                },
+                {
+                    "French": "Se ballader",
+                    "English": ["To go for a stroll", "To stroll", "To walk", "To go for a walk"]
+                },
+                {
+                    "French": "Souhaiter",
+                    "English": ["To wish"]
+                },
+                {
                     "French": "Jardiner",
                     "English": ["To garden"]
                 }
@@ -244,6 +292,14 @@
                 {
                     "French": "Prêter serment",
                     "English": ["To take an oath"]
+                },
+                {
+                    "French": "Promener un(e) ...",
+                    "English": ["To walk a ...", "To let out a ..."]
+                },
+                {
+                    "French": "Ramener à",
+                    "English": ["To come down to", "To be reduced to"]
                 },
                 {
                     "French": "Prêter ... à ...",
@@ -338,9 +394,6 @@
                     "English": ["To assess the situation"]
                 }
             ]
-        },
-        {
-            "French": "Nouns"
         },
         {
             "French": "Connecting words",
@@ -467,6 +520,18 @@
                     "English": ["In the heat of the moment"]
                 },
                 {
+                    "French": "Au milieu de nulle part",
+                    "English": ["In the middle of nowhere", "In the sticks"]
+                },
+                {
+                    "French": "Avoir gardé les cochons ensemble",
+                    "English": ["To be close", "To be chums"]
+                },
+                {
+                    "French": "C'est dommage!",
+                    "English": ["What a pity!"]
+                },
+                {
                     "French": "La nuit porte conseil",
                     "English": ["Sleep on it"]
                 },
@@ -485,7 +550,15 @@
             ]
         },
         {
-            "French": "Body parts",
+            "French": "1: Pertaining to God",
+            "Subdivision": []
+        },
+        {
+            "French": "2: Pertaining to our environment",
+            "English": []
+        },
+        {
+            "French": "3: Pertaining to humans directly",
             "Subdivision": [
                 {
                     "French": "La tête",
@@ -658,8 +731,8 @@
             ]
         },
         {
-            "French": "Clothing",
-            "Subdivision": [
+            "French": "5: Pertaining to things made by humans",
+            "English": [
                 {
                     "French": "Le sac-à-dos",
                     "English": ["The backpack", "The rucksack"]
@@ -687,6 +760,18 @@
                 {
                     "French": "La casquette",
                     "English": ["The cap"]
+                },
+                {
+                    "French": "Le lavabo",
+                    "English": ["The washbasin", "The sink"]
+                },
+                {
+                    "French": "La toilette",
+                    "English": ["The toilet"]
+                },
+                {
+                    "French": "La lunette",
+                    "English": ["The toilet seat"]
                 }
             ]
         },
@@ -748,28 +833,15 @@
             ]
         },
         {
-            "French": "House and building",
-            "Subdivision": [
-                {
-                    "French": "Le lavabo",
-                    "English": ["The washbasin", "The sink"]
-                },
-                {
-                    "French": "La toilette",
-                    "English": ["The toilet"]
-                },
-                {
-                    "French": "La lunette",
-                    "English": ["The toilet seat"]
-                }
-            ]
-        },
-        {
             "French": "Time and place",
             "Subdivision": [
                 {
                     "French": "Celui",
                     "English": ["The one"]
+                },
+                {
+                    "French": "Alentour",
+                    "English": ["Around"]
                 },
                 {
                     "French": "Devant",
@@ -844,8 +916,24 @@
                     "English": ["In front of", "Outside", "Faced with"]
                 },
                 {
+                    "French": "Au-dessus",
+                    "English": ["Above"]
+                },
+                {
                     "French": "Au-devant de",
                     "English": ["In front of"]
+                },
+                {
+                    "French": "Tout seul",
+                    "English": ["Alone", "All alone", "All by oneself"]
+                },
+                {
+                    "French": "Ailleurs",
+                    "English": ["Somewhere else", "Elsewhere"]
+                },
+                {
+                    "French": "Nulle part",
+                    "English": ["Nowhere"]
                 },
                 {
                     "French": "En plein air",
@@ -859,6 +947,22 @@
                 {
                     "French": "Cloche",
                     "English": ["Stupid", "Clumsy"]
+                },
+                {
+                    "French": "À cloche-pied",
+                    "English": ["Hopping on one leg", "While hopping on one leg"]
+                },
+                {
+                    "French": "Tapi",
+                    "English": ["Hidden", "Crouching"]
+                },
+                {
+                    "French": "Limitrophe",
+                    "English": ["Next to", "Bordering", "Neighouring"]
+                },
+                {
+                    "French": "Plusieurs",
+                    "English": ["Many", "Several", "A lot"]
                 },
                 {
                     "French": "Bien en chair",
