@@ -555,7 +555,7 @@
         },
         {
             "French": "2: Pertaining to our environment",
-            "English": []
+            "Subdivision": []
         },
         {
             "French": "3: Pertaining to humans directly",
@@ -732,7 +732,7 @@
         },
         {
             "French": "5: Pertaining to things made by humans",
-            "English": [
+            "Subdivision": [
                 {
                     "French": "Le sac-à-dos",
                     "English": ["The backpack", "The rucksack"]
